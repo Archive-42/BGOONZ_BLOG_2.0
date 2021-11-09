@@ -3,20 +3,20 @@ sections:
     - about
     - articles
     - audio
+    - career
     - community
     - content
     - docs
     - faq
-    - javascript
     - interact
+    - javascript
     - leetcode
+    - other-content
+    - privacy-policy.md
     - projects
+    - python
     - quick-reference
     - react
-    - other-content
-    - tools
-    - python
-    - projects
-    - tutorials
     - reference
-    - career
+    - tools
+    - tutorials
