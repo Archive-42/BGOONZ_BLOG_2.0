@@ -4,8 +4,8 @@ Objects are usually created to represent entities of the real world, like users,
 
 ```js
 let user = {
-  name: "John",
-  age: 30,
+    name: 'John',
+    age: 30
 };
 ```
 
@@ -213,7 +213,7 @@ We can even call the function without an object at all:
 
 ```js run
 function sayHi() {
-  alert(this);
+    alert(this);
 }
 
 sayHi(); // undefined

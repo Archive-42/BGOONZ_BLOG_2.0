@@ -4,10 +4,10 @@ We know many comparison operators from maths.
 
 In JavaScript they are written like this:
 
-- Greater/less than: <code>a &gt; b</code>, <code>a &lt; b</code>.
-- Greater/less than or equals: <code>a &gt;= b</code>, <code>a &lt;= b</code>.
-- Equals: `a == b`, please note the double equality sign `==` means the equality test, while a single one `a = b` means an assignment.
-- Not equals. In maths the notation is <code>&ne;</code>, but in JavaScript it's written as <code>a != b</code>.
+-   Greater/less than: <code>a &gt; b</code>, <code>a &lt; b</code>.
+-   Greater/less than or equals: <code>a &gt;= b</code>, <code>a &lt;= b</code>.
+-   Equals: `a == b`, please note the double equality sign `==` means the equality test, while a single one `a = b` means an assignment.
+-   Not equals. In maths the notation is <code>&ne;</code>, but in JavaScript it's written as <code>a != b</code>.
 
 In this article we'll learn more about different types of comparisons, how JavaScript makes them, including important peculiarities.
 
@@ -17,8 +17,8 @@ At the end you'll find a good recipe to avoid "JavaScript quirks"-related issues
 
 All comparison operators return a boolean value:
 
-- `true` -- means "yes", "correct" or "the truth".
-- `false` -- means "no", "wrong" or "not the truth".
+-   `true` -- means "yes", "correct" or "the truth".
+-   `false` -- means "no", "wrong" or "not the truth".
 
 For example:
 
@@ -44,9 +44,9 @@ In other words, strings are compared letter-by-letter.
 For example:
 
 ```js run
-alert("Z" > "A"); // true
-alert("Glow" > "Glee"); // true
-alert("Bee" > "Be"); // true
+alert('Z' > 'A'); // true
+alert('Glow' > 'Glee'); // true
+alert('Bee' > 'Be'); // true
 ```
 
 The algorithm to compare two strings is simple:
@@ -78,8 +78,8 @@ When comparing values of different types, JavaScript converts the values to numb
 For example:
 
 ```js run
-alert("2" > 1); // true, string '2' becomes a number 2
-alert("01" == 1); // true, string '01' becomes a number 1
+alert('2' > 1); // true, string '2' becomes a number 2
+alert('01' == 1); // true, string '01' becomes a number 1
 ```
 
 For boolean values, `true` becomes `1` and `false` becomes `0`.
@@ -123,7 +123,7 @@ alert(0 == false); // true
 The same thing happens with an empty string:
 
 ```js run
-alert("" == false); // true
+alert('' == false); // true
 ```
 
 This happens because operands of different types are converted to numbers by the equality operator `==`. An empty string, just like `false`, becomes a zero.
@@ -197,20 +197,20 @@ Why does it dislike zero so much? Always false!
 
 We get these results because:
 
-- Comparisons `(1)` and `(2)` return `false` because `undefined` gets converted to `NaN` and `NaN` is a special numeric value which returns `false` for all comparisons.
-- The equality check `(3)` returns `false` because `undefined` only equals `null`, `undefined`, and no other value.
+-   Comparisons `(1)` and `(2)` return `false` because `undefined` gets converted to `NaN` and `NaN` is a special numeric value which returns `false` for all comparisons.
+-   The equality check `(3)` returns `false` because `undefined` only equals `null`, `undefined`, and no other value.
 
 ### Avoid problems
 
 Why did we go over these examples? Should we remember these peculiarities all the time? Well, not really. Actually, these tricky things will gradually become familiar over time, but there's a solid way to avoid problems with them:
 
-- Treat any comparison with `undefined/null` except the strict equality `===` with exceptional care.
-- Don't use comparisons `>= > < <=` with a variable which may be `null/undefined`, unless you're really sure of what you're doing. If a variable can have these values, check for them separately.
+-   Treat any comparison with `undefined/null` except the strict equality `===` with exceptional care.
+-   Don't use comparisons `>= > < <=` with a variable which may be `null/undefined`, unless you're really sure of what you're doing. If a variable can have these values, check for them separately.
 
 ## Summary
 
-- Comparison operators return a boolean value.
-- Strings are compared letter-by-letter in the "dictionary" order.
-- When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
-- The values `null` and `undefined` equal `==` each other and do not equal any other value.
-- Be careful when using comparisons like `>` or `<` with variables that can occasionally be `null/undefined`. Checking for `null/undefined` separately is a good idea.
+-   Comparison operators return a boolean value.
+-   Strings are compared letter-by-letter in the "dictionary" order.
+-   When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
+-   The values `null` and `undefined` equal `==` each other and do not equal any other value.
+-   Be careful when using comparisons like `>` or `<` with variables that can occasionally be `null/undefined`. Checking for `null/undefined` separately is a good idea.

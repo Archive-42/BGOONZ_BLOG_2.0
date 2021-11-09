@@ -1,9 +1,9 @@
 function hello(name) {
-  let phrase = `Hello, ${name}!`;
+    let phrase = `Hello, ${name}!`;
 
-  say(phrase);
+    say(phrase);
 }
 
 function say(phrase) {
-  alert(`** ${phrase} **`);
+    alert(`** ${phrase} **`);
 }

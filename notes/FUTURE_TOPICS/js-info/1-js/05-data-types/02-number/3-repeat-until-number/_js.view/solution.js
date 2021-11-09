@@ -1,12 +1,11 @@
-
 function readNumber() {
-  let num;
+    let num;
 
-  do {
-    num = prompt("Enter a number please?", 0);
-  } while ( !isFinite(num) );
+    do {
+        num = prompt('Enter a number please?', 0);
+    } while (!isFinite(num));
 
-  if (num === null || num === '') return null;
-  
-  return +num;
+    if (num === null || num === '') return null;
+
+    return +num;
 }

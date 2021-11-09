@@ -12,7 +12,7 @@ Strings can be enclosed within either single quotes, double quotes or backticks:
 
 ```js
 let single = 'single-quoted';
-let double = "double-quoted";
+let double = 'double-quoted';
 
 let backticks = `backticks`;
 ```
@@ -21,7 +21,7 @@ Single and double quotes are essentially the same. Backticks, however, allow us 
 
 ```js run
 function sum(a, b) {
-  return a + b;
+    return a + b;
 }
 
 alert(`1 + 2 = ${sum(1, 2)}.`); // 1 + 2 = 3.
@@ -57,7 +57,7 @@ Backticks also allow us to specify a "template function" before the first backti
 It is still possible to create multiline strings with single and double quotes by using a so-called "newline character", written as `\n`, which denotes a line break:
 
 ```js run
-let guestList = "Guests:\n * John\n * Pete\n * Mary";
+let guestList = 'Guests:\n * John\n * Pete\n * Mary';
 
 alert(guestList); // a multiline list of guests
 ```
@@ -65,7 +65,7 @@ alert(guestList); // a multiline list of guests
 For example, these two lines are equal, just written differently:
 
 ```js run
-let str1 = "Hello\nWorld"; // two lines using a "newline symbol"
+let str1 = 'Hello\nWorld'; // two lines using a "newline symbol"
 
 // two lines using a normal newline and backticks
 let str2 = `Hello
@@ -78,24 +78,24 @@ There are other, less common "special" characters.
 
 Here's the full list:
 
-| Character | Description |
-|-----------|-------------|
-|`\n`|New line|
-|`\r`|Carriage return: not used alone. Windows text files use a combination of two characters `\r\n` to represent a line break. |
-|`\'`, `\"`|Quotes|
-|`\\`|Backslash|
-|`\t`|Tab|
-|`\b`, `\f`, `\v`| Backspace, Form Feed, Vertical Tab -- kept for compatibility, not used nowadays. |
-|`\xXX`|Unicode character with the given hexadecimal Unicode `XX`, e.g. `'\x7A'` is the same as `'z'`.|
-|`\uXXXX`|A Unicode symbol with the hex code `XXXX` in UTF-16 encoding, for instance `\u00A9` -- is a Unicode for the copyright symbol `©`. It must be exactly 4 hex digits. |
-|`\u{X…XXXXXX}` (1 to 6 hex characters)|A Unicode symbol with the given UTF-32 encoding. Some rare characters are encoded with two Unicode symbols, taking 4 bytes. This way we can insert long codes. |
+| Character                              | Description                                                                                                                                                        |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `\n`                                   | New line                                                                                                                                                           |
+| `\r`                                   | Carriage return: not used alone. Windows text files use a combination of two characters `\r\n` to represent a line break.                                          |
+| `\'`, `\"`                             | Quotes                                                                                                                                                             |
+| `\\`                                   | Backslash                                                                                                                                                          |
+| `\t`                                   | Tab                                                                                                                                                                |
+| `\b`, `\f`, `\v`                       | Backspace, Form Feed, Vertical Tab -- kept for compatibility, not used nowadays.                                                                                   |
+| `\xXX`                                 | Unicode character with the given hexadecimal Unicode `XX`, e.g. `'\x7A'` is the same as `'z'`.                                                                     |
+| `\uXXXX`                               | A Unicode symbol with the hex code `XXXX` in UTF-16 encoding, for instance `\u00A9` -- is a Unicode for the copyright symbol `©`. It must be exactly 4 hex digits. |
+| `\u{X…XXXXXX}` (1 to 6 hex characters) | A Unicode symbol with the given UTF-32 encoding. Some rare characters are encoded with two Unicode symbols, taking 4 bytes. This way we can insert long codes.     |
 
 Examples with Unicode:
 
 ```js run
-alert( "\u00A9" ); // ©
-alert( "\u{20331}" ); // 佫, a rare Chinese hieroglyph (long Unicode)
-alert( "\u{1F60D}" ); // 😍, a smiling face symbol (another long Unicode)
+alert('\u00A9'); // ©
+alert('\u{20331}'); // 佫, a rare Chinese hieroglyph (long Unicode)
+alert('\u{1F60D}'); // 😍, a smiling face symbol (another long Unicode)
 ```
 
 All special characters start with a backslash character `\`. It is also called an "escape character".
@@ -105,7 +105,7 @@ We might also use it if we wanted to insert a quote into the string.
 For instance:
 
 ```js run
-alert( 'I*!*\'*/!*m the Walrus!' ); // *!*I'm*/!* the Walrus!
+alert("I*!*'*/!*m the Walrus!"); // *!*I'm*/!* the Walrus!
 ```
 
 As you can see, we have to prepend the inner quote by the backslash `\'`, because otherwise it would indicate the string end.
@@ -113,7 +113,7 @@ As you can see, we have to prepend the inner quote by the backslash `\'`, becaus
 Of course, only the quotes that are the same as the enclosing ones need to be escaped. So, as a more elegant solution, we could switch to double quotes or backticks instead:
 
 ```js run
-alert( `I'm the Walrus!` ); // I'm the Walrus!
+alert(`I'm the Walrus!`); // I'm the Walrus!
 ```
 
 Note that the backslash `\` serves for the correct reading of the string by JavaScript, then disappears. The in-memory string has no `\`. You can clearly see that in `alert` from the examples above.
@@ -123,7 +123,7 @@ But what if we need to show an actual backslash `\` within the string?
 That's possible, but we need to double it like `\\`:
 
 ```js run
-alert( `The backslash: \\` ); // The backslash: \
+alert(`The backslash: \\`); // The backslash: \
 ```
 
 ## String length
@@ -131,16 +131,16 @@ alert( `The backslash: \\` ); // The backslash: \
 The `length` property has the string length:
 
 ```js run
-alert( `My\n`.length ); // 3
+alert(`My\n`.length); // 3
 ```
 
 Note that `\n` is a single "special" character, so the length is indeed `3`.
 
-```warn header="`length` is a property"
-People with a background in some other languages sometimes mistype by calling `str.length()` instead of just `str.length`. That doesn't work.
+```warn header="`length`is a property" People with a background in some other languages sometimes mistype by calling`str.length()`instead of just`str.length`. That doesn't work.
 
 Please note that `str.length` is a numeric property, not a function. There is no need to add parenthesis after it.
-```
+
+````
 
 ## Accessing characters
 
@@ -155,7 +155,7 @@ alert( str.charAt(0) ); // H
 
 // the last character
 alert( str[str.length - 1] ); // o
-```
+````
 
 The square brackets are a modern way of getting a character, while `charAt` exists mostly for historical reasons.
 
@@ -164,15 +164,15 @@ The only difference between them is that if no character is found, `[]` returns 
 ```js run
 let str = `Hello`;
 
-alert( str[1000] ); // undefined
-alert( str.charAt(1000) ); // '' (an empty string)
+alert(str[1000]); // undefined
+alert(str.charAt(1000)); // '' (an empty string)
 ```
 
 We can also iterate over characters using `for..of`:
 
 ```js run
-for (let char of "Hello") {
-  alert(char); // H,e,l,l,o (char becomes "H", then "e", then "l" etc)
+for (let char of 'Hello') {
+    alert(char); // H,e,l,l,o (char becomes "H", then "e", then "l" etc)
 }
 ```
 
@@ -186,7 +186,7 @@ Let's try it to show that it doesn't work:
 let str = 'Hi';
 
 str[0] = 'h'; // error
-alert( str[0] ); // doesn't work
+alert(str[0]); // doesn't work
 ```
 
 The usual workaround is to create a whole new string and assign it to `str` instead of the old one.
@@ -198,7 +198,7 @@ let str = 'Hi';
 
 str = 'h' + str[1]; // replace the string
 
-alert( str ); // hi
+alert(str); // hi
 ```
 
 In the following sections we'll see more examples of this.
@@ -208,14 +208,14 @@ In the following sections we'll see more examples of this.
 Methods [toLowerCase()](mdn:js/String/toLowerCase) and [toUpperCase()](mdn:js/String/toUpperCase) change the case:
 
 ```js run
-alert( 'Interface'.toUpperCase() ); // INTERFACE
-alert( 'Interface'.toLowerCase() ); // interface
+alert('Interface'.toUpperCase()); // INTERFACE
+alert('Interface'.toLowerCase()); // interface
 ```
 
 Or, if we want a single character lowercased:
 
 ```js
-alert( 'Interface'[0].toLowerCase() ); // 'i'
+alert('Interface'[0].toLowerCase()); // 'i'
 ```
 
 ## Searching for a substring
@@ -233,10 +233,10 @@ For instance:
 ```js run
 let str = 'Widget with id';
 
-alert( str.indexOf('Widget') ); // 0, because 'Widget' is found at the beginning
-alert( str.indexOf('widget') ); // -1, not found, the search is case-sensitive
+alert(str.indexOf('Widget')); // 0, because 'Widget' is found at the beginning
+alert(str.indexOf('widget')); // -1, not found, the search is case-sensitive
 
-alert( str.indexOf("id") ); // 1, "id" is found at the position 1 (..idget with id)
+alert(str.indexOf('id')); // 1, "id" is found at the position 1 (..idget with id)
 ```
 
 The optional second parameter allows us to start searching from a given position.
@@ -246,7 +246,7 @@ For instance, the first occurrence of `"id"` is at position `1`. To look for the
 ```js run
 let str = 'Widget with id';
 
-alert( str.indexOf('id', 2) ) // 12
+alert(str.indexOf('id', 2)); // 12
 ```
 
 If we're interested in all occurrences, we can run `indexOf` in a loop. Every new call is made with the position after the previous match:
@@ -258,11 +258,11 @@ let target = 'as'; // let's look for it
 
 let pos = 0;
 while (true) {
-  let foundPos = str.indexOf(target, pos);
-  if (foundPos == -1) break;
+    let foundPos = str.indexOf(target, pos);
+    if (foundPos == -1) break;
 
-  alert( `Found at ${foundPos}` );
-  pos = foundPos + 1; // continue the search from the next position
+    alert(`Found at ${foundPos}`);
+    pos = foundPos + 1; // continue the search from the next position
 }
 ```
 
@@ -284,7 +284,8 @@ while ((pos = str.indexOf(target, pos + 1)) != -1) {
 There is also a similar method [str.lastIndexOf(substr, position)](mdn:js/String/lastIndexOf) that searches from the end of a string to its beginning.
 
 It would list the occurrences in the reverse order.
-```
+
+````
 
 There is a slight inconvenience with `indexOf` in the `if` test. We can't put it in the `if` like this:
 
@@ -294,7 +295,7 @@ let str = "Widget with id";
 if (str.indexOf("Widget")) {
     alert("We found it"); // doesn't work!
 }
-```
+````
 
 The `alert` in the example above doesn't show because `str.indexOf("Widget")` returns `0` (meaning that it found the match at the starting position). Right, but `if` considers `0` to be `false`.
 
@@ -334,10 +335,10 @@ So, the test `if ( ~str.indexOf("...") )` is truthy only if the result of `index
 People use it to shorten `indexOf` checks:
 
 ```js run
-let str = "Widget";
+let str = 'Widget';
 
-if (~str.indexOf("Widget")) {
-  alert( 'Found it!' ); // works
+if (~str.indexOf('Widget')) {
+    alert('Found it!'); // works
 }
 ```
 
@@ -356,23 +357,23 @@ The more modern method [str.includes(substr, pos)](mdn:js/String/includes) retur
 It's the right choice if we need to test for the match, but don't need its position:
 
 ```js run
-alert( "Widget with id".includes("Widget") ); // true
+alert('Widget with id'.includes('Widget')); // true
 
-alert( "Hello".includes("Bye") ); // false
+alert('Hello'.includes('Bye')); // false
 ```
 
 The optional second argument of `str.includes` is the position to start searching from:
 
 ```js run
-alert( "Widget".includes("id") ); // true
-alert( "Widget".includes("id", 3) ); // false, from position 3 there is no "id"
+alert('Widget'.includes('id')); // true
+alert('Widget'.includes('id', 3)); // false, from position 3 there is no "id"
 ```
 
 The methods [str.startsWith](mdn:js/String/startsWith) and [str.endsWith](mdn:js/String/endsWith) do exactly what they say:
 
 ```js run
-alert( "Widget".startsWith("Wid") ); // true, "Widget" starts with "Wid"
-alert( "Widget".endsWith("get") ); // true, "Widget" ends with "get"
+alert('Widget'.startsWith('Wid')); // true, "Widget" starts with "Wid"
+alert('Widget'.endsWith('get')); // true, "Widget" ends with "get"
 ```
 
 ## Getting a substring
@@ -407,7 +408,7 @@ There are 3 methods in JavaScript to get a substring: `substring`, `substr` and 
     ```
 
 `str.substring(start [, end])`
-: Returns the part of the string *between* `start` and `end`.
+: Returns the part of the string _between_ `start` and `end`.
 
     This is almost the same as `slice`, but it allows `start` to be greater than `end`.
 
@@ -447,11 +448,11 @@ There are 3 methods in JavaScript to get a substring: `substring`, `substr` and 
 
 Let's recap these methods to avoid any confusion:
 
-| method | selects... | negatives |
-|--------|-----------|-----------|
-| `slice(start, end)` | from `start` to `end` (not including `end`) | allows negatives |
-| `substring(start, end)` | between `start` and `end` | negative values mean `0` |
-| `substr(start, length)` | from `start` get `length` characters | allows negative `start` |
+| method                  | selects...                                  | negatives                |
+| ----------------------- | ------------------------------------------- | ------------------------ |
+| `slice(start, end)`     | from `start` to `end` (not including `end`) | allows negatives         |
+| `substring(start, end)` | between `start` and `end`                   | negative values mean `0` |
+| `substr(start, length)` | from `start` get `length` characters        | allows negative `start`  |
 
 ```smart header="Which one to choose?"
 All of them can do the job. Formally, `substr` has a minor drawback: it is described not in the core JavaScript specification, but in Annex B, which covers browser-only features that exist mainly for historical reasons. So, non-browser environments may fail to support it. But in practice it works everywhere.
@@ -468,13 +469,13 @@ Although, there are some oddities.
 1. A lowercase letter is always greater than the uppercase:
 
     ```js run
-    alert( 'a' > 'Z' ); // true
+    alert('a' > 'Z'); // true
     ```
 
 2. Letters with diacritical marks are "out of order":
 
     ```js run
-    alert( 'Österreich' > 'Zealand' ); // true
+    alert('Österreich' > 'Zealand'); // true
     ```
 
     This may lead to strange results if we sort these country names. Usually people would expect `Zealand` to come after `Österreich` in the list.
@@ -512,9 +513,9 @@ Now let's see the characters with codes `65..220` (the latin alphabet and a litt
 let str = '';
 
 for (let i = 65; i <= 220; i++) {
-  str += String.fromCodePoint(i);
+    str += String.fromCodePoint(i);
 }
-alert( str );
+alert(str);
 // ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
 // ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜ
 ```
@@ -525,8 +526,8 @@ Now it becomes obvious why `a > Z`.
 
 The characters are compared by their numeric code. The greater code means that the character is greater. The code for `a` (97) is greater than the code for `Z` (90).
 
-- All lowercase letters go after uppercase letters because their codes are greater.
-- Some letters like `Ö` stand apart from the main alphabet. Here, its code is greater than anything from `a` to `z`.
+-   All lowercase letters go after uppercase letters because their codes are greater.
+-   Some letters like `Ö` stand apart from the main alphabet. Here, its code is greater than anything from `a` to `z`.
 
 ### Correct comparisons [#correct-comparisons]
 
@@ -540,14 +541,14 @@ It provides a special method to compare strings in different languages, followin
 
 The call [str.localeCompare(str2)](mdn:js/String/localeCompare) returns an integer indicating whether `str` is less, equal or greater than `str2` according to the language rules:
 
-- Returns a negative number if `str` is less than `str2`.
-- Returns a positive number if `str` is greater than `str2`.
-- Returns `0` if they are equivalent.
+-   Returns a negative number if `str` is less than `str2`.
+-   Returns a positive number if `str` is greater than `str2`.
+-   Returns `0` if they are equivalent.
 
 For instance:
 
 ```js run
-alert( 'Österreich'.localeCompare('Zealand') ); // -1
+alert('Österreich'.localeCompare('Zealand')); // -1
 ```
 
 This method actually has two additional arguments specified in [the documentation](mdn:js/String/localeCompare), which allows it to specify the language (by default taken from the environment, letter order depends on the language) and setup additional rules like case sensitivity or should `"a"` and `"á"` be treated as the same etc.
@@ -569,9 +570,9 @@ But 2 bytes only allow 65536 combinations and that's not enough for every possib
 The length of such symbols is `2`:
 
 ```js run
-alert( '𝒳'.length ); // 2, MATHEMATICAL SCRIPT CAPITAL X
-alert( '😂'.length ); // 2, FACE WITH TEARS OF JOY
-alert( '𩷶'.length ); // 2, a rare Chinese hieroglyph
+alert('𝒳'.length); // 2, MATHEMATICAL SCRIPT CAPITAL X
+alert('😂'.length); // 2, FACE WITH TEARS OF JOY
+alert('𩷶'.length); // 2, a rare Chinese hieroglyph
 ```
 
 Note that surrogate pairs did not exist at the time when JavaScript was created, and thus are not correctly processed by the language!
@@ -583,8 +584,8 @@ We actually have a single symbol in each of the strings above, but the `length` 
 Getting a symbol can be tricky, because surrogate pairs are treated as two characters:
 
 ```js run
-alert( '𝒳'[0] ); // strange symbols...
-alert( '𝒳'[1] ); // ...pieces of the surrogate pair
+alert('𝒳'[0]); // strange symbols...
+alert('𝒳'[1]); // ...pieces of the surrogate pair
 ```
 
 Note that pieces of the surrogate pair have no meaning without each other. So the alerts in the example above actually display garbage.
@@ -596,8 +597,8 @@ In the case above:
 ```js run
 // charCodeAt is not surrogate-pair aware, so it gives codes for parts
 
-alert( '𝒳'.charCodeAt(0).toString(16) ); // d835, between 0xd800 and 0xdbff
-alert( '𝒳'.charCodeAt(1).toString(16) ); // dcb3, between 0xdc00 and 0xdfff
+alert('𝒳'.charCodeAt(0).toString(16)); // d835, between 0xd800 and 0xdbff
+alert('𝒳'.charCodeAt(1).toString(16)); // dcb3, between 0xdc00 and 0xdfff
 ```
 
 You will find more ways to deal with surrogate pairs later in the chapter <info:iterable>. There are probably special libraries for that too, but nothing famous enough to suggest here.
@@ -613,7 +614,7 @@ To support arbitrary compositions, UTF-16 allows us to use several Unicode chara
 For instance, if we have `S` followed by the special "dot above" character (code `\u0307`), it is shown as Ṡ.
 
 ```js run
-alert( 'S\u0307' ); // Ṡ
+alert('S\u0307'); // Ṡ
 ```
 
 If we need an additional mark above the letter (or below it) -- no problem, just add the necessary mark character.
@@ -623,7 +624,7 @@ For instance, if we append a character "dot below" (code `\u0323`), then we'll h
 For example:
 
 ```js run
-alert( 'S\u0307\u0323' ); // Ṩ
+alert('S\u0307\u0323'); // Ṩ
 ```
 
 This provides great flexibility, but also an interesting problem: two characters may visually look the same, but be represented with different Unicode compositions.
@@ -634,9 +635,9 @@ For instance:
 let s1 = 'S\u0307\u0323'; // Ṩ, S + dot above + dot below
 let s2 = 'S\u0323\u0307'; // Ṩ, S + dot below + dot above
 
-alert( `s1: ${s1}, s2: ${s2}` );
+alert(`s1: ${s1}, s2: ${s2}`);
 
-alert( s1 == s2 ); // false though the characters look identical (?!)
+alert(s1 == s2); // false though the characters look identical (?!)
 ```
 
 To solve this, there exists a "Unicode normalization" algorithm that brings each string to the single "normal" form.
@@ -644,15 +645,15 @@ To solve this, there exists a "Unicode normalization" algorithm that brings each
 It is implemented by [str.normalize()](mdn:js/String/normalize).
 
 ```js run
-alert( "S\u0307\u0323".normalize() == "S\u0323\u0307".normalize() ); // true
+alert('S\u0307\u0323'.normalize() == 'S\u0323\u0307'.normalize()); // true
 ```
 
 It's funny that in our situation `normalize()` actually brings together a sequence of 3 characters to one: `\u1e68` (S with two dots).
 
 ```js run
-alert( "S\u0307\u0323".normalize().length ); // 1
+alert('S\u0307\u0323'.normalize().length); // 1
 
-alert( "S\u0307\u0323".normalize() == "\u1e68" ); // true
+alert('S\u0307\u0323'.normalize() == '\u1e68'); // true
 ```
 
 In reality, this is not always the case. The reason being that the symbol `Ṩ` is "common enough", so UTF-16 creators included it in the main table and gave it the code.
@@ -661,19 +662,19 @@ If you want to learn more about normalization rules and variants -- they are des
 
 ## Summary
 
-- There are 3 types of quotes. Backticks allow a string to span multiple lines and embed expressions `${…}`.
-- Strings in JavaScript are encoded using UTF-16.
-- We can use special characters like `\n` and insert letters by their Unicode using `\u...`.
-- To get a character, use: `[]`.
-- To get a substring, use: `slice` or `substring`.
-- To lowercase/uppercase a string, use: `toLowerCase/toUpperCase`.
-- To look for a substring, use: `indexOf`, or `includes/startsWith/endsWith` for simple checks.
-- To compare strings according to the language, use: `localeCompare`, otherwise they are compared by character codes.
+-   There are 3 types of quotes. Backticks allow a string to span multiple lines and embed expressions `${…}`.
+-   Strings in JavaScript are encoded using UTF-16.
+-   We can use special characters like `\n` and insert letters by their Unicode using `\u...`.
+-   To get a character, use: `[]`.
+-   To get a substring, use: `slice` or `substring`.
+-   To lowercase/uppercase a string, use: `toLowerCase/toUpperCase`.
+-   To look for a substring, use: `indexOf`, or `includes/startsWith/endsWith` for simple checks.
+-   To compare strings according to the language, use: `localeCompare`, otherwise they are compared by character codes.
 
 There are several other helpful methods in strings:
 
-- `str.trim()` -- removes ("trims") spaces from the beginning and end of the string.
-- `str.repeat(n)` -- repeats the string `n` times.
-- ...and more to be found in the [manual](mdn:js/String).
+-   `str.trim()` -- removes ("trims") spaces from the beginning and end of the string.
+-   `str.repeat(n)` -- repeats the string `n` times.
+-   ...and more to be found in the [manual](mdn:js/String).
 
 Strings also have methods for doing search/replace with regular expressions. But that's big topic, so it's explained in a separate tutorial section <info:regular-expressions>.

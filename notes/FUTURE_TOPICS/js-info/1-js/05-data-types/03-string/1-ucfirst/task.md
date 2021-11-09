@@ -7,6 +7,5 @@ importance: 5
 Write a function `ucFirst(str)` that returns the string `str` with the uppercased first character, for instance:
 
 ```js
-ucFirst("john") == "John";
+ucFirst('john') == 'John';
 ```
-

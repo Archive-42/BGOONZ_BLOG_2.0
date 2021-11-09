@@ -1,7 +1,7 @@
 Try running it:
 
 ```js run
-let str = "Hello";
+let str = 'Hello';
 
 str.test = 5; // (*)
 

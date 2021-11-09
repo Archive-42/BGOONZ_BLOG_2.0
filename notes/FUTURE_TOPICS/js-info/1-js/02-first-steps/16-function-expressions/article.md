@@ -6,7 +6,7 @@ The syntax that we used before is called a _Function Declaration_:
 
 ```js
 function sayHi() {
-  alert("Hello");
+    alert('Hello');
 }
 ```
 
@@ -16,7 +16,7 @@ It looks like this:
 
 ```js
 let sayHi = function () {
-  alert("Hello");
+    alert('Hello');
 };
 ```
 
@@ -48,8 +48,8 @@ We can copy a function to another variable:
 
 ```js run no-beautify
 function sayHi() {
-  // (1) create
-  alert("Hello");
+    // (1) create
+    alert('Hello');
 }
 
 let func = sayHi; // (2) copy
@@ -68,7 +68,7 @@ Note that we could also have used a Function Expression to declare `sayHi`, in t
 
 ```js
 let sayHi = function () {
-  alert("Hello");
+    alert('Hello');
 };
 
 let func = sayHi;
@@ -173,23 +173,23 @@ Let's formulate the key differences between Function Declarations and Expression
 
 First, the syntax: how to differentiate between them in the code.
 
-- _Function Declaration:_ a function, declared as a separate statement, in the main code flow.
+-   _Function Declaration:_ a function, declared as a separate statement, in the main code flow.
 
-  ```js
-  // Function Declaration
-  function sum(a, b) {
-    return a + b;
-  }
-  ```
+    ```js
+    // Function Declaration
+    function sum(a, b) {
+        return a + b;
+    }
+    ```
 
-- _Function Expression:_ a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the "assignment expression" `=`:
+-   _Function Expression:_ a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the "assignment expression" `=`:
 
-  ```js
-  // Function Expression
-  let sum = function (a, b) {
-    return a + b;
-  };
-  ```
+    ```js
+    // Function Expression
+    let sum = function (a, b) {
+        return a + b;
+    };
+    ```
 
 The more subtle difference is _when_ a function is created by the JavaScript engine.
 
@@ -356,11 +356,11 @@ That's also better for readability, as it's easier to look up `function f(…) {
 
 ## Summary
 
-- Functions are values. They can be assigned, copied or declared in any place of the code.
-- If the function is declared as a separate statement in the main code flow, that's called a "Function Declaration".
-- If the function is created as a part of an expression, it's called a "Function Expression".
-- Function Declarations are processed before the code block is executed. They are visible everywhere in the block.
-- Function Expressions are created when the execution flow reaches them.
+-   Functions are values. They can be assigned, copied or declared in any place of the code.
+-   If the function is declared as a separate statement in the main code flow, that's called a "Function Declaration".
+-   If the function is created as a part of an expression, it's called a "Function Expression".
+-   Function Declarations are processed before the code block is executed. They are visible everywhere in the block.
+-   Function Expressions are created when the execution flow reaches them.
 
 In most cases when we need to declare a function, a Function Declaration is preferable, because it is visible prior to the declaration itself. That gives us more flexibility in code organization, and is usually more readable.
 

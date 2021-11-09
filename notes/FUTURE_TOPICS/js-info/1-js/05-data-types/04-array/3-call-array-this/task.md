@@ -7,12 +7,11 @@ importance: 5
 What is the result? Why?
 
 ```js
-let arr = ["a", "b"];
+let arr = ['a', 'b'];
 
-arr.push(function() {
-  alert( this );
-})
+arr.push(function () {
+    alert(this);
+});
 
 arr[2](); // ?
 ```
-

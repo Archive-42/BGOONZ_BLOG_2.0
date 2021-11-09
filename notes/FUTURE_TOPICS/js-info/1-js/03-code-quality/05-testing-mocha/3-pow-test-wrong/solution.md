@@ -11,18 +11,18 @@ It would be much better to break the test into multiple `it` blocks with clearly
 Like this:
 
 ```js
-describe("Raises x to power n", function () {
-  it("5 in the power of 1 equals 5", function () {
-    assert.equal(pow(5, 1), 5);
-  });
+describe('Raises x to power n', function () {
+    it('5 in the power of 1 equals 5', function () {
+        assert.equal(pow(5, 1), 5);
+    });
 
-  it("5 in the power of 2 equals 25", function () {
-    assert.equal(pow(5, 2), 25);
-  });
+    it('5 in the power of 2 equals 25', function () {
+        assert.equal(pow(5, 2), 25);
+    });
 
-  it("5 in the power of 3 equals 125", function () {
-    assert.equal(pow(5, 3), 125);
-  });
+    it('5 in the power of 3 equals 125', function () {
+        assert.equal(pow(5, 3), 125);
+    });
 });
 ```
 

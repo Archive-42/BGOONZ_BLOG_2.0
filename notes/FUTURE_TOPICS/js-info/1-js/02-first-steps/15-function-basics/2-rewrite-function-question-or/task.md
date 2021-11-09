@@ -10,11 +10,11 @@ Otherwise it asks for a confirmation and returns its result.
 
 ```js
 function checkAge(age) {
-  if (age > 18) {
-    return true;
-  } else {
-    return confirm("Did parents allow you?");
-  }
+    if (age > 18) {
+        return true;
+    } else {
+        return confirm('Did parents allow you?');
+    }
 }
 ```
 

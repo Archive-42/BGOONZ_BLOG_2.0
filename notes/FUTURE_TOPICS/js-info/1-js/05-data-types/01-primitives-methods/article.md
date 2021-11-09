@@ -6,22 +6,22 @@ Let's look at the key distinctions between primitives and objects.
 
 A primitive
 
-- Is a value of a primitive type.
-- There are 7 primitive types: `string`, `number`, `bigint`, `boolean`, `symbol`, `null` and `undefined`.
+-   Is a value of a primitive type.
+-   There are 7 primitive types: `string`, `number`, `bigint`, `boolean`, `symbol`, `null` and `undefined`.
 
 An object
 
-- Is capable of storing multiple values as properties.
-- Can be created with `{}`, for instance: `{name: "John", age: 30}`. There are other kinds of objects in JavaScript: functions, for example, are objects.
+-   Is capable of storing multiple values as properties.
+-   Can be created with `{}`, for instance: `{name: "John", age: 30}`. There are other kinds of objects in JavaScript: functions, for example, are objects.
 
 One of the best things about objects is that we can store a function as one of its properties.
 
 ```js run
 let john = {
-  name: "John",
-  sayHi: function () {
-    alert("Hi buddy!");
-  },
+    name: 'John',
+    sayHi: function () {
+        alert('Hi buddy!');
+    }
 };
 
 john.sayHi(); // Hi buddy!
@@ -39,8 +39,8 @@ Objects are "heavier" than primitives. They require additional resources to supp
 
 Here's the paradox faced by the creator of JavaScript:
 
-- There are many things one would want to do with a primitive like a string or a number. It would be great to access them using methods.
-- Primitives must be as fast and lightweight as possible.
+-   There are many things one would want to do with a primitive like a string or a number. It would be great to access them using methods.
+-   Primitives must be as fast and lightweight as possible.
 
 The solution looks a little bit awkward, but here it is:
 
@@ -55,7 +55,7 @@ For instance, there exists a string method [str.toUpperCase()](https://developer
 Here's how it works:
 
 ```js run
-let str = "Hello";
+let str = 'Hello';
 
 alert(str.toUpperCase()); // HELLO
 ```
@@ -98,8 +98,8 @@ Objects are always truthy in `if`, so here the alert will show up:
 let zero = new Number(0);
 
 if (zero) {
-  // zero is true, because it's an object
-  alert("zero is truthy!?!");
+    // zero is true, because it's an object
+    alert('zero is truthy!?!');
 }
 ```
 
@@ -108,7 +108,7 @@ On the other hand, using the same functions `String/Number/Boolean` without `new
 For example, this is entirely valid:
 
 ```js
-let num = Number("123"); // convert a string to number
+let num = Number('123'); // convert a string to number
 ```
 
 `````
@@ -125,5 +125,5 @@ alert(null.test); // error
 
 ## Summary
 
-- Primitives except `null` and `undefined` provide many helpful methods. We will study those in the upcoming chapters.
-- Formally, these methods work via temporary objects, but JavaScript engines are well tuned to optimize that internally, so they are not expensive to call.
+-   Primitives except `null` and `undefined` provide many helpful methods. We will study those in the upcoming chapters.
+-   Formally, these methods work via temporary objects, but JavaScript engines are well tuned to optimize that internally, so they are not expensive to call.

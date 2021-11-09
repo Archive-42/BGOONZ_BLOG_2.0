@@ -73,17 +73,17 @@ And if we have a long "code sheet" like this:
 ```js
 // here we add whiskey
 for (let i = 0; i < 10; i++) {
-  let drop = getWhiskey();
-  smell(drop);
-  add(drop, glass);
+    let drop = getWhiskey();
+    smell(drop);
+    add(drop, glass);
 }
 
 // here we add juice
 for (let t = 0; t < 3; t++) {
-  let tomato = getTomato();
-  examine(tomato);
-  let juice = press(tomato);
-  add(juice, glass);
+    let tomato = getTomato();
+    examine(tomato);
+    let juice = press(tomato);
+    add(juice, glass);
 }
 
 // ...
@@ -96,17 +96,17 @@ addWhiskey(glass);
 addJuice(glass);
 
 function addWhiskey(container) {
-  for (let i = 0; i < 10; i++) {
-    let drop = getWhiskey();
-    //...
-  }
+    for (let i = 0; i < 10; i++) {
+        let drop = getWhiskey();
+        //...
+    }
 }
 
 function addJuice(container) {
-  for (let t = 0; t < 3; t++) {
-    let tomato = getTomato();
-    //...
-  }
+    for (let t = 0; t < 3; t++) {
+        let tomato = getTomato();
+        //...
+    }
 }
 ```
 
@@ -168,13 +168,13 @@ Good comments allow us to maintain the code well, come back to it after a delay 
 
 **Comment this:**
 
-- Overall architecture, high-level view.
-- Function usage.
-- Important solutions, especially when not immediately obvious.
+-   Overall architecture, high-level view.
+-   Function usage.
+-   Important solutions, especially when not immediately obvious.
 
 **Avoid comments:**
 
-- That tell "how code works" and "what it does".
-- Put them in only if it's impossible to make the code so simple and self-descriptive that it doesn't require them.
+-   That tell "how code works" and "what it does".
+-   Put them in only if it's impossible to make the code so simple and self-descriptive that it doesn't require them.
 
 Comments are also used for auto-documenting tools like JSDoc3: they read them and generate HTML-docs (or docs in another format).

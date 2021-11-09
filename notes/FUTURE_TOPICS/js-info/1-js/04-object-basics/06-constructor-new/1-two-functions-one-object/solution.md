@@ -8,10 +8,10 @@ So they can, for instance, return the same externally defined object `obj`:
 let obj = {};
 
 function A() {
-  return obj;
+    return obj;
 }
 function B() {
-  return obj;
+    return obj;
 }
 
 alert(new A() == new B()); // true

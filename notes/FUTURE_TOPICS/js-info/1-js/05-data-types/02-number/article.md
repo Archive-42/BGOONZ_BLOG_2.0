@@ -104,13 +104,13 @@ The `base` can vary from `2` to `36`. By default it's `10`.
 
 Common use cases for this are:
 
-- **base=16** is used for hex colors, character encodings etc, digits can be `0..9` or `A..F`.
-- **base=2** is mostly for debugging bitwise operations, digits can be `0` or `1`.
-- **base=36** is the maximum, digits can be `0..9` or `A..Z`. The whole latin alphabet is used to represent a number. A funny, but useful case for `36` is when we need to turn a long numeric identifier into something shorter, for example to make a short url. Can simply represent it in the numeral system with base `36`:
+-   **base=16** is used for hex colors, character encodings etc, digits can be `0..9` or `A..F`.
+-   **base=2** is mostly for debugging bitwise operations, digits can be `0` or `1`.
+-   **base=36** is the maximum, digits can be `0..9` or `A..Z`. The whole latin alphabet is used to represent a number. A funny, but useful case for `36` is when we need to turn a long numeric identifier into something shorter, for example to make a short url. Can simply represent it in the numeral system with base `36`:
 
-  ```js run
-  alert((123456).toString(36)); // 2n9c
-  ```
+    ```js run
+    alert((123456).toString(36)); // 2n9c
+    ```
 
 ```warn header="Two dots to call a method"
 Please note that two dots in `123456..toString(36)` is not a typo. If we want to call a method directly on a number, like `toString` in the example above, then we need to place two dots `..` after it.
@@ -156,36 +156,36 @@ There are two ways to do so:
 
 1. Multiply-and-divide.
 
-   For example, to round the number to the 2nd digit after the decimal, we can multiply the number by `100` (or a bigger power of 10), call the rounding function and then divide it back.
+    For example, to round the number to the 2nd digit after the decimal, we can multiply the number by `100` (or a bigger power of 10), call the rounding function and then divide it back.
 
-   ```js run
-   let num = 1.23456;
+    ```js run
+    let num = 1.23456;
 
-   alert(Math.round(num * 100) / 100); // 1.23456 -> 123.456 -> 123 -> 1.23
-   ```
+    alert(Math.round(num * 100) / 100); // 1.23456 -> 123.456 -> 123 -> 1.23
+    ```
 
 2. The method [toFixed(n)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) rounds the number to `n` digits after the point and returns a string representation of the result.
 
-   ```js run
-   let num = 12.34;
-   alert(num.toFixed(1)); // "12.3"
-   ```
+    ```js run
+    let num = 12.34;
+    alert(num.toFixed(1)); // "12.3"
+    ```
 
-   This rounds up or down to the nearest value, similar to `Math.round`:
+    This rounds up or down to the nearest value, similar to `Math.round`:
 
-   ```js run
-   let num = 12.36;
-   alert(num.toFixed(1)); // "12.4"
-   ```
+    ```js run
+    let num = 12.36;
+    alert(num.toFixed(1)); // "12.4"
+    ```
 
-   Please note that result of `toFixed` is a string. If the decimal part is shorter than required, zeroes are appended to the end:
+    Please note that result of `toFixed` is a string. If the decimal part is shorter than required, zeroes are appended to the end:
 
-   ```js run
-   let num = 12.34;
-   alert(num.toFixed(5)); // "12.34000", added zeroes to make exactly 5 digits
-   ```
+    ```js run
+    let num = 12.34;
+    alert(num.toFixed(5)); // "12.34000", added zeroes to make exactly 5 digits
+    ```
 
-   We can convert it to a number using the unary plus or a `Number()` call: `+num.toFixed(5)`.
+    We can convert it to a number using the unary plus or a `Number()` call: `+num.toFixed(5)`.
 
 ## Imprecise calculations
 
@@ -293,36 +293,36 @@ In most cases the distinction is unnoticeable, because operators are suited to t
 
 Remember these two special numeric values?
 
-- `Infinity` (and `-Infinity`) is a special numeric value that is greater (less) than anything.
-- `NaN` represents an error.
+-   `Infinity` (and `-Infinity`) is a special numeric value that is greater (less) than anything.
+-   `NaN` represents an error.
 
 They belong to the type `number`, but are not "normal" numbers, so there are special functions to check for them:
 
-- `isNaN(value)` converts its argument to a number and then tests it for being `NaN`:
+-   `isNaN(value)` converts its argument to a number and then tests it for being `NaN`:
 
-  ```js run
-  alert(isNaN(NaN)); // true
-  alert(isNaN("str")); // true
-  ```
+    ```js run
+    alert(isNaN(NaN)); // true
+    alert(isNaN('str')); // true
+    ```
 
-  But do we need this function? Can't we just use the comparison `=== NaN`? Sorry, but the answer is no. The value `NaN` is unique in that it does not equal anything, including itself:
+    But do we need this function? Can't we just use the comparison `=== NaN`? Sorry, but the answer is no. The value `NaN` is unique in that it does not equal anything, including itself:
 
-  ```js run
-  alert(NaN === NaN); // false
-  ```
+    ```js run
+    alert(NaN === NaN); // false
+    ```
 
-- `isFinite(value)` converts its argument to a number and returns `true` if it's a regular number, not `NaN/Infinity/-Infinity`:
+-   `isFinite(value)` converts its argument to a number and returns `true` if it's a regular number, not `NaN/Infinity/-Infinity`:
 
-  ```js run
-  alert(isFinite("15")); // true
-  alert(isFinite("str")); // false, because a special value: NaN
-  alert(isFinite(Infinity)); // false, because a special value: Infinity
-  ```
+    ```js run
+    alert(isFinite('15')); // true
+    alert(isFinite('str')); // false, because a special value: NaN
+    alert(isFinite(Infinity)); // false, because a special value: Infinity
+    ```
 
 Sometimes `isFinite` is used to validate whether a string value is a regular number:
 
 ```js run
-let num = +prompt("Enter a number", "");
+let num = +prompt('Enter a number', '');
 
 // will be true unless you enter Infinity, -Infinity or not a number
 alert(isFinite(num));
@@ -361,26 +361,26 @@ That's what `parseInt` and `parseFloat` are for.
 They "read" a number from a string until they can't. In case of an error, the gathered number is returned. The function `parseInt` returns an integer, whilst `parseFloat` will return a floating-point number:
 
 ```js run
-alert(parseInt("100px")); // 100
-alert(parseFloat("12.5em")); // 12.5
+alert(parseInt('100px')); // 100
+alert(parseFloat('12.5em')); // 12.5
 
-alert(parseInt("12.3")); // 12, only the integer part is returned
-alert(parseFloat("12.3.4")); // 12.3, the second point stops the reading
+alert(parseInt('12.3')); // 12, only the integer part is returned
+alert(parseFloat('12.3.4')); // 12.3, the second point stops the reading
 ```
 
 There are situations when `parseInt/parseFloat` will return `NaN`. It happens when no digits could be read:
 
 ```js run
-alert(parseInt("a123")); // NaN, the first symbol stops the process
+alert(parseInt('a123')); // NaN, the first symbol stops the process
 ```
 
 ````smart header="The second argument of `parseInt(str, radix)`" The `parseInt()`function has an optional second parameter. It specifies the base of the numeral system, so`parseInt` can also parse strings of hex numbers, binary numbers and so on:
 
 ```js run
-alert(parseInt("0xff", 16)); // 255
-alert(parseInt("ff", 16)); // 255, without 0x also works
+alert(parseInt('0xff', 16)); // 255
+alert(parseInt('ff', 16)); // 255, without 0x also works
 
-alert(parseInt("2n9c", 36)); // 123456
+alert(parseInt('2n9c', 36)); // 123456
 ```
 
 ````

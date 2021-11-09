@@ -8,9 +8,9 @@ We have an object storing salaries of our team:
 
 ```js
 let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130,
+    John: 100,
+    Ann: 160,
+    Pete: 130
 };
 ```
 

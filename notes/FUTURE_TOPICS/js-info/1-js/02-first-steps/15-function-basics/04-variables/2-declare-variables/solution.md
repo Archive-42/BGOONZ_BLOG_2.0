@@ -3,7 +3,7 @@
 That's simple:
 
 ```js
-let ourPlanetName = "Earth";
+let ourPlanetName = 'Earth';
 ```
 
 Note, we could use a shorter name `planet`, but it might not be obvious what planet it refers to. It's nice to be more verbose. At least until the variable isNotTooLong.
@@ -11,7 +11,7 @@ Note, we could use a shorter name `planet`, but it might not be obvious what pla
 ## The name of the current visitor
 
 ```js
-let currentUserName = "John";
+let currentUserName = 'John';
 ```
 
 Again, we could shorten that to `userName` if we know for sure that the user is current.

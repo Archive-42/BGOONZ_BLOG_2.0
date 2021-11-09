@@ -35,8 +35,8 @@ For instance, the number `1` is treated as `true`, the number `0` as `false`:
 
 ```js run
 if (1 || 0) {
-  // works just like if( true || false )
-  alert("truthy!");
+    // works just like if( true || false )
+    alert('truthy!');
 }
 ```
 
@@ -61,7 +61,7 @@ let hour = 12;
 let isWeekend = true;
 
 if (hour < 10 || hour > 18 || isWeekend) {
-  alert("The office is closed."); // it is the weekend
+    alert('The office is closed.'); // it is the weekend
 }
 ```
 
@@ -79,9 +79,9 @@ result = value1 || value2 || value3;
 
 The OR `||` operator does the following:
 
-- Evaluates operands from left to right.
-- For each operand, converts it to boolean. If the result is `true`, stops and returns the original value of that operand.
-- If all operands have been evaluated (i.e. all were `false`), returns the last operand.
+-   Evaluates operands from left to right.
+-   For each operand, converts it to boolean. If the result is `true`, stops and returns the original value of that operand.
+-   If all operands have been evaluated (i.e. all were `false`), returns the last operand.
 
 A value is returned in its original form, without the conversion.
 
@@ -102,40 +102,40 @@ This leads to some interesting usage compared to a "pure, classical, boolean-onl
 
 1. **Getting the first truthy value from a list of variables or expressions.**
 
-   For instance, we have `firstName`, `lastName` and `nickName` variables, all optional (i.e. can be undefined or have falsy values).
+    For instance, we have `firstName`, `lastName` and `nickName` variables, all optional (i.e. can be undefined or have falsy values).
 
-   Let's use OR `||` to choose the one that has the data and show it (or `"Anonymous"` if nothing set):
+    Let's use OR `||` to choose the one that has the data and show it (or `"Anonymous"` if nothing set):
 
-   ```js run
-   let firstName = "";
-   let lastName = "";
-   let nickName = "SuperCoder";
+    ```js run
+    let firstName = "";
+    let lastName = "";
+    let nickName = "SuperCoder";
 
-   *!*
-   alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder
-   */!*
-   ```
+    *!*
+    alert( firstName || lastName || nickName || "Anonymous"); // SuperCoder
+    */!*
+    ```
 
-   If all variables were falsy, `"Anonymous"` would show up.
+    If all variables were falsy, `"Anonymous"` would show up.
 
 2. **Short-circuit evaluation.**
 
-   Another feature of OR `||` operator is the so-called "short-circuit" evaluation.
+    Another feature of OR `||` operator is the so-called "short-circuit" evaluation.
 
-   It means that `||` processes its arguments until the first truthy value is reached, and then the value is returned immediately, without even touching the other argument.
+    It means that `||` processes its arguments until the first truthy value is reached, and then the value is returned immediately, without even touching the other argument.
 
-   That importance of this feature becomes obvious if an operand isn't just a value, but an expression with a side effect, such as a variable assignment or a function call.
+    That importance of this feature becomes obvious if an operand isn't just a value, but an expression with a side effect, such as a variable assignment or a function call.
 
-   In the example below, only the second message is printed:
+    In the example below, only the second message is printed:
 
-   ```js run no-beautify
-   *!*true*/!* || alert("not printed");
-   *!*false*/!* || alert("printed");
-   ```
+    ```js run no-beautify
+    *!*true*/!* || alert("not printed");
+    *!*false*/!* || alert("printed");
+    ```
 
-   In the first line, the OR `||` operator stops the evaluation immediately upon seeing `true`, so the `alert` isn't run.
+    In the first line, the OR `||` operator stops the evaluation immediately upon seeing `true`, so the `alert` isn't run.
 
-   Sometimes, people use this feature to execute commands only if the condition on the left part is falsy.
+    Sometimes, people use this feature to execute commands only if the condition on the left part is falsy.
 
 ## && (AND)
 
@@ -161,7 +161,7 @@ let hour = 12;
 let minute = 30;
 
 if (hour == 12 && minute == 30) {
-  alert("The time is 12:30");
+    alert('The time is 12:30');
 }
 ```
 
@@ -169,8 +169,8 @@ Just as with OR, any value is allowed as an operand of AND:
 
 ```js run
 if (1 && 0) {
-  // evaluated as true && false
-  alert("won't work, because the result is falsy");
+    // evaluated as true && false
+    alert("won't work, because the result is falsy");
 }
 ```
 
@@ -184,9 +184,9 @@ result = value1 && value2 && value3;
 
 The AND `&&` operator does the following:
 
-- Evaluates operands from left to right.
-- For each operand, converts it to a boolean. If the result is `false`, stops and returns the original value of that operand.
-- If all operands have been evaluated (i.e. all were truthy), returns the last operand.
+-   Evaluates operands from left to right.
+-   For each operand, converts it to a boolean. If the result is `false`, stops and returns the original value of that operand.
+-   If all operands have been evaluated (i.e. all were truthy), returns the last operand.
 
 In other words, AND returns the first falsy value or the last value if none were found.
 
@@ -203,7 +203,7 @@ alert(1 && 5); // 5
 // if the first operand is falsy,
 // AND returns it. The second operand is ignored
 alert(null && 5); // null
-alert(0 && "no matter what"); // 0
+alert(0 && 'no matter what'); // 0
 ```
 
 We can also pass several values in a row. See how the first falsy one is returned:
@@ -273,7 +273,7 @@ alert(!0); // true
 A double NOT `!!` is sometimes used for converting a value to boolean type:
 
 ```js run
-alert(!!"non-empty string"); // true
+alert(!!'non-empty string'); // true
 alert(!!null); // false
 ```
 
@@ -282,7 +282,7 @@ That is, the first NOT converts the value to boolean and returns the inverse, an
 There's a little more verbose way to do the same thing -- a built-in `Boolean` function:
 
 ```js run
-alert(Boolean("non-empty string")); // true
+alert(Boolean('non-empty string')); // true
 alert(Boolean(null)); // false
 ```
 

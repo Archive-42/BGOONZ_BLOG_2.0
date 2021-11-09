@@ -54,10 +54,10 @@ If the team rules forbid the use of one-letter and vague names -- shorten them, 
 
 Like this:
 
-- `list` -> `lst`.
-- `userAgent` -> `ua`.
-- `browser` -> `brsr`.
-- ...etc
+-   `list` -> `lst`.
+-   `userAgent` -> `ua`.
+-   `browser` -> `brsr`.
+-   ...etc
 
 Only the one with truly good intuition will be able to understand such names. Try to shorten everything. Only a worthy person should be able to uphold the development of your code.
 
@@ -72,21 +72,21 @@ The great image has no form.
 
 While choosing a name try to use the most abstract word. Like `obj`, `data`, `value`, `item`, `elem` and so on.
 
-- **The ideal name for a variable is `data`.** Use it everywhere you can. Indeed, every variable holds _data_, right?
+-   **The ideal name for a variable is `data`.** Use it everywhere you can. Indeed, every variable holds _data_, right?
 
-  ...But what to do if `data` is already taken? Try `value`, it's also universal. After all, a variable eventually gets a _value_.
+    ...But what to do if `data` is already taken? Try `value`, it's also universal. After all, a variable eventually gets a _value_.
 
-- **Name a variable by its type: `str`, `num`...**
+-   **Name a variable by its type: `str`, `num`...**
 
-  Give them a try. A young initiate may wonder -- are such names really useful for a ninja? Indeed, they are!
+    Give them a try. A young initiate may wonder -- are such names really useful for a ninja? Indeed, they are!
 
-  Sure, the variable name still means something. It says what's inside the variable: a string, a number or something else. But when an outsider tries to understand the code, they'll be surprised to see that there's actually no information at all! And will ultimately fail to alter your well-thought code.
+    Sure, the variable name still means something. It says what's inside the variable: a string, a number or something else. But when an outsider tries to understand the code, they'll be surprised to see that there's actually no information at all! And will ultimately fail to alter your well-thought code.
 
-  The value type is easy to find out by debugging. But what's the meaning of the variable? Which string/number does it store?
+    The value type is easy to find out by debugging. But what's the meaning of the variable? Which string/number does it store?
 
-  There's just no way to figure out without a good meditation!
+    There's just no way to figure out without a good meditation!
 
-- **...But what if there are no more such names?** Just add a number: `data1, item2, elem5`...
+-   **...But what if there are no more such names?** Just add a number: `data1, item2, elem5`...
 
 ## Attention test
 
@@ -141,11 +141,11 @@ For instance:
 
 ```js
 function ninjaFunction(elem) {
-  // 20 lines of code working with elem
+    // 20 lines of code working with elem
 
-  elem = clone(elem);
+    elem = clone(elem);
 
-  // 20 more lines, now working with the clone of the elem!
+    // 20 more lines, now working with the clone of the elem!
 }
 ```
 
@@ -228,6 +228,6 @@ Imagine, another developer wants only to check the email, and not output any mes
 
 All "pieces of advice" above are from the real code... Sometimes, written by experienced developers. Maybe even more experienced than you are ;)
 
-- Follow some of them, and your code will become full of surprises.
-- Follow many of them, and your code will become truly yours, no one would want to change it.
-- Follow all, and your code will become a valuable lesson for young developers looking for enlightenment.
+-   Follow some of them, and your code will become full of surprises.
+-   Follow many of them, and your code will become truly yours, no one would want to change it.
+-   Follow all, and your code will become a valuable lesson for young developers looking for enlightenment.

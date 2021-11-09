@@ -26,9 +26,9 @@ switch(x) {
 }
 ```
 
-- The value of `x` is checked for a strict equality to the value from the first `case` (that is, `value1`) then to the second (`value2`) and so on.
-- If the equality is found, `switch` starts to execute the code starting from the corresponding `case`, until the nearest `break` (or until the end of `switch`).
-- If no case is matched then the `default` code is executed (if it exists).
+-   The value of `x` is checked for a strict equality to the value from the first `case` (that is, `value1`) then to the second (`value2`) and so on.
+-   If the equality is found, `switch` starts to execute the code starting from the corresponding `case`, until the nearest `break` (or until the end of `switch`).
+-   If no case is matched then the `default` code is executed (if it exists).
 
 ## An example
 
@@ -82,8 +82,8 @@ switch (a) {
 In the example above we'll see sequential execution of three `alert`s:
 
 ```js
-alert("Exactly!");
-alert("Too big");
+alert('Exactly!');
+alert('Too big');
 alert("I don't know such values");
 ```
 

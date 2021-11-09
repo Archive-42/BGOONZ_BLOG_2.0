@@ -4,10 +4,10 @@ Try it:
 
 ```js run
 function makeUser() {
-  return {
-    name: "John",
-    ref: this,
-  };
+    return {
+        name: 'John',
+        ref: this
+    };
 }
 
 let user = makeUser();
@@ -27,7 +27,7 @@ We can rewrite the function and return the same `this` with `undefined` value:
 
 ```js run
 function makeUser() {
-  return this; // this time there's no object literal
+    return this; // this time there's no object literal
 }
 
 alert(makeUser().name); // Error: Cannot read property 'name' of undefined

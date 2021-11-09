@@ -12,8 +12,8 @@ The `while` loop has the following syntax:
 
 ```js
 while (condition) {
-  // code
-  // so-called "loop body"
+    // code
+    // so-called "loop body"
 }
 ```
 
@@ -24,9 +24,9 @@ For instance, the loop below outputs `i` while `i < 3`:
 ```js run
 let i = 0;
 while (i < 3) {
-  // shows 0, then 1, then 2
-  alert(i);
-  i++;
+    // shows 0, then 1, then 2
+    alert(i);
+    i++;
 }
 ```
 
@@ -65,7 +65,7 @@ The condition check can be moved _below_ the loop body using the `do..while` syn
 
 ```js
 do {
-  // loop body
+    // loop body
 } while (condition);
 ```
 
@@ -76,8 +76,8 @@ For example:
 ```js run
 let i = 0;
 do {
-  alert(i);
-  i++;
+    alert(i);
+    i++;
 } while (i < 3);
 ```
 
@@ -91,7 +91,7 @@ It looks like this:
 
 ```js
 for (begin; condition; step) {
-  // ... loop body ...
+    // ... loop body ...
 }
 ```
 
@@ -99,8 +99,8 @@ Let's learn the meaning of these parts by example. The loop below runs `alert(i)
 
 ```js run
 for (let i = 0; i < 3; i++) {
-  // shows 0, then 1, then 2
-  alert(i);
+    // shows 0, then 1, then 2
+    alert(i);
 }
 ```
 
@@ -136,18 +136,18 @@ Here's exactly what happens in our case:
 let i = 0;
 // if condition → run body and run step
 if (i < 3) {
-  alert(i);
-  i++;
+    alert(i);
+    i++;
 }
 // if condition → run body and run step
 if (i < 3) {
-  alert(i);
-  i++;
+    alert(i);
+    i++;
 }
 // if condition → run body and run step
 if (i < 3) {
-  alert(i);
-  i++;
+    alert(i);
+    i++;
 }
 // ...finish, because now i == 3
 ```
@@ -188,8 +188,8 @@ Like here:
 let i = 0; // we have i already declared and assigned
 
 for (; i < 3; i++) {
-  // no need for "begin"
-  alert(i); // 0, 1, 2
+    // no need for "begin"
+    alert(i); // 0, 1, 2
 }
 ```
 
@@ -199,7 +199,7 @@ We can also remove the `step` part:
 let i = 0;
 
 for (; i < 3; ) {
-  alert(i++);
+    alert(i++);
 }
 ```
 
@@ -209,7 +209,7 @@ We can actually remove everything, creating an infinite loop:
 
 ```js
 for (;;) {
-  // repeats without limits
+    // repeats without limits
 }
 ```
 
@@ -269,9 +269,9 @@ A loop that shows odd values could look like this:
 
 ```js run
 for (let i = 0; i < 10; i++) {
-  if (i % 2) {
-    alert(i);
-  }
+    if (i % 2) {
+        alert(i);
+    }
 }
 ```
 
@@ -314,14 +314,14 @@ For example, in the code below we loop over `i` and `j`, prompting for the coord
 
 ```js run no-beautify
 for (let i = 0; i < 3; i++) {
-  for (let j = 0; j < 3; j++) {
-    let input = prompt(`Value at coords (${i},${j})`, "");
+    for (let j = 0; j < 3; j++) {
+        let input = prompt(`Value at coords (${i},${j})`, '');
 
-    // what if we want to exit from here to Done (below)?
-  }
+        // what if we want to exit from here to Done (below)?
+    }
 }
 
-alert("Done!");
+alert('Done!');
 ```
 
 We need a way to stop the process if the user cancels the input.
@@ -395,9 +395,9 @@ A `continue` is only possible from inside a loop.
 
 We covered 3 types of loops:
 
-- `while` -- The condition is checked before each iteration.
-- `do..while` -- The condition is checked after each iteration.
-- `for (;;)` -- The condition is checked before each iteration, additional settings available.
+-   `while` -- The condition is checked before each iteration.
+-   `do..while` -- The condition is checked after each iteration.
+-   `for (;;)` -- The condition is checked before each iteration, additional settings available.
 
 To make an "infinite" loop, usually the `while(true)` construct is used. Such a loop, just like any other, can be stopped with the `break` directive.
 
