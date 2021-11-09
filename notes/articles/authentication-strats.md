@@ -227,4 +227,4 @@ npm init octokit-project
 
 ## License
 
-MIT
+[MIT](LICENSE)
