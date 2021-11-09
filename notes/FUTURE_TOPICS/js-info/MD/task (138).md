@@ -8,13 +8,13 @@ Let's create a new `rabbit` object:
 
 ```js
 function Rabbit(name) {
-  this.name = name;
+    this.name = name;
 }
-Rabbit.prototype.sayHi = function() {
-  alert(this.name);
+Rabbit.prototype.sayHi = function () {
+    alert(this.name);
 };
 
-let rabbit = new Rabbit("Rabbit");
+let rabbit = new Rabbit('Rabbit');
 ```
 
 These calls do the same thing or not?

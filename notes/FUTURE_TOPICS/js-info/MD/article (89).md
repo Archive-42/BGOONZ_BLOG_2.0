@@ -20,6 +20,7 @@ A string of code may be long, contain line breaks, function declarations, variab
 The result of `eval` is the result of the last statement.
 
 For example:
+
 ```js run
 let value = eval('1+1');
 alert(value); // 2
@@ -50,7 +51,7 @@ It can change outer variables as well:
 
 ```js untrusted refresh run
 let x = 5;
-eval("x = 10");
+eval('x = 10');
 alert(x); // 10, value modified
 ```
 
@@ -59,7 +60,7 @@ In strict mode, `eval` has its own lexical environment. So functions and variabl
 ```js untrusted refresh run
 // reminder: 'use strict' is enabled in runnable examples by default
 
-eval("let x = 5; function f() {}");
+eval('let x = 5; function f() {}');
 
 alert(typeof x); // undefined (no such variable)
 // function f is also not visible
@@ -90,8 +91,8 @@ This way the code is executed in the global scope:
 ```js untrusted refresh run
 let x = 1;
 {
-  let x = 5;
-  window.eval('alert(x)'); // 1 (global variable)
+    let x = 5;
+    window.eval('alert(x)'); // 1 (global variable)
 }
 ```
 
@@ -108,7 +109,8 @@ The `new Function` construct is explained in the chapter <info:new-function>. It
 ## Summary
 
 A call to `eval(code)` runs the string of code and returns the result of the last statement.
-- Rarely used in modern JavaScript, as there's usually no need.
-- Can access outer local variables. That's considered bad practice.
-- Instead, to `eval` the code in the global scope, use `window.eval(code)`.
-- Or, if your code needs some data from the outer scope, use `new Function` and pass it as arguments.
+
+-   Rarely used in modern JavaScript, as there's usually no need.
+-   Can access outer local variables. That's considered bad practice.
+-   Instead, to `eval` the code in the global scope, use `window.eval(code)`.
+-   Or, if your code needs some data from the outer scope, use `new Function` and pass it as arguments.

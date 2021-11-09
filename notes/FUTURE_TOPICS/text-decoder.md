@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="text-decoder.html"
-- <a href="https://es.javascript.info/text-decoder"
-- <a href="https://fr.javascript.info/text-decoder"
-- <a href="https://it.javascript.info/text-decoder"
-  text-decoder"
+-   <a href="https://ar.javascript.info/"
+-   <a href="text-decoder.html"
+-   <a href="https://es.javascript.info/text-decoder"
+-   <a href="https://fr.javascript.info/text-decoder"
+-   <a href="https://it.javascript.info/text-decoder"
+    text-decoder"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/text-decoder"
-- <a href=text-decoder"
-- <a href="https://tr.javascript.info/text-decoder"
-  ext-decoder"
+-   <a href="https://ko.javascript.info/text-decoder"
+-   <a href=text-decoder"
+-   <a href="https://tr.javascript.info/text-decoder"
+    ext-decoder"
 
 We want to make this open-source project available for people all around the world.
 
@@ -45,18 +45,18 @@ We first need to create it:
 
     let decoder = new TextDecoder([label], [options]);
 
-- **`label`** – the encoding, `utf-8` by default, but `big5`, `windows-1251` and many other are also supported.
-- **`options`** – optional object:
-  - **`fatal`** – boolean, if `true` then throw an exception for invalid (non-decodable) characters, otherwise (default) replace them with character `\uFFFD`.
-  - **`ignoreBOM`** – boolean, if `true` then ignore BOM (an optional byte-order Unicode mark), rarely needed.
+-   **`label`** – the encoding, `utf-8` by default, but `big5`, `windows-1251` and many other are also supported.
+-   **`options`** – optional object:
+    -   **`fatal`** – boolean, if `true` then throw an exception for invalid (non-decodable) characters, otherwise (default) replace them with character `\uFFFD`.
+    -   **`ignoreBOM`** – boolean, if `true` then ignore BOM (an optional byte-order Unicode mark), rarely needed.
 
 …And then decode:
 
     let str = decoder.decode([input], [options]);
 
-- **`input`** – `BufferSource` to decode.
-- **`options`** – optional object:
-  - **`stream`** – true for decoding streams, when `decoder` is called repeatedly with incoming chunks of data. In that case a multi-byte character may occasionally split between chunks. This options tells `TextDecoder` to memorize “unfinished” characters and decode them when the next chunk comes.
+-   **`input`** – `BufferSource` to decode.
+-   **`options`** – optional object:
+    -   **`stream`** – true for decoding streams, when `decoder` is called repeatedly with incoming chunks of data. In that case a multi-byte character may occasionally split between chunks. This options tells `TextDecoder` to memorize “unfinished” characters and decode them when the next chunk comes.
 
 For instance:
 
@@ -99,8 +99,8 @@ The only encoding it supports is “utf-8”.
 
 It has two methods:
 
-- **`encode(str)`** – returns `Uint8Array` from a string.
-- **`encodeInto(str, destination)`** – encodes `str` into `destination` that must be `Uint8Array`.
+-   **`encode(str)`** – returns `Uint8Array` from a string.
+-   **`encodeInto(str, destination)`** – encodes `str` into `destination` that must be `Uint8Array`.
 
 <a href="text-decoder.html#"
 <a href="text-decoder.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
@@ -120,21 +120,21 @@ It has two methods:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="binary.html" class="sidebar__link">Binary data, files</a>
+-   <a href="binary.html" class="sidebar__link">Binary data, files</a>
 
 #### Lesson navigation
 
-- <a href="text-decoder.html#textencoder" class="sidebar__link">TextEncoder</a>
+-   <a href="text-decoder.html#textencoder" class="sidebar__link">TextEncoder</a>
 
-- <a href="text-decoder.html#comments" class="sidebar__link">Comments</a>
+-   <a href="text-decoder.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -142,7 +142,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/4-binary/02-text-decoder" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

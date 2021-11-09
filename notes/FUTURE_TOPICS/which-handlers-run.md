@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="which-handlers-run.html"
-  /which-handlers-run"
+-   <a href="https://ar.javascript.info/"
+-   <a href="which-handlers-run.html"
+    /which-handlers-run"
 
 which-handlers-run"
 task/which-handlers-run"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  which-handlers-run"
-- <a href="https://tr.javascript.info/"
-  which-handlers-run"
+-   <a href="https://ko.javascript.info/"
+    which-handlers-run"
+-   <a href="https://tr.javascript.info/"
+    which-handlers-run"
 
 We want to make this open-source project available for people all around the world.
 

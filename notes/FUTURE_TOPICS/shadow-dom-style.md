@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="shadow-dom-style.html"
-- <a href="https://es.javascript.info/shadow-dom-style"
+-   <a href="https://ar.javascript.info/"
+-   <a href="shadow-dom-style.html"
+-   <a href="https://es.javascript.info/shadow-dom-style"
 
-- <a href="https://it.javascript.info/shadow-dom-style"
-  shadow-dom-style"
+-   <a href="https://it.javascript.info/shadow-dom-style"
+    shadow-dom-style"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=shadow-dom-style"
-- <a href="https://tr.javascript.info/shadow-dom-style"
-- <a href="https://zh.javascript.info/shadow-dom-style"
+-   <a href="https://ko.javascript.info/"
+-   <a href=shadow-dom-style"
+-   <a href="https://tr.javascript.info/shadow-dom-style"
+-   <a href="https://zh.javascript.info/shadow-dom-style"
 
 We want to make this open-source project available for people all around the world.
 
@@ -329,14 +329,14 @@ Shadow DOM can include styles, such as `<style>` or `<link rel="stylesheet">`.
 
 Local styles can affect:
 
-- shadow tree,
-- shadow host with `:host` and `:host()` pseudoclasses,
-- slotted elements (coming from light DOM), `::slotted(selector)` allows to select slotted elements themselves, but not their children.
+-   shadow tree,
+-   shadow host with `:host` and `:host()` pseudoclasses,
+-   slotted elements (coming from light DOM), `::slotted(selector)` allows to select slotted elements themselves, but not their children.
 
 Document styles can affect:
 
-- shadow host (as it lives in the outer document)
-- slotted elements and their contents (as that’s also in the outer document)
+-   shadow host (as it lives in the outer document)
+-   slotted elements and their contents (as that’s also in the outer document)
 
 When CSS properties conflict, normally document styles have precedence, unless the property is labelled as `!important`. Then local styles have precedence.
 
@@ -357,26 +357,26 @@ CSS custom properties pierce through shadow DOM. They are used as “hooks” to
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
 
 #### Lesson navigation
 
-- <a href="shadow-dom-style.html#host" class="sidebar__link">:host</a>
-- <a href="shadow-dom-style.html#cascading" class="sidebar__link">Cascading</a>
-- <a href="shadow-dom-style.html#host-selector" class="sidebar__link">:host(selector)</a>
-- <a href="shadow-dom-style.html#styling-slotted-content" class="sidebar__link">Styling slotted content</a>
-- <a href="shadow-dom-style.html#css-hooks-with-custom-properties" class="sidebar__link">CSS hooks with custom properties</a>
-- <a href="shadow-dom-style.html#summary" class="sidebar__link">Summary</a>
+-   <a href="shadow-dom-style.html#host" class="sidebar__link">:host</a>
+-   <a href="shadow-dom-style.html#cascading" class="sidebar__link">Cascading</a>
+-   <a href="shadow-dom-style.html#host-selector" class="sidebar__link">:host(selector)</a>
+-   <a href="shadow-dom-style.html#styling-slotted-content" class="sidebar__link">Styling slotted content</a>
+-   <a href="shadow-dom-style.html#css-hooks-with-custom-properties" class="sidebar__link">CSS hooks with custom properties</a>
+-   <a href="shadow-dom-style.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="shadow-dom-style.html#comments" class="sidebar__link">Comments</a>
+-   <a href="shadow-dom-style.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -384,7 +384,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/8-web-components/6-shadow-dom-style" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

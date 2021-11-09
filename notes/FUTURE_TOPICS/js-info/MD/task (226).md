@@ -6,8 +6,8 @@ importance: 5
 
 Create a function `showCircle(cx, cy, radius)` that shows an animated growing circle.
 
-- `cx,cy` are window-relative coordinates of the center of the circle,
-- `radius` is the radius of the circle.
+-   `cx,cy` are window-relative coordinates of the center of the circle,
+-   `radius` is the radius of the circle.
 
 Click the button below to see how it should look like:
 

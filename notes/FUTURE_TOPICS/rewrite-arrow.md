@@ -1,9 +1,9 @@
 rewrite-arrow"
 
-- <a href="rewrite-arrow.html"
-  /rewrite-arrow"
-  /rewrite-arrow"
-  rewrite-arrowrewrite-arrow"
+-   <a href="rewrite-arrow.html"
+    /rewrite-arrow"
+    /rewrite-arrow"
+    rewrite-arrowrewrite-arrow"
 
 <!-- -->
 

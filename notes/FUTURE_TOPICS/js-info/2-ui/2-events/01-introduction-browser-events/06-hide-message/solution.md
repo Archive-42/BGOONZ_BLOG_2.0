@@ -3,10 +3,7 @@ To add the button we can use either `position:absolute` (and make the pane `posi
 Then for each pane the code can be like:
 
 ```js
-pane.insertAdjacentHTML(
-  "afterbegin",
-  '<button class="remove-button">[x]</button>'
-);
+pane.insertAdjacentHTML('afterbegin', '<button class="remove-button">[x]</button>');
 ```
 
 Then the `<button>` becomes `pane.firstChild`, so we can add a handler to it like this:

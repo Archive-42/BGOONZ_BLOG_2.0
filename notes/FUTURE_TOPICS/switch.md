@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/switch"
-- <a href="switch.html"
-- <a href="https://es.javascript.info/switch"
-- <a href="https://fr.javascript.info/switch"
-- <a href="https://it.javascript.info/switch"
-  switch"
+-   <a href="https://ar.javascript.info/switch"
+-   <a href="switch.html"
+-   <a href="https://es.javascript.info/switch"
+-   <a href="https://fr.javascript.info/switch"
+-   <a href="https://it.javascript.info/switch"
+    switch"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/switch"
-- <a href=switch"
-- <a href="https://tr.javascript.info/switch"
-- <a href="https://zh.javascript.info/switch"
+-   <a href="https://ko.javascript.info/switch"
+-   <a href=switch"
+-   <a href="https://tr.javascript.info/switch"
+-   <a href="https://zh.javascript.info/switch"
 
 We want to make this open-source project available for people all around the world.
 
@@ -62,9 +62,9 @@ It looks like this:
         [break]
     }
 
-- The value of `x` is checked for a strict equality to the value from the first `case` (that is, `value1`) then to the second (`value2`) and so on.
-- If the equality is found, `switch` starts to execute the code starting from the corresponding `case`, until the nearest `break` (or until the end of `switch`).
-- If no case is matched then the `default` code is executed (if it exists).
+-   The value of `x` is checked for a strict equality to the value from the first `case` (that is, `value1`) then to the second (`value2`) and so on.
+-   If the equality is found, `switch` starts to execute the code starting from the corresponding `case`, until the nearest `break` (or until the end of `switch`).
+-   If no case is matched then the `default` code is executed (if it exists).
 
 ## <a href="switch.html#an-example" id="an-example" class="main__anchor">An example</a>
 
@@ -312,25 +312,25 @@ In the future, there is a chance that we’d want to add one more `case`, for ex
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="switch.html#the-syntax" class="sidebar__link">The syntax</a>
-- <a href="switch.html#an-example" class="sidebar__link">An example</a>
-- <a href="switch.html#grouping-of-case" class="sidebar__link">Grouping of “case”</a>
-- <a href="switch.html#type-matters" class="sidebar__link">Type matters</a>
+-   <a href="switch.html#the-syntax" class="sidebar__link">The syntax</a>
+-   <a href="switch.html#an-example" class="sidebar__link">An example</a>
+-   <a href="switch.html#grouping-of-case" class="sidebar__link">Grouping of “case”</a>
+-   <a href="switch.html#type-matters" class="sidebar__link">Type matters</a>
 
-- <a href="switch.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="switch.html#comments" class="sidebar__link">Comments</a>
+-   <a href="switch.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="switch.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -338,7 +338,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/14-switch" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,16 +1,16 @@
 reduce-object"
 
-- <a href="reduce-object.html"
-  /reduce-object"
+-   <a href="reduce-object.html"
+    /reduce-object"
 
 reduce-objectreduce-object"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href="
-- <a href="https://tr.javascript.info/"
-  reduce-object"
+-   <a href="https://ko.javascript.info/"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+    reduce-object"
 
 We want to make this open-source project available for people all around the world.
 

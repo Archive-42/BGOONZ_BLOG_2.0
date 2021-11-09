@@ -1,9 +1,9 @@
 property-after-delete"
 
-- <a href="property-after-delete.html"
-  property-after-delete"
-  /property-after-delete"
-  property-after-deleteproperty-after-delete"
+-   <a href="property-after-delete.html"
+    property-after-delete"
+    /property-after-delete"
+    property-after-deleteproperty-after-delete"
 
 <!-- -->
 

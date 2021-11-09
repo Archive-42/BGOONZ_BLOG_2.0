@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="regexp-greedy-and-lazy.html"
-- <a href="https://es.javascript.info/regexp-greedy-and-lazy"
-- <a href="https://fr.javascript.info/regexp-greedy-and-lazy"
-- <a href="https://it.javascript.info/regexp-greedy-and-lazy"
-  regexp-greedy-and-lazy"
+-   <a href="https://ar.javascript.info/"
+-   <a href="regexp-greedy-and-lazy.html"
+-   <a href="https://es.javascript.info/regexp-greedy-and-lazy"
+-   <a href="https://fr.javascript.info/regexp-greedy-and-lazy"
+-   <a href="https://it.javascript.info/regexp-greedy-and-lazy"
+    regexp-greedy-and-lazy"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=regexp-greedy-and-lazy"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/regexp-greedy-and-lazy"
+-   <a href="https://ko.javascript.info/"
+-   <a href=regexp-greedy-and-lazy"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/regexp-greedy-and-lazy"
 
 We want to make this open-source project available for people all around the world.
 
@@ -72,9 +72,9 @@ That can be described as “greediness is the cause of all evil”.
 
 To find a match, the regular expression engine uses the following algorithm:
 
-- For every position in the string
-  - Try to match the pattern at that position.
-  - If there’s no match, go to the next position.
+-   For every position in the string
+    -   Try to match the pattern at that position.
+    -   If there’s no match, go to the next position.
 
 These common words do not make it obvious why the regexp fails, so let’s elaborate how the search works for the pattern `".+"`.
 
@@ -416,25 +416,25 @@ The solution is `<[^<>]+>`.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-greedy-and-lazy.html#greedy-search" class="sidebar__link">Greedy search</a>
-- <a href="regexp-greedy-and-lazy.html#lazy-mode" class="sidebar__link">Lazy mode</a>
-- <a href="regexp-greedy-and-lazy.html#alternative-approach" class="sidebar__link">Alternative approach</a>
-- <a href="regexp-greedy-and-lazy.html#summary" class="sidebar__link">Summary</a>
+-   <a href="regexp-greedy-and-lazy.html#greedy-search" class="sidebar__link">Greedy search</a>
+-   <a href="regexp-greedy-and-lazy.html#lazy-mode" class="sidebar__link">Lazy mode</a>
+-   <a href="regexp-greedy-and-lazy.html#alternative-approach" class="sidebar__link">Alternative approach</a>
+-   <a href="regexp-greedy-and-lazy.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="regexp-greedy-and-lazy.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="regexp-greedy-and-lazy.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-greedy-and-lazy.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="regexp-greedy-and-lazy.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -442,7 +442,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/10-regexp-greedy-and-lazy" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

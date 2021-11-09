@@ -21,17 +21,17 @@ In action:
 ```js run
 let regexp = /(-?\d+(\.\d+)?)\s*([-+*\/])\s*(-?\d+(\.\d+)?)/;
 
-alert("1.2 + 12".match(regexp));
+alert('1.2 + 12'.match(regexp));
 ```
 
 The result includes:
 
-- `result[0] == "1.2 + 12"` (full match)
-- `result[1] == "1.2"` (first group `(-?\d+(\.\d+)?)` -- the first number, including the decimal part)
-- `result[2] == ".2"` (second group`(\.\d+)?` -- the first decimal part)
-- `result[3] == "+"` (third group `([-+*\/])` -- the operator)
-- `result[4] == "12"` (forth group `(-?\d+(\.\d+)?)` -- the second number)
-- `result[5] == undefined` (fifth group `(\.\d+)?` -- the last decimal part is absent, so it's undefined)
+-   `result[0] == "1.2 + 12"` (full match)
+-   `result[1] == "1.2"` (first group `(-?\d+(\.\d+)?)` -- the first number, including the decimal part)
+-   `result[2] == ".2"` (second group`(\.\d+)?` -- the first decimal part)
+-   `result[3] == "+"` (third group `([-+*\/])` -- the operator)
+-   `result[4] == "12"` (forth group `(-?\d+(\.\d+)?)` -- the second number)
+-   `result[5] == undefined` (fifth group `(\.\d+)?` -- the last decimal part is absent, so it's undefined)
 
 We only want the numbers and the operator, without the full match or the decimal parts, so let's "clean" the result a bit.
 
@@ -43,15 +43,15 @@ The final solution:
 
 ```js run
 function parse(expr) {
-  let regexp = /(-?\d+(?:\.\d+)?)\s*([-+*\/])\s*(-?\d+(?:\.\d+)?)/;
+    let regexp = /(-?\d+(?:\.\d+)?)\s*([-+*\/])\s*(-?\d+(?:\.\d+)?)/;
 
-  let result = expr.match(regexp);
+    let result = expr.match(regexp);
 
-  if (!result) return [];
-  result.shift();
+    if (!result) return [];
+    result.shift();
 
-  return result;
+    return result;
 }
 
-alert(parse("-1.23 * 3.45")); // -1.23, *, 3.45
+alert(parse('-1.23 * 3.45')); // -1.23, *, 3.45
 ```

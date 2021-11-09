@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="regexp-boundary.html"
-- <a href="https://es.javascript.info/regexp-boundary"
-- <a href="https://fr.javascript.info/regexp-boundary"
-- <a href="https://it.javascript.info/regexp-boundary"
-  regexp-boundary"
+-   <a href="https://ar.javascript.info/"
+-   <a href="regexp-boundary.html"
+-   <a href="https://es.javascript.info/regexp-boundary"
+-   <a href="https://fr.javascript.info/regexp-boundary"
+-   <a href="https://it.javascript.info/regexp-boundary"
+    regexp-boundary"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=regexp-boundary"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/regexp-boundary"
+-   <a href="https://ko.javascript.info/"
+-   <a href=regexp-boundary"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/regexp-boundary"
 
 We want to make this open-source project available for people all around the world.
 
@@ -43,9 +43,9 @@ When the regexp engine (program module that implements searching for regexps) co
 
 There are three different positions that qualify as word boundaries:
 
-- At string start, if the first string character is a word character `\w`.
-- Between two characters in the string, where one is a word character `\w` and the other is not.
-- At string end, if the last string character is a word character `\w`.
+-   At string start, if the first string character is a word character `\w`.
+-   Between two characters in the string, where one is a word character `\w` and the other is not.
+-   At string end, if the last string character is a word character `\w`.
 
 For instance, regexp `\bJava\b` will be found in `Hello, Java!`, where `Java` is a standalone word, but not in `Hello, JavaScript!`.
 
@@ -122,18 +122,18 @@ The answer: `\b\d\d:\d\d\b`.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
-- <a href="regexp-boundary.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="regexp-boundary.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-boundary.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="regexp-boundary.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -141,7 +141,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/06-regexp-boundary" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

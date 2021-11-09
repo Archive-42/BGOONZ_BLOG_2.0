@@ -1,9 +1,9 @@
 serialize-object"
 
-- <a href="serialize-object.html"
-  /serialize-object"
-  /serialize-object"
-  serialize-objectserialize-object"
+-   <a href="serialize-object.html"
+    /serialize-object"
+    /serialize-object"
+    serialize-objectserialize-object"
 
 <!-- -->
 

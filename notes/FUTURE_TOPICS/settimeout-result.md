@@ -2,10 +2,10 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="settimeout-result.html"
-  /settimeout-result"
-  /settimeout-result"
-  settimeout-resultsettimeout-result"
+-   <a href="settimeout-result.html"
+    /settimeout-result"
+    /settimeout-result"
+    settimeout-resultsettimeout-result"
 
 <!-- -->
 

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="keyboard-events.html"
-- <a href="https://es.javascript.info/"
-- <a href="https://fr.javascript.info/keyboard-events"
-- <a href="https://it.javascript.info/keyboard-events"
-  keyboard-events"
+-   <a href="https://ar.javascript.info/"
+-   <a href="keyboard-events.html"
+-   <a href="https://es.javascript.info/"
+-   <a href="https://fr.javascript.info/keyboard-events"
+-   <a href="https://it.javascript.info/keyboard-events"
+    keyboard-events"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=keyboard-events"
-- <a href="https://tr.javascript.info/keyboard-events"
-- <a href="https://zh.javascript.info/keyboard-events"
+-   <a href="https://ko.javascript.info/"
+-   <a href=keyboard-events"
+-   <a href="https://tr.javascript.info/keyboard-events"
+-   <a href="https://zh.javascript.info/keyboard-events"
 
 We want to make this open-source project available for people all around the world.
 
@@ -171,9 +171,9 @@ Every key has the code that depends on its location on the keyboard. Key codes d
 
 For instance:
 
-- Letter keys have codes `"Key<letter>"`: `"KeyA"`, `"KeyB"` etc.
-- Digit keys have codes: `"Digit<number>"`: `"Digit0"`, `"Digit1"` etc.
-- Special keys are coded by their names: `"Enter"`, `"Backspace"`, `"Tab"` etc.
+-   Letter keys have codes `"Key<letter>"`: `"KeyA"`, `"KeyB"` etc.
+-   Digit keys have codes: `"Digit<number>"`: `"Digit0"`, `"Digit1"` etc.
+-   Special keys are coded by their names: `"Enter"`, `"Backspace"`, `"Tab"` etc.
 
 There are several widespread keyboard layouts, and the specification gives key codes for each of them.
 
@@ -242,11 +242,11 @@ Default actions vary, as there are many possible things that may be initiated by
 
 For instance:
 
-- A character appears on the screen (the most obvious outcome).
-- A character is deleted (Delete key).
-- The page is scrolled (PageDown key).
-- The browser opens the “Save Page” dialog (Ctrl<span class="shortcut__plus">+</span>S)
-- …and so on.
+-   A character appears on the screen (the most obvious outcome).
+-   A character is deleted (Delete key).
+-   The page is scrolled (PageDown key).
+-   The browser opens the “Save Page” dialog (Ctrl<span class="shortcut__plus">+</span>S)
+-   …and so on.
 
 Preventing the default action on `keydown` can cancel most of them, with the exception of OS-based special keys. For instance, on Windows Alt<span class="shortcut__plus">+</span>F4 closes the current browser window. And there’s no way to stop it by preventing the default action in JavaScript.
 
@@ -307,13 +307,13 @@ Pressing a key always generates a keyboard event, be it symbol keys or special k
 
 Keyboard events:
 
-- `keydown` – on pressing the key (auto-repeats if the key is pressed for long),
-- `keyup` – on releasing the key.
+-   `keydown` – on pressing the key (auto-repeats if the key is pressed for long),
+-   `keyup` – on releasing the key.
 
 Main keyboard event properties:
 
-- `code` – the “key code” (`"KeyA"`, `"ArrowLeft"` and so on), specific to the physical location of the key on keyboard.
-- `key` – the character (`"A"`, `"a"` and so on), for non-character keys, such as Esc, usually has the same value as `code`.
+-   `code` – the “key code” (`"KeyA"`, `"ArrowLeft"` and so on), specific to the physical location of the key on keyboard.
+-   `key` – the character (`"A"`, `"a"` and so on), for non-character keys, such as Esc, usually has the same value as `code`.
 
 In the past, keyboard events were sometimes used to track user input in form fields. That’s not reliable, because the input can come from various sources. We have `input` and `change` events to handle any input (covered later in the chapter [Events: change, input, cut, copy, paste](events-change-input.html)). They trigger after any kind of input, including copy-pasting or speech recognition.
 
@@ -359,28 +359,28 @@ The first handler adds to it, while the second one removes from it. Every time o
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="event-details.html" class="sidebar__link">UI Events</a>
+-   <a href="event-details.html" class="sidebar__link">UI Events</a>
 
 #### Lesson navigation
 
-- <a href="keyboard-events.html#keyboard-test-stand" class="sidebar__link">Teststand</a>
-- <a href="keyboard-events.html#keydown-and-keyup" class="sidebar__link">Keydown and keyup</a>
-- <a href="keyboard-events.html#auto-repeat" class="sidebar__link">Auto-repeat</a>
-- <a href="keyboard-events.html#default-actions" class="sidebar__link">Default actions</a>
-- <a href="keyboard-events.html#legacy" class="sidebar__link">Legacy</a>
-- <a href="keyboard-events.html#mobile-keyboards" class="sidebar__link">Mobile Keyboards</a>
-- <a href="keyboard-events.html#summary" class="sidebar__link">Summary</a>
+-   <a href="keyboard-events.html#keyboard-test-stand" class="sidebar__link">Teststand</a>
+-   <a href="keyboard-events.html#keydown-and-keyup" class="sidebar__link">Keydown and keyup</a>
+-   <a href="keyboard-events.html#auto-repeat" class="sidebar__link">Auto-repeat</a>
+-   <a href="keyboard-events.html#default-actions" class="sidebar__link">Default actions</a>
+-   <a href="keyboard-events.html#legacy" class="sidebar__link">Legacy</a>
+-   <a href="keyboard-events.html#mobile-keyboards" class="sidebar__link">Mobile Keyboards</a>
+-   <a href="keyboard-events.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="keyboard-events.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="keyboard-events.html#comments" class="sidebar__link">Comments</a>
+-   <a href="keyboard-events.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="keyboard-events.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -388,7 +388,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/3-event-details/7-keyboard-events" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

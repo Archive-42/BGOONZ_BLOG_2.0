@@ -21,10 +21,10 @@ For instance, this will show an `alert` after the images are loaded:
 
 ```js
 function loaded() {
-  alert("Images loaded")
+    alert('Images loaded');
 }
 
-preloadImages(["1.jpg", "2.jpg", "3.jpg"], loaded);
+preloadImages(['1.jpg', '2.jpg', '3.jpg'], loaded);
 ```
 
 In case of an error, the function should still assume the picture "loaded".

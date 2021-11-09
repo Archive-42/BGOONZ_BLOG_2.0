@@ -1,9 +1,9 @@
 map-objects"
 
-- <a href="map-objects.html"
-  /map-objects"
-  /map-objects"
-  map-objectsmap-objects"
+-   <a href="map-objects.html"
+    /map-objects"
+    /map-objects"
+    map-objectsmap-objects"
 
 <!-- -->
 

@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="put-ball-in-center.html"
-  /put-ball-in-center"
-  /put-ball-in-center"
-  put-ball-in-centerput-ball-in-center"
+-   <a href="put-ball-in-center.html"
+    /put-ball-in-center"
+    /put-ball-in-center"
+    put-ball-in-centerput-ball-in-center"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  put-ball-in-center"
-- <a href="https://tr.javascript.info/"
-  put-ball-in-center"
+-   <a href="https://ko.javascript.info/"
+    put-ball-in-center"
+-   <a href="https://tr.javascript.info/"
+    put-ball-in-center"
 
 We want to make this open-source project available for people all around the world.
 
@@ -42,8 +42,8 @@ What are coordinates of the field center?
 
 Calculate them and use to place the ball into the center of the green field:
 
-- The element should be moved by JavaScript, not CSS.
-- The code should work with any ball size (`10`, `20`, `30` pixels) and any field size, not be bound to the given values.
+-   The element should be moved by JavaScript, not CSS.
+-   The code should work with any ball size (`10`, `20`, `30` pixels) and any field size, not be bound to the given values.
 
 P.S. Sure, centering could be done with CSS, but here we want exactly JavaScript. Further we’ll meet other topics and more complex situations when JavaScript must be used. Here we do a “warm-up”.
 

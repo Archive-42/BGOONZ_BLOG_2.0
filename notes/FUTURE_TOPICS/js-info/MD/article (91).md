@@ -1,4 +1,3 @@
-
 # Reference Type
 
 ```warn header="In-depth language feature"
@@ -33,13 +32,15 @@ Then the method is immediately called with parentheses `()`. But it doesn't work
 As you can see, the call results in an error, because the value of `"this"` inside the call becomes `undefined`.
 
 This works (object dot method):
+
 ```js
 user.hi();
 ```
 
 This doesn't (evaluated method):
+
 ```js
-(user.name == "John" ? user.hi : user.bye)(); // Error!
+(user.name == 'John' ? user.hi : user.bye)(); // Error!
 ```
 
 Why? If we want to understand why it happens, let's get under the hood of how `obj.method()` call works.
@@ -76,15 +77,15 @@ The Reference Type is a "specification type". We can't explicitly use it, but it
 
 The value of Reference Type is a three-value combination `(base, name, strict)`, where:
 
-- `base` is the object.
-- `name` is the property name.
-- `strict` is true if `use strict` is in effect.
+-   `base` is the object.
+-   `name` is the property name.
+-   `strict` is true if `use strict` is in effect.
 
 The result of a property access `user.hi` is not a function, but a value of Reference Type. For `user.hi` in strict mode it is:
 
 ```js
 // Reference Type value
-(user, "hi", true)
+user, 'hi', true;
 ```
 
 When parentheses `()` are called on the Reference Type, they receive the full information about the object and its method, and can set the right `this` (`=user` in this case).

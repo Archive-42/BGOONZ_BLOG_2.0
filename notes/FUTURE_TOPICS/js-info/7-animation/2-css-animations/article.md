@@ -14,8 +14,8 @@ For instance, the CSS below animates changes of `background-color` for 3 seconds
 
 ```css
 .animated {
-  transition-property: background-color;
-  transition-duration: 3s;
+    transition-property: background-color;
+    transition-duration: 3s;
 }
 ```
 
@@ -27,25 +27,25 @@ Click the button below to animate the background:
 <button id="color">Click me</button>
 
 <style>
-  #color {
-    transition-property: background-color;
-    transition-duration: 3s;
-  }
+    #color {
+        transition-property: background-color;
+        transition-duration: 3s;
+    }
 </style>
 
 <script>
-  color.onclick = function () {
-    this.style.backgroundColor = "red";
-  };
+    color.onclick = function () {
+        this.style.backgroundColor = 'red';
+    };
 </script>
 ```
 
 There are 4 properties to describe CSS transitions:
 
-- `transition-property`
-- `transition-duration`
-- `transition-timing-function`
-- `transition-delay`
+-   `transition-property`
+-   `transition-duration`
+-   `transition-timing-function`
+-   `transition-delay`
 
 We'll cover them in a moment, for now let's note that the common `transition` property allows declaring them together in the order: `property duration timing-function delay`, as well as animating multiple properties at once.
 
@@ -55,18 +55,18 @@ For instance, this button animates both `color` and `font-size`:
 <button id="growing">Click me</button>
 
 <style>
-  #growing {
-  *!*
-    transition: font-size 3s, color 2s;
-  */!*
-  }
+    #growing {
+    *!*
+      transition: font-size 3s, color 2s;
+    */!*
+    }
 </style>
 
 <script>
-  growing.onclick = function () {
-    this.style.fontSize = "36px";
-    this.style.color = "red";
-  };
+    growing.onclick = function () {
+        this.style.fontSize = '36px';
+        this.style.color = 'red';
+    };
 </script>
 ```
 
@@ -96,16 +96,16 @@ The `transform` property is animated like this:
 
 ```css
 #stripe.animate {
-  transform: translate(-90%);
-  transition-property: transform;
-  transition-duration: 9s;
+    transform: translate(-90%);
+    transition-property: transform;
+    transition-duration: 9s;
 }
 ```
 
 In the example above JavaScript adds the class `.animate` to the element -- and the animation starts:
 
 ```js
-stripe.classList.add("animate");
+stripe.classList.add('animate');
 ```
 
 We could also start it from somewhere in the middle of the transition, from an exact number, e.g. corresponding to the current second, using a negative `transition-delay`.
@@ -147,8 +147,8 @@ The syntax for a Bezier curve in CSS: `cubic-bezier(x2, y2, x3, y3)`. Here we ne
 
 The timing function describes how fast the animation process goes.
 
-- The `x` axis is the time: `0` -- the start, `1` -- the end of `transition-duration`.
-- The `y` axis specifies the completion of the process: `0` -- the starting value of the property, `1` -- the final value.
+-   The `x` axis is the time: `0` -- the start, `1` -- the end of `transition-duration`.
+-   The `y` axis specifies the completion of the process: `0` -- the starting value of the property, `1` -- the final value.
 
 The simplest variant is when the animation goes uniformly, with the same linear speed. That can be specified by the curve `cubic-bezier(0, 0, 1, 1)`.
 
@@ -166,9 +166,9 @@ The CSS `transition` is based on that curve:
 
 ```css
 .train {
-  left: 0;
-  transition: left 5s cubic-bezier(0, 0, 1, 1);
-  /* click on a train sets left to 450px, thus triggering the animation */
+    left: 0;
+    transition: left 5s cubic-bezier(0, 0, 1, 1);
+    /* click on a train sets left to 450px, thus triggering the animation */
 }
 ```
 
@@ -190,9 +190,9 @@ CSS:
 
 ```css
 .train {
-  left: 0;
-  transition: left 5s cubic-bezier(0, 0.5, 0.5, 1);
-  /* click on a train sets left to 450px, thus triggering the animation */
+    left: 0;
+    transition: left 5s cubic-bezier(0, 0.5, 0.5, 1);
+    /* click on a train sets left to 450px, thus triggering the animation */
 }
 ```
 
@@ -213,9 +213,9 @@ So we could use `ease-out` for our slowing down train:
 
 ```css
 .train {
-  left: 0;
-  transition: left 5s ease-out;
-  /* same as transition: left 5s cubic-bezier(0, .5, .5, 1); */
+    left: 0;
+    transition: left 5s ease-out;
+    /* same as transition: left 5s cubic-bezier(0, .5, .5, 1); */
 }
 ```
 
@@ -229,9 +229,9 @@ In the example below the animation code is:
 
 ```css
 .train {
-  left: 100px;
-  transition: left 5s cubic-bezier(0.5, -1, 0.5, 2);
-  /* click on a train sets left to 450px */
+    left: 100px;
+    transition: left 5s cubic-bezier(0.5, -1, 0.5, 2);
+    /* click on a train sets left to 450px */
 }
 ```
 
@@ -239,9 +239,9 @@ The property `left` should animate from `100px` to `400px`.
 
 But if you click the train, you'll see that:
 
-- First, the train goes _back_: `left` becomes less than `100px`.
-- Then it goes forward, a little bit farther than `400px`.
-- And then back again -- to `400px`.
+-   First, the train goes _back_: `left` becomes less than `100px`.
+-   Then it goes forward, a little bit farther than `400px`.
+-   And then back again -- to `400px`.
 
 [codetabs src="train-over"]
 
@@ -273,8 +273,8 @@ There will be 9 steps, a step-move for each digit:
 
 ```css
 #stripe.animate {
-  transform: translate(-90%);
-  transition: transform 9s * ! * steps(9, start) * / ! *;
+    transform: translate(-90%);
+    transition: transform 9s * ! * steps(9, start) * / ! *;
 }
 ```
 
@@ -292,21 +292,21 @@ We can observe that during the animation: when we click on the digit it changes 
 
 The process is progressing like this:
 
-- `0s` -- `-10%` (first change in the beginning of the 1st second, immediately)
-- `1s` -- `-20%`
-- ...
-- `8s` -- `-80%`
-- (the last second shows the final value).
+-   `0s` -- `-10%` (first change in the beginning of the 1st second, immediately)
+-   `1s` -- `-20%`
+-   ...
+-   `8s` -- `-80%`
+-   (the last second shows the final value).
 
 The alternative value `end` would mean that the change should be applied not in the beginning, but at the end of each second.
 
 So the process for `steps(9, end)` would go like this:
 
-- `0s` -- `0` (during the first second nothing changes)
-- `1s` -- `-10%` (first change at the end of the 1st second)
-- `2s` -- `-20%`
-- ...
-- `9s` -- `-90%`
+-   `0s` -- `0` (during the first second nothing changes)
+-   `1s` -- `-10%` (first change at the end of the 1st second)
+-   `2s` -- `-20%`
+-   ...
+-   `9s` -- `-90%`
 
 Here's `steps(9, end)` in action (note the pause between the first digit change):
 
@@ -314,8 +314,8 @@ Here's `steps(9, end)` in action (note the pause between the first digit change)
 
 There are also shorthand values:
 
-- `step-start` -- is the same as `steps(1, start)`. That is, the animation starts immediately and takes 1 step. So it starts and finishes immediately, as if there were no animation.
-- `step-end` -- the same as `steps(1, end)`: make the animation in a single step at the end of `transition-duration`.
+-   `step-start` -- is the same as `steps(1, start)`. That is, the animation starts immediately and takes 1 step. So it starts and finishes immediately, as if there were no animation.
+-   `step-end` -- the same as `steps(1, end)`: make the animation in a single step at the end of `transition-duration`.
 
 These values are rarely used, because that's not really animation, but rather a single-step change.
 
@@ -333,27 +333,27 @@ The animation is initiated by the function `go` that re-runs each time the trans
 
 ```js
 boat.onclick = function () {
-  //...
-  let times = 1;
+    //...
+    let times = 1;
 
-  function go() {
-    if (times % 2) {
-      // sail to the right
-      boat.classList.remove("back");
-      boat.style.marginLeft = 100 * times + 200 + "px";
-    } else {
-      // sail to the left
-      boat.classList.add("back");
-      boat.style.marginLeft = 100 * times - 200 + "px";
+    function go() {
+        if (times % 2) {
+            // sail to the right
+            boat.classList.remove('back');
+            boat.style.marginLeft = 100 * times + 200 + 'px';
+        } else {
+            // sail to the left
+            boat.classList.add('back');
+            boat.style.marginLeft = 100 * times - 200 + 'px';
+        }
     }
-  }
 
-  go();
-
-  boat.addEventListener("transitionend", function () {
-    times++;
     go();
-  });
+
+    boat.addEventListener('transitionend', function () {
+        times++;
+        go();
+    });
 };
 ```
 
@@ -377,29 +377,29 @@ Here's an example with explanations:
 <div class="progress"></div>
 
 <style>
-  *!*
-    @keyframes go-left-right {        /* give it a name: "go-left-right" */
-      from { left: 0px; }             /* animate from left: 0px */
-      to { left: calc(100% - 50px); } /* animate to left: 100%-50px */
-    }
-  */!*
+    *!*
+      @keyframes go-left-right {        /* give it a name: "go-left-right" */
+        from { left: 0px; }             /* animate from left: 0px */
+        to { left: calc(100% - 50px); } /* animate to left: 100%-50px */
+      }
+    */!*
 
-    .progress {
-  *!*
-      animation: go-left-right 3s infinite alternate;
-      /* apply the animation "go-left-right" to the element
-         duration 3 seconds
-         number of times: infinite
-         alternate direction every time
-      */
-  */!*
+      .progress {
+    *!*
+        animation: go-left-right 3s infinite alternate;
+        /* apply the animation "go-left-right" to the element
+           duration 3 seconds
+           number of times: infinite
+           alternate direction every time
+        */
+    */!*
 
-      position: relative;
-      border: 2px solid green;
-      width: 50px;
-      height: 20px;
-      background: lime;
-    }
+        position: relative;
+        border: 2px solid green;
+        width: 50px;
+        height: 20px;
+        background: lime;
+      }
 </style>
 ```
 
@@ -427,8 +427,8 @@ Animations of properties that skip the Layout step are faster. It's even better 
 
 The `transform` property is a great choice, because:
 
-- CSS transforms affect the target element box as a whole (rotate, flip, stretch, shift it).
-- CSS transforms never affect neighbour elements.
+-   CSS transforms affect the target element box as a whole (rotate, flip, stretch, shift it).
+-   CSS transforms never affect neighbour elements.
 
 ...So browsers apply `transform` "on top" of existing Layout and Paint calculations, in the Composite stage.
 
@@ -448,18 +448,18 @@ For example, here clicking on the `#boat` element adds the class with `transform
 <img src="https://js.cx/clipart/boat.png" id="boat" />
 
 <style>
-  #boat {
-    cursor: pointer;
-    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
-  }
+    #boat {
+        cursor: pointer;
+        transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+    }
 
-  .move {
-    transform: translateX(300px);
-    opacity: 0;
-  }
+    .move {
+        transform: translateX(300px);
+        opacity: 0;
+    }
 </style>
 <script>
-  boat.onclick = () => boat.classList.add("move");
+    boat.onclick = () => boat.classList.add('move');
 </script>
 ```
 
@@ -468,24 +468,24 @@ Here's a more complex example, with `@keyframes`:
 ```html run height=80 autorun no-beautify
 <h2 onclick="this.classList.toggle('animated')">click me to start / stop</h2>
 <style>
-  .animated {
-    animation: hello-goodbye 1.8s infinite;
-    width: fit-content;
-  }
-  @keyframes hello-goodbye {
-    0% {
-      transform: translateY(-60px) rotateX(0.7turn);
-      opacity: 0;
+    .animated {
+        animation: hello-goodbye 1.8s infinite;
+        width: fit-content;
     }
-    50% {
-      transform: none;
-      opacity: 1;
+    @keyframes hello-goodbye {
+        0% {
+            transform: translateY(-60px) rotateX(0.7turn);
+            opacity: 0;
+        }
+        50% {
+            transform: none;
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(230px) rotateZ(90deg) scale(0.5);
+            opacity: 0;
+        }
     }
-    100% {
-      transform: translateX(230px) rotateZ(90deg) scale(0.5);
-      opacity: 0;
-    }
-  }
 </style>
 ```
 

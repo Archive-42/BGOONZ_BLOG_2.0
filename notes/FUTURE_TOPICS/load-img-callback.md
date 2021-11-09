@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="load-img-callback.html"
-  /load-img-callback"
-  /load-img-callback"
-  load-img-callbackload-img-callback"
+-   <a href="load-img-callback.html"
+    /load-img-callback"
+    /load-img-callback"
+    load-img-callbackload-img-callback"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  load-img-callback"
-- <a href="https://tr.javascript.info/"
-  load-img-callback"
+-   <a href="https://ko.javascript.info/"
+    load-img-callback"
+-   <a href="https://tr.javascript.info/"
+    load-img-callback"
 
 We want to make this open-source project available for people all around the world.
 

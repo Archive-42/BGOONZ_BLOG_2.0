@@ -1,13 +1,13 @@
 function makeCounter() {
-  let count = 0;
+    let count = 0;
 
-  function counter() {
-    return count++;
-  }
+    function counter() {
+        return count++;
+    }
 
-  counter.set = value => count = value;
+    counter.set = (value) => (count = value);
 
-  counter.decrease = () => count--;
+    counter.decrease = () => count--;
 
-  return counter;
+    return counter;
 }

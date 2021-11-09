@@ -4,11 +4,11 @@ Fibonacci numbers are recursive by definition:
 
 ```js run
 function fib(n) {
-  return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+    return n <= 1 ? n : fib(n - 1) + fib(n - 2);
 }
 
-alert( fib(3) ); // 2
-alert( fib(7) ); // 13
+alert(fib(3)); // 2
+alert(fib(7)); // 13
 // fib(77); // will be extremely slow!
 ```
 
@@ -45,7 +45,8 @@ The start:
 
 ```js
 // a = fib(1), b = fib(2), these values are by definition 1
-let a = 1, b = 1;
+let a = 1,
+    b = 1;
 
 // get c = fib(3) as their sum
 let c = a + b;
@@ -90,19 +91,19 @@ The full code:
 
 ```js run
 function fib(n) {
-  let a = 1;
-  let b = 1;
-  for (let i = 3; i <= n; i++) {
-    let c = a + b;
-    a = b;
-    b = c;
-  }
-  return b;
+    let a = 1;
+    let b = 1;
+    for (let i = 3; i <= n; i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+    }
+    return b;
 }
 
-alert( fib(3) ); // 2
-alert( fib(7) ); // 13
-alert( fib(77) ); // 5527939700884757
+alert(fib(3)); // 2
+alert(fib(7)); // 13
+alert(fib(77)); // 5527939700884757
 ```
 
 The loop starts with `i=3`, because the first and the second sequence values are hard-coded into variables `a=1`, `b=1`.

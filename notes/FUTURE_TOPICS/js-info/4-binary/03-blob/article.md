@@ -14,16 +14,16 @@ The constructor syntax is:
 new Blob(blobParts, options);
 ```
 
-- **`blobParts`** is an array of `Blob`/`BufferSource`/`String` values.
-- **`options`** optional object:
-  - **`type`** -- `Blob` type, usually MIME-type, e.g. `image/png`,
-  - **`endings`** -- whether to transform end-of-line to make the `Blob` correspond to current OS newlines (`\r\n` or `\n`). By default `"transparent"` (do nothing), but also can be `"native"` (transform).
+-   **`blobParts`** is an array of `Blob`/`BufferSource`/`String` values.
+-   **`options`** optional object:
+    -   **`type`** -- `Blob` type, usually MIME-type, e.g. `image/png`,
+    -   **`endings`** -- whether to transform end-of-line to make the `Blob` correspond to current OS newlines (`\r\n` or `\n`). By default `"transparent"` (do nothing), but also can be `"native"` (transform).
 
 For example:
 
 ```js
 // create Blob from a string
-let blob = new Blob(["<html>…</html>"], { type: "text/html" });
+let blob = new Blob(['<html>…</html>'], { type: 'text/html' });
 // please note: the first argument must be an array [...]
 ```
 
@@ -31,7 +31,7 @@ let blob = new Blob(["<html>…</html>"], { type: "text/html" });
 // create Blob from a typed array and strings
 let hello = new Uint8Array([72, 101, 108, 108, 111]); // "Hello" in binary form
 
-let blob = new Blob([hello, " ", "world"], { type: "text/plain" });
+let blob = new Blob([hello, ' ', 'world'], { type: 'text/plain' });
 ```
 
 We can extract `Blob` slices with:
@@ -40,9 +40,9 @@ We can extract `Blob` slices with:
 blob.slice([byteStart], [byteEnd], [contentType]);
 ```
 
-- **`byteStart`** -- the starting byte, by default 0.
-- **`byteEnd`** -- the last byte (exclusive, by default till the end).
-- **`contentType`** -- the `type` of the new blob, by default the same as the source.
+-   **`byteStart`** -- the starting byte, by default 0.
+-   **`byteEnd`** -- the last byte (exclusive, by default till the end).
+-   **`contentType`** -- the `type` of the new blob, by default the same as the source.
 
 The arguments are similar to `array.slice`, negative numbers are allowed too.
 
@@ -76,10 +76,10 @@ We can also create a link dynamically in JavaScript and simulate a click by `lin
 Here's the similar code that causes user to download the dynamically created `Blob`, without any HTML:
 
 ```js run
-let link = document.createElement("a");
-link.download = "hello.txt";
+let link = document.createElement('a');
+link.download = 'hello.txt';
 
-let blob = new Blob(["Hello, world!"], { type: "text/plain" });
+let blob = new Blob(['Hello, world!'], { type: 'text/plain' });
 
 link.href = URL.createObjectURL(blob);
 
@@ -124,7 +124,7 @@ For instance, here's a smiley:
 
 ```html
 <img
-  src="data:image/png;base64,R0lGODlhDAAMAKIFAF5LAP/zxAAAANyuAP/gaP///wAAAAAAACH5BAEAAAUALAAAAAAMAAwAAAMlWLPcGjDKFYi9lxKBOaGcF35DhWHamZUW0K4mAbiwWtuf0uxFAgA7"
+    src="data:image/png;base64,R0lGODlhDAAMAKIFAF5LAP/zxAAAANyuAP/gaP///wAAAAAAACH5BAEAAAUALAAAAAAMAAwAAAMlWLPcGjDKFYi9lxKBOaGcF35DhWHamZUW0K4mAbiwWtuf0uxFAgA7"
 />
 ```
 
@@ -173,14 +173,14 @@ In the example below, an image is just copied, but we could cut from it, or tran
 
 ```js run
 // take any image
-let img = document.querySelector("img");
+let img = document.querySelector('img');
 
 // make <canvas> of the same size
-let canvas = document.createElement("canvas");
+let canvas = document.createElement('canvas');
 canvas.width = img.clientWidth;
 canvas.height = img.clientHeight;
 
-let context = canvas.getContext("2d");
+let context = canvas.getContext('2d');
 
 // copy image to it (this method allows to cut image)
 context.drawImage(img, 0, 0);
@@ -188,24 +188,22 @@ context.drawImage(img, 0, 0);
 
 // toBlob is async operation, callback is called when done
 canvas.toBlob(function (blob) {
-  // blob ready, download it
-  let link = document.createElement("a");
-  link.download = "example.png";
+    // blob ready, download it
+    let link = document.createElement('a');
+    link.download = 'example.png';
 
-  link.href = URL.createObjectURL(blob);
-  link.click();
+    link.href = URL.createObjectURL(blob);
+    link.click();
 
-  // delete the internal blob reference, to let the browser clear memory from it
-  URL.revokeObjectURL(link.href);
-}, "image/png");
+    // delete the internal blob reference, to let the browser clear memory from it
+    URL.revokeObjectURL(link.href);
+}, 'image/png');
 ```
 
 If we prefer `async/await` instead of callbacks:
 
 ```js
-let blob = await new Promise((resolve) =>
-  canvasElem.toBlob(resolve, "image/png")
-);
+let blob = await new Promise((resolve) => canvasElem.toBlob(resolve, 'image/png'));
 ```
 
 For screenshotting a page, we can use a library such as <https://github.com/niklasvh/html2canvas>. What it does is just walks the page and draws it on `<canvas>`. Then we can get a `Blob` of it the same way as above.
@@ -239,5 +237,5 @@ Methods that perform web-requests, such as [XMLHttpRequest](info:xmlhttprequest)
 
 We can easily convert between `Blob` and low-level binary data types:
 
-- We can make a Blob from a typed array using `new Blob(...)` constructor.
-- We can get back `ArrayBuffer` from a Blob using `FileReader`, and then create a view over it for low-level binary processing.
+-   We can make a Blob from a typed array using `new Blob(...)` constructor.
+-   We can get back `ArrayBuffer` from a Blob using `FileReader`, and then create a view over it for low-level binary processing.

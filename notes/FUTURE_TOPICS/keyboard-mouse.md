@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="keyboard-mouse.html"
-- <a href="https://es.javascript.info/"
-  /keyboard-mouse"
-  keyboard-mousekeyboard-mouse"
+-   <a href="keyboard-mouse.html"
+-   <a href="https://es.javascript.info/"
+    /keyboard-mouse"
+    keyboard-mousekeyboard-mouse"
 
 <!-- -->
 
 keyboard-mouse"
 keyboard-mouse"
 
-- <a href="https://tr.javascript.info/"
-  keyboard-mouse"
+-   <a href="https://tr.javascript.info/"
+    keyboard-mouse"
 
 We want to make this open-source project available for people all around the world.
 

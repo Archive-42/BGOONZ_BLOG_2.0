@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/logical-operators"
-- <a href="logical-operators.html"
-- <a href="https://es.javascript.info/logical-operators"
-- <a href="https://fr.javascript.info/logical-operators"
-- <a href="https://it.javascript.info/logical-operators"
-  logical-operators"
+-   <a href="https://ar.javascript.info/logical-operators"
+-   <a href="logical-operators.html"
+-   <a href="https://es.javascript.info/logical-operators"
+-   <a href="https://fr.javascript.info/logical-operators"
+-   <a href="https://it.javascript.info/logical-operators"
+    logical-operators"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/logical-operators"
-- <a href=logical-operators"
-- <a href="https://tr.javascript.info/logical-operators"
-- <a href="https://zh.javascript.info/logical-operators"
+-   <a href="https://ko.javascript.info/logical-operators"
+-   <a href=logical-operators"
+-   <a href="https://tr.javascript.info/logical-operators"
+-   <a href="https://zh.javascript.info/logical-operators"
 
 We want to make this open-source project available for people all around the world.
 
@@ -116,9 +116,9 @@ Given multiple OR’ed values:
 
 The OR `||` operator does the following:
 
-- Evaluates operands from left to right.
-- For each operand, converts it to boolean. If the result is `true`, stops and returns the original value of that operand.
-- If all operands have been evaluated (i.e. all were `false`), returns the last operand.
+-   Evaluates operands from left to right.
+-   For each operand, converts it to boolean. If the result is `true`, stops and returns the original value of that operand.
+-   If all operands have been evaluated (i.e. all were `false`), returns the last operand.
 
 A value is returned in its original form, without the conversion.
 
@@ -220,9 +220,9 @@ Given multiple AND’ed values:
 
 The AND `&&` operator does the following:
 
-- Evaluates operands from left to right.
-- For each operand, converts it to a boolean. If the result is `false`, stops and returns the original value of that operand.
-- If all operands have been evaluated (i.e. all were truthy), returns the last operand.
+-   Evaluates operands from left to right.
+-   For each operand, converts it to a boolean. If the result is `false`, stops and returns the original value of that operand.
+-   If all operands have been evaluated (i.e. all were truthy), returns the last operand.
 
 In other words, AND returns the first falsy value or the last value if none were found.
 
@@ -530,9 +530,9 @@ If the visitor enters `"Admin"`, then `prompt` for a password, if the input is a
 
 The password is checked as follows:
 
-- If it equals “TheMaster”, then show “Welcome!”,
-- Another string – show “Wrong password”,
-- For an empty string or cancelled input, show “Canceled”
+-   If it equals “TheMaster”, then show “Welcome!”,
+-   Another string – show “Wrong password”,
+-   For an empty string or cancelled input, show “Canceled”
 
 The schema:
 
@@ -579,26 +579,26 @@ Note the vertical indents inside the `if` blocks. They are technically not requi
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="logical-operators.html#or" class="sidebar__link">|| (OR)</a>
-- <a href="logical-operators.html#or-finds-the-first-truthy-value" class="sidebar__link">OR "||" finds the first truthy value</a>
-- <a href="logical-operators.html#and" class="sidebar__link">&amp;&amp; (AND)</a>
-- <a href="logical-operators.html#and-finds-the-first-falsy-value" class="sidebar__link">AND “&amp;&amp;” finds the first falsy value</a>
-- <a href="logical-operators.html#not" class="sidebar__link">! (NOT)</a>
+-   <a href="logical-operators.html#or" class="sidebar__link">|| (OR)</a>
+-   <a href="logical-operators.html#or-finds-the-first-truthy-value" class="sidebar__link">OR "||" finds the first truthy value</a>
+-   <a href="logical-operators.html#and" class="sidebar__link">&amp;&amp; (AND)</a>
+-   <a href="logical-operators.html#and-finds-the-first-falsy-value" class="sidebar__link">AND “&amp;&amp;” finds the first falsy value</a>
+-   <a href="logical-operators.html#not" class="sidebar__link">! (NOT)</a>
 
-- <a href="logical-operators.html#tasks" class="sidebar__link">Tasks (9)</a>
-- <a href="logical-operators.html#comments" class="sidebar__link">Comments</a>
+-   <a href="logical-operators.html#tasks" class="sidebar__link">Tasks (9)</a>
+-   <a href="logical-operators.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -606,7 +606,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/11-logical-operators" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

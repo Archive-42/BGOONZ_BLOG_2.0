@@ -2,8 +2,8 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="live-timer.html"
-- <a href="https://es.javascript.info/"
+-   <a href="live-timer.html"
+-   <a href="https://es.javascript.info/"
 
 live-timer"
 "
@@ -13,8 +13,8 @@ live-timer"
 live-timer"
 live-timer"
 
-- <a href="https://tr.javascript.info/"
-  live-timer"
+-   <a href="https://tr.javascript.info/"
+    live-timer"
 
 We want to make this open-source project available for people all around the world.
 

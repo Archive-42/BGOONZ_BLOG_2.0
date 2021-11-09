@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="sliding-menu.html"
-  /sliding-menu"
+-   <a href="sliding-menu.html"
+    /sliding-menu"
 
 sliding-menusliding-menu"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  sliding-menu"
-- <a href="https://tr.javascript.info/"
-  sliding-menu"
+-   <a href="https://ko.javascript.info/"
+    sliding-menu"
+-   <a href="https://tr.javascript.info/"
+    sliding-menu"
 
 We want to make this open-source project available for people all around the world.
 

@@ -1,18 +1,17 @@
-
 # Microtasks
 
 Promise handlers `.then`/`.catch`/`.finally` are always asynchronous.
 
-Even when a Promise is immediately resolved, the code on the lines *below* `.then`/`.catch`/`.finally` will still execute before these handlers.
+Even when a Promise is immediately resolved, the code on the lines _below_ `.then`/`.catch`/`.finally` will still execute before these handlers.
 
 Here's a demo:
 
 ```js run
 let promise = Promise.resolve();
 
-promise.then(() => alert("promise done!"));
+promise.then(() => alert('promise done!'));
 
-alert("code finished"); // this alert shows first
+alert('code finished'); // this alert shows first
 ```
 
 If you run it, you see `code finished` first, and then `promise done!`.
@@ -27,8 +26,8 @@ Asynchronous tasks need proper management. For that, the ECMA standard specifies
 
 As stated in the [specification](https://tc39.github.io/ecma262/#sec-jobs-and-job-queues):
 
-- The queue is first-in-first-out: tasks enqueued first are run first.
-- Execution of a task is initiated only when nothing else is running.
+-   The queue is first-in-first-out: tasks enqueued first are run first.
+-   Execution of a task is initiated only when nothing else is running.
 
 Or, to put it more simply, when a promise is ready, its `.then/catch/finally` handlers are put into the queue; they are not executed yet. When the JavaScript engine becomes free from the current code, it takes a task from the queue and executes it.
 
@@ -46,8 +45,8 @@ Easy, just put it into the queue with `.then`:
 
 ```js run
 Promise.resolve()
-  .then(() => alert("promise done!"))
-  .then(() => alert("code finished"));
+    .then(() => alert('promise done!'))
+    .then(() => alert('code finished'));
 ```
 
 Now the order is as intended.
@@ -75,10 +74,10 @@ window.addEventListener('unhandledrejection', event => alert(event.reason));
 But if we forget to add `.catch`, then, after the microtask queue is empty, the engine triggers the event:
 
 ```js run
-let promise = Promise.reject(new Error("Promise Failed!"));
+let promise = Promise.reject(new Error('Promise Failed!'));
 
 // Promise Failed!
-window.addEventListener('unhandledrejection', event => alert(event.reason));
+window.addEventListener('unhandledrejection', (event) => alert(event.reason));
 ```
 
 What if we handle the error later? Like this:

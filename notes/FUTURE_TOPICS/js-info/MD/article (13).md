@@ -24,8 +24,8 @@ If we want to execute more than one statement, we have to wrap our code block in
 
 ```js
 if (year == 2015) {
-  alert("That's correct!");
-  alert("You're so smart!");
+    alert("That's correct!");
+    alert("You're so smart!");
 }
 ```
 
@@ -37,8 +37,8 @@ The `if (…)` statement evaluates the expression in its parentheses and convert
 
 Let's recall the conversion rules from the chapter <info:type-conversions>:
 
-- A number `0`, an empty string `""`, `null`, `undefined`, and `NaN` all become `false`. Because of that they are called "falsy" values.
-- Other values become `true`, so they are called "truthy".
+-   A number `0`, an empty string `""`, `null`, `undefined`, and `NaN` all become `false`. Because of that they are called "falsy" values.
+-   Other values become `true`, so they are called "truthy".
 
 So, the code under this condition would never execute:
 
@@ -73,15 +73,12 @@ The `if` statement may contain an optional "else" block. It executes when the co
 For example:
 
 ```js run
-let year = prompt(
-  "In which year was the ECMAScript-2015 specification published?",
-  ""
-);
+let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
 
 if (year == 2015) {
-  alert("You guessed it right!");
+    alert('You guessed it right!');
 } else {
-  alert("How can you be so wrong?"); // any value except 2015
+    alert('How can you be so wrong?'); // any value except 2015
 }
 ```
 
@@ -92,17 +89,14 @@ Sometimes, we'd like to test several variants of a condition. The `else if` clau
 For example:
 
 ```js run
-let year = prompt(
-  "In which year was the ECMAScript-2015 specification published?",
-  ""
-);
+let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
 
 if (year < 2015) {
-  alert("Too early...");
+    alert('Too early...');
 } else if (year > 2015) {
-  alert("Too late");
+    alert('Too late');
 } else {
-  alert("Exactly!");
+    alert('Exactly!');
 }
 ```
 
@@ -177,16 +171,9 @@ A sequence of question mark operators `?` can return a value that depends on mor
 For instance:
 
 ```js run
-let age = prompt("age?", 18);
+let age = prompt('age?', 18);
 
-let message =
-  age < 3
-    ? "Hi, baby!"
-    : age < 18
-    ? "Hello!"
-    : age < 100
-    ? "Greetings!"
-    : "What an unusual age!";
+let message = age < 3 ? 'Hi, baby!' : age < 18 ? 'Hello!' : age < 100 ? 'Greetings!' : 'What an unusual age!';
 
 alert(message);
 ```
@@ -202,13 +189,13 @@ Here's how this looks using `if..else`:
 
 ```js
 if (age < 3) {
-  message = "Hi, baby!";
+    message = 'Hi, baby!';
 } else if (age < 18) {
-  message = "Hello!";
+    message = 'Hello!';
 } else if (age < 100) {
-  message = "Greetings!";
+    message = 'Greetings!';
 } else {
-  message = "What an unusual age!";
+    message = 'What an unusual age!';
 }
 ```
 

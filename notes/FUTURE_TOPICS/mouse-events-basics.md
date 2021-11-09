@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/mouse-events-basics"
-- <a href="mouse-events-basics.html"
-- <a href="https://es.javascript.info/mouse-events-basics"
-- <a href="https://fr.javascript.info/mouse-events-basics"
-- <a href="https://it.javascript.info/mouse-events-basics"
-  mouse-events-basics"
+-   <a href="https://ar.javascript.info/mouse-events-basics"
+-   <a href="mouse-events-basics.html"
+-   <a href="https://es.javascript.info/mouse-events-basics"
+-   <a href="https://fr.javascript.info/mouse-events-basics"
+-   <a href="https://it.javascript.info/mouse-events-basics"
+    mouse-events-basics"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/mouse-events-basics"
-- <a href=mouse-events-basics"
-- <a href="https://tr.javascript.info/mouse-events-basics"
-- <a href="https://zh.javascript.info/mouse-events-basics"
+-   <a href="https://ko.javascript.info/mouse-events-basics"
+-   <a href=mouse-events-basics"
+-   <a href="https://tr.javascript.info/mouse-events-basics"
+-   <a href="https://zh.javascript.info/mouse-events-basics"
 
 We want to make this open-source project available for people all around the world.
 
@@ -100,9 +100,9 @@ Also there’s `event.buttons` property that has all currently pressed buttons a
 
 Old code may use `event.which` property that’s an old non-standard way of getting a button, with possible values:
 
-- `event.which == 1` – left button,
-- `event.which == 2` – middle button,
-- `event.which == 3` – right button.
+-   `event.which == 1` – left button,
+-   `event.which == 2` – middle button,
+-   `event.which == 3` – right button.
 
 As of now, `event.which` is deprecated, we shouldn’t use it.
 
@@ -112,10 +112,10 @@ All mouse events include the information about pressed modifier keys.
 
 Event properties:
 
-- `shiftKey`: Shift
-- `altKey`: Alt (or Opt for Mac)
-- `ctrlKey`: Ctrl
-- `metaKey`: Cmd for Mac
+-   `shiftKey`: Shift
+-   `altKey`: Alt (or Opt for Mac)
+-   `ctrlKey`: Ctrl
+-   `metaKey`: Cmd for Mac
 
 They are `true` if the corresponding key was pressed during the event.
 
@@ -214,15 +214,15 @@ Surely the user has access to HTML-source of the page, and can take the content 
 
 Mouse events have the following properties:
 
-- Button: `button`.
+-   Button: `button`.
 
-- Modifier keys (`true` if pressed): `altKey`, `ctrlKey`, `shiftKey` and `metaKey` (Mac).
+-   Modifier keys (`true` if pressed): `altKey`, `ctrlKey`, `shiftKey` and `metaKey` (Mac).
 
-  - If you want to handle Ctrl, then don’t forget Mac users, they usually use Cmd, so it’s better to check `if (e.metaKey || e.ctrlKey)`.
+    -   If you want to handle Ctrl, then don’t forget Mac users, they usually use Cmd, so it’s better to check `if (e.metaKey || e.ctrlKey)`.
 
-- Window-relative coordinates: `clientX/clientY`.
+-   Window-relative coordinates: `clientX/clientY`.
 
-- Document-relative coordinates: `pageX/pageY`.
+-   Document-relative coordinates: `pageX/pageY`.
 
 The default browser action of `mousedown` is text selection, if it’s not good for the interface, then it should be prevented.
 
@@ -238,8 +238,8 @@ In the next chapter we’ll see more details about events that follow pointer mo
 
 Create a list where elements are selectable, like in file-managers.
 
-- A click on a list element selects only that element (adds the class `.selected`), deselects all others.
-- If a click is made with Ctrl (Cmd for Mac), then the selection is toggled on the element, but other elements are not modified.
+-   A click on a list element selects only that element (adds the class `.selected`), deselects all others.
+-   If a click is made with Ctrl (Cmd for Mac), then the selection is toggled on the element, but other elements are not modified.
 
 The demo:
 
@@ -263,28 +263,28 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="event-details.html" class="sidebar__link">UI Events</a>
+-   <a href="event-details.html" class="sidebar__link">UI Events</a>
 
 #### Lesson navigation
 
-- <a href="mouse-events-basics.html#mouse-event-types" class="sidebar__link">Mouse event types</a>
-- <a href="mouse-events-basics.html#events-order" class="sidebar__link">Events order</a>
-- <a href="mouse-events-basics.html#mouse-button" class="sidebar__link">Mouse button</a>
-- <a href="mouse-events-basics.html#modifiers-shift-alt-ctrl-and-meta" class="sidebar__link">Modifiers: shift, alt, ctrl and meta</a>
-- <a href="mouse-events-basics.html#coordinates-clientx-y-pagex-y" class="sidebar__link">Coordinates: clientX/Y, pageX/Y</a>
-- <a href="mouse-events-basics.html#preventing-selection-on-mousedown" class="sidebar__link">Preventing selection on mousedown</a>
-- <a href="mouse-events-basics.html#summary" class="sidebar__link">Summary</a>
+-   <a href="mouse-events-basics.html#mouse-event-types" class="sidebar__link">Mouse event types</a>
+-   <a href="mouse-events-basics.html#events-order" class="sidebar__link">Events order</a>
+-   <a href="mouse-events-basics.html#mouse-button" class="sidebar__link">Mouse button</a>
+-   <a href="mouse-events-basics.html#modifiers-shift-alt-ctrl-and-meta" class="sidebar__link">Modifiers: shift, alt, ctrl and meta</a>
+-   <a href="mouse-events-basics.html#coordinates-clientx-y-pagex-y" class="sidebar__link">Coordinates: clientX/Y, pageX/Y</a>
+-   <a href="mouse-events-basics.html#preventing-selection-on-mousedown" class="sidebar__link">Preventing selection on mousedown</a>
+-   <a href="mouse-events-basics.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="mouse-events-basics.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="mouse-events-basics.html#comments" class="sidebar__link">Comments</a>
+-   <a href="mouse-events-basics.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="mouse-events-basics.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -292,7 +292,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/3-event-details/1-mouse-events-basics" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

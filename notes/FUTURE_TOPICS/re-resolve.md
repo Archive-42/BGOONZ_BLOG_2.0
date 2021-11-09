@@ -2,10 +2,10 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="re-resolve.html"
-  /re-resolve"
-  /re-resolve"
-  re-resolvere-resolve"
+-   <a href="re-resolve.html"
+    /re-resolve"
+    /re-resolve"
+    re-resolvere-resolve"
 
 <!-- -->
 

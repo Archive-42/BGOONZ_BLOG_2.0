@@ -8,38 +8,38 @@ In this chapter, we’ll start with simple operators, then concentrate on JavaSc
 
 Before we move on, let's grasp some common terminology.
 
-- _An operand_ -- is what operators are applied to. For instance, in the multiplication of `5 * 2` there are two operands: the left operand is `5` and the right operand is `2`. Sometimes, people call these "arguments" instead of "operands".
-- An operator is _unary_ if it has a single operand. For example, the unary negation `-` reverses the sign of a number:
+-   _An operand_ -- is what operators are applied to. For instance, in the multiplication of `5 * 2` there are two operands: the left operand is `5` and the right operand is `2`. Sometimes, people call these "arguments" instead of "operands".
+-   An operator is _unary_ if it has a single operand. For example, the unary negation `-` reverses the sign of a number:
 
-  ```js run
-  let x = 1;
+    ```js run
+    let x = 1;
 
-  *!*
-  x = -x;
-  */!*
-  alert( x ); // -1, unary negation was applied
-  ```
+    *!*
+    x = -x;
+    */!*
+    alert( x ); // -1, unary negation was applied
+    ```
 
-- An operator is _binary_ if it has two operands. The same minus exists in binary form as well:
+-   An operator is _binary_ if it has two operands. The same minus exists in binary form as well:
 
-  ```js run no-beautify
-  let x = 1,
-    y = 3;
-  alert(y - x); // 2, binary minus subtracts values
-  ```
+    ```js run no-beautify
+    let x = 1,
+        y = 3;
+    alert(y - x); // 2, binary minus subtracts values
+    ```
 
-  Formally, in the examples above we have two different operators that share the same symbol: the negation operator, a unary operator that reverses the sign, and the subtraction operator, a binary operator that subtracts one number from another.
+    Formally, in the examples above we have two different operators that share the same symbol: the negation operator, a unary operator that reverses the sign, and the subtraction operator, a binary operator that subtracts one number from another.
 
 ## Maths
 
 The following math operations are supported:
 
-- Addition `+`,
-- Subtraction `-`,
-- Multiplication `*`,
-- Division `/`,
-- Remainder `%`,
-- Exponentiation `**`.
+-   Addition `+`,
+-   Subtraction `-`,
+-   Multiplication `*`,
+-   Division `/`,
+-   Remainder `%`,
+-   Exponentiation `**`.
 
 The first four are straightforward, while `%` and `**` need a few words about them.
 
@@ -88,7 +88,7 @@ Usually, the plus operator `+` sums numbers.
 But, if the binary `+` is applied to strings, it merges (concatenates) them:
 
 ```js
-let s = "my" + "string";
+let s = 'my' + 'string';
 alert(s); // mystring
 ```
 
@@ -97,8 +97,8 @@ Note that if any of the operands is a string, then the other one is converted to
 For example:
 
 ```js run
-alert("1" + 2); // "12"
-alert(2 + "1"); // "21"
+alert('1' + 2); // "12"
+alert(2 + '1'); // "21"
 ```
 
 See, it doesn't matter whether the first operand is a string or the second one.
@@ -106,13 +106,13 @@ See, it doesn't matter whether the first operand is a string or the second one.
 Here's a more complex example:
 
 ```js run
-alert(2 + 2 + "1"); // "41" and not "221"
+alert(2 + 2 + '1'); // "41" and not "221"
 ```
 
 Here, operators work one after another. The first `+` sums two numbers, so it returns `4`, then the next `+` adds the string `1` to it, so it's like `4 + '1' = '41'`.
 
 ```js run
-alert("1" + 2 + 2); // "122" and not "14"
+alert('1' + 2 + 2); // "122" and not "14"
 ```
 
 Here, the first operand is a string, the compiler treats the other two operands as strings too. The `2` gets concatenated to `'1'`, so it's like `'1' + 2 = "12"` and `"12" + 2 = "122"`.
@@ -122,8 +122,8 @@ The binary `+` is the only operator that supports strings in such a way. Other a
 Here's the demo for subtraction and division:
 
 ```js run
-alert(6 - "2"); // 4, converts '2' to a number
-alert("6" / "2"); // 3, converts both operands to numbers
+alert(6 - '2'); // 4, converts '2' to a number
+alert('6' / '2'); // 3, converts both operands to numbers
 ```
 
 ## Numeric conversion, unary +
@@ -156,8 +156,8 @@ The need to convert strings to numbers arises very often. For example, if we are
 The binary plus would add them as strings:
 
 ```js run
-let apples = "2";
-let oranges = "3";
+let apples = '2';
+let oranges = '3';
 
 alert(apples + oranges); // "23", the binary plus concatenates strings
 ```
@@ -319,21 +319,21 @@ Increasing or decreasing a number by one is among the most common numerical oper
 
 So, there are special operators for it:
 
-- **Increment** `++` increases a variable by 1:
+-   **Increment** `++` increases a variable by 1:
 
-  ```js run no-beautify
-  let counter = 2;
-  counter++; // works the same as counter = counter + 1, but is shorter
-  alert(counter); // 3
-  ```
+    ```js run no-beautify
+    let counter = 2;
+    counter++; // works the same as counter = counter + 1, but is shorter
+    alert(counter); // 3
+    ```
 
-- **Decrement** `--` decreases a variable by 1:
+-   **Decrement** `--` decreases a variable by 1:
 
-  ```js run no-beautify
-  let counter = 2;
-  counter--; // works the same as counter = counter - 1, but is shorter
-  alert(counter); // 1
-  ```
+    ```js run no-beautify
+    let counter = 2;
+    counter--; // works the same as counter = counter - 1, but is shorter
+    alert(counter); // 1
+    ```
 
 ```warn
 Increment/decrement can only be applied to variables. Trying to use it on a value like `5++` will give an error.
@@ -341,8 +341,8 @@ Increment/decrement can only be applied to variables. Trying to use it on a valu
 
 The operators `++` and `--` can be placed either before or after a variable.
 
-- When the operator goes after the variable, it is in "postfix form": `counter++`.
-- The "prefix form" is when the operator goes before the variable: `++counter`.
+-   When the operator goes after the variable, it is in "postfix form": `counter++`.
+-   The "prefix form" is when the operator goes before the variable: `++counter`.
 
 Both of these statements do the same thing: increase `counter` by `1`.
 
@@ -374,28 +374,28 @@ In the line `(*)`, the _postfix_ form `counter++` also increments `counter` but 
 
 To summarize:
 
-- If the result of increment/decrement is not used, there is no difference in which form to use:
+-   If the result of increment/decrement is not used, there is no difference in which form to use:
 
-  ```js run
-  let counter = 0;
-  counter++;
-  ++counter;
-  alert(counter); // 2, the lines above did the same
-  ```
+    ```js run
+    let counter = 0;
+    counter++;
+    ++counter;
+    alert(counter); // 2, the lines above did the same
+    ```
 
-- If we'd like to increase a value _and_ immediately use the result of the operator, we need the prefix form:
+-   If we'd like to increase a value _and_ immediately use the result of the operator, we need the prefix form:
 
-  ```js run
-  let counter = 0;
-  alert(++counter); // 1
-  ```
+    ```js run
+    let counter = 0;
+    alert(++counter); // 1
+    ```
 
-- If we'd like to increment a value but use its previous value, we need the postfix form:
+-   If we'd like to increment a value but use its previous value, we need the postfix form:
 
-  ```js run
-  let counter = 0;
-  alert(counter++); // 0
-  ```
+    ```js run
+    let counter = 0;
+    alert(counter++); // 0
+    ```
 
 ````smart header="Increment/decrement among other operators"
 The operators `++/--` can be used inside expressions as well. Their precedence is higher than most other arithmetical operations.
@@ -435,13 +435,13 @@ These operators are not JavaScript-specific. They are supported in most programm
 
 The list of operators:
 
-- AND ( `&` )
-- OR ( `|` )
-- XOR ( `^` )
-- NOT ( `~` )
-- LEFT SHIFT ( `<<` )
-- RIGHT SHIFT ( `>>` )
-- ZERO-FILL RIGHT SHIFT ( `>>>` )
+-   AND ( `&` )
+-   OR ( `|` )
+-   XOR ( `^` )
+-   NOT ( `~` )
+-   LEFT SHIFT ( `<<` )
+-   RIGHT SHIFT ( `>>` )
+-   ZERO-FILL RIGHT SHIFT ( `>>>` )
 
 These operators are used very rarely, when we need to fiddle with numbers on the very lowest (bitwise) level. We won't need these operators any time soon, as web development has little use of them, but in some special areas, such as cryptography, they are useful. You can read the [Bitwise Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Bitwise) chapter on MDN when a need arises.
 

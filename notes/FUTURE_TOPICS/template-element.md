@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="template-element.html"
-- <a href="https://es.javascript.info/template-element"
+-   <a href="https://ar.javascript.info/"
+-   <a href="template-element.html"
+-   <a href="https://es.javascript.info/template-element"
 
-- <a href="https://it.javascript.info/template-element"
-  template-element"
+-   <a href="https://it.javascript.info/template-element"
+    template-element"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=template-element"
-- <a href="https://tr.javascript.info/"
-  emplate-element"
+-   <a href="https://ko.javascript.info/"
+-   <a href=template-element"
+-   <a href="https://tr.javascript.info/"
+    emplate-element"
 
 We want to make this open-source project available for people all around the world.
 
@@ -134,15 +134,15 @@ They form the shadow DOM:
 
 To summarize:
 
-- `<template>` content can be any syntactically correct HTML.
-- `<template>` content is considered “out of the document”, so it doesn’t affect anything.
-- We can access `template.content` from JavaScript, clone it to reuse in a new component.
+-   `<template>` content can be any syntactically correct HTML.
+-   `<template>` content is considered “out of the document”, so it doesn’t affect anything.
+-   We can access `template.content` from JavaScript, clone it to reuse in a new component.
 
 The `<template>` tag is quite unique, because:
 
-- The browser checks HTML syntax inside it (as opposed to using a template string inside a script).
-- …But still allows use of any top-level HTML tags, even those that don’t make sense without proper wrappers (e.g. `<tr>`).
-- The content becomes interactive: scripts run, `<video autoplay>` plays etc, when inserted into the document.
+-   The browser checks HTML syntax inside it (as opposed to using a template string inside a script).
+-   …But still allows use of any top-level HTML tags, even those that don’t make sense without proper wrappers (e.g. `<tr>`).
+-   The content becomes interactive: scripts run, `<video autoplay>` plays etc, when inserted into the document.
 
 The `<template>` element does not feature any iteration mechanisms, data binding or variable substitutions, but we can implement those on top of it.
 
@@ -156,22 +156,22 @@ The `<template>` element does not feature any iteration mechanisms, data binding
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
 
 #### Lesson navigation
 
-- <a href="template-element.html#inserting-template" class="sidebar__link">Inserting template</a>
-- <a href="template-element.html#summary" class="sidebar__link">Summary</a>
+-   <a href="template-element.html#inserting-template" class="sidebar__link">Inserting template</a>
+-   <a href="template-element.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="template-element.html#comments" class="sidebar__link">Comments</a>
+-   <a href="template-element.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -179,7 +179,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/8-web-components/4-template-element" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

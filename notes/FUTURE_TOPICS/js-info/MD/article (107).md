@@ -4,9 +4,9 @@ Many events automatically lead to certain actions performed by the browser.
 
 For instance:
 
-- A click on a link - initiates navigation to its URL.
-- A click on a form submit button - initiates its submission to the server.
-- Pressing a mouse button over a text and moving it - selects the text.
+-   A click on a link - initiates navigation to its URL.
+-   A click on a form submit button - initiates its submission to the server.
+-   Pressing a mouse button over a text and moving it - selects the text.
 
 If we handle an event in JavaScript, we may not want the corresponding browser action to happen, and want to implement another behavior instead.
 
@@ -14,8 +14,8 @@ If we handle an event in JavaScript, we may not want the corresponding browser a
 
 There are two ways to tell the browser we don't want it to act:
 
-- The main way is to use the `event` object. There's a method `event.preventDefault()`.
-- If the handler is assigned using `on<event>` (not by `addEventListener`), then returning `false` also works the same.
+-   The main way is to use the `event` object. There's a method `event.preventDefault()`.
+-   If the handler is assigned using `on<event>` (not by `addEventListener`), then returning `false` also works the same.
 
 In this HTML a click on a link doesn't lead to navigation, browser doesn't do anything:
 
@@ -54,8 +54,8 @@ Here's how it looks with some CSS:
 
 Menu items are implemented as HTML-links `<a>`, not buttons `<button>`. There are several reasons to do so, for instance:
 
-- Many people like to use "right click" -- "open in a new window". If we use `<button>` or `<span>`, that doesn't work.
-- Search engines follow `<a href="...">` links while indexing.
+-   Many people like to use "right click" -- "open in a new window". If we use `<button>` or `<span>`, that doesn't work.
+-   Search engines follow `<a href="...">` links while indexing.
 
 So we use `<a>` in the markup. But normally we intend to handle clicks in JavaScript. So we should prevent the default browser action.
 
@@ -138,15 +138,15 @@ Upon right click, the closest context menu should show up.
 <button id="elem">Right-click here for the button context menu</button>
 
 <script>
-  elem.oncontextmenu = function (event) {
-    event.preventDefault();
-    alert("Button context menu");
-  };
+    elem.oncontextmenu = function (event) {
+        event.preventDefault();
+        alert('Button context menu');
+    };
 
-  document.oncontextmenu = function (event) {
-    event.preventDefault();
-    alert("Document context menu");
-  };
+    document.oncontextmenu = function (event) {
+        event.preventDefault();
+        alert('Document context menu');
+    };
 </script>
 ```
 
@@ -156,23 +156,21 @@ How to fix it? One of solutions is to think like: "When we handle right-click in
 
 ```html autorun height=80 no-beautify run
 <p>Right-click for the document menu</p>
-<button id="elem">
-  Right-click for the button menu (fixed with event.stopPropagation)
-</button>
+<button id="elem">Right-click for the button menu (fixed with event.stopPropagation)</button>
 
 <script>
-    elem.oncontextmenu = function(event) {
-      event.preventDefault();
-  *!*
-      event.stopPropagation();
-  */!*
-      alert("Button context menu");
-    };
+      elem.oncontextmenu = function(event) {
+        event.preventDefault();
+    *!*
+        event.stopPropagation();
+    */!*
+        alert("Button context menu");
+      };
 
-    document.oncontextmenu = function(event) {
-      event.preventDefault();
-      alert("Document context menu");
-    };
+      document.oncontextmenu = function(event) {
+        event.preventDefault();
+        alert("Document context menu");
+      };
 </script>
 ```
 
@@ -181,25 +179,23 @@ Now the button-level menu works as intended. But the price is high. We forever d
 An alternative solution would be to check in the `document` handler if the default action was prevented? If it is so, then the event was handled, and we don't need to react on it.
 
 ```html autorun height=80 no-beautify run
-<p>
-  Right-click for the document menu (added a check for event.defaultPrevented)
-</p>
+<p>Right-click for the document menu (added a check for event.defaultPrevented)</p>
 <button id="elem">Right-click for the button menu</button>
 
 <script>
-    elem.oncontextmenu = function(event) {
-      event.preventDefault();
-      alert("Button context menu");
-    };
+      elem.oncontextmenu = function(event) {
+        event.preventDefault();
+        alert("Button context menu");
+      };
 
-    document.oncontextmenu = function(event) {
-  *!*
-      if (event.defaultPrevented) return;
-  */!*
+      document.oncontextmenu = function(event) {
+    *!*
+        if (event.defaultPrevented) return;
+    */!*
 
-      event.preventDefault();
-      alert("Document context menu");
-    };
+        event.preventDefault();
+        alert("Document context menu");
+      };
 </script>
 ```
 
@@ -221,12 +217,12 @@ But then each piece of code that wants a context menu should know about that obj
 
 There are many default browser actions:
 
-- `mousedown` -- starts the selection (move the mouse to select).
-- `click` on `<input type="checkbox">` -- checks/unchecks the `input`.
-- `submit` -- clicking an `<input type="submit">` or hitting `key:Enter` inside a form field causes this event to happen, and the browser submits the form after it.
-- `keydown` -- pressing a key may lead to adding a character into a field, or other actions.
-- `contextmenu` -- the event happens on a right-click, the action is to show the browser context menu.
-- ...there are more...
+-   `mousedown` -- starts the selection (move the mouse to select).
+-   `click` on `<input type="checkbox">` -- checks/unchecks the `input`.
+-   `submit` -- clicking an `<input type="submit">` or hitting `key:Enter` inside a form field causes this event to happen, and the browser submits the form after it.
+-   `keydown` -- pressing a key may lead to adding a character into a field, or other actions.
+-   `contextmenu` -- the event happens on a right-click, the action is to show the browser context menu.
+-   ...there are more...
 
 All the default actions can be prevented if we want to handle the event exclusively by JavaScript.
 

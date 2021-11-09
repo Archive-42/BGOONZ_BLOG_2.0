@@ -21,9 +21,10 @@ Here's an example in `iframe`:
 Scroll it to see images load "on-demand".
 
 Requirements:
-- When the page loads, those images that are on-screen should load immediately, prior to any scrolling.
-- Some images may be regular, without `data-src`. The code should not touch them.
-- Once an image is loaded, it should not reload any more when scrolled in/out.
+
+-   When the page loads, those images that are on-screen should load immediately, prior to any scrolling.
+-   Some images may be regular, without `data-src`. The code should not touch them.
+-   Once an image is loaded, it should not reload any more when scrolled in/out.
 
 P.S. If you can, make a more advanced solution that would "preload" images that are one page below/after the current position.
 

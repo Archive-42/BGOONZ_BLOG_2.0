@@ -14,32 +14,30 @@ That's exactly what `:host` does:
 
 ```html run autorun="no-epub" untrusted height=80
 <template id="tmpl">
-  <style>
-    /* the style will be applied from inside to the custom-dialog element */
-    :host {
-      position: fixed;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      display: inline-block;
-      border: 1px solid red;
-      padding: 10px;
-    }
-  </style>
-  <slot></slot>
+    <style>
+        /* the style will be applied from inside to the custom-dialog element */
+        :host {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: inline-block;
+            border: 1px solid red;
+            padding: 10px;
+        }
+    </style>
+    <slot></slot>
 </template>
 
 <script>
-  customElements.define(
-    "custom-dialog",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" }).append(
-          tmpl.content.cloneNode(true)
-        );
-      }
-    }
-  );
+    customElements.define(
+        'custom-dialog',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' }).append(tmpl.content.cloneNode(true));
+            }
+        }
+    );
 </script>
 
 <custom-dialog> Hello! </custom-dialog>
@@ -55,9 +53,9 @@ For instance, if in the document we had:
 
 ```html
 <style>
-  custom-dialog {
-    padding: 0;
-  }
+    custom-dialog {
+        padding: 0;
+    }
 </style>
 ```
 
@@ -75,37 +73,35 @@ For example, we'd like to center the `<custom-dialog>` only if it has `centered`
 
 ```html run autorun="no-epub" untrusted height=80
 <template id="tmpl">
-  <style>
-    *!*
-        :host([centered]) {
-    */!*
-          position: fixed;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          border-color: blue;
-        }
+    <style>
+        *!*
+            :host([centered]) {
+        */!*
+              position: fixed;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              border-color: blue;
+            }
 
-        :host {
-          display: inline-block;
-          border: 1px solid red;
-          padding: 10px;
-        }
-  </style>
-  <slot></slot>
+            :host {
+              display: inline-block;
+              border: 1px solid red;
+              padding: 10px;
+            }
+    </style>
+    <slot></slot>
 </template>
 
 <script>
-  customElements.define(
-    "custom-dialog",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" }).append(
-          tmpl.content.cloneNode(true)
-        );
-      }
-    }
-  );
+    customElements.define(
+        'custom-dialog',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' }).append(tmpl.content.cloneNode(true));
+            }
+        }
+    );
 </script>
 
 <custom-dialog centered> Centered! </custom-dialog>
@@ -127,22 +123,22 @@ In the example below, slotted `<span>` is bold, as per document style, but does 
 
 ```html run autorun="no-epub" untrusted height=80
 <style>
-  *!*
-    span { font-weight: bold }
-  */!*
+    *!*
+      span { font-weight: bold }
+    */!*
 </style>
 
 <user-card>
-  <div slot="username">*!*<span>John Smith</span>*/!*</div>
+    <div slot="username">*!*<span>John Smith</span>*/!*</div>
 </user-card>
 
 <script>
-  customElements.define(
-    "user-card",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.innerHTML = `
+    customElements.define(
+        'user-card',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' });
+                this.shadowRoot.innerHTML = `
       <style>
 *!*
       span { background: red; }
@@ -150,9 +146,9 @@ In the example below, slotted `<span>` is bold, as per document style, but does 
       </style>
       Name: <slot name="username"></slot>
     `;
-      }
-    }
-  );
+            }
+        }
+    );
 </script>
 ```
 
@@ -164,16 +160,16 @@ First, we can style the `<slot>` itself and rely on CSS inheritance:
 
 ```html run autorun="no-epub" untrusted height=80
 <user-card>
-  <div slot="username">*!*<span>John Smith</span>*/!*</div>
+    <div slot="username">*!*<span>John Smith</span>*/!*</div>
 </user-card>
 
 <script>
-  customElements.define(
-    "user-card",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.innerHTML = `
+    customElements.define(
+        'user-card',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' });
+                this.shadowRoot.innerHTML = `
       <style>
 *!*
       slot[name="username"] { font-weight: bold; }
@@ -181,9 +177,9 @@ First, we can style the `<slot>` itself and rely on CSS inheritance:
       </style>
       Name: <slot name="username"></slot>
     `;
-      }
-    }
-  );
+            }
+        }
+    );
 </script>
 ```
 
@@ -198,18 +194,18 @@ In our example, `::slotted(div)` selects exactly `<div slot="username">`, but no
 
 ```html run autorun="no-epub" untrusted height=80
 <user-card>
-  <div slot="username">
-    <div>John Smith</div>
-  </div>
+    <div slot="username">
+        <div>John Smith</div>
+    </div>
 </user-card>
 
 <script>
-  customElements.define(
-    "user-card",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.innerHTML = `
+    customElements.define(
+        'user-card',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' });
+                this.shadowRoot.innerHTML = `
       <style>
 *!*
       ::slotted(div) { border: 1px solid red; }
@@ -217,9 +213,9 @@ In our example, `::slotted(div)` selects exactly `<div slot="username">`, but no
       </style>
       Name: <slot name="username"></slot>
     `;
-      }
-    }
-  );
+            }
+        }
+    );
 </script>
 ```
 
@@ -227,11 +223,11 @@ Please note, `::slotted` selector can't descend any further into the slot. These
 
 ```css
 ::slotted(div span) {
-  /* our slotted <div> does not match this */
+    /* our slotted <div> does not match this */
 }
 
 ::slotted(div) p {
-  /* can't go inside light DOM */
+    /* can't go inside light DOM */
 }
 ```
 
@@ -251,10 +247,10 @@ For example, in shadow DOM we can use `--user-card-field-color` CSS variable to 
 
 ```html
 <style>
-  .field {
-    color: var(--user-card-field-color, black);
-    /* if --user-card-field-color is not defined, use black color */
-  }
+    .field {
+        color: var(--user-card-field-color, black);
+        /* if --user-card-field-color is not defined, use black color */
+    }
 </style>
 <div class="field">Name: <slot name="username"></slot></div>
 <div class="field">Birthday: <slot name="birthday"></slot></div>
@@ -264,7 +260,7 @@ Then, we can declare this property in the outer document for `<user-card>`:
 
 ```css
 user-card {
-  --user-card-field-color: green;
+    --user-card-field-color: green;
 }
 ```
 
@@ -274,42 +270,40 @@ Here's the full example:
 
 ```html run autorun="no-epub" untrusted height=80
 <style>
-  *!*
-    user-card {
-      --user-card-field-color: green;
-    }
-  */!*
+    *!*
+      user-card {
+        --user-card-field-color: green;
+      }
+    */!*
 </style>
 
 <template id="tmpl">
-  <style>
-    *!*
-        .field {
-          color: var(--user-card-field-color, black);
-        }
-    */!*
-  </style>
-  <div class="field">Name: <slot name="username"></slot></div>
-  <div class="field">Birthday: <slot name="birthday"></slot></div>
+    <style>
+        *!*
+            .field {
+              color: var(--user-card-field-color, black);
+            }
+        */!*
+    </style>
+    <div class="field">Name: <slot name="username"></slot></div>
+    <div class="field">Birthday: <slot name="birthday"></slot></div>
 </template>
 
 <script>
-  customElements.define(
-    "user-card",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.append(
-          document.getElementById("tmpl").content.cloneNode(true)
-        );
-      }
-    }
-  );
+    customElements.define(
+        'user-card',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' });
+                this.shadowRoot.append(document.getElementById('tmpl').content.cloneNode(true));
+            }
+        }
+    );
 </script>
 
 <user-card>
-  <span slot="username">John Smith</span>
-  <span slot="birthday">01.01.2001</span>
+    <span slot="username">John Smith</span>
+    <span slot="birthday">01.01.2001</span>
 </user-card>
 ```
 
@@ -319,14 +313,14 @@ Shadow DOM can include styles, such as `<style>` or `<link rel="stylesheet">`.
 
 Local styles can affect:
 
-- shadow tree,
-- shadow host with `:host` and `:host()` pseudoclasses,
-- slotted elements (coming from light DOM), `::slotted(selector)` allows to select slotted elements themselves, but not their children.
+-   shadow tree,
+-   shadow host with `:host` and `:host()` pseudoclasses,
+-   slotted elements (coming from light DOM), `::slotted(selector)` allows to select slotted elements themselves, but not their children.
 
 Document styles can affect:
 
-- shadow host (as it lives in the outer document)
-- slotted elements and their contents (as that's also in the outer document)
+-   shadow host (as it lives in the outer document)
+-   slotted elements and their contents (as that's also in the outer document)
 
 When CSS properties conflict, normally document styles have precedence, unless the property is labelled as `!important`. Then local styles have precedence.
 

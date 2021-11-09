@@ -1,9 +1,9 @@
 maximal-subarray"
 
-- <a href="maximal-subarray.html"
-  /maximal-subarray"
-  /maximal-subarray"
-  maximal-subarraymaximal-subarray"
+-   <a href="maximal-subarray.html"
+    /maximal-subarray"
+    /maximal-subarray"
+    maximal-subarraymaximal-subarray"
 
 <!-- -->
 

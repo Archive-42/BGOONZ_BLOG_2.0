@@ -1,16 +1,16 @@
 match-exact-tag"
 
-- <a href="match-exact-tag.html"
-  /match-exact-tag"
-  /match-exact-tag"
-  match-exact-tagmatch-exact-tag"
+-   <a href="match-exact-tag.html"
+    /match-exact-tag"
+    /match-exact-tag"
+    match-exact-tagmatch-exact-tag"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  match-exact-tag"
-- <a href="https://tr.javascript.info/"
-  match-exact-tag"
+-   <a href="https://ko.javascript.info/"
+    match-exact-tag"
+-   <a href="https://tr.javascript.info/"
+    match-exact-tag"
 
 We want to make this open-source project available for people all around the world.
 

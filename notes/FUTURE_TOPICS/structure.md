@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/structure"
-- <a href="structure.html"
-- <a href="https://es.javascript.info/structure"
-- <a href="https://fr.javascript.info/structure"
-- <a href="https://it.javascript.info/structure"
-  structure"
+-   <a href="https://ar.javascript.info/structure"
+-   <a href="structure.html"
+-   <a href="https://es.javascript.info/structure"
+-   <a href="https://fr.javascript.info/structure"
+-   <a href="https://it.javascript.info/structure"
+    structure"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/structure"
-- <a href=structure"
-- <a href="https://tr.javascript.info/structure"
-- <a href="https://zh.javascript.info/structure"
+-   <a href="https://ko.javascript.info/structure"
+-   <a href=structure"
+-   <a href="https://tr.javascript.info/structure"
+-   <a href="https://zh.javascript.info/structure"
 
 We want to make this open-source project available for people all around the world.
 
@@ -214,23 +214,23 @@ Later in the tutorial there will be a chapter [Code quality](code-quality.html) 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="structure.html#statements" class="sidebar__link">Statements</a>
-- <a href="structure.html#semicolon" class="sidebar__link">Semicolons</a>
-- <a href="structure.html#code-comments" class="sidebar__link">Comments</a>
+-   <a href="structure.html#statements" class="sidebar__link">Statements</a>
+-   <a href="structure.html#semicolon" class="sidebar__link">Semicolons</a>
+-   <a href="structure.html#code-comments" class="sidebar__link">Comments</a>
 
-- <a href="structure.html#comments" class="sidebar__link">Comments</a>
+-   <a href="structure.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -238,7 +238,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/02-structure" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

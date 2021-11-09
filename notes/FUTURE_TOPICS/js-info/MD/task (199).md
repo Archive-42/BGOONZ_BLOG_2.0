@@ -10,25 +10,25 @@ Each `<th>` has the type in the attribute, like this:
 
 ```html
 <table id="grid">
-  <thead>
-    <tr>
-      *!*
-      <th data-type="number">Age</th>
-      <th data-type="string">Name</th>
-      */!*
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>5</td>
-      <td>John</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>Ann</td>
-    </tr>
-    ...
-  </tbody>
+    <thead>
+        <tr>
+            *!*
+            <th data-type="number">Age</th>
+            <th data-type="string">Name</th>
+            */!*
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>5</td>
+            <td>John</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Ann</td>
+        </tr>
+        ...
+    </tbody>
 </table>
 ```
 

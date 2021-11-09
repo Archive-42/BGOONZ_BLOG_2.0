@@ -1,16 +1,17 @@
 function makeArmy() {
-  let shooters = [];
+    let shooters = [];
 
-  let i = 0;
-  while (i < 10) {
-    let shooter = function() { // shooter function
-      alert( i ); // should show its number
-    };
-    shooters.push(shooter);
-    i++;
-  }
+    let i = 0;
+    while (i < 10) {
+        let shooter = function () {
+            // shooter function
+            alert(i); // should show its number
+        };
+        shooters.push(shooter);
+        i++;
+    }
 
-  return shooters;
+    return shooters;
 }
 
 /*

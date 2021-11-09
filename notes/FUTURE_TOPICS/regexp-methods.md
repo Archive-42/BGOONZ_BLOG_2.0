@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/regexp-methods"
-- <a href="regexp-methods.html"
-- <a href="https://es.javascript.info/regexp-methods"
-- <a href="https://fr.javascript.info/regexp-methods"
-- <a href="https://it.javascript.info/"
-  regexp-methods"
+-   <a href="https://ar.javascript.info/regexp-methods"
+-   <a href="regexp-methods.html"
+-   <a href="https://es.javascript.info/regexp-methods"
+-   <a href="https://fr.javascript.info/regexp-methods"
+-   <a href="https://it.javascript.info/"
+    regexp-methods"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=regexp-methods"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/regexp-methods"
+-   <a href="https://ko.javascript.info/"
+-   <a href=regexp-methods"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/regexp-methods"
 
 We want to make this open-source project available for people all around the world.
 
@@ -301,10 +301,10 @@ If there’s no `g`, then `regexp.exec(str)` returns the first match exactly as 
 
 But if there’s flag `g`, then:
 
-- A call to `regexp.exec(str)` returns the first match and saves the position immediately after it in the property `regexp.lastIndex`.
-- The next such call starts the search from position `regexp.lastIndex`, returns the next match and saves the position after it in `regexp.lastIndex`.
-- …And so on.
-- If there are no matches, `regexp.exec` returns `null` and resets `regexp.lastIndex` to `0`.
+-   A call to `regexp.exec(str)` returns the first match and saves the position immediately after it in the property `regexp.lastIndex`.
+-   The next such call starts the search from position `regexp.lastIndex`, returns the next match and saves the position after it in `regexp.lastIndex`.
+-   …And so on.
+-   If there are no matches, `regexp.exec` returns `null` and resets `regexp.lastIndex` to `0`.
 
 So, repeated calls return all matches one after another, using property `regexp.lastIndex` to keep track of the current search position.
 
@@ -424,28 +424,28 @@ To work around that, we can set `regexp.lastIndex = 0` before each search. Or in
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-methods.html#str-match-regexp" class="sidebar__link">str.match(regexp)</a>
-- <a href="regexp-methods.html#str-matchall-regexp" class="sidebar__link">str.matchAll(regexp)</a>
-- <a href="regexp-methods.html#str-split-regexp-substr-limit" class="sidebar__link">str.split(regexp|substr, limit)</a>
-- <a href="regexp-methods.html#str-search-regexp" class="sidebar__link">str.search(regexp)</a>
-- <a href="regexp-methods.html#str-replace-str-regexp-str-func" class="sidebar__link">str.replace(str|regexp, str|func)</a>
-- <a href="regexp-methods.html#str-replaceall-str-regexp-str-func" class="sidebar__link">str.replaceAll(str|regexp, str|func)</a>
-- <a href="regexp-methods.html#regexp-exec-str" class="sidebar__link">regexp.exec(str)</a>
-- <a href="regexp-methods.html#regexp-test-str" class="sidebar__link">regexp.test(str)</a>
+-   <a href="regexp-methods.html#str-match-regexp" class="sidebar__link">str.match(regexp)</a>
+-   <a href="regexp-methods.html#str-matchall-regexp" class="sidebar__link">str.matchAll(regexp)</a>
+-   <a href="regexp-methods.html#str-split-regexp-substr-limit" class="sidebar__link">str.split(regexp|substr, limit)</a>
+-   <a href="regexp-methods.html#str-search-regexp" class="sidebar__link">str.search(regexp)</a>
+-   <a href="regexp-methods.html#str-replace-str-regexp-str-func" class="sidebar__link">str.replace(str|regexp, str|func)</a>
+-   <a href="regexp-methods.html#str-replaceall-str-regexp-str-func" class="sidebar__link">str.replaceAll(str|regexp, str|func)</a>
+-   <a href="regexp-methods.html#regexp-exec-str" class="sidebar__link">regexp.exec(str)</a>
+-   <a href="regexp-methods.html#regexp-test-str" class="sidebar__link">regexp.test(str)</a>
 
-- <a href="regexp-methods.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-methods.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -453,7 +453,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/17-regexp-methods" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -19,7 +19,7 @@ For instance, here we use it as a global object:
 
 ```js run
 function sayHi() {
-  alert("Hello");
+    alert('Hello');
 }
 
 // global functions are methods of the global object:
@@ -44,10 +44,10 @@ For instance:
 
 ```js run
 // change the background color to red
-document.body.style.background = "red";
+document.body.style.background = 'red';
 
 // change it back after 1 second
-setTimeout(() => (document.body.style.background = ""), 1000);
+setTimeout(() => (document.body.style.background = ''), 1000);
 ```
 
 Here we used `document.body.style`, but there's much, much more. Properties and methods are described in the specification: [DOM Living Standard](https://dom.spec.whatwg.org).
@@ -70,15 +70,15 @@ The Browser Object Model (BOM) represents additional objects provided by the bro
 
 For instance:
 
-- The [navigator](mdn:api/Window/navigator) object provides background information about the browser and the operating system. There are many properties, but the two most widely known are: `navigator.userAgent` -- about the current browser, and `navigator.platform` -- about the platform (can help to differ between Windows/Linux/Mac etc).
-- The [location](mdn:api/Window/location) object allows us to read the current URL and can redirect the browser to a new one.
+-   The [navigator](mdn:api/Window/navigator) object provides background information about the browser and the operating system. There are many properties, but the two most widely known are: `navigator.userAgent` -- about the current browser, and `navigator.platform` -- about the platform (can help to differ between Windows/Linux/Mac etc).
+-   The [location](mdn:api/Window/location) object allows us to read the current URL and can redirect the browser to a new one.
 
 Here's how we can use the `location` object:
 
 ```js run
 alert(location.href); // shows current URL
-if (confirm("Go to Wikipedia?")) {
-  location.href = "https://wikipedia.org"; // redirect the browser to another URL
+if (confirm('Go to Wikipedia?')) {
+    location.href = 'https://wikipedia.org'; // redirect the browser to another URL
 }
 ```
 

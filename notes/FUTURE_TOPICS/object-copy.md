@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/object-copy"
-- <a href="object-copy.html"
-- <a href="https://es.javascript.info/object-copy"
-- <a href="https://fr.javascript.info/object-copy"
-- <a href="https://it.javascript.info/object-copy"
-  object-copy"
+-   <a href="https://ar.javascript.info/object-copy"
+-   <a href="object-copy.html"
+-   <a href="https://es.javascript.info/object-copy"
+-   <a href="https://fr.javascript.info/object-copy"
+-   <a href="https://it.javascript.info/object-copy"
+    object-copy"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/object-copy"
-- <a href=object-copy"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/object-copy"
+-   <a href="https://ko.javascript.info/object-copy"
+-   <a href=object-copy"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/object-copy"
 
 We want to make this open-source project available for people all around the world.
 
@@ -167,10 +167,10 @@ The syntax is:
 
     Object.assign(dest, [src1, src2, src3...])
 
-- The first argument `dest` is a target object.
-- Further arguments `src1, ..., srcN` (can be as many as needed) are source objects.
-- It copies the properties of all source objects `src1, ..., srcN` into the target `dest`. In other words, properties of all arguments starting from the second are copied into the first object.
-- The call returns `dest`.
+-   The first argument `dest` is a target object.
+-   Further arguments `src1, ..., srcN` (can be as many as needed) are source objects.
+-   It copies the properties of all source objects `src1, ..., srcN` into the target `dest`. In other words, properties of all arguments starting from the second are copied into the first object.
+-   The call returns `dest`.
 
 For instance, we can use it to merge several objects into one:
 
@@ -295,24 +295,24 @@ To make a “real copy” (a clone) we can use `Object.assign` for the so-called
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
 
 #### Lesson navigation
 
-- <a href="object-copy.html#comparison-by-reference" class="sidebar__link">Comparison by reference</a>
-- <a href="object-copy.html#cloning-and-merging-object-assign" class="sidebar__link">Cloning and merging, Object.assign</a>
-- <a href="object-copy.html#nested-cloning" class="sidebar__link">Nested cloning</a>
-- <a href="object-copy.html#summary" class="sidebar__link">Summary</a>
+-   <a href="object-copy.html#comparison-by-reference" class="sidebar__link">Comparison by reference</a>
+-   <a href="object-copy.html#cloning-and-merging-object-assign" class="sidebar__link">Cloning and merging, Object.assign</a>
+-   <a href="object-copy.html#nested-cloning" class="sidebar__link">Nested cloning</a>
+-   <a href="object-copy.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="object-copy.html#comments" class="sidebar__link">Comments</a>
+-   <a href="object-copy.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -320,7 +320,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/04-object-basics/02-object-copy" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

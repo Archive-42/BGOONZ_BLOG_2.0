@@ -9,8 +9,9 @@ Create a "throttling" decorator `throttle(f, ms)` -- that returns a wrapper.
 When it's called multiple times, it passes the call to `f` at maximum once per `ms` milliseconds.
 
 The difference with debounce is that it's completely different decorator:
-- `debounce` runs the function once after the "cooldown" period. Good for processing the final result.
-- `throttle` runs it not more often than given `ms` time. Good for regular updates that shouldn't be very often.
+
+-   `debounce` runs the function once after the "cooldown" period. Good for processing the final result.
+-   `throttle` runs it not more often than given `ms` time. Good for regular updates that shouldn't be very often.
 
 In other words, `throttle` is like a secretary that accepts phone calls, but bothers the boss (calls the actual `f`) not more often than once per `ms` milliseconds.
 
@@ -36,7 +37,7 @@ A code example:
 
 ```js
 function f(a) {
-  console.log(a);
+    console.log(a);
 }
 
 // f1000 passes calls to f at maximum once per 1000 ms

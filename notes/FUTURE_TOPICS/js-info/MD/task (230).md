@@ -14,7 +14,7 @@ Usage:
 <live-timer id="elem"></live-timer>
 
 <script>
-  elem.addEventListener("tick", (event) => console.log(event.detail));
+    elem.addEventListener('tick', (event) => console.log(event.detail));
 </script>
 ```
 

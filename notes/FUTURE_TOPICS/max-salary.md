@@ -2,10 +2,10 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="max-salary.html"
-  /max-salary"
-  /max-salary"
-  max-salarymax-salary"
+-   <a href="max-salary.html"
+    /max-salary"
+    /max-salary"
+    max-salarymax-salary"
 
 <!-- -->
 
@@ -40,8 +40,8 @@ There is a `salaries` object:
 
 Create the function `topSalary(salaries)` that returns the name of the top-paid person.
 
-- If `salaries` is empty, it should return `null`.
-- If there are multiple top-paid persons, return any of them.
+-   If `salaries` is empty, it should return `null`.
+-   If there are multiple top-paid persons, return any of them.
 
 P.S. Use `Object.entries` and destructuring to iterate over key/value pairs.
 

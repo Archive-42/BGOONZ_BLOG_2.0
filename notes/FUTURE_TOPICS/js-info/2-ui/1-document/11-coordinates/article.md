@@ -5,9 +5,9 @@ To move elements around we should be familiar with coordinates.
 Most JavaScript methods deal with one of two coordinate systems:
 
 1. **Relative to the window** - similar to `position:fixed`, calculated from the window top/left edge.
-   - we'll denote these coordinates as `clientX/clientY`, the reasoning for such name will become clear later, when we study event properties.
+    - we'll denote these coordinates as `clientX/clientY`, the reasoning for such name will become clear later, when we study event properties.
 2. **Relative to the document** - similar to `position:absolute` in the document root, calculated from the document top/left edge.
-   - we'll denote them `pageX/pageY`.
+    - we'll denote them `pageX/pageY`.
 
 When the page is scrolled to the very beginning, so that the top/left corner of the window is exactly the document top/left corner, these coordinates equal each other. But after the document shifts, window-relative coordinates of elements change, as elements move across the window, while document-relative coordinates remain the same.
 
@@ -17,8 +17,8 @@ On this picture we take a point in the document and demonstrate its coordinates 
 
 When the document scrolled:
 
-- `pageY` - document-relative coordinate stayed the same, it's counted from the document top (now scrolled out).
-- `clientY` - window-relative coordinate did change (the arrow became shorter), as the same point became closer to window top.
+-   `pageY` - document-relative coordinate stayed the same, it's counted from the document top (now scrolled out).
+-   `clientY` - window-relative coordinate did change (the arrow became shorter), as the same point became closer to window top.
 
 ## Element coordinates: getBoundingClientRect
 
@@ -26,13 +26,13 @@ The method `elem.getBoundingClientRect()` returns window coordinates for a minim
 
 Main `DOMRect` properties:
 
-- `x/y` -- X/Y-coordinates of the rectangle origin relative to window,
-- `width/height` -- width/height of the rectangle (can be negative).
+-   `x/y` -- X/Y-coordinates of the rectangle origin relative to window,
+-   `width/height` -- width/height of the rectangle (can be negative).
 
 Additionally, there are derived properties:
 
-- `top/bottom` -- Y-coordinate for the top/bottom rectangle edge,
-- `left/right` -- X-coordinate for the left/right rectangle edge.
+-   `top/bottom` -- Y-coordinate for the top/bottom rectangle edge,
+-   `left/right` -- X-coordinate for the left/right rectangle edge.
 
 ```online
 For instance click this button to see its window coordinates:
@@ -63,15 +63,15 @@ Here's the picture of `elem.getBoundingClientRect()` output:
 
 As you can see, `x/y` and `width/height` fully describe the rectangle. Derived properties can be easily calculated from them:
 
-- `left = x`
-- `top = y`
-- `right = x + width`
-- `bottom = y + height`
+-   `left = x`
+-   `top = y`
+-   `right = x + width`
+-   `bottom = y + height`
 
 Please note:
 
-- Coordinates may be decimal fractions, such as `10.5`. That's normal, internally browser uses fractions in calculations. We don't have to round them when setting to `style.left/top`.
-- Coordinates may be negative. For instance, if the page is scrolled so that `elem` is now above the window, then `elem.getBoundingClientRect().top` is negative.
+-   Coordinates may be decimal fractions, such as `10.5`. That's normal, internally browser uses fractions in calculations. We don't have to round them when setting to `style.left/top`.
+-   Coordinates may be negative. For instance, if the page is scrolled so that `elem` is now above the window, then `elem.getBoundingClientRect().top` is negative.
 
 ```smart header="Why derived properties are needed? Why does `top/left`exist if there's`x/y`?" Mathematically, a rectangle is uniquely defined with its starting point `(x,y)`and the direction vector`(width,height)`. So the additional derived properties are for convenience.
 
@@ -121,7 +121,7 @@ let centerY = document.documentElement.clientHeight / 2;
 
 let elem = document.elementFromPoint(centerX, centerY);
 
-elem.style.background = "red";
+elem.style.background = 'red';
 alert(elem.tagName);
 ```
 

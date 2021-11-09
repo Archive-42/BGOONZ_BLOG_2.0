@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="searching-elements-dom.html"
-- <a href="https://es.javascript.info/searching-elements-dom"
+-   <a href="https://ar.javascript.info/"
+-   <a href="searching-elements-dom.html"
+-   <a href="https://es.javascript.info/searching-elements-dom"
 
-- <a href="https://it.javascript.info/searching-elements-dom"
-  searching-elements-dom"
+-   <a href="https://it.javascript.info/searching-elements-dom"
+    searching-elements-dom"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/searching-elements-dom"
-- <a href=searching-elements-dom"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/searching-elements-dom"
+-   <a href="https://ko.javascript.info/searching-elements-dom"
+-   <a href=searching-elements-dom"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/searching-elements-dom"
 
 We want to make this open-source project available for people all around the world.
 
@@ -220,9 +220,9 @@ Today, they are mostly history, as `querySelector` is more powerful and shorter 
 
 So here we cover them mainly for completeness, while you can still find them in the old scripts.
 
-- `elem.getElementsByTagName(tag)` looks for elements with the given tag and returns the collection of them. The `tag` parameter can also be a star `"*"` for “any tags”.
-- `elem.getElementsByClassName(className)` returns elements that have the given CSS class.
-- `document.getElementsByName(name)` returns elements with the given `name` attribute, document-wide. Very rarely used.
+-   `elem.getElementsByTagName(tag)` looks for elements with the given tag and returns the collection of them. The `tag` parameter can also be a star `"*"` for “any tags”.
+-   `elem.getElementsByClassName(className)` returns elements that have the given CSS class.
+-   `document.getElementsByName(name)` returns elements with the given `name` attribute, document-wide. Very rarely used.
 
 For instance:
 
@@ -360,12 +360,12 @@ By far the most used are `querySelector` and `querySelectorAll`, but `getElement
 
 Besides that:
 
-- There is `elem.matches(css)` to check if `elem` matches the given CSS selector.
-- There is `elem.closest(css)` to look for the nearest ancestor that matches the given CSS-selector. The `elem` itself is also checked.
+-   There is `elem.matches(css)` to check if `elem` matches the given CSS selector.
+-   There is `elem.closest(css)` to look for the nearest ancestor that matches the given CSS-selector. The `elem` itself is also checked.
 
 And let’s mention one more method here to check for the child-parent relationship, as it’s sometimes useful:
 
-- `elemA.contains(elemB)` returns true if `elemB` is inside `elemA` (a descendant of `elemA`) or when `elemA==elemB`.
+-   `elemA.contains(elemB)` returns true if `elemB` is inside `elemA` (a descendant of `elemA`) or when `elemA==elemB`.
 
 ## <a href="searching-elements-dom.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -434,29 +434,29 @@ Here are some of them:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
-- <a href="searching-elements-dom.html#document-getelementbyid-or-just-id" class="sidebar__link">document.getElementById or just id</a>
-- <a href="searching-elements-dom.html#querySelectorAll" class="sidebar__link">querySelectorAll</a>
-- <a href="searching-elements-dom.html#querySelector" class="sidebar__link">querySelector</a>
-- <a href="searching-elements-dom.html#matches" class="sidebar__link">matches</a>
-- <a href="searching-elements-dom.html#closest" class="sidebar__link">closest</a>
-- <a href="searching-elements-dom.html#getelementsby" class="sidebar__link">getElementsBy\*</a>
-- <a href="searching-elements-dom.html#live-collections" class="sidebar__link">Live collections</a>
-- <a href="searching-elements-dom.html#summary" class="sidebar__link">Summary</a>
+-   <a href="searching-elements-dom.html#document-getelementbyid-or-just-id" class="sidebar__link">document.getElementById or just id</a>
+-   <a href="searching-elements-dom.html#querySelectorAll" class="sidebar__link">querySelectorAll</a>
+-   <a href="searching-elements-dom.html#querySelector" class="sidebar__link">querySelector</a>
+-   <a href="searching-elements-dom.html#matches" class="sidebar__link">matches</a>
+-   <a href="searching-elements-dom.html#closest" class="sidebar__link">closest</a>
+-   <a href="searching-elements-dom.html#getelementsby" class="sidebar__link">getElementsBy\*</a>
+-   <a href="searching-elements-dom.html#live-collections" class="sidebar__link">Live collections</a>
+-   <a href="searching-elements-dom.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="searching-elements-dom.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="searching-elements-dom.html#comments" class="sidebar__link">Comments</a>
+-   <a href="searching-elements-dom.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="searching-elements-dom.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -464,7 +464,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/04-searching-elements-dom" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

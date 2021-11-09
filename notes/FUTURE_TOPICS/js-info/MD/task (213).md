@@ -8,8 +8,8 @@ There's a `<select>`:
 
 ```html
 <select id="genres">
-  <option value="rock">Rock</option>
-  <option value="blues" selected>Blues</option>
+    <option value="rock">Rock</option>
+    <option value="blues" selected>Blues</option>
 </select>
 ```
 

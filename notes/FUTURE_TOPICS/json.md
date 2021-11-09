@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/json"
-- <a href="json.html"
-- <a href="https://es.javascript.info/json"
-- <a href="https://fr.javascript.info/json"
-- <a href="https://it.javascript.info/json"
-  json"
+-   <a href="https://ar.javascript.info/json"
+-   <a href="json.html"
+-   <a href="https://es.javascript.info/json"
+-   <a href="https://fr.javascript.info/json"
+-   <a href="https://it.javascript.info/json"
+    json"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/json"
-- <a href=json"
-- <a href="https://tr.javascript.info/json"
-- <a href="https://zh.javascript.info/json"
+-   <a href="https://ko.javascript.info/json"
+-   <a href=json"
+-   <a href="https://tr.javascript.info/json"
+-   <a href="https://zh.javascript.info/json"
 
 We want to make this open-source project available for people all around the world.
 
@@ -70,8 +70,8 @@ The [JSON](http://en.wikipedia.org/wiki/JSON) (JavaScript Object Notation) is a 
 
 JavaScript provides methods:
 
-- `JSON.stringify` to convert objects into JSON.
-- `JSON.parse` to convert JSON back into an object.
+-   `JSON.stringify` to convert objects into JSON.
+-   `JSON.parse` to convert JSON back into an object.
 
 For instance, here we `JSON.stringify` a student:
 
@@ -107,20 +107,20 @@ The resulting `json` string is called a _JSON-encoded_ or _serialized_ or _strin
 
 Please note that a JSON-encoded object has several important differences from the object literal:
 
-- Strings use double quotes. No single quotes or backticks in JSON. So `'John'` becomes `"John"`.
-- Object property names are double-quoted also. That’s obligatory. So `age:30` becomes `"age":30`.
+-   Strings use double quotes. No single quotes or backticks in JSON. So `'John'` becomes `"John"`.
+-   Object property names are double-quoted also. That’s obligatory. So `age:30` becomes `"age":30`.
 
 `JSON.stringify` can be applied to primitives as well.
 
 JSON supports following data types:
 
-- Objects `{ ... }`
-- Arrays `[ ... ]`
-- Primitives:
-  - strings,
-  - numbers,
-  - boolean values `true/false`,
-  - `null`.
+-   Objects `{ ... }`
+-   Arrays `[ ... ]`
+-   Primitives:
+    -   strings,
+    -   numbers,
+    -   boolean values `true/false`,
+    -   `null`.
 
 For instance:
 
@@ -141,9 +141,9 @@ JSON is data-only language-independent specification, so some JavaScript-specifi
 
 Namely:
 
-- Function properties (methods).
-- Symbolic keys and values.
-- Properties that store `undefined`.
+-   Function properties (methods).
+-   Symbolic keys and values.
+-   Properties that store `undefined`.
 
 <a href="json.html#"
 <a href="json.html#"
@@ -542,11 +542,11 @@ By the way, that works for nested objects as well:
 
 ## <a href="json.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- JSON is a data format that has its own independent standard and libraries for most programming languages.
-- JSON supports plain objects, arrays, strings, numbers, booleans, and `null`.
-- JavaScript provides methods [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to serialize into JSON and [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) to read from JSON.
-- Both methods support transformer functions for smart reading/writing.
-- If an object has `toJSON`, then it is called by `JSON.stringify`.
+-   JSON is a data format that has its own independent standard and libraries for most programming languages.
+-   JSON supports plain objects, arrays, strings, numbers, booleans, and `null`.
+-   JavaScript provides methods [JSON.stringify](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) to serialize into JSON and [JSON.parse](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) to read from JSON.
+-   Both methods support transformer functions for smart reading/writing.
+-   If an object has `toJSON`, then it is called by `JSON.stringify`.
 
 ## <a href="json.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -655,28 +655,28 @@ Here we also need to test `key==""` to exclude the first call where it is normal
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="json.html#json-stringify" class="sidebar__link">JSON.stringify</a>
-- <a href="json.html#excluding-and-transforming-replacer" class="sidebar__link">Excluding and transforming: replacer</a>
-- <a href="json.html#formatting-space" class="sidebar__link">Formatting: space</a>
-- <a href="json.html#custom-tojson" class="sidebar__link">Custom “toJSON”</a>
-- <a href="json.html#json-parse" class="sidebar__link">JSON.parse</a>
-- <a href="json.html#using-reviver" class="sidebar__link">Using reviver</a>
-- <a href="json.html#summary" class="sidebar__link">Summary</a>
+-   <a href="json.html#json-stringify" class="sidebar__link">JSON.stringify</a>
+-   <a href="json.html#excluding-and-transforming-replacer" class="sidebar__link">Excluding and transforming: replacer</a>
+-   <a href="json.html#formatting-space" class="sidebar__link">Formatting: space</a>
+-   <a href="json.html#custom-tojson" class="sidebar__link">Custom “toJSON”</a>
+-   <a href="json.html#json-parse" class="sidebar__link">JSON.parse</a>
+-   <a href="json.html#using-reviver" class="sidebar__link">Using reviver</a>
+-   <a href="json.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="json.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="json.html#comments" class="sidebar__link">Comments</a>
+-   <a href="json.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="json.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -684,7 +684,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/12-json" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

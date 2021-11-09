@@ -18,14 +18,14 @@ Here's the picture, explanations to follow:
 
 The classes are:
 
-- [EventTarget](https://dom.spec.whatwg.org/#eventtarget) -- is the root "abstract" class. Objects of that class are never created. It serves as a base, so that all DOM nodes support so-called "events", we'll study them later.
-- [Node](http://dom.spec.whatwg.org/#interface-node) -- is also an "abstract" class, serving as a base for DOM nodes. It provides the core tree functionality: `parentNode`, `nextSibling`, `childNodes` and so on (they are getters). Objects of `Node` class are never created. But there are concrete node classes that inherit from it, namely: `Text` for text nodes, `Element` for element nodes and more exotic ones like `Comment` for comment nodes.
-- [Element](http://dom.spec.whatwg.org/#interface-element) -- is a base class for DOM elements. It provides element-level navigation like `nextElementSibling`, `children` and searching methods like `getElementsByTagName`, `querySelector`. A browser supports not only HTML, but also XML and SVG. The `Element` class serves as a base for more specific classes: `SVGElement`, `XMLElement` and `HTMLElement`.
-- [HTMLElement](https://html.spec.whatwg.org/multipage/dom.html#htmlelement) -- is finally the basic class for all HTML elements. It is inherited by concrete HTML elements:
-  - [HTMLInputElement](https://html.spec.whatwg.org/multipage/forms.html#htmlinputelement) -- the class for `<input>` elements,
-  - [HTMLBodyElement](https://html.spec.whatwg.org/multipage/semantics.html#htmlbodyelement) -- the class for `<body>` elements,
-  - [HTMLAnchorElement](https://html.spec.whatwg.org/multipage/semantics.html#htmlanchorelement) -- the class for `<a>` elements,
-  - ...and so on, each tag has its own class that may provide specific properties and methods.
+-   [EventTarget](https://dom.spec.whatwg.org/#eventtarget) -- is the root "abstract" class. Objects of that class are never created. It serves as a base, so that all DOM nodes support so-called "events", we'll study them later.
+-   [Node](http://dom.spec.whatwg.org/#interface-node) -- is also an "abstract" class, serving as a base for DOM nodes. It provides the core tree functionality: `parentNode`, `nextSibling`, `childNodes` and so on (they are getters). Objects of `Node` class are never created. But there are concrete node classes that inherit from it, namely: `Text` for text nodes, `Element` for element nodes and more exotic ones like `Comment` for comment nodes.
+-   [Element](http://dom.spec.whatwg.org/#interface-element) -- is a base class for DOM elements. It provides element-level navigation like `nextElementSibling`, `children` and searching methods like `getElementsByTagName`, `querySelector`. A browser supports not only HTML, but also XML and SVG. The `Element` class serves as a base for more specific classes: `SVGElement`, `XMLElement` and `HTMLElement`.
+-   [HTMLElement](https://html.spec.whatwg.org/multipage/dom.html#htmlelement) -- is finally the basic class for all HTML elements. It is inherited by concrete HTML elements:
+    -   [HTMLInputElement](https://html.spec.whatwg.org/multipage/forms.html#htmlinputelement) -- the class for `<input>` elements,
+    -   [HTMLBodyElement](https://html.spec.whatwg.org/multipage/semantics.html#htmlbodyelement) -- the class for `<body>` elements,
+    -   [HTMLAnchorElement](https://html.spec.whatwg.org/multipage/semantics.html#htmlanchorelement) -- the class for `<a>` elements,
+    -   ...and so on, each tag has its own class that may provide specific properties and methods.
 
 So, the full set of properties and methods of a given node comes as the result of the inheritance.
 
@@ -33,12 +33,12 @@ For example, let's consider the DOM object for an `<input>` element. It belongs 
 
 It gets properties and methods as a superposition of (listed in inheritance order):
 
-- `HTMLInputElement` -- this class provides input-specific properties,
-- `HTMLElement` -- it provides common HTML element methods (and getters/setters),
-- `Element` -- provides generic element methods,
-- `Node` -- provides common DOM node properties,
-- `EventTarget` -- gives the support for events (to be covered),
-- ...and finally it inherits from `Object`, so "plain object" methods like `hasOwnProperty` are also available.
+-   `HTMLInputElement` -- this class provides input-specific properties,
+-   `HTMLElement` -- it provides common HTML element methods (and getters/setters),
+-   `Element` -- provides generic element methods,
+-   `Node` -- provides common DOM node properties,
+-   `EventTarget` -- gives the support for events (to be covered),
+-   ...and finally it inherits from `Object`, so "plain object" methods like `hasOwnProperty` are also available.
 
 To see the DOM node class name, we can recall that an object usually has the `constructor` property. It references the class constructor, and `constructor.name` is its name:
 
@@ -70,8 +70,8 @@ That's also easy to see by outputting an element with `console.dir(elem)` in a b
 
 But for DOM elements they are different:
 
-- `console.log(elem)` shows the element DOM tree.
-- `console.dir(elem)` shows the element as a DOM object, good to explore its properties.
+-   `console.log(elem)` shows the element DOM tree.
+-   `console.dir(elem)` shows the element as a DOM object, good to explore its properties.
 
 Try it on `document.body`.
 

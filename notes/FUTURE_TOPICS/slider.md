@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="slider.html"
-  /slider"
-  /slider"
-  sliderslider"
+-   <a href="slider.html"
+    /slider"
+    /slider"
+    sliderslider"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  slider"
-  /slider"
-  slider"
+-   <a href="https://ko.javascript.info/"
+    slider"
+    /slider"
+    slider"
 
 We want to make this open-source project available for people all around the world.
 
@@ -38,8 +38,8 @@ Drag the blue thumb with the mouse and move it.
 
 Important details:
 
-- When the mouse button is pressed, during the dragging the mouse may go over or below the slider. The slider will still work (convenient for the user).
-- If the mouse moves very fast to the left or to the right, the thumb should stop exactly at the edge.
+-   When the mouse button is pressed, during the dragging the mouse may go over or below the slider. The slider will still work (convenient for the user).
+-   If the mouse moves very fast to the left or to the right, the thumb should stop exactly at the edge.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/p7Ag21yFCKk3iLFe?p=preview)
 

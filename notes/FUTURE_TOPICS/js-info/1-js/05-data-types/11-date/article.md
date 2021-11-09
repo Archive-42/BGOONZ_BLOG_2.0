@@ -92,9 +92,9 @@ There are methods to access the year, month and so on from the `Date` object:
 [getHours()](mdn:js/Date/getHours), [getMinutes()](mdn:js/Date/getMinutes), [getSeconds()](mdn:js/Date/getSeconds), [getMilliseconds()](mdn:js/Date/getMilliseconds)
 : Get the corresponding time components.
 
-```warn header="Not `getYear()`, but `getFullYear()`"
-Many JavaScript engines implement a non-standard method `getYear()`. This method is deprecated. It returns 2-digit year sometimes. Please never use it. There is `getFullYear()` for the year.
-```
+```warn header="Not `getYear()`, but `getFullYear()`" Many JavaScript engines implement a non-standard method `getYear()`. This method is deprecated. It returns 2-digit year sometimes. Please never use it. There is `getFullYear()` for the year.
+
+````
 
 Additionally, we can get a day of week:
 
@@ -116,7 +116,7 @@ alert( date.getHours() );
 
 // the hour in UTC+0 time zone (London time without daylight savings)
 alert( date.getUTCHours() );
-```
+````
 
 Besides the given methods, there are two special ones that do not have a UTC-variant:
 
@@ -137,14 +137,14 @@ Besides the given methods, there are two special ones that do not have a UTC-var
 
 The following methods allow to set date/time components:
 
-- [`setFullYear(year, [month], [date])`](mdn:js/Date/setFullYear)
-- [`setMonth(month, [date])`](mdn:js/Date/setMonth)
-- [`setDate(date)`](mdn:js/Date/setDate)
-- [`setHours(hour, [min], [sec], [ms])`](mdn:js/Date/setHours)
-- [`setMinutes(min, [sec], [ms])`](mdn:js/Date/setMinutes)
-- [`setSeconds(sec, [ms])`](mdn:js/Date/setSeconds)
-- [`setMilliseconds(ms)`](mdn:js/Date/setMilliseconds)
-- [`setTime(milliseconds)`](mdn:js/Date/setTime) (sets the whole date by milliseconds since 01.01.1970 UTC)
+-   [`setFullYear(year, [month], [date])`](mdn:js/Date/setFullYear)
+-   [`setMonth(month, [date])`](mdn:js/Date/setMonth)
+-   [`setDate(date)`](mdn:js/Date/setDate)
+-   [`setHours(hour, [min], [sec], [ms])`](mdn:js/Date/setHours)
+-   [`setMinutes(min, [sec], [ms])`](mdn:js/Date/setMinutes)
+-   [`setSeconds(sec, [ms])`](mdn:js/Date/setSeconds)
+-   [`setMilliseconds(ms)`](mdn:js/Date/setMilliseconds)
+-   [`setTime(milliseconds)`](mdn:js/Date/setTime) (sets the whole date by milliseconds since 01.01.1970 UTC)
 
 Every one of them except `setTime()` has a UTC-variant, for instance: `setUTCHours()`.
 
@@ -164,7 +164,7 @@ alert(today); // still today, now 00:00:00 sharp.
 
 ## Autocorrection
 
-The *autocorrection* is a very handy feature of `Date` objects. We can set out-of-range values, and it will auto-adjust itself.
+The _autocorrection_ is a very handy feature of `Date` objects. We can set out-of-range values, and it will auto-adjust itself.
 
 For instance:
 
@@ -192,7 +192,7 @@ That feature is often used to get the date after the given period of time. For i
 let date = new Date();
 date.setSeconds(date.getSeconds() + 70);
 
-alert( date ); // shows the correct date
+alert(date); // shows the correct date
 ```
 
 We can also set zero or even negative values. For example:
@@ -201,10 +201,10 @@ We can also set zero or even negative values. For example:
 let date = new Date(2016, 0, 2); // 2 Jan 2016
 
 date.setDate(1); // set day 1 of month
-alert( date );
+alert(date);
 
 date.setDate(0); // min day is 1, so the last day of the previous month is assumed
-alert( date ); // 31 Dec 2015
+alert(date); // 31 Dec 2015
 ```
 
 ## Date to number, date diff
@@ -225,12 +225,12 @@ let start = new Date(); // start measuring time
 
 // do the job
 for (let i = 0; i < 100000; i++) {
-  let doSomething = i * i * i;
+    let doSomething = i * i * i;
 }
 
 let end = new Date(); // end measuring time
 
-alert( `The loop took ${end - start} ms` );
+alert(`The loop took ${end - start} ms`);
 ```
 
 ## Date.now()
@@ -273,12 +273,12 @@ Such performance measurements are often called "benchmarks".
 ```js
 // we have date1 and date2, which function faster returns their difference in ms?
 function diffSubtract(date1, date2) {
-  return date2 - date1;
+    return date2 - date1;
 }
 
 // or
 function diffGetTime(date1, date2) {
-  return date2.getTime() - date1.getTime();
+    return date2.getTime() - date1.getTime();
 }
 ```
 
@@ -292,24 +292,24 @@ Let's measure:
 
 ```js run
 function diffSubtract(date1, date2) {
-  return date2 - date1;
+    return date2 - date1;
 }
 
 function diffGetTime(date1, date2) {
-  return date2.getTime() - date1.getTime();
+    return date2.getTime() - date1.getTime();
 }
 
 function bench(f) {
-  let date1 = new Date(0);
-  let date2 = new Date();
+    let date1 = new Date(0);
+    let date2 = new Date();
 
-  let start = Date.now();
-  for (let i = 0; i < 100000; i++) f(date1, date2);
-  return Date.now() - start;
+    let start = Date.now();
+    for (let i = 0; i < 100000; i++) f(date1, date2);
+    return Date.now() - start;
 }
 
-alert( 'Time of diffSubtract: ' + bench(diffSubtract) + 'ms' );
-alert( 'Time of diffGetTime: ' + bench(diffGetTime) + 'ms' );
+alert('Time of diffSubtract: ' + bench(diffSubtract) + 'ms');
+alert('Time of diffGetTime: ' + bench(diffGetTime) + 'ms');
 ```
 
 Wow! Using `getTime()` is so much faster! That's because there's no type conversion, it is much easier for engines to optimize.
@@ -368,8 +368,8 @@ bench(diffGetTime);
 
 // now benchmark
 for (let i = 0; i < 10; i++) {
-  time1 += bench(diffSubtract);
-  time2 += bench(diffGetTime);
+    time1 += bench(diffSubtract);
+    time2 += bench(diffGetTime);
 }
 ```
 
@@ -385,10 +385,10 @@ The method [Date.parse(str)](mdn:js/Date/parse) can read a date from a string.
 
 The string format should be: `YYYY-MM-DDTHH:mm:ss.sssZ`, where:
 
-- `YYYY-MM-DD` -- is the date: year-month-day.
-- The character `"T"` is used as the delimiter.
-- `HH:mm:ss.sss` -- is the time: hours, minutes, seconds and milliseconds.
-- The optional `'Z'` part denotes the time zone in the format `+-hh:mm`. A single letter `Z` would mean UTC+0.
+-   `YYYY-MM-DD` -- is the date: year-month-day.
+-   The character `"T"` is used as the delimiter.
+-   `HH:mm:ss.sss` -- is the time: hours, minutes, seconds and milliseconds.
+-   The optional `'Z'` part denotes the time zone in the format `+-hh:mm`. A single letter `Z` would mean UTC+0.
 
 Shorter variants are also possible, like `YYYY-MM-DD` or `YYYY-MM` or even `YYYY`.
 
@@ -405,19 +405,19 @@ alert(ms); // 1327611110417  (timestamp)
 We can instantly create a `new Date` object from the timestamp:
 
 ```js run
-let date = new Date( Date.parse('2012-01-26T13:51:50.417-07:00') );
+let date = new Date(Date.parse('2012-01-26T13:51:50.417-07:00'));
 
-alert(date);  
+alert(date);
 ```
 
 ## Summary
 
-- Date and time in JavaScript are represented with the [Date](mdn:js/Date) object. We can't create "only date" or "only time": `Date` objects always carry both.
-- Months are counted from zero (yes, January is a zero month).
-- Days of week in `getDay()` are also counted from zero (that's Sunday).
-- `Date` auto-corrects itself when out-of-range components are set. Good for adding/subtracting days/months/hours.
-- Dates can be subtracted, giving their difference in milliseconds. That's because a `Date` becomes the timestamp when converted to a number.
-- Use `Date.now()` to get the current timestamp fast.
+-   Date and time in JavaScript are represented with the [Date](mdn:js/Date) object. We can't create "only date" or "only time": `Date` objects always carry both.
+-   Months are counted from zero (yes, January is a zero month).
+-   Days of week in `getDay()` are also counted from zero (that's Sunday).
+-   `Date` auto-corrects itself when out-of-range components are set. Good for adding/subtracting days/months/hours.
+-   Dates can be subtracted, giving their difference in milliseconds. That's because a `Date` becomes the timestamp when converted to a number.
+-   Use `Date.now()` to get the current timestamp fast.
 
 Note that unlike many other systems, timestamps in JavaScript are in milliseconds, not in seconds.
 

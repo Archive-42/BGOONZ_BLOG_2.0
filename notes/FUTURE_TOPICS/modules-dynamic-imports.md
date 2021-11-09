@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/modules-dynamic-imports"
-- <a href="modules-dynamic-imports.html"
-- <a href="https://es.javascript.info/modules-dynamic-imports"
-- <a href="https://fr.javascript.info/modules-dynamic-imports"
-- <a href="https://it.javascript.info/modules-dynamic-imports"
-  modules-dynamic-imports"
+-   <a href="https://ar.javascript.info/modules-dynamic-imports"
+-   <a href="modules-dynamic-imports.html"
+-   <a href="https://es.javascript.info/modules-dynamic-imports"
+-   <a href="https://fr.javascript.info/modules-dynamic-imports"
+-   <a href="https://it.javascript.info/modules-dynamic-imports"
+    modules-dynamic-imports"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/modules-dynamic-imports"
-- <a href=modules-dynamic-imports"
-- <a href="https://tr.javascript.info/modules-dynamic-imports"
-- <a href="https://zh.javascript.info/modules-dynamic-imports"
+-   <a href="https://ko.javascript.info/modules-dynamic-imports"
+-   <a href=modules-dynamic-imports"
+-   <a href="https://tr.javascript.info/modules-dynamic-imports"
+-   <a href="https://zh.javascript.info/modules-dynamic-imports"
 
 We want to make this open-source project available for people all around the world.
 
@@ -162,21 +162,21 @@ So we can’t copy `import` to a variable or use `call/apply` with it. It’s no
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="modules.html" class="sidebar__link">Modules</a>
+-   <a href="modules.html" class="sidebar__link">Modules</a>
 
 #### Lesson navigation
 
-- <a href="modules-dynamic-imports.html#the-import-expression" class="sidebar__link">The import() expression</a>
+-   <a href="modules-dynamic-imports.html#the-import-expression" class="sidebar__link">The import() expression</a>
 
-- <a href="modules-dynamic-imports.html#comments" class="sidebar__link">Comments</a>
+-   <a href="modules-dynamic-imports.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -184,7 +184,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/13-modules/03-modules-dynamic-imports" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

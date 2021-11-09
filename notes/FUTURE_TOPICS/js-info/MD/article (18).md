@@ -16,7 +16,7 @@ It looks like this:
 
 ```js
 function showMessage() {
-  alert("Hello everyone!");
+    alert('Hello everyone!');
 }
 ```
 
@@ -176,8 +176,8 @@ When a value is passed as a function parameter, it's also called an _argument_.
 
 In other words, to put these terms straight:
 
-- A parameter is the variable listed inside the parentheses in the function declaration (it's a declaration time term)
-- An argument is the value that is passed to the function when it is called (it's a call time term).
+-   A parameter is the variable listed inside the parentheses in the function declaration (it's a declaration time term)
+-   An argument is the value that is passed to the function when it is called (it's a call time term).
 
 We declare functions listing their parameters, then call them passing arguments.
 
@@ -190,7 +190,7 @@ If a function is called, but an argument is not provided, then the corresponding
 For instance, the aforementioned function `showMessage(from, text)` can be called with a single argument:
 
 ```js
-showMessage("Ann");
+showMessage('Ann');
 ```
 
 That's not an error. Such a call would output `"*Ann*: undefined"`. As the value for `text` isn't passed, it becomes `undefined`.
@@ -211,8 +211,8 @@ Here `"no text given"` is a string, but it can be a more complex expression, whi
 
 ```js run
 function showMessage(from, text = anotherFunction()) {
-  // anotherFunction() only executed if no text given
-  // its result becomes the value of text
+    // anotherFunction() only executed if no text given
+    // its result becomes the value of text
 }
 ```
 
@@ -260,8 +260,8 @@ Modern JavaScript engines support the [nullish coalescing operator](info:nullish
 
 ```js run
 function showCount(count) {
-  // if count is undefined or null, show "unknown"
-  alert(count ?? "unknown");
+    // if count is undefined or null, show "unknown"
+    alert(count ?? 'unknown');
 }
 
 showCount(0); // 0
@@ -333,7 +333,7 @@ In the code above, if `checkAge(age)` returns `false`, then `showMovie` won't pr
 
 ```js run
 function doNothing() {
-  /* empty */
+    /* empty */
 }
 
 alert(doNothing() === undefined); // true
@@ -343,7 +343,7 @@ An empty `return` is also the same as `return undefined`:
 
 ```js run
 function doNothing() {
-  return;
+    return;
 }
 
 alert(doNothing() === undefined); // true
@@ -389,10 +389,10 @@ For instance, functions that start with `"show"` usually show something.
 
 Function starting with...
 
-- `"get…"` -- return a value,
-- `"calc…"` -- calculate something,
-- `"create…"` -- create something,
-- `"check…"` -- check something and return a boolean, etc.
+-   `"get…"` -- return a value,
+-   `"calc…"` -- calculate something,
+-   `"create…"` -- create something,
+-   `"check…"` -- check something and return a boolean, etc.
 
 Examples of such names:
 
@@ -440,13 +440,13 @@ The first variant uses a label:
 
 ```js
 function showPrimes(n) {
-  nextPrime: for (let i = 2; i < n; i++) {
-    for (let j = 2; j < i; j++) {
-      if (i % j == 0) continue nextPrime;
-    }
+    nextPrime: for (let i = 2; i < n; i++) {
+        for (let j = 2; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
+        }
 
-    alert(i); // a prime
-  }
+        alert(i); // a prime
+    }
 }
 ```
 
@@ -480,13 +480,13 @@ A function declaration looks like this:
 
 ```js
 function name(parameters, delimited, by, comma) {
-  /* code */
+    /* code */
 }
 ```
 
-- Values passed to a function as parameters are copied to its local variables.
-- A function may access outer variables. But it works only from inside out. The code outside of the function doesn't see its local variables.
-- A function can return a value. If it doesn't, then its result is `undefined`.
+-   Values passed to a function as parameters are copied to its local variables.
+-   A function may access outer variables. But it works only from inside out. The code outside of the function doesn't see its local variables.
+-   A function can return a value. If it doesn't, then its result is `undefined`.
 
 To make the code clean and easy to understand, it's recommended to use mainly local variables and parameters in the function, not outer variables.
 
@@ -494,8 +494,8 @@ It is always easier to understand a function which gets parameters, works with t
 
 Function naming:
 
-- A name should clearly describe what the function does. When we see a function call in the code, a good name instantly gives us an understanding what it does and returns.
-- A function is an action, so function names are usually verbal.
-- There exist many well-known function prefixes like `create…`, `show…`, `get…`, `check…` and so on. Use them to hint what a function does.
+-   A name should clearly describe what the function does. When we see a function call in the code, a good name instantly gives us an understanding what it does and returns.
+-   A function is an action, so function names are usually verbal.
+-   There exist many well-known function prefixes like `create…`, `show…`, `get…`, `check…` and so on. Use them to hint what a function does.
 
 Functions are the main building blocks of scripts. Now we've covered the basics, so we actually can start creating and using them. But that's only the beginning of the path. We are going to return to them many times, going more deeply into their advanced features.

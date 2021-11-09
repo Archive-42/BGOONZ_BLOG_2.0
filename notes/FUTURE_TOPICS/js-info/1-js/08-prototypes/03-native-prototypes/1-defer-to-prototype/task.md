@@ -10,7 +10,7 @@ After you do it, such code should work:
 
 ```js
 function f() {
-  alert("Hello!");
+    alert('Hello!');
 }
 
 f.defer(1000); // shows "Hello!" after 1 second

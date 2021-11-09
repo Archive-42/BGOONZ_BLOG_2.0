@@ -10,10 +10,10 @@ Here's the final code for the animation:
 let to = field.clientHeight - ball.clientHeight;
 
 animate({
-  duration: 2000,
-  timing: makeEaseOut(bounce),
-  draw(progress) {
-    ball.style.top = to * progress + "px";
-  },
+    duration: 2000,
+    timing: makeEaseOut(bounce),
+    draw(progress) {
+        ball.style.top = to * progress + 'px';
+    }
 });
 ```

@@ -12,19 +12,17 @@ Here's how it will look:
 
 ```html autorun height="80"
 <style>
-  .alert {
-    padding: 15px;
-    border: 1px solid #d6e9c6;
-    border-radius: 4px;
-    color: #3c763d;
-    background-color: #dff0d8;
-  }
+    .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
 </style>
 
 *!*
-<div class="alert">
-  <strong>Hi there!</strong> You've read an important message.
-</div>
+<div class="alert"><strong>Hi there!</strong> You've read an important message.</div>
 */!*
 ```
 
@@ -56,10 +54,10 @@ Creating the message div takes 3 steps:
 
 ```js
 // 1. Create <div> element
-let div = document.createElement("div");
+let div = document.createElement('div');
 
 // 2. Set its class to "alert"
-div.className = "alert";
+div.className = 'alert';
 
 // 3. Fill it with the content
 div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
@@ -77,23 +75,23 @@ Here's the full code:
 
 ```html run height="80"
 <style>
-  .alert {
-    padding: 15px;
-    border: 1px solid #d6e9c6;
-    border-radius: 4px;
-    color: #3c763d;
-    background-color: #dff0d8;
-  }
+    .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
 </style>
 
 <script>
-    let div = document.createElement('div');
-    div.className = "alert";
-    div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+      let div = document.createElement('div');
+      div.className = "alert";
+      div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
 
-  *!*
-    document.body.append(div);
-  */!*
+    *!*
+      document.body.append(div);
+    */!*
 </script>
 ```
 
@@ -101,11 +99,11 @@ Here we called `append` on `document.body`, but we can call `append` method on a
 
 Here are more insertion methods, they specify different places where to insert:
 
-- `node.append(...nodes or strings)` -- append nodes or strings _at the end_ of `node`,
-- `node.prepend(...nodes or strings)` -- insert nodes or strings _at the beginning_ of `node`,
-- `node.before(...nodes or strings)` –- insert nodes or strings _before_ `node`,
-- `node.after(...nodes or strings)` –- insert nodes or strings _after_ `node`,
-- `node.replaceWith(...nodes or strings)` –- replaces `node` with the given nodes or strings.
+-   `node.append(...nodes or strings)` -- append nodes or strings _at the end_ of `node`,
+-   `node.prepend(...nodes or strings)` -- insert nodes or strings _at the beginning_ of `node`,
+-   `node.before(...nodes or strings)` –- insert nodes or strings _before_ `node`,
+-   `node.after(...nodes or strings)` –- insert nodes or strings _after_ `node`,
+-   `node.replaceWith(...nodes or strings)` –- replaces `node` with the given nodes or strings.
 
 Arguments of these methods are an arbitrary list of DOM nodes to insert, or text strings (that become text nodes automatically).
 
@@ -115,22 +113,22 @@ Here's an example of using these methods to add items to a list and the text bef
 
 ```html autorun
 <ol id="ol">
-  <li>0</li>
-  <li>1</li>
-  <li>2</li>
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
 </ol>
 
 <script>
-  ol.before("before"); // insert string "before" before <ol>
-  ol.after("after"); // insert string "after" after <ol>
+    ol.before('before'); // insert string "before" before <ol>
+    ol.after('after'); // insert string "after" after <ol>
 
-  let liFirst = document.createElement("li");
-  liFirst.innerHTML = "prepend";
-  ol.prepend(liFirst); // insert liFirst at the beginning of <ol>
+    let liFirst = document.createElement('li');
+    liFirst.innerHTML = 'prepend';
+    ol.prepend(liFirst); // insert liFirst at the beginning of <ol>
 
-  let liLast = document.createElement("li");
-  liLast.innerHTML = "append";
-  ol.append(liLast); // insert liLast at the end of <ol>
+    let liLast = document.createElement('li');
+    liLast.innerHTML = 'append';
+    ol.append(liLast); // insert liLast at the end of <ol>
 </script>
 ```
 
@@ -143,11 +141,11 @@ So the final list will be:
 ```html
 before
 <ol id="ol">
-  <li>prepend</li>
-  <li>0</li>
-  <li>1</li>
-  <li>2</li>
-  <li>append</li>
+    <li>prepend</li>
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>append</li>
 </ol>
 after
 ```
@@ -159,7 +157,7 @@ For instance, here a string and an element are inserted:
 ```html run
 <div id="div"></div>
 <script>
-  div.before("<p>Hello</p>", document.createElement("hr"));
+    div.before('<p>Hello</p>', document.createElement('hr'));
 </script>
 ```
 
@@ -185,10 +183,10 @@ For that we can use another, pretty versatile method: `elem.insertAdjacentHTML(w
 
 The first parameter is a code word, specifying where to insert relative to `elem`. Must be one of the following:
 
-- `"beforebegin"` -- insert `html` immediately before `elem`,
-- `"afterbegin"` -- insert `html` into `elem`, at the beginning,
-- `"beforeend"` -- insert `html` into `elem`, at the end,
-- `"afterend"` -- insert `html` immediately after `elem`.
+-   `"beforebegin"` -- insert `html` immediately before `elem`,
+-   `"afterbegin"` -- insert `html` into `elem`, at the beginning,
+-   `"beforeend"` -- insert `html` into `elem`, at the end,
+-   `"afterend"` -- insert `html` immediately after `elem`.
 
 The second parameter is an HTML string, that is inserted "as HTML".
 
@@ -197,8 +195,8 @@ For instance:
 ```html run
 <div id="div"></div>
 <script>
-  div.insertAdjacentHTML("beforebegin", "<p>Hello</p>");
-  div.insertAdjacentHTML("afterend", "<p>Bye</p>");
+    div.insertAdjacentHTML('beforebegin', '<p>Hello</p>');
+    div.insertAdjacentHTML('afterend', '<p>Bye</p>');
 </script>
 ```
 
@@ -220,8 +218,8 @@ We can easily notice similarities between this and the previous picture. The ins
 
 The method has two brothers:
 
-- `elem.insertAdjacentText(where, text)` -- the same syntax, but a string of `text` is inserted "as text" instead of HTML,
-- `elem.insertAdjacentElement(where, elem)` -- the same syntax, but inserts an element.
+-   `elem.insertAdjacentText(where, text)` -- the same syntax, but a string of `text` is inserted "as text" instead of HTML,
+-   `elem.insertAdjacentElement(where, elem)` -- the same syntax, but inserts an element.
 
 They exist mainly to make the syntax "uniform". In practice, only `insertAdjacentHTML` is used most of the time. Because for elements and text, we have methods `append/prepend/before/after` -- they are shorter to write and can insert nodes/text pieces.
 
@@ -229,22 +227,22 @@ So here's an alternative variant of showing a message:
 
 ```html run
 <style>
-  .alert {
-    padding: 15px;
-    border: 1px solid #d6e9c6;
-    border-radius: 4px;
-    color: #3c763d;
-    background-color: #dff0d8;
-  }
+    .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
 </style>
 
 <script>
-  document.body.insertAdjacentHTML(
-    "afterbegin",
-    `<div class="alert">
+    document.body.insertAdjacentHTML(
+        'afterbegin',
+        `<div class="alert">
     <strong>Hi there!</strong> You've read an important message.
   </div>`
-  );
+    );
 </script>
 ```
 
@@ -256,24 +254,24 @@ Let's make our message disappear after a second:
 
 ```html run untrusted
 <style>
-  .alert {
-    padding: 15px;
-    border: 1px solid #d6e9c6;
-    border-radius: 4px;
-    color: #3c763d;
-    background-color: #dff0d8;
-  }
+    .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
 </style>
 
 <script>
-    let div = document.createElement('div');
-    div.className = "alert";
-    div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+      let div = document.createElement('div');
+      div.className = "alert";
+      div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
 
-    document.body.append(div);
-  *!*
-    setTimeout(() => div.remove(), 1000);
-  */!*
+      document.body.append(div);
+    *!*
+      setTimeout(() => div.remove(), 1000);
+    */!*
 </script>
 ```
 
@@ -287,8 +285,8 @@ For instance, let's swap elements:
 <div id="first">First</div>
 <div id="second">Second</div>
 <script>
-  // no need to call remove
-  second.after(first); // take #second and after it insert #first
+    // no need to call remove
+    second.after(first); // take #second and after it insert #first
 </script>
 ```
 
@@ -300,32 +298,30 @@ We could make a function and put the code there. But the alternative way would b
 
 Sometimes when we have a big element, that may be faster and simpler.
 
-- The call `elem.cloneNode(true)` creates a "deep" clone of the element -- with all attributes and subelements. If we call `elem.cloneNode(false)`, then the clone is made without child elements.
+-   The call `elem.cloneNode(true)` creates a "deep" clone of the element -- with all attributes and subelements. If we call `elem.cloneNode(false)`, then the clone is made without child elements.
 
 An example of copying the message:
 
 ```html run height="120"
 <style>
-  .alert {
-    padding: 15px;
-    border: 1px solid #d6e9c6;
-    border-radius: 4px;
-    color: #3c763d;
-    background-color: #dff0d8;
-  }
+    .alert {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
 </style>
 
-<div class="alert" id="div">
-  <strong>Hi there!</strong> You've read an important message.
-</div>
+<div class="alert" id="div"><strong>Hi there!</strong> You've read an important message.</div>
 
 <script>
-  *!*
-    let div2 = div.cloneNode(true); // clone the message
-    div2.querySelector('strong').innerHTML = 'Bye there!'; // change the clone
+    *!*
+      let div2 = div.cloneNode(true); // clone the message
+      div2.querySelector('strong').innerHTML = 'Bye there!'; // change the clone
 
-    div.after(div2); // show the clone after the existing div
-  */!*
+      div.after(div2); // show the clone after the existing div
+    */!*
 </script>
 ```
 
@@ -341,21 +337,21 @@ For example, `getListContent` below generates a fragment with `<li>` items, that
 <ul id="ul"></ul>
 
 <script>
-  function getListContent() {
-    let fragment = new DocumentFragment();
+    function getListContent() {
+      let fragment = new DocumentFragment();
 
-    for(let i=1; i<=3; i++) {
-      let li = document.createElement('li');
-      li.append(i);
-      fragment.append(li);
+      for(let i=1; i<=3; i++) {
+        let li = document.createElement('li');
+        li.append(i);
+        fragment.append(li);
+      }
+
+      return fragment;
     }
 
-    return fragment;
-  }
-
-  *!*
-  ul.append(getListContent()); // (*)
-  */!*
+    *!*
+    ul.append(getListContent()); // (*)
+    */!*
 </script>
 ```
 
@@ -363,9 +359,9 @@ Please note, at the last line `(*)` we append `DocumentFragment`, but it "blends
 
 ```html
 <ul>
-  <li>1</li>
-  <li>2</li>
-  <li>3</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
 </ul>
 ```
 
@@ -375,21 +371,21 @@ Please note, at the last line `(*)` we append `DocumentFragment`, but it "blends
 <ul id="ul"></ul>
 
 <script>
-  function getListContent() {
-    let result = [];
+    function getListContent() {
+      let result = [];
 
-    for(let i=1; i<=3; i++) {
-      let li = document.createElement('li');
-      li.append(i);
-      result.push(li);
+      for(let i=1; i<=3; i++) {
+        let li = document.createElement('li');
+        li.append(i);
+        result.push(li);
+      }
+
+      return result;
     }
 
-    return result;
-  }
-
-  *!*
-  ul.append(...getListContent()); // append + "..." operator = friends!
-  */!*
+    *!*
+    ul.append(...getListContent()); // append + "..." operator = friends!
+    */!*
 </script>
 ```
 
@@ -484,7 +480,7 @@ The syntax:
 <p>Somewhere in the page...</p>
 *!*
 <script>
-  document.write("<b>Hello from JS</b>");
+    document.write('<b>Hello from JS</b>');
 </script>
 */!*
 <p>The end</p>
@@ -506,9 +502,9 @@ For instance:
 <p>After one second the contents of this page will be replaced...</p>
 *!*
 <script>
-  // document.write after 1 second
-  // that's after the page loaded, so it erases the existing content
-  setTimeout(() => document.write("<b>...By this.</b>"), 1000);
+    // document.write after 1 second
+    // that's after the page loaded, so it erases the existing content
+    setTimeout(() => document.write('<b>...By this.</b>'), 1000);
 </script>
 */!*
 ```
@@ -525,43 +521,43 @@ So if we need to add a lot of text into HTML dynamically, and we're at page load
 
 ## Summary
 
-- Methods to create new nodes:
+-   Methods to create new nodes:
 
-  - `document.createElement(tag)` -- creates an element with the given tag,
-  - `document.createTextNode(value)` -- creates a text node (rarely used),
-  - `elem.cloneNode(deep)` -- clones the element, if `deep==true` then with all descendants.
+    -   `document.createElement(tag)` -- creates an element with the given tag,
+    -   `document.createTextNode(value)` -- creates a text node (rarely used),
+    -   `elem.cloneNode(deep)` -- clones the element, if `deep==true` then with all descendants.
 
-- Insertion and removal:
+-   Insertion and removal:
 
-  - `node.append(...nodes or strings)` -- insert into `node`, at the end,
-  - `node.prepend(...nodes or strings)` -- insert into `node`, at the beginning,
-  - `node.before(...nodes or strings)` –- insert right before `node`,
-  - `node.after(...nodes or strings)` –- insert right after `node`,
-  - `node.replaceWith(...nodes or strings)` –- replace `node`.
-  - `node.remove()` –- remove the `node`.
+    -   `node.append(...nodes or strings)` -- insert into `node`, at the end,
+    -   `node.prepend(...nodes or strings)` -- insert into `node`, at the beginning,
+    -   `node.before(...nodes or strings)` –- insert right before `node`,
+    -   `node.after(...nodes or strings)` –- insert right after `node`,
+    -   `node.replaceWith(...nodes or strings)` –- replace `node`.
+    -   `node.remove()` –- remove the `node`.
 
-  Text strings are inserted "as text".
+    Text strings are inserted "as text".
 
-- There are also "old school" methods:
+-   There are also "old school" methods:
 
-  - `parent.appendChild(node)`
-  - `parent.insertBefore(node, nextSibling)`
-  - `parent.removeChild(node)`
-  - `parent.replaceChild(newElem, node)`
+    -   `parent.appendChild(node)`
+    -   `parent.insertBefore(node, nextSibling)`
+    -   `parent.removeChild(node)`
+    -   `parent.replaceChild(newElem, node)`
 
-  All these methods return `node`.
+    All these methods return `node`.
 
-- Given some HTML in `html`, `elem.insertAdjacentHTML(where, html)` inserts it depending on the value of `where`:
+-   Given some HTML in `html`, `elem.insertAdjacentHTML(where, html)` inserts it depending on the value of `where`:
 
-  - `"beforebegin"` -- insert `html` right before `elem`,
-  - `"afterbegin"` -- insert `html` into `elem`, at the beginning,
-  - `"beforeend"` -- insert `html` into `elem`, at the end,
-  - `"afterend"` -- insert `html` right after `elem`.
+    -   `"beforebegin"` -- insert `html` right before `elem`,
+    -   `"afterbegin"` -- insert `html` into `elem`, at the beginning,
+    -   `"beforeend"` -- insert `html` into `elem`, at the end,
+    -   `"afterend"` -- insert `html` right after `elem`.
 
-  Also there are similar methods, `elem.insertAdjacentText` and `elem.insertAdjacentElement`, that insert text strings and elements, but they are rarely used.
+    Also there are similar methods, `elem.insertAdjacentText` and `elem.insertAdjacentElement`, that insert text strings and elements, but they are rarely used.
 
-- To append HTML to the page before it has finished loading:
+-   To append HTML to the page before it has finished loading:
 
-  - `document.write(html)`
+    -   `document.write(html)`
 
-  After the page is loaded such a call erases the document. Mostly seen in old scripts.
+    After the page is loaded such a call erases the document. Mostly seen in old scripts.

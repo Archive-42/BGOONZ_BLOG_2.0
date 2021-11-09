@@ -3,11 +3,7 @@ First, let's make HTML/CSS.
 Each component of the time would look great in its own `<span>`:
 
 ```html
-<div id="clock">
-  <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec"
-    >ss</span
-  >
-</div>
+<div id="clock"><span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span></div>
 ```
 
 Also we'll need CSS to color them.
@@ -42,17 +38,17 @@ The clock-managing functions:
 let timerId;
 
 function clockStart() {
-  // run the clock
-  if (!timerId) {
-    // only set a new interval if the clock is not running
-    timerId = setInterval(update, 1000);
-  }
-  update(); // (*)
+    // run the clock
+    if (!timerId) {
+        // only set a new interval if the clock is not running
+        timerId = setInterval(update, 1000);
+    }
+    update(); // (*)
 }
 
 function clockStop() {
-  clearInterval(timerId);
-  timerId = null; // (**)
+    clearInterval(timerId);
+    timerId = null; // (**)
 }
 ```
 

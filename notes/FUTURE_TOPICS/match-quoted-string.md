@@ -1,16 +1,16 @@
 match-quoted-string"
 
-- <a href="match-quoted-string.html"
-  /match-quoted-string"
-  /match-quoted-string"
-  match-quoted-stringmatch-quoted-string"
+-   <a href="match-quoted-string.html"
+    /match-quoted-string"
+    /match-quoted-string"
+    match-quoted-stringmatch-quoted-string"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  match-quoted-string"
-- <a href="https://tr.javascript.info/"
-  match-quoted-string"
+-   <a href="https://ko.javascript.info/"
+    match-quoted-string"
+-   <a href="https://tr.javascript.info/"
+    match-quoted-string"
 
 We want to make this open-source project available for people all around the world.
 
@@ -61,10 +61,10 @@ The solution: `/"(\\.|[^"\\])*"/g`.
 
 Step by step:
 
-- First we look for an opening quote `"`
-- Then if we have a backslash `\\` (we have to double it in the pattern because it is a special character), then any character is fine after it (a dot).
-- Otherwise we take any character except a quote (that would mean the end of the string) and a backslash (to prevent lonely backslashes, the backslash is only used with some other symbol after it): `[^"\\]`
-- …And so on till the closing quote.
+-   First we look for an opening quote `"`
+-   Then if we have a backslash `\\` (we have to double it in the pattern because it is a special character), then any character is fine after it (a dot).
+-   Otherwise we take any character except a quote (that would mean the end of the string) and a backslash (to prevent lonely backslashes, the backslash is only used with some other symbol after it): `[^"\\]`
+-   …And so on till the closing quote.
 
 In action:
 

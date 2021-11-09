@@ -34,53 +34,53 @@ That can be described as "greediness is the cause of all evil".
 
 To find a match, the regular expression engine uses the following algorithm:
 
-- For every position in the string
-  - Try to match the pattern at that position.
-  - If there's no match, go to the next position.
+-   For every position in the string
+    -   Try to match the pattern at that position.
+    -   If there's no match, go to the next position.
 
 These common words do not make it obvious why the regexp fails, so let's elaborate how the search works for the pattern `pattern:".+"`.
 
 1. The first pattern character is a quote `pattern:"`.
 
-   The regular expression engine tries to find it at the zero position of the source string `subject:a "witch" and her "broom" is one`, but there's `subject:a` there, so there's immediately no match.
+    The regular expression engine tries to find it at the zero position of the source string `subject:a "witch" and her "broom" is one`, but there's `subject:a` there, so there's immediately no match.
 
-   Then it advances: goes to the next positions in the source string and tries to find the first character of the pattern there, fails again, and finally finds the quote at the 3rd position:
+    Then it advances: goes to the next positions in the source string and tries to find the first character of the pattern there, fails again, and finally finds the quote at the 3rd position:
 
-   ![](witch_greedy1.svg)
+    ![](witch_greedy1.svg)
 
 2. The quote is detected, and then the engine tries to find a match for the rest of the pattern. It tries to see if the rest of the subject string conforms to `pattern:.+"`.
 
-   In our case the next pattern character is `pattern:.` (a dot). It denotes "any character except a newline", so the next string letter `match:'w'` fits:
+    In our case the next pattern character is `pattern:.` (a dot). It denotes "any character except a newline", so the next string letter `match:'w'` fits:
 
-   ![](witch_greedy2.svg)
+    ![](witch_greedy2.svg)
 
 3. Then the dot repeats because of the quantifier `pattern:.+`. The regular expression engine adds to the match one character after another.
 
-   ...Until when? All characters match the dot, so it only stops when it reaches the end of the string:
+    ...Until when? All characters match the dot, so it only stops when it reaches the end of the string:
 
-   ![](witch_greedy3.svg)
+    ![](witch_greedy3.svg)
 
 4. Now the engine finished repeating `pattern:.+` and tries to find the next character of the pattern. It's the quote `pattern:"`. But there's a problem: the string has finished, there are no more characters!
 
-   The regular expression engine understands that it took too many `pattern:.+` and starts to _backtrack_.
+    The regular expression engine understands that it took too many `pattern:.+` and starts to _backtrack_.
 
-   In other words, it shortens the match for the quantifier by one character:
+    In other words, it shortens the match for the quantifier by one character:
 
-   ![](witch_greedy4.svg)
+    ![](witch_greedy4.svg)
 
-   Now it assumes that `pattern:.+` ends one character before the string end and tries to match the rest of the pattern from that position.
+    Now it assumes that `pattern:.+` ends one character before the string end and tries to match the rest of the pattern from that position.
 
-   If there were a quote there, then the search would end, but the last character is `subject:'e'`, so there's no match.
+    If there were a quote there, then the search would end, but the last character is `subject:'e'`, so there's no match.
 
 5. ...So the engine decreases the number of repetitions of `pattern:.+` by one more character:
 
-   ![](witch_greedy5.svg)
+    ![](witch_greedy5.svg)
 
-   The quote `pattern:'"'` does not match `subject:'n'`.
+    The quote `pattern:'"'` does not match `subject:'n'`.
 
 6. The engine keep backtracking: it decreases the count of repetition for `pattern:'.'` until the rest of the pattern (in our case `pattern:'"'`) matches:
 
-   ![](witch_greedy6.svg)
+    ![](witch_greedy6.svg)
 
 7. The match is complete.
 
@@ -116,31 +116,31 @@ To clearly understand the change, let's trace the search step by step.
 
 1. The first step is the same: it finds the pattern start `pattern:'"'` at the 3rd position:
 
-   ![](witch_greedy1.svg)
+    ![](witch_greedy1.svg)
 
 2. The next step is also similar: the engine finds a match for the dot `pattern:'.'`:
 
-   ![](witch_greedy2.svg)
+    ![](witch_greedy2.svg)
 
 3. And now the search goes differently. Because we have a lazy mode for `pattern:+?`, the engine doesn't try to match a dot one more time, but stops and tries to match the rest of the pattern `pattern:'"'` right now:
 
-   ![](witch_lazy3.svg)
+    ![](witch_lazy3.svg)
 
-   If there were a quote there, then the search would end, but there's `'i'`, so there's no match.
+    If there were a quote there, then the search would end, but there's `'i'`, so there's no match.
 
 4. Then the regular expression engine increases the number of repetitions for the dot and tries one more time:
 
-   ![](witch_lazy4.svg)
+    ![](witch_lazy4.svg)
 
-   Failure again. Then the number of repetitions is increased again and again...
+    Failure again. Then the number of repetitions is increased again and again...
 
 5. ...Till the match for the rest of the pattern is found:
 
-   ![](witch_lazy5.svg)
+    ![](witch_lazy5.svg)
 
 6. The next search starts from the end of the current match and yield one more result:
 
-   ![](witch_lazy6.svg)
+    ![](witch_lazy6.svg)
 
 In this example we saw how the lazy mode works for `pattern:+?`. Quantifiers `pattern:*?` and `pattern:??` work the similar way -- the regexp engine increases the number of repetitions only if the rest of the pattern can't match on the given position.
 
@@ -151,16 +151,16 @@ Other quantifiers remain greedy.
 For instance:
 
 ```js run
-alert("123 456".match(/\d+ \d+?/)); // 123 4
+alert('123 456'.match(/\d+ \d+?/)); // 123 4
 ```
 
 1. The pattern `pattern:\d+` tries to match as many digits as it can (greedy mode), so it finds `match:123` and stops, because the next character is a space `pattern:' '`.
 2. Then there's a space in the pattern, it matches.
 3. Then there's `pattern:\d+?`. The quantifier is in lazy mode, so it finds one digit `match:4` and tries to check if the rest of the pattern matches from there.
 
-   ...But there's nothing in the pattern after `pattern:\d+?`.
+    ...But there's nothing in the pattern after `pattern:\d+?`.
 
-   The lazy mode doesn't repeat anything without a need. The pattern finished, so we're done. We have a match `match:123 4`.
+    The lazy mode doesn't repeat anything without a need. The pattern finished, so we're done. We have a match `match:123 4`.
 
 ```smart header="Optimizations"
 Modern regular expression engines can optimize internal algorithms to work faster. So they may work a bit differently from the described algorithm.
@@ -226,7 +226,7 @@ The match looks like this:
 
 ```html
 <a href="....................................." class="doc">
-  <a href="link1" class="doc">... <a href="link2" class="doc"></a></a
+    <a href="link1" class="doc">... <a href="link2" class="doc"></a></a
 ></a>
 ```
 
@@ -244,8 +244,8 @@ Now it seems to work, there are two matches:
 
 ```html
 <a href="....." class="doc">
-  <a href="....." class="doc">
-    <a href="link1" class="doc">... <a href="link2" class="doc"></a></a></a
+    <a href="....." class="doc">
+        <a href="link1" class="doc">... <a href="link2" class="doc"></a></a></a
 ></a>
 ```
 
@@ -275,9 +275,9 @@ Here's the picture of the match aligned with the text:
 
 ```html
 <a href="..................................." class="doc">
-  <a href="link1" class="wrong"
-    >...
-    <p style="" class="doc"></p></a
+    <a href="link1" class="wrong"
+        >...
+        <p style="" class="doc"></p></a
 ></a>
 ```
 

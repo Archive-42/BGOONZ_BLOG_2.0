@@ -8,16 +8,16 @@ Then the ball will be positioned relatively to the field:
 
 ```css
 #field {
-  width: 200px;
-  height: 150px;
-  position: relative;
+    width: 200px;
+    height: 150px;
+    position: relative;
 }
 
 #ball {
-  position: absolute;
-  left: 0; /* relative to the closest positioned ancestor (field) */
-  top: 0;
-  transition: 1s all; /* CSS animation for left/top makes the ball fly */
+    position: absolute;
+    left: 0; /* relative to the closest positioned ancestor (field) */
+    top: 0;
+    transition: 1s all; /* CSS animation for left/top makes the ball fly */
 }
 ```
 
@@ -42,8 +42,7 @@ We need to move the ball half-width left and half-height up to make it center.
 So the final `left` would be:
 
 ```js
-let left =
-  event.clientX - fieldCoords.left - field.clientLeft - ball.offsetWidth / 2;
+let left = event.clientX - fieldCoords.left - field.clientLeft - ball.offsetWidth / 2;
 ```
 
 The vertical coordinate is calculated using the same logic.

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="slots-composition.html"
-- <a href="https://es.javascript.info/"
+-   <a href="https://ar.javascript.info/"
+-   <a href="slots-composition.html"
+-   <a href="https://es.javascript.info/"
 
-- <a href="https://it.javascript.info/slots-composition"
-  slots-composition"
+-   <a href="https://it.javascript.info/slots-composition"
+    slots-composition"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=slots-composition"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/slots-composition"
+-   <a href="https://ko.javascript.info/"
+-   <a href=slots-composition"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/slots-composition"
 
 We want to make this open-source project available for people all around the world.
 
@@ -388,9 +388,9 @@ Finally, let’s mention the slot-related JavaScript methods.
 
 As we’ve seen before, JavaScript looks at the “real” DOM, without flattening. But, if the shadow tree has `{mode: 'open'}`, then we can figure out which elements assigned to a slot and, vise-versa, the slot by the element inside it:
 
-- `node.assignedSlot` – returns the `<slot>` element that the `node` is assigned to.
-- `slot.assignedNodes({flatten: true/false})` – DOM nodes, assigned to the slot. The `flatten` option is `false` by default. If explicitly set to `true`, then it looks more deeply into the flattened DOM, returning nested slots in case of nested components and the fallback content if no node assigned.
-- `slot.assignedElements({flatten: true/false})` – DOM elements, assigned to the slot (same as above, but only element nodes).
+-   `node.assignedSlot` – returns the `<slot>` element that the `node` is assigned to.
+-   `slot.assignedNodes({flatten: true/false})` – DOM nodes, assigned to the slot. The `flatten` option is `false` by default. If explicitly set to `true`, then it looks more deeply into the flattened DOM, returning nested slots in case of nested components and the fallback content if no node assigned.
+-   `slot.assignedElements({flatten: true/false})` – DOM elements, assigned to the slot (same as above, but only element nodes).
 
 These methods are useful when we need not just show the slotted content, but also track it in JavaScript.
 
@@ -440,10 +440,10 @@ Usually, if an element has shadow DOM, then its light DOM is not displayed. Slot
 
 There are two kinds of slots:
 
-- Named slots: `<slot name="X">...</slot>` – gets light children with `slot="X"`.
-- Default slot: the first `<slot>` without a name (subsequent unnamed slots are ignored) – gets unslotted light children.
-- If there are many elements for the same slot – they are appended one after another.
-- The content of `<slot>` element is used as a fallback. It’s shown if there are no light children for the slot.
+-   Named slots: `<slot name="X">...</slot>` – gets light children with `slot="X"`.
+-   Default slot: the first `<slot>` without a name (subsequent unnamed slots are ignored) – gets unslotted light children.
+-   If there are many elements for the same slot – they are appended one after another.
+-   The content of `<slot>` element is used as a fallback. It’s shown if there are no light children for the slot.
 
 The process of rendering slotted elements inside their slots is called “composition”. The result is called a “flattened DOM”.
 
@@ -451,13 +451,13 @@ Composition does not really move nodes, from JavaScript point of view the DOM is
 
 JavaScript can access slots using methods:
 
-- `slot.assignedNodes/Elements()` – returns nodes/elements inside the `slot`.
-- `node.assignedSlot` – the reverse property, returns slot by a node.
+-   `slot.assignedNodes/Elements()` – returns nodes/elements inside the `slot`.
+-   `node.assignedSlot` – the reverse property, returns slot by a node.
 
 If we’d like to know what we’re showing, we can track slot contents using:
 
-- `slotchange` event – triggers the first time a slot is filled, and on any add/remove/replace operation of the slotted element, but not its children. The slot is `event.target`.
-- [MutationObserver](mutation-observer.html) to go deeper into slot content, watch changes inside it.
+-   `slotchange` event – triggers the first time a slot is filled, and on any add/remove/replace operation of the slotted element, but not its children. The slot is `event.target`.
+-   [MutationObserver](mutation-observer.html) to go deeper into slot content, watch changes inside it.
 
 Now, as we know how to show elements from light DOM in shadow DOM, let’s see how to style them properly. The basic rule is that shadow elements are styled inside, and light elements – outside, but there are notable exceptions.
 
@@ -473,27 +473,27 @@ We’ll see the details in the next chapter.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
 
 #### Lesson navigation
 
-- <a href="slots-composition.html#named-slots" class="sidebar__link">Named slots</a>
-- <a href="slots-composition.html#slot-fallback-content" class="sidebar__link">Slot fallback content</a>
-- <a href="slots-composition.html#default-slot-first-unnamed" class="sidebar__link">Default slot: first unnamed</a>
-- <a href="slots-composition.html#menu-example" class="sidebar__link">Menu example</a>
-- <a href="slots-composition.html#updating-slots" class="sidebar__link">Updating slots</a>
-- <a href="slots-composition.html#slot-api" class="sidebar__link">Slot API</a>
-- <a href="slots-composition.html#summary" class="sidebar__link">Summary</a>
+-   <a href="slots-composition.html#named-slots" class="sidebar__link">Named slots</a>
+-   <a href="slots-composition.html#slot-fallback-content" class="sidebar__link">Slot fallback content</a>
+-   <a href="slots-composition.html#default-slot-first-unnamed" class="sidebar__link">Default slot: first unnamed</a>
+-   <a href="slots-composition.html#menu-example" class="sidebar__link">Menu example</a>
+-   <a href="slots-composition.html#updating-slots" class="sidebar__link">Updating slots</a>
+-   <a href="slots-composition.html#slot-api" class="sidebar__link">Slot API</a>
+-   <a href="slots-composition.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="slots-composition.html#comments" class="sidebar__link">Comments</a>
+-   <a href="slots-composition.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -501,7 +501,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/8-web-components/5-slots-composition" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

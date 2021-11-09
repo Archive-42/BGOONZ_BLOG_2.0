@@ -1,9 +1,9 @@
 simple-page"
 
-- <a href="simple-page.html"
-  /simple-page"
-  /simple-page"
-  simple-pagesimple-page"
+-   <a href="simple-page.html"
+    /simple-page"
+    /simple-page"
+    simple-pagesimple-page"
 
 <!-- -->
 

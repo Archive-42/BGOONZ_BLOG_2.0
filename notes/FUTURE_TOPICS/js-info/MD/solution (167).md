@@ -2,11 +2,11 @@ The answer: **`BODY`**.
 
 ```html run
 <script>
-  let body = document.body;
+    let body = document.body;
 
-  body.innerHTML = "<!--" + body.tagName + "-->";
+    body.innerHTML = '<!--' + body.tagName + '-->';
 
-  alert(body.firstChild.data); // BODY
+    alert(body.firstChild.data); // BODY
 </script>
 ```
 

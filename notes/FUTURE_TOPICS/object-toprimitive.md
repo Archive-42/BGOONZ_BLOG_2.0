@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/object-toprimitive"
-- <a href="object-toprimitive.html"
-- <a href="https://es.javascript.info/object-toprimitive"
-- <a href="https://fr.javascript.info/object-toprimitive"
-- <a href="https://it.javascript.info/object-toprimitive"
-  object-toprimitive"
+-   <a href="https://ar.javascript.info/object-toprimitive"
+-   <a href="object-toprimitive.html"
+-   <a href="https://es.javascript.info/object-toprimitive"
+-   <a href="https://fr.javascript.info/object-toprimitive"
+-   <a href="https://it.javascript.info/object-toprimitive"
+    object-toprimitive"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/object-toprimitive"
-- <a href=object-toprimitive"
-- <a href="https://tr.javascript.info/object-toprimitive"
-- <a href="https://zh.javascript.info/object-toprimitive"
+-   <a href="https://ko.javascript.info/object-toprimitive"
+-   <a href=object-toprimitive"
+-   <a href="https://tr.javascript.info/object-toprimitive"
+-   <a href="https://zh.javascript.info/object-toprimitive"
 
 We want to make this open-source project available for people all around the world.
 
@@ -122,9 +122,9 @@ There is no “boolean” hint (all objects are `true` in boolean context) or an
 
 1.  Call `obj[Symbol.toPrimitive](hint)` – the method with the symbolic key `Symbol.toPrimitive` (system symbol), if such method exists,
 2.  Otherwise if hint is `"string"`
-    - try `obj.toString()` and `obj.valueOf()`, whatever exists.
+    -   try `obj.toString()` and `obj.valueOf()`, whatever exists.
 3.  Otherwise if hint is `"number"` or `"default"`
-    - try `obj.valueOf()` and `obj.toString()`, whatever exists.
+    -   try `obj.valueOf()` and `obj.toString()`, whatever exists.
 
 ## <a href="object-toprimitive.html#symbol-toprimitive" id="symbol-toprimitive" class="main__anchor">Symbol.toPrimitive</a>
 
@@ -164,8 +164,8 @@ As we can see from the code, `user` becomes a self-descriptive string or a money
 
 If there’s no `Symbol.toPrimitive` then JavaScript tries to find methods `toString` and `valueOf`:
 
-- For the “string” hint: `toString`, and if it doesn’t exist, then `valueOf` (so `toString` has the priority for string conversions).
-- For other hints: `valueOf`, and if it doesn’t exist, then `toString` (so `valueOf` has the priority for maths).
+-   For the “string” hint: `toString`, and if it doesn’t exist, then `valueOf` (so `toString` has the priority for string conversions).
+-   For other hints: `valueOf`, and if it doesn’t exist, then `toString` (so `valueOf` has the priority for maths).
 
 Methods `toString` and `valueOf` come from ancient times. They are not symbols (symbols did not exist that long ago), but rather “regular” string-named methods. They provide an alternative “old-style” way to implement the conversion.
 
@@ -173,8 +173,8 @@ These methods must return a primitive value. If `toString` or `valueOf` returns 
 
 By default, a plain object has following `toString` and `valueOf` methods:
 
-- The `toString` method returns a string `"[object Object]"`.
-- The `valueOf` method returns the object itself.
+-   The `toString` method returns a string `"[object Object]"`.
+-   The `valueOf` method returns the object itself.
 
 Here’s the demo:
 
@@ -296,9 +296,9 @@ The object-to-primitive conversion is called automatically by many built-in func
 
 There are 3 types (hints) of it:
 
-- `"string"` (for `alert` and other operations that need a string)
-- `"number"` (for maths)
-- `"default"` (few operators)
+-   `"string"` (for `alert` and other operations that need a string)
+-   `"number"` (for maths)
+-   `"default"` (few operators)
 
 The specification describes explicitly which operator uses which hint. There are very few operators that “don’t know what to expect” and use the `"default"` hint. Usually for built-in objects `"default"` hint is handled the same way as `"number"`, so in practice the last two are often merged together.
 
@@ -306,9 +306,9 @@ The conversion algorithm is:
 
 1.  Call `obj[Symbol.toPrimitive](hint)` if the method exists,
 2.  Otherwise if hint is `"string"`
-    - try `obj.toString()` and `obj.valueOf()`, whatever exists.
+    -   try `obj.toString()` and `obj.valueOf()`, whatever exists.
 3.  Otherwise if hint is `"number"` or `"default"`
-    - try `obj.valueOf()` and `obj.toString()`, whatever exists.
+    -   try `obj.valueOf()` and `obj.toString()`, whatever exists.
 
 In practice, it’s often enough to implement only `obj.toString()` as a “catch-all” method for string conversions that should return a “human-readable” representation of an object, for logging or debugging purposes.
 
@@ -324,25 +324,25 @@ As for math operations, JavaScript doesn’t provide a way to “override” the
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
 
 #### Lesson navigation
 
-- <a href="object-toprimitive.html#conversion-rules" class="sidebar__link">Conversion rules</a>
-- <a href="object-toprimitive.html#symbol-toprimitive" class="sidebar__link">Symbol.toPrimitive</a>
-- <a href="object-toprimitive.html#tostring-valueof" class="sidebar__link">toString/valueOf</a>
-- <a href="object-toprimitive.html#further-conversions" class="sidebar__link">Further conversions</a>
-- <a href="object-toprimitive.html#summary" class="sidebar__link">Summary</a>
+-   <a href="object-toprimitive.html#conversion-rules" class="sidebar__link">Conversion rules</a>
+-   <a href="object-toprimitive.html#symbol-toprimitive" class="sidebar__link">Symbol.toPrimitive</a>
+-   <a href="object-toprimitive.html#tostring-valueof" class="sidebar__link">toString/valueOf</a>
+-   <a href="object-toprimitive.html#further-conversions" class="sidebar__link">Further conversions</a>
+-   <a href="object-toprimitive.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="object-toprimitive.html#comments" class="sidebar__link">Comments</a>
+-   <a href="object-toprimitive.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -350,7 +350,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/04-object-basics/09-object-toprimitive" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

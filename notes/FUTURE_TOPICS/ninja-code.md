@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/ninja-code"
-- <a href="ninja-code.html"
-- <a href="https://es.javascript.info/ninja-code"
-- <a href="https://fr.javascript.info/ninja-code"
-- <a href="https://it.javascript.info/ninja-code"
-  ninja-code"
+-   <a href="https://ar.javascript.info/ninja-code"
+-   <a href="ninja-code.html"
+-   <a href="https://es.javascript.info/ninja-code"
+-   <a href="https://fr.javascript.info/ninja-code"
+-   <a href="https://it.javascript.info/ninja-code"
+    ninja-code"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/ninja-code"
-- <a href=ninja-code"
-- <a href="https://tr.javascript.info/ninja-code"
-- <a href="https://zh.javascript.info/ninja-code"
+-   <a href="https://ko.javascript.info/ninja-code"
+-   <a href=ninja-code"
+-   <a href="https://tr.javascript.info/ninja-code"
+-   <a href="https://zh.javascript.info/ninja-code"
 
 We want to make this open-source project available for people all around the world.
 
@@ -91,10 +91,10 @@ If the team rules forbid the use of one-letter and vague names – shorten them,
 
 Like this:
 
-- `list` → `lst`.
-- `userAgent` → `ua`.
-- `browser` → `brsr`.
-- …etc
+-   `list` → `lst`.
+-   `userAgent` → `ua`.
+-   `browser` → `brsr`.
+-   …etc
 
 Only the one with truly good intuition will be able to understand such names. Try to shorten everything. Only a worthy person should be able to uphold the development of your code.
 
@@ -109,21 +109,21 @@ Only the one with truly good intuition will be able to understand such names. Tr
 
 While choosing a name try to use the most abstract word. Like `obj`, `data`, `value`, `item`, `elem` and so on.
 
-- **The ideal name for a variable is `data`.** Use it everywhere you can. Indeed, every variable holds _data_, right?
+-   **The ideal name for a variable is `data`.** Use it everywhere you can. Indeed, every variable holds _data_, right?
 
-  …But what to do if `data` is already taken? Try `value`, it’s also universal. After all, a variable eventually gets a _value_.
+    …But what to do if `data` is already taken? Try `value`, it’s also universal. After all, a variable eventually gets a _value_.
 
-- **Name a variable by its type: `str`, `num`…**
+-   **Name a variable by its type: `str`, `num`…**
 
-  Give them a try. A young initiate may wonder – are such names really useful for a ninja? Indeed, they are!
+    Give them a try. A young initiate may wonder – are such names really useful for a ninja? Indeed, they are!
 
-  Sure, the variable name still means something. It says what’s inside the variable: a string, a number or something else. But when an outsider tries to understand the code, they’ll be surprised to see that there’s actually no information at all! And will ultimately fail to alter your well-thought code.
+    Sure, the variable name still means something. It says what’s inside the variable: a string, a number or something else. But when an outsider tries to understand the code, they’ll be surprised to see that there’s actually no information at all! And will ultimately fail to alter your well-thought code.
 
-  The value type is easy to find out by debugging. But what’s the meaning of the variable? Which string/number does it store?
+    The value type is easy to find out by debugging. But what’s the meaning of the variable? Which string/number does it store?
 
-  There’s just no way to figure out without a good meditation!
+    There’s just no way to figure out without a good meditation!
 
-- **…But what if there are no more such names?** Just add a number: `data1, item2, elem5`…
+-   **…But what if there are no more such names?** Just add a number: `data1, item2, elem5`…
 
 ## <a href="ninja-code.html#attention-test" id="attention-test" class="main__anchor">Attention test</a>
 
@@ -261,9 +261,9 @@ Imagine, another developer wants only to check the email, and not output any mes
 
 All “pieces of advice” above are from the real code… Sometimes, written by experienced developers. Maybe even more experienced than you are ;)
 
-- Follow some of them, and your code will become full of surprises.
-- Follow many of them, and your code will become truly yours, no one would want to change it.
-- Follow all, and your code will become a valuable lesson for young developers looking for enlightenment.
+-   Follow some of them, and your code will become full of surprises.
+-   Follow many of them, and your code will become truly yours, no one would want to change it.
+-   Follow all, and your code will become a valuable lesson for young developers looking for enlightenment.
 
 <a href="comments.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="testing-mocha.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -275,33 +275,33 @@ All “pieces of advice” above are from the real code… Sometimes, written by
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="code-quality.html" class="sidebar__link">Code quality</a>
+-   <a href="code-quality.html" class="sidebar__link">Code quality</a>
 
 #### Lesson navigation
 
-- <a href="ninja-code.html#brevity-is-the-soul-of-wit" class="sidebar__link">Brevity is the soul of wit</a>
-- <a href="ninja-code.html#one-letter-variables" class="sidebar__link">One-letter variables</a>
-- <a href="ninja-code.html#use-abbreviations" class="sidebar__link">Use abbreviations</a>
-- <a href="ninja-code.html#soar-high-be-abstract" class="sidebar__link">Soar high. Be abstract.</a>
-- <a href="ninja-code.html#attention-test" class="sidebar__link">Attention test</a>
-- <a href="ninja-code.html#smart-synonyms" class="sidebar__link">Smart synonyms</a>
-- <a href="ninja-code.html#reuse-names" class="sidebar__link">Reuse names</a>
-- <a href="ninja-code.html#underscores-for-fun" class="sidebar__link">Underscores for fun</a>
-- <a href="ninja-code.html#show-your-love" class="sidebar__link">Show your love</a>
-- <a href="ninja-code.html#overlap-outer-variables" class="sidebar__link">Overlap outer variables</a>
-- <a href="ninja-code.html#side-effects-everywhere" class="sidebar__link">Side-effects everywhere!</a>
-- <a href="ninja-code.html#powerful-functions" class="sidebar__link">Powerful functions!</a>
-- <a href="ninja-code.html#summary" class="sidebar__link">Summary</a>
+-   <a href="ninja-code.html#brevity-is-the-soul-of-wit" class="sidebar__link">Brevity is the soul of wit</a>
+-   <a href="ninja-code.html#one-letter-variables" class="sidebar__link">One-letter variables</a>
+-   <a href="ninja-code.html#use-abbreviations" class="sidebar__link">Use abbreviations</a>
+-   <a href="ninja-code.html#soar-high-be-abstract" class="sidebar__link">Soar high. Be abstract.</a>
+-   <a href="ninja-code.html#attention-test" class="sidebar__link">Attention test</a>
+-   <a href="ninja-code.html#smart-synonyms" class="sidebar__link">Smart synonyms</a>
+-   <a href="ninja-code.html#reuse-names" class="sidebar__link">Reuse names</a>
+-   <a href="ninja-code.html#underscores-for-fun" class="sidebar__link">Underscores for fun</a>
+-   <a href="ninja-code.html#show-your-love" class="sidebar__link">Show your love</a>
+-   <a href="ninja-code.html#overlap-outer-variables" class="sidebar__link">Overlap outer variables</a>
+-   <a href="ninja-code.html#side-effects-everywhere" class="sidebar__link">Side-effects everywhere!</a>
+-   <a href="ninja-code.html#powerful-functions" class="sidebar__link">Powerful functions!</a>
+-   <a href="ninja-code.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="ninja-code.html#comments" class="sidebar__link">Comments</a>
+-   <a href="ninja-code.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -309,7 +309,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/03-code-quality/04-ninja-code" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/regexp-lookahead-lookbehind"
-- <a href="regexp-lookahead-lookbehind.html"
-- <a href="https://es.javascript.info/regexp-lookahead-lookbehind"
+-   <a href="https://ar.javascript.info/regexp-lookahead-lookbehind"
+-   <a href="regexp-lookahead-lookbehind.html"
+-   <a href="https://es.javascript.info/regexp-lookahead-lookbehind"
 
-- <a href="https://it.javascript.info/regexp-lookahead-lookbehind"
-  regexp-lookahead-lookbehind"
+-   <a href="https://it.javascript.info/regexp-lookahead-lookbehind"
+    regexp-lookahead-lookbehind"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=regexp-lookahead-lookbehind"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/regexp-lookahead-lookbehind"
+-   <a href="https://ko.javascript.info/"
+-   <a href=regexp-lookahead-lookbehind"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/regexp-lookahead-lookbehind"
 
 We want to make this open-source project available for people all around the world.
 
@@ -105,8 +105,8 @@ Lookbehind is similar, but it looks behind. That is, it allows to match a patter
 
 The syntax is:
 
-- Positive lookbehind: `(?<=Y)X`, matches `X`, but only if there’s `Y` before it.
-- Negative lookbehind: `(?<!Y)X`, matches `X`, but only if there’s no `Y` before it.
+-   Positive lookbehind: `(?<=Y)X`, matches `X`, but only if there’s `Y` before it.
+-   Negative lookbehind: `(?<!Y)X`, matches `X`, but only if there’s no `Y` before it.
 
 For example, let’s change the price to US dollars. The dollar sign is usually before the number, so to look for `$30` we’ll use `(?<=\$)\d+` – an amount preceded by `$`:
 
@@ -281,9 +281,9 @@ As you can see, there’s only lookbehind part in this regexp.
 
 It works like this:
 
-- At every position in the text.
-- Check if it’s preceeded by `<body.*?>`.
-- If it’s so then we have the match.
+-   At every position in the text.
+-   Check if it’s preceeded by `<body.*?>`.
+-   If it’s so then we have the match.
 
 The tag `<body.*?>` won’t be returned. The result of this regexp is literally an empty string, but it matches only at positions preceeded by `<body.*?>`.
 
@@ -301,26 +301,26 @@ P.S. Regexp flags, such as `s` and `i` can also be useful: `/<body.*?>/si`. The 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-lookahead-lookbehind.html#lookahead" class="sidebar__link">Lookahead</a>
-- <a href="regexp-lookahead-lookbehind.html#negative-lookahead" class="sidebar__link">Negative lookahead</a>
-- <a href="regexp-lookahead-lookbehind.html#lookbehind" class="sidebar__link">Lookbehind</a>
-- <a href="regexp-lookahead-lookbehind.html#capturing-groups" class="sidebar__link">Capturing groups</a>
-- <a href="regexp-lookahead-lookbehind.html#summary" class="sidebar__link">Summary</a>
+-   <a href="regexp-lookahead-lookbehind.html#lookahead" class="sidebar__link">Lookahead</a>
+-   <a href="regexp-lookahead-lookbehind.html#negative-lookahead" class="sidebar__link">Negative lookahead</a>
+-   <a href="regexp-lookahead-lookbehind.html#lookbehind" class="sidebar__link">Lookbehind</a>
+-   <a href="regexp-lookahead-lookbehind.html#capturing-groups" class="sidebar__link">Capturing groups</a>
+-   <a href="regexp-lookahead-lookbehind.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="regexp-lookahead-lookbehind.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="regexp-lookahead-lookbehind.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-lookahead-lookbehind.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="regexp-lookahead-lookbehind.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -328,7 +328,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/14-regexp-lookahead-lookbehind" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

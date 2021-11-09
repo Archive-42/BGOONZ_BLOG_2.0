@@ -1,10 +1,10 @@
 sum-salaries"
 
-- <a href="sum-salaries.html"
-  /sum-salaries"
-  /sum-salaries"
-  sum-salaries"
-  task/sum-salaries"
+-   <a href="sum-salaries.html"
+    /sum-salaries"
+    /sum-salaries"
+    sum-salaries"
+    task/sum-salaries"
 
 <!-- -->
 

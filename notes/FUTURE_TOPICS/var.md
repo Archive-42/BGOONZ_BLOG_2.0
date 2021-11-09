@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/var"
-- <a href="var.html"
-- <a href="https://es.javascript.info/var"
-- <a href="https://fr.javascript.info/var"
-- <a href="https://it.javascript.info/var"
-  var"
+-   <a href="https://ar.javascript.info/var"
+-   <a href="var.html"
+-   <a href="https://es.javascript.info/var"
+-   <a href="https://fr.javascript.info/var"
+-   <a href="https://it.javascript.info/var"
+    var"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/var"
-- <a href=var"
-- <a href="https://tr.javascript.info/var"
-- <a href="https://zh.javascript.info/var"
+-   <a href="https://ko.javascript.info/var"
+-   <a href=var"
+-   <a href="https://tr.javascript.info/var"
+-   <a href="https://zh.javascript.info/var"
 
 We want to make this open-source project available for people all around the world.
 
@@ -328,25 +328,25 @@ These differences make `var` worse than `let` most of the time. Block-level vari
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="var.html#var-has-no-block-scope" class="sidebar__link">“var” has no block scope</a>
-- <a href="var.html#var-tolerates-redeclarations" class="sidebar__link">“var” tolerates redeclarations</a>
-- <a href="var.html#var-variables-can-be-declared-below-their-use" class="sidebar__link">“var” variables can be declared below their use</a>
-- <a href="var.html#iife" class="sidebar__link">IIFE</a>
-- <a href="var.html#summary" class="sidebar__link">Summary</a>
+-   <a href="var.html#var-has-no-block-scope" class="sidebar__link">“var” has no block scope</a>
+-   <a href="var.html#var-tolerates-redeclarations" class="sidebar__link">“var” tolerates redeclarations</a>
+-   <a href="var.html#var-variables-can-be-declared-below-their-use" class="sidebar__link">“var” variables can be declared below their use</a>
+-   <a href="var.html#iife" class="sidebar__link">IIFE</a>
+-   <a href="var.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="var.html#comments" class="sidebar__link">Comments</a>
+-   <a href="var.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -354,7 +354,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/04-var" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

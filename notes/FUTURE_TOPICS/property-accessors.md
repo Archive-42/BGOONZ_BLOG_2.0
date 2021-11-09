@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/property-accessors"
-- <a href="property-accessors.html"
-- <a href="https://es.javascript.info/property-accessors"
+-   <a href="https://ar.javascript.info/property-accessors"
+-   <a href="property-accessors.html"
+-   <a href="https://es.javascript.info/property-accessors"
 
-- <a href="https://it.javascript.info/property-accessors"
-  property-accessors"
+-   <a href="https://it.javascript.info/property-accessors"
+    property-accessors"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/property-accessors"
-- <a href=property-accessors"
-- <a href="https://tr.javascript.info/property-accessors"
-- <a href="https://zh.javascript.info/property-accessors"
+-   <a href="https://ko.javascript.info/property-accessors"
+-   <a href=property-accessors"
+-   <a href="https://tr.javascript.info/property-accessors"
+-   <a href="https://zh.javascript.info/property-accessors"
 
 We want to make this open-source project available for people all around the world.
 
@@ -132,10 +132,10 @@ For accessor properties, there is no `value` or `writable`, but instead there ar
 
 That is, an accessor descriptor may have:
 
-- **`get`** – a function without arguments, that works when a property is read,
-- **`set`** – a function with one argument, that is called when the property is set,
-- **`enumerable`** – same as for data properties,
-- **`configurable`** – same as for data properties.
+-   **`get`** – a function without arguments, that works when a property is read,
+-   **`set`** – a function with one argument, that is called when the property is set,
+-   **`enumerable`** – same as for data properties,
+-   **`configurable`** – same as for data properties.
 
 For instance, to create an accessor `fullName` with `defineProperty`, we can pass a descriptor with `get` and `set`:
 
@@ -274,24 +274,24 @@ Now the old code works too and we’ve got a nice additional property.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-properties.html" class="sidebar__link">Object properties configuration</a>
+-   <a href="object-properties.html" class="sidebar__link">Object properties configuration</a>
 
 #### Lesson navigation
 
-- <a href="property-accessors.html#getters-and-setters" class="sidebar__link">Getters and setters</a>
-- <a href="property-accessors.html#accessor-descriptors" class="sidebar__link">Accessor descriptors</a>
-- <a href="property-accessors.html#smarter-getters-setters" class="sidebar__link">Smarter getters/setters</a>
-- <a href="property-accessors.html#using-for-compatibility" class="sidebar__link">Using for compatibility</a>
+-   <a href="property-accessors.html#getters-and-setters" class="sidebar__link">Getters and setters</a>
+-   <a href="property-accessors.html#accessor-descriptors" class="sidebar__link">Accessor descriptors</a>
+-   <a href="property-accessors.html#smarter-getters-setters" class="sidebar__link">Smarter getters/setters</a>
+-   <a href="property-accessors.html#using-for-compatibility" class="sidebar__link">Using for compatibility</a>
 
-- <a href="property-accessors.html#comments" class="sidebar__link">Comments</a>
+-   <a href="property-accessors.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -299,7 +299,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/07-object-properties/02-property-accessors" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

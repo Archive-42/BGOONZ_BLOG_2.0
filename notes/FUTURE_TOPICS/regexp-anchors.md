@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="regexp-anchors.html"
-- <a href="https://es.javascript.info/regexp-anchors"
-- <a href="https://fr.javascript.info/regexp-anchors"
-- <a href="https://it.javascript.info/regexp-anchors"
-  regexp-anchors"
+-   <a href="https://ar.javascript.info/"
+-   <a href="regexp-anchors.html"
+-   <a href="https://es.javascript.info/regexp-anchors"
+-   <a href="https://fr.javascript.info/regexp-anchors"
+-   <a href="https://it.javascript.info/regexp-anchors"
+    regexp-anchors"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/regexp-anchors"
-- <a href=regexp-anchors"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/regexp-anchors"
+-   <a href="https://ko.javascript.info/regexp-anchors"
+-   <a href=regexp-anchors"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/regexp-anchors"
 
 We want to make this open-source project available for people all around the world.
 
@@ -117,22 +117,22 @@ The string is empty `""`. The engine first matches the `^` (input start), yes it
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-anchors.html#testing-for-a-full-match" class="sidebar__link">Testing for a full match</a>
+-   <a href="regexp-anchors.html#testing-for-a-full-match" class="sidebar__link">Testing for a full match</a>
 
-- <a href="regexp-anchors.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="regexp-anchors.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-anchors.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="regexp-anchors.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -140,7 +140,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/04-regexp-anchors" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

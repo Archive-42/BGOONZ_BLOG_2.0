@@ -12,13 +12,13 @@ These events are special, because they have property `relatedTarget`. This prope
 
 For `mouseover`:
 
-- `event.target` -- is the element where the mouse came over.
-- `event.relatedTarget` -- is the element from which the mouse came (`relatedTarget` -> `target`).
+-   `event.target` -- is the element where the mouse came over.
+-   `event.relatedTarget` -- is the element from which the mouse came (`relatedTarget` -> `target`).
 
 For `mouseout` the reverse:
 
-- `event.target` -- is the element that the mouse left.
-- `event.relatedTarget` -- is the new under-the-pointer element, that mouse left for (`target` -> `relatedTarget`).
+-   `event.target` -- is the element that the mouse left.
+-   `event.relatedTarget` -- is the new under-the-pointer element, that mouse left for (`target` -> `relatedTarget`).
 
 ```online
 In the example below each face and its features are separate elements. When you move the mouse, you can see mouse events in the text area.
@@ -28,13 +28,13 @@ Each event has the information about both `target` and `relatedTarget`:
 [codetabs src="mouseoverout" height=280]
 ```
 
-```warn header="`relatedTarget` can be `null`"
-The `relatedTarget` property can be `null`.
+```warn header="`relatedTarget`can be`null`" The `relatedTarget`property can be`null`.
 
 That's normal and just means that the mouse came not from another element, but from out of the window. Or that it left the window.
 
 We should keep that possibility in mind when using `event.relatedTarget` in our code. If we access `event.relatedTarget.tagName`, then there will be an error.
-```
+
+````
 
 ## Skipping elements
 
@@ -64,11 +64,11 @@ Its HTML has two nested elements: the `<div id="child">` is inside the `<div id=
 Also move the pointer into the child `div`, and then move it out quickly down through the parent one. If the movement is fast enough, then the parent element is ignored. The mouse will cross the parent element without noticing it.
 
 [codetabs height=360 src="mouseoverout-fast"]
-```
+````
 
-```smart header="If `mouseover` triggered, there must be `mouseout`"
-In case of fast mouse movements, intermediate elements may be ignored, but one thing we know for sure: if the pointer "officially" entered an element (`mouseover` event generated), then upon leaving it we always get `mouseout`.
-```
+```smart header="If `mouseover`triggered, there must be`mouseout`" In case of fast mouse movements, intermediate elements may be ignored, but one thing we know for sure: if the pointer "officially" entered an element (`mouseover`event generated), then upon leaving it we always get`mouseout`.
+
+````
 
 ## Mouseout when leaving for a child
 
@@ -78,7 +78,7 @@ An important feature of `mouseout` -- it triggers, when the pointer moves from a
 <div id="parent">
   <div id="child">...</div>
 </div>
-```
+````
 
 If we're on `#parent` and then move the pointer deeper into `#child`, we get `mouseout` on `#parent`!
 
@@ -86,7 +86,7 @@ If we're on `#parent` and then move the pointer deeper into `#child`, we get `mo
 
 That may seem strange, but can be easily explained.
 
-**According to the browser logic, the mouse cursor may be only over a *single* element at any time -- the most nested one and top by z-index.**
+**According to the browser logic, the mouse cursor may be only over a _single_ element at any time -- the most nested one and top by z-index.**
 
 So if it goes to another element (even a descendant), then it leaves the previous one.
 
@@ -109,11 +109,11 @@ If you move the mouse from `#parent` to `#child`, you see two events on `#parent
 As shown, when the pointer moves from `#parent` element to `#child`, two handlers trigger on the parent element: `mouseout` and `mouseover`:
 
 ```js
-parent.onmouseout = function(event) {
-  /* event.target: parent element */
+parent.onmouseout = function (event) {
+    /* event.target: parent element */
 };
-parent.onmouseover = function(event) {
-  /* event.target: child element (bubbled) */
+parent.onmouseover = function (event) {
+    /* event.target: child element (bubbled) */
 };
 ```
 
@@ -166,14 +166,14 @@ Let's start with simple handlers that highlight the element under mouse:
 
 ```js
 // let's highlight an element under the pointer
-table.onmouseover = function(event) {
-  let target = event.target;
-  target.style.background = 'pink';
+table.onmouseover = function (event) {
+    let target = event.target;
+    target.style.background = 'pink';
 };
 
-table.onmouseout = function(event) {
-  let target = event.target;
-  target.style.background = '';
+table.onmouseout = function (event) {
+    let target = event.target;
+    target.style.background = '';
 };
 ```
 
@@ -187,15 +187,16 @@ In our case we'd like to handle transitions between table cells `<td>`: entering
 
 Here's what we can do:
 
-- Remember the currently highlighted `<td>` in a variable, let's call it `currentElem`.
-- On `mouseover` -- ignore the event if we're still inside the current `<td>`.
-- On `mouseout` -- ignore if we didn't leave the current `<td>`.
+-   Remember the currently highlighted `<td>` in a variable, let's call it `currentElem`.
+-   On `mouseover` -- ignore the event if we're still inside the current `<td>`.
+-   On `mouseout` -- ignore if we didn't leave the current `<td>`.
 
 Here's an example of code that accounts for all possible situations:
 
 [js src="mouseenter-mouseleave-delegation-2/script.js"]
 
 Once again, the important features are:
+
 1. It uses event delegation to handle entering/leaving of any `<td>` inside the table. So it relies on `mouseover/out` instead of `mouseenter/leave` that don't bubble and hence allow no delegation.
 2. Extra events, such as moving between descendants of `<td>` are filtered out, so that `onEnter/Leave` runs only if the pointer leaves or enters `<td>` as a whole.
 
@@ -213,8 +214,8 @@ We covered events `mouseover`, `mouseout`, `mousemove`, `mouseenter` and `mousel
 
 These things are good to note:
 
-- A fast mouse move may skip intermediate elements.
-- Events `mouseover/out` and `mouseenter/leave` have an additional property: `relatedTarget`. That's the element that we are coming from/to, complementary to `target`.
+-   A fast mouse move may skip intermediate elements.
+-   Events `mouseover/out` and `mouseenter/leave` have an additional property: `relatedTarget`. That's the element that we are coming from/to, complementary to `target`.
 
 Events `mouseover/out` trigger even when we go from the parent element to a child element. The browser assumes that the mouse can be only over one element at one time -- the deepest one.
 

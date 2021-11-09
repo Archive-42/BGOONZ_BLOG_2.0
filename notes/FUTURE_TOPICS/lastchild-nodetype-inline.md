@@ -1,17 +1,17 @@
 lastchild-nodetype-inline"
 
-- <a href="lastchild-nodetype-inline.html"
-  /lastchild-nodetype-inline"
-  /lastchild-nodetype-inline"
-  lastchild-nodetype-inlinelastchild-nodetype-inline"
+-   <a href="lastchild-nodetype-inline.html"
+    /lastchild-nodetype-inline"
+    /lastchild-nodetype-inline"
+    lastchild-nodetype-inlinelastchild-nodetype-inline"
 
 <!-- -->
 
 lastchild-nodetype-inline"
 lastchild-nodetype-inline"
 
-- <a href="https://tr.javascript.info/"
-  lastchild-nodetype-inline"
+-   <a href="https://tr.javascript.info/"
+    lastchild-nodetype-inline"
 
 We want to make this open-source project available for people all around the world.
 

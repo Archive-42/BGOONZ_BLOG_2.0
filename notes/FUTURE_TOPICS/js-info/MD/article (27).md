@@ -39,10 +39,10 @@ Before creating the code of `pow`, we can imagine what the function should do an
 Such description is called a _specification_ or, in short, a spec, and contains descriptions of use cases together with tests for them, like this:
 
 ```js
-describe("pow", function () {
-  it("raises to n-th power", function () {
-    assert.equal(pow(2, 3), 8);
-  });
+describe('pow', function () {
+    it('raises to n-th power', function () {
+        assert.equal(pow(2, 3), 8);
+    });
 });
 ```
 
@@ -83,9 +83,9 @@ The first step is already complete: we have an initial spec for `pow`. Now, befo
 
 Here in the tutorial we'll be using the following JavaScript libraries for tests:
 
-- [Mocha](http://mochajs.org/) -- the core framework: it provides common testing functions including `describe` and `it` and the main function that runs tests.
-- [Chai](http://chaijs.com) -- the library with many assertions. It allows to use a lot of different assertions, for now we need only `assert.equal`.
-- [Sinon](http://sinonjs.org/) -- a library to spy over functions, emulate built-in functions and more, we'll need it much later.
+-   [Mocha](http://mochajs.org/) -- the core framework: it provides common testing functions including `describe` and `it` and the main function that runs tests.
+-   [Chai](http://chaijs.com) -- the library with many assertions. It allows to use a lot of different assertions, for now we need only `assert.equal`.
+-   [Sinon](http://sinonjs.org/) -- a library to spy over functions, emulate built-in functions and more, we'll need it much later.
 
 These libraries are suitable for both in-browser and server-side testing. Here we'll consider the browser variant.
 
@@ -117,7 +117,7 @@ Let's make a simple implementation of `pow`, for tests to pass:
 
 ```js
 function pow(x, n) {
-  return 8; // :) we cheat!
+    return 8; // :) we cheat!
 }
 ```
 
@@ -137,32 +137,32 @@ We can select one of two ways to organize the test here:
 
 1. The first variant -- add one more `assert` into the same `it`:
 
-   ```js
-   describe("pow", function() {
+    ```js
+    describe("pow", function() {
 
-     it("raises to n-th power", function() {
-       assert.equal(pow(2, 3), 8);
-   *!*
-       assert.equal(pow(3, 4), 81);
-   */!*
-     });
+      it("raises to n-th power", function() {
+        assert.equal(pow(2, 3), 8);
+    *!*
+        assert.equal(pow(3, 4), 81);
+    */!*
+      });
 
-   });
-   ```
+    });
+    ```
 
 2. The second -- make two tests:
 
-   ```js
-   describe("pow", function () {
-     it("2 raised to power 3 is 8", function () {
-       assert.equal(pow(2, 3), 8);
-     });
+    ```js
+    describe('pow', function () {
+        it('2 raised to power 3 is 8', function () {
+            assert.equal(pow(2, 3), 8);
+        });
 
-     it("3 raised to power 4 is 81", function () {
-       assert.equal(pow(3, 4), 81);
-     });
-   });
-   ```
+        it('3 raised to power 4 is 81', function () {
+            assert.equal(pow(3, 4), 81);
+        });
+    });
+    ```
 
 The principal difference is that when `assert` triggers an error, the `it` block immediately terminates. So, in the first variant if the first `assert` fails, then we'll never see the result of the second `assert`.
 
@@ -188,30 +188,30 @@ Let's write something more real for tests to pass:
 
 ```js
 function pow(x, n) {
-  let result = 1;
+    let result = 1;
 
-  for (let i = 0; i < n; i++) {
-    result *= x;
-  }
+    for (let i = 0; i < n; i++) {
+        result *= x;
+    }
 
-  return result;
+    return result;
 }
 ```
 
 To be sure that the function works well, let's test it for more values. Instead of writing `it` blocks manually, we can generate them in `for`:
 
 ```js
-describe("pow", function () {
-  function makeTest(x) {
-    let expected = x * x * x;
-    it(`${x} in the power 3 is ${expected}`, function () {
-      assert.equal(pow(x, 3), expected);
-    });
-  }
+describe('pow', function () {
+    function makeTest(x) {
+        let expected = x * x * x;
+        it(`${x} in the power 3 is ${expected}`, function () {
+            assert.equal(pow(x, 3), expected);
+        });
+    }
 
-  for (let x = 1; x <= 5; x++) {
-    makeTest(x);
-  }
+    for (let x = 1; x <= 5; x++) {
+        makeTest(x);
+    }
 });
 ```
 
@@ -262,15 +262,15 @@ In the future we can add more `it` and `describe` on the top level with helper f
 For instance:
 
 ```js no-beautify
-describe("test", function () {
-  before(() => alert("Testing started – before all tests"));
-  after(() => alert("Testing finished – after all tests"));
+describe('test', function () {
+    before(() => alert('Testing started – before all tests'));
+    after(() => alert('Testing finished – after all tests'));
 
-  beforeEach(() => alert("Before a test – enter a test"));
-  afterEach(() => alert("After a test – exit a test"));
+    beforeEach(() => alert('Before a test – enter a test'));
+    afterEach(() => alert('After a test – exit a test'));
 
-  it("test 1", () => alert(1));
-  it("test 2", () => alert(2));
+    it('test 1', () => alert(1));
+    it('test 2', () => alert(2));
 });
 ```
 

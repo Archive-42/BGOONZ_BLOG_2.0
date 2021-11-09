@@ -2,35 +2,35 @@ The solution using a loop:
 
 ```js run
 function sumTo(n) {
-  let sum = 0;
-  for (let i = 1; i <= n; i++) {
-    sum += i;
-  }
-  return sum;
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+        sum += i;
+    }
+    return sum;
 }
 
-alert( sumTo(100) );
+alert(sumTo(100));
 ```
 
 The solution using recursion:
 
 ```js run
 function sumTo(n) {
-  if (n == 1) return 1;
-  return n + sumTo(n - 1);
+    if (n == 1) return 1;
+    return n + sumTo(n - 1);
 }
 
-alert( sumTo(100) );
+alert(sumTo(100));
 ```
 
 The solution using the formula: `sumTo(n) = n*(n+1)/2`:
 
 ```js run
 function sumTo(n) {
-  return n * (n + 1) / 2;
+    return (n * (n + 1)) / 2;
 }
 
-alert( sumTo(100) );
+alert(sumTo(100));
 ```
 
 P.S. Naturally, the formula is the fastest solution. It uses only 3 operations for any number `n`. The math helps!

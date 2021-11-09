@@ -4,27 +4,26 @@ The loop-based variant of the solution:
 
 ```js run
 let list = {
-  value: 1,
-  next: {
-    value: 2,
+    value: 1,
     next: {
-      value: 3,
-      next: {
-        value: 4,
-        next: null
-      }
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
     }
-  }
 };
 
 function printList(list) {
-  let tmp = list;
+    let tmp = list;
 
-  while (tmp) {
-    alert(tmp.value);
-    tmp = tmp.next;
-  }
-
+    while (tmp) {
+        alert(tmp.value);
+        tmp = tmp.next;
+    }
 }
 
 printList(list);
@@ -55,27 +54,25 @@ The recursive variant of `printList(list)` follows a simple logic: to output a l
 
 ```js run
 let list = {
-  value: 1,
-  next: {
-    value: 2,
+    value: 1,
     next: {
-      value: 3,
-      next: {
-        value: 4,
-        next: null
-      }
+        value: 2,
+        next: {
+            value: 3,
+            next: {
+                value: 4,
+                next: null
+            }
+        }
     }
-  }
 };
 
 function printList(list) {
+    alert(list.value); // output the current item
 
-  alert(list.value); // output the current item
-
-  if (list.next) {
-    printList(list.next); // do the same for the rest of the list
-  }
-
+    if (list.next) {
+        printList(list.next); // do the same for the rest of the list
+    }
 }
 
 printList(list);

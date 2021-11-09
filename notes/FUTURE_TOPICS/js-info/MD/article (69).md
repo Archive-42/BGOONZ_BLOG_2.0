@@ -1,4 +1,3 @@
-
 # Private and protected properties and methods
 
 One of the most important principles of object oriented programming -- delimiting internal interface from the external one.
@@ -23,7 +22,7 @@ A lot of details. But we can use it without knowing anything.
 
 Coffee machines are quite reliable, aren't they? We can use one for years, and only if something goes wrong -- bring it for repairs.
 
-The secret of reliability and simplicity of a coffee machine -- all details are well-tuned and *hidden* inside.
+The secret of reliability and simplicity of a coffee machine -- all details are well-tuned and _hidden_ inside.
 
 If we remove the protective cover from the coffee machine, then using it will be much more complex (where to press?), and dangerous (it can electrocute).
 
@@ -35,8 +34,8 @@ But in order to hide inner details, we'll use not a protective cover, but rather
 
 In object-oriented programming, properties and methods are split into two groups:
 
-- *Internal interface* -- methods and properties, accessible from other methods of the class, but not from the outside.
-- *External interface* -- methods and properties, accessible also from outside the class.
+-   _Internal interface_ -- methods and properties, accessible from other methods of the class, but not from the outside.
+-   _External interface_ -- methods and properties, accessible also from outside the class.
 
 If we continue the analogy with the coffee machine -- what's hidden inside: a boiler tube, heating element, and so on -- is its internal interface.
 
@@ -50,8 +49,8 @@ That was a general introduction.
 
 In JavaScript, there are two types of object fields (properties and methods):
 
-- Public: accessible from anywhere. They comprise the external interface. Until now we were only using public properties and methods.
-- Private: accessible only from inside the class. These are for the internal interface.
+-   Public: accessible from anywhere. They comprise the external interface. Until now we were only using public properties and methods.
+-   Private: accessible only from inside the class. These are for the internal interface.
 
 In many other languages there also exist "protected" fields: accessible only from inside the class and those extending it (like private, but plus access from inheriting classes). They are also useful for the internal interface. They are in a sense more widespread than private ones, because we usually want inheriting classes to gain access to them.
 
@@ -65,13 +64,12 @@ Let's make a simple coffee machine class first:
 
 ```js run
 class CoffeeMachine {
-  waterAmount = 0; // the amount of water inside
+    waterAmount = 0; // the amount of water inside
 
-  constructor(power) {
-    this.power = power;
-    alert( `Created a coffee-machine, power: ${power}` );
-  }
-
+    constructor(power) {
+        this.power = power;
+        alert(`Created a coffee-machine, power: ${power}`);
+    }
 }
 
 // create the coffee machine
@@ -93,23 +91,22 @@ So our property will be called `_waterAmount`:
 
 ```js run
 class CoffeeMachine {
-  _waterAmount = 0;
+    _waterAmount = 0;
 
-  set waterAmount(value) {
-    if (value < 0) {
-      value = 0;
+    set waterAmount(value) {
+        if (value < 0) {
+            value = 0;
+        }
+        this._waterAmount = value;
     }
-    this._waterAmount = value;
-  }
 
-  get waterAmount() {
-    return this._waterAmount;
-  }
+    get waterAmount() {
+        return this._waterAmount;
+    }
 
-  constructor(power) {
-    this._power = power;
-  }
-
+    constructor(power) {
+        this._power = power;
+    }
 }
 
 // create the coffee machine
@@ -131,16 +128,15 @@ To do so, we only need to make getter, but not the setter:
 
 ```js run
 class CoffeeMachine {
-  // ...
+    // ...
 
-  constructor(power) {
-    this._power = power;
-  }
+    constructor(power) {
+        this._power = power;
+    }
 
-  get power() {
-    return this._power;
-  }
-
+    get power() {
+        return this._power;
+    }
 }
 
 // create the coffee machine
@@ -230,17 +226,16 @@ For instance, let's make `waterAmount` an accessor for `#waterAmount`:
 
 ```js run
 class CoffeeMachine {
+    #waterAmount = 0;
 
-  #waterAmount = 0;
+    get waterAmount() {
+        return this.#waterAmount;
+    }
 
-  get waterAmount() {
-    return this.#waterAmount;
-  }
-
-  set waterAmount(value) {
-    if (value < 0) value = 0;
-    this.#waterAmount = value;
-  }
+    set waterAmount(value) {
+        if (value < 0) value = 0;
+        this.#waterAmount = value;
+    }
 }
 
 let machine = new CoffeeMachine();
@@ -285,7 +280,7 @@ With private fields that's impossible: `this['#name']` doesn't work. That's a sy
 
 ## Summary
 
-In terms of OOP, delimiting of the internal interface from the external one is called [encapsulation](https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)).
+In terms of OOP, delimiting of the internal interface from the external one is called [encapsulation](<https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)>).
 
 It gives the following benefits:
 
@@ -316,7 +311,7 @@ Hiding complexity
 
 To hide an internal interface we use either protected or private properties:
 
-- Protected fields start with `_`. That's a well-known convention, not enforced at the language level. Programmers should only access a field starting with `_` from its class and classes inheriting from it.
-- Private fields start with `#`. JavaScript makes sure we can only access those from inside the class.
+-   Protected fields start with `_`. That's a well-known convention, not enforced at the language level. Programmers should only access a field starting with `_` from its class and classes inheriting from it.
+-   Private fields start with `#`. JavaScript makes sure we can only access those from inside the class.
 
 Right now, private fields are not well-supported among browsers, but can be polyfilled.

@@ -1,6 +1,5 @@
-function sum(a){
-  // Your code goes here.
-
+function sum(a) {
+    // Your code goes here.
 }
 
 /*

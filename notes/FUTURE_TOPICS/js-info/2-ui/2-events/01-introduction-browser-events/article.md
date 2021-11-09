@@ -6,28 +6,28 @@ Here's a list of the most useful DOM events, just to take a look at:
 
 **Mouse events:**
 
-- `click` -- when the mouse clicks on an element (touchscreen devices generate it on a tap).
-- `contextmenu` -- when the mouse right-clicks on an element.
-- `mouseover` / `mouseout` -- when the mouse cursor comes over / leaves an element.
-- `mousedown` / `mouseup` -- when the mouse button is pressed / released over an element.
-- `mousemove` -- when the mouse is moved.
+-   `click` -- when the mouse clicks on an element (touchscreen devices generate it on a tap).
+-   `contextmenu` -- when the mouse right-clicks on an element.
+-   `mouseover` / `mouseout` -- when the mouse cursor comes over / leaves an element.
+-   `mousedown` / `mouseup` -- when the mouse button is pressed / released over an element.
+-   `mousemove` -- when the mouse is moved.
 
 **Keyboard events:**
 
-- `keydown` and `keyup` -- when a keyboard key is pressed and released.
+-   `keydown` and `keyup` -- when a keyboard key is pressed and released.
 
 **Form element events:**
 
-- `submit` -- when the visitor submits a `<form>`.
-- `focus` -- when the visitor focuses on an element, e.g. on an `<input>`.
+-   `submit` -- when the visitor submits a `<form>`.
+-   `focus` -- when the visitor focuses on an element, e.g. on an `<input>`.
 
 **Document events:**
 
-- `DOMContentLoaded` -- when the HTML is loaded and processed, DOM is fully built.
+-   `DOMContentLoaded` -- when the HTML is loaded and processed, DOM is fully built.
 
 **CSS events:**
 
-- `transitionend` -- when a CSS-animation finishes.
+-   `transitionend` -- when a CSS-animation finishes.
 
 There are many other events. We'll get into more details of particular events in next chapters.
 
@@ -59,11 +59,11 @@ Here a click runs the function `countRabbits()`:
 
 ```html autorun height=50
 <script>
-  function countRabbits() {
-    for (let i = 1; i <= 3; i++) {
-      alert("Rabbit number " + i);
+    function countRabbits() {
+        for (let i = 1; i <= 3; i++) {
+            alert('Rabbit number ' + i);
+        }
     }
-  }
 </script>
 
 <input type="button" *!*onclick="countRabbits()"*/!* value="Count rabbits!">
@@ -80,11 +80,11 @@ For instance, `elem.onclick`:
 ```html autorun
 <input id="elem" type="button" value="Click me" />
 <script>
-  *!*
-    elem.onclick = function() {
-      alert('Thank you');
-    };
-  */!*
+    *!*
+      elem.onclick = function() {
+        alert('Thank you');
+      };
+    */!*
 </script>
 ```
 
@@ -96,22 +96,22 @@ These two code pieces work the same:
 
 1. Only HTML:
 
-   ```html autorun height=50
-   <input type="button" *!*onclick="alert('Click!')"*/!* value="Button">
-   ```
+    ```html autorun height=50
+    <input type="button" *!*onclick="alert('Click!')"*/!* value="Button">
+    ```
 
 2. HTML + JS:
 
-   ```html autorun height=50
-   <input type="button" id="button" value="Button" />
-   <script>
-     *!*
-       button.onclick = function() {
-         alert('Click!');
-       };
-     */!*
-   </script>
-   ```
+    ```html autorun height=50
+    <input type="button" id="button" value="Button" />
+    <script>
+        *!*
+          button.onclick = function() {
+            alert('Click!');
+          };
+        */!*
+    </script>
+    ```
 
 In the first example, the HTML attribute is used to initialize the `button.onclick`, while in the second example -- the script, that's all the difference.
 
@@ -122,11 +122,11 @@ In the example below adding a handler with JavaScript overwrites the existing ha
 ```html run height=50 autorun
 <input type="button" id="elem" onclick="alert('Before')" value="Click me" />
 <script>
-  *!*
-    elem.onclick = function() { // overwrites the existing handler
-      alert('After'); // only this will be shown
-    };
-  */!*
+    *!*
+      elem.onclick = function() { // overwrites the existing handler
+        alert('After'); // only this will be shown
+      };
+    */!*
 </script>
 ```
 
@@ -150,7 +150,7 @@ We can set an existing function as a handler:
 
 ```js
 function sayThanks() {
-  alert("Thanks!");
+    alert('Thanks!');
 }
 
 elem.onclick = sayThanks;
@@ -193,8 +193,8 @@ Such a call won't work:
 ```js run no-beautify
 // a click on <body> will generate errors,
 // because attributes are always strings, function becomes a string
-document.body.setAttribute("onclick", function () {
-  alert(1);
+document.body.setAttribute('onclick', function () {
+    alert(1);
 });
 ```
 
@@ -212,11 +212,11 @@ We'd like to assign two event handlers for that. But a new DOM property will ove
 
 ```js no-beautify
 input.onclick = function () {
-  alert(1);
+    alert(1);
 };
 // ...
 input.onclick = function () {
-  alert(2);
+    alert(2);
 }; // replaces the previous handler
 ```
 
@@ -277,19 +277,19 @@ Multiple calls to `addEventListener` allow to add multiple handlers, like this:
 <input id="elem" type="button" value="Click me" />
 
 <script>
-    function handler1() {
-      alert('Thanks!');
-    };
+      function handler1() {
+        alert('Thanks!');
+      };
 
-    function handler2() {
-      alert('Thanks again!');
-    }
+      function handler2() {
+        alert('Thanks again!');
+      }
 
-  *!*
-    elem.onclick = () => alert("Hello");
-    elem.addEventListener("click", handler1); // Thanks!
-    elem.addEventListener("click", handler2); // Thanks again!
-  */!*
+    *!*
+      elem.onclick = () => alert("Hello");
+      elem.addEventListener("click", handler1); // Thanks!
+      elem.addEventListener("click", handler2); // Thanks again!
+    */!*
 </script>
 ```
 
@@ -302,14 +302,14 @@ For instance, the `DOMContentLoaded` event, that triggers when the document is l
 ```js
 // will never run
 document.onDOMContentLoaded = function () {
-  alert("DOM built");
+    alert('DOM built');
 };
 ```
 
 ```js
 // this way it works
-document.addEventListener("DOMContentLoaded", function () {
-  alert("DOM built");
+document.addEventListener('DOMContentLoaded', function () {
+    alert('DOM built');
 });
 ```
 
@@ -370,13 +370,13 @@ For instance:
 <button id="elem">Click me</button>
 
 <script>
-  let obj = {
-    handleEvent(event) {
-      alert(event.type + " at " + event.currentTarget);
-    },
-  };
+    let obj = {
+        handleEvent(event) {
+            alert(event.type + ' at ' + event.currentTarget);
+        }
+    };
 
-  elem.addEventListener("click", obj);
+    elem.addEventListener('click', obj);
 </script>
 ```
 
@@ -388,24 +388,24 @@ We could also use a class for that:
 <button id="elem">Click me</button>
 
 <script>
-    class Menu {
-      handleEvent(event) {
-        switch(event.type) {
-          case 'mousedown':
-            elem.innerHTML = "Mouse button pressed";
-            break;
-          case 'mouseup':
-            elem.innerHTML += "...and released.";
-            break;
+      class Menu {
+        handleEvent(event) {
+          switch(event.type) {
+            case 'mousedown':
+              elem.innerHTML = "Mouse button pressed";
+              break;
+            case 'mouseup':
+              elem.innerHTML += "...and released.";
+              break;
+          }
         }
       }
-    }
 
-  *!*
-    let menu = new Menu();
-    elem.addEventListener('mousedown', menu);
-    elem.addEventListener('mouseup', menu);
-  */!*
+    *!*
+      let menu = new Menu();
+      elem.addEventListener('mousedown', menu);
+      elem.addEventListener('mouseup', menu);
+    */!*
 </script>
 ```
 
@@ -417,25 +417,25 @@ The method `handleEvent` does not have to do all the job by itself. It can call 
 <button id="elem">Click me</button>
 
 <script>
-  class Menu {
-    handleEvent(event) {
-      // mousedown -> onMousedown
-      let method = "on" + event.type[0].toUpperCase() + event.type.slice(1);
-      this[method](event);
+    class Menu {
+        handleEvent(event) {
+            // mousedown -> onMousedown
+            let method = 'on' + event.type[0].toUpperCase() + event.type.slice(1);
+            this[method](event);
+        }
+
+        onMousedown() {
+            elem.innerHTML = 'Mouse button pressed';
+        }
+
+        onMouseup() {
+            elem.innerHTML += '...and released.';
+        }
     }
 
-    onMousedown() {
-      elem.innerHTML = "Mouse button pressed";
-    }
-
-    onMouseup() {
-      elem.innerHTML += "...and released.";
-    }
-  }
-
-  let menu = new Menu();
-  elem.addEventListener("mousedown", menu);
-  elem.addEventListener("mouseup", menu);
+    let menu = new Menu();
+    elem.addEventListener('mousedown', menu);
+    elem.addEventListener('mouseup', menu);
 </script>
 ```
 

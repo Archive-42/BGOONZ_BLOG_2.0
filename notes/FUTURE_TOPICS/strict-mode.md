@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/strict-mode"
-- <a href="strict-mode.html"
-- <a href="https://es.javascript.info/strict-mode"
-- <a href="https://fr.javascript.info/strict-mode"
-- <a href="https://it.javascript.info/strict-mode"
-  strict-mode"
+-   <a href="https://ar.javascript.info/strict-mode"
+-   <a href="strict-mode.html"
+-   <a href="https://es.javascript.info/strict-mode"
+-   <a href="https://fr.javascript.info/strict-mode"
+-   <a href="https://it.javascript.info/strict-mode"
+    strict-mode"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/strict-mode"
-- <a href=strict-mode"
-- <a href="https://tr.javascript.info/strict-mode"
-- <a href="https://zh.javascript.info/strict-mode"
+-   <a href="https://ko.javascript.info/strict-mode"
+-   <a href=strict-mode"
+-   <a href="https://tr.javascript.info/strict-mode"
+-   <a href="https://zh.javascript.info/strict-mode"
 
 We want to make this open-source project available for people all around the world.
 
@@ -128,23 +128,23 @@ All examples in this tutorial assume strict mode unless (very rarely) specified 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="strict-mode.html#use-strict" class="sidebar__link">“use strict”</a>
-- <a href="strict-mode.html#browser-console" class="sidebar__link">Browser console</a>
-- <a href="strict-mode.html#should-we-use-strict" class="sidebar__link">Should we “use strict”?</a>
+-   <a href="strict-mode.html#use-strict" class="sidebar__link">“use strict”</a>
+-   <a href="strict-mode.html#browser-console" class="sidebar__link">Browser console</a>
+-   <a href="strict-mode.html#should-we-use-strict" class="sidebar__link">Should we “use strict”?</a>
 
-- <a href="strict-mode.html#comments" class="sidebar__link">Comments</a>
+-   <a href="strict-mode.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -152,7 +152,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/03-strict-mode" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="shadow-dom-events.html"
-- <a href="https://es.javascript.info/"
+-   <a href="https://ar.javascript.info/"
+-   <a href="shadow-dom-events.html"
+-   <a href="https://es.javascript.info/"
 
-- <a href="https://it.javascript.info/"
-  shadow-dom-events"
+-   <a href="https://it.javascript.info/"
+    shadow-dom-events"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=shadow-dom-events"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/shadow-dom-events"
+-   <a href="https://ko.javascript.info/"
+-   <a href=shadow-dom-events"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/shadow-dom-events"
 
 We want to make this open-source project available for people all around the world.
 
@@ -144,20 +144,20 @@ This is governed by the `composed` event object property. If it’s `true`, then
 
 If you take a look at [UI Events specification](https://www.w3.org/TR/uievents), most events have `composed: true`:
 
-- `blur`, `focus`, `focusin`, `focusout`,
-- `click`, `dblclick`,
-- `mousedown`, `mouseup` `mousemove`, `mouseout`, `mouseover`,
-- `wheel`,
-- `beforeinput`, `input`, `keydown`, `keyup`.
+-   `blur`, `focus`, `focusin`, `focusout`,
+-   `click`, `dblclick`,
+-   `mousedown`, `mouseup` `mousemove`, `mouseout`, `mouseover`,
+-   `wheel`,
+-   `beforeinput`, `input`, `keydown`, `keyup`.
 
 All touch events and pointer events also have `composed: true`.
 
 There are some events that have `composed: false` though:
 
-- `mouseenter`, `mouseleave` (they do not bubble at all),
-- `load`, `unload`, `abort`, `error`,
-- `select`,
-- `slotchange`.
+-   `mouseenter`, `mouseleave` (they do not bubble at all),
+-   `load`, `unload`, `abort`, `error`,
+-   `select`,
+-   `slotchange`.
 
 These events can be caught only on elements within the same DOM, where the event target resides.
 
@@ -206,17 +206,17 @@ Events only cross shadow DOM boundaries if their `composed` flag is set to `true
 
 Built-in events mostly have `composed: true`, as described in the relevant specifications:
 
-- UI Events <https://www.w3.org/TR/uievents>.
-- Touch Events <https://w3c.github.io/touch-events>.
-- Pointer Events <https://www.w3.org/TR/pointerevents>.
-- …And so on.
+-   UI Events <https://www.w3.org/TR/uievents>.
+-   Touch Events <https://w3c.github.io/touch-events>.
+-   Pointer Events <https://www.w3.org/TR/pointerevents>.
+-   …And so on.
 
 Some built-in events that have `composed: false`:
 
-- `mouseenter`, `mouseleave` (also do not bubble),
-- `load`, `unload`, `abort`, `error`,
-- `select`,
-- `slotchange`.
+-   `mouseenter`, `mouseleave` (also do not bubble),
+-   `load`, `unload`, `abort`, `error`,
+-   `select`,
+-   `slotchange`.
 
 These events can be caught only on elements within the same DOM.
 
@@ -234,24 +234,24 @@ Please note that in case of nested components, one shadow DOM may be nested into
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
 
 #### Lesson navigation
 
-- <a href="shadow-dom-events.html#bubbling-event-composedpath" class="sidebar__link">Bubbling, event.composedPath()</a>
-- <a href="shadow-dom-events.html#event-composed" class="sidebar__link">event.composed</a>
-- <a href="shadow-dom-events.html#custom-events" class="sidebar__link">Custom events</a>
-- <a href="shadow-dom-events.html#summary" class="sidebar__link">Summary</a>
+-   <a href="shadow-dom-events.html#bubbling-event-composedpath" class="sidebar__link">Bubbling, event.composedPath()</a>
+-   <a href="shadow-dom-events.html#event-composed" class="sidebar__link">event.composed</a>
+-   <a href="shadow-dom-events.html#custom-events" class="sidebar__link">Custom events</a>
+-   <a href="shadow-dom-events.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="shadow-dom-events.html#comments" class="sidebar__link">Comments</a>
+-   <a href="shadow-dom-events.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -259,7 +259,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/8-web-components/7-shadow-dom-events" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

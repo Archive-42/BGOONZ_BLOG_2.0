@@ -1,10 +1,10 @@
 sum-to"
 
-- <a href="sum-to.html"
-  /sum-to"
-  /sum-to"
-  sum-to"
-  task/sum-to"
+-   <a href="sum-to.html"
+    /sum-to"
+    /sum-to"
+    sum-to"
+    task/sum-to"
 
 <!-- -->
 

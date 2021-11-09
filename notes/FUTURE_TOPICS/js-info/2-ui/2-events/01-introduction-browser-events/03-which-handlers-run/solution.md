@@ -6,11 +6,11 @@ To remove a function object, we need to store a reference to it, like this:
 
 ```js
 function handler() {
-  alert(1);
+    alert(1);
 }
 
-button.addEventListener("click", handler);
-button.removeEventListener("click", handler);
+button.addEventListener('click', handler);
+button.removeEventListener('click', handler);
 ```
 
 The handler `button.onclick` works independently and in addition to `addEventListener`.

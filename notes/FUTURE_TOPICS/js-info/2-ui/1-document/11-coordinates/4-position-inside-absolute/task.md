@@ -8,17 +8,17 @@ Extend the previous task <info:task/position-at-absolute>: teach the function `p
 
 New values for `position`:
 
-- `top-out`, `right-out`, `bottom-out` -- work the same as before, they insert the `elem` over/right/under `anchor`.
-- `top-in`, `right-in`, `bottom-in` -- insert `elem` inside the `anchor`: stick it to the upper/right/bottom edge.
+-   `top-out`, `right-out`, `bottom-out` -- work the same as before, they insert the `elem` over/right/under `anchor`.
+-   `top-in`, `right-in`, `bottom-in` -- insert `elem` inside the `anchor`: stick it to the upper/right/bottom edge.
 
 For instance:
 
 ```js
 // shows the note above blockquote
-positionAt(blockquote, "top-out", note);
+positionAt(blockquote, 'top-out', note);
 
 // shows the note inside blockquote, at the top
-positionAt(blockquote, "top-in", note);
+positionAt(blockquote, 'top-in', note);
 ```
 
 The result:

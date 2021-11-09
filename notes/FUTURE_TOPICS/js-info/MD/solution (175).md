@@ -2,9 +2,9 @@ First, let's see how _not_ to do it:
 
 ```js
 function clear(elem) {
-  for (let i = 0; i < elem.childNodes.length; i++) {
-    elem.childNodes[i].remove();
-  }
+    for (let i = 0; i < elem.childNodes.length; i++) {
+        elem.childNodes[i].remove();
+    }
 }
 ```
 
@@ -16,9 +16,9 @@ The right variant could be:
 
 ```js
 function clear(elem) {
-  while (elem.firstChild) {
-    elem.firstChild.remove();
-  }
+    while (elem.firstChild) {
+        elem.firstChild.remove();
+    }
 }
 ```
 
@@ -26,6 +26,6 @@ And also there's a simpler way to do the same:
 
 ```js
 function clear(elem) {
-  elem.innerHTML = "";
+    elem.innerHTML = '';
 }
 ```

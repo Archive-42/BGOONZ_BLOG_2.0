@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="xmlhttprequest.html"
-- <a href="https://es.javascript.info/xmlhttprequest"
-- <a href="https://fr.javascript.info/xmlhttprequest"
-- <a href="https://it.javascript.info/xmlhttprequest"
-  xmlhttprequest"
+-   <a href="https://ar.javascript.info/"
+-   <a href="xmlhttprequest.html"
+-   <a href="https://es.javascript.info/xmlhttprequest"
+-   <a href="https://fr.javascript.info/xmlhttprequest"
+-   <a href="https://it.javascript.info/xmlhttprequest"
+    xmlhttprequest"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=xmlhttprequest"
-- <a href="https://tr.javascript.info/xmlhttprequest"
-- <a href="https://zh.javascript.info/xmlhttprequest"
+-   <a href="https://ko.javascript.info/"
+-   <a href=xmlhttprequest"
+-   <a href="https://tr.javascript.info/xmlhttprequest"
+-   <a href="https://zh.javascript.info/xmlhttprequest"
 
 We want to make this open-source project available for people all around the world.
 
@@ -71,10 +71,10 @@ To do the request, we need 3 steps:
 
     This method specifies the main parameters of the request:
 
-    - `method` – HTTP-method. Usually `"GET"` or `"POST"`.
-    - `URL` – the URL to request, a string, can be [URL](url.html) object.
-    - `async` – if explicitly set to `false`, then the request is synchronous, we’ll cover that a bit later.
-    - `user`, `password` – login and password for basic HTTP auth (if required).
+    -   `method` – HTTP-method. Usually `"GET"` or `"POST"`.
+    -   `URL` – the URL to request, a string, can be [URL](url.html) object.
+    -   `async` – if explicitly set to `false`, then the request is synchronous, we’ll cover that a bit later.
+    -   `user`, `password` – login and password for basic HTTP auth (if required).
 
     Please note that `open` call, contrary to its name, does not open the connection. It only configures the request, but the network activity only starts with the call of `send`.
 
@@ -90,24 +90,24 @@ To do the request, we need 3 steps:
 
     These three events are the most widely used:
 
-    - `load` – when the request is complete (even if HTTP status is like 400 or 500), and the response is fully downloaded.
-    - `error` – when the request couldn’t be made, e.g. network down or invalid URL.
-    - `progress` – triggers periodically while the response is being downloaded, reports how much has been downloaded.
+    -   `load` – when the request is complete (even if HTTP status is like 400 or 500), and the response is fully downloaded.
+    -   `error` – when the request couldn’t be made, e.g. network down or invalid URL.
+    -   `progress` – triggers periodically while the response is being downloaded, reports how much has been downloaded.
 
-      xhr.onload = function() {
-      alert(`Loaded: ${xhr.status} ${xhr.response}`);
-      };
+        xhr.onload = function() {
+        alert(`Loaded: ${xhr.status} ${xhr.response}`);
+        };
 
-      xhr.onerror = function() { // only triggers if the request couldn't be made at all
-      alert(`Network Error`);
-      };
+        xhr.onerror = function() { // only triggers if the request couldn't be made at all
+        alert(`Network Error`);
+        };
 
-      xhr.onprogress = function(event) { // triggers periodically
-      // event.loaded - how many bytes downloaded
-      // event.lengthComputable = true if the server sent Content-Length header
-      // event.total - total number of bytes (if lengthComputable)
-      alert(`Received ${event.loaded} of ${event.total}`);
-      };
+        xhr.onprogress = function(event) { // triggers periodically
+        // event.loaded - how many bytes downloaded
+        // event.lengthComputable = true if the server sent Content-Length header
+        // event.total - total number of bytes (if lengthComputable)
+        alert(`Received ${event.loaded} of ${event.total}`);
+        };
 
 Here’s a full example. The code below loads the URL at `/article/xmlhttprequest/example/load` from the server and prints the progress:
 
@@ -176,12 +176,12 @@ To add parameters to URL, like `?name=value`, and ensure the proper encoding, we
 
 We can use `xhr.responseType` property to set the response format:
 
-- `""` (default) – get as string,
-- `"text"` – get as string,
-- `"arraybuffer"` – get as `ArrayBuffer` (for binary data, see chapter [ArrayBuffer, binary arrays](arraybuffer-binary-arrays.html)),
-- `"blob"` – get as `Blob` (for binary data, see chapter [Blob](blob.html)),
-- `"document"` – get as XML document (can use XPath and other XML methods) or HTML document (based on the MIME type of the received data),
-- `"json"` – get as JSON (parsed automatically).
+-   `""` (default) – get as string,
+-   `"text"` – get as string,
+-   `"arraybuffer"` – get as `ArrayBuffer` (for binary data, see chapter [ArrayBuffer, binary arrays](arraybuffer-binary-arrays.html)),
+-   `"blob"` – get as `Blob` (for binary data, see chapter [Blob](blob.html)),
+-   `"document"` – get as XML document (can use XPath and other XML methods) or HTML document (based on the MIME type of the received data),
+-   `"json"` – get as JSON (parsed automatically).
 
 For example, let’s get the response as JSON:
 
@@ -411,13 +411,13 @@ There’s another object, without methods, exclusively to track upload events: `
 
 It generates events, similar to `xhr`, but `xhr.upload` triggers them solely on uploading:
 
-- `loadstart` – upload started.
-- `progress` – triggers periodically during the upload.
-- `abort` – upload aborted.
-- `error` – non-HTTP error.
-- `load` – upload finished successfully.
-- `timeout` – upload timed out (if `timeout` property is set).
-- `loadend` – upload finished with either success or error.
+-   `loadstart` – upload started.
+-   `progress` – triggers periodically during the upload.
+-   `abort` – upload aborted.
+-   `error` – non-HTTP error.
+-   `load` – upload finished successfully.
+-   `timeout` – upload timed out (if `timeout` property is set).
+-   `loadend` – upload finished with either success or error.
 
 Example of handlers:
 
@@ -509,13 +509,13 @@ Typical code of the GET-request with `XMLHttpRequest`:
 
 There are actually more events, the [modern specification](https://xhr.spec.whatwg.org/#events) lists them (in the lifecycle order):
 
-- `loadstart` – the request has started.
-- `progress` – a data packet of the response has arrived, the whole response body at the moment is in `response`.
-- `abort` – the request was canceled by the call `xhr.abort()`.
-- `error` – connection error has occurred, e.g. wrong domain name. Doesn’t happen for HTTP-errors like 404.
-- `load` – the request has finished successfully.
-- `timeout` – the request was canceled due to timeout (only happens if it was set).
-- `loadend` – triggers after `load`, `error`, `timeout` or `abort`.
+-   `loadstart` – the request has started.
+-   `progress` – a data packet of the response has arrived, the whole response body at the moment is in `response`.
+-   `abort` – the request was canceled by the call `xhr.abort()`.
+-   `error` – connection error has occurred, e.g. wrong domain name. Doesn’t happen for HTTP-errors like 404.
+-   `load` – the request has finished successfully.
+-   `timeout` – the request was canceled due to timeout (only happens if it was set).
+-   `loadend` – triggers after `load`, `error`, `timeout` or `abort`.
 
 The `error`, `abort`, `timeout`, and `load` events are mutually exclusive. Only one of them may happen.
 
@@ -535,30 +535,30 @@ If we need to track uploading specifically, then we should listen to same events
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
 
 #### Lesson navigation
 
-- <a href="xmlhttprequest.html#the-basics" class="sidebar__link">The basics</a>
-- <a href="xmlhttprequest.html#response-type" class="sidebar__link">Response Type</a>
-- <a href="xmlhttprequest.html#ready-states" class="sidebar__link">Ready states</a>
-- <a href="xmlhttprequest.html#aborting-request" class="sidebar__link">Aborting request</a>
-- <a href="xmlhttprequest.html#synchronous-requests" class="sidebar__link">Synchronous requests</a>
-- <a href="xmlhttprequest.html#http-headers" class="sidebar__link">HTTP-headers</a>
-- <a href="xmlhttprequest.html#post-formdata" class="sidebar__link">POST, FormData</a>
-- <a href="xmlhttprequest.html#upload-progress" class="sidebar__link">Upload progress</a>
-- <a href="xmlhttprequest.html#cross-origin-requests" class="sidebar__link">Cross-origin requests</a>
-- <a href="xmlhttprequest.html#summary" class="sidebar__link">Summary</a>
+-   <a href="xmlhttprequest.html#the-basics" class="sidebar__link">The basics</a>
+-   <a href="xmlhttprequest.html#response-type" class="sidebar__link">Response Type</a>
+-   <a href="xmlhttprequest.html#ready-states" class="sidebar__link">Ready states</a>
+-   <a href="xmlhttprequest.html#aborting-request" class="sidebar__link">Aborting request</a>
+-   <a href="xmlhttprequest.html#synchronous-requests" class="sidebar__link">Synchronous requests</a>
+-   <a href="xmlhttprequest.html#http-headers" class="sidebar__link">HTTP-headers</a>
+-   <a href="xmlhttprequest.html#post-formdata" class="sidebar__link">POST, FormData</a>
+-   <a href="xmlhttprequest.html#upload-progress" class="sidebar__link">Upload progress</a>
+-   <a href="xmlhttprequest.html#cross-origin-requests" class="sidebar__link">Cross-origin requests</a>
+-   <a href="xmlhttprequest.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="xmlhttprequest.html#comments" class="sidebar__link">Comments</a>
+-   <a href="xmlhttprequest.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -566,7 +566,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/08-xmlhttprequest" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

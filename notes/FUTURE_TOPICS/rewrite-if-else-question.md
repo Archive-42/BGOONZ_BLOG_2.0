@@ -1,9 +1,9 @@
 rewrite-if-else-question"
 
-- <a href="rewrite-if-else-question.html"
-  /rewrite-if-else-question"
-  /rewrite-if-else-question"
-  rewrite-if-else-questionrewrite-if-else-question"
+-   <a href="rewrite-if-else-question.html"
+    /rewrite-if-else-question"
+    /rewrite-if-else-question"
+    rewrite-if-else-questionrewrite-if-else-question"
 
 <!-- -->
 

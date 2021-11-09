@@ -10,9 +10,9 @@ What will be the result of this code?
 let x = 1;
 
 function func() {
-  console.log(x); // ?
+    console.log(x); // ?
 
-  let x = 2;
+    let x = 2;
 }
 
 func();

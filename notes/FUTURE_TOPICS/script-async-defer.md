@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="script-async-defer.html"
-- <a href="https://es.javascript.info/script-async-defer"
-- <a href="https://fr.javascript.info/script-async-defer"
-- <a href="https://it.javascript.info/script-async-defer"
-  script-async-defer"
+-   <a href="https://ar.javascript.info/"
+-   <a href="script-async-defer.html"
+-   <a href="https://es.javascript.info/script-async-defer"
+-   <a href="https://fr.javascript.info/script-async-defer"
+-   <a href="https://it.javascript.info/script-async-defer"
+    script-async-defer"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/script-async-defer"
-- <a href=script-async-defer"
-- <a href="https://tr.javascript.info/script-async-defer"
-- <a href="https://zh.javascript.info/script-async-defer"
+-   <a href="https://ko.javascript.info/script-async-defer"
+-   <a href=script-async-defer"
+-   <a href="https://tr.javascript.info/script-async-defer"
+-   <a href="https://zh.javascript.info/script-async-defer"
 
 We want to make this open-source project available for people all around the world.
 
@@ -91,8 +91,8 @@ Here’s the same example as above, but with `defer`:
 
 In other words:
 
-- Scripts with `defer` never block the page.
-- Scripts with `defer` always execute when the DOM is ready (but before `DOMContentLoaded` event).
+-   Scripts with `defer` never block the page.
+-   Scripts with `defer` always execute when the DOM is ready (but before `DOMContentLoaded` event).
 
 The following example demonstrates the second part:
 
@@ -136,11 +136,11 @@ The `async` attribute is somewhat like `defer`. It also makes the script non-blo
 
 The `async` attribute means that a script is completely independent:
 
-- The browser doesn’t block on `async` scripts (like `defer`).
-- Other scripts don’t wait for `async` scripts, and `async` scripts don’t wait for them.
-- `DOMContentLoaded` and async scripts don’t wait for each other:
-  - `DOMContentLoaded` may happen both before an async script (if an async script finishes loading after the page is complete)
-  - …or after an async script (if an async script is short or was in HTTP-cache)
+-   The browser doesn’t block on `async` scripts (like `defer`).
+-   Other scripts don’t wait for `async` scripts, and `async` scripts don’t wait for them.
+-   `DOMContentLoaded` and async scripts don’t wait for each other:
+    -   `DOMContentLoaded` may happen both before an async script (if an async script finishes loading after the page is complete)
+    -   …or after an async script (if an async script is short or was in HTTP-cache)
 
 In other words, `async` scripts load in the background and run when ready. The DOM and other scripts don’t wait for them, and they don’t wait for anything. A fully independent script that runs when loaded. As simple, as it can get, right?
 
@@ -163,9 +163,9 @@ They don’t wait for each other. Whatever loads first (probably `small.js`) –
 
     <p>...content after scripts...</p>
 
-- The page content shows up immediately: `async` doesn’t block it.
-- `DOMContentLoaded` may happen both before and after `async`, no guarantees here.
-- A smaller script `small.js` goes second, but probably loads before `long.js`, so `small.js` runs first. Although, it might be that `long.js` loads first, if cached, then it runs first. In other words, async scripts run in the “load-first” order.
+-   The page content shows up immediately: `async` doesn’t block it.
+-   `DOMContentLoaded` may happen both before and after `async`, no guarantees here.
+-   A smaller script `small.js` goes second, but probably loads before `long.js`, so `small.js` runs first. Although, it might be that `long.js` loads first, if cached, then it runs first. In other words, async scripts run in the “load-first” order.
 
 Async scripts are great when we integrate an independent third-party script into the page: counters, ads and so on, as they don’t depend on our scripts, and our scripts shouldn’t wait for them:
 
@@ -191,8 +191,8 @@ The script starts loading as soon as it’s appended to the document `(*)`.
 
 That is:
 
-- They don’t wait for anything, nothing waits for them.
-- The script that loads first – runs first (“load-first” order).
+-   They don’t wait for anything, nothing waits for them.
+-   The script that loads first – runs first (“load-first” order).
 
 This can be changed if we explicitly set `script.async=false`. Then scripts will be executed in the document order, just like `defer`.
 
@@ -248,24 +248,24 @@ Don’t forget to put “loading” indication and disable buttons that aren’t
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="loading.html" class="sidebar__link">Document and resource loading</a>
+-   <a href="loading.html" class="sidebar__link">Document and resource loading</a>
 
 #### Lesson navigation
 
-- <a href="script-async-defer.html#defer" class="sidebar__link">defer</a>
-- <a href="script-async-defer.html#async" class="sidebar__link">async</a>
-- <a href="script-async-defer.html#dynamic-scripts" class="sidebar__link">Dynamic scripts</a>
-- <a href="script-async-defer.html#summary" class="sidebar__link">Summary</a>
+-   <a href="script-async-defer.html#defer" class="sidebar__link">defer</a>
+-   <a href="script-async-defer.html#async" class="sidebar__link">async</a>
+-   <a href="script-async-defer.html#dynamic-scripts" class="sidebar__link">Dynamic scripts</a>
+-   <a href="script-async-defer.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="script-async-defer.html#comments" class="sidebar__link">Comments</a>
+-   <a href="script-async-defer.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -273,7 +273,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/5-loading/02-script-async-defer" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,9 +1,9 @@
 new-date"
 
-- <a href="new-date.html"
-  /new-date"
-  /new-date"
-  new-datenew-date"
+-   <a href="new-date.html"
+    /new-date"
+    /new-date"
+    new-datenew-date"
 
 <!-- -->
 

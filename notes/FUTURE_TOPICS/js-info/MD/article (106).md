@@ -16,24 +16,20 @@ The HTML is like this:
 
 ```html
 <table>
-  <tr>
-    <th colspan="3">
-      <em>Bagua</em> Chart: Direction, Element, Color, Meaning
-    </th>
-  </tr>
-  <tr>
-    <td class="nw">
-      <strong>Northwest</strong><br />Metal<br />Silver<br />Elders
-    </td>
-    <td class="n">...</td>
-    <td class="ne">...</td>
-  </tr>
-  <tr>
-    ...2 more lines of this kind...
-  </tr>
-  <tr>
-    ...2 more lines of this kind...
-  </tr>
+    <tr>
+        <th colspan="3"><em>Bagua</em> Chart: Direction, Element, Color, Meaning</th>
+    </tr>
+    <tr>
+        <td class="nw"><strong>Northwest</strong><br />Metal<br />Silver<br />Elders</td>
+        <td class="n">...</td>
+        <td class="ne">...</td>
+    </tr>
+    <tr>
+        ...2 more lines of this kind...
+    </tr>
+    <tr>
+        ...2 more lines of this kind...
+    </tr>
 </table>
 ```
 
@@ -79,9 +75,9 @@ In our case if we take a look inside the HTML, we can see nested tags inside `<t
 
 ```html
 <td>
-  *!*
-  <strong>Northwest</strong>
-  */!* ...
+    *!*
+    <strong>Northwest</strong>
+    */!* ...
 </td>
 ```
 
@@ -95,13 +91,13 @@ Here's the improved code:
 
 ```js
 table.onclick = function (event) {
-  let td = event.target.closest("td"); // (1)
+    let td = event.target.closest('td'); // (1)
 
-  if (!td) return; // (2)
+    if (!td) return; // (2)
 
-  if (!table.contains(td)) return; // (3)
+    if (!table.contains(td)) return; // (3)
 
-  highlight(td); // (4)
+    highlight(td); // (4)
 };
 ```
 
@@ -130,41 +126,41 @@ The handler reads the attribute and executes the method. Take a look at the work
 
 ```html autorun height=60 run untrusted
 <div id="menu">
-  <button data-action="save">Save</button>
-  <button data-action="load">Load</button>
-  <button data-action="search">Search</button>
+    <button data-action="save">Save</button>
+    <button data-action="load">Load</button>
+    <button data-action="search">Search</button>
 </div>
 
 <script>
-    class Menu {
-      constructor(elem) {
-        this._elem = elem;
-        elem.onclick = this.onClick.bind(this); // (*)
-      }
-
-      save() {
-        alert('saving');
-      }
-
-      load() {
-        alert('loading');
-      }
-
-      search() {
-        alert('searching');
-      }
-
-      onClick(event) {
-  *!*
-        let action = event.target.dataset.action;
-        if (action) {
-          this[action]();
+      class Menu {
+        constructor(elem) {
+          this._elem = elem;
+          elem.onclick = this.onClick.bind(this); // (*)
         }
-  */!*
-      };
-    }
 
-    new Menu(menu);
+        save() {
+          alert('saving');
+        }
+
+        load() {
+          alert('loading');
+        }
+
+        search() {
+          alert('searching');
+        }
+
+        onClick(event) {
+    *!*
+          let action = event.target.dataset.action;
+          if (action) {
+            this[action]();
+          }
+    */!*
+        };
+      }
+
+      new Menu(menu);
 </script>
 ```
 
@@ -197,12 +193,12 @@ Counter: <input type="button" value="1" data-counter /> One more counter:
 <input type="button" value="2" data-counter />
 
 <script>
-  document.addEventListener("click", function (event) {
-    if (event.target.dataset.counter != undefined) {
-      // if the attribute exists...
-      event.target.value++;
-    }
-  });
+    document.addEventListener('click', function (event) {
+        if (event.target.dataset.counter != undefined) {
+            // if the attribute exists...
+            event.target.value++;
+        }
+    });
 </script>
 ```
 

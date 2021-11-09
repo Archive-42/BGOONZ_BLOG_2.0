@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="sliding-tree.html"
-  /sliding-tree"
-  /sliding-tree"
-  sliding-treesliding-tree"
+-   <a href="sliding-tree.html"
+    /sliding-tree"
+    /sliding-tree"
+    sliding-treesliding-tree"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  sliding-tree"
-- <a href="https://tr.javascript.info/"
-  sliding-tree"
+-   <a href="https://ko.javascript.info/"
+    sliding-tree"
+-   <a href="https://tr.javascript.info/"
+    sliding-tree"
 
 We want to make this open-source project available for people all around the world.
 
@@ -36,8 +36,8 @@ Create a tree that shows/hides node children on click:
 
 Requirements:
 
-- Only one event handler (use delegation)
-- A click outside the node title (on an empty space) should not do anything.
+-   Only one event handler (use delegation)
+-   A click outside the node title (on an empty space) should not do anything.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/zQFuLhTPX4lkrokp?p=preview)
 

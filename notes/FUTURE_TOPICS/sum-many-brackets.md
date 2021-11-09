@@ -1,10 +1,10 @@
 sum-many-brackets"
 
-- <a href="sum-many-brackets.html"
-  /sum-many-brackets"
-  /sum-many-brackets"
-  sum-many-brackets"
-  task/sum-many-brackets"
+-   <a href="sum-many-brackets.html"
+    /sum-many-brackets"
+    /sum-many-brackets"
+    sum-many-brackets"
+    task/sum-many-brackets"
 
 <!-- -->
 

@@ -1,16 +1,16 @@
 position-at-absolute"
 
-- <a href="position-at-absolute.html"
-  /position-at-absolute"
-  /position-at-absolute"
-  position-at-absoluteposition-at-absolute"
+-   <a href="position-at-absolute.html"
+    /position-at-absolute"
+    /position-at-absolute"
+    position-at-absoluteposition-at-absolute"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  position-at-absolute"
-- <a href="https://tr.javascript.info/"
-  position-at-absolute"
+-   <a href="https://ko.javascript.info/"
+    position-at-absolute"
+-   <a href="https://tr.javascript.info/"
+    position-at-absolute"
 
 We want to make this open-source project available for people all around the world.
 
@@ -40,7 +40,7 @@ solution
 
 The solution is actually pretty simple:
 
-- Use `position:absolute` in CSS instead of `position:fixed` for `.note`.
-- Use the function [getCoords()](../coordinates.html#getCoords) from the chapter [Coordinates](../coordinates.html) to get document-relative coordinates.
+-   Use `position:absolute` in CSS instead of `position:fixed` for `.note`.
+-   Use the function [getCoords()](../coordinates.html#getCoords) from the chapter [Coordinates](../coordinates.html) to get document-relative coordinates.
 
 [Open the solution in a sandbox.](https://plnkr.co/edit/IltvUDuUTs6bVjl3?p=preview)

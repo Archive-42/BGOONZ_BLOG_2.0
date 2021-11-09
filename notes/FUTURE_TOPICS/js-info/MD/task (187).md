@@ -8,9 +8,9 @@ Create a function `positionAt(anchor, position, elem)` that positions `elem`, de
 
 The `position` must be a string with any one of 3 values:
 
-- `"top"` - position `elem` right above `anchor`
-- `"right"` - position `elem` immediately at the right of `anchor`
-- `"bottom"` - position `elem` right below `anchor`
+-   `"top"` - position `elem` right above `anchor`
+-   `"right"` - position `elem` immediately at the right of `anchor`
+-   `"bottom"` - position `elem` right below `anchor`
 
 It's used inside function `showNote(anchor, position, html)`, provided in the task source code, that creates a "note" element with given `html` and shows it at the given `position` near the `anchor`.
 

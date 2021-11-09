@@ -8,10 +8,10 @@ What does this code show?
 
 ```html
 <script>
-  let body = document.body;
+    let body = document.body;
 
-  body.innerHTML = "<!--" + body.tagName + "-->";
+    body.innerHTML = '<!--' + body.tagName + '-->';
 
-  alert(body.firstChild.data); // what's here?
+    alert(body.firstChild.data); // what's here?
 </script>
 ```

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/keys-values-entries"
-- <a href="keys-values-entries.html"
-- <a href="https://es.javascript.info/keys-values-entries"
-- <a href="https://fr.javascript.info/keys-values-entries"
-- <a href="https://it.javascript.info/keys-values-entries"
-  keys-values-entries"
+-   <a href="https://ar.javascript.info/keys-values-entries"
+-   <a href="keys-values-entries.html"
+-   <a href="https://es.javascript.info/keys-values-entries"
+-   <a href="https://fr.javascript.info/keys-values-entries"
+-   <a href="https://it.javascript.info/keys-values-entries"
+    keys-values-entries"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/keys-values-entries"
-- <a href=keys-values-entries"
-- <a href="https://tr.javascript.info/keys-values-entries"
-- <a href="https://zh.javascript.info/keys-values-entries"
+-   <a href="https://ko.javascript.info/keys-values-entries"
+-   <a href=keys-values-entries"
+-   <a href="https://tr.javascript.info/keys-values-entries"
+-   <a href="https://zh.javascript.info/keys-values-entries"
 
 We want to make this open-source project available for people all around the world.
 
@@ -48,9 +48,9 @@ These methods are generic, there is a common agreement to use them for data stru
 
 They are supported for:
 
-- `Map`
-- `Set`
-- `Array`
+-   `Map`
+-   `Set`
+-   `Array`
 
 Plain objects also support similar methods, but the syntax is a bit different.
 
@@ -58,9 +58,9 @@ Plain objects also support similar methods, but the syntax is a bit different.
 
 For plain objects, the following methods are available:
 
-- [Object.keys(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) – returns an array of keys.
-- [Object.values(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values) – returns an array of values.
-- [Object.entries(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) – returns an array of `[key, value]` pairs.
+-   [Object.keys(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) – returns an array of keys.
+-   [Object.values(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values) – returns an array of values.
+-   [Object.entries(obj)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries) – returns an array of `[key, value]` pairs.
 
 Please note the distinctions (compared to map for example):
 
@@ -79,9 +79,9 @@ For instance:
       age: 30
     };
 
-- `Object.keys(user) = ["name", "age"]`
-- `Object.values(user) = ["John", 30]`
-- `Object.entries(user) = [ ["name","John"], ["age",30] ]`
+-   `Object.keys(user) = ["name", "age"]`
+-   `Object.values(user) = ["John", 30]`
+-   `Object.entries(user) = [ ["name","John"], ["age",30] ]`
 
 Here’s an example of using `Object.values` to loop over property values:
 
@@ -234,23 +234,23 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="keys-values-entries.html#object-keys-values-entries" class="sidebar__link">Object.keys, values, entries</a>
-- <a href="keys-values-entries.html#transforming-objects" class="sidebar__link">Transforming objects</a>
+-   <a href="keys-values-entries.html#object-keys-values-entries" class="sidebar__link">Object.keys, values, entries</a>
+-   <a href="keys-values-entries.html#transforming-objects" class="sidebar__link">Transforming objects</a>
 
-- <a href="keys-values-entries.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="keys-values-entries.html#comments" class="sidebar__link">Comments</a>
+-   <a href="keys-values-entries.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="keys-values-entries.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -258,7 +258,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/09-keys-values-entries" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -6,9 +6,7 @@ This handler is assigned to `<div>`, but also runs if you click any nested tag l
 
 ```html autorun height=60
 <div onclick="alert('The handler!')">
-  <em
-    >If you click on <code>EM</code>, the handler on <code>DIV</code> runs.</em
-  >
+    <em>If you click on <code>EM</code>, the handler on <code>DIV</code> runs.</em>
 </div>
 ```
 
@@ -24,18 +22,18 @@ Let's say we have 3 nested elements `FORM > DIV > P` with a handler on each of t
 
 ```html run autorun
 <style>
-  body * {
-    margin: 10px;
-    border: 1px solid blue;
-  }
+    body * {
+        margin: 10px;
+        border: 1px solid blue;
+    }
 </style>
 
 <form onclick="alert('form')">
-  FORM
-  <div onclick="alert('div')">
-    DIV
-    <p onclick="alert('p')">P</p>
-  </div>
+    FORM
+    <div onclick="alert('div')">
+        DIV
+        <p onclick="alert('p')">P</p>
+    </div>
 </form>
 ```
 
@@ -66,15 +64,15 @@ A handler on a parent element can always get the details about where it actually
 
 Note the differences from `this` (=`event.currentTarget`):
 
-- `event.target` -- is the "target" element that initiated the event, it doesn't change through the bubbling process.
-- `this` -- is the "current" element, the one that has a currently running handler on it.
+-   `event.target` -- is the "target" element that initiated the event, it doesn't change through the bubbling process.
+-   `this` -- is the "current" element, the one that has a currently running handler on it.
 
 For instance, if we have a single handler `form.onclick`, then it can "catch" all clicks inside the form. No matter where the click happened, it bubbles up to `<form>` and runs the handler.
 
 In `form.onclick` handler:
 
-- `this` (=`event.currentTarget`) is the `<form>` element, because the handler runs on it.
-- `event.target` is the actual element inside the form that was clicked.
+-   `this` (=`event.currentTarget`) is the `<form>` element, because the handler runs on it.
+-   `event.target` is the actual element inside the form that was clicked.
 
 Check it out:
 
@@ -94,7 +92,7 @@ For instance, here `body.onclick` doesn't work if you click on `<button>`:
 
 ```html run autorun height=60
 <body onclick="alert(`the bubbling doesn't reach here`)">
-  <button onclick="event.stopPropagation()">Click me</button>
+    <button onclick="event.stopPropagation()">Click me</button>
 </body>
 ```
 
@@ -150,8 +148,8 @@ elem.addEventListener(..., true)
 
 There are two possible values of the `capture` option:
 
-- If it's `false` (default), then the handler is set on the bubbling phase.
-- If it's `true`, then the handler is set on the capturing phase.
+-   If it's `false` (default), then the handler is set on the bubbling phase.
+-   If it's `true`, then the handler is set on the capturing phase.
 
 Note that while formally there are 3 phases, the 2nd phase ("target phase": the event reached the element) is not handled separately: handlers on both capturing and bubbling phases trigger at that phase.
 
@@ -159,29 +157,25 @@ Let's see both capturing and bubbling in action:
 
 ```html run autorun height=140 edit
 <style>
-  body * {
-    margin: 10px;
-    border: 1px solid blue;
-  }
+    body * {
+        margin: 10px;
+        border: 1px solid blue;
+    }
 </style>
 
 <form>
-  FORM
-  <div>
-    DIV
-    <p>P</p>
-  </div>
+    FORM
+    <div>
+        DIV
+        <p>P</p>
+    </div>
 </form>
 
 <script>
-  for (let elem of document.querySelectorAll("*")) {
-    elem.addEventListener(
-      "click",
-      (e) => alert(`Capturing: ${elem.tagName}`),
-      true
-    );
-    elem.addEventListener("click", (e) => alert(`Bubbling: ${elem.tagName}`));
-  }
+    for (let elem of document.querySelectorAll('*')) {
+        elem.addEventListener('click', (e) => alert(`Capturing: ${elem.tagName}`), true);
+        elem.addEventListener('click', (e) => alert(`Bubbling: ${elem.tagName}`));
+    }
 </script>
 ```
 

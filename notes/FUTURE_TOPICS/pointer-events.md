@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/pointer-events"
-- <a href="pointer-events.html"
-- <a href="https://es.javascript.info/pointer-events"
-- <a href="https://fr.javascript.info/pointer-events"
-- <a href="https://it.javascript.info/pointer-events"
-  "
+-   <a href="https://ar.javascript.info/pointer-events"
+-   <a href="pointer-events.html"
+-   <a href="https://es.javascript.info/pointer-events"
+-   <a href="https://fr.javascript.info/pointer-events"
+-   <a href="https://it.javascript.info/pointer-events"
+    "
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/pointer-events"
-- <a href=pointer-events"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/pointer-events"
+-   <a href="https://ko.javascript.info/pointer-events"
+-   <a href=pointer-events"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/pointer-events"
 
 We want to make this open-source project available for people all around the world.
 
@@ -44,17 +44,17 @@ Pointer events are a modern way to handle input from a variety of pointing devic
 
 Let’s make a small overview, so that you understand the general picture and the place of Pointer Events among other event types.
 
-- Long ago, in the past, there were only mouse events.
+-   Long ago, in the past, there were only mouse events.
 
-  Then touch devices became widespread, phones and tablets in particular. For the existing scripts to work, they generated (and still generate) mouse events. For instance, tapping a touchscreen generates `mousedown`. So touch devices worked well with web pages.
+    Then touch devices became widespread, phones and tablets in particular. For the existing scripts to work, they generated (and still generate) mouse events. For instance, tapping a touchscreen generates `mousedown`. So touch devices worked well with web pages.
 
-  But touch devices have more capabilities than a mouse. For example, it’s possible to touch multiple points at once (“multi-touch”). Although, mouse events don’t have necessary properties to handle such multi-touches.
+    But touch devices have more capabilities than a mouse. For example, it’s possible to touch multiple points at once (“multi-touch”). Although, mouse events don’t have necessary properties to handle such multi-touches.
 
-- So touch events were introduced, such as `touchstart`, `touchend`, `touchmove`, that have touch-specific properties (we don’t cover them in detail here, because pointer events are even better).
+-   So touch events were introduced, such as `touchstart`, `touchend`, `touchmove`, that have touch-specific properties (we don’t cover them in detail here, because pointer events are even better).
 
-  Still, it wasn’t enough, as there are many other devices, such as pens, that have their own features. Also, writing code that listens for both touch and mouse events was cumbersome.
+    Still, it wasn’t enough, as there are many other devices, such as pens, that have their own features. Also, writing code that listens for both touch and mouse events was cumbersome.
 
-- To solve these issues, the new standard Pointer Events was introduced. It provides a single set of events for all kinds of pointing devices.
+-   To solve these issues, the new standard Pointer Events was introduced. It provides a single set of events for all kinds of pointing devices.
 
 As of now, [Pointer Events Level 2](https://www.w3.org/TR/pointerevents2/) specification is supported in all major browsers, while the newer [Pointer Events Level 3](https://w3c.github.io/pointerevents/) is in the works and is mostly compatible with Pointer Events level 2.
 
@@ -82,23 +82,23 @@ The support for touch devices will also “magically” improve. Although, we ma
 
 Pointer events have the same properties as mouse events, such as `clientX/Y`, `target`, etc., plus some others:
 
-- `pointerId` – the unique identifier of the pointer causing the event.
+-   `pointerId` – the unique identifier of the pointer causing the event.
 
-  Browser-generated. Allows us to handle multiple pointers, such as a touchscreen with stylus and multi-touch (examples will follow).
+    Browser-generated. Allows us to handle multiple pointers, such as a touchscreen with stylus and multi-touch (examples will follow).
 
-- `pointerType` – the pointing device type. Must be a string, one of: “mouse”, “pen” or “touch”.
+-   `pointerType` – the pointing device type. Must be a string, one of: “mouse”, “pen” or “touch”.
 
-  We can use this property to react differently on various pointer types.
+    We can use this property to react differently on various pointer types.
 
-- `isPrimary` – is `true` for the primary pointer (the first finger in multi-touch).
+-   `isPrimary` – is `true` for the primary pointer (the first finger in multi-touch).
 
 Some pointer devices measure contact area and pressure, e.g. for a finger on the touchscreen, there are additional properties for that:
 
-- `width` – the width of the area where the pointer (e.g. a finger) touches the device. Where unsupported, e.g. for a mouse, it’s always `1`.
-- `height` – the height of the area where the pointer touches the device. Where unsupported, it’s always `1`.
-- `pressure` – the pressure of the pointer tip, in range from 0 to 1. For devices that don’t support pressure must be either `0.5` (pressed) or `0`.
-- `tangentialPressure` – the normalized tangential pressure.
-- `tiltX`, `tiltY`, `twist` – pen-specific properties that describe how the pen is positioned relative the surface.
+-   `width` – the width of the area where the pointer (e.g. a finger) touches the device. Where unsupported, e.g. for a mouse, it’s always `1`.
+-   `height` – the height of the area where the pointer touches the device. Where unsupported, it’s always `1`.
+-   `pressure` – the pressure of the pointer tip, in range from 0 to 1. For devices that don’t support pressure must be either `0.5` (pressed) or `0`.
+-   `tangentialPressure` – the normalized tangential pressure.
+-   `tiltX`, `tiltY`, `twist` – pen-specific properties that describe how the pen is positioned relative the surface.
 
 These properties aren’t supported by most devices, so they are rarely used. You can find the details about them in the [specification](https://w3c.github.io/pointerevents/#pointerevent-interface) if needed.
 
@@ -111,9 +111,9 @@ Pointer Events allow handling multi-touch with the help of the `pointerId` and `
 Here’s what happens when a user touches a touchscreen in one place, then puts another finger somewhere else on it:
 
 1.  At the first finger touch:
-    - `pointerdown` with `isPrimary=true` and some `pointerId`.
+    -   `pointerdown` with `isPrimary=true` and some `pointerId`.
 2.  For the second finger and more fingers (assuming the first one is still touching):
-    - `pointerdown` with `isPrimary=false` and a different `pointerId` for every finger.
+    -   `pointerdown` with `isPrimary=false` and a different `pointerId` for every finger.
 
 Please note: the `pointerId` is assigned not to the whole device, but for each touching finger. If we use 5 fingers to simultaneously touch the screen, we have 5 `pointerdown` events, each with their respective coordinates and a different `pointerId`.
 
@@ -133,9 +133,9 @@ The `pointercancel` event fires when there’s an ongoing pointer interaction, a
 
 Such causes are:
 
-- The pointer device hardware was physically disabled.
-- The device orientation changed (tablet rotated).
-- The browser decided to handle the interaction on its own, considering it a mouse gesture or zoom-and-pan action or something else.
+-   The pointer device hardware was physically disabled.
+-   The device orientation changed (tablet rotated).
+-   The browser decided to handle the interaction on its own, considering it a mouse gesture or zoom-and-pan action or something else.
 
 We’ll demonstrate `pointercancel` on a practical example to see how it affects us.
 
@@ -144,12 +144,12 @@ Let’s say we’re impelementing drag’n’drop for a ball, just as in the beg
 Here is the flow of user actions and the corresponding events:
 
 1.  The user presses on an image, to start dragging
-    - `pointerdown` event fires
+    -   `pointerdown` event fires
 2.  Then they start moving the pointer (thus dragging the image)
-    - `pointermove` fires, maybe several times
+    -   `pointermove` fires, maybe several times
 3.  And then the surprise happens! The browser has native drag’n’drop support for images, that kicks in and takes over the drag’n’drop process, thus generating `pointercancel` event.
-    - The browser now handles drag’n’drop of the image on its own. The user may even drag the ball image out of the browser, into their Mail program or a File Manager.
-    - No more `pointermove` events for us.
+    -   The browser now handles drag’n’drop of the image on its own. The user may even drag the ball image out of the browser, into their Mail program or a File Manager.
+    -   No more `pointermove` events for us.
 
 So the issue is that the browser “hijacks” the interaction: `pointercancel` fires in the beginning of the “drag-and-drop” process, and no more `pointermove` events are generated.
 
@@ -164,11 +164,11 @@ We’d like to implement the drag’n’drop on our own, so let’s tell the bro
 We need to do two things:
 
 1.  Prevent native drag’n’drop from happening:
-    - We can do this by setting `ball.ondragstart = () => false`, just as described in the article [Drag'n'Drop with mouse events](mouse-drag-and-drop.html).
-    - That works well for mouse events.
+    -   We can do this by setting `ball.ondragstart = () => false`, just as described in the article [Drag'n'Drop with mouse events](mouse-drag-and-drop.html).
+    -   That works well for mouse events.
 2.  For touch devices, there are other touch-related browser actions (besides drag’n’drop). To avoid problems with them too:
-    - Prevent them by setting `#ball { touch-action: none }` in CSS.
-    - Then our code will start working on touch devices.
+    -   Prevent them by setting `#ball { touch-action: none }` in CSS.
+    -   Then our code will start working on touch devices.
 
 After we do that, the events will work as intended, the browser won’t hijack the process and doesn’t emit `pointercancel`.
 
@@ -188,15 +188,15 @@ The idea is very simple, but may seem quite odd at first, as nothing like that e
 
 The main method is:
 
-- `elem.setPointerCapture(pointerId)` – binds events with the given `pointerId` to `elem`. After the call all pointer events with the same `pointerId` will have `elem` as the target (as if happened on `elem`), no matter where in document they really happened.
+-   `elem.setPointerCapture(pointerId)` – binds events with the given `pointerId` to `elem`. After the call all pointer events with the same `pointerId` will have `elem` as the target (as if happened on `elem`), no matter where in document they really happened.
 
 In other words, `elem.setPointerCapture(pointerId)` retargets all subsequent events with the given `pointerId` to `elem`.
 
 The binding is removed:
 
-- automatically when `pointerup` or `pointercancel` events occur,
-- automatically when `elem` is removed from the document,
-- when `elem.releasePointerCapture(pointerId)` is called.
+-   automatically when `pointerup` or `pointercancel` events occur,
+-   automatically when `elem` is removed from the document,
+-   when `elem.releasePointerCapture(pointerId)` is called.
 
 Now what is it good for? It’s time to see a real-life example.
 
@@ -218,7 +218,7 @@ And here’s the working logic, as it was described, after replacing mouse event
 
 1.  The user presses on the slider `thumb` – `pointerdown` triggers.
 2.  Then they move the pointer – `pointermove` triggers, and our code moves the `thumb` element along.
-    - …As the pointer moves, it may leave the slider `thumb` element, go above or below it. The `thumb` should move strictly horizontally, remaining aligned with the pointer.
+    -   …As the pointer moves, it may leave the slider `thumb` element, go above or below it. The `thumb` should move strictly horizontally, remaining aligned with the pointer.
 
 In the mouse event based solution, to track all pointer movements, including when it goes above/below the `thumb`, we had to assign `mousemove` event handler on the whole `document`.
 
@@ -226,9 +226,9 @@ That’s not a cleanest solution, though. One of the problems is that when a use
 
 This is the place where `setPointerCapture` comes into play.
 
-- We can call `thumb.setPointerCapture(event.pointerId)` in `pointerdown` handler,
-- Then future pointer events until `pointerup/cancel` will be retargeted to `thumb`.
-- When `pointerup` happens (dragging complete), the binding is removed automatically, we don’t need to care about it.
+-   We can call `thumb.setPointerCapture(event.pointerId)` in `pointerdown` handler,
+-   Then future pointer events until `pointerup/cancel` will be retargeted to `thumb`.
+-   When `pointerup` happens (dragging complete), the binding is removed automatically, we don’t need to care about it.
 
 So, even if the user moves the pointer around the whole document, events handlers will be called on `thumb`. Nevertheless, coordinate properties of the event objects, such as `clientX/clientY` will still be correct – the capturing only affects `target/currentTarget`.
 
@@ -277,8 +277,8 @@ There’s one more thing to mention here, for the sake of completeness.
 
 There are two events associated with pointer capturing:
 
-- `gotpointercapture` fires when an element uses `setPointerCapture` to enable capturing.
-- `lostpointercapture` fires when the capture is released: either explicitly with `releasePointerCapture` call, or automatically on `pointerup`/`pointercancel`.
+-   `gotpointercapture` fires when an element uses `setPointerCapture` to enable capturing.
+-   `lostpointercapture` fires when the capture is released: either explicitly with `releasePointerCapture` call, or automatically on `pointerup`/`pointercancel`.
 
 ## <a href="pointer-events.html#summary" id="summary" class="main__anchor">Summary</a>
 
@@ -290,9 +290,9 @@ For drag’n’drops and complex touch interactions that the browser may decide 
 
 Additional abilities of pointer events are:
 
-- Multi-touch support using `pointerId` and `isPrimary`.
-- Device-specific properties, such as `pressure`, `width/height`, and others.
-- Pointer capturing: we can retarget all pointer events to a specific element until `pointerup`/`pointercancel`.
+-   Multi-touch support using `pointerId` and `isPrimary`.
+-   Device-specific properties, such as `pressure`, `width/height`, and others.
+-   Pointer capturing: we can retarget all pointer events to a specific element until `pointerup`/`pointercancel`.
 
 As of now, pointer events are supported in all major browsers, so we can safely switch to them, especially if IE10- and Safari 12- are not needed. And even with those browsers, there are polyfills that enable the support of pointer events.
 
@@ -306,27 +306,27 @@ As of now, pointer events are supported in all major browsers, so we can safely 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="event-details.html" class="sidebar__link">UI Events</a>
+-   <a href="event-details.html" class="sidebar__link">UI Events</a>
 
 #### Lesson navigation
 
-- <a href="pointer-events.html#the-brief-history" class="sidebar__link">The brief history</a>
-- <a href="pointer-events.html#pointer-event-types" class="sidebar__link">Pointer event types</a>
-- <a href="pointer-events.html#pointer-event-properties" class="sidebar__link">Pointer event properties</a>
-- <a href="pointer-events.html#multi-touch" class="sidebar__link">Multi-touch</a>
-- <a href="pointer-events.html#event-pointercancel" class="sidebar__link">Event: pointercancel</a>
-- <a href="pointer-events.html#pointer-capturing" class="sidebar__link">Pointer capturing</a>
-- <a href="pointer-events.html#summary" class="sidebar__link">Summary</a>
+-   <a href="pointer-events.html#the-brief-history" class="sidebar__link">The brief history</a>
+-   <a href="pointer-events.html#pointer-event-types" class="sidebar__link">Pointer event types</a>
+-   <a href="pointer-events.html#pointer-event-properties" class="sidebar__link">Pointer event properties</a>
+-   <a href="pointer-events.html#multi-touch" class="sidebar__link">Multi-touch</a>
+-   <a href="pointer-events.html#event-pointercancel" class="sidebar__link">Event: pointercancel</a>
+-   <a href="pointer-events.html#pointer-capturing" class="sidebar__link">Pointer capturing</a>
+-   <a href="pointer-events.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="pointer-events.html#comments" class="sidebar__link">Comments</a>
+-   <a href="pointer-events.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -334,7 +334,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/3-event-details/6-pointer-events" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

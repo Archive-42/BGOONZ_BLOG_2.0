@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/types"
-- <a href="types.html"
-- <a href="https://es.javascript.info/types"
-- <a href="https://fr.javascript.info/types"
-- <a href="https://it.javascript.info/types"
-  types"
+-   <a href="https://ar.javascript.info/types"
+-   <a href="types.html"
+-   <a href="https://es.javascript.info/types"
+-   <a href="https://fr.javascript.info/types"
+-   <a href="https://it.javascript.info/types"
+    types"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/types"
-- <a href=types"
-- <a href="https://tr.javascript.info/types"
-  ypes"
+-   <a href="https://ko.javascript.info/types"
+-   <a href=types"
+-   <a href="https://tr.javascript.info/types"
+    ypes"
 
 We want to make this open-source project available for people all around the world.
 
@@ -61,37 +61,37 @@ There are many operations for numbers, e.g. multiplication `*`, division `/`, ad
 
 Besides regular numbers, there are so-called “special numeric values” which also belong to this data type: `Infinity`, `-Infinity` and `NaN`.
 
-- `Infinity` represents the mathematical [Infinity](https://en.wikipedia.org/wiki/Infinity) ∞. It is a special value that’s greater than any number.
+-   `Infinity` represents the mathematical [Infinity](https://en.wikipedia.org/wiki/Infinity) ∞. It is a special value that’s greater than any number.
 
-  We can get it as a result of division by zero:
+    We can get it as a result of division by zero:
 
-  <a href="types.html#"
-  <a href="types.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+    <a href="types.html#"
+    <a href="types.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-      alert( 1 / 0 ); // Infinity
+        alert( 1 / 0 ); // Infinity
 
-  Or just reference it directly:
+    Or just reference it directly:
 
-  <a href="types.html#"
-  <a href="types.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+    <a href="types.html#"
+    <a href="types.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-      alert( Infinity ); // Infinity
+        alert( Infinity ); // Infinity
 
-- `NaN` represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
+-   `NaN` represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
 
-  <a href="types.html#"
-  <a href="types.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+    <a href="types.html#"
+    <a href="types.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-      alert( "not a number" / 2 ); // NaN, such division is erroneous
+        alert( "not a number" / 2 ); // NaN, such division is erroneous
 
-  `NaN` is sticky. Any further operation on `NaN` returns `NaN`:
+    `NaN` is sticky. Any further operation on `NaN` returns `NaN`:
 
-  <a href="types.html#"
-  <a href="types.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+    <a href="types.html#"
+    <a href="types.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-      alert( "not a number" / 2 + 5 ); // NaN
+        alert( "not a number" / 2 + 5 ); // NaN
 
-  So, if there’s a `NaN` somewhere in a mathematical expression, it propagates to the whole result.
+    So, if there’s a `NaN` somewhere in a mathematical expression, it propagates to the whole result.
 
 <span class="important__type">Mathematical operations are safe</span>
 
@@ -286,20 +286,20 @@ The last three lines may need additional explanation:
 
 There are 8 basic data types in JavaScript.
 
-- `number` for numbers of any kind: integer or floating-point, integers are limited by `±(253-1)`.
-- `bigint` is for integer numbers of arbitrary length.
-- `string` for strings. A string may have zero or more characters, there’s no separate single-character type.
-- `boolean` for `true`/`false`.
-- `null` for unknown values – a standalone type that has a single value `null`.
-- `undefined` for unassigned values – a standalone type that has a single value `undefined`.
-- `object` for more complex data structures.
-- `symbol` for unique identifiers.
+-   `number` for numbers of any kind: integer or floating-point, integers are limited by `±(253-1)`.
+-   `bigint` is for integer numbers of arbitrary length.
+-   `string` for strings. A string may have zero or more characters, there’s no separate single-character type.
+-   `boolean` for `true`/`false`.
+-   `null` for unknown values – a standalone type that has a single value `null`.
+-   `undefined` for unassigned values – a standalone type that has a single value `undefined`.
+-   `object` for more complex data structures.
+-   `symbol` for unique identifiers.
 
 The `typeof` operator allows us to see which type is stored in a variable.
 
-- Two forms: `typeof x` or `typeof(x)`.
-- Returns a string with the name of the type, like `"string"`.
-- For `null` returns `"object"` – this is an error in the language, it’s not actually an object.
+-   Two forms: `typeof x` or `typeof(x)`.
+-   Returns a string with the name of the type, like `"string"`.
+-   For `null` returns `"object"` – this is an error in the language, it’s not actually an object.
 
 In the next chapters, we’ll concentrate on primitive values and once we’re familiar with them, we’ll move on to objects.
 
@@ -349,30 +349,30 @@ Backticks embed the expression inside `${...}` into the string.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="types.html#number" class="sidebar__link">Number</a>
-- <a href="types.html#bigint-type" class="sidebar__link">BigInt</a>
-- <a href="types.html#string" class="sidebar__link">String</a>
-- <a href="types.html#boolean-logical-type" class="sidebar__link">Boolean (logical type)</a>
-- <a href="types.html#the-null-value" class="sidebar__link">The “null” value</a>
-- <a href="types.html#the-undefined-value" class="sidebar__link">The “undefined” value</a>
-- <a href="types.html#objects-and-symbols" class="sidebar__link">Objects and Symbols</a>
-- <a href="types.html#type-typeof" class="sidebar__link">The typeof operator</a>
-- <a href="types.html#summary" class="sidebar__link">Summary</a>
+-   <a href="types.html#number" class="sidebar__link">Number</a>
+-   <a href="types.html#bigint-type" class="sidebar__link">BigInt</a>
+-   <a href="types.html#string" class="sidebar__link">String</a>
+-   <a href="types.html#boolean-logical-type" class="sidebar__link">Boolean (logical type)</a>
+-   <a href="types.html#the-null-value" class="sidebar__link">The “null” value</a>
+-   <a href="types.html#the-undefined-value" class="sidebar__link">The “undefined” value</a>
+-   <a href="types.html#objects-and-symbols" class="sidebar__link">Objects and Symbols</a>
+-   <a href="types.html#type-typeof" class="sidebar__link">The typeof operator</a>
+-   <a href="types.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="types.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="types.html#comments" class="sidebar__link">Comments</a>
+-   <a href="types.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="types.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -380,7 +380,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/05-types" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

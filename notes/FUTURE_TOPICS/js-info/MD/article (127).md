@@ -21,16 +21,16 @@ Here's how the evil page looks. To make things clear, the `<iframe>` is half-tra
 
 ```html run height=120 no-beautify
 <style>
-  iframe { /* iframe from the victim site */
-    width: 400px;
-    height: 100px;
-    position: absolute;
-    top:0; left:-20px;
-  *!*
-    opacity: 0.5; /* in real opacity:0 */
-  */!*
-    z-index: 1;
-  }
+    iframe { /* iframe from the victim site */
+      width: 400px;
+      height: 100px;
+      position: absolute;
+      top:0; left:-20px;
+    *!*
+      opacity: 0.5; /* in real opacity:0 */
+    */!*
+      z-index: 1;
+    }
 </style>
 
 <div>Click to get rich now:</div>
@@ -77,7 +77,7 @@ That looks like this:
 
 ```js
 if (top != window) {
-  top.location = window.location;
+    top.location = window.location;
 }
 ```
 
@@ -93,7 +93,7 @@ The top page (enclosing one, belonging to the hacker) sets a preventing handler 
 
 ```js
 window.onbeforeunload = function () {
-  return false;
+    return false;
 };
 ```
 
@@ -161,26 +161,26 @@ Something like this:
 
 ```html
 <style>
-  #protector {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 99999999;
-  }
+    #protector {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 99999999;
+    }
 </style>
 
 <div id="protector">
-  <a href="/" target="_blank">Go to the site</a>
+    <a href="/" target="_blank">Go to the site</a>
 </div>
 
 <script>
-  // there will be an error if top window is from the different origin
-  // but that's ok here
-  if (top.document.domain == document.domain) {
-    protector.remove();
-  }
+    // there will be an error if top window is from the different origin
+    // but that's ok here
+    if (top.document.domain == document.domain) {
+        protector.remove();
+    }
 </script>
 ```
 
@@ -216,5 +216,5 @@ From one perspective -- the attack is "not deep": all a hacker is doing is inter
 
 The attack is quite dangerous, because when we engineer the UI we usually don't anticipate that a hacker may click on behalf of the visitor. So vulnerabilities can be found in totally unexpected places.
 
-- It is recommended to use `X-Frame-Options: SAMEORIGIN` on pages (or whole websites) which are not intended to be viewed inside frames.
-- Use a covering `<div>` if we want to allow our pages to be shown in iframes, but still stay safe.
+-   It is recommended to use `X-Frame-Options: SAMEORIGIN` on pages (or whole websites) which are not intended to be viewed inside frames.
+-   Use a covering `<div>` if we want to allow our pages to be shown in iframes, but still stay safe.

@@ -35,9 +35,9 @@ For instance:
 
 ```html run
 <body class="main page">
-  <script>
-    alert(document.body.className); // main page
-  </script>
+    <script>
+        alert(document.body.className); // main page
+    </script>
 </body>
 ```
 
@@ -51,14 +51,14 @@ For instance:
 
 ```html run
 <body class="main page">
-  <script>
-    *!*
-        // add a class
-        document.body.classList.add('article');
-    */!*
+    <script>
+        *!*
+            // add a class
+            document.body.classList.add('article');
+        */!*
 
-        alert(document.body.className); // main page article
-  </script>
+            alert(document.body.className); // main page article
+    </script>
 </body>
 ```
 
@@ -66,19 +66,19 @@ So we can operate both on the full class string using `className` or on individu
 
 Methods of `classList`:
 
-- `elem.classList.add/remove("class")` -- adds/removes the class.
-- `elem.classList.toggle("class")` -- adds the class if it doesn't exist, otherwise removes it.
-- `elem.classList.contains("class")` -- checks for the given class, returns `true/false`.
+-   `elem.classList.add/remove("class")` -- adds/removes the class.
+-   `elem.classList.toggle("class")` -- adds the class if it doesn't exist, otherwise removes it.
+-   `elem.classList.contains("class")` -- checks for the given class, returns `true/false`.
 
 Besides, `classList` is iterable, so we can list all classes with `for..of`, like this:
 
 ```html run
 <body class="main page">
-  <script>
-    for (let name of document.body.classList) {
-      alert(name); // main, and then page
-    }
-  </script>
+    <script>
+        for (let name of document.body.classList) {
+            alert(name); // main, and then page
+        }
+    </script>
 </body>
 ```
 
@@ -97,7 +97,7 @@ border-left-width => elem.style.borderLeftWidth
 For instance:
 
 ```js run
-document.body.style.backgroundColor = prompt("background color?", "green");
+document.body.style.backgroundColor = prompt('background color?', 'green');
 ```
 
 ````smart header="Prefixed properties"
@@ -121,9 +121,9 @@ Then later we may want to remove the `style.display` as if it were not set. Inst
 
 ```js run
 // if we run this code, the <body> will blink
-document.body.style.display = "none"; // hide
+document.body.style.display = 'none'; // hide
 
-setTimeout(() => (document.body.style.display = ""), 1000); // back to normal
+setTimeout(() => (document.body.style.display = ''), 1000); // back to normal
 ```
 
 If we set `style.display` to an empty string, then the browser applies CSS classes and its built-in styles normally, as if there were no such `style.display` property at all.
@@ -136,14 +136,14 @@ To set the full style as a string, there's a special property `style.cssText`:
 <div id="div">Button</div>
 
 <script>
-  // we can set special style flags like "important" here
-  div.style.cssText = `color: red !important;
+    // we can set special style flags like "important" here
+    div.style.cssText = `color: red !important;
     background-color: yellow;
     width: 100px;
     text-align: center;
   `;
 
-  alert(div.style.cssText);
+    alert(div.style.cssText);
 </script>
 ```
 

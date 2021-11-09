@@ -1,9 +1,9 @@
 search-algorithm"
 
-- <a href="search-algorithm.html"
-  /search-algorithm"
-  /search-algorithm"
-  search-algorithmsearch-algorithm"
+-   <a href="search-algorithm.html"
+    /search-algorithm"
+    /search-algorithm"
+    search-algorithmsearch-algorithm"
 
 <!-- -->
 

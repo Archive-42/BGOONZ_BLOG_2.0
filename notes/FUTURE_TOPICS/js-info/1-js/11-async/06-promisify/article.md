@@ -10,13 +10,13 @@ For instance, we have `loadScript(src, callback)` from the chapter <info:callbac
 
 ```js run
 function loadScript(src, callback) {
-  let script = document.createElement('script');
-  script.src = src;
+    let script = document.createElement('script');
+    script.src = src;
 
-  script.onload = () => callback(null, script);
-  script.onerror = () => callback(new Error(`Script load error for ${src}`));
+    script.onload = () => callback(null, script);
+    script.onerror = () => callback(new Error(`Script load error for ${src}`));
 
-  document.head.append(script);
+    document.head.append(script);
 }
 
 // usage:
@@ -25,21 +25,22 @@ function loadScript(src, callback) {
 
 The function loads a script with the given `src`, and then calls `callback(err)` in case of an error, or `callback(null, script)` in case of successful loading. That's a widespread agreement for using callbacks, we saw it before.
 
-Let's promisify it. 
+Let's promisify it.
 
 We'll make a new function `loadScriptPromise(src)`, that does the same (loads the script), but returns a promise instead of using callbacks.
 
 In other words, we pass it only `src` (no `callback`) and get a promise in return, that resolves with `script` when the load is successful, and rejects with the error otherwise.
 
 Here it is:
+
 ```js
-let loadScriptPromise = function(src) {
-  return new Promise((resolve, reject) => {
-    loadScript(src, (err, script) => {
-      if (err) reject(err);
-      else resolve(script);
+let loadScriptPromise = function (src) {
+    return new Promise((resolve, reject) => {
+        loadScript(src, (err, script) => {
+            if (err) reject(err);
+            else resolve(script);
+        });
     });
-  });
 };
 
 // usage:
@@ -88,8 +89,8 @@ But what if the original `f` expects a callback with more arguments `callback(er
 
 We can improve our helper. Let's make a more advanced version of `promisify`.
 
-- When called as `promisify(f)` it should work similar to the version above.
-- When called as `promisify(f, true)`, it should return the promise that resolves with the array of callback results. That's exactly for callbacks with many arguments.
+-   When called as `promisify(f)` it should work similar to the version above.
+-   When called as `promisify(f, true)`, it should return the promise that resolves with the array of callback results. That's exactly for callbacks with many arguments.
 
 ```js
 // promisify(f, true) to get array of results

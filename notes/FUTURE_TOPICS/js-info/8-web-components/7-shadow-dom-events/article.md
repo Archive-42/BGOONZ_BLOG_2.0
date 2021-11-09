@@ -14,21 +14,20 @@ Here's a simple example:
 <user-card></user-card>
 
 <script>
-  customElements.define(
-    "user-card",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.innerHTML = `<p>
+    customElements.define(
+        'user-card',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' });
+                this.shadowRoot.innerHTML = `<p>
       <button>Click me</button>
     </p>`;
-        this.shadowRoot.firstElementChild.onclick = (e) =>
-          alert("Inner target: " + e.target.tagName);
-      }
-    }
-  );
+                this.shadowRoot.firstElementChild.onclick = (e) => alert('Inner target: ' + e.target.tagName);
+            }
+        }
+    );
 
-  document.onclick = (e) => alert("Outer target: " + e.target.tagName);
+    document.onclick = (e) => alert('Outer target: ' + e.target.tagName);
 </script>
 ```
 
@@ -45,28 +44,27 @@ For example, if a user clicks on `<span slot="username">` in the example below, 
 
 ```html run autorun="no-epub" untrusted height=60
 <user-card id="userCard">
-  *!*
-  <span slot="username">John Smith</span>
-  */!*
+    *!*
+    <span slot="username">John Smith</span>
+    */!*
 </user-card>
 
 <script>
-  customElements.define(
-    "user-card",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.innerHTML = `<div>
+    customElements.define(
+        'user-card',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' });
+                this.shadowRoot.innerHTML = `<div>
       <b>Name:</b> <slot name="username"></slot>
     </div>`;
 
-        this.shadowRoot.firstElementChild.onclick = (e) =>
-          alert("Inner target: " + e.target.tagName);
-      }
-    }
-  );
+                this.shadowRoot.firstElementChild.onclick = (e) => alert('Inner target: ' + e.target.tagName);
+            }
+        }
+    );
 
-  userCard.onclick = (e) => alert(`Outer target: ${e.target.tagName}`);
+    userCard.onclick = (e) => alert(`Outer target: ${e.target.tagName}`);
 </script>
 ```
 
@@ -86,13 +84,13 @@ In the example above, the flattened DOM is:
 
 ```html
 <user-card id="userCard">
-  #shadow-root
-  <div>
-    <b>Name:</b>
-    <slot name="username">
-      <span slot="username">John Smith</span>
-    </slot>
-  </div>
+    #shadow-root
+    <div>
+        <b>Name:</b>
+        <slot name="username">
+            <span slot="username">John Smith</span>
+        </slot>
+    </div>
 </user-card>
 ```
 
@@ -177,17 +175,17 @@ Events only cross shadow DOM boundaries if their `composed` flag is set to `true
 
 Built-in events mostly have `composed: true`, as described in the relevant specifications:
 
-- UI Events <https://www.w3.org/TR/uievents>.
-- Touch Events <https://w3c.github.io/touch-events>.
-- Pointer Events <https://www.w3.org/TR/pointerevents>.
-- ...And so on.
+-   UI Events <https://www.w3.org/TR/uievents>.
+-   Touch Events <https://w3c.github.io/touch-events>.
+-   Pointer Events <https://www.w3.org/TR/pointerevents>.
+-   ...And so on.
 
 Some built-in events that have `composed: false`:
 
-- `mouseenter`, `mouseleave` (also do not bubble),
-- `load`, `unload`, `abort`, `error`,
-- `select`,
-- `slotchange`.
+-   `mouseenter`, `mouseleave` (also do not bubble),
+-   `load`, `unload`, `abort`, `error`,
+-   `select`,
+-   `slotchange`.
 
 These events can be caught only on elements within the same DOM.
 

@@ -55,8 +55,8 @@ So `let user = new User("Jack")` gives the same result as:
 
 ```js
 let user = {
-  name: "Jack",
-  isAdmin: false,
+    name: 'Jack',
+    isAdmin: false
 };
 ```
 
@@ -116,15 +116,15 @@ We can also make both `new` and regular calls to do the same, like this:
 
 ```js run
 function User(name) {
-  if (!new.target) {
-    // if you run me without new
-    return new User(name); // ...I will add new for you
-  }
+    if (!new.target) {
+        // if you run me without new
+        return new User(name); // ...I will add new for you
+    }
 
-  this.name = name;
+    this.name = name;
 }
 
-let john = User("John"); // redirects call to new User
+let john = User('John'); // redirects call to new User
 alert(john.name); // John
 ```
 
@@ -138,8 +138,8 @@ Usually, constructors do not have a `return` statement. Their task is to write a
 
 But if there is a `return` statement, then the rule is simple:
 
-- If `return` is called with an object, then the object is returned instead of `this`.
-- If `return` is called with a primitive, it's ignored.
+-   If `return` is called with an object, then the object is returned instead of `this`.
+-   If `return` is called with a primitive, it's ignored.
 
 In other words, `return` with an object returns that object, in all other cases `this` is returned.
 
@@ -147,9 +147,9 @@ For instance, here `return` overrides `this` by returning an object:
 
 ```js run
 function BigUser() {
-  this.name = "John";
+    this.name = 'John';
 
-  return { name: "Godzilla" }; // <-- returns this object
+    return { name: 'Godzilla' }; // <-- returns this object
 }
 
 alert(new BigUser().name); // Godzilla, got that object
@@ -159,9 +159,9 @@ And here's an example with an empty `return` (or we could place a primitive afte
 
 ```js run
 function SmallUser() {
-  this.name = "John";
+    this.name = 'John';
 
-  return; // <-- returns this
+    return; // <-- returns this
 }
 
 alert(new SmallUser().name); // John
@@ -216,8 +216,8 @@ To create complex objects, there's a more advanced syntax, [classes](info:classe
 
 ## Summary
 
-- Constructor functions or, briefly, constructors, are regular functions, but there's a common agreement to name them with capital letter first.
-- Constructor functions should only be called using `new`. Such a call implies a creation of empty `this` at the start and returning the populated one at the end.
+-   Constructor functions or, briefly, constructors, are regular functions, but there's a common agreement to name them with capital letter first.
+-   Constructor functions should only be called using `new`. Such a call implies a creation of empty `this` at the start and returning the populated one at the end.
 
 We can use constructor functions to make multiple similar objects.
 

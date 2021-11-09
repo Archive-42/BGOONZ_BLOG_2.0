@@ -1,4 +1,3 @@
-
 # Variable scope, closure
 
 JavaScript is a very function-oriented language. It gives us a lot of freedom. A function can be created at any moment, passed as an argument to another function, and then called from a totally different place of code later.
@@ -11,13 +10,13 @@ And what if a function is passed along as a parameter and called from another pl
 
 Let's expand our knowledge to understand these scenarios and more complex ones.
 
-```smart header="We'll talk about `let/const` variables here"
-In JavaScript, there are 3 ways to declare a variable: `let`, `const` (the modern ones), and `var` (the remnant of the past).
+```smart header="We'll talk about `let/const`variables here" In JavaScript, there are 3 ways to declare a variable:`let`, `const`(the modern ones), and`var` (the remnant of the past).
 
-- In this article we'll use `let` variables in examples.
-- Variables, declared with `const`, behave the same, so this article is about `const` too.
-- The old `var` has some notable differences, they will be covered in the article <info:var>.
-```
+-   In this article we'll use `let` variables in examples.
+-   Variables, declared with `const`, behave the same, so this article is about `const` too.
+-   The old `var` has some notable differences, they will be covered in the article <info:var>.
+
+````
 
 ## Code blocks
 
@@ -35,21 +34,21 @@ For example:
 }
 
 alert(message); // Error: message is not defined
-```
+````
 
 We can use this to isolate a piece of code that does its own task, with variables that only belong to it:
 
 ```js run
 {
-  // show message
-  let message = "Hello";
-  alert(message);
+    // show message
+    let message = 'Hello';
+    alert(message);
 }
 
 {
-  // show another message
-  let message = "Goodbye";
-  alert(message);
+    // show another message
+    let message = 'Goodbye';
+    alert(message);
 }
 ```
 
@@ -73,9 +72,9 @@ For `if`, `for`, `while` and so on, variables declared in `{...}` are also only 
 
 ```js run
 if (true) {
-  let phrase = "Hello!";
+    let phrase = 'Hello!';
 
-  alert(phrase); // Hello!
+    alert(phrase); // Hello!
 }
 
 alert(phrase); // Error, no such variable!
@@ -89,8 +88,8 @@ The similar thing holds true for `for` and `while` loops:
 
 ```js run
 for (let i = 0; i < 3; i++) {
-  // the variable i is only visible inside this for
-  alert(i); // 0, then 1, then 2
+    // the variable i is only visible inside this for
+    alert(i); // 0, then 1, then 2
 }
 
 alert(i); // Error, no such variable
@@ -108,19 +107,17 @@ We can use it to organize our code, like this:
 
 ```js
 function sayHiBye(firstName, lastName) {
+    // helper nested function to use below
+    function getFullName() {
+        return firstName + ' ' + lastName;
+    }
 
-  // helper nested function to use below
-  function getFullName() {
-    return firstName + " " + lastName;
-  }
-
-  alert( "Hello, " + getFullName() );
-  alert( "Bye, " + getFullName() );
-
+    alert('Hello, ' + getFullName());
+    alert('Bye, ' + getFullName());
 }
 ```
 
-Here the *nested* function `getFullName()` is made for convenience. It can access the outer variables and so can return the full name. Nested functions are quite common in JavaScript.
+Here the _nested_ function `getFullName()` is made for convenience. It can access the outer variables and so can return the full name. Nested functions are quite common in JavaScript.
 
 What's much more interesting, a nested function can be returned: either as a property of a new object or as a result by itself. It can then be used somewhere else. No matter where, it still has access to the same outer variables.
 
@@ -128,18 +125,18 @@ Below, `makeCounter` creates the "counter" function that returns the next number
 
 ```js run
 function makeCounter() {
-  let count = 0;
+    let count = 0;
 
-  return function() {
-    return count++;
-  };
+    return function () {
+        return count++;
+    };
 }
 
 let counter = makeCounter();
 
-alert( counter() ); // 0
-alert( counter() ); // 1
-alert( counter() ); // 2
+alert(counter()); // 0
+alert(counter()); // 1
+alert(counter()); // 2
 ```
 
 Despite being simple, slightly modified variants of that code have practical uses, for instance, as a [random number generator](https://en.wikipedia.org/wiki/Pseudorandom_number_generator) to generate random values for automated tests.
@@ -160,12 +157,12 @@ For clarity, the explanation is split into multiple steps.
 
 ### Step 1. Variables
 
-In JavaScript, every running function, code block `{...}`, and the script as a whole have an internal (hidden) associated object known as the *Lexical Environment*.
+In JavaScript, every running function, code block `{...}`, and the script as a whole have an internal (hidden) associated object known as the _Lexical Environment_.
 
 The Lexical Environment object consists of two parts:
 
-1. *Environment Record* -- an object that stores all local variables as its properties (and some other information like the value of `this`).
-2. A reference to the *outer lexical environment*, the one associated with the outer code.
+1. _Environment Record_ -- an object that stores all local variables as its properties (and some other information like the value of `this`).
+2. A reference to the _outer lexical environment_, the one associated with the outer code.
 
 **A "variable" is just a property of the special internal object, `Environment Record`. "To get or change a variable" means "to get or change a property of that object".**
 
@@ -173,7 +170,7 @@ In this simple code without functions, there is only one Lexical Environment:
 
 ![lexical environment](lexical-environment-global.svg)
 
-This is the so-called *global* Lexical Environment, associated with the whole script.
+This is the so-called _global_ Lexical Environment, associated with the whole script.
 
 On the picture above, the rectangle means Environment Record (variable store) and the arrow means the outer reference. The global Lexical Environment has no outer reference, that's why the arrow points to `null`.
 
@@ -193,8 +190,8 @@ Rectangles on the right-hand side demonstrate how the global Lexical Environment
 
 Everything looks simple for now, right?
 
-- A variable is a property of a special internal object, associated with the currently executing block/function/script.
-- Working with variables is actually working with the properties of that object.
+-   A variable is a property of a special internal object, associated with the currently executing block/function/script.
+-   Working with variables is actually working with the properties of that object.
 
 ```smart header="Lexical Environment is a specification object"
 "Lexical Environment" is a specification object: it only exists "theoretically" in the [language specification](https://tc39.es/ecma262/#sec-lexical-environments) to describe how things work. We can't get this object in our code and manipulate it directly.
@@ -239,8 +236,8 @@ For instance, for `say("John")`, it looks like this (the execution is at the lin
 
 During the function call we have two Lexical Environments: the inner one (for the function call) and the outer one (global):
 
-- The inner Lexical Environment corresponds to the current execution of `say`. It has a single property: `name`, the function argument. We called `say("John")`, so the value of the `name` is `"John"`.
-- The outer Lexical Environment is the global Lexical Environment. It has the `phrase` variable and the function itself.
+-   The inner Lexical Environment corresponds to the current execution of `say`. It has a single property: `name`, the function argument. We called `say("John")`, so the value of the `name` is `"John"`.
+-   The outer Lexical Environment is the global Lexical Environment. It has the `phrase` variable and the function itself.
 
 The inner Lexical Environment has a reference to the `outer` one.
 
@@ -250,11 +247,10 @@ If a variable is not found anywhere, that's an error in strict mode (without `us
 
 In this example the search proceeds as follows:
 
-- For the `name` variable, the `alert` inside `say` finds it immediately in the inner Lexical Environment.
-- When it wants to access `phrase`, then there is no `phrase` locally, so it follows the reference to the outer Lexical Environment and finds it there.
+-   For the `name` variable, the `alert` inside `say` finds it immediately in the inner Lexical Environment.
+-   When it wants to access `phrase`, then there is no `phrase` locally, so it follows the reference to the outer Lexical Environment and finds it there.
 
 ![lexical environment lookup](lexical-environment-simple-lookup.svg)
-
 
 ### Step 4. Returning a function
 
@@ -262,11 +258,11 @@ Let's return to the `makeCounter` example.
 
 ```js
 function makeCounter() {
-  let count = 0;
+    let count = 0;
 
-  return function() {
-    return count++;
-  };
+    return function () {
+        return count++;
+    };
 }
 
 let counter = makeCounter();
@@ -322,11 +318,11 @@ For example:
 
 ```js
 function f() {
-  let value = 123;
+    let value = 123;
 
-  return function() {
-    alert(value);
-  }
+    return function () {
+        alert(value);
+    };
 }
 
 let g = f(); // g.[[Environment]] stores a reference to the Lexical Environment
@@ -337,9 +333,11 @@ Please note that if `f()` is called many times, and resulting functions are save
 
 ```js
 function f() {
-  let value = Math.random();
+    let value = Math.random();
 
-  return function() { alert(value); };
+    return function () {
+        alert(value);
+    };
 }
 
 // 3 functions in array, every one of them links to Lexical Environment
@@ -353,11 +351,11 @@ In the code below, after the nested function is removed, its enclosing Lexical E
 
 ```js
 function f() {
-  let value = 123;
+    let value = 123;
 
-  return function() {
-    alert(value);
-  }
+    return function () {
+        alert(value);
+    };
 }
 
 let g = f(); // while g function exists, the value stays in memory
@@ -379,13 +377,13 @@ When it pauses, in the console type `alert(value)`.
 
 ```js run
 function f() {
-  let value = Math.random();
+    let value = Math.random();
 
-  function g() {
-    debugger; // in console: type alert(value); No such variable!
-  }
+    function g() {
+        debugger; // in console: type alert(value); No such variable!
+    }
 
-  return g;
+    return g;
 }
 
 let g = f();
@@ -397,16 +395,16 @@ As you could see -- there is no such variable! In theory, it should be accessibl
 That may lead to funny (if not such time-consuming) debugging issues. One of them -- we can see a same-named outer variable instead of the expected one:
 
 ```js run global
-let value = "Surprise!";
+let value = 'Surprise!';
 
 function f() {
-  let value = "the closest value";
+    let value = 'the closest value';
 
-  function g() {
-    debugger; // in console: type alert(value); Surprise!
-  }
+    function g() {
+        debugger; // in console: type alert(value); Surprise!
+    }
 
-  return g;
+    return g;
 }
 
 let g = f();

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/promise-api"
-- <a href="promise-api.html"
-- <a href="https://es.javascript.info/promise-api"
-- <a href="https://fr.javascript.info/promise-api"
-- <a href="https://it.javascript.info/promise-api"
-  promise-api"
+-   <a href="https://ar.javascript.info/promise-api"
+-   <a href="promise-api.html"
+-   <a href="https://es.javascript.info/promise-api"
+-   <a href="https://fr.javascript.info/promise-api"
+-   <a href="https://it.javascript.info/promise-api"
+    promise-api"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/promise-api"
-- <a href=promise-api"
-- <a href="https://tr.javascript.info/promise-api"
-- <a href="https://zh.javascript.info/promise-api"
+-   <a href="https://ko.javascript.info/promise-api"
+-   <a href=promise-api"
+-   <a href="https://tr.javascript.info/promise-api"
+-   <a href="https://zh.javascript.info/promise-api"
 
 We want to make this open-source project available for people all around the world.
 
@@ -172,8 +172,8 @@ This is a recent addition to the language. Old browsers may need polyfills.
 
 `Promise.allSettled` just waits for all promises to settle, regardless of the result. The resulting array has:
 
-- `{status:"fulfilled", value:result}` for successful responses,
-- `{status:"rejected", reason:error}` for errors.
+-   `{status:"fulfilled", value:result}` for successful responses,
+-   `{status:"rejected", reason:error}` for errors.
 
 For example, we’d like to fetch the information about multiple users. Even if one request fails, we’re still interested in the others.
 
@@ -340,8 +340,8 @@ There are 6 static methods of `Promise` class:
 
 1.  `Promise.all(promises)` – waits for all promises to resolve and returns an array of their results. If any of the given promises rejects, it becomes the error of `Promise.all`, and all other results are ignored.
 2.  `Promise.allSettled(promises)` (recently added method) – waits for all promises to settle and returns their results as an array of objects with:
-    - `status`: `"fulfilled"` or `"rejected"`
-    - `value` (if fulfilled) or `reason` (if rejected).
+    -   `status`: `"fulfilled"` or `"rejected"`
+    -   `value` (if fulfilled) or `reason` (if rejected).
 3.  `Promise.race(promises)` – waits for the first promise to settle, and its result/error becomes the outcome.
 4.  `Promise.any(promises)` (recently added method) – waits for the first promise to fulfill, and its result becomes the outcome. If all of the given promises are rejected, [`AggregateError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AggregateError) becomes the error of `Promise.any`.
 5.  `Promise.resolve(value)` – makes a resolved promise with the given value.
@@ -359,26 +359,26 @@ Of all these, `Promise.all` is probably the most common in practice.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="async.html" class="sidebar__link">Promises, async/await</a>
+-   <a href="async.html" class="sidebar__link">Promises, async/await</a>
 
 #### Lesson navigation
 
-- <a href="promise-api.html#promise-all" class="sidebar__link">Promise.all</a>
-- <a href="promise-api.html#promise-allsettled" class="sidebar__link">Promise.allSettled</a>
-- <a href="promise-api.html#promise-race" class="sidebar__link">Promise.race</a>
-- <a href="promise-api.html#promise-any" class="sidebar__link">Promise.any</a>
-- <a href="promise-api.html#promise-resolve-reject" class="sidebar__link">Promise.resolve/reject</a>
-- <a href="promise-api.html#summary" class="sidebar__link">Summary</a>
+-   <a href="promise-api.html#promise-all" class="sidebar__link">Promise.all</a>
+-   <a href="promise-api.html#promise-allsettled" class="sidebar__link">Promise.allSettled</a>
+-   <a href="promise-api.html#promise-race" class="sidebar__link">Promise.race</a>
+-   <a href="promise-api.html#promise-any" class="sidebar__link">Promise.any</a>
+-   <a href="promise-api.html#promise-resolve-reject" class="sidebar__link">Promise.resolve/reject</a>
+-   <a href="promise-api.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="promise-api.html#comments" class="sidebar__link">Comments</a>
+-   <a href="promise-api.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -386,7 +386,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/11-async/05-promise-api" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

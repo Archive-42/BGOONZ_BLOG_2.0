@@ -37,10 +37,10 @@ For convenience let's split it into multiple lines:
 
 ```js
 let sorted = word // PAN
-  .toLowerCase() // pan
-  .split('') // ['p','a','n']
-  .sort() // ['a','n','p']
-  .join(''); // anp
+    .toLowerCase() // pan
+    .split('') // ['p','a','n']
+    .sort() // ['a','n','p']
+    .join(''); // anp
 ```
 
 Two different words `'PAN'` and `'nap'` receive the same letter-sorted form `'anp'`.
@@ -61,17 +61,17 @@ That's how the solution can look:
 
 ```js run demo
 function aclean(arr) {
-  let obj = {};
+    let obj = {};
 
-  for (let i = 0; i < arr.length; i++) {
-    let sorted = arr[i].toLowerCase().split("").sort().join("");
-    obj[sorted] = arr[i];
-  }
+    for (let i = 0; i < arr.length; i++) {
+        let sorted = arr[i].toLowerCase().split('').sort().join('');
+        obj[sorted] = arr[i];
+    }
 
-  return Object.values(obj);
+    return Object.values(obj);
 }
 
-let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+let arr = ['nap', 'teachers', 'cheaters', 'PAN', 'ear', 'era', 'hectares'];
 
-alert( aclean(arr) );
+alert(aclean(arr));
 ```

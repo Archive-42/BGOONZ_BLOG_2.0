@@ -27,9 +27,9 @@ We can immediately put some properties into `{...}` as "key: value" pairs:
 
 ```js
 let user = {
-  // an object
-  name: "John", // by key "name" store value "John"
-  age: 30, // by key "age" store value 30
+    // an object
+    name: 'John', // by key "name" store value "John"
+    age: 30 // by key "age" store value 30
 };
 ```
 
@@ -74,9 +74,9 @@ We can also use multiword property names, but then they must be quoted:
 
 ```js
 let user = {
-  name: "John",
-  age: 30,
-  "likes birds": true, // multiword property name must be quoted
+    name: 'John',
+    age: 30,
+    'likes birds': true // multiword property name must be quoted
 };
 ```
 
@@ -112,13 +112,13 @@ There's an alternative "square bracket notation" that works with any string:
 let user = {};
 
 // set
-user["likes birds"] = true;
+user['likes birds'] = true;
 
 // get
-alert(user["likes birds"]); // true
+alert(user['likes birds']); // true
 
 // delete
-delete user["likes birds"];
+delete user['likes birds'];
 ```
 
 Now everything is fine. Please note that the string inside the brackets is properly quoted (any type of quotes will do).
@@ -126,7 +126,7 @@ Now everything is fine. Please note that the string inside the brackets is prope
 Square brackets also provide a way to obtain the property name as the result of any expression -- as opposed to a literal string -- like from a variable as follows:
 
 ```js
-let key = "likes birds";
+let key = 'likes birds';
 
 // same as user["likes birds"] = true;
 user[key] = true;
@@ -138,11 +138,11 @@ For instance:
 
 ```js run
 let user = {
-  name: "John",
-  age: 30,
+    name: 'John',
+    age: 30
 };
 
-let key = prompt("What do you want to know about the user?", "name");
+let key = prompt('What do you want to know about the user?', 'name');
 
 // access by variable
 alert(user[key]); // John (if enter "name")
@@ -152,11 +152,11 @@ The dot notation cannot be used in a similar way:
 
 ```js run
 let user = {
-  name: "John",
-  age: 30,
+    name: 'John',
+    age: 30
 };
 
-let key = "name";
+let key = 'name';
 alert(user.key); // undefined
 ```
 
@@ -185,7 +185,7 @@ So, if a visitor enters `"apple"`, `bag` will become `{apple: 5}`.
 Essentially, that works the same as:
 
 ```js run
-let fruit = prompt("Which fruit to buy?", "apple");
+let fruit = prompt('Which fruit to buy?', 'apple');
 let bag = {};
 
 // take property name from the fruit variable
@@ -197,9 +197,9 @@ bag[fruit] = 5;
 We can use more complex expressions inside square brackets:
 
 ```js
-let fruit = "apple";
+let fruit = 'apple';
 let bag = {
-  [fruit + "Computers"]: 5, // bag.appleComputers = 5
+    [fruit + 'Computers']: 5 // bag.appleComputers = 5
 };
 ```
 
@@ -215,14 +215,14 @@ For instance:
 
 ```js run
 function makeUser(name, age) {
-  return {
-    name: name,
-    age: age,
-    // ...other properties
-  };
+    return {
+        name: name,
+        age: age
+        // ...other properties
+    };
 }
 
-let user = makeUser("John", 30);
+let user = makeUser('John', 30);
 alert(user.name); // John
 ```
 
@@ -246,8 +246,8 @@ We can use both normal properties and shorthands in the same object:
 
 ```js
 let user = {
-  name, // same as name:name
-  age: 30,
+    name, // same as name:name
+    age: 30
 };
 ```
 
@@ -260,9 +260,9 @@ But for an object property, there's no such restriction:
 ```js run
 // these properties are all right
 let obj = {
-  for: 1,
-  let: 2,
-  return: 3,
+    for: 1,
+    let: 2,
+    return: 3
 };
 
 alert(obj.for + obj.let + obj.return); // 6
@@ -276,11 +276,11 @@ For instance, a number `0` becomes a string `"0"` when used as a property key:
 
 ```js run
 let obj = {
-  0: "test", // same as "0": "test"
+    0: 'test' // same as "0": "test"
 };
 
 // both alerts access the same property (the number 0 is converted to string "0")
-alert(obj["0"]); // test
+alert(obj['0']); // test
 alert(obj[0]); // test (same property)
 ```
 
@@ -313,16 +313,16 @@ There's also a special operator `"in"` for that.
 The syntax is:
 
 ```js
-"key" in object;
+'key' in object;
 ```
 
 For instance:
 
 ```js run
-let user = { name: "John", age: 30 };
+let user = { name: 'John', age: 30 };
 
-alert("age" in user); // true, user.age exists
-alert("blabla" in user); // false, user.blabla doesn't exist
+alert('age' in user); // true, user.age exists
+alert('blabla' in user); // false, user.blabla doesn't exist
 ```
 
 Please note that on the left side of `in` there must be a _property name_. That's usually a quoted string.
@@ -344,12 +344,12 @@ It's when an object property exists, but stores `undefined`:
 
 ```js run
 let obj = {
-  test: undefined,
+    test: undefined
 };
 
 alert(obj.test); // it's undefined, so - no such property?
 
-alert("test" in obj); // true, the property does exist!
+alert('test' in obj); // true, the property does exist!
 ```
 
 In the code above, the property `obj.test` technically exists. So the `in` operator works right.
@@ -364,7 +364,7 @@ The syntax:
 
 ```js
 for (key in object) {
-  // executes the body for each key among object properties
+    // executes the body for each key among object properties
 }
 ```
 
@@ -372,16 +372,16 @@ For instance, let's output all properties of `user`:
 
 ```js run
 let user = {
-  name: "John",
-  age: 30,
-  isAdmin: true,
+    name: 'John',
+    age: 30,
+    isAdmin: true
 };
 
 for (let key in user) {
-  // keys
-  alert(key); // name, age, isAdmin
-  // values for the keys
-  alert(user[key]); // John, 30, true
+    // keys
+    alert(key); // name, age, isAdmin
+    // values for the keys
+    alert(user[key]); // John, 30, true
 }
 ```
 
@@ -417,8 +417,8 @@ The object may be used to suggest a list of options to the user. If we're making
 
 But if we run the code, we see a totally different picture:
 
-- USA (1) goes first
-- then Switzerland (41) and so on.
+-   USA (1) goes first
+-   then Switzerland (41) and so on.
 
 The phone codes go in the ascending sorted order, because they are integers. So we see `1, 41, 44, 49`.
 
@@ -458,15 +458,15 @@ Like this:
 
 ```js run
 let codes = {
-  "+49": "Germany",
-  "+41": "Switzerland",
-  "+44": "Great Britain",
-  // ..,
-  "+1": "USA",
+    '+49': 'Germany',
+    '+41': 'Switzerland',
+    '+44': 'Great Britain',
+    // ..,
+    '+1': 'USA'
 };
 
 for (let code in codes) {
-  alert(+code); // 49, 41, 44, 1
+    alert(+code); // 49, 41, 44, 1
 }
 ```
 
@@ -478,28 +478,28 @@ Objects are associative arrays with several special features.
 
 They store properties (key-value pairs), where:
 
-- Property keys must be strings or symbols (usually strings).
-- Values can be of any type.
+-   Property keys must be strings or symbols (usually strings).
+-   Values can be of any type.
 
 To access a property, we can use:
 
-- The dot notation: `obj.property`.
-- Square brackets notation `obj["property"]`. Square brackets allow to take the key from a variable, like `obj[varWithKey]`.
+-   The dot notation: `obj.property`.
+-   Square brackets notation `obj["property"]`. Square brackets allow to take the key from a variable, like `obj[varWithKey]`.
 
 Additional operators:
 
-- To delete a property: `delete obj.prop`.
-- To check if a property with the given key exists: `"key" in obj`.
-- To iterate over an object: `for (let key in obj)` loop.
+-   To delete a property: `delete obj.prop`.
+-   To check if a property with the given key exists: `"key" in obj`.
+-   To iterate over an object: `for (let key in obj)` loop.
 
 What we've studied in this chapter is called a "plain object", or just `Object`.
 
 There are many other kinds of objects in JavaScript:
 
-- `Array` to store ordered data collections,
-- `Date` to store the information about the date and time,
-- `Error` to store the information about an error.
-- ...And so on.
+-   `Array` to store ordered data collections,
+-   `Date` to store the information about the date and time,
+-   `Error` to store the information about an error.
+-   ...And so on.
 
 They have their special features that we'll study later. Sometimes people say something like "Array type" or "Date type", but formally they are not types of their own, but belong to a single "object" data type. And they extend it in various ways.
 

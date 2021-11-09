@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="regular-expressions.html"
-- <a href="https://es.javascript.info/regular-expressions"
+-   <a href="https://ar.javascript.info/"
+-   <a href="regular-expressions.html"
+-   <a href="https://es.javascript.info/regular-expressions"
 
-- <a href="https://it.javascript.info/"
-  regular-expressions"
+-   <a href="https://it.javascript.info/"
+    regular-expressions"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/regular-expressions"
-- <a href=regular-expressions"
-- <a href="https://tr.javascript.info/regular-expressions"
-- <a href="https://zh.javascript.info/regular-expressions"
+-   <a href="https://ko.javascript.info/regular-expressions"
+-   <a href=regular-expressions"
+-   <a href="https://tr.javascript.info/regular-expressions"
+-   <a href="https://zh.javascript.info/regular-expressions"
 
 We want to make this open-source project available for people all around the world.
 
@@ -64,15 +64,15 @@ Regular expressions is a powerful way of doing search and replace in strings.
 
 #### Sibling chapters
 
-- <a href="js.html" class="sidebar__link">The JavaScript language</a>
-- <a href="ui.html" class="sidebar__link">Browser: Document, Events, Interfaces</a>
-- <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
-- <a href="binary.html" class="sidebar__link">Binary data, files</a>
-- <a href="network.html" class="sidebar__link">Network requests</a>
-- <a href="data-storage.html" class="sidebar__link">Storing data in the browser</a>
-- <a href="animation.html" class="sidebar__link">Animation</a>
-- <a href="web-components.html" class="sidebar__link">Web components</a>
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="js.html" class="sidebar__link">The JavaScript language</a>
+-   <a href="ui.html" class="sidebar__link">Browser: Document, Events, Interfaces</a>
+-   <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
+-   <a href="binary.html" class="sidebar__link">Binary data, files</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="data-storage.html" class="sidebar__link">Storing data in the browser</a>
+-   <a href="animation.html" class="sidebar__link">Animation</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 Share
 
@@ -80,7 +80,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="why-return-false-fails.html"
-  /why-return-false-fails"
-  /why-return-false-fails"
-  why-return-false-fails"
-  task/why-return-false-fails"
+-   <a href="https://ar.javascript.info/"
+-   <a href="why-return-false-fails.html"
+    /why-return-false-fails"
+    /why-return-false-fails"
+    why-return-false-fails"
+    task/why-return-false-fails"
 
 <!-- -->
 
 why-return-false-fails"
 why-return-false-fails"
 
-- <a href="https://tr.javascript.info/"
-  why-return-false-fails"
+-   <a href="https://tr.javascript.info/"
+    why-return-false-fails"
 
 We want to make this open-source project available for people all around the world.
 

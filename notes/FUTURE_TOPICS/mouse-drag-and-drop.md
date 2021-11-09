@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="mouse-drag-and-drop.html"
-- <a href="https://es.javascript.info/mouse-drag-and-drop"
-- <a href="https://fr.javascript.info/mouse-drag-and-drop"
-- <a href="https://it.javascript.info/mouse-drag-and-drop"
-  mouse-drag-and-drop"
+-   <a href="https://ar.javascript.info/"
+-   <a href="mouse-drag-and-drop.html"
+-   <a href="https://es.javascript.info/mouse-drag-and-drop"
+-   <a href="https://fr.javascript.info/mouse-drag-and-drop"
+-   <a href="https://it.javascript.info/mouse-drag-and-drop"
+    mouse-drag-and-drop"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/mouse-drag-and-drop"
-- <a href=mouse-drag-and-drop"
-- <a href="https://tr.javascript.info/mouse-drag-and-drop"
-- <a href="https://zh.javascript.info/mouse-drag-and-drop"
+-   <a href="https://ko.javascript.info/mouse-drag-and-drop"
+-   <a href=mouse-drag-and-drop"
+-   <a href="https://tr.javascript.info/mouse-drag-and-drop"
+-   <a href="https://zh.javascript.info/mouse-drag-and-drop"
 
 We want to make this open-source project available for people all around the world.
 
@@ -200,8 +200,8 @@ Speaking abstract, we take a “draggable” element and drop it onto “droppab
 
 We need to know:
 
-- where the element was dropped at the end of Drag’n’Drop – to do the corresponding action,
-- and, preferably, know the droppable we’re dragging over, to highlight it.
+-   where the element was dropped at the end of Drag’n’Drop – to do the corresponding action,
+-   and, preferably, know the droppable we’re dragging over, to highlight it.
 
 The solution is kind-of interesting and just a little bit tricky, so let’s cover it here.
 
@@ -407,11 +407,11 @@ The key components:
 
 We can lay a lot on this foundation.
 
-- On `mouseup` we can intellectually finalize the drop: change data, move elements around.
-- We can highlight the elements we’re flying over.
-- We can limit dragging by a certain area or direction.
-- We can use event delegation for `mousedown/up`. A large-area event handler that checks `event.target` can manage Drag’n’Drop for hundreds of elements.
-- And so on.
+-   On `mouseup` we can intellectually finalize the drop: change data, move elements around.
+-   We can highlight the elements we’re flying over.
+-   We can limit dragging by a certain area or direction.
+-   We can use event delegation for `mousedown/up`. A large-area event handler that checks `event.target` can manage Drag’n’Drop for hundreds of elements.
+-   And so on.
 
 There are frameworks that build architecture over it: `DragZone`, `Droppable`, `Draggable` and other classes. Most of them do the similar stuff to what’s described above, so it should be easy to understand them now. Or roll your own, as you can see that that’s easy enough to do, sometimes easier than adapting a third-party solution.
 
@@ -429,8 +429,8 @@ Drag the blue thumb with the mouse and move it.
 
 Important details:
 
-- When the mouse button is pressed, during the dragging the mouse may go over or below the slider. The slider will still work (convenient for the user).
-- If the mouse moves very fast to the left or to the right, the thumb should stop exactly at the edge.
+-   When the mouse button is pressed, during the dragging the mouse may go over or below the slider. The slider will still work (convenient for the user).
+-   If the mouse moves very fast to the left or to the right, the thumb should stop exactly at the edge.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/p7Ag21yFCKk3iLFe?p=preview)
 
@@ -456,10 +456,10 @@ Make all elements with class `draggable` – draggable. Like a ball in the chapt
 
 Requirements:
 
-- Use event delegation to track drag start: a single event handler on `document` for `mousedown`.
-- If elements are dragged to top/bottom window edges – the page scrolls up/down to allow further dragging.
-- There is no horizontal scroll (this makes the task a bit simpler, adding it is easy).
-- Draggable elements or their parts should never leave the window, even after swift mouse moves.
+-   Use event delegation to track drag start: a single event handler on `document` for `mousedown`.
+-   If elements are dragged to top/bottom window edges – the page scrolls up/down to allow further dragging.
+-   There is no horizontal scroll (this makes the task a bit simpler, adding it is easy).
+-   Draggable elements or their parts should never leave the window, even after swift mouse moves.
 
 The demo is too big to fit it here, so here’s the link.
 
@@ -487,25 +487,25 @@ More details in the code, in comments.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="event-details.html" class="sidebar__link">UI Events</a>
+-   <a href="event-details.html" class="sidebar__link">UI Events</a>
 
 #### Lesson navigation
 
-- <a href="mouse-drag-and-drop.html#drag-n-drop-algorithm" class="sidebar__link">Drag’n’Drop algorithm</a>
-- <a href="mouse-drag-and-drop.html#correct-positioning" class="sidebar__link">Correct positioning</a>
-- <a href="mouse-drag-and-drop.html#potential-drop-targets-droppables" class="sidebar__link">Potential drop targets (droppables)</a>
-- <a href="mouse-drag-and-drop.html#summary" class="sidebar__link">Summary</a>
+-   <a href="mouse-drag-and-drop.html#drag-n-drop-algorithm" class="sidebar__link">Drag’n’Drop algorithm</a>
+-   <a href="mouse-drag-and-drop.html#correct-positioning" class="sidebar__link">Correct positioning</a>
+-   <a href="mouse-drag-and-drop.html#potential-drop-targets-droppables" class="sidebar__link">Potential drop targets (droppables)</a>
+-   <a href="mouse-drag-and-drop.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="mouse-drag-and-drop.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="mouse-drag-and-drop.html#comments" class="sidebar__link">Comments</a>
+-   <a href="mouse-drag-and-drop.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="mouse-drag-and-drop.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -513,7 +513,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/3-event-details/4-mouse-drag-and-drop" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

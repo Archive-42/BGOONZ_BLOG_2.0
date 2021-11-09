@@ -7,7 +7,7 @@ importance: 5
 Consider the following code:
 
 ```js
-let str = "Hello";
+let str = 'Hello';
 
 str.test = 5;
 

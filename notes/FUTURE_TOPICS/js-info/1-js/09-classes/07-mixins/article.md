@@ -10,7 +10,7 @@ There's a concept that can help here, called "mixins".
 
 As defined in Wikipedia, a [mixin](https://en.wikipedia.org/wiki/Mixin) is a class containing methods that can be used by other classes without a need to inherit from it.
 
-In other words, a *mixin* provides methods that implement a certain behavior, but we do not use it alone, we use it to add the behavior to other classes.
+In other words, a _mixin_ provides methods that implement a certain behavior, but we do not use it alone, we use it to add the behavior to other classes.
 
 ## A mixin example
 
@@ -51,7 +51,7 @@ There's no inheritance, but a simple method copying. So `User` may inherit from 
 
 ```js
 class User extends Person {
-  // ...
+    // ...
 }
 
 Object.assign(User.prototype, sayHiMixin);
@@ -111,9 +111,9 @@ Now let's make a mixin for real life.
 
 An important feature of many browser objects (for instance) is that they can generate events. Events are a great way to "broadcast information" to anyone who wants it. So let's make a mixin that allows us to easily add event-related functions to any class/object.
 
-- The mixin will provide a method `.trigger(name, [...data])` to "generate an event" when something important happens to it. The `name` argument is a name of the event, optionally followed by additional arguments with event data.
-- Also the method `.on(name, handler)` that adds `handler` function as the listener to events with the given name. It will be called when an event with the given `name` triggers, and get the arguments from the `.trigger` call.
-- ...And the method `.off(name, handler)` that removes the `handler` listener.
+-   The mixin will provide a method `.trigger(name, [...data])` to "generate an event" when something important happens to it. The `name` argument is a name of the event, optionally followed by additional arguments with event data.
+-   Also the method `.on(name, handler)` that adds `handler` function as the listener to events with the given name. It will be called when an event with the given `name` triggers, and get the arguments from the `.trigger` call.
+-   ...And the method `.off(name, handler)` that removes the `handler` listener.
 
 After adding the mixin, an object `user` will be able to generate an event `"login"` when the visitor logs in. And another object, say, `calendar` may want to listen for such events to load the calendar for the logged-in person.
 
@@ -123,51 +123,50 @@ Here's the code:
 
 ```js run
 let eventMixin = {
-  /**
-   * Subscribe to event, usage:
-   *  menu.on('select', function(item) { ... }
-  */
-  on(eventName, handler) {
-    if (!this._eventHandlers) this._eventHandlers = {};
-    if (!this._eventHandlers[eventName]) {
-      this._eventHandlers[eventName] = [];
-    }
-    this._eventHandlers[eventName].push(handler);
-  },
+    /**
+     * Subscribe to event, usage:
+     *  menu.on('select', function(item) { ... }
+     */
+    on(eventName, handler) {
+        if (!this._eventHandlers) this._eventHandlers = {};
+        if (!this._eventHandlers[eventName]) {
+            this._eventHandlers[eventName] = [];
+        }
+        this._eventHandlers[eventName].push(handler);
+    },
 
-  /**
-   * Cancel the subscription, usage:
-   *  menu.off('select', handler)
-   */
-  off(eventName, handler) {
-    let handlers = this._eventHandlers?.[eventName];
-    if (!handlers) return;
-    for (let i = 0; i < handlers.length; i++) {
-      if (handlers[i] === handler) {
-        handlers.splice(i--, 1);
-      }
-    }
-  },
+    /**
+     * Cancel the subscription, usage:
+     *  menu.off('select', handler)
+     */
+    off(eventName, handler) {
+        let handlers = this._eventHandlers?.[eventName];
+        if (!handlers) return;
+        for (let i = 0; i < handlers.length; i++) {
+            if (handlers[i] === handler) {
+                handlers.splice(i--, 1);
+            }
+        }
+    },
 
-  /**
-   * Generate an event with the given name and data
-   *  this.trigger('select', data1, data2);
-   */
-  trigger(eventName, ...args) {
-    if (!this._eventHandlers?.[eventName]) {
-      return; // no handlers for that event name
-    }
+    /**
+     * Generate an event with the given name and data
+     *  this.trigger('select', data1, data2);
+     */
+    trigger(eventName, ...args) {
+        if (!this._eventHandlers?.[eventName]) {
+            return; // no handlers for that event name
+        }
 
-    // call the handlers
-    this._eventHandlers[eventName].forEach(handler => handler.apply(this, args));
-  }
+        // call the handlers
+        this._eventHandlers[eventName].forEach((handler) => handler.apply(this, args));
+    }
 };
 ```
 
-
-- `.on(eventName, handler)` -- assigns function `handler` to run when the event with that name occurs. Technically, there's an `_eventHandlers` property that stores an array of handlers for each event name, and it just adds it to the list.
-- `.off(eventName, handler)` -- removes the function from the handlers list.
-- `.trigger(eventName, ...args)` -- generates the event: all handlers from `_eventHandlers[eventName]` are called, with a list of arguments `...args`.
+-   `.on(eventName, handler)` -- assigns function `handler` to run when the event with that name occurs. Technically, there's an `_eventHandlers` property that stores an array of handlers for each event name, and it just adds it to the list.
+-   `.off(eventName, handler)` -- removes the function from the handlers list.
+-   `.trigger(eventName, ...args)` -- generates the event: all handlers from `_eventHandlers[eventName]` are called, with a list of arguments `...args`.
 
 Usage:
 
@@ -199,7 +198,7 @@ And `eventMixin` mixin makes it easy to add such behavior to as many classes as 
 
 ## Summary
 
-*Mixin* -- is a generic object-oriented programming term: a class that contains methods for other classes.
+_Mixin_ -- is a generic object-oriented programming term: a class that contains methods for other classes.
 
 Some other languages allow multiple inheritance. JavaScript does not support multiple inheritance, but mixins can be implemented by copying methods into prototype.
 

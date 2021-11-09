@@ -14,19 +14,19 @@ let width = 100;
 
 // animate top (bouncing)
 animate({
-  duration: 2000,
-  timing: makeEaseOut(bounce),
-  draw: function (progress) {
-    ball.style.top = height * progress + "px";
-  },
+    duration: 2000,
+    timing: makeEaseOut(bounce),
+    draw: function (progress) {
+        ball.style.top = height * progress + 'px';
+    }
 });
 
 // animate left (moving to the right)
 animate({
-  duration: 2000,
-  timing: makeEaseOut(quad),
-  draw: function (progress) {
-    ball.style.left = width * progress + "px";
-  },
+    duration: 2000,
+    timing: makeEaseOut(quad),
+    draw: function (progress) {
+        ball.style.left = width * progress + 'px';
+    }
 });
 ```

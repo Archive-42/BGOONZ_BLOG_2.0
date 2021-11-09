@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/primitives-methods"
-- <a href="primitives-methods.html"
-- <a href="https://es.javascript.info/primitives-methods"
-- <a href="https://fr.javascript.info/primitives-methods"
-- <a href="https://it.javascript.info/primitives-methods"
-  primitives-methods"
+-   <a href="https://ar.javascript.info/primitives-methods"
+-   <a href="primitives-methods.html"
+-   <a href="https://es.javascript.info/primitives-methods"
+-   <a href="https://fr.javascript.info/primitives-methods"
+-   <a href="https://it.javascript.info/primitives-methods"
+    primitives-methods"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/primitives-methods"
-- <a href=primitives-methods"
-- <a href="https://tr.javascript.info/primitives-methods"
-- <a href="https://zh.javascript.info/primitives-methods"
+-   <a href="https://ko.javascript.info/primitives-methods"
+-   <a href=primitives-methods"
+-   <a href="https://tr.javascript.info/primitives-methods"
+-   <a href="https://zh.javascript.info/primitives-methods"
 
 We want to make this open-source project available for people all around the world.
 
@@ -44,13 +44,13 @@ Let’s look at the key distinctions between primitives and objects.
 
 A primitive
 
-- Is a value of a primitive type.
-- There are 7 primitive types: `string`, `number`, `bigint`, `boolean`, `symbol`, `null` and `undefined`.
+-   Is a value of a primitive type.
+-   There are 7 primitive types: `string`, `number`, `bigint`, `boolean`, `symbol`, `null` and `undefined`.
 
 An object
 
-- Is capable of storing multiple values as properties.
-- Can be created with `{}`, for instance: `{name: "John", age: 30}`. There are other kinds of objects in JavaScript: functions, for example, are objects.
+-   Is capable of storing multiple values as properties.
+-   Can be created with `{}`, for instance: `{name: "John", age: 30}`. There are other kinds of objects in JavaScript: functions, for example, are objects.
 
 One of the best things about objects is that we can store a function as one of its properties.
 
@@ -78,8 +78,8 @@ Objects are “heavier” than primitives. They require additional resources to 
 
 Here’s the paradox faced by the creator of JavaScript:
 
-- There are many things one would want to do with a primitive like a string or a number. It would be great to access them using methods.
-- Primitives must be as fast and lightweight as possible.
+-   There are many things one would want to do with a primitive like a string or a number. It would be great to access them using methods.
+-   Primitives must be as fast and lightweight as possible.
 
 The solution looks a little bit awkward, but here it is:
 
@@ -166,8 +166,8 @@ An attempt to access a property of such value would give the error:
 
 ## <a href="primitives-methods.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- Primitives except `null` and `undefined` provide many helpful methods. We will study those in the upcoming chapters.
-- Formally, these methods work via temporary objects, but JavaScript engines are well tuned to optimize that internally, so they are not expensive to call.
+-   Primitives except `null` and `undefined` provide many helpful methods. We will study those in the upcoming chapters.
+-   Formally, these methods work via temporary objects, but JavaScript engines are well tuned to optimize that internally, so they are not expensive to call.
 
 ## <a href="primitives-methods.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -225,23 +225,23 @@ They can’t store additional data.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="primitives-methods.html#a-primitive-as-an-object" class="sidebar__link">A primitive as an object</a>
-- <a href="primitives-methods.html#summary" class="sidebar__link">Summary</a>
+-   <a href="primitives-methods.html#a-primitive-as-an-object" class="sidebar__link">A primitive as an object</a>
+-   <a href="primitives-methods.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="primitives-methods.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="primitives-methods.html#comments" class="sidebar__link">Comments</a>
+-   <a href="primitives-methods.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="primitives-methods.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -249,7 +249,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/01-primitives-methods" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

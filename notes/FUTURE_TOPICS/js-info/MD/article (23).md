@@ -10,9 +10,9 @@ We'll be using Chrome here, because it has enough features, most other browsers 
 
 Your Chrome version may look a little bit different, but it still should be obvious what's there.
 
-- Open the [example page](debugging/index.html) in Chrome.
-- Turn on developer tools with `key:F12` (Mac: `key:Cmd+Opt+I`).
-- Select the `Sources` panel.
+-   Open the [example page](debugging/index.html) in Chrome.
+-   Turn on developer tools with `key:F12` (Mac: `key:Cmd+Opt+I`).
+-   Select the `Sources` panel.
 
 Here's what you should see if you are doing it for the first time:
 
@@ -58,10 +58,10 @@ While the code is paused, we can examine current variables, execute commands in 
 
 We can always find a list of breakpoints in the right panel. That's useful when we have many breakpoints in various files. It allows us to:
 
-- Quickly jump to the breakpoint in the code (by clicking on it in the right panel).
-- Temporarily disable the breakpoint by unchecking it.
-- Remove the breakpoint by right-clicking and selecting Remove.
-- ...And so on.
+-   Quickly jump to the breakpoint in the code (by clicking on it in the right panel).
+-   Temporarily disable the breakpoint by unchecking it.
+-   Remove the breakpoint by right-clicking and selecting Remove.
+-   ...And so on.
 
 ```smart header="Conditional breakpoints"
 *Right click* on the line number allows to create a *conditional* breakpoint. It only triggers when the given expression is truthy.
@@ -99,21 +99,21 @@ Please open the informational dropdowns to the right (labeled with arrows). They
 
 1. **`Watch` -- shows current values for any expressions.**
 
-   You can click the plus `+` and input an expression. The debugger will show its value at any moment, automatically recalculating it in the process of execution.
+    You can click the plus `+` and input an expression. The debugger will show its value at any moment, automatically recalculating it in the process of execution.
 
 2. **`Call Stack` -- shows the nested calls chain.**
 
-   At the current moment the debugger is inside `hello()` call, called by a script in `index.html` (no function there, so it's called "anonymous").
+    At the current moment the debugger is inside `hello()` call, called by a script in `index.html` (no function there, so it's called "anonymous").
 
-   If you click on a stack item (e.g. "anonymous"), the debugger jumps to the corresponding code, and all its variables can be examined as well.
+    If you click on a stack item (e.g. "anonymous"), the debugger jumps to the corresponding code, and all its variables can be examined as well.
 
 3. **`Scope` -- current variables.**
 
-   `Local` shows local function variables. You can also see their values highlighted right over the source.
+    `Local` shows local function variables. You can also see their values highlighted right over the source.
 
-   `Global` has global variables (out of any functions).
+    `Global` has global variables (out of any functions).
 
-   There's also `this` keyword there that we didn't study yet, but we'll do that soon.
+    There's also `this` keyword there that we didn't study yet, but we'll do that soon.
 
 ## Tracing the execution
 
@@ -175,7 +175,7 @@ For instance, this outputs values from `0` to `4` to console:
 ```js run
 // open console to see
 for (let i = 0; i < 5; i++) {
-  console.log("value,", i);
+    console.log('value,', i);
 }
 ```
 

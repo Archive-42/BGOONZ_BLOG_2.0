@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/testing-mocha"
-- <a href="testing-mocha.html"
-- <a href="https://es.javascript.info/testing-mocha"
-- <a href="https://fr.javascript.info/testing-mocha"
-- <a href="https://it.javascript.info/testing-mocha"
-  testing-mocha"
+-   <a href="https://ar.javascript.info/testing-mocha"
+-   <a href="testing-mocha.html"
+-   <a href="https://es.javascript.info/testing-mocha"
+-   <a href="https://fr.javascript.info/testing-mocha"
+-   <a href="https://it.javascript.info/testing-mocha"
+    testing-mocha"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/testing-mocha"
-- <a href=testing-mocha"
-- <a href="https://tr.javascript.info/testing-mocha"
-  esting-mocha"
+-   <a href="https://ko.javascript.info/testing-mocha"
+-   <a href=testing-mocha"
+-   <a href="https://tr.javascript.info/testing-mocha"
+    esting-mocha"
 
 We want to make this open-source project available for people all around the world.
 
@@ -121,9 +121,9 @@ The first step is already complete: we have an initial spec for `pow`. Now, befo
 
 Here in the tutorial we’ll be using the following JavaScript libraries for tests:
 
-- [Mocha](http://mochajs.org/) – the core framework: it provides common testing functions including `describe` and `it` and the main function that runs tests.
-- [Chai](http://chaijs.com) – the library with many assertions. It allows to use a lot of different assertions, for now we need only `assert.equal`.
-- [Sinon](http://sinonjs.org/) – a library to spy over functions, emulate built-in functions and more, we’ll need it much later.
+-   [Mocha](http://mochajs.org/) – the core framework: it provides common testing functions including `describe` and `it` and the main function that runs tests.
+-   [Chai](http://chaijs.com) – the library with many assertions. It allows to use a lot of different assertions, for now we need only `assert.equal`.
+-   [Sinon](http://sinonjs.org/) – a library to spy over functions, emulate built-in functions and more, we’ll need it much later.
 
 These libraries are suitable for both in-browser and server-side testing. Here we’ll consider the browser variant.
 
@@ -387,12 +387,12 @@ Please note the assertion `assert.isNaN`: it checks for `NaN`.
 
 There are other assertions in [Chai](http://chaijs.com) as well, for instance:
 
-- `assert.equal(value1, value2)` – checks the equality `value1 == value2`.
-- `assert.strictEqual(value1, value2)` – checks the strict equality `value1 === value2`.
-- `assert.notEqual`, `assert.notStrictEqual` – inverse checks to the ones above.
-- `assert.isTrue(value)` – checks that `value === true`
-- `assert.isFalse(value)` – checks that `value === false`
-- …the full list is in the [docs](http://chaijs.com/api/assert/)
+-   `assert.equal(value1, value2)` – checks the equality `value1 == value2`.
+-   `assert.strictEqual(value1, value2)` – checks the strict equality `value1 === value2`.
+-   `assert.notEqual`, `assert.notStrictEqual` – inverse checks to the ones above.
+-   `assert.isTrue(value)` – checks that `value === true`
+-   `assert.isFalse(value)` – checks that `value === false`
+-   …the full list is in the [docs](http://chaijs.com/api/assert/)
 
 So we should add a couple of lines to `pow`:
 
@@ -532,32 +532,32 @@ Also we can isolate a single test and run it in standalone mode by writing `it.o
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="code-quality.html" class="sidebar__link">Code quality</a>
+-   <a href="code-quality.html" class="sidebar__link">Code quality</a>
 
 #### Lesson navigation
 
-- <a href="testing-mocha.html#why-do-we-need-tests" class="sidebar__link">Why do we need tests?</a>
-- <a href="testing-mocha.html#behavior-driven-development-bdd" class="sidebar__link">Behavior Driven Development (BDD)</a>
-- <a href="testing-mocha.html#development-of-pow-the-spec" class="sidebar__link">Development of “pow”: the spec</a>
-- <a href="testing-mocha.html#the-development-flow" class="sidebar__link">The development flow</a>
-- <a href="testing-mocha.html#the-spec-in-action" class="sidebar__link">The spec in action</a>
-- <a href="testing-mocha.html#initial-implementation" class="sidebar__link">Initial implementation</a>
-- <a href="testing-mocha.html#improving-the-spec" class="sidebar__link">Improving the spec</a>
-- <a href="testing-mocha.html#improving-the-implementation" class="sidebar__link">Improving the implementation</a>
-- <a href="testing-mocha.html#nested-describe" class="sidebar__link">Nested describe</a>
-- <a href="testing-mocha.html#extending-the-spec" class="sidebar__link">Extending the spec</a>
-- <a href="testing-mocha.html#summary" class="sidebar__link">Summary</a>
+-   <a href="testing-mocha.html#why-do-we-need-tests" class="sidebar__link">Why do we need tests?</a>
+-   <a href="testing-mocha.html#behavior-driven-development-bdd" class="sidebar__link">Behavior Driven Development (BDD)</a>
+-   <a href="testing-mocha.html#development-of-pow-the-spec" class="sidebar__link">Development of “pow”: the spec</a>
+-   <a href="testing-mocha.html#the-development-flow" class="sidebar__link">The development flow</a>
+-   <a href="testing-mocha.html#the-spec-in-action" class="sidebar__link">The spec in action</a>
+-   <a href="testing-mocha.html#initial-implementation" class="sidebar__link">Initial implementation</a>
+-   <a href="testing-mocha.html#improving-the-spec" class="sidebar__link">Improving the spec</a>
+-   <a href="testing-mocha.html#improving-the-implementation" class="sidebar__link">Improving the implementation</a>
+-   <a href="testing-mocha.html#nested-describe" class="sidebar__link">Nested describe</a>
+-   <a href="testing-mocha.html#extending-the-spec" class="sidebar__link">Extending the spec</a>
+-   <a href="testing-mocha.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="testing-mocha.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="testing-mocha.html#comments" class="sidebar__link">Comments</a>
+-   <a href="testing-mocha.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="testing-mocha.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -565,7 +565,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/03-code-quality/05-testing-mocha" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

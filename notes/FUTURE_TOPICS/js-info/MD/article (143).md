@@ -37,9 +37,9 @@ data: Message 3
 data: of two lines
 ```
 
-- A message text goes after `data:`, the space after the colon is optional.
-- Messages are delimited with double line breaks `\n\n`.
-- To send a line break `\n`, we can immediately send one more `data:` (3rd message above).
+-   A message text goes after `data:`, the space after the colon is optional.
+-   Messages are delimited with double line breaks `\n\n`.
+-   To send a line break `\n`, we can immediately send one more `data:` (3rd message above).
 
 In practice, complex messages are usually sent JSON-encoded. Line-breaks are encoded as `\n` within them, so multiline `data:` messages are not necessary.
 
@@ -54,11 +54,11 @@ data: {"user":"John","message":"First line*!*\n*/!* Second line"}
 For each such message, the `message` event is generated:
 
 ```js
-let eventSource = new EventSource("/events/subscribe");
+let eventSource = new EventSource('/events/subscribe');
 
 eventSource.onmessage = function (event) {
-  console.log("New message", event.data);
-  // will log 3 times for the data stream above
+    console.log('New message', event.data);
+    // will log 3 times for the data stream above
 };
 
 // or eventSource.addEventListener('message', ...)
@@ -69,7 +69,7 @@ eventSource.onmessage = function (event) {
 `EventSource` supports cross-origin requests, like `fetch` and any other networking methods. We can use any URL:
 
 ```js
-let source = new EventSource("https://another-site.com/events");
+let source = new EventSource('https://another-site.com/events');
 ```
 
 The remote server will get the `Origin` header and must respond with `Access-Control-Allow-Origin` to proceed.
@@ -77,8 +77,8 @@ The remote server will get the `Origin` header and must respond with `Access-Con
 To pass credentials, we should set the additional option `withCredentials`, like this:
 
 ```js
-let source = new EventSource("https://another-site.com/events", {
-  withCredentials: true,
+let source = new EventSource('https://another-site.com/events', {
+    withCredentials: true
 });
 ```
 
@@ -103,8 +103,8 @@ The `retry:` may come both together with some data, or as a standalone message.
 
 The browser should wait that many milliseconds before reconnecting. Or longer, e.g. if the browser knows (from OS) that there's no network connection at the moment, it may wait until the connection appears, and then retry.
 
-- If the server wants the browser to stop reconnecting, it should respond with HTTP status 204.
-- If the browser wants to close the connection, it should call `eventSource.close()`:
+-   If the server wants the browser to stop reconnecting, it should respond with HTTP status 204.
+-   If the browser wants to close the connection, it should call `eventSource.close()`:
 
 ```js
 let eventSource = new EventSource(...);
@@ -138,8 +138,8 @@ id: 3
 
 When a message with `id:` is received, the browser:
 
-- Sets the property `eventSource.lastEventId` to its value.
-- Upon reconnection sends the header `Last-Event-ID` with that `id`, so that the server may re-send following messages.
+-   Sets the property `eventSource.lastEventId` to its value.
+-   Upon reconnection sends the header `Last-Event-ID` with that `id`, so that the server may re-send following messages.
 
 ```smart header="Put `id:`after`data:`" Please note: the `id`is appended below message`data`by the server, to ensure that`lastEventId` is updated after the message is received.
 
@@ -163,9 +163,9 @@ We can query this property to know the state of `EventSource`.
 
 By default `EventSource` object generates three events:
 
-- `message` -- a message received, available as `event.data`.
-- `open` -- the connection is open.
-- `error` -- the connection could not be established, e.g. the server returned HTTP 500 status.
+-   `message` -- a message received, available as `event.data`.
+-   `open` -- the connection is open.
+-   `error` -- the connection could not be established, e.g. the server returned HTTP 500 status.
 
 The server may specify another type of event with `event: ...` at the event start.
 
@@ -184,16 +184,16 @@ data: Bob
 To handle custom events, we must use `addEventListener`, not `onmessage`:
 
 ```js
-eventSource.addEventListener("join", (event) => {
-  alert(`Joined ${event.data}`);
+eventSource.addEventListener('join', (event) => {
+    alert(`Joined ${event.data}`);
 });
 
-eventSource.addEventListener("message", (event) => {
-  alert(`Said: ${event.data}`);
+eventSource.addEventListener('message', (event) => {
+    alert(`Said: ${event.data}`);
 });
 
-eventSource.addEventListener("leave", (event) => {
-  alert(`Left ${event.data}`);
+eventSource.addEventListener('leave', (event) => {
+    alert(`Left ${event.data}`);
 });
 ```
 
@@ -211,9 +211,9 @@ Then the browser automatically reconnects.
 
 It offers:
 
-- Automatic reconnect, with tunable `retry` timeout.
-- Message ids to resume events, the last received identifier is sent in `Last-Event-ID` header upon reconnection.
-- The current state is in the `readyState` property.
+-   Automatic reconnect, with tunable `retry` timeout.
+-   Message ids to resume events, the last received identifier is sent in `Last-Event-ID` header upon reconnection.
+-   The current state is in the `readyState` property.
 
 That makes `EventSource` a viable alternative to `WebSocket`, as the latter is more low-level and lacks such built-in features (though they can be implemented).
 
@@ -263,9 +263,9 @@ The server sends messages, delimited by `\n\n`.
 
 A message may have following fields:
 
-- `data:` -- message body, a sequence of multiple `data` is interpreted as a single message, with `\n` between the parts.
-- `id:` -- renews `lastEventId`, sent in `Last-Event-ID` on reconnect.
-- `retry:` -- recommends a retry delay for reconnections in ms. There's no way to set it from JavaScript.
-- `event:` -- event name, must precede `data:`.
+-   `data:` -- message body, a sequence of multiple `data` is interpreted as a single message, with `\n` between the parts.
+-   `id:` -- renews `lastEventId`, sent in `Last-Event-ID` on reconnect.
+-   `retry:` -- recommends a retry delay for reconnections in ms. There's no way to set it from JavaScript.
+-   `event:` -- event name, must precede `data:`.
 
 A message may include one or more fields in any order, but `id:` usually goes the last.

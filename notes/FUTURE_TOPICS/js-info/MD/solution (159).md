@@ -4,11 +4,11 @@ Try it:
 
 ```js run
 let user = {
-  name: "John",
-  go: function() { alert(this.name) }
-}
-
-(user.go)() // error!
+    name: 'John',
+    go: function () {
+        alert(this.name);
+    }
+}(user.go)(); // error!
 ```
 
 The error message in most browsers does not give us much of a clue about what went wrong.

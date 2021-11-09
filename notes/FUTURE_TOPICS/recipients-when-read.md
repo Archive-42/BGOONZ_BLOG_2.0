@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="recipients-when-read.html"
-  /recipients-when-read"
-  /recipients-when-read"
-  recipients-when-readrecipients-when-read"
+-   <a href="recipients-when-read.html"
+    /recipients-when-read"
+    /recipients-when-read"
+    recipients-when-readrecipients-when-read"
 
 <!-- -->
 
 recipients-when-read"
 recipients-when-read"
 
-- <a href="https://tr.javascript.info/"
-  recipients-when-read"
+-   <a href="https://tr.javascript.info/"
+    recipients-when-read"
 
 We want to make this open-source project available for people all around the world.
 

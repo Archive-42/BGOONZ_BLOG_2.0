@@ -1,4 +1,3 @@
-
 # Error handling with promises
 
 Promise chains are great at error handling. When a promise rejects, the control jumps to the closest rejection handler. That's very convenient in practice.
@@ -107,14 +106,12 @@ In the example below the `.catch` successfully handles the error:
 ```js run
 // the execution: catch -> then
 new Promise((resolve, reject) => {
-
-  throw new Error("Whoops!");
-
-}).catch(function(error) {
-
-  alert("The error is handled, continue normally");
-
-}).then(() => alert("Next successful handler runs"));
+    throw new Error('Whoops!');
+})
+    .catch(function (error) {
+        alert('The error is handled, continue normally');
+    })
+    .then(() => alert('Next successful handler runs'));
 ```
 
 Here the `.catch` block finishes normally. So the next successful `.then` handler is called.
@@ -156,12 +153,11 @@ The execution jumps from the first `.catch` `(*)` to the next one `(**)` down th
 What happens when an error is not handled? For instance, we forgot to append `.catch` to the end of the chain, like here:
 
 ```js untrusted run refresh
-new Promise(function() {
-  noSuchFunction(); // Error here (no such function)
-})
-  .then(() => {
+new Promise(function () {
+    noSuchFunction(); // Error here (no such function)
+}).then(() => {
     // successful promise handlers, one or more
-  }); // without .catch at the end!
+}); // without .catch at the end!
 ```
 
 In case of an error, the promise becomes rejected, and the execution should jump to the closest rejection handler. But there is none. So the error gets "stuck". There's no code to handle it.
@@ -198,7 +194,7 @@ In non-browser environments like Node.js there are other ways to track unhandled
 
 ## Summary
 
-- `.catch` handles errors in promises of all kinds: be it a `reject()` call, or an error thrown in a handler.
-- We should place `.catch` exactly in places where we want to handle errors and know how to handle them. The handler should analyze errors (custom error classes help) and rethrow unknown ones (maybe they are programming mistakes).
-- It's ok not to use `.catch` at all, if there's no way to recover from an error.
-- In any case we should have the `unhandledrejection` event handler (for browsers, and analogs for other environments) to track unhandled errors and inform the user (and probably our server) about them, so that our app never "just dies".
+-   `.catch` handles errors in promises of all kinds: be it a `reject()` call, or an error thrown in a handler.
+-   We should place `.catch` exactly in places where we want to handle errors and know how to handle them. The handler should analyze errors (custom error classes help) and rethrow unknown ones (maybe they are programming mistakes).
+-   It's ok not to use `.catch` at all, if there's no way to recover from an error.
+-   In any case we should have the `unhandledrejection` event handler (for browsers, and analogs for other environments) to track unhandled errors and inform the user (and probably our server) about them, so that our app never "just dies".

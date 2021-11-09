@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/js"
-- <a href="js.html"
-- <a href="https://es.javascript.info/js"
-- <a href="https://fr.javascript.info/js"
-- <a href="https://it.javascript.info/js"
-  js"
+-   <a href="https://ar.javascript.info/js"
+-   <a href="js.html"
+-   <a href="https://es.javascript.info/js"
+-   <a href="https://fr.javascript.info/js"
+-   <a href="https://it.javascript.info/js"
+    js"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/js"
-- <a href=js"
-- <a href="https://tr.javascript.info/js"
-- <a href="https://zh.javascript.info/js"
+-   <a href="https://ko.javascript.info/js"
+-   <a href=js"
+-   <a href="https://tr.javascript.info/js"
+-   <a href="https://zh.javascript.info/js"
 
 We want to make this open-source project available for people all around the world.
 
@@ -65,15 +65,15 @@ We concentrate on the language itself here, with the minimum of environment-spec
 
 #### Sibling chapters
 
-- <a href="js.html" class="sidebar__link">The JavaScript language</a>
-- <a href="ui.html" class="sidebar__link">Browser: Document, Events, Interfaces</a>
-- <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
-- <a href="binary.html" class="sidebar__link">Binary data, files</a>
-- <a href="network.html" class="sidebar__link">Network requests</a>
-- <a href="data-storage.html" class="sidebar__link">Storing data in the browser</a>
-- <a href="animation.html" class="sidebar__link">Animation</a>
-- <a href="web-components.html" class="sidebar__link">Web components</a>
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="js.html" class="sidebar__link">The JavaScript language</a>
+-   <a href="ui.html" class="sidebar__link">Browser: Document, Events, Interfaces</a>
+-   <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
+-   <a href="binary.html" class="sidebar__link">Binary data, files</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="data-storage.html" class="sidebar__link">Storing data in the browser</a>
+-   <a href="animation.html" class="sidebar__link">Animation</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 Share
 
@@ -81,7 +81,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

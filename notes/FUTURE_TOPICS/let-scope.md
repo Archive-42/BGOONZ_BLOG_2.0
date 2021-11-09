@@ -1,16 +1,16 @@
 let-scope"
 
-- <a href="let-scope.html"
-  /let-scope"
-  /let-scope"
-- <a href="https://it.javascript.info/let-scope"
+-   <a href="let-scope.html"
+    /let-scope"
+    /let-scope"
+-   <a href="https://it.javascript.info/let-scope"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href="
-- <a href="https://tr.javascript.info/"
-  let-scope"
+-   <a href="https://ko.javascript.info/"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+    let-scope"
 
 We want to make this open-source project available for people all around the world.
 

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/optional-chaining"
-- <a href="optional-chaining.html"
-- <a href="https://es.javascript.info/optional-chaining"
-- <a href="https://fr.javascript.info/optional-chaining"
-- <a href="https://it.javascript.info/optional-chaining"
-  optional-chaining"
+-   <a href="https://ar.javascript.info/optional-chaining"
+-   <a href="optional-chaining.html"
+-   <a href="https://es.javascript.info/optional-chaining"
+-   <a href="https://fr.javascript.info/optional-chaining"
+-   <a href="https://it.javascript.info/optional-chaining"
+    optional-chaining"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/optional-chaining"
-- <a href=optional-chaining"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/optional-chaining"
+-   <a href="https://ko.javascript.info/optional-chaining"
+-   <a href=optional-chaining"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/optional-chaining"
 
 We want to make this open-source project available for people all around the world.
 
@@ -120,8 +120,8 @@ The optional chaining `?.` stops the evaluation if the value before `?.` is `und
 
 In other words, `value?.prop`:
 
-- works as `value.prop`, if `value` exists,
-- otherwise (when `value` is `undefined/null`) it returns `undefined`.
+-   works as `value.prop`, if `value` exists,
+-   otherwise (when `value` is `undefined/null`) it returns `undefined`.
 
 Here’s the safe way to access `user.address.street` using `?.`:
 
@@ -276,25 +276,25 @@ Still, we should apply `?.` carefully, only where it’s acceptable that the lef
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
 
 #### Lesson navigation
 
-- <a href="optional-chaining.html#the-non-existing-property-problem" class="sidebar__link">The “non-existing property” problem</a>
-- <a href="optional-chaining.html#optional-chaining" class="sidebar__link">Optional chaining</a>
-- <a href="optional-chaining.html#short-circuiting" class="sidebar__link">Short-circuiting</a>
-- <a href="optional-chaining.html#other-variants" class="sidebar__link">Other variants: ?.(), ?.[]</a>
-- <a href="optional-chaining.html#summary" class="sidebar__link">Summary</a>
+-   <a href="optional-chaining.html#the-non-existing-property-problem" class="sidebar__link">The “non-existing property” problem</a>
+-   <a href="optional-chaining.html#optional-chaining" class="sidebar__link">Optional chaining</a>
+-   <a href="optional-chaining.html#short-circuiting" class="sidebar__link">Short-circuiting</a>
+-   <a href="optional-chaining.html#other-variants" class="sidebar__link">Other variants: ?.(), ?.[]</a>
+-   <a href="optional-chaining.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="optional-chaining.html#comments" class="sidebar__link">Comments</a>
+-   <a href="optional-chaining.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -302,7 +302,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/04-object-basics/07-optional-chaining" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="mutation-observer.html"
-- <a href="https://es.javascript.info/mutation-observer"
-- <a href="https://fr.javascript.info/mutation-observer"
-- <a href="https://it.javascript.info/mutation-observer"
-  mutation-observer"
+-   <a href="https://ar.javascript.info/"
+-   <a href="mutation-observer.html"
+-   <a href="https://es.javascript.info/mutation-observer"
+-   <a href="https://fr.javascript.info/mutation-observer"
+-   <a href="https://it.javascript.info/mutation-observer"
+    mutation-observer"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=mutation-observer"
-- <a href="https://tr.javascript.info/mutation-observer"
-- <a href="https://zh.javascript.info/mutation-observer"
+-   <a href="https://ko.javascript.info/"
+-   <a href=mutation-observer"
+-   <a href="https://tr.javascript.info/mutation-observer"
+-   <a href="https://zh.javascript.info/mutation-observer"
 
 We want to make this open-source project available for people all around the world.
 
@@ -58,30 +58,30 @@ And then attach it to a DOM node:
 
 `config` is an object with boolean options “what kind of changes to react on”:
 
-- `childList` – changes in the direct children of `node`,
-- `subtree` – in all descendants of `node`,
-- `attributes` – attributes of `node`,
-- `attributeFilter` – an array of attribute names, to observe only selected ones.
-- `characterData` – whether to observe `node.data` (text content),
+-   `childList` – changes in the direct children of `node`,
+-   `subtree` – in all descendants of `node`,
+-   `attributes` – attributes of `node`,
+-   `attributeFilter` – an array of attribute names, to observe only selected ones.
+-   `characterData` – whether to observe `node.data` (text content),
 
 Few other options:
 
-- `attributeOldValue` – if `true`, pass both the old and the new value of attribute to callback (see below), otherwise only the new one (needs `attributes` option),
-- `characterDataOldValue` – if `true`, pass both the old and the new value of `node.data` to callback (see below), otherwise only the new one (needs `characterData` option).
+-   `attributeOldValue` – if `true`, pass both the old and the new value of attribute to callback (see below), otherwise only the new one (needs `attributes` option),
+-   `characterDataOldValue` – if `true`, pass both the old and the new value of `node.data` to callback (see below), otherwise only the new one (needs `characterData` option).
 
 Then after any changes, the `callback` is executed: changes are passed in the first argument as a list of [MutationRecord](https://dom.spec.whatwg.org/#mutationrecord) objects, and the observer itself as the second argument.
 
 [MutationRecord](https://dom.spec.whatwg.org/#mutationrecord) objects have properties:
 
-- `type` – mutation type, one of
-  - `"attributes"`: attribute modified
-  - `"characterData"`: data modified, used for text nodes,
-  - `"childList"`: child elements added/removed,
-- `target` – where the change occurred: an element for `"attributes"`, or text node for `"characterData"`, or an element for a `"childList"` mutation,
-- `addedNodes/removedNodes` – nodes that were added/removed,
-- `previousSibling/nextSibling` – the previous and next sibling to added/removed nodes,
-- `attributeName/attributeNamespace` – the name/namespace (for XML) of the changed attribute,
-- `oldValue` – the previous value, only for attribute or text changes, if the corresponding option is set `attributeOldValue`/`characterDataOldValue`.
+-   `type` – mutation type, one of
+    -   `"attributes"`: attribute modified
+    -   `"characterData"`: data modified, used for text nodes,
+    -   `"childList"`: child elements added/removed,
+-   `target` – where the change occurred: an element for `"attributes"`, or text node for `"characterData"`, or an element for a `"childList"` mutation,
+-   `addedNodes/removedNodes` – nodes that were added/removed,
+-   `previousSibling/nextSibling` – the previous and next sibling to added/removed nodes,
+-   `attributeName/attributeNamespace` – the name/namespace (for XML) of the changed attribute,
+-   `oldValue` – the previous value, only for attribute or text changes, if the corresponding option is set `attributeOldValue`/`characterDataOldValue`.
 
 For example, here’s a `<div>` with a `contentEditable` attribute. That attribute allows us to focus on it and edit.
 
@@ -261,11 +261,11 @@ Now we have `MutationObserver` that can track all highlighting in observed eleme
 
 There’s a method to stop observing the node:
 
-- `observer.disconnect()` – stops the observation.
+-   `observer.disconnect()` – stops the observation.
 
 When we stop the observing, it might be possible that some changes were not yet processed by the observer. In such cases, we use
 
-- `observer.takeRecords()` – gets a list of unprocessed mutation records – those that happened, but the callback has not handled them.
+-   `observer.takeRecords()` – gets a list of unprocessed mutation records – those that happened, but the callback has not handled them.
 
 These methods can be used together, like this:
 
@@ -306,25 +306,25 @@ We can use it to track changes introduced by other parts of our code, as well as
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="ui-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="ui-misc.html" class="sidebar__link">Miscellaneous</a>
 
 #### Lesson navigation
 
-- <a href="mutation-observer.html#syntax" class="sidebar__link">Syntax</a>
-- <a href="mutation-observer.html#usage-for-integration" class="sidebar__link">Usage for integration</a>
-- <a href="mutation-observer.html#usage-for-architecture" class="sidebar__link">Usage for architecture</a>
-- <a href="mutation-observer.html#additional-methods" class="sidebar__link">Additional methods</a>
-- <a href="mutation-observer.html#summary" class="sidebar__link">Summary</a>
+-   <a href="mutation-observer.html#syntax" class="sidebar__link">Syntax</a>
+-   <a href="mutation-observer.html#usage-for-integration" class="sidebar__link">Usage for integration</a>
+-   <a href="mutation-observer.html#usage-for-architecture" class="sidebar__link">Usage for architecture</a>
+-   <a href="mutation-observer.html#additional-methods" class="sidebar__link">Additional methods</a>
+-   <a href="mutation-observer.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="mutation-observer.html#comments" class="sidebar__link">Comments</a>
+-   <a href="mutation-observer.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -332,7 +332,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/99-ui-misc/01-mutation-observer" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

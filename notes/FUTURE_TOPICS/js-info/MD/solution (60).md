@@ -17,11 +17,10 @@ Here's the 2nd variant:
 
 ```js run demo
 function ucFirst(str) {
-  if (!str) return str;
+    if (!str) return str;
 
-  return str[0].toUpperCase() + str.slice(1);
+    return str[0].toUpperCase() + str.slice(1);
 }
 
-alert( ucFirst("john") ); // John
+alert(ucFirst('john')); // John
 ```
-

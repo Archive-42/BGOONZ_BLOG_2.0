@@ -7,7 +7,7 @@ Although, if we try it now, we may notice one more "extra" result:
 ```js run
 let regexp = /(?<!-)\d+/g;
 
-let str = "0 12 -5 123 -18";
+let str = '0 12 -5 123 -18';
 
 console.log(str.match(regexp)); // 0, 12, 123, *!*8*/!*
 ```
@@ -21,7 +21,7 @@ We can also join them into a single lookbehind here:
 ```js run
 let regexp = /(?<![-\d])\d+/g;
 
-let str = "0 12 -5 123 -18";
+let str = '0 12 -5 123 -18';
 
 alert(str.match(regexp)); // 0, 12, 123
 ```

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/symbol"
-- <a href="symbol.html"
-- <a href="https://es.javascript.info/symbol"
-- <a href="https://fr.javascript.info/symbol"
-- <a href="https://it.javascript.info/symbol"
-  symbol"
+-   <a href="https://ar.javascript.info/symbol"
+-   <a href="symbol.html"
+-   <a href="https://es.javascript.info/symbol"
+-   <a href="https://fr.javascript.info/symbol"
+-   <a href="https://it.javascript.info/symbol"
+    symbol"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/symbol"
-- <a href=symbol"
-- <a href="https://tr.javascript.info/symbol"
-- <a href="https://zh.javascript.info/symbol"
+-   <a href="https://ko.javascript.info/symbol"
+-   <a href=symbol"
+-   <a href="https://tr.javascript.info/symbol"
+-   <a href="https://zh.javascript.info/symbol"
 
 We want to make this open-source project available for people all around the world.
 
@@ -274,11 +274,11 @@ There exist many “system” symbols that JavaScript uses internally, and we ca
 
 They are listed in the specification in the [Well-known symbols](https://tc39.github.io/ecma262/#sec-well-known-symbols) table:
 
-- `Symbol.hasInstance`
-- `Symbol.isConcatSpreadable`
-- `Symbol.iterator`
-- `Symbol.toPrimitive`
-- …and so on.
+-   `Symbol.hasInstance`
+-   `Symbol.isConcatSpreadable`
+-   `Symbol.iterator`
+-   `Symbol.toPrimitive`
+-   …and so on.
 
 For instance, `Symbol.toPrimitive` allows us to describe object to primitive conversion. We’ll see its use very soon.
 
@@ -312,25 +312,25 @@ Technically, symbols are not 100% hidden. There is a built-in method [Object.get
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
 
 #### Lesson navigation
 
-- <a href="symbol.html#symbols" class="sidebar__link">Symbols</a>
-- <a href="symbol.html#hidden-properties" class="sidebar__link">“Hidden” properties</a>
-- <a href="symbol.html#global-symbols" class="sidebar__link">Global symbols</a>
-- <a href="symbol.html#system-symbols" class="sidebar__link">System symbols</a>
-- <a href="symbol.html#summary" class="sidebar__link">Summary</a>
+-   <a href="symbol.html#symbols" class="sidebar__link">Symbols</a>
+-   <a href="symbol.html#hidden-properties" class="sidebar__link">“Hidden” properties</a>
+-   <a href="symbol.html#global-symbols" class="sidebar__link">Global symbols</a>
+-   <a href="symbol.html#system-symbols" class="sidebar__link">System symbols</a>
+-   <a href="symbol.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="symbol.html#comments" class="sidebar__link">Comments</a>
+-   <a href="symbol.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -338,7 +338,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/04-object-basics/08-symbol" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

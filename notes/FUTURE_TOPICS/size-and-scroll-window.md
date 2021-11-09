@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/size-and-scroll-window"
-- <a href="size-and-scroll-window.html"
-- <a href="https://es.javascript.info/size-and-scroll-window"
-- <a href="https://fr.javascript.info/size-and-scroll-window"
-- <a href="https://it.javascript.info/size-and-scroll-window"
-  size-and-scroll-window"
+-   <a href="https://ar.javascript.info/size-and-scroll-window"
+-   <a href="size-and-scroll-window.html"
+-   <a href="https://es.javascript.info/size-and-scroll-window"
+-   <a href="https://fr.javascript.info/size-and-scroll-window"
+-   <a href="https://it.javascript.info/size-and-scroll-window"
+    size-and-scroll-window"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/size-and-scroll-window"
-- <a href=size-and-scroll-window"
-- <a href="https://tr.javascript.info/size-and-scroll-window"
-- <a href="https://zh.javascript.info/size-and-scroll-window"
+-   <a href="https://ko.javascript.info/size-and-scroll-window"
+-   <a href=size-and-scroll-window"
+-   <a href="https://tr.javascript.info/size-and-scroll-window"
+-   <a href="https://zh.javascript.info/size-and-scroll-window"
 
 We want to make this open-source project available for people all around the world.
 
@@ -115,8 +115,8 @@ These properties are read-only.
 
 For historical reasons, both properties exist, but they are the same:
 
-- `window.pageXOffset` is an alias of `window.scrollX`.
-- `window.pageYOffset` is an alias of `window.scrollY`.
+-   `window.pageXOffset` is an alias of `window.scrollX`.
+-   `window.pageYOffset` is an alias of `window.scrollY`.
 
 ## <a href="size-and-scroll-window.html#window-scroll" id="window-scroll" class="main__anchor">Scrolling: scrollTo, scrollBy, scrollIntoView</a>
 
@@ -132,17 +132,17 @@ We can do the same for the page using `document.documentElement.scrollTop/scroll
 
 Alternatively, there’s a simpler, universal solution: special methods [window.scrollBy(x,y)](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollBy) and [window.scrollTo(pageX,pageY)](https://developer.mozilla.org/en-US/docs/Web/API/Window/scrollTo).
 
-- The method `scrollBy(x,y)` scrolls the page _relative to its current position_. For instance, `scrollBy(0,10)` scrolls the page `10px` down.
+-   The method `scrollBy(x,y)` scrolls the page _relative to its current position_. For instance, `scrollBy(0,10)` scrolls the page `10px` down.
 
-  The button below demonstrates this:
+    The button below demonstrates this:
 
-  window.scrollBy(0,10)
+    window.scrollBy(0,10)
 
-- The method `scrollTo(pageX,pageY)` scrolls the page _to absolute coordinates_, so that the top-left corner of the visible part has coordinates `(pageX, pageY)` relative to the document’s top-left corner. It’s like setting `scrollLeft/scrollTop`.
+-   The method `scrollTo(pageX,pageY)` scrolls the page _to absolute coordinates_, so that the top-left corner of the visible part has coordinates `(pageX, pageY)` relative to the document’s top-left corner. It’s like setting `scrollLeft/scrollTop`.
 
-  To scroll to the very beginning, we can use `scrollTo(0,0)`.
+    To scroll to the very beginning, we can use `scrollTo(0,0)`.
 
-  window.scrollTo(0,0)
+    window.scrollTo(0,0)
 
 These methods work for all browsers the same way.
 
@@ -152,8 +152,8 @@ For completeness, let’s cover one more method: [elem.scrollIntoView(top)](http
 
 The call to `elem.scrollIntoView(top)` scrolls the page to make `elem` visible. It has one argument:
 
-- If `top=true` (that’s the default), then the page will be scrolled to make `elem` appear on the top of the window. The upper edge of the element will be aligned with the window top.
-- If `top=false`, then the page scrolls to make `elem` appear at the bottom. The bottom edge of the element will be aligned with the window bottom.
+-   If `top=true` (that’s the default), then the page will be scrolled to make `elem` appear on the top of the window. The upper edge of the element will be aligned with the window top.
+-   If `top=false`, then the page scrolls to make `elem` appear at the bottom. The bottom edge of the element will be aligned with the window bottom.
 
 The button below scrolls the page to position itself at the window top:
 
@@ -187,25 +187,25 @@ That looks a bit odd, but can be worked around if we compare `clientWidth` befor
 
 Geometry:
 
-- Width/height of the visible part of the document (content area width/height): `document.documentElement.clientWidth/clientHeight`
+-   Width/height of the visible part of the document (content area width/height): `document.documentElement.clientWidth/clientHeight`
 
-- Width/height of the whole document, with the scrolled out part:
+-   Width/height of the whole document, with the scrolled out part:
 
-      let scrollHeight = Math.max(
-        document.body.scrollHeight, document.documentElement.scrollHeight,
-        document.body.offsetHeight, document.documentElement.offsetHeight,
-        document.body.clientHeight, document.documentElement.clientHeight
-      );
+        let scrollHeight = Math.max(
+          document.body.scrollHeight, document.documentElement.scrollHeight,
+          document.body.offsetHeight, document.documentElement.offsetHeight,
+          document.body.clientHeight, document.documentElement.clientHeight
+        );
 
 Scrolling:
 
-- Read the current scroll: `window.pageYOffset/pageXOffset`.
+-   Read the current scroll: `window.pageYOffset/pageXOffset`.
 
-- Change the current scroll:
+-   Change the current scroll:
 
-  - `window.scrollTo(pageX,pageY)` – absolute coordinates,
-  - `window.scrollBy(x,y)` – scroll relative the current place,
-  - `elem.scrollIntoView(top)` – scroll to make `elem` visible (align with the top/bottom of the window).
+    -   `window.scrollTo(pageX,pageY)` – absolute coordinates,
+    -   `window.scrollBy(x,y)` – scroll relative the current place,
+    -   `elem.scrollIntoView(top)` – scroll to make `elem` visible (align with the top/bottom of the window).
 
 <a href="size-and-scroll.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="coordinates.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -217,27 +217,27 @@ Scrolling:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
-- <a href="size-and-scroll-window.html#width-height-of-the-window" class="sidebar__link">Width/height of the window</a>
-- <a href="size-and-scroll-window.html#width-height-of-the-document" class="sidebar__link">Width/height of the document</a>
-- <a href="size-and-scroll-window.html#page-scroll" class="sidebar__link">Get the current scroll</a>
-- <a href="size-and-scroll-window.html#window-scroll" class="sidebar__link">Scrolling: scrollTo, scrollBy, scrollIntoView</a>
-- <a href="size-and-scroll-window.html#scrollintoview" class="sidebar__link">scrollIntoView</a>
-- <a href="size-and-scroll-window.html#forbid-the-scrolling" class="sidebar__link">Forbid the scrolling</a>
-- <a href="size-and-scroll-window.html#summary" class="sidebar__link">Summary</a>
+-   <a href="size-and-scroll-window.html#width-height-of-the-window" class="sidebar__link">Width/height of the window</a>
+-   <a href="size-and-scroll-window.html#width-height-of-the-document" class="sidebar__link">Width/height of the document</a>
+-   <a href="size-and-scroll-window.html#page-scroll" class="sidebar__link">Get the current scroll</a>
+-   <a href="size-and-scroll-window.html#window-scroll" class="sidebar__link">Scrolling: scrollTo, scrollBy, scrollIntoView</a>
+-   <a href="size-and-scroll-window.html#scrollintoview" class="sidebar__link">scrollIntoView</a>
+-   <a href="size-and-scroll-window.html#forbid-the-scrolling" class="sidebar__link">Forbid the scrolling</a>
+-   <a href="size-and-scroll-window.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="size-and-scroll-window.html#comments" class="sidebar__link">Comments</a>
+-   <a href="size-and-scroll-window.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -245,7 +245,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/10-size-and-scroll-window" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

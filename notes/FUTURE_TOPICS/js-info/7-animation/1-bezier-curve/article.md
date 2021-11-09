@@ -29,7 +29,7 @@ If you look closely at these curves, you can immediately notice:
    For two points we have a linear curve (that's a straight line), for three points -- quadratic curve (parabolic), for four points -- cubic curve.
 3. **A curve is always inside the [convex hull](https://en.wikipedia.org/wiki/Convex_hull) of control points:**
 
-   ![](bezier4-e.svg) ![](bezier3-e.svg)
+    ![](bezier4-e.svg) ![](bezier3-e.svg)
 
 Because of that last property, in computer graphics it's possible to optimize intersection tests. If convex hulls do not intersect, then curves do not either. So checking for the convex hulls intersection first can give a very fast "no intersection" result. Checking the intersection of convex hulls is much easier, because they are rectangles, triangles and so on (see the picture above), much simpler figures than the curve.
 
@@ -66,13 +66,13 @@ Control points (1,2 and 3) can be moved by the mouse. Press the "play" button to
 2. Build segments between control points 1 -> 2 -> 3. In the demo above they are <span style="color:#825E28">brown</span>.
 3. The parameter `t` moves from `0` to `1`. In the example above the step `0.05` is used: the loop goes over `0, 0.05, 0.1, 0.15, ... 0.95, 1`.
 
-   For each of these values of `t`:
+    For each of these values of `t`:
 
-   - On each <span style="color:#825E28">brown</span> segment we take a point located on the distance proportional to `t` from its beginning. As there are two segments, we have two points.
+    - On each <span style="color:#825E28">brown</span> segment we take a point located on the distance proportional to `t` from its beginning. As there are two segments, we have two points.
 
-     For instance, for `t=0` -- both points will be at the beginning of segments, and for `t=0.25` -- on the 25% of segment length from the beginning, for `t=0.5` -- 50%(the middle), for `t=1` -- in the end of segments.
+        For instance, for `t=0` -- both points will be at the beginning of segments, and for `t=0.25` -- on the 25% of segment length from the beginning, for `t=0.5` -- 50%(the middle), for `t=1` -- in the end of segments.
 
-   - Connect the points. On the picture below the connecting segment is painted <span style="color:#167490">blue</span>.
+    - Connect the points. On the picture below the connecting segment is painted <span style="color:#167490">blue</span>.
 
 | For `t=0.25`           | For `t=0.5`            |
 | ---------------------- | ---------------------- |
@@ -90,12 +90,12 @@ The demo for 4 points (points can be moved by a mouse):
 
 The algorithm for 4 points:
 
-- Connect control points by segments: 1 -> 2, 2 -> 3, 3 -> 4. There will be 3 <span style="color:#825E28">brown</span> segments.
-- For each `t` in the interval from `0` to `1`:
-  - We take points on these segments on the distance proportional to `t` from the beginning. These points are connected, so that we have two <span style="color:#0A0">green segments</span>.
-  - On these segments we take points proportional to `t`. We get one <span style="color:#167490">blue segment</span>.
-  - On the blue segment we take a point proportional to `t`. On the example above it's <span style="color:red">red</span>.
-- These points together form the curve.
+-   Connect control points by segments: 1 -> 2, 2 -> 3, 3 -> 4. There will be 3 <span style="color:#825E28">brown</span> segments.
+-   For each `t` in the interval from `0` to `1`:
+    -   We take points on these segments on the distance proportional to `t` from the beginning. These points are connected, so that we have two <span style="color:#0A0">green segments</span>.
+    -   On these segments we take points proportional to `t`. We get one <span style="color:#167490">blue segment</span>.
+    -   On the blue segment we take a point proportional to `t`. On the example above it's <span style="color:red">red</span>.
+-   These points together form the curve.
 
 The algorithm is recursive and can be generalized for any number of control points.
 
@@ -150,31 +150,31 @@ As we saw -- there's actually no need to know it, most people just draw the curv
 
 Given the coordinates of control points <code>P<sub>i</sub></code>: the first control point has coordinates <code>P<sub>1</sub> = (x<sub>1</sub>, y<sub>1</sub>)</code>, the second: <code>P<sub>2</sub> = (x<sub>2</sub>, y<sub>2</sub>)</code>, and so on, the curve coordinates are described by the equation that depends on the parameter `t` from the segment `[0,1]`.
 
-- The formula for a 2-points curve:
+-   The formula for a 2-points curve:
 
-  <code>P = (1-t)P<sub>1</sub> + tP<sub>2</sub></code>
+    <code>P = (1-t)P<sub>1</sub> + tP<sub>2</sub></code>
 
-- For 3 control points:
+-   For 3 control points:
 
-  <code>P = (1−t)<sup>2</sup>P<sub>1</sub> + 2(1−t)tP<sub>2</sub> + t<sup>2</sup>P<sub>3</sub></code>
+    <code>P = (1−t)<sup>2</sup>P<sub>1</sub> + 2(1−t)tP<sub>2</sub> + t<sup>2</sup>P<sub>3</sub></code>
 
-- For 4 control points:
+-   For 4 control points:
 
-  <code>P = (1−t)<sup>3</sup>P<sub>1</sub> + 3(1−t)<sup>2</sup>tP<sub>2</sub> +3(1−t)t<sup>2</sup>P<sub>3</sub> + t<sup>3</sup>P<sub>4</sub></code>
+    <code>P = (1−t)<sup>3</sup>P<sub>1</sub> + 3(1−t)<sup>2</sup>tP<sub>2</sub> +3(1−t)t<sup>2</sup>P<sub>3</sub> + t<sup>3</sup>P<sub>4</sub></code>
 
 These are vector equations. In other words, we can put `x` and `y` instead of `P` to get corresponding coordinates.
 
 For instance, the 3-point curve is formed by points `(x,y)` calculated as:
 
-- <code>x = (1−t)<sup>2</sup>x<sub>1</sub> + 2(1−t)tx<sub>2</sub> + t<sup>2</sup>x<sub>3</sub></code>
-- <code>y = (1−t)<sup>2</sup>y<sub>1</sub> + 2(1−t)ty<sub>2</sub> + t<sup>2</sup>y<sub>3</sub></code>
+-   <code>x = (1−t)<sup>2</sup>x<sub>1</sub> + 2(1−t)tx<sub>2</sub> + t<sup>2</sup>x<sub>3</sub></code>
+-   <code>y = (1−t)<sup>2</sup>y<sub>1</sub> + 2(1−t)ty<sub>2</sub> + t<sup>2</sup>y<sub>3</sub></code>
 
 Instead of <code>x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, x<sub>3</sub>, y<sub>3</sub></code> we should put coordinates of 3 control points, and then as `t` moves from `0` to `1`, for each value of `t` we'll have `(x,y)` of the curve.
 
 For instance, if control points are `(0,0)`, `(0.5, 1)` and `(1, 0)`, the equations become:
 
-- <code>x = (1−t)<sup>2</sup> _ 0 + 2(1−t)t _ 0.5 + t<sup>2</sup> \* 1 = (1-t)t + t<sup>2</sup> = t</code>
-- <code>y = (1−t)<sup>2</sup> _ 0 + 2(1−t)t _ 1 + t<sup>2</sup> \* 0 = 2(1-t)t = –2t<sup>2</sup> + 2t</code>
+-   <code>x = (1−t)<sup>2</sup> _ 0 + 2(1−t)t _ 0.5 + t<sup>2</sup> \* 1 = (1-t)t + t<sup>2</sup> = t</code>
+-   <code>y = (1−t)<sup>2</sup> _ 0 + 2(1−t)t _ 1 + t<sup>2</sup> \* 0 = 2(1-t)t = –2t<sup>2</sup> + 2t</code>
 
 Now as `t` runs from `0` to `1`, the set of values `(x,y)` for each `t` forms the curve for such control points.
 
@@ -189,11 +189,11 @@ We saw two definitions of Bezier curves:
 
 Good properties of Bezier curves:
 
-- We can draw smooth lines with a mouse by moving control points.
-- Complex shapes can be made of several Bezier curves.
+-   We can draw smooth lines with a mouse by moving control points.
+-   Complex shapes can be made of several Bezier curves.
 
 Usage:
 
-- In computer graphics, modeling, vector graphic editors. Fonts are described by Bezier curves.
-- In web development -- for graphics on Canvas and in the SVG format. By the way, "live" examples above are written in SVG. They are actually a single SVG document that is given different points as parameters. You can open it in a separate window and see the source: [demo.svg](demo.svg?p=0,0,1,0.5,0,0.5,1,1&animate=1).
-- In CSS animation to describe the path and speed of animation.
+-   In computer graphics, modeling, vector graphic editors. Fonts are described by Bezier curves.
+-   In web development -- for graphics on Canvas and in the SVG format. By the way, "live" examples above are written in SVG. They are actually a single SVG document that is given different points as parameters. You can open it in a separate window and see the source: [demo.svg](demo.svg?p=0,0,1,0.5,0,0.5,1,1&animate=1).
+-   In CSS animation to describe the path and speed of animation.

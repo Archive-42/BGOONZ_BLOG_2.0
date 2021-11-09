@@ -1,17 +1,17 @@
 make-army"
 
-- <a href="make-army.html"
-  /make-army"
-  /make-army"
-  make-armymake-army"
+-   <a href="make-army.html"
+    /make-army"
+    /make-army"
+    make-armymake-army"
 
 <!-- -->
 
 make-army"
 
-- <a href="
-- <a href="https://tr.javascript.info/"
-  make-army"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+    make-army"
 
 We want to make this open-source project available for people all around the world.
 

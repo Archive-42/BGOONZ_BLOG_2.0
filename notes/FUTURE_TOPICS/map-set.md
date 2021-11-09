@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/map-set"
-- <a href="map-set.html"
-- <a href="https://es.javascript.info/map-set"
-- <a href="https://fr.javascript.info/map-set"
-- <a href="https://it.javascript.info/map-set"
-  map-set"
+-   <a href="https://ar.javascript.info/map-set"
+-   <a href="map-set.html"
+-   <a href="https://es.javascript.info/map-set"
+-   <a href="https://fr.javascript.info/map-set"
+-   <a href="https://it.javascript.info/map-set"
+    map-set"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/map-set"
-- <a href=map-set"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/map-set"
+-   <a href="https://ko.javascript.info/map-set"
+-   <a href=map-set"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/map-set"
 
 We want to make this open-source project available for people all around the world.
 
@@ -42,8 +42,8 @@ Search
 
 Till now, we’ve learned about the following complex data structures:
 
-- Objects are used for storing keyed collections.
-- Arrays are used for storing ordered collections.
+-   Objects are used for storing keyed collections.
+-   Arrays are used for storing ordered collections.
 
 But that’s not enough for real life. That’s why `Map` and `Set` also exist.
 
@@ -53,13 +53,13 @@ But that’s not enough for real life. That’s why `Map` and `Set` also exist.
 
 Methods and properties are:
 
-- `new Map()` – creates the map.
-- `map.set(key, value)` – stores the value by the key.
-- `map.get(key)` – returns the value by the key, `undefined` if `key` doesn’t exist in map.
-- `map.has(key)` – returns `true` if the `key` exists, `false` otherwise.
-- `map.delete(key)` – removes the value by the key.
-- `map.clear()` – removes everything from the map.
-- `map.size` – returns the current element count.
+-   `new Map()` – creates the map.
+-   `map.set(key, value)` – stores the value by the key.
+-   `map.get(key)` – returns the value by the key, `undefined` if `key` doesn’t exist in map.
+-   `map.has(key)` – returns `true` if the `key` exists, `false` otherwise.
+-   `map.delete(key)` – removes the value by the key.
+-   `map.clear()` – removes everything from the map.
+-   `map.size` – returns the current element count.
 
 For instance:
 
@@ -142,9 +142,9 @@ Every `map.set` call returns the map itself, so we can “chain” the calls:
 
 For looping over a `map`, there are 3 methods:
 
-- `map.keys()` – returns an iterable for keys,
-- `map.values()` – returns an iterable for values,
-- `map.entries()` – returns an iterable for entries `[key, value]`, it’s used by default in `for..of`.
+-   `map.keys()` – returns an iterable for keys,
+-   `map.values()` – returns an iterable for values,
+-   `map.entries()` – returns an iterable for entries `[key, value]`, it’s used by default in `for..of`.
 
 For instance:
 
@@ -271,12 +271,12 @@ A `Set` is a special type collection – “set of values” (without keys), whe
 
 Its main methods are:
 
-- `new Set(iterable)` – creates the set, and if an `iterable` object is provided (usually an array), copies values from it into the set.
-- `set.add(value)` – adds a value, returns the set itself.
-- `set.delete(value)` – removes the value, returns `true` if `value` existed at the moment of the call, otherwise `false`.
-- `set.has(value)` – returns `true` if the value exists in the set, otherwise `false`.
-- `set.clear()` – removes everything from the set.
-- `set.size` – is the elements count.
+-   `new Set(iterable)` – creates the set, and if an `iterable` object is provided (usually an array), copies values from it into the set.
+-   `set.add(value)` – adds a value, returns the set itself.
+-   `set.delete(value)` – removes the value, returns `true` if `value` existed at the moment of the call, otherwise `false`.
+-   `set.has(value)` – returns `true` if the value exists in the set, otherwise `false`.
+-   `set.clear()` – removes everything from the set.
+-   `set.size` – is the elements count.
 
 The main feature is that repeated calls of `set.add(value)` with the same value don’t do anything. That’s the reason why each value appears in a `Set` only once.
 
@@ -331,9 +331,9 @@ That’s for compatibility with `Map` where the callback passed `forEach` has th
 
 The same methods `Map` has for iterators are also supported:
 
-- `set.keys()` – returns an iterable object for values,
-- `set.values()` – same as `set.keys()`, for compatibility with `Map`,
-- `set.entries()` – returns an iterable object for entries `[value, value]`, exists for compatibility with `Map`.
+-   `set.keys()` – returns an iterable object for values,
+-   `set.values()` – same as `set.keys()`, for compatibility with `Map`,
+-   `set.entries()` – returns an iterable object for entries `[value, value]`, exists for compatibility with `Map`.
 
 ## <a href="map-set.html#summary" id="summary" class="main__anchor">Summary</a>
 
@@ -341,29 +341,29 @@ The same methods `Map` has for iterators are also supported:
 
 Methods and properties:
 
-- `new Map([iterable])` – creates the map, with optional `iterable` (e.g. array) of `[key,value]` pairs for initialization.
-- `map.set(key, value)` – stores the value by the key, returns the map itself.
-- `map.get(key)` – returns the value by the key, `undefined` if `key` doesn’t exist in map.
-- `map.has(key)` – returns `true` if the `key` exists, `false` otherwise.
-- `map.delete(key)` – removes the value by the key, returns `true` if `key` existed at the moment of the call, otherwise `false`.
-- `map.clear()` – removes everything from the map.
-- `map.size` – returns the current element count.
+-   `new Map([iterable])` – creates the map, with optional `iterable` (e.g. array) of `[key,value]` pairs for initialization.
+-   `map.set(key, value)` – stores the value by the key, returns the map itself.
+-   `map.get(key)` – returns the value by the key, `undefined` if `key` doesn’t exist in map.
+-   `map.has(key)` – returns `true` if the `key` exists, `false` otherwise.
+-   `map.delete(key)` – removes the value by the key, returns `true` if `key` existed at the moment of the call, otherwise `false`.
+-   `map.clear()` – removes everything from the map.
+-   `map.size` – returns the current element count.
 
 The differences from a regular `Object`:
 
-- Any keys, objects can be keys.
-- Additional convenient methods, the `size` property.
+-   Any keys, objects can be keys.
+-   Additional convenient methods, the `size` property.
 
 `Set` – is a collection of unique values.
 
 Methods and properties:
 
-- `new Set([iterable])` – creates the set, with optional `iterable` (e.g. array) of values for initialization.
-- `set.add(value)` – adds a value (does nothing if `value` exists), returns the set itself.
-- `set.delete(value)` – removes the value, returns `true` if `value` existed at the moment of the call, otherwise `false`.
-- `set.has(value)` – returns `true` if the value exists in the set, otherwise `false`.
-- `set.clear()` – removes everything from the set.
-- `set.size` – is the elements count.
+-   `new Set([iterable])` – creates the set, with optional `iterable` (e.g. array) of values for initialization.
+-   `set.add(value)` – adds a value (does nothing if `value` exists), returns the set itself.
+-   `set.delete(value)` – removes the value, returns `true` if `value` existed at the moment of the call, otherwise `false`.
+-   `set.has(value)` – returns `true` if the value exists in the set, otherwise `false`.
+-   `set.clear()` – removes everything from the set.
+-   `set.size` – is the elements count.
 
 Iteration over `Map` and `Set` is always in the insertion order, so we can’t say that these collections are unordered, but we can’t reorder elements or directly get an element by its number.
 
@@ -560,28 +560,28 @@ We can convert it into an array using `Array.from`:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="map-set.html#map" class="sidebar__link">Map</a>
-- <a href="map-set.html#iteration-over-map" class="sidebar__link">Iteration over Map</a>
-- <a href="map-set.html#object-entries-map-from-object" class="sidebar__link">Object.entries: Map from Object</a>
-- <a href="map-set.html#object-fromentries-object-from-map" class="sidebar__link">Object.fromEntries: Object from Map</a>
-- <a href="map-set.html#set" class="sidebar__link">Set</a>
-- <a href="map-set.html#iteration-over-set" class="sidebar__link">Iteration over Set</a>
-- <a href="map-set.html#summary" class="sidebar__link">Summary</a>
+-   <a href="map-set.html#map" class="sidebar__link">Map</a>
+-   <a href="map-set.html#iteration-over-map" class="sidebar__link">Iteration over Map</a>
+-   <a href="map-set.html#object-entries-map-from-object" class="sidebar__link">Object.entries: Map from Object</a>
+-   <a href="map-set.html#object-fromentries-object-from-map" class="sidebar__link">Object.fromEntries: Object from Map</a>
+-   <a href="map-set.html#set" class="sidebar__link">Set</a>
+-   <a href="map-set.html#iteration-over-set" class="sidebar__link">Iteration over Set</a>
+-   <a href="map-set.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="map-set.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="map-set.html#comments" class="sidebar__link">Comments</a>
+-   <a href="map-set.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="map-set.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -589,7 +589,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/07-map-set" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

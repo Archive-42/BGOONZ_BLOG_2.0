@@ -20,10 +20,10 @@ And this is how it's made inside (approximately):
 
 The International Space Station:
 
-- Consists of many components.
-- Each component, in its turn, has many smaller details inside.
-- The components are very complex, much more complicated than most websites.
-- Components are developed internationally, by teams from different countries, speaking different languages.
+-   Consists of many components.
+-   Each component, in its turn, has many smaller details inside.
+-   The components are very complex, much more complicated than most websites.
+-   Components are developed internationally, by teams from different countries, speaking different languages.
 
 ...And this thing flies, keeps humans alive in space!
 
@@ -59,10 +59,10 @@ How do we decide, what is a component? That comes from intuition, experience and
 
 A component has:
 
-- Its own JavaScript class.
-- DOM structure, managed solely by its class, outside code doesn't access it ("encapsulation" principle).
-- CSS styles, applied to the component.
-- API: events, class methods etc, to interact with other components.
+-   Its own JavaScript class.
+-   DOM structure, managed solely by its class, outside code doesn't access it ("encapsulation" principle).
+-   CSS styles, applied to the component.
+-   API: events, class methods etc, to interact with other components.
 
 Once again, the whole "component" thing is nothing special.
 
@@ -70,9 +70,9 @@ There exist many frameworks and development methodologies to build them, each wi
 
 "Web components" provide built-in browser capabilities for that, so we don't have to emulate them any more.
 
-- [Custom elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements) -- to define custom HTML elements.
-- [Shadow DOM](https://dom.spec.whatwg.org/#shadow-trees) -- to create an internal DOM for the component, hidden from the others.
-- [CSS Scoping](https://drafts.csswg.org/css-scoping/) -- to declare styles that only apply inside the Shadow DOM of the component.
-- [Event retargeting](https://dom.spec.whatwg.org/#retarget) and other minor stuff to make custom components better fit the development.
+-   [Custom elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements) -- to define custom HTML elements.
+-   [Shadow DOM](https://dom.spec.whatwg.org/#shadow-trees) -- to create an internal DOM for the component, hidden from the others.
+-   [CSS Scoping](https://drafts.csswg.org/css-scoping/) -- to declare styles that only apply inside the Shadow DOM of the component.
+-   [Event retargeting](https://dom.spec.whatwg.org/#retarget) and other minor stuff to make custom components better fit the development.
 
 In the next chapter we'll go into details of "Custom Elements" -- the fundamental and well-supported feature of web components, good on its own.

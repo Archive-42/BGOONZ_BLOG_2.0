@@ -10,10 +10,10 @@ What is the result of accessing its `ref`? Why?
 
 ```js
 function makeUser() {
-  return {
-    name: "John",
-    ref: this,
-  };
+    return {
+        name: 'John',
+        ref: this
+    };
 }
 
 let user = makeUser();

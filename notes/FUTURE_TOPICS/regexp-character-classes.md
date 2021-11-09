@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/regexp-character-classes"
-- <a href="regexp-character-classes.html"
-- <a href="https://es.javascript.info/regexp-character-classes"
-- <a href="https://fr.javascript.info/regexp-character-classes"
-- <a href="https://it.javascript.info/regexp-character-classes"
-  regexp-character-classes"
+-   <a href="https://ar.javascript.info/regexp-character-classes"
+-   <a href="regexp-character-classes.html"
+-   <a href="https://es.javascript.info/regexp-character-classes"
+-   <a href="https://fr.javascript.info/regexp-character-classes"
+-   <a href="https://it.javascript.info/regexp-character-classes"
+    regexp-character-classes"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/regexp-character-classes"
-- <a href=regexp-character-classes"
-- <a href="https://tr.javascript.info/regexp-character-classes"
-- <a href="https://zh.javascript.info/regexp-character-classes"
+-   <a href="https://ko.javascript.info/regexp-character-classes"
+-   <a href=regexp-character-classes"
+-   <a href="https://tr.javascript.info/regexp-character-classes"
+-   <a href="https://zh.javascript.info/regexp-character-classes"
 
 We want to make this open-source project available for people all around the world.
 
@@ -237,13 +237,13 @@ In other words, in a regular expression all characters matter, spaces too.
 
 There exist following character classes:
 
-- `\d` – digits.
-- `\D` – non-digits.
-- `\s` – space symbols, tabs, newlines.
-- `\S` – all but `\s`.
-- `\w` – Latin letters, digits, underscore `'_'`.
-- `\W` – all but `\w`.
-- `.` – any character if with the regexp `'s'` flag, otherwise any except a newline `\n`.
+-   `\d` – digits.
+-   `\D` – non-digits.
+-   `\s` – space symbols, tabs, newlines.
+-   `\S` – all but `\s`.
+-   `\w` – Latin letters, digits, underscore `'_'`.
+-   `\W` – all but `\w`.
+-   `.` – any character if with the regexp `'s'` flag, otherwise any except a newline `\n`.
 
 …But that’s not all!
 
@@ -261,23 +261,23 @@ We can search by these properties as well. That requires flag `u`, covered in th
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-character-classes.html#inverse-classes" class="sidebar__link">Inverse classes</a>
-- <a href="regexp-character-classes.html#a-dot-is-any-character" class="sidebar__link">A dot is “any character”</a>
-- <a href="regexp-character-classes.html#summary" class="sidebar__link">Summary</a>
+-   <a href="regexp-character-classes.html#inverse-classes" class="sidebar__link">Inverse classes</a>
+-   <a href="regexp-character-classes.html#a-dot-is-any-character" class="sidebar__link">A dot is “any character”</a>
+-   <a href="regexp-character-classes.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="regexp-character-classes.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-character-classes.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -285,7 +285,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/02-regexp-character-classes" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

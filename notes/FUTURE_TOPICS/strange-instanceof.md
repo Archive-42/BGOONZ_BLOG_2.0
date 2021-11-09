@@ -1,10 +1,10 @@
 strange-instanceof"
 
-- <a href="strange-instanceof.html"
-  /strange-instanceof"
-  /strange-instanceof"
-  strange-instanceof"
-  task/strange-instanceof"
+-   <a href="strange-instanceof.html"
+    /strange-instanceof"
+    /strange-instanceof"
+    strange-instanceof"
+    task/strange-instanceof"
 
 <!-- -->
 

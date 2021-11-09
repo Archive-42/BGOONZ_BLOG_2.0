@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/recursion"
-- <a href="recursion.html"
-- <a href="https://es.javascript.info/recursion"
-- <a href="https://fr.javascript.info/recursion"
-- <a href="https://it.javascript.info/recursion"
-  recursion"
+-   <a href="https://ar.javascript.info/recursion"
+-   <a href="recursion.html"
+-   <a href="https://es.javascript.info/recursion"
+-   <a href="https://fr.javascript.info/recursion"
+-   <a href="https://it.javascript.info/recursion"
+    recursion"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/recursion"
-- <a href=recursion"
-- <a href="https://tr.javascript.info/recursion"
-- <a href="https://zh.javascript.info/recursion"
+-   <a href="https://ko.javascript.info/recursion"
+-   <a href=recursion"
+-   <a href="https://tr.javascript.info/recursion"
+-   <a href="https://zh.javascript.info/recursion"
 
 We want to make this open-source project available for people all around the world.
 
@@ -146,10 +146,10 @@ One function call has exactly one execution context associated with it.
 
 When a function makes a nested call, the following happens:
 
-- The current function is paused.
-- The execution context associated with it is remembered in a special data structure called _execution context stack_.
-- The nested call executes.
-- After it ends, the old execution context is retrieved from the stack, and the outer function is resumed from where it stopped.
+-   The current function is paused.
+-   The execution context associated with it is remembered in a special data structure called _execution context stack_.
+-   The nested call executes.
+-   After it ends, the old execution context is retrieved from the stack, and the outer function is resumed from where it stopped.
 
 Let’s see what happens during the `pow(2, 3)` call.
 
@@ -159,7 +159,7 @@ In the beginning of the call `pow(2, 3)` the execution context will store variab
 
 We can sketch it as:
 
-- <span class="function-execution-context">Context: { x: 2, n: 3, at line 1 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 3, at line 1 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
 
 That’s when the function starts to execute. The condition `n == 1` is falsy, so the flow continues into the second branch of `if`:
 
@@ -178,7 +178,7 @@ That’s when the function starts to execute. The condition `n == 1` is falsy, s
 
 The variables are same, but the line changes, so the context is now:
 
-- <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
 
 To calculate `x * pow(x, n - 1)`, we need to make a subcall of `pow` with new arguments `pow(2, 2)`.
 
@@ -194,8 +194,8 @@ Here we call the same function `pow`, but it absolutely doesn’t matter. The pr
 
 Here’s the context stack when we entered the subcall `pow(2, 2)`:
 
-- <span class="function-execution-context">Context: { x: 2, n: 2, at line 1 }</span> <span class="function-execution-context-call">pow(2, 2)</span>
-- <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 2, at line 1 }</span> <span class="function-execution-context-call">pow(2, 2)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
 
 The new current execution context is on top (and bold), and previous remembered contexts are below.
 
@@ -213,9 +213,9 @@ The process repeats: a new subcall is made at line `5`, now with arguments `x=2`
 
 A new execution context is created, the previous one is pushed on top of the stack:
 
-- <span class="function-execution-context">Context: { x: 2, n: 1, at line 1 }</span> <span class="function-execution-context-call">pow(2, 1)</span>
-- <span class="function-execution-context">Context: { x: 2, n: 2, at line 5 }</span> <span class="function-execution-context-call">pow(2, 2)</span>
-- <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 1, at line 1 }</span> <span class="function-execution-context-call">pow(2, 1)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 2, at line 5 }</span> <span class="function-execution-context-call">pow(2, 2)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
 
 There are 2 old contexts now and 1 currently running for `pow(2, 1)`.
 
@@ -235,14 +235,14 @@ There are no more nested calls, so the function finishes, returning `2`.
 
 As the function finishes, its execution context is not needed anymore, so it’s removed from the memory. The previous one is restored off the top of the stack:
 
-- <span class="function-execution-context">Context: { x: 2, n: 2, at line 5 }</span> <span class="function-execution-context-call">pow(2, 2)</span>
-- <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 2, at line 5 }</span> <span class="function-execution-context-call">pow(2, 2)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
 
 The execution of `pow(2, 2)` is resumed. It has the result of the subcall `pow(2, 1)`, so it also can finish the evaluation of `x * pow(x, n - 1)`, returning `4`.
 
 Then the previous context is restored:
 
-- <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
+-   <span class="function-execution-context">Context: { x: 2, n: 3, at line 5 }</span> <span class="function-execution-context-call">pow(2, 3)</span>
 
 When it finishes, we have a result of `pow(2, 3) = 8`.
 
@@ -305,13 +305,13 @@ Imagine, we have a company. The staff structure can be presented as an object:
 
 In other words, a company has departments.
 
-- A department may have an array of staff. For instance, `sales` department has 2 employees: John and Alice.
+-   A department may have an array of staff. For instance, `sales` department has 2 employees: John and Alice.
 
-- Or a department may split into subdepartments, like `development` has two branches: `sites` and `internals`. Each of them has their own staff.
+-   Or a department may split into subdepartments, like `development` has two branches: `sites` and `internals`. Each of them has their own staff.
 
-- It is also possible that when a subdepartment grows, it divides into subsubdepartments (or teams).
+-   It is also possible that when a subdepartment grows, it divides into subsubdepartments (or teams).
 
-  For instance, the `sites` department in the future may be split into teams for `siteA` and `siteB`. And they, potentially, can split even more. That’s not on the picture, just something to have in mind.
+    For instance, the `sites` department in the future may be split into teams for `siteA` and `siteB`. And they, potentially, can split even more. That’s not on the picture, just something to have in mind.
 
 Now let’s say we want a function to get the sum of all salaries. How can we do that?
 
@@ -364,8 +364,8 @@ Here’s the diagram of calls:
 
 Note that the code uses smart features that we’ve covered before:
 
-- Method `arr.reduce` explained in the chapter [Array methods](array-methods.html) to get the sum of the array.
-- Loop `for(val of Object.values(obj))` to iterate over object values: `Object.values` returns an array of them.
+-   Method `arr.reduce` explained in the chapter [Array methods](array-methods.html) to get the sum of the array.
+-   Loop `for(val of Object.values(obj))` to iterate over object values: `Object.values` returns an array of them.
 
 ## <a href="recursion.html#recursive-structures" id="recursive-structures" class="main__anchor">Recursive structures</a>
 
@@ -375,16 +375,16 @@ We’ve just seen it in the example of a company structure above.
 
 A company _department_ is:
 
-- Either an array of people.
-- Or an object with _departments_.
+-   Either an array of people.
+-   Or an object with _departments_.
 
 For web-developers there are much better-known examples: HTML and XML documents.
 
 In the HTML document, an _HTML-tag_ may contain a list of:
 
-- Text pieces.
-- HTML-comments.
-- Other _HTML-tags_ (that in turn may contain text pieces/comments or other tags etc).
+-   Text pieces.
+-   HTML-comments.
+-   Other _HTML-tags_ (that in turn may contain text pieces/comments or other tags etc).
 
 That’s once again a recursive definition.
 
@@ -406,8 +406,8 @@ Alternatively, if we really need fast insertion/deletion, we can choose another 
 
 The _linked list element_ is recursively defined as an object with:
 
-- `value`.
-- `next` property referencing the next _linked list element_ or `null` if that’s the end.
+-   `value`.
+-   `next` property referencing the next _linked list element_ or `null` if that’s the end.
 
 For instance:
 
@@ -474,27 +474,27 @@ The main drawback is that we can’t easily access an element by its number. In 
 
 Lists can be enhanced:
 
-- We can add property `prev` in addition to `next` to reference the previous element, to move back easily.
-- We can also add a variable named `tail` referencing the last element of the list (and update it when adding/removing elements from the end).
-- …The data structure may vary according to our needs.
+-   We can add property `prev` in addition to `next` to reference the previous element, to move back easily.
+-   We can also add a variable named `tail` referencing the last element of the list (and update it when adding/removing elements from the end).
+-   …The data structure may vary according to our needs.
 
 ## <a href="recursion.html#summary" id="summary" class="main__anchor">Summary</a>
 
 Terms:
 
-- _Recursion_ is a programming term that means calling a function from itself. Recursive functions can be used to solve tasks in elegant ways.
+-   _Recursion_ is a programming term that means calling a function from itself. Recursive functions can be used to solve tasks in elegant ways.
 
-  When a function calls itself, that’s called a _recursion step_. The _basis_ of recursion is function arguments that make the task so simple that the function does not make further calls.
+    When a function calls itself, that’s called a _recursion step_. The _basis_ of recursion is function arguments that make the task so simple that the function does not make further calls.
 
-- A [recursively-defined](https://en.wikipedia.org/wiki/Recursive_data_type) data structure is a data structure that can be defined using itself.
+-   A [recursively-defined](https://en.wikipedia.org/wiki/Recursive_data_type) data structure is a data structure that can be defined using itself.
 
-  For instance, the linked list can be defined as a data structure consisting of an object referencing a list (or null).
+    For instance, the linked list can be defined as a data structure consisting of an object referencing a list (or null).
 
-      list = { value, next -> list }
+        list = { value, next -> list }
 
-  Trees like HTML elements tree or the department tree from this chapter are also naturally recursive: they branch and every branch can have other branches.
+    Trees like HTML elements tree or the department tree from this chapter are also naturally recursive: they branch and every branch can have other branches.
 
-  Recursive functions can be used to walk them as we’ve seen in the `sumSalary` example.
+    Recursive functions can be used to walk them as we’ve seen in the `sumSalary` example.
 
 Any recursive function can be rewritten into an iterative one. And that’s sometimes required to optimize stuff. But for many tasks a recursive solution is fast enough and easier to write and support.
 
@@ -986,26 +986,26 @@ Please note that the recursive solution actually does exactly the same: it follo
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="recursion.html#two-ways-of-thinking" class="sidebar__link">Two ways of thinking</a>
-- <a href="recursion.html#the-execution-context-and-stack" class="sidebar__link">The execution context and stack</a>
-- <a href="recursion.html#recursive-traversals" class="sidebar__link">Recursive traversals</a>
-- <a href="recursion.html#recursive-structures" class="sidebar__link">Recursive structures</a>
-- <a href="recursion.html#summary" class="sidebar__link">Summary</a>
+-   <a href="recursion.html#two-ways-of-thinking" class="sidebar__link">Two ways of thinking</a>
+-   <a href="recursion.html#the-execution-context-and-stack" class="sidebar__link">The execution context and stack</a>
+-   <a href="recursion.html#recursive-traversals" class="sidebar__link">Recursive traversals</a>
+-   <a href="recursion.html#recursive-structures" class="sidebar__link">Recursive structures</a>
+-   <a href="recursion.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="recursion.html#tasks" class="sidebar__link">Tasks (5)</a>
-- <a href="recursion.html#comments" class="sidebar__link">Comments</a>
+-   <a href="recursion.html#tasks" class="sidebar__link">Tasks (5)</a>
+-   <a href="recursion.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -1013,7 +1013,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/01-recursion" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/promise-basics"
-- <a href="promise-basics.html"
-- <a href="https://es.javascript.info/promise-basics"
-- <a href="https://fr.javascript.info/promise-basics"
-- <a href="https://it.javascript.info/promise-basics"
-  promise-basics"
+-   <a href="https://ar.javascript.info/promise-basics"
+-   <a href="promise-basics.html"
+-   <a href="https://es.javascript.info/promise-basics"
+-   <a href="https://fr.javascript.info/promise-basics"
+-   <a href="https://it.javascript.info/promise-basics"
+    promise-basics"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/promise-basics"
-- <a href=promise-basics"
-- <a href="https://tr.javascript.info/promise-basics"
-- <a href="https://zh.javascript.info/promise-basics"
+-   <a href="https://ko.javascript.info/promise-basics"
+-   <a href=promise-basics"
+-   <a href="https://tr.javascript.info/promise-basics"
+-   <a href="https://zh.javascript.info/promise-basics"
 
 We want to make this open-source project available for people all around the world.
 
@@ -64,15 +64,15 @@ Its arguments `resolve` and `reject` are callbacks provided by JavaScript itself
 
 When the executor obtains the result, be it soon or late, doesn’t matter, it should call one of these callbacks:
 
-- `resolve(value)` — if the job is finished successfully, with result `value`.
-- `reject(error)` — if an error has occurred, `error` is the error object.
+-   `resolve(value)` — if the job is finished successfully, with result `value`.
+-   `reject(error)` — if an error has occurred, `error` is the error object.
 
 So to summarize: the executor runs automatically and attempts to perform a job. When it is finished with the attempt, it calls `resolve` if it was successful or `reject` if there was an error.
 
 The `promise` object returned by the `new Promise` constructor has these internal properties:
 
-- `state` — initially `"pending"`, then changes to either `"fulfilled"` when `resolve` is called or `"rejected"` when `reject` is called.
-- `result` — initially `undefined`, then changes to `value` when `resolve(value)` called or `error` when `reject(error)` is called.
+-   `state` — initially `"pending"`, then changes to either `"fulfilled"` when `resolve` is called or `"rejected"` when `reject` is called.
+-   `result` — initially `undefined`, then changes to `value` when `resolve(value)` called or `error` when `reject(error)` is called.
 
 So the executor eventually moves `promise` to one of these states:
 
@@ -432,23 +432,23 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="async.html" class="sidebar__link">Promises, async/await</a>
+-   <a href="async.html" class="sidebar__link">Promises, async/await</a>
 
 #### Lesson navigation
 
-- <a href="promise-basics.html#consumers-then-catch-finally" class="sidebar__link">Consumers: then, catch, finally</a>
-- <a href="promise-basics.html#loadscript" class="sidebar__link">Example: loadScript</a>
+-   <a href="promise-basics.html#consumers-then-catch-finally" class="sidebar__link">Consumers: then, catch, finally</a>
+-   <a href="promise-basics.html#loadscript" class="sidebar__link">Example: loadScript</a>
 
-- <a href="promise-basics.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="promise-basics.html#comments" class="sidebar__link">Comments</a>
+-   <a href="promise-basics.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="promise-basics.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -456,7 +456,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/11-async/02-promise-basics" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

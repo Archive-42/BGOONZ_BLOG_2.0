@@ -1,16 +1,16 @@
 position-inside-absolute"
 
-- <a href="position-inside-absolute.html"
-  /position-inside-absolute"
-  /position-inside-absolute"
-  position-inside-absoluteposition-inside-absolute"
+-   <a href="position-inside-absolute.html"
+    /position-inside-absolute"
+    /position-inside-absolute"
+    position-inside-absoluteposition-inside-absolute"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  position-inside-absolute"
-- <a href="https://tr.javascript.info/"
-  position-inside-absolute"
+-   <a href="https://ko.javascript.info/"
+    position-inside-absolute"
+-   <a href="https://tr.javascript.info/"
+    position-inside-absolute"
 
 We want to make this open-source project available for people all around the world.
 
@@ -34,8 +34,8 @@ Extend the previous task [Show a note near the element (absolute)](position-at-a
 
 New values for `position`:
 
-- `top-out`, `right-out`, `bottom-out` – work the same as before, they insert the `elem` over/right/under `anchor`.
-- `top-in`, `right-in`, `bottom-in` – insert `elem` inside the `anchor`: stick it to the upper/right/bottom edge.
+-   `top-out`, `right-out`, `bottom-out` – work the same as before, they insert the `elem` over/right/under `anchor`.
+-   `top-in`, `right-in`, `bottom-in` – insert `elem` inside the `anchor`: stick it to the upper/right/bottom edge.
 
 For instance:
 

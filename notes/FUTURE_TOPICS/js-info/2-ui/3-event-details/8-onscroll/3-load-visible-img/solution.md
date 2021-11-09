@@ -10,18 +10,17 @@ Or put it at the `<body>` bottom:
 // ...the page content is above...
 
 function isVisible(elem) {
+    let coords = elem.getBoundingClientRect();
 
-  let coords = elem.getBoundingClientRect();
+    let windowHeight = document.documentElement.clientHeight;
 
-  let windowHeight = document.documentElement.clientHeight;
+    // top elem edge is visible?
+    let topVisible = coords.top > 0 && coords.top < windowHeight;
 
-  // top elem edge is visible?
-  let topVisible = coords.top > 0 && coords.top < windowHeight;
+    // bottom elem edge is visible?
+    let bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
 
-  // bottom elem edge is visible?
-  let bottomVisible = coords.bottom < windowHeight && coords.bottom > 0;
-
-  return topVisible || bottomVisible;
+    return topVisible || bottomVisible;
 }
 ```
 

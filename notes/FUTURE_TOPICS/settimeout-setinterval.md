@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/settimeout-setinterval"
-- <a href="settimeout-setinterval.html"
-- <a href="https://es.javascript.info/settimeout-setinterval"
-- <a href="https://fr.javascript.info/settimeout-setinterval"
-- <a href="https://it.javascript.info/settimeout-setinterval"
-  settimeout-setinterval"
+-   <a href="https://ar.javascript.info/settimeout-setinterval"
+-   <a href="settimeout-setinterval.html"
+-   <a href="https://es.javascript.info/settimeout-setinterval"
+-   <a href="https://fr.javascript.info/settimeout-setinterval"
+-   <a href="https://it.javascript.info/settimeout-setinterval"
+    settimeout-setinterval"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/settimeout-setinterval"
-- <a href=settimeout-setinterval"
-- <a href="https://tr.javascript.info/settimeout-setinterval"
-- <a href="https://zh.javascript.info/settimeout-setinterval"
+-   <a href="https://ko.javascript.info/settimeout-setinterval"
+-   <a href=settimeout-setinterval"
+-   <a href="https://tr.javascript.info/settimeout-setinterval"
+-   <a href="https://zh.javascript.info/settimeout-setinterval"
 
 We want to make this open-source project available for people all around the world.
 
@@ -42,8 +42,8 @@ We may decide to execute a function not right now, but at a certain time later. 
 
 There are two methods for it:
 
-- `setTimeout` allows us to run a function once after the interval of time.
-- `setInterval` allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.
+-   `setTimeout` allows us to run a function once after the interval of time.
+-   `setInterval` allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.
 
 These methods are not a part of JavaScript specification. But most environments have the internal scheduler and provide these methods. In particular, they are supported in all browsers and Node.js.
 
@@ -304,19 +304,19 @@ For server-side JavaScript, that limitation does not exist, and there exist othe
 
 ## <a href="settimeout-setinterval.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- Methods `setTimeout(func, delay, ...args)` and `setInterval(func, delay, ...args)` allow us to run the `func` once/regularly after `delay` milliseconds.
-- To cancel the execution, we should call `clearTimeout/clearInterval` with the value returned by `setTimeout/setInterval`.
-- Nested `setTimeout` calls are a more flexible alternative to `setInterval`, allowing us to set the time _between_ executions more precisely.
-- Zero delay scheduling with `setTimeout(func, 0)` (the same as `setTimeout(func)`) is used to schedule the call “as soon as possible, but after the current script is complete”.
-- The browser limits the minimal delay for five or more nested calls of `setTimeout` or for `setInterval` (after 5th call) to 4ms. That’s for historical reasons.
+-   Methods `setTimeout(func, delay, ...args)` and `setInterval(func, delay, ...args)` allow us to run the `func` once/regularly after `delay` milliseconds.
+-   To cancel the execution, we should call `clearTimeout/clearInterval` with the value returned by `setTimeout/setInterval`.
+-   Nested `setTimeout` calls are a more flexible alternative to `setInterval`, allowing us to set the time _between_ executions more precisely.
+-   Zero delay scheduling with `setTimeout(func, 0)` (the same as `setTimeout(func)`) is used to schedule the call “as soon as possible, but after the current script is complete”.
+-   The browser limits the minimal delay for five or more nested calls of `setTimeout` or for `setInterval` (after 5th call) to 4ms. That’s for historical reasons.
 
 Please note that all scheduling methods do not _guarantee_ the exact delay.
 
 For example, the in-browser timer may slow down for a lot of reasons:
 
-- The CPU is overloaded.
-- The browser tab is in the background mode.
-- The laptop is on battery.
+-   The CPU is overloaded.
+-   The browser tab is in the background mode.
+-   The laptop is on battery.
 
 All that may increase the minimal timer resolution (the minimal delay) to 300ms or even 1000ms depending on the browser and OS-level performance settings.
 
@@ -454,26 +454,26 @@ The `i` will be the last one: `100000000`.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="settimeout-setinterval.html#settimeout" class="sidebar__link">setTimeout</a>
-- <a href="settimeout-setinterval.html#setinterval" class="sidebar__link">setInterval</a>
-- <a href="settimeout-setinterval.html#nested-settimeout" class="sidebar__link">Nested setTimeout</a>
-- <a href="settimeout-setinterval.html#zero-delay-settimeout" class="sidebar__link">Zero delay setTimeout</a>
-- <a href="settimeout-setinterval.html#summary" class="sidebar__link">Summary</a>
+-   <a href="settimeout-setinterval.html#settimeout" class="sidebar__link">setTimeout</a>
+-   <a href="settimeout-setinterval.html#setinterval" class="sidebar__link">setInterval</a>
+-   <a href="settimeout-setinterval.html#nested-settimeout" class="sidebar__link">Nested setTimeout</a>
+-   <a href="settimeout-setinterval.html#zero-delay-settimeout" class="sidebar__link">Zero delay setTimeout</a>
+-   <a href="settimeout-setinterval.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="settimeout-setinterval.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="settimeout-setinterval.html#comments" class="sidebar__link">Comments</a>
+-   <a href="settimeout-setinterval.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="settimeout-setinterval.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -481,7 +481,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/08-settimeout-setinterval" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/native-prototypes"
-- <a href="native-prototypes.html"
-- <a href="https://es.javascript.info/native-prototypes"
-- <a href="https://fr.javascript.info/native-prototypes"
-- <a href="https://it.javascript.info/native-prototypes"
-  native-prototypes"
+-   <a href="https://ar.javascript.info/native-prototypes"
+-   <a href="native-prototypes.html"
+-   <a href="https://es.javascript.info/native-prototypes"
+-   <a href="https://fr.javascript.info/native-prototypes"
+-   <a href="https://it.javascript.info/native-prototypes"
+    native-prototypes"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/native-prototypes"
-- <a href=native-prototypes"
-- <a href="https://tr.javascript.info/native-prototypes"
-- <a href="https://zh.javascript.info/native-prototypes"
+-   <a href="https://ko.javascript.info/native-prototypes"
+-   <a href=native-prototypes"
+-   <a href="https://tr.javascript.info/native-prototypes"
+-   <a href="https://zh.javascript.info/native-prototypes"
 
 We want to make this open-source project available for people all around the world.
 
@@ -225,11 +225,11 @@ Borrowing methods is flexible, it allows to mix functionalities from different o
 
 ## <a href="native-prototypes.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- All built-in objects follow the same pattern:
-  - The methods are stored in the prototype (`Array.prototype`, `Object.prototype`, `Date.prototype`, etc.)
-  - The object itself stores only the data (array items, object properties, the date)
-- Primitives also store methods in prototypes of wrapper objects: `Number.prototype`, `String.prototype` and `Boolean.prototype`. Only `undefined` and `null` do not have wrapper objects
-- Built-in prototypes can be modified or populated with new methods. But it’s not recommended to change them. The only allowable case is probably when we add-in a new standard, but it’s not yet supported by the JavaScript engine
+-   All built-in objects follow the same pattern:
+    -   The methods are stored in the prototype (`Array.prototype`, `Object.prototype`, `Date.prototype`, etc.)
+    -   The object itself stores only the data (array items, object properties, the date)
+-   Primitives also store methods in prototypes of wrapper objects: `Number.prototype`, `String.prototype` and `Boolean.prototype`. Only `undefined` and `null` do not have wrapper objects
+-   Built-in prototypes can be modified or populated with new methods. But it’s not recommended to change them. The only allowable case is probably when we add-in a new standard, but it’s not yet supported by the JavaScript engine
 
 ## <a href="native-prototypes.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -336,27 +336,27 @@ So if the wrapper function is called as an object method, then `this` is passed 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="prototypes.html" class="sidebar__link">Prototypes, inheritance</a>
+-   <a href="prototypes.html" class="sidebar__link">Prototypes, inheritance</a>
 
 #### Lesson navigation
 
-- <a href="native-prototypes.html#object-prototype" class="sidebar__link">Object.prototype</a>
-- <a href="native-prototypes.html#other-built-in-prototypes" class="sidebar__link">Other built-in prototypes</a>
-- <a href="native-prototypes.html#primitives" class="sidebar__link">Primitives</a>
-- <a href="native-prototypes.html#native-prototype-change" class="sidebar__link">Changing native prototypes</a>
-- <a href="native-prototypes.html#borrowing-from-prototypes" class="sidebar__link">Borrowing from prototypes</a>
-- <a href="native-prototypes.html#summary" class="sidebar__link">Summary</a>
+-   <a href="native-prototypes.html#object-prototype" class="sidebar__link">Object.prototype</a>
+-   <a href="native-prototypes.html#other-built-in-prototypes" class="sidebar__link">Other built-in prototypes</a>
+-   <a href="native-prototypes.html#primitives" class="sidebar__link">Primitives</a>
+-   <a href="native-prototypes.html#native-prototype-change" class="sidebar__link">Changing native prototypes</a>
+-   <a href="native-prototypes.html#borrowing-from-prototypes" class="sidebar__link">Borrowing from prototypes</a>
+-   <a href="native-prototypes.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="native-prototypes.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="native-prototypes.html#comments" class="sidebar__link">Comments</a>
+-   <a href="native-prototypes.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="native-prototypes.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -364,7 +364,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/08-prototypes/03-native-prototypes" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

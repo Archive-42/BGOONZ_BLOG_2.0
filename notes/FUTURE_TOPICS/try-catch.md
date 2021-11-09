@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/try-catch"
-- <a href="try-catch.html"
-- <a href="https://es.javascript.info/try-catch"
-- <a href="https://fr.javascript.info/try-catch"
-- <a href="https://it.javascript.info/try-catch"
-  try-catch"
+-   <a href="https://ar.javascript.info/try-catch"
+-   <a href="try-catch.html"
+-   <a href="https://es.javascript.info/try-catch"
+-   <a href="https://fr.javascript.info/try-catch"
+-   <a href="https://it.javascript.info/try-catch"
+    try-catch"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/try-catch"
-- <a href=try-catch"
-- <a href="https://tr.javascript.info/try-catch"
-  ry-catch"
+-   <a href="https://ko.javascript.info/try-catch"
+-   <a href=try-catch"
+-   <a href="https://tr.javascript.info/try-catch"
+    ry-catch"
 
 We want to make this open-source project available for people all around the world.
 
@@ -68,43 +68,43 @@ It works like this:
 
 Let’s look at some examples.
 
-- An errorless example: shows `alert` `(1)` and `(2)`:
+-   An errorless example: shows `alert` `(1)` and `(2)`:
 
-  <a href="try-catch.html#"
-  <a href="try-catch.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+    <a href="try-catch.html#"
+    <a href="try-catch.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-      try {
+        try {
 
-        alert('Start of try runs');  // (1) <--
+          alert('Start of try runs');  // (1) <--
 
-        // ...no errors here
+          // ...no errors here
 
-        alert('End of try runs');   // (2) <--
+          alert('End of try runs');   // (2) <--
 
-      } catch (err) {
+        } catch (err) {
 
-        alert('Catch is ignored, because there are no errors'); // (3)
+          alert('Catch is ignored, because there are no errors'); // (3)
 
-      }
+        }
 
-- An example with an error: shows `(1)` and `(3)`:
+-   An example with an error: shows `(1)` and `(3)`:
 
-  <a href="try-catch.html#"
-  <a href="try-catch.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+    <a href="try-catch.html#"
+    <a href="try-catch.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-      try {
+        try {
 
-        alert('Start of try runs');  // (1) <--
+          alert('Start of try runs');  // (1) <--
 
-        lalala; // error, variable is not defined!
+          lalala; // error, variable is not defined!
 
-        alert('End of try (never reached)');  // (2)
+          alert('End of try (never reached)');  // (2)
 
-      } catch (err) {
+        } catch (err) {
 
-        alert(`Error has occurred!`); // (3) <--
+          alert(`Error has occurred!`); // (3) <--
 
-      }
+        }
 
 <span class="important__type">`try...catch` only works for runtime errors</span>
 
@@ -472,8 +472,8 @@ The `try...catch` construct may have one more code clause: `finally`.
 
 If it exists, it runs in all cases:
 
-- after `try`, if there were no errors,
-- after `catch`, if there were errors.
+-   after `try`, if there were no errors,
+-   after `catch`, if there were errors.
 
 The extended syntax looks like this:
 
@@ -666,9 +666,9 @@ There may be no `catch` section or no `finally`, so shorter constructs `try...ca
 
 Error objects have following properties:
 
-- `message` – the human-readable error message.
-- `name` – the string with error name (error constructor name).
-- `stack` (non-standard, but well-supported) – the stack at the moment of error creation.
+-   `message` – the human-readable error message.
+-   `name` – the string with error name (error constructor name).
+-   `stack` (non-standard, but well-supported) – the stack at the moment of error creation.
 
 If an error object is not needed, we can omit it by using `catch {` instead of `catch (err) {`.
 
@@ -770,30 +770,30 @@ It’s `finally` that guarantees the cleanup here. If we just put the code at th
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="error-handling.html" class="sidebar__link">Error handling</a>
+-   <a href="error-handling.html" class="sidebar__link">Error handling</a>
 
 #### Lesson navigation
 
-- <a href="try-catch.html#the-try-catch-syntax" class="sidebar__link">The “try…catch” syntax</a>
-- <a href="try-catch.html#error-object" class="sidebar__link">Error object</a>
-- <a href="try-catch.html#optional-catch-binding" class="sidebar__link">Optional “catch” binding</a>
-- <a href="try-catch.html#using-try-catch" class="sidebar__link">Using “try…catch”</a>
-- <a href="try-catch.html#throwing-our-own-errors" class="sidebar__link">Throwing our own errors</a>
-- <a href="try-catch.html#rethrowing" class="sidebar__link">Rethrowing</a>
-- <a href="try-catch.html#try-catch-finally" class="sidebar__link">try…catch…finally</a>
-- <a href="try-catch.html#global-catch" class="sidebar__link">Global catch</a>
-- <a href="try-catch.html#summary" class="sidebar__link">Summary</a>
+-   <a href="try-catch.html#the-try-catch-syntax" class="sidebar__link">The “try…catch” syntax</a>
+-   <a href="try-catch.html#error-object" class="sidebar__link">Error object</a>
+-   <a href="try-catch.html#optional-catch-binding" class="sidebar__link">Optional “catch” binding</a>
+-   <a href="try-catch.html#using-try-catch" class="sidebar__link">Using “try…catch”</a>
+-   <a href="try-catch.html#throwing-our-own-errors" class="sidebar__link">Throwing our own errors</a>
+-   <a href="try-catch.html#rethrowing" class="sidebar__link">Rethrowing</a>
+-   <a href="try-catch.html#try-catch-finally" class="sidebar__link">try…catch…finally</a>
+-   <a href="try-catch.html#global-catch" class="sidebar__link">Global catch</a>
+-   <a href="try-catch.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="try-catch.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="try-catch.html#comments" class="sidebar__link">Comments</a>
+-   <a href="try-catch.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="try-catch.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -801,7 +801,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/10-error-handling/1-try-catch" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

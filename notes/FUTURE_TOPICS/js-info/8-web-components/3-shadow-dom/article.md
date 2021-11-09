@@ -26,10 +26,10 @@ In the example above, we can see a useful attribute `pseudo`. It's non-standard,
 
 ```html run autorun
 <style>
-  /* make the slider track red */
-  input::-webkit-slider-runnable-track {
-    background: red;
-  }
+    /* make the slider track red */
+    input::-webkit-slider-runnable-track {
+        background: red;
+    }
 </style>
 
 <input type="range" />
@@ -54,17 +54,17 @@ For example, this `<show-hello>` element hides its internal DOM in shadow tree:
 
 ```html run autorun height=60
 <script>
-  customElements.define(
-    "show-hello",
-    class extends HTMLElement {
-      connectedCallback() {
-        const shadow = this.attachShadow({ mode: "open" });
-        shadow.innerHTML = `<p>
-      Hello, ${this.getAttribute("name")}
+    customElements.define(
+        'show-hello',
+        class extends HTMLElement {
+            connectedCallback() {
+                const shadow = this.attachShadow({ mode: 'open' });
+                shadow.innerHTML = `<p>
+      Hello, ${this.getAttribute('name')}
     </p>`;
-      }
-    }
-  );
+            }
+        }
+    );
 </script>
 
 <show-hello name="John"></show-hello>
@@ -83,13 +83,13 @@ There are two limitations:
 
 The `mode` option sets the encapsulation level. It must have any of two values:
 
-- `"open"` -- the shadow root is available as `elem.shadowRoot`.
+-   `"open"` -- the shadow root is available as `elem.shadowRoot`.
 
-  Any code is able to access the shadow tree of `elem`.
+    Any code is able to access the shadow tree of `elem`.
 
-- `"closed"` -- `elem.shadowRoot` is always `null`.
+-   `"closed"` -- `elem.shadowRoot` is always `null`.
 
-  We can only access the shadow DOM by the reference returned by `attachShadow` (and probably hidden inside a class). Browser-native shadow trees, such as `<input type="range">`, are closed. There's no way to access them.
+    We can only access the shadow DOM by the reference returned by `attachShadow` (and probably hidden inside a class). Browser-native shadow trees, such as `<input type="range">`, are closed. There's no way to access them.
 
 The [shadow root](https://dom.spec.whatwg.org/#shadowroot), returned by `attachShadow`, is like an element: we can use `innerHTML` or DOM methods, such as `append`, to populate it.
 
@@ -111,31 +111,31 @@ For example:
 
 ```html run untrusted height=40
 <style>
-  *!*
+    *!*
   /* document style won't apply to the shadow tree inside #elem (1) */
 */!*
   p {
-    color: red;
-  }
+        color: red;
+    }
 </style>
 
 <div id="elem"></div>
 
 <script>
-    elem.attachShadow({mode: 'open'});
-  *!*
-      // shadow tree has its own style (2)
-  */!*
-    elem.shadowRoot.innerHTML = `
-      <style> p { font-weight: bold; } </style>
-      <p>Hello, John!</p>
-    `;
+      elem.attachShadow({mode: 'open'});
+    *!*
+        // shadow tree has its own style (2)
+    */!*
+      elem.shadowRoot.innerHTML = `
+        <style> p { font-weight: bold; } </style>
+        <p>Hello, John!</p>
+      `;
 
-  *!*
-    // <p> is only visible from queries inside the shadow tree (3)
-  */!*
-    alert(document.querySelectorAll('p').length); // 0
-    alert(elem.shadowRoot.querySelectorAll('p').length); // 1
+    *!*
+      // <p> is only visible from queries inside the shadow tree (3)
+    */!*
+      alert(document.querySelectorAll('p').length); // 0
+      alert(elem.shadowRoot.querySelectorAll('p').length); // 1
 </script>
 ```
 
@@ -145,9 +145,9 @@ For example:
 
 ## References
 
-- DOM: <https://dom.spec.whatwg.org/#shadow-trees>
-- Compatibility: <https://caniuse.com/#feat=shadowdomv1>
-- Shadow DOM is mentioned in many other specifications, e.g. [DOM Parsing](https://w3c.github.io/DOM-Parsing/#the-innerhtml-mixin) specifies that shadow root has `innerHTML`.
+-   DOM: <https://dom.spec.whatwg.org/#shadow-trees>
+-   Compatibility: <https://caniuse.com/#feat=shadowdomv1>
+-   Shadow DOM is mentioned in many other specifications, e.g. [DOM Parsing](https://w3c.github.io/DOM-Parsing/#the-innerhtml-mixin) specifies that shadow root has `innerHTML`.
 
 ## Summary
 
@@ -158,8 +158,8 @@ Shadow DOM is a way to create a component-local DOM.
 
 Shadow DOM elements:
 
-- Have their own ids space,
-- Invisible to JavaScript selectors from the main document, such as `querySelector`,
-- Use styles only from the shadow tree, not from the main document.
+-   Have their own ids space,
+-   Invisible to JavaScript selectors from the main document, such as `querySelector`,
+-   Use styles only from the shadow tree, not from the main document.
 
 Shadow DOM, if exists, is rendered by the browser instead of so-called "light DOM" (regular children). In the chapter <info:slots-composition> we'll see how to compose them.

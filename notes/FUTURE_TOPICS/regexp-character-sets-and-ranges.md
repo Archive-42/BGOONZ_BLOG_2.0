@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="regexp-character-sets-and-ranges.html"
-- <a href="https://es.javascript.info/regexp-character-sets-and-ranges"
-- <a href="https://fr.javascript.info/regexp-character-sets-and-ranges"
-- <a href="https://it.javascript.info/regexp-character-sets-and-ranges"
-  regexp-character-sets-and-ranges"
+-   <a href="https://ar.javascript.info/"
+-   <a href="regexp-character-sets-and-ranges.html"
+-   <a href="https://es.javascript.info/regexp-character-sets-and-ranges"
+-   <a href="https://fr.javascript.info/regexp-character-sets-and-ranges"
+-   <a href="https://it.javascript.info/regexp-character-sets-and-ranges"
+    regexp-character-sets-and-ranges"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=regexp-character-sets-and-ranges"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/regexp-character-sets-and-ranges"
+-   <a href="https://ko.javascript.info/"
+-   <a href=regexp-character-sets-and-ranges"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/regexp-character-sets-and-ranges"
 
 We want to make this open-source project available for people all around the world.
 
@@ -63,9 +63,9 @@ So the example below gives no matches:
 
 The pattern searches for:
 
-- `V`,
-- then _one_ of the letters `[oi]`,
-- then `la`.
+-   `V`,
+-   then _one_ of the letters `[oi]`,
+-   then `la`.
 
 So there would be a match for `Vola` or `Vila`.
 
@@ -96,9 +96,9 @@ Combining multiple classes is also possible, e.g. `[\s\d]` means “a space char
 
 For instance:
 
-- **\\d** – is the same as `[0-9]`,
-- **\\w** – is the same as `[a-zA-Z0-9_]`,
-- **\\s** – is the same as `[\t\n\v\f\r ]`, plus few other rare Unicode space characters.
+-   **\\d** – is the same as `[0-9]`,
+-   **\\w** – is the same as `[a-zA-Z0-9_]`,
+-   **\\s** – is the same as `[\t\n\v\f\r ]`, plus few other rare Unicode space characters.
 
 ### <a href="regexp-character-sets-and-ranges.html#example-multi-language-w" id="example-multi-language-w" class="main__anchor">Example: multi-language \w</a>
 
@@ -108,11 +108,11 @@ We can write a more universal pattern, that looks for wordly characters in any l
 
 Let’s decipher it. Similar to `\w`, we’re making a set of our own that includes characters with following Unicode properties:
 
-- `Alphabetic` (`Alpha`) – for letters,
-- `Mark` (`M`) – for accents,
-- `Decimal_Number` (`Nd`) – for digits,
-- `Connector_Punctuation` (`Pc`) – for the underscore `'_'` and similar characters,
-- `Join_Control` (`Join_C`) – two special codes `200c` and `200d`, used in ligatures, e.g. in Arabic.
+-   `Alphabetic` (`Alpha`) – for letters,
+-   `Mark` (`M`) – for accents,
+-   `Decimal_Number` (`Nd`) – for digits,
+-   `Connector_Punctuation` (`Pc`) – for the underscore `'_'` and similar characters,
+-   `Join_Control` (`Join_C`) – two special codes `200c` and `200d`, used in ligatures, e.g. in Arabic.
 
 An example of use:
 
@@ -142,9 +142,9 @@ They are denoted by a caret character `^` at the start and match any character _
 
 For instance:
 
-- `[^aeyo]` – any character except `'a'`, `'e'`, `'y'` or `'o'`.
-- `[^0-9]` – any character except a digit, the same as `\D`.
-- `[^\s]` – any non-space character, same as `\S`.
+-   `[^aeyo]` – any character except `'a'`, `'e'`, `'y'` or `'o'`.
+-   `[^0-9]` – any character except a digit, the same as `\D`.
+-   `[^\s]` – any non-space character, same as `\S`.
 
 The example below looks for any characters except letters, digits and spaces:
 
@@ -159,10 +159,10 @@ Usually when we want to find exactly a special character, we need to escape it l
 
 In square brackets we can use the vast majority of special characters without escaping:
 
-- Symbols `. + ( )` never need escaping.
-- A hyphen `-` is not escaped in the beginning or the end (where it does not define a range).
-- A caret `^` is only escaped in the beginning (where it means exclusion).
-- The closing square bracket `]` is always escaped (if we need to look for that symbol).
+-   Symbols `. + ( )` never need escaping.
+-   A hyphen `-` is not escaped in the beginning or the end (where it does not define a range).
+-   A caret `^` is only escaped in the beginning (where it means exclusion).
+-   The closing square bracket `]` is always escaped (if we need to look for that symbol).
 
 In other words, all special characters are allowed without escaping, except when they mean something for square brackets.
 
@@ -260,19 +260,19 @@ solution
 
 Answers: **no, yes**.
 
-- In the script `Java` it doesn’t match anything, because `[^script]` means “any character except given ones”. So the regexp looks for `"Java"` followed by one such symbol, but there’s a string end, no symbols after it.
+-   In the script `Java` it doesn’t match anything, because `[^script]` means “any character except given ones”. So the regexp looks for `"Java"` followed by one such symbol, but there’s a string end, no symbols after it.
 
-  <a href="regexp-character-sets-and-ranges.html#"
-  <a href="regexp-character-sets-and-ranges.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+    <a href="regexp-character-sets-and-ranges.html#"
+    <a href="regexp-character-sets-and-ranges.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-      alert( "Java".match(/Java[^script]/) ); // null
+        alert( "Java".match(/Java[^script]/) ); // null
 
-- Yes, because the `[^script]` part matches the character `"S"`. It’s not one of `script`. As the regexp is case-sensitive (no `i` flag), it treats `"S"` as a different character from `"s"`.
+-   Yes, because the `[^script]` part matches the character `"S"`. It’s not one of `script`. As the regexp is case-sensitive (no `i` flag), it treats `"S"` as a different character from `"s"`.
 
-  <a href="regexp-character-sets-and-ranges.html#"
-  <a href="regexp-character-sets-and-ranges.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
+    <a href="regexp-character-sets-and-ranges.html#"
+    <a href="regexp-character-sets-and-ranges.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>
 
-      alert( "JavaScript".match(/Java[^script]/) ); // "JavaS"
+        alert( "JavaScript".match(/Java[^script]/) ); // "JavaS"
 
 ### <a href="regexp-character-sets-and-ranges.html#find-the-time-as-hh-mm-or-hh-mm" id="find-the-time-as-hh-mm-or-hh-mm" class="main__anchor">Find the time as hh:mm or hh-mm</a>
 
@@ -309,26 +309,26 @@ Please note that the dash `'-'` has a special meaning in square brackets, but on
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-character-sets-and-ranges.html#sets" class="sidebar__link">Sets</a>
-- <a href="regexp-character-sets-and-ranges.html#ranges" class="sidebar__link">Ranges</a>
-- <a href="regexp-character-sets-and-ranges.html#excluding-ranges" class="sidebar__link">Excluding ranges</a>
-- <a href="regexp-character-sets-and-ranges.html#escaping-in-" class="sidebar__link">Escaping in […]</a>
-- <a href="regexp-character-sets-and-ranges.html#ranges-and-flag-u" class="sidebar__link">Ranges and flag “u”</a>
+-   <a href="regexp-character-sets-and-ranges.html#sets" class="sidebar__link">Sets</a>
+-   <a href="regexp-character-sets-and-ranges.html#ranges" class="sidebar__link">Ranges</a>
+-   <a href="regexp-character-sets-and-ranges.html#excluding-ranges" class="sidebar__link">Excluding ranges</a>
+-   <a href="regexp-character-sets-and-ranges.html#escaping-in-" class="sidebar__link">Escaping in […]</a>
+-   <a href="regexp-character-sets-and-ranges.html#ranges-and-flag-u" class="sidebar__link">Ranges and flag “u”</a>
 
-- <a href="regexp-character-sets-and-ranges.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="regexp-character-sets-and-ranges.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-character-sets-and-ranges.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="regexp-character-sets-and-ranges.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -336,7 +336,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/08-regexp-character-sets-and-ranges" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,3 +1,3 @@
 async function getUsers(names) {
-  /* your code */
+    /* your code */
 }

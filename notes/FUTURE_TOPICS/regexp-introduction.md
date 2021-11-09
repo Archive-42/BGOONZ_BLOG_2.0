@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/regexp-introduction"
-- <a href="regexp-introduction.html"
-- <a href="https://es.javascript.info/regexp-introduction"
-- <a href="https://fr.javascript.info/regexp-introduction"
-- <a href="https://it.javascript.info/regexp-introduction"
-  regexp-introduction"
+-   <a href="https://ar.javascript.info/regexp-introduction"
+-   <a href="regexp-introduction.html"
+-   <a href="https://es.javascript.info/regexp-introduction"
+-   <a href="https://fr.javascript.info/regexp-introduction"
+-   <a href="https://it.javascript.info/regexp-introduction"
+    regexp-introduction"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/regexp-introduction"
-- <a href=regexp-introduction"
-- <a href="https://tr.javascript.info/regexp-introduction"
-- <a href="https://zh.javascript.info/regexp-introduction"
+-   <a href="https://ko.javascript.info/regexp-introduction"
+-   <a href=regexp-introduction"
+-   <a href="https://tr.javascript.info/regexp-introduction"
+-   <a href="https://zh.javascript.info/regexp-introduction"
 
 We want to make this open-source project available for people all around the world.
 
@@ -96,9 +96,9 @@ Enables full Unicode support. The flag enables correct processing of surrogate p
 
 From here on the color scheme is:
 
-- regexp – `red`
-- string (where we search) – `blue`
-- result – `green`
+-   regexp – `red`
+-   string (where we search) – `blue`
+-   result – `green`
 
 ## <a href="regexp-introduction.html#searching-str-match" id="searching-str-match" class="main__anchor">Searching: str.match</a>
 
@@ -205,11 +205,11 @@ Full information about the methods is given in the article [Methods of RegExp an
 
 ## <a href="regexp-introduction.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- A regular expression consists of a pattern and optional flags: `g`, `i`, `m`, `u`, `s`, `y`.
-- Without flags and special symbols (that we’ll study later), the search by a regexp is the same as a substring search.
-- The method `str.match(regexp)` looks for matches: all of them if there’s `g` flag, otherwise, only the first one.
-- The method `str.replace(regexp, replacement)` replaces matches found using `regexp` with `replacement`: all of them if there’s `g` flag, otherwise only the first one.
-- The method `regexp.test(str)` returns `true` if there’s at least one match, otherwise, it returns `false`.
+-   A regular expression consists of a pattern and optional flags: `g`, `i`, `m`, `u`, `s`, `y`.
+-   Without flags and special symbols (that we’ll study later), the search by a regexp is the same as a substring search.
+-   The method `str.match(regexp)` looks for matches: all of them if there’s `g` flag, otherwise, only the first one.
+-   The method `str.replace(regexp, replacement)` replaces matches found using `regexp` with `replacement`: all of them if there’s `g` flag, otherwise only the first one.
+-   The method `regexp.test(str)` returns `true` if there’s at least one match, otherwise, it returns `false`.
 
 <a href="regular-expressions.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="regexp-character-classes.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -221,26 +221,26 @@ Full information about the methods is given in the article [Methods of RegExp an
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-introduction.html#regular-expressions" class="sidebar__link">Regular Expressions</a>
-- <a href="regexp-introduction.html#flags" class="sidebar__link">Flags</a>
-- <a href="regexp-introduction.html#searching-str-match" class="sidebar__link">Searching: str.match</a>
-- <a href="regexp-introduction.html#replacing-str-replace" class="sidebar__link">Replacing: str.replace</a>
-- <a href="regexp-introduction.html#testing-regexp-test" class="sidebar__link">Testing: regexp.test</a>
-- <a href="regexp-introduction.html#summary" class="sidebar__link">Summary</a>
+-   <a href="regexp-introduction.html#regular-expressions" class="sidebar__link">Regular Expressions</a>
+-   <a href="regexp-introduction.html#flags" class="sidebar__link">Flags</a>
+-   <a href="regexp-introduction.html#searching-str-match" class="sidebar__link">Searching: str.match</a>
+-   <a href="regexp-introduction.html#replacing-str-replace" class="sidebar__link">Replacing: str.replace</a>
+-   <a href="regexp-introduction.html#testing-regexp-test" class="sidebar__link">Testing: regexp.test</a>
+-   <a href="regexp-introduction.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="regexp-introduction.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-introduction.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -248,7 +248,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/01-regexp-introduction" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

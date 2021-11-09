@@ -1,7 +1,7 @@
 rewrite-async-2"
 
-- <a href="rewrite-async-2.html"
-  /rewrite-async-2"
+-   <a href="rewrite-async-2.html"
+    /rewrite-async-2"
 
 rewrite-async-2rewrite-async-2"
 

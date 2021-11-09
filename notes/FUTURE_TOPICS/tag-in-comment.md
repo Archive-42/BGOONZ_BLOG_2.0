@@ -1,18 +1,18 @@
 tag-in-comment"
 
-- <a href="tag-in-comment.html"
-  /tag-in-comment"
-  /tag-in-comment"
-  tag-in-comment"
-  task/tag-in-comment"
+-   <a href="tag-in-comment.html"
+    /tag-in-comment"
+    /tag-in-comment"
+    tag-in-comment"
+    task/tag-in-comment"
 
 <!-- -->
 
 tag-in-comment"
 tag-in-comment"
 
-- <a href="https://tr.javascript.info/"
-  tag-in-comment"
+-   <a href="https://tr.javascript.info/"
+    tag-in-comment"
 
 We want to make this open-source project available for people all around the world.
 

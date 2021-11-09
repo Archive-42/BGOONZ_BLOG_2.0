@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="scrollbar-width.html"
-  /scrollbar-width"
-  /scrollbar-width"
-  scrollbar-widthscrollbar-width"
+-   <a href="scrollbar-width.html"
+    /scrollbar-width"
+    /scrollbar-width"
+    scrollbar-widthscrollbar-width"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  scrollbar-width"
-  /scrollbar-width"
-  scrollbar-width"
+-   <a href="https://ko.javascript.info/"
+    scrollbar-width"
+    /scrollbar-width"
+    scrollbar-width"
 
 We want to make this open-source project available for people all around the world.
 

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="sortable-table.html"
-  /sortable-table"
-  /sortable-table"
-  sortable-table"
-  task/sortable-table"
+-   <a href="https://ar.javascript.info/"
+-   <a href="sortable-table.html"
+    /sortable-table"
+    /sortable-table"
+    sortable-table"
+    task/sortable-table"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  sortable-table"
-- <a href="https://tr.javascript.info/"
-  sortable-table"
+-   <a href="https://ko.javascript.info/"
+    sortable-table"
+-   <a href="https://tr.javascript.info/"
+    sortable-table"
 
 We want to make this open-source project available for people all around the world.
 

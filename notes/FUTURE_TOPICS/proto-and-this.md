@@ -1,9 +1,9 @@
 proto-and-this"
 
-- <a href="proto-and-this.html"
-  /proto-and-this"
-  /proto-and-this"
-  proto-and-thisproto-and-this"
+-   <a href="proto-and-this.html"
+    /proto-and-this"
+    /proto-and-this"
+    proto-and-thisproto-and-this"
 
 <!-- -->
 

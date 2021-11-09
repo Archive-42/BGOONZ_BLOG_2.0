@@ -1,9 +1,9 @@
 new-object-same-constructor"
 
-- <a href="new-object-same-constructor.html"
-  /new-object-same-constructor"
-  /new-object-same-constructor"
-  new-object-same-constructornew-object-same-constructor"
+-   <a href="new-object-same-constructor.html"
+    /new-object-same-constructor"
+    /new-object-same-constructor"
+    new-object-same-constructornew-object-same-constructor"
 
 <!-- -->
 

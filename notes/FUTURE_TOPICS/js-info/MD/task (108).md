@@ -10,14 +10,14 @@ Will it have access to the outer variables from its creation place, or the invoc
 
 ```js
 function makeWorker() {
-  let name = "Pete";
+    let name = 'Pete';
 
-  return function() {
-    alert(name);
-  };
+    return function () {
+        alert(name);
+    };
 }
 
-let name = "John";
+let name = 'John';
 
 // create a function
 let work = makeWorker();

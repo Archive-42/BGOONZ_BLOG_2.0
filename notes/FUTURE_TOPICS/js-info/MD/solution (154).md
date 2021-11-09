@@ -1,13 +1,12 @@
 ```js run demo
 function* pseudoRandom(seed) {
-  let value = seed;
+    let value = seed;
 
-  while(true) {
-    value = value * 16807 % 2147483647
-    yield value;
-  }
-
-};
+    while (true) {
+        value = (value * 16807) % 2147483647;
+        yield value;
+    }
+}
 
 let generator = pseudoRandom(1);
 
@@ -20,12 +19,12 @@ Please note, the same can be done with a regular function, like this:
 
 ```js run
 function pseudoRandom(seed) {
-  let value = seed;
+    let value = seed;
 
-  return function() {
-    value = value * 16807 % 2147483647;
-    return value;
-  }
+    return function () {
+        value = (value * 16807) % 2147483647;
+        return value;
+    };
 }
 
 let generator = pseudoRandom(1);

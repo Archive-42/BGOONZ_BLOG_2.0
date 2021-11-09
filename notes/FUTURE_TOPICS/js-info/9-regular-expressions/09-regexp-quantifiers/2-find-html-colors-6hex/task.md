@@ -7,8 +7,7 @@ An example of use:
 ```js
 let regexp = /...your regexp.../;
 
-let str =
-  "color:#121212; background-color:#AA00ef bad-colors:f#fddee #fd2 #12345678";
+let str = 'color:#121212; background-color:#AA00ef bad-colors:f#fddee #fd2 #12345678';
 
 alert(str.match(regexp)); // #121212,#AA00ef
 ```

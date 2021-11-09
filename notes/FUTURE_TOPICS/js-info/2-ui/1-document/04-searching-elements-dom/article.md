@@ -12,17 +12,17 @@ For instance:
 
 ```html run
 <div id="elem">
-  <div id="elem-content">Element</div>
+    <div id="elem-content">Element</div>
 </div>
 
 <script>
-    // get the element
-  *!*
-    let elem = document.getElementById('elem');
-  */!*
+      // get the element
+    *!*
+      let elem = document.getElementById('elem');
+    */!*
 
-    // make its background red
-    elem.style.background = 'red';
+      // make its background red
+      elem.style.background = 'red';
 </script>
 ```
 
@@ -30,15 +30,15 @@ Also, there's a global variable named by `id` that references the element:
 
 ```html run
 <div id="*!*elem*/!*">
-  <div id="*!*elem-content*/!*">Element</div>
+    <div id="*!*elem-content*/!*">Element</div>
 </div>
 
 <script>
-  // elem is a reference to DOM-element with id="elem"
-  elem.style.background = "red";
+    // elem is a reference to DOM-element with id="elem"
+    elem.style.background = 'red';
 
-  // id="elem-content" has a hyphen inside, so it can't be a variable name
-  // ...but we can access it using square brackets: window['elem-content']
+    // id="elem-content" has a hyphen inside, so it can't be a variable name
+    // ...but we can access it using square brackets: window['elem-content']
 </script>
 ```
 
@@ -48,9 +48,9 @@ Also, there's a global variable named by `id` that references the element:
 <div id="elem"></div>
 
 <script>
-  let elem = 5; // now elem is 5, not a reference to <div id="elem">
+    let elem = 5; // now elem is 5, not a reference to <div id="elem">
 
-  alert(elem); // 5
+    alert(elem); // 5
 </script>
 ```
 
@@ -82,21 +82,21 @@ Here we look for all `<li>` elements that are last children:
 
 ```html run
 <ul>
-  <li>The</li>
-  <li>test</li>
+    <li>The</li>
+    <li>test</li>
 </ul>
 <ul>
-  <li>has</li>
-  <li>passed</li>
+    <li>has</li>
+    <li>passed</li>
 </ul>
 <script>
-  *!*
-    let elements = document.querySelectorAll('ul > li:last-child');
-  */!*
+    *!*
+      let elements = document.querySelectorAll('ul > li:last-child');
+    */!*
 
-    for (let elem of elements) {
-      alert(elem.innerHTML); // "test", "passed"
-    }
+      for (let elem of elements) {
+        alert(elem.innerHTML); // "test", "passed"
+      }
 </script>
 ```
 
@@ -127,14 +127,14 @@ For instance:
 <a href="http://ya.ru">...</a>
 
 <script>
-    // can be any collection instead of document.body.children
-    for (let elem of document.body.children) {
-  *!*
-      if (elem.matches('a[href$="zip"]')) {
-  */!*
-        alert("The archive reference: " + elem.href );
+      // can be any collection instead of document.body.children
+      for (let elem of document.body.children) {
+    *!*
+        if (elem.matches('a[href$="zip"]')) {
+    */!*
+          alert("The archive reference: " + elem.href );
+        }
       }
-    }
 </script>
 ```
 
@@ -152,19 +152,19 @@ For instance:
 <h1>Contents</h1>
 
 <div class="contents">
-  <ul class="book">
-    <li class="chapter">Chapter 1</li>
-    <li class="chapter">Chapter 1</li>
-  </ul>
+    <ul class="book">
+        <li class="chapter">Chapter 1</li>
+        <li class="chapter">Chapter 1</li>
+    </ul>
 </div>
 
 <script>
-  let chapter = document.querySelector(".chapter"); // LI
+    let chapter = document.querySelector('.chapter'); // LI
 
-  alert(chapter.closest(".book")); // UL
-  alert(chapter.closest(".contents")); // DIV
+    alert(chapter.closest('.book')); // UL
+    alert(chapter.closest('.contents')); // DIV
 
-  alert(chapter.closest("h1")); // null (because h1 is not an ancestor)
+    alert(chapter.closest('h1')); // null (because h1 is not an ancestor)
 </script>
 ```
 
@@ -176,46 +176,40 @@ Today, they are mostly history, as `querySelector` is more powerful and shorter 
 
 So here we cover them mainly for completeness, while you can still find them in the old scripts.
 
-- `elem.getElementsByTagName(tag)` looks for elements with the given tag and returns the collection of them. The `tag` parameter can also be a star `"*"` for "any tags".
-- `elem.getElementsByClassName(className)` returns elements that have the given CSS class.
-- `document.getElementsByName(name)` returns elements with the given `name` attribute, document-wide. Very rarely used.
+-   `elem.getElementsByTagName(tag)` looks for elements with the given tag and returns the collection of them. The `tag` parameter can also be a star `"*"` for "any tags".
+-   `elem.getElementsByClassName(className)` returns elements that have the given CSS class.
+-   `document.getElementsByName(name)` returns elements with the given `name` attribute, document-wide. Very rarely used.
 
 For instance:
 
 ```js
 // get all divs in the document
-let divs = document.getElementsByTagName("div");
+let divs = document.getElementsByTagName('div');
 ```
 
 Let's find all `input` tags inside the table:
 
 ```html run height=50
 <table id="table">
-  <tr>
-    <td>Your age:</td>
+    <tr>
+        <td>Your age:</td>
 
-    <td>
-      <label>
-        <input type="radio" name="age" value="young" checked /> less than 18
-      </label>
-      <label>
-        <input type="radio" name="age" value="mature" /> from 18 to 50
-      </label>
-      <label>
-        <input type="radio" name="age" value="senior" /> more than 60
-      </label>
-    </td>
-  </tr>
+        <td>
+            <label> <input type="radio" name="age" value="young" checked /> less than 18 </label>
+            <label> <input type="radio" name="age" value="mature" /> from 18 to 50 </label>
+            <label> <input type="radio" name="age" value="senior" /> more than 60 </label>
+        </td>
+    </tr>
 </table>
 
 <script>
-  *!*
-    let inputs = table.getElementsByTagName('input');
-  */!*
+    *!*
+      let inputs = table.getElementsByTagName('input');
+    */!*
 
-    for (let input of inputs) {
-      alert( input.value + ': ' + input.checked );
-    }
+      for (let input of inputs) {
+        alert( input.value + ': ' + input.checked );
+      }
 </script>
 ```
 
@@ -239,7 +233,7 @@ We should either iterate over the collection or get an element by its index, and
 
 ```js
 // should work (if there's an input)
-document.getElementsByTagName("input")[0].value = 5;
+document.getElementsByTagName('input')[0].value = 5;
 ```
 
 ````

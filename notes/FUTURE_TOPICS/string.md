@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/string"
-- <a href="string.html"
-- <a href="https://es.javascript.info/string"
-- <a href="https://fr.javascript.info/string"
-- <a href="https://it.javascript.info/string"
-  string"
+-   <a href="https://ar.javascript.info/string"
+-   <a href="string.html"
+-   <a href="https://es.javascript.info/string"
+-   <a href="https://fr.javascript.info/string"
+-   <a href="https://it.javascript.info/string"
+    string"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/string"
-- <a href=string"
-- <a href="https://tr.javascript.info/string"
-- <a href="https://zh.javascript.info/string"
+-   <a href="https://ko.javascript.info/string"
+-   <a href=string"
+-   <a href="https://tr.javascript.info/string"
+-   <a href="https://zh.javascript.info/string"
 
 We want to make this open-source project available for people all around the world.
 
@@ -577,8 +577,8 @@ Now it becomes obvious why `a > Z`.
 
 The characters are compared by their numeric code. The greater code means that the character is greater. The code for `a` (97) is greater than the code for `Z` (90).
 
-- All lowercase letters go after uppercase letters because their codes are greater.
-- Some letters like `Ö` stand apart from the main alphabet. Here, its code is greater than anything from `a` to `z`.
+-   All lowercase letters go after uppercase letters because their codes are greater.
+-   Some letters like `Ö` stand apart from the main alphabet. Here, its code is greater than anything from `a` to `z`.
 
 ### <a href="string.html#correct-comparisons" id="correct-comparisons" class="main__anchor">Correct comparisons</a>
 
@@ -592,9 +592,9 @@ It provides a special method to compare strings in different languages, followin
 
 The call [str.localeCompare(str2)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare) returns an integer indicating whether `str` is less, equal or greater than `str2` according to the language rules:
 
-- Returns a negative number if `str` is less than `str2`.
-- Returns a positive number if `str` is greater than `str2`.
-- Returns `0` if they are equivalent.
+-   Returns a negative number if `str` is less than `str2`.
+-   Returns a positive number if `str` is greater than `str2`.
+-   Returns `0` if they are equivalent.
 
 For instance:
 
@@ -722,20 +722,20 @@ If you want to learn more about normalization rules and variants – they are de
 
 ## <a href="string.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- There are 3 types of quotes. Backticks allow a string to span multiple lines and embed expressions `${…}`.
-- Strings in JavaScript are encoded using UTF-16.
-- We can use special characters like `\n` and insert letters by their Unicode using `\u...`.
-- To get a character, use: `[]`.
-- To get a substring, use: `slice` or `substring`.
-- To lowercase/uppercase a string, use: `toLowerCase/toUpperCase`.
-- To look for a substring, use: `indexOf`, or `includes/startsWith/endsWith` for simple checks.
-- To compare strings according to the language, use: `localeCompare`, otherwise they are compared by character codes.
+-   There are 3 types of quotes. Backticks allow a string to span multiple lines and embed expressions `${…}`.
+-   Strings in JavaScript are encoded using UTF-16.
+-   We can use special characters like `\n` and insert letters by their Unicode using `\u...`.
+-   To get a character, use: `[]`.
+-   To get a substring, use: `slice` or `substring`.
+-   To lowercase/uppercase a string, use: `toLowerCase/toUpperCase`.
+-   To look for a substring, use: `indexOf`, or `includes/startsWith/endsWith` for simple checks.
+-   To compare strings according to the language, use: `localeCompare`, otherwise they are compared by character codes.
 
 There are several other helpful methods in strings:
 
-- `str.trim()` – removes (“trims”) spaces from the beginning and end of the string.
-- `str.repeat(n)` – repeats the string `n` times.
-- …and more to be found in the [manual](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
+-   `str.trim()` – removes (“trims”) spaces from the beginning and end of the string.
+-   `str.repeat(n)` – repeats the string `n` times.
+-   …and more to be found in the [manual](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String).
 
 Strings also have methods for doing search/replace with regular expressions. But that’s big topic, so it’s explained in a separate tutorial section [Regular expressions](regular-expressions.html).
 
@@ -886,32 +886,32 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="string.html#quotes" class="sidebar__link">Quotes</a>
-- <a href="string.html#special-characters" class="sidebar__link">Special characters</a>
-- <a href="string.html#string-length" class="sidebar__link">String length</a>
-- <a href="string.html#accessing-characters" class="sidebar__link">Accessing characters</a>
-- <a href="string.html#strings-are-immutable" class="sidebar__link">Strings are immutable</a>
-- <a href="string.html#changing-the-case" class="sidebar__link">Changing the case</a>
-- <a href="string.html#searching-for-a-substring" class="sidebar__link">Searching for a substring</a>
-- <a href="string.html#getting-a-substring" class="sidebar__link">Getting a substring</a>
-- <a href="string.html#comparing-strings" class="sidebar__link">Comparing strings</a>
-- <a href="string.html#internals-unicode" class="sidebar__link">Internals, Unicode</a>
-- <a href="string.html#summary" class="sidebar__link">Summary</a>
+-   <a href="string.html#quotes" class="sidebar__link">Quotes</a>
+-   <a href="string.html#special-characters" class="sidebar__link">Special characters</a>
+-   <a href="string.html#string-length" class="sidebar__link">String length</a>
+-   <a href="string.html#accessing-characters" class="sidebar__link">Accessing characters</a>
+-   <a href="string.html#strings-are-immutable" class="sidebar__link">Strings are immutable</a>
+-   <a href="string.html#changing-the-case" class="sidebar__link">Changing the case</a>
+-   <a href="string.html#searching-for-a-substring" class="sidebar__link">Searching for a substring</a>
+-   <a href="string.html#getting-a-substring" class="sidebar__link">Getting a substring</a>
+-   <a href="string.html#comparing-strings" class="sidebar__link">Comparing strings</a>
+-   <a href="string.html#internals-unicode" class="sidebar__link">Internals, Unicode</a>
+-   <a href="string.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="string.html#tasks" class="sidebar__link">Tasks (4)</a>
-- <a href="string.html#comments" class="sidebar__link">Comments</a>
+-   <a href="string.html#tasks" class="sidebar__link">Tasks (4)</a>
+-   <a href="string.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -919,7 +919,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/03-string" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

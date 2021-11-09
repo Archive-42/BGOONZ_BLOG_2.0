@@ -1,16 +1,16 @@
 random-int-min-max"
 
-- <a href="random-int-min-max.html"
-  /random-int-min-max"
-  /random-int-min-max"
-  random-int-min-maxrandom-int-min-max"
+-   <a href="random-int-min-max.html"
+    /random-int-min-max"
+    /random-int-min-max"
+    random-int-min-maxrandom-int-min-max"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  random-int-min-max"
-  /random-int-min-max"
-  random-int-min-max"
+-   <a href="https://ko.javascript.info/"
+    random-int-min-max"
+    /random-int-min-max"
+    random-int-min-max"
 
 We want to make this open-source project available for people all around the world.
 

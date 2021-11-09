@@ -1,9 +1,9 @@
 serialize-event-circular"
 
-- <a href="serialize-event-circular.html"
-  /serialize-event-circular"
-  /serialize-event-circular"
-  serialize-event-circularserialize-event-circular"
+-   <a href="serialize-event-circular.html"
+    /serialize-event-circular"
+    /serialize-event-circular"
+    serialize-event-circularserialize-event-circular"
 
 <!-- -->
 

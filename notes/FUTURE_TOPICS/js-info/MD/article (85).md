@@ -1,4 +1,3 @@
-
 # Modules, introduction
 
 As our application grows bigger, we want to split it into multiple files, so called "modules". A module may contain a class or a library of functions for a specific purpose.
@@ -9,9 +8,9 @@ But eventually scripts became more and more complex, so the community invented a
 
 To name some (for historical reasons):
 
-- [AMD](https://en.wikipedia.org/wiki/Asynchronous_module_definition) -- one of the most ancient module systems, initially implemented by the library [require.js](http://requirejs.org/).
-- [CommonJS](http://wiki.commonjs.org/wiki/Modules/1.1) -- the module system created for Node.js server.
-- [UMD](https://github.com/umdjs/umd) -- one more module system, suggested as a universal one, compatible with AMD and CommonJS.
+-   [AMD](https://en.wikipedia.org/wiki/Asynchronous_module_definition) -- one of the most ancient module systems, initially implemented by the library [require.js](http://requirejs.org/).
+-   [CommonJS](http://wiki.commonjs.org/wiki/Modules/1.1) -- the module system created for Node.js server.
+-   [UMD](https://github.com/umdjs/umd) -- one more module system, suggested as a universal one, compatible with AMD and CommonJS.
 
 Now all these slowly become a part of history, but we still can find them in old scripts.
 
@@ -23,15 +22,15 @@ A module is just a file. One script is one module. As simple as that.
 
 Modules can load each other and use special directives `export` and `import` to interchange functionality, call functions of one module from another one:
 
-- `export` keyword labels variables and functions that should be accessible from outside the current module.
-- `import` allows the import of functionality from other modules.
+-   `export` keyword labels variables and functions that should be accessible from outside the current module.
+-   `import` allows the import of functionality from other modules.
 
 For instance, if we have a file `sayHi.js` exporting a function:
 
 ```js
 // 📁 sayHi.js
 export function sayHi(user) {
-  alert(`Hello, ${user}!`);
+    alert(`Hello, ${user}!`);
 }
 ```
 
@@ -39,7 +38,7 @@ export function sayHi(user) {
 
 ```js
 // 📁 main.js
-import {sayHi} from './sayHi.js';
+import { sayHi } from './sayHi.js';
 
 alert(sayHi); // function...
 sayHi('John'); // Hello, John!
@@ -73,7 +72,7 @@ Modules always work in strict mode. E.g. assigning to an undeclared variable wil
 
 ```html run
 <script type="module">
-  a = 5; // error
+    a = 5; // error
 </script>
 ```
 
@@ -87,8 +86,8 @@ In the example below, two scripts are imported, and `hello.js` tries to use `use
 
 Modules should `export` what they want to be accessible from outside and `import` what they need.
 
-- `user.js` should export the `user` variable.
-- `hello.js` should import it from `user.js` module.
+-   `user.js` should export the `user` variable.
+-   `hello.js` should import it from `user.js` module.
 
 In other words, with modules we use import/export instead of relying on global variables.
 
@@ -102,21 +101,21 @@ Here are two scripts on the same page, both `type="module"`. They don't see each
 
 ```html run
 <script type="module">
-  // The variable is only visible in this module script
-  let user = "John";
+    // The variable is only visible in this module script
+    let user = 'John';
 </script>
 
 <script type="module">
-  *!*
-  alert(user); // Error: user is not defined
-  */!*
+    *!*
+    alert(user); // Error: user is not defined
+    */!*
 </script>
 ```
 
 ```smart
-In the browser, we can make a variable window-level global by explicitly assigning it to a `window` property, e.g. `window.user = "John"`. 
+In the browser, we can make a variable window-level global by explicitly assigning it to a `window` property, e.g. `window.user = "John"`.
 
-Then all scripts will see it, both with `type="module"` and without it. 
+Then all scripts will see it, both with `type="module"` and without it.
 
 That said, making such global variables is frowned upon. Please try to avoid them.
 ```
@@ -125,7 +124,7 @@ That said, making such global variables is frowned upon. Please try to avoid the
 
 If the same module is imported into multiple other modules, its code is executed only once, upon the first import. Then its exports are given to all further importers.
 
-The one-time evaluation has important consequences, that we should be aware of. 
+The one-time evaluation has important consequences, that we should be aware of.
 
 Let's see a couple of examples.
 
@@ -133,7 +132,7 @@ First, if executing a module code brings side-effects, like showing a message, t
 
 ```js
 // 📁 alert.js
-alert("Module is evaluated!");
+alert('Module is evaluated!');
 ```
 
 ```js
@@ -157,7 +156,7 @@ Let's say, a module exports an object:
 ```js
 // 📁 admin.js
 export let admin = {
-  name: "John"
+    name: 'John'
 };
 ```
 
@@ -184,11 +183,12 @@ As you can see, when `1.js` changes the `name` property in the imported `admin`,
 
 That's exactly because the module is executed only once. Exports are generated, and then they are shared between importers, so if something changes the `admin` object, other modules will see that.
 
-**Such behavior is actually very convenient, because it allows us to *configure* modules.**
+**Such behavior is actually very convenient, because it allows us to _configure_ modules.**
 
 In other words, a module can provide a generic functionality that needs a setup. E.g. authentication needs credentials. Then it can export a configuration object expecting the outer code to assign to it.
 
 Here's the classical pattern:
+
 1. A module exports some means of configuration, e.g. a configuration object.
 2. On the first import we initialize it, write to its properties. The top-level application script may do that.
 3. Further imports use the module.
@@ -197,10 +197,10 @@ For instance, the `admin.js` module may provide certain functionality (e.g. auth
 
 ```js
 // 📁 admin.js
-export let config = { };
+export let config = {};
 
 export function sayHi() {
-  alert(`Ready to serve, ${config.user}!`);
+    alert(`Ready to serve, ${config.user}!`);
 }
 ```
 
@@ -210,21 +210,20 @@ Then in `init.js`, the first script of our app, we import `config` from it and s
 
 ```js
 // 📁 init.js
-import {config} from './admin.js';
-config.user = "Pete";
+import { config } from './admin.js';
+config.user = 'Pete';
 ```
 
-...Now the module `admin.js` is configured. 
+...Now the module `admin.js` is configured.
 
 Further importers can call it, and it correctly shows the current user:
 
 ```js
 // 📁 another.js
-import {sayHi} from './admin.js';
+import { sayHi } from './admin.js';
 
 sayHi(); // Ready to serve, *!*Pete*/!*!
 ```
-
 
 ### import.meta
 
@@ -234,8 +233,8 @@ Its content depends on the environment. In the browser, it contains the URL of t
 
 ```html run height=0
 <script type="module">
-  alert(import.meta.url); // script URL
-  // for an inline script - the URL of the current HTML-page
+    alert(import.meta.url); // script URL
+    // for an inline script - the URL of the current HTML-page
 </script>
 ```
 
@@ -249,11 +248,11 @@ Compare it to non-module scripts, where `this` is a global object:
 
 ```html run height=0
 <script>
-  alert(this); // window
+    alert(this); // window
 </script>
 
 <script type="module">
-  alert(this); // undefined
+    alert(this); // undefined
 </script>
 ```
 
@@ -265,12 +264,13 @@ You may want skip this section for now if you're reading for the first time, or 
 
 ### Module scripts are deferred
 
-Module scripts are *always* deferred, same effect as `defer` attribute (described in the chapter [](info:script-async-defer)), for both external and inline scripts.
+Module scripts are _always_ deferred, same effect as `defer` attribute (described in the chapter [](info:script-async-defer)), for both external and inline scripts.
 
 In other words:
-- downloading external module scripts `<script type="module" src="...">` doesn't block HTML processing, they load in parallel with other resources.
-- module scripts wait until the HTML document is fully ready (even if they are tiny and load faster than HTML), and then run.
-- relative order of scripts is maintained: scripts that go first in the document, execute first.
+
+-   downloading external module scripts `<script type="module" src="...">` doesn't block HTML processing, they load in parallel with other resources.
+-   module scripts wait until the HTML document is fully ready (even if they are tiny and load faster than HTML), and then run.
+-   relative order of scripts is maintained: scripts that go first in the document, execute first.
 
 As a side-effect, module scripts always "see" the fully loaded HTML-page, including HTML elements below them.
 
@@ -278,19 +278,19 @@ For instance:
 
 ```html run
 <script type="module">
-*!*
-  alert(typeof button); // object: the script can 'see' the button below
-*/!*
-  // as modules are deferred, the script runs after the whole page is loaded
+    *!*
+      alert(typeof button); // object: the script can 'see' the button below
+    */!*
+      // as modules are deferred, the script runs after the whole page is loaded
 </script>
 
 Compare to regular script below:
 
 <script>
-*!*
-  alert(typeof button); // button is undefined, the script can't see elements below
-*/!*
-  // regular scripts run immediately, before the rest of the page is processed
+    *!*
+      alert(typeof button); // button is undefined, the script can't see elements below
+    */!*
+      // regular scripts run immediately, before the rest of the page is processed
 </script>
 
 <button id="button">Button</button>
@@ -329,6 +329,7 @@ That's good for functionality that doesn't depend on anything, like counters, ad
 External scripts that have `type="module"` are different in two aspects:
 
 1. External scripts with the same `src` run only once:
+
     ```html
     <!-- the script my.js is fetched and executed only once -->
     <script type="module" src="my.js"></script>
@@ -336,6 +337,7 @@ External scripts that have `type="module"` are different in two aspects:
     ```
 
 2. External scripts that are fetched from another origin (e.g. another site) require [CORS](mdn:Web/HTTP/CORS) headers, as described in the chapter <info:fetch-crossorigin>. In other words, if a module script is fetched from another origin, the remote server must supply a header `Access-Control-Allow-Origin` allowing the fetch.
+
     ```html
     <!-- another-site.com must supply Access-Control-Allow-Origin -->
     <!-- otherwise, the script won't execute -->
@@ -349,8 +351,9 @@ External scripts that have `type="module"` are different in two aspects:
 In the browser, `import` must get either a relative or absolute URL. Modules without any path are called "bare" modules. Such modules are not allowed in `import`.
 
 For instance, this `import` is invalid:
+
 ```js
-import {sayHi} from 'sayHi'; // Error, "bare" module
+import { sayHi } from 'sayHi'; // Error, "bare" module
 // the module must have a path, e.g. './sayHi.js' or wherever the module is
 ```
 
@@ -362,12 +365,12 @@ Old browsers do not understand `type="module"`. Scripts of an unknown type are j
 
 ```html run
 <script type="module">
-  alert("Runs in modern browsers");
+    alert('Runs in modern browsers');
 </script>
 
 <script nomodule>
-  alert("Modern browsers know both type=module and nomodule, so skip this")
-  alert("Old browsers ignore script with unknown type=module, but execute this.");
+    alert('Modern browsers know both type=module and nomodule, so skip this');
+    alert('Old browsers ignore script with unknown type=module, but execute this.');
 </script>
 ```
 

@@ -1,18 +1,18 @@
 yellow-links"
 
-- <a href="yellow-links.html"
-  /yellow-links"
-  /yellow-links"
-  yellow-links"
-  task/yellow-links"
+-   <a href="yellow-links.html"
+    /yellow-links"
+    /yellow-links"
+    yellow-links"
+    task/yellow-links"
 
 <!-- -->
 
 yellow-links"
 yellow-links"
 
-- <a href="https://tr.javascript.info/"
-  yellow-links"
+-   <a href="https://tr.javascript.info/"
+    yellow-links"
 
 We want to make this open-source project available for people all around the world.
 
@@ -36,8 +36,8 @@ Make all external links orange by altering their `style` property.
 
 A link is external if:
 
-- Its `href` has `://` in it
-- But doesn’t start with `http://internal.com`.
+-   Its `href` has `://` in it
+-   But doesn’t start with `http://internal.com`.
 
 Example:
 

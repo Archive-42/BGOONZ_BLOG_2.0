@@ -8,10 +8,10 @@ The code that makes use of `<custom-menu>` can look like this:
 
 ```html
 <custom-menu>
-  <title>Candy menu</title>
-  <item>Lollipop</item>
-  <item>Fruit Toast</item>
-  <item>Cup Cake</item>
+    <title>Candy menu</title>
+    <item>Lollipop</item>
+    <item>Fruit Toast</item>
+    <item>Cup Cake</item>
 </custom-menu>
 ```
 
@@ -64,17 +64,17 @@ Here's the DOM structure after the script, not taking composition into account:
 
 ```html
 <user-card>
-  #shadow-root
-  <div>
-    Name:
-    <slot name="username"></slot>
-  </div>
-  <div>
-    Birthday:
-    <slot name="birthday"></slot>
-  </div>
-  <span slot="username">John Smith</span>
-  <span slot="birthday">01.01.2001</span>
+    #shadow-root
+    <div>
+        Name:
+        <slot name="username"></slot>
+    </div>
+    <div>
+        Birthday:
+        <slot name="birthday"></slot>
+    </div>
+    <span slot="username">John Smith</span>
+    <span slot="birthday">01.01.2001</span>
 </user-card>
 ```
 
@@ -88,20 +88,20 @@ The result is called "flattened" DOM:
 
 ```html
 <user-card>
-  #shadow-root
-  <div>
-    Name:
-    <slot name="username">
-      <!-- slotted element is inserted into the slot -->
-      <span slot="username">John Smith</span>
-    </slot>
-  </div>
-  <div>
-    Birthday:
-    <slot name="birthday">
-      <span slot="birthday">01.01.2001</span>
-    </slot>
-  </div>
+    #shadow-root
+    <div>
+        Name:
+        <slot name="username">
+            <!-- slotted element is inserted into the slot -->
+            <span slot="username">John Smith</span>
+        </slot>
+    </div>
+    <div>
+        Birthday:
+        <slot name="birthday">
+            <span slot="birthday">01.01.2001</span>
+        </slot>
+    </div>
 </user-card>
 ```
 
@@ -111,7 +111,7 @@ That can be easily checked if we run `querySelectorAll`: nodes are still at thei
 
 ```js
 // light DOM <span> nodes are still at the same place, under `<user-card>`
-alert(document.querySelectorAll("user-card span").length); // 2
+alert(document.querySelectorAll('user-card span').length); // 2
 ```
 
 So, the flattened DOM is derived from shadow DOM by inserting slots. The browser renders it and uses for style inheritance, event propagation (more about that later). But JavaScript still sees the document "as is", before flattening.
@@ -137,8 +137,8 @@ For example, this:
 
 ```html
 <user-card>
-  <span slot="username">John</span>
-  <span slot="username">Smith</span>
+    <span slot="username">John</span>
+    <span slot="username">Smith</span>
 </user-card>
 ```
 
@@ -146,18 +146,18 @@ Gives this flattened DOM with two elements in `<slot name="username">`:
 
 ```html
 <user-card>
-  #shadow-root
-  <div>
-    Name:
-    <slot name="username">
-      <span slot="username">John</span>
-      <span slot="username">Smith</span>
-    </slot>
-  </div>
-  <div>
-    Birthday:
-    <slot name="birthday"></slot>
-  </div>
+    #shadow-root
+    <div>
+        Name:
+        <slot name="username">
+            <span slot="username">John</span>
+            <span slot="username">Smith</span>
+        </slot>
+    </div>
+    <div>
+        Birthday:
+        <slot name="birthday"></slot>
+    </div>
 </user-card>
 ```
 
@@ -169,8 +169,8 @@ For example, in this piece of shadow DOM, `Anonymous` renders if there's no `slo
 
 ```html
 <div>
-  Name:
-  <slot name="username">Anonymous</slot>
+    Name:
+    <slot name="username">Anonymous</slot>
 </div>
 ```
 
@@ -182,12 +182,12 @@ For example, let's add the default slot to our `<user-card>` that shows all unsl
 
 ```html run autorun="no-epub" untrusted height=140
 <script>
-  customElements.define(
-    "user-card",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.innerHTML = `
+    customElements.define(
+        'user-card',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' });
+                this.shadowRoot.innerHTML = `
     <div>Name:
       <slot name="username"></slot>
     </div>
@@ -201,20 +201,20 @@ For example, let's add the default slot to our `<user-card>` that shows all unsl
 */!*
     </fieldset>
     `;
-      }
-    }
-  );
+            }
+        }
+    );
 </script>
 
 <user-card>
-  *!*
-  <div>I like to swim.</div>
-  */!*
-  <span slot="username">John Smith</span>
-  <span slot="birthday">01.01.2001</span>
-  *!*
-  <div>...And play volleyball too!</div>
-  */!*
+    *!*
+    <div>I like to swim.</div>
+    */!*
+    <span slot="username">John Smith</span>
+    <span slot="birthday">01.01.2001</span>
+    *!*
+    <div>...And play volleyball too!</div>
+    */!*
 </user-card>
 ```
 
@@ -226,28 +226,28 @@ The flattened DOM looks like this:
 
 ```html
 <user-card>
-  #shadow-root
-  <div>
-    Name:
-    <slot name="username">
-      <span slot="username">John Smith</span>
-    </slot>
-  </div>
-  <div>
-    Birthday:
-    <slot name="birthday">
-      <span slot="birthday">01.01.2001</span>
-    </slot>
-  </div>
-  <fieldset>
-    <legend>Other information</legend>
-    *!*
-    <slot>
-      <div>I like to swim.</div>
-      <div>...And play volleyball too!</div>
-    </slot>
-    */!*
-  </fieldset>
+    #shadow-root
+    <div>
+        Name:
+        <slot name="username">
+            <span slot="username">John Smith</span>
+        </slot>
+    </div>
+    <div>
+        Birthday:
+        <slot name="birthday">
+            <span slot="birthday">01.01.2001</span>
+        </slot>
+    </div>
+    <fieldset>
+        <legend>Other information</legend>
+        *!*
+        <slot>
+            <div>I like to swim.</div>
+            <div>...And play volleyball too!</div>
+        </slot>
+        */!*
+    </fieldset>
 </user-card>
 ```
 
@@ -261,10 +261,10 @@ Here's the markup for `<custom-menu>`:
 
 ```html
 <custom-menu>
-  <span slot="title">Candy menu</span>
-  <li slot="item">Lollipop</li>
-  <li slot="item">Fruit Toast</li>
-  <li slot="item">Cup Cake</li>
+    <span slot="title">Candy menu</span>
+    <li slot="item">Lollipop</li>
+    <li slot="item">Fruit Toast</li>
+    <li slot="item">Cup Cake</li>
 </custom-menu>
 ```
 
@@ -272,15 +272,15 @@ The shadow DOM template with proper slots:
 
 ```html
 <template id="tmpl">
-  <style>
-    /* menu styles */
-  </style>
-  <div class="menu">
-    <slot name="title"></slot>
-    <ul>
-      <slot name="item"></slot>
-    </ul>
-  </div>
+    <style>
+        /* menu styles */
+    </style>
+    <div class="menu">
+        <slot name="title"></slot>
+        <ul>
+            <slot name="item"></slot>
+        </ul>
+    </div>
 </template>
 ```
 
@@ -291,22 +291,22 @@ The flattened DOM becomes:
 
 ```html
 <custom-menu>
-  #shadow-root
-  <style>
-    /* menu styles */
-  </style>
-  <div class="menu">
-    <slot name="title">
-      <span slot="title">Candy menu</span>
-    </slot>
-    <ul>
-      <slot name="item">
-        <li slot="item">Lollipop</li>
-        <li slot="item">Fruit Toast</li>
-        <li slot="item">Cup Cake</li>
-      </slot>
-    </ul>
-  </div>
+    #shadow-root
+    <style>
+        /* menu styles */
+    </style>
+    <div class="menu">
+        <slot name="title">
+            <span slot="title">Candy menu</span>
+        </slot>
+        <ul>
+            <slot name="item">
+                <li slot="item">Lollipop</li>
+                <li slot="item">Fruit Toast</li>
+                <li slot="item">Cup Cake</li>
+            </slot>
+        </ul>
+    </div>
 </custom-menu>
 ```
 
@@ -316,21 +316,21 @@ We just need to add a `click` handler to open/close the list, and the `<custom-m
 
 ```js
 customElements.define(
-  "custom-menu",
-  class extends HTMLElement {
-    connectedCallback() {
-      this.attachShadow({ mode: "open" });
+    'custom-menu',
+    class extends HTMLElement {
+        connectedCallback() {
+            this.attachShadow({ mode: 'open' });
 
-      // tmpl is the shadow DOM template (above)
-      this.shadowRoot.append(tmpl.content.cloneNode(true));
+            // tmpl is the shadow DOM template (above)
+            this.shadowRoot.append(tmpl.content.cloneNode(true));
 
-      // we can't select light DOM nodes, so let's handle clicks on the slot
-      this.shadowRoot.querySelector('slot[name="title"]').onclick = () => {
-        // open/close the menu
-        this.shadowRoot.querySelector(".menu").classList.toggle("closed");
-      };
+            // we can't select light DOM nodes, so let's handle clicks on the slot
+            this.shadowRoot.querySelector('slot[name="title"]').onclick = () => {
+                // open/close the menu
+                this.shadowRoot.querySelector('.menu').classList.toggle('closed');
+            };
+        }
     }
-  }
 );
 ```
 
@@ -354,35 +354,33 @@ For example, here the menu item is inserted dynamically after 1 second, and the 
 
 ```html run untrusted height=80
 <custom-menu id="menu">
-  <span slot="title">Candy menu</span>
+    <span slot="title">Candy menu</span>
 </custom-menu>
 
 <script>
-  customElements.define(
-    "custom-menu",
-    class extends HTMLElement {
-      connectedCallback() {
-        this.attachShadow({ mode: "open" });
-        this.shadowRoot.innerHTML = `<div class="menu">
+    customElements.define(
+        'custom-menu',
+        class extends HTMLElement {
+            connectedCallback() {
+                this.attachShadow({ mode: 'open' });
+                this.shadowRoot.innerHTML = `<div class="menu">
       <slot name="title"></slot>
       <ul><slot name="item"></slot></ul>
     </div>`;
 
-        // shadowRoot can't have event handlers, so using the first child
-        this.shadowRoot.firstElementChild.addEventListener("slotchange", (e) =>
-          alert("slotchange: " + e.target.name)
-        );
-      }
-    }
-  );
+                // shadowRoot can't have event handlers, so using the first child
+                this.shadowRoot.firstElementChild.addEventListener('slotchange', (e) => alert('slotchange: ' + e.target.name));
+            }
+        }
+    );
 
-  setTimeout(() => {
-    menu.insertAdjacentHTML("beforeEnd", '<li slot="item">Lollipop</li>');
-  }, 1000);
+    setTimeout(() => {
+        menu.insertAdjacentHTML('beforeEnd', '<li slot="item">Lollipop</li>');
+    }, 1000);
 
-  setTimeout(() => {
-    menu.querySelector('[slot="title"]').innerHTML = "New menu";
-  }, 2000);
+    setTimeout(() => {
+        menu.querySelector('[slot="title"]').innerHTML = 'New menu';
+    }, 2000);
 </script>
 ```
 
@@ -392,11 +390,11 @@ There are two `slotchange` events here:
 
 1. At initialization:
 
-   `slotchange: title` triggers immediately, as the `slot="title"` from the light DOM gets into the corresponding slot.
+    `slotchange: title` triggers immediately, as the `slot="title"` from the light DOM gets into the corresponding slot.
 
 2. After 1 second:
 
-   `slotchange: item` triggers, when a new `<li slot="item">` is added.
+    `slotchange: item` triggers, when a new `<li slot="item">` is added.
 
 Please note: there's no `slotchange` event after 2 seconds, when the content of `slot="title"` is modified. That's because there's no slot change. We modify the content inside the slotted element, that's another thing.
 
@@ -408,9 +406,9 @@ Finally, let's mention the slot-related JavaScript methods.
 
 As we've seen before, JavaScript looks at the "real" DOM, without flattening. But, if the shadow tree has `{mode: 'open'}`, then we can figure out which elements assigned to a slot and, vise-versa, the slot by the element inside it:
 
-- `node.assignedSlot` -- returns the `<slot>` element that the `node` is assigned to.
-- `slot.assignedNodes({flatten: true/false})` -- DOM nodes, assigned to the slot. The `flatten` option is `false` by default. If explicitly set to `true`, then it looks more deeply into the flattened DOM, returning nested slots in case of nested components and the fallback content if no node assigned.
-- `slot.assignedElements({flatten: true/false})` -- DOM elements, assigned to the slot (same as above, but only element nodes).
+-   `node.assignedSlot` -- returns the `<slot>` element that the `node` is assigned to.
+-   `slot.assignedNodes({flatten: true/false})` -- DOM nodes, assigned to the slot. The `flatten` option is `false` by default. If explicitly set to `true`, then it looks more deeply into the flattened DOM, returning nested slots in case of nested components and the fallback content if no node assigned.
+-   `slot.assignedElements({flatten: true/false})` -- DOM elements, assigned to the slot (same as above, but only element nodes).
 
 These methods are useful when we need not just show the slotted content, but also track it in JavaScript.
 
@@ -418,39 +416,39 @@ For example, if `<custom-menu>` component wants to know, what it shows, then it 
 
 ```html run untrusted height=120
 <custom-menu id="menu">
-  <span slot="title">Candy menu</span>
-  <li slot="item">Lollipop</li>
-  <li slot="item">Fruit Toast</li>
+    <span slot="title">Candy menu</span>
+    <li slot="item">Lollipop</li>
+    <li slot="item">Fruit Toast</li>
 </custom-menu>
 
 <script>
-  customElements.define('custom-menu', class extends HTMLElement {
-    items = []
+    customElements.define('custom-menu', class extends HTMLElement {
+      items = []
 
-    connectedCallback() {
-      this.attachShadow({mode: 'open'});
-      this.shadowRoot.innerHTML = `<div class="menu">
-        <slot name="title"></slot>
-        <ul><slot name="item"></slot></ul>
-      </div>`;
+      connectedCallback() {
+        this.attachShadow({mode: 'open'});
+        this.shadowRoot.innerHTML = `<div class="menu">
+          <slot name="title"></slot>
+          <ul><slot name="item"></slot></ul>
+        </div>`;
 
-      // triggers when slot content changes
-  *!*
-      this.shadowRoot.firstElementChild.addEventListener('slotchange', e => {
-        let slot = e.target;
-        if (slot.name == 'item') {
-          this.items = slot.assignedElements().map(elem => elem.textContent);
-          alert("Items: " + this.items);
-        }
-      });
-  */!*
-    }
-  });
+        // triggers when slot content changes
+    *!*
+        this.shadowRoot.firstElementChild.addEventListener('slotchange', e => {
+          let slot = e.target;
+          if (slot.name == 'item') {
+            this.items = slot.assignedElements().map(elem => elem.textContent);
+            alert("Items: " + this.items);
+          }
+        });
+    */!*
+      }
+    });
 
-  // items update after 1 second
-  setTimeout(() => {
-    menu.insertAdjacentHTML('beforeEnd', '<li slot="item">Cup Cake</li>')
-  }, 1000);
+    // items update after 1 second
+    setTimeout(() => {
+      menu.insertAdjacentHTML('beforeEnd', '<li slot="item">Cup Cake</li>')
+    }, 1000);
 </script>
 ```
 
@@ -460,10 +458,10 @@ Usually, if an element has shadow DOM, then its light DOM is not displayed. Slot
 
 There are two kinds of slots:
 
-- Named slots: `<slot name="X">...</slot>` -- gets light children with `slot="X"`.
-- Default slot: the first `<slot>` without a name (subsequent unnamed slots are ignored) -- gets unslotted light children.
-- If there are many elements for the same slot -- they are appended one after another.
-- The content of `<slot>` element is used as a fallback. It's shown if there are no light children for the slot.
+-   Named slots: `<slot name="X">...</slot>` -- gets light children with `slot="X"`.
+-   Default slot: the first `<slot>` without a name (subsequent unnamed slots are ignored) -- gets unslotted light children.
+-   If there are many elements for the same slot -- they are appended one after another.
+-   The content of `<slot>` element is used as a fallback. It's shown if there are no light children for the slot.
 
 The process of rendering slotted elements inside their slots is called "composition". The result is called a "flattened DOM".
 
@@ -471,13 +469,13 @@ Composition does not really move nodes, from JavaScript point of view the DOM is
 
 JavaScript can access slots using methods:
 
-- `slot.assignedNodes/Elements()` -- returns nodes/elements inside the `slot`.
-- `node.assignedSlot` -- the reverse property, returns slot by a node.
+-   `slot.assignedNodes/Elements()` -- returns nodes/elements inside the `slot`.
+-   `node.assignedSlot` -- the reverse property, returns slot by a node.
 
 If we'd like to know what we're showing, we can track slot contents using:
 
-- `slotchange` event -- triggers the first time a slot is filled, and on any add/remove/replace operation of the slotted element, but not its children. The slot is `event.target`.
-- [MutationObserver](info:mutation-observer) to go deeper into slot content, watch changes inside it.
+-   `slotchange` event -- triggers the first time a slot is filled, and on any add/remove/replace operation of the slotted element, but not its children. The slot is `event.target`.
+-   [MutationObserver](info:mutation-observer) to go deeper into slot content, watch changes inside it.
 
 Now, as we know how to show elements from light DOM in shadow DOM, let's see how to style them properly. The basic rule is that shadow elements are styled inside, and light elements -- outside, but there are notable exceptions.
 

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="width-vs-clientwidth.html"
-  /width-vs-clientwidth"
-  /width-vs-clientwidth"
-  width-vs-clientwidth"
-  task/width-vs-clientwidth"
+-   <a href="https://ar.javascript.info/"
+-   <a href="width-vs-clientwidth.html"
+    /width-vs-clientwidth"
+    /width-vs-clientwidth"
+    width-vs-clientwidth"
+    task/width-vs-clientwidth"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  width-vs-clientwidth"
-- <a href="https://tr.javascript.info/"
-  width-vs-clientwidth"
+-   <a href="https://ko.javascript.info/"
+    width-vs-clientwidth"
+-   <a href="https://tr.javascript.info/"
+    width-vs-clientwidth"
 
 We want to make this open-source project available for people all around the world.
 

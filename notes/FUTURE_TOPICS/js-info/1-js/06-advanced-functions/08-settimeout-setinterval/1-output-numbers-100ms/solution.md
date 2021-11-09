@@ -1,17 +1,16 @@
-
 Using `setInterval`:
 
 ```js run
 function printNumbers(from, to) {
-  let current = from;
+    let current = from;
 
-  let timerId = setInterval(function() {
-    alert(current);
-    if (current == to) {
-      clearInterval(timerId);
-    }
-    current++;
-  }, 1000);
+    let timerId = setInterval(function () {
+        alert(current);
+        if (current == to) {
+            clearInterval(timerId);
+        }
+        current++;
+    }, 1000);
 }
 
 // usage:
@@ -20,18 +19,17 @@ printNumbers(5, 10);
 
 Using nested `setTimeout`:
 
-
 ```js run
 function printNumbers(from, to) {
-  let current = from;
+    let current = from;
 
-  setTimeout(function go() {
-    alert(current);
-    if (current < to) {
-      setTimeout(go, 1000);
-    }
-    current++;
-  }, 1000);
+    setTimeout(function go() {
+        alert(current);
+        if (current < to) {
+            setTimeout(go, 1000);
+        }
+        current++;
+    }, 1000);
 }
 
 // usage:

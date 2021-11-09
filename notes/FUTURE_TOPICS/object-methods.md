@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/object-methods"
-- <a href="object-methods.html"
-- <a href="https://es.javascript.info/object-methods"
-- <a href="https://fr.javascript.info/object-methods"
-- <a href="https://it.javascript.info/object-methods"
-  object-methods"
+-   <a href="https://ar.javascript.info/object-methods"
+-   <a href="object-methods.html"
+-   <a href="https://es.javascript.info/object-methods"
+-   <a href="https://fr.javascript.info/object-methods"
+-   <a href="https://it.javascript.info/object-methods"
+    object-methods"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/object-methods"
-- <a href=object-methods"
-- <a href="https://tr.javascript.info/object-methods"
-- <a href="https://zh.javascript.info/object-methods"
+-   <a href="https://ko.javascript.info/object-methods"
+-   <a href=object-methods"
+-   <a href="https://tr.javascript.info/object-methods"
+-   <a href="https://zh.javascript.info/object-methods"
 
 We want to make this open-source project available for people all around the world.
 
@@ -281,15 +281,15 @@ That’s a special feature of arrow functions, it’s useful when we actually do
 
 ## <a href="object-methods.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- Functions that are stored in object properties are called “methods”.
-- Methods allow objects to “act” like `object.doSomething()`.
-- Methods can reference the object as `this`.
+-   Functions that are stored in object properties are called “methods”.
+-   Methods allow objects to “act” like `object.doSomething()`.
+-   Methods can reference the object as `this`.
 
 The value of `this` is defined at run-time.
 
-- When a function is declared, it may use `this`, but that `this` has no value until the function is called.
-- A function can be copied between objects.
-- When a function is called in the “method” syntax: `object.method()`, the value of `this` during the call is `object`.
+-   When a function is declared, it may use `this`, but that `this` has no value until the function is called.
+-   A function can be copied between objects.
+-   When a function is called in the “method” syntax: `object.method()`, the value of `this` during the call is `object`.
 
 Please note that arrow functions are special: they have no `this`. When `this` is accessed inside an arrow function, it is taken from outside.
 
@@ -385,17 +385,17 @@ Now it works, because `user.ref()` is a method. And the value of `this` is set t
 
 Create an object `calculator` with three methods:
 
-- `read()` prompts for two values and saves them as object properties.
-- `sum()` returns the sum of saved values.
-- `mul()` multiplies saved values and returns the result.
+-   `read()` prompts for two values and saves them as object properties.
+-   `sum()` returns the sum of saved values.
+-   `mul()` multiplies saved values and returns the result.
 
-  let calculator = {
-  // ... your code ...
-  };
+    let calculator = {
+    // ... your code ...
+    };
 
-  calculator.read();
-  alert( calculator.sum() );
-  alert( calculator.mul() );
+    calculator.read();
+    alert( calculator.sum() );
+    alert( calculator.mul() );
 
 [Run the demo](object-methods.html#)
 
@@ -510,26 +510,26 @@ We also can write a single call per line. For long chains it’s more readable:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
 
 #### Lesson navigation
 
-- <a href="object-methods.html#method-examples" class="sidebar__link">Method examples</a>
-- <a href="object-methods.html#this-in-methods" class="sidebar__link">“this” in methods</a>
-- <a href="object-methods.html#this-is-not-bound" class="sidebar__link">“this” is not bound</a>
-- <a href="object-methods.html#arrow-functions-have-no-this" class="sidebar__link">Arrow functions have no “this”</a>
-- <a href="object-methods.html#summary" class="sidebar__link">Summary</a>
+-   <a href="object-methods.html#method-examples" class="sidebar__link">Method examples</a>
+-   <a href="object-methods.html#this-in-methods" class="sidebar__link">“this” in methods</a>
+-   <a href="object-methods.html#this-is-not-bound" class="sidebar__link">“this” is not bound</a>
+-   <a href="object-methods.html#arrow-functions-have-no-this" class="sidebar__link">Arrow functions have no “this”</a>
+-   <a href="object-methods.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="object-methods.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="object-methods.html#comments" class="sidebar__link">Comments</a>
+-   <a href="object-methods.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="object-methods.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -537,7 +537,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/04-object-basics/04-object-methods" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

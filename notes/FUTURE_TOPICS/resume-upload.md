@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="resume-upload.html"
-- <a href="https://es.javascript.info/resume-upload"
-- <a href="https://fr.javascript.info/resume-upload"
-- <a href="https://it.javascript.info/resume-upload"
-  resume-upload"
+-   <a href="https://ar.javascript.info/"
+-   <a href="resume-upload.html"
+-   <a href="https://es.javascript.info/resume-upload"
+-   <a href="https://fr.javascript.info/resume-upload"
+-   <a href="https://it.javascript.info/resume-upload"
+    resume-upload"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/resume-upload"
-- <a href=resume-upload"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/resume-upload"
+-   <a href="https://ko.javascript.info/resume-upload"
+-   <a href=resume-upload"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/resume-upload"
 
 We want to make this open-source project available for people all around the world.
 
@@ -384,22 +384,22 @@ We can implement resumable upload and much more.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
 
 #### Lesson navigation
 
-- <a href="resume-upload.html#not-so-useful-progress-event" class="sidebar__link">Not-so-useful progress event</a>
-- <a href="resume-upload.html#algorithm" class="sidebar__link">Algorithm</a>
+-   <a href="resume-upload.html#not-so-useful-progress-event" class="sidebar__link">Not-so-useful progress event</a>
+-   <a href="resume-upload.html#algorithm" class="sidebar__link">Algorithm</a>
 
-- <a href="resume-upload.html#comments" class="sidebar__link">Comments</a>
+-   <a href="resume-upload.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -407,7 +407,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/09-resume-upload" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,1 +1,1 @@
-let user = "John";
+let user = 'John';

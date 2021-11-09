@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/new-function"
-- <a href="new-function.html"
-- <a href="https://es.javascript.info/new-function"
-- <a href="https://fr.javascript.info/new-function"
-- <a href="https://it.javascript.info/new-function"
-  new-function"
+-   <a href="https://ar.javascript.info/new-function"
+-   <a href="new-function.html"
+-   <a href="https://es.javascript.info/new-function"
+-   <a href="https://fr.javascript.info/new-function"
+-   <a href="https://it.javascript.info/new-function"
+    new-function"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/new-function"
-- <a href=new-function"
-- <a href="https://tr.javascript.info/new-function"
-- <a href="https://zh.javascript.info/new-function"
+-   <a href="https://ko.javascript.info/new-function"
+-   <a href=new-function"
+-   <a href="https://tr.javascript.info/new-function"
+-   <a href="https://zh.javascript.info/new-function"
 
 We want to make this open-source project available for people all around the world.
 
@@ -163,23 +163,23 @@ Functions created with `new Function`, have `[[Environment]]` referencing the gl
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="new-function.html#syntax" class="sidebar__link">Syntax</a>
-- <a href="new-function.html#closure" class="sidebar__link">Closure</a>
-- <a href="new-function.html#summary" class="sidebar__link">Summary</a>
+-   <a href="new-function.html#syntax" class="sidebar__link">Syntax</a>
+-   <a href="new-function.html#closure" class="sidebar__link">Closure</a>
+-   <a href="new-function.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="new-function.html#comments" class="sidebar__link">Comments</a>
+-   <a href="new-function.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -187,7 +187,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/07-new-function" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

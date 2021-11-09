@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/weakmap-weakset"
-- <a href="weakmap-weakset.html"
-- <a href="https://es.javascript.info/weakmap-weakset"
-- <a href="https://fr.javascript.info/weakmap-weakset"
-- <a href="https://it.javascript.info/weakmap-weakset"
-  weakmap-weakset"
+-   <a href="https://ar.javascript.info/weakmap-weakset"
+-   <a href="weakmap-weakset.html"
+-   <a href="https://es.javascript.info/weakmap-weakset"
+-   <a href="https://fr.javascript.info/weakmap-weakset"
+-   <a href="https://it.javascript.info/weakmap-weakset"
+    weakmap-weakset"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/weakmap-weakset"
-- <a href=weakmap-weakset"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/weakmap-weakset"
+-   <a href="https://ko.javascript.info/weakmap-weakset"
+-   <a href=weakmap-weakset"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/weakmap-weakset"
 
 We want to make this open-source project available for people all around the world.
 
@@ -118,10 +118,10 @@ Compare it with the regular `Map` example above. Now if `john` only exists as th
 
 `WeakMap` has only the following methods:
 
-- `weakMap.get(key)`
-- `weakMap.set(key, value)`
-- `weakMap.delete(key)`
-- `weakMap.has(key)`
+-   `weakMap.get(key)`
+-   `weakMap.set(key, value)`
+-   `weakMap.delete(key)`
+-   `weakMap.has(key)`
 
 Why such a limitation? That’s for technical reasons. If an object has lost all other references (like `john` in the code above), then it is to be garbage-collected automatically. But technically it’s not exactly specified _when the cleanup happens_.
 
@@ -258,9 +258,9 @@ If we replace `Map` with `WeakMap`, then this problem disappears. The cached res
 
 `WeakSet` behaves similarly:
 
-- It is analogous to `Set`, but we may only add objects to `WeakSet` (not primitives).
-- An object exists in the set while it is reachable from somewhere else.
-- Like `Set`, it supports `add`, `has` and `delete`, but not `size`, `keys()` and no iterations.
+-   It is analogous to `Set`, but we may only add objects to `WeakSet` (not primitives).
+-   An object exists in the set while it is reachable from somewhere else.
+-   Like `Set`, it supports `add`, `has` and `delete`, but not `size`, `keys()` and no iterations.
 
 Being “weak”, it also serves as additional storage. But not for arbitrary data, rather for “yes/no” facts. A membership in `WeakSet` may mean something about the object.
 
@@ -420,26 +420,26 @@ To store a date, we can use `WeakMap`:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="weakmap-weakset.html#weakmap" class="sidebar__link">WeakMap</a>
-- <a href="weakmap-weakset.html#use-case-additional-data" class="sidebar__link">Use case: additional data</a>
-- <a href="weakmap-weakset.html#use-case-caching" class="sidebar__link">Use case: caching</a>
-- <a href="weakmap-weakset.html#weakset" class="sidebar__link">WeakSet</a>
-- <a href="weakmap-weakset.html#summary" class="sidebar__link">Summary</a>
+-   <a href="weakmap-weakset.html#weakmap" class="sidebar__link">WeakMap</a>
+-   <a href="weakmap-weakset.html#use-case-additional-data" class="sidebar__link">Use case: additional data</a>
+-   <a href="weakmap-weakset.html#use-case-caching" class="sidebar__link">Use case: caching</a>
+-   <a href="weakmap-weakset.html#weakset" class="sidebar__link">WeakSet</a>
+-   <a href="weakmap-weakset.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="weakmap-weakset.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="weakmap-weakset.html#comments" class="sidebar__link">Comments</a>
+-   <a href="weakmap-weakset.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="weakmap-weakset.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -447,7 +447,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/08-weakmap-weakset" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

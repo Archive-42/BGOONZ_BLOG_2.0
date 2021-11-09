@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="index.html"
-- <a href="https://es.javascript.info/"
+-   <a href="https://ar.javascript.info/"
+-   <a href="index.html"
+-   <a href="https://es.javascript.info/"
 
-- <a href="https://it.javascript.info/"
-  "
+-   <a href="https://it.javascript.info/"
+    "
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href="
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/"
+-   <a href="https://ko.javascript.info/"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/"
 
 We want to make this open-source project available for people all around the world.
 
@@ -44,16 +44,16 @@ Your language is not in the list?
 
 If you’d like to create a new translation, [file an issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) with the following information:
 
-- [Language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
-- List of maintainers (one or more): github nick and email
+-   [Language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+-   List of maintainers (one or more): github nick and email
 
 As a maintainer, you should know JavaScript well enough to translate and review pull requests of others.
 
 We will:
 
-- Create a new repository for you at `javascript-tutorial/{lang-code}.javascript.info`.
-- Add/invite all maintainers to the team `translate-{lang-code}` in the javascript-tutorial organization.
-- Create an special issue in the new repository to track your translation progress.
+-   Create a new repository for you at `javascript-tutorial/{lang-code}.javascript.info`.
+-   Add/invite all maintainers to the team `translate-{lang-code}` in the javascript-tutorial organization.
+-   Create an special issue in the new repository to track your translation progress.
 
 You’ll get an email invite to join (unless you’re a member already). Please accept this invite, so you can get admin access to your repository!
 
@@ -67,9 +67,9 @@ Anyone can contribute to the translations. Maintainers are ones who have the pow
 
 Please [file an issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new), if:
 
-- You’re already a maintainer of a translation, and would like to add another one.
-- You’re interested in becoming a maintainer for a translation, and other maintainers agree to add you.
-- An existing translation is stalled, previous maintainers don’t respond, and you want to take it over.
+-   You’re already a maintainer of a translation, and would like to add another one.
+-   You’re interested in becoming a maintainer for a translation, and other maintainers agree to add you.
+-   An existing translation is stalled, previous maintainers don’t respond, and you want to take it over.
 
 ## Publishing
 
@@ -79,11 +79,11 @@ When the translation is at least half-finished, please create an issue with a re
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

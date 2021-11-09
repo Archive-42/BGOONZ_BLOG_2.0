@@ -3,6 +3,7 @@
 As we know from the chapter <info:garbage-collection>, JavaScript engine keeps a value in memory while it is "reachable" and can potentially be used.
 
 For instance:
+
 ```js
 let john = { name: "John" };
 
@@ -78,10 +79,10 @@ weakMap.set("test", "Whoops"); // Error, because "test" is not an object
 Now, if we use an object as the key in it, and there are no other references to that object -- it will be removed from memory (and from the map) automatically.
 
 ```js
-let john = { name: "John" };
+let john = { name: 'John' };
 
 let weakMap = new WeakMap();
-weakMap.set(john, "...");
+weakMap.set(john, '...');
 
 john = null; // overwrite the reference
 
@@ -94,12 +95,12 @@ Compare it with the regular `Map` example above. Now if `john` only exists as th
 
 `WeakMap` has only the following methods:
 
-- `weakMap.get(key)`
-- `weakMap.set(key, value)`
-- `weakMap.delete(key)`
-- `weakMap.has(key)`
+-   `weakMap.get(key)`
+-   `weakMap.set(key, value)`
+-   `weakMap.delete(key)`
+-   `weakMap.has(key)`
 
-Why such a limitation? That's for technical reasons. If an object has lost all other references (like `john` in the code above), then it is to be garbage-collected automatically. But technically it's not exactly specified *when the cleanup happens*.
+Why such a limitation? That's for technical reasons. If an object has lost all other references (like `john` in the code above), then it is to be garbage-collected automatically. But technically it's not exactly specified _when the cleanup happens_.
 
 The JavaScript engine decides that. It may choose to perform the memory cleanup immediately or to wait and do the cleaning later when more deletions happen. So, technically, the current element count of a `WeakMap` is not known. The engine may have cleaned it up or not, or did it partially. For that reason, methods that access all keys/values are not supported.
 
@@ -107,14 +108,14 @@ Now, where do we need such a data structure?
 
 ## Use case: additional data
 
-The main area of application for `WeakMap` is an *additional data storage*.
+The main area of application for `WeakMap` is an _additional data storage_.
 
 If we're working with an object that "belongs" to another code, maybe even a third-party library, and would like to store some data associated with it, that should only exist while the object is alive - then `WeakMap` is exactly what's needed.
 
 We put the data to a `WeakMap`, using the object as the key, and when the object is garbage collected, that data will automatically disappear as well.
 
 ```js
-weakMap.set(john, "secret documents");
+weakMap.set(john, 'secret documents');
 // if john dies, secret documents will be destroyed automatically
 ```
 
@@ -130,8 +131,8 @@ let visitsCountMap = new Map(); // map: user => visits count
 
 // increase the visits count
 function countUser(user) {
-  let count = visitsCountMap.get(user) || 0;
-  visitsCountMap.set(user, count + 1);
+    let count = visitsCountMap.get(user) || 0;
+    visitsCountMap.set(user, count + 1);
 }
 ```
 
@@ -139,7 +140,7 @@ And here's another part of the code, maybe another file using it:
 
 ```js
 // 📁 main.js
-let john = { name: "John" };
+let john = { name: 'John' };
 
 countUser(john); // count his visits
 
@@ -159,8 +160,8 @@ let visitsCountMap = new WeakMap(); // weakmap: user => visits count
 
 // increase the visits count
 function countUser(user) {
-  let count = visitsCountMap.get(user) || 0;
-  visitsCountMap.set(user, count + 1);
+    let count = visitsCountMap.get(user) || 0;
+    visitsCountMap.set(user, count + 1);
 }
 ```
 
@@ -244,9 +245,9 @@ obj = null;
 
 `WeakSet` behaves similarly:
 
-- It is analogous to `Set`, but we may only add objects to `WeakSet` (not primitives).
-- An object exists in the set while it is reachable from somewhere else.
-- Like `Set`, it supports `add`, `has` and `delete`, but not `size`, `keys()` and no iterations.
+-   It is analogous to `Set`, but we may only add objects to `WeakSet` (not primitives).
+-   An object exists in the set while it is reachable from somewhere else.
+-   Like `Set`, it supports `add`, `has` and `delete`, but not `size`, `keys()` and no iterations.
 
 Being "weak", it also serves as additional storage. But not for arbitrary data, rather for "yes/no" facts. A membership in `WeakSet` may mean something about the object.
 
@@ -255,9 +256,9 @@ For instance, we can add users to `WeakSet` to keep track of those who visited o
 ```js run
 let visitedSet = new WeakSet();
 
-let john = { name: "John" };
-let pete = { name: "Pete" };
-let mary = { name: "Mary" };
+let john = { name: 'John' };
+let pete = { name: 'Pete' };
+let mary = { name: 'Mary' };
 
 visitedSet.add(john); // John visited us
 visitedSet.add(pete); // Then Pete

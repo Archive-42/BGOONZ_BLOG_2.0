@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="lazy-greedy.html"
-  /lazy-greedy"
-  /lazy-greedy"
-  lazy-greedylazy-greedy"
+-   <a href="lazy-greedy.html"
+    /lazy-greedy"
+    /lazy-greedy"
+    lazy-greedylazy-greedy"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  lazy-greedy"
-- <a href="https://tr.javascript.info/"
-  lazy-greedy"
+-   <a href="https://ko.javascript.info/"
+    lazy-greedy"
+-   <a href="https://tr.javascript.info/"
+    lazy-greedy"
 
 We want to make this open-source project available for people all around the world.
 

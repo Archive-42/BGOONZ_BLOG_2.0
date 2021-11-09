@@ -28,7 +28,7 @@ In many practical cases we'd prefer to get `undefined` instead of an error here 
 
 ```js run
 // document.querySelector('.elem') is null if there's no element
-let html = document.querySelector(".elem").innerHTML; // error if it's null
+let html = document.querySelector('.elem').innerHTML; // error if it's null
 ```
 
 Once again, if the element doesn't exist, we'll get an error accessing `.innerHTML` of `null`. And in some cases, when the absence of the element is normal, we'd like to avoid the error and just accept `html = null` as the result.
@@ -52,9 +52,7 @@ We need to check both `user.address` and `user.address.street`:
 ```js
 let user = {}; // user has no address
 
-alert(
-  user.address ? (user.address.street ? user.address.street.name : null) : null
-);
+alert(user.address ? (user.address.street ? user.address.street.name : null) : null);
 ```
 
 That's just awful, one may even have problems understanding such code.
@@ -81,8 +79,8 @@ The optional chaining `?.` stops the evaluation if the value before `?.` is `und
 
 In other words, `value?.prop`:
 
-- works as `value.prop`, if `value` exists,
-- otherwise (when `value` is `undefined/null`) it returns `undefined`.
+-   works as `value.prop`, if `value` exists,
+-   otherwise (when `value` is `undefined/null`) it returns `undefined`.
 
 Here's the safe way to access `user.address.street` using `?.`:
 

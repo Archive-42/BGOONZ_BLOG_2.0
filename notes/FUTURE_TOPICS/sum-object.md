@@ -1,10 +1,10 @@
 sum-object"
 
-- <a href="sum-object.html"
-  /sum-object"
-  /sum-object"
-  sum-object"
-  task/sum-object"
+-   <a href="sum-object.html"
+    /sum-object"
+    /sum-object"
+    sum-object"
+    task/sum-object"
 
 <!-- -->
 

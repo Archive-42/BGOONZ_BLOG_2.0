@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html"
-- <a href="https://es.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
-- <a href="https://fr.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
-- <a href="https://it.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
-  mousemove-mouseover-mouseout-mouseenter-mouseleave"
+-   <a href="https://ar.javascript.info/"
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html"
+-   <a href="https://es.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
+-   <a href="https://fr.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
+-   <a href="https://it.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
+    mousemove-mouseover-mouseout-mouseenter-mouseleave"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=mousemove-mouseover-mouseout-mouseenter-mouseleave"
-- <a href="https://tr.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
-- <a href="https://zh.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
+-   <a href="https://ko.javascript.info/"
+-   <a href=mousemove-mouseover-mouseout-mouseenter-mouseleave"
+-   <a href="https://tr.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
+-   <a href="https://zh.javascript.info/mousemove-mouseover-mouseout-mouseenter-mouseleave"
 
 We want to make this open-source project available for people all around the world.
 
@@ -50,13 +50,13 @@ The `mouseover` event occurs when a mouse pointer comes over an element, and `mo
 
 For `mouseover`:
 
-- `event.target` – is the element where the mouse came over.
-- `event.relatedTarget` – is the element from which the mouse came (`relatedTarget` → `target`).
+-   `event.target` – is the element where the mouse came over.
+-   `event.relatedTarget` – is the element from which the mouse came (`relatedTarget` → `target`).
 
 For `mouseout` the reverse:
 
-- `event.target` – is the element that the mouse left.
-- `event.relatedTarget` – is the new under-the-pointer element, that mouse left for (`target` → `relatedTarget`).
+-   `event.target` – is the element that the mouse left.
+-   `event.relatedTarget` – is the new under-the-pointer element, that mouse left for (`target` → `relatedTarget`).
 
 In the example below each face and its features are separate elements. When you move the mouse, you can see mouse events in the text area.
 
@@ -841,9 +841,9 @@ In our case we’d like to handle transitions between table cells `<td>`: enteri
 
 Here’s what we can do:
 
-- Remember the currently highlighted `<td>` in a variable, let’s call it `currentElem`.
-- On `mouseover` – ignore the event if we’re still inside the current `<td>`.
-- On `mouseout` – ignore if we didn’t leave the current `<td>`.
+-   Remember the currently highlighted `<td>` in a variable, let’s call it `currentElem`.
+-   On `mouseover` – ignore the event if we’re still inside the current `<td>`.
+-   On `mouseout` – ignore if we didn’t leave the current `<td>`.
 
 Here’s an example of code that accounts for all possible situations:
 
@@ -1143,8 +1143,8 @@ We covered events `mouseover`, `mouseout`, `mousemove`, `mouseenter` and `mousel
 
 These things are good to note:
 
-- A fast mouse move may skip intermediate elements.
-- Events `mouseover/out` and `mouseenter/leave` have an additional property: `relatedTarget`. That’s the element that we are coming from/to, complementary to `target`.
+-   A fast mouse move may skip intermediate elements.
+-   Events `mouseover/out` and `mouseenter/leave` have an additional property: `relatedTarget`. That’s the element that we are coming from/to, complementary to `target`.
 
 Events `mouseover/out` trigger even when we go from the parent element to a child element. The browser assumes that the mouse can be only over one element at one time – the deepest one.
 
@@ -1196,9 +1196,9 @@ Make a universal object `new HoverIntent(options)` for it.
 
 Its `options`:
 
-- `elem` – element to track.
-- `over` – a function to call if the mouse came to the element: that is, it moves slowly or stopped over it.
-- `out` – a function to call when the mouse leaves the element (if `over` was called).
+-   `elem` – element to track.
+-   `over` – a function to call if the mouse came to the element: that is, it moves slowly or stopped over it.
+-   `out` – a function to call when the mouse leaves the element (if `over` was called).
 
 An example of using such object for the tooltip:
 
@@ -1261,27 +1261,27 @@ P.S. Please note: the solution tests use `dispatchEvent` to see if the tooltip w
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="event-details.html" class="sidebar__link">UI Events</a>
+-   <a href="event-details.html" class="sidebar__link">UI Events</a>
 
 #### Lesson navigation
 
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#events-mouseover-mouseout-relatedtarget" class="sidebar__link">Events mouseover/mouseout, relatedTarget</a>
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#skipping-elements" class="sidebar__link">Skipping elements</a>
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#mouseout-when-leaving-for-a-child" class="sidebar__link">Mouseout when leaving for a child</a>
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#events-mouseenter-and-mouseleave" class="sidebar__link">Events mouseenter and mouseleave</a>
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#event-delegation" class="sidebar__link">Event delegation</a>
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#summary" class="sidebar__link">Summary</a>
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#events-mouseover-mouseout-relatedtarget" class="sidebar__link">Events mouseover/mouseout, relatedTarget</a>
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#skipping-elements" class="sidebar__link">Skipping elements</a>
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#mouseout-when-leaving-for-a-child" class="sidebar__link">Mouseout when leaving for a child</a>
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#events-mouseenter-and-mouseleave" class="sidebar__link">Events mouseenter and mouseleave</a>
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#event-delegation" class="sidebar__link">Event delegation</a>
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#comments" class="sidebar__link">Comments</a>
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="mousemove-mouseover-mouseout-mouseenter-mouseleave.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -1289,7 +1289,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/3-event-details/3-mousemove-mouseover-mouseout-mouseenter-mouseleave" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

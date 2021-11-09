@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="test-mac.html"
-  /test-mac"
+-   <a href="https://ar.javascript.info/"
+-   <a href="test-mac.html"
+    /test-mac"
 
 test-mac"
 task/test-mac"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  test-mac"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/"
+-   <a href="https://ko.javascript.info/"
+    test-mac"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/"
 
 We want to make this open-source project available for people all around the world.
 

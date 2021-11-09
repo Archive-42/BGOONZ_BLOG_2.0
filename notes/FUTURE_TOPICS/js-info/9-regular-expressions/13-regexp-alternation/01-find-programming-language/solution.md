@@ -5,7 +5,7 @@ But that doesn't work right:
 ```js run
 let regexp = /Java|JavaScript|PHP|C|C\+\+/g;
 
-let str = "Java, JavaScript, PHP, C, C++";
+let str = 'Java, JavaScript, PHP, C, C++';
 
 alert(str.match(regexp)); // Java,Java,PHP,C,C
 ```
@@ -26,7 +26,7 @@ In action:
 ```js run
 let regexp = /Java(Script)?|C(\+\+)?|PHP/g;
 
-let str = "Java, JavaScript, PHP, C, C++";
+let str = 'Java, JavaScript, PHP, C, C++';
 
 alert(str.match(regexp)); // Java,JavaScript,PHP,C,C++
 ```

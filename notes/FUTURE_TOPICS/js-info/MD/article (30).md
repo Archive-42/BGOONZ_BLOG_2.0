@@ -9,7 +9,7 @@ Let's start with a primitive, such as a string.
 Here we put a copy of `message` into `phrase`:
 
 ```js
-let message = "Hello!";
+let message = 'Hello!';
 let phrase = message;
 ```
 
@@ -27,7 +27,7 @@ Let's look at an example of such a variable:
 
 ```js
 let user = {
-  name: "John",
+    name: 'John'
 };
 ```
 
@@ -48,7 +48,7 @@ Now here's why it's important.
 For instance:
 
 ```js no-beautify
-let user = { name: "John" };
+let user = { name: 'John' };
 
 let admin = user; // copy the reference
 ```
@@ -141,10 +141,10 @@ The syntax is:
 Object.assign(dest, [src1, src2, src3...])
 ```
 
-- The first argument `dest` is a target object.
-- Further arguments `src1, ..., srcN` (can be as many as needed) are source objects.
-- It copies the properties of all source objects `src1, ..., srcN` into the target `dest`. In other words, properties of all arguments starting from the second are copied into the first object.
-- The call returns `dest`.
+-   The first argument `dest` is a target object.
+-   Further arguments `src1, ..., srcN` (can be as many as needed) are source objects.
+-   It copies the properties of all source objects `src1, ..., srcN` into the target `dest`. In other words, properties of all arguments starting from the second are copied into the first object.
+-   The call returns `dest`.
 
 For instance, we can use it to merge several objects into one:
 
@@ -165,9 +165,9 @@ Object.assign(user, permissions1, permissions2);
 If the copied property name already exists, it gets overwritten:
 
 ```js run
-let user = { name: "John" };
+let user = { name: 'John' };
 
-Object.assign(user, { name: "Pete" });
+Object.assign(user, { name: 'Pete' });
 
 alert(user.name); // now user = { name: "Pete" }
 ```
@@ -197,11 +197,11 @@ Like this:
 
 ```js run
 let user = {
-  name: "John",
-  sizes: {
-    height: 182,
-    width: 50,
-  },
+    name: 'John',
+    sizes: {
+        height: 182,
+        width: 50
+    }
 };
 
 alert(user.sizes.height); // 182
@@ -213,11 +213,11 @@ Like this:
 
 ```js run
 let user = {
-  name: "John",
-  sizes: {
-    height: 182,
-    width: 50,
-  },
+    name: 'John',
+    sizes: {
+        height: 182,
+        width: 50
+    }
 };
 
 let clone = Object.assign({}, user);

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/regexp-alternation"
-- <a href="regexp-alternation.html"
-- <a href="https://es.javascript.info/regexp-alternation"
-- <a href="https://fr.javascript.info/regexp-alternation"
-- <a href="https://it.javascript.info/regexp-alternation"
-  regexp-alternation"
+-   <a href="https://ar.javascript.info/regexp-alternation"
+-   <a href="regexp-alternation.html"
+-   <a href="https://es.javascript.info/regexp-alternation"
+-   <a href="https://fr.javascript.info/regexp-alternation"
+-   <a href="https://it.javascript.info/regexp-alternation"
+    regexp-alternation"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=regexp-alternation"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/regexp-alternation"
+-   <a href="https://ko.javascript.info/"
+-   <a href=regexp-alternation"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/regexp-alternation"
 
 We want to make this open-source project available for people all around the world.
 
@@ -62,13 +62,13 @@ Square brackets allow only characters or character classes. Alternation allows a
 
 For instance:
 
-- `gr(a|e)y` means exactly the same as `gr[ae]y`.
-- `gra|ey` means `gra` or `ey`.
+-   `gr(a|e)y` means exactly the same as `gr[ae]y`.
+-   `gra|ey` means `gra` or `ey`.
 
 To apply alternation to a chosen part of the pattern, we can enclose it in parentheses:
 
-- `I love HTML|CSS` matches `I love HTML` or `CSS`.
-- `I love (HTML|CSS)` matches `I love HTML` or `I love CSS`.
+-   `I love HTML|CSS` matches `I love HTML` or `CSS`.
+-   `I love (HTML|CSS)` matches `I love HTML` or `I love CSS`.
 
 ## <a href="regexp-alternation.html#example-regexp-for-time" id="example-regexp-for-time" class="main__anchor">Example: regexp for time</a>
 
@@ -78,9 +78,9 @@ How can we make a better pattern?
 
 We can use more careful matching. First, the hours:
 
-- If the first digit is `0` or `1`, then the next digit can be any: `[01]\d`.
-- Otherwise, if the first digit is `2`, then the next must be `[0-3]`.
-- (no other first digit is allowed)
+-   If the first digit is `0` or `1`, then the next digit can be any: `[01]\d`.
+-   Otherwise, if the first digit is `2`, then the next must be `[0-3]`.
+-   (no other first digit is allowed)
 
 We can write both variants in a regexp using alternation: `[01]\d|2[0-3]`.
 
@@ -265,10 +265,10 @@ The solution: `/"(\\.|[^"\\])*"/g`.
 
 Step by step:
 
-- First we look for an opening quote `"`
-- Then if we have a backslash `\\` (we have to double it in the pattern because it is a special character), then any character is fine after it (a dot).
-- Otherwise we take any character except a quote (that would mean the end of the string) and a backslash (to prevent lonely backslashes, the backslash is only used with some other symbol after it): `[^"\\]`
-- …And so on till the closing quote.
+-   First we look for an opening quote `"`
+-   Then if we have a backslash `\\` (we have to double it in the pattern because it is a special character), then any character is fine after it (a dot).
+-   Otherwise we take any character except a quote (that would mean the end of the string) and a backslash (to prevent lonely backslashes, the backslash is only used with some other symbol after it): `[^"\\]`
+-   …And so on till the closing quote.
 
 In action:
 
@@ -323,22 +323,22 @@ In action:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-alternation.html#example-regexp-for-time" class="sidebar__link">Example: regexp for time</a>
+-   <a href="regexp-alternation.html#example-regexp-for-time" class="sidebar__link">Example: regexp for time</a>
 
-- <a href="regexp-alternation.html#tasks" class="sidebar__link">Tasks (4)</a>
-- <a href="regexp-alternation.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-alternation.html#tasks" class="sidebar__link">Tasks (4)</a>
+-   <a href="regexp-alternation.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -346,7 +346,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/13-regexp-alternation" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

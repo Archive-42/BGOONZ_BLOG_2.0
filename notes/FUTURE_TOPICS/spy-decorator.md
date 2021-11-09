@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="spy-decorator.html"
-  /spy-decorator"
-  /spy-decorator"
-  spy-decorator"
-  task/spy-decorator"
+-   <a href="https://ar.javascript.info/"
+-   <a href="spy-decorator.html"
+    /spy-decorator"
+    /spy-decorator"
+    spy-decorator"
+    task/spy-decorator"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  spy-decorator"
-  /spy-decorator"
-  spy-decorator"
+-   <a href="https://ko.javascript.info/"
+    spy-decorator"
+    /spy-decorator"
+    spy-decorator"
 
 We want to make this open-source project available for people all around the world.
 

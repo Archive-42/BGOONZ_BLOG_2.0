@@ -13,7 +13,7 @@ A usage example:
 ```js run
 let regexp = /html|php|css|java(script)?/gi;
 
-let str = "First HTML appeared, then CSS, then JavaScript";
+let str = 'First HTML appeared, then CSS, then JavaScript';
 
 alert(str.match(regexp)); // 'HTML', 'CSS', 'JavaScript'
 ```
@@ -24,13 +24,13 @@ Square brackets allow only characters or character classes. Alternation allows a
 
 For instance:
 
-- `pattern:gr(a|e)y` means exactly the same as `pattern:gr[ae]y`.
-- `pattern:gra|ey` means `match:gra` or `match:ey`.
+-   `pattern:gr(a|e)y` means exactly the same as `pattern:gr[ae]y`.
+-   `pattern:gra|ey` means `match:gra` or `match:ey`.
 
 To apply alternation to a chosen part of the pattern, we can enclose it in parentheses:
 
-- `pattern:I love HTML|CSS` matches `match:I love HTML` or `match:CSS`.
-- `pattern:I love (HTML|CSS)` matches `match:I love HTML` or `match:I love CSS`.
+-   `pattern:I love HTML|CSS` matches `match:I love HTML` or `match:CSS`.
+-   `pattern:I love (HTML|CSS)` matches `match:I love HTML` or `match:I love CSS`.
 
 ## Example: regexp for time
 
@@ -40,9 +40,9 @@ How can we make a better pattern?
 
 We can use more careful matching. First, the hours:
 
-- If the first digit is `0` or `1`, then the next digit can be any: `pattern:[01]\d`.
-- Otherwise, if the first digit is `2`, then the next must be `pattern:[0-3]`.
-- (no other first digit is allowed)
+-   If the first digit is `0` or `1`, then the next digit can be any: `pattern:[01]\d`.
+-   Otherwise, if the first digit is `2`, then the next must be `pattern:[0-3]`.
+-   (no other first digit is allowed)
 
 We can write both variants in a regexp using alternation: `pattern:[01]\d|2[0-3]`.
 
@@ -67,5 +67,5 @@ The final solution:
 ```js run
 let regexp = /([01]\d|2[0-3]):[0-5]\d/g;
 
-alert("00:00 10:10 23:59 25:99 1:2".match(regexp)); // 00:00,10:10,23:59
+alert('00:00 10:10 23:59 25:99 1:2'.match(regexp)); // 00:00,10:10,23:59
 ```

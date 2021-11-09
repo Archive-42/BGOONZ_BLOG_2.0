@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="onscroll.html"
-- <a href="https://es.javascript.info/onscroll"
-- <a href="https://fr.javascript.info/onscroll"
-- <a href="https://it.javascript.info/onscroll"
-  onscroll"
+-   <a href="https://ar.javascript.info/"
+-   <a href="onscroll.html"
+-   <a href="https://es.javascript.info/onscroll"
+-   <a href="https://fr.javascript.info/onscroll"
+-   <a href="https://it.javascript.info/onscroll"
+    onscroll"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=onscroll"
-- <a href="https://tr.javascript.info/onscroll"
-- <a href="https://zh.javascript.info/onscroll"
+-   <a href="https://ko.javascript.info/"
+-   <a href=onscroll"
+-   <a href="https://tr.javascript.info/onscroll"
+-   <a href="https://zh.javascript.info/onscroll"
 
 We want to make this open-source project available for people all around the world.
 
@@ -44,8 +44,8 @@ The `scroll` event allows reacting to a page or element scrolling. There are qui
 
 For instance:
 
-- Show/hide additional controls or information depending on where in the document the user is.
-- Load more data when the user scrolls down till the end of the page.
+-   Show/hide additional controls or information depending on where in the document the user is.
+-   Load more data when the user scrolls down till the end of the page.
 
 Here’s a small function to show the current scroll:
 
@@ -167,9 +167,9 @@ Create a “to the top” button to help with page scrolling.
 
 It should work like this:
 
-- While the page is not scrolled down at least for the window height – it’s invisible.
-- When the page is scrolled down more than the window height – there appears an “upwards” arrow in the left-top corner. If the page is scrolled back, it disappears.
-- When the arrow is clicked, the page scrolls to the top.
+-   While the page is not scrolled down at least for the window height – it’s invisible.
+-   When the page is scrolled down more than the window height – there appears an “upwards” arrow in the left-top corner. If the page is scrolled back, it disappears.
+-   When the arrow is clicked, the page scrolls to the top.
 
 Like this (top-left corner, scroll to see):
 
@@ -201,9 +201,9 @@ Scroll it to see images load “on-demand”.
 
 Requirements:
 
-- When the page loads, those images that are on-screen should load immediately, prior to any scrolling.
-- Some images may be regular, without `data-src`. The code should not touch them.
-- Once an image is loaded, it should not reload any more when scrolled in/out.
+-   When the page loads, those images that are on-screen should load immediately, prior to any scrolling.
+-   Some images may be regular, without `data-src`. The code should not touch them.
+-   Once an image is loaded, it should not reload any more when scrolled in/out.
 
 P.S. If you can, make a more advanced solution that would “preload” images that are one page below/after the current position.
 
@@ -269,22 +269,22 @@ P.S. The solution also has a variant of `isVisible` that “preloads” images t
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="event-details.html" class="sidebar__link">UI Events</a>
+-   <a href="event-details.html" class="sidebar__link">UI Events</a>
 
 #### Lesson navigation
 
-- <a href="onscroll.html#prevent-scrolling" class="sidebar__link">Prevent scrolling</a>
+-   <a href="onscroll.html#prevent-scrolling" class="sidebar__link">Prevent scrolling</a>
 
-- <a href="onscroll.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="onscroll.html#comments" class="sidebar__link">Comments</a>
+-   <a href="onscroll.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="onscroll.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -292,7 +292,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/3-event-details/8-onscroll" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

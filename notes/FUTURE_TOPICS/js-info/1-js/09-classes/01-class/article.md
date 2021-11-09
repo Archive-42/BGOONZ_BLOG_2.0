@@ -1,4 +1,3 @@
-
 # Class basic syntax
 
 ```quote author="Wikipedia"
@@ -14,6 +13,7 @@ But in the modern JavaScript, there's a more advanced "class" construct, that in
 ## The "class" syntax
 
 The basic syntax is:
+
 ```js
 class MyClass {
   // class methods
@@ -33,28 +33,26 @@ For example:
 
 ```js run
 class User {
+    constructor(name) {
+        this.name = name;
+    }
 
-  constructor(name) {
-    this.name = name;
-  }
-
-  sayHi() {
-    alert(this.name);
-  }
-
+    sayHi() {
+        alert(this.name);
+    }
 }
 
 // Usage:
-let user = new User("John");
+let user = new User('John');
 user.sayHi();
 ```
 
 When `new User("John")` is called:
+
 1. A new object is created.
 2. The `constructor` runs with the given argument and assigns it to `this.name`.
 
 ...Then we can call object methods, such as `user.sayHi()`.
-
 
 ```warn header="No comma between class methods"
 A common pitfall for novice developers is to put a comma between class methods, which would result in a syntax error.
@@ -99,8 +97,12 @@ Here's the code to introspect it:
 
 ```js run
 class User {
-  constructor(name) { this.name = name; }
-  sayHi() { alert(this.name); }
+    constructor(name) {
+        this.name = name;
+    }
+    sayHi() {
+        alert(this.name);
+    }
 }
 
 // class is a function
@@ -125,18 +127,18 @@ Sometimes people say that `class` is a "syntactic sugar" (syntax that is designe
 
 // 1. Create constructor function
 function User(name) {
-  this.name = name;
+    this.name = name;
 }
 // a function prototype has "constructor" property by default,
 // so we don't need to create it
 
 // 2. Add the method to prototype
-User.prototype.sayHi = function() {
-  alert(this.name);
+User.prototype.sayHi = function () {
+    alert(this.name);
 };
 
 // Usage:
-let user = new User("John");
+let user = new User('John');
 user.sayHi();
 ```
 
@@ -150,7 +152,7 @@ Still, there are important differences.
 
     ```js run
     class User {
-      constructor() {}
+        constructor() {}
     }
 
     alert(typeof User); // function
@@ -161,20 +163,21 @@ Still, there are important differences.
 
     ```js run
     class User {
-      constructor() {}
+        constructor() {}
     }
 
     alert(User); // class User { ... }
     ```
+
     There are other differences, we'll see them soon.
 
 2. Class methods are non-enumerable.
-    A class definition sets `enumerable` flag to `false` for all methods in the `"prototype"`.
+   A class definition sets `enumerable` flag to `false` for all methods in the `"prototype"`.
 
     That's good, because if we `for..in` over an object, we usually don't want its class methods.
 
 3. Classes always `use strict`.
-    All code inside the class construct is automatically in strict mode.
+   All code inside the class construct is automatically in strict mode.
 
 Besides, `class` syntax brings many other features that we'll explore later.
 
@@ -186,9 +189,9 @@ Here's an example of a class expression:
 
 ```js
 let User = class {
-  sayHi() {
-    alert("Hello");
-  }
+    sayHi() {
+        alert('Hello');
+    }
 };
 ```
 
@@ -214,20 +217,19 @@ We can even make classes dynamically "on-demand", like this:
 
 ```js run
 function makeClass(phrase) {
-  // declare a class and return it
-  return class {
-    sayHi() {
-      alert(phrase);
-    }
-  };
+    // declare a class and return it
+    return class {
+        sayHi() {
+            alert(phrase);
+        }
+    };
 }
 
 // Create a new class
-let User = makeClass("Hello");
+let User = makeClass('Hello');
 
 new User().sayHi(); // Hello
 ```
-
 
 ## Getters/setters
 
@@ -343,7 +345,6 @@ class User {
 let user = new User();
 alert(user.name); // John
 ```
-
 
 ### Making bound methods with class fields
 

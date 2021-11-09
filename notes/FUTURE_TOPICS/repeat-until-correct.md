@@ -1,9 +1,9 @@
 repeat-until-correct"
 
-- <a href="repeat-until-correct.html"
-  /repeat-until-correct"
-  /repeat-until-correct"
-  repeat-until-correctrepeat-until-correct"
+-   <a href="repeat-until-correct.html"
+    /repeat-until-correct"
+    /repeat-until-correct"
+    repeat-until-correctrepeat-until-correct"
 
 <!-- -->
 

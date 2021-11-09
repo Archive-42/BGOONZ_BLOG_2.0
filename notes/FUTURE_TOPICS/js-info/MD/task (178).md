@@ -10,21 +10,21 @@ For instance:
 
 ```js
 let data = {
-  Fish: {
-    trout: {},
-    salmon: {},
-  },
+    Fish: {
+        trout: {},
+        salmon: {}
+    },
 
-  Tree: {
-    Huge: {
-      sequoia: {},
-      oak: {},
-    },
-    Flowering: {
-      "apple tree": {},
-      magnolia: {},
-    },
-  },
+    Tree: {
+        Huge: {
+            sequoia: {},
+            oak: {}
+        },
+        Flowering: {
+            'apple tree': {},
+            magnolia: {}
+        }
+    }
 };
 ```
 

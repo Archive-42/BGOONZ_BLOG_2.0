@@ -11,13 +11,13 @@ As a sample element to demonstrate properties we'll use the one given below:
 ```html no-beautify
 <div id="example">...Text...</div>
 <style>
-  #example {
-    width: 300px;
-    height: 200px;
-    border: 25px solid #e8c48f;
-    padding: 20px;
-    overflow: auto;
-  }
+    #example {
+        width: 300px;
+        height: 200px;
+        border: 25px solid #e8c48f;
+        padding: 20px;
+        overflow: auto;
+    }
 </style>
 ```
 
@@ -96,8 +96,8 @@ These two properties are the simplest ones. They provide the "outer" width/heigh
 
 For our sample element:
 
-- `offsetWidth = 390` -- the outer width, can be calculated as inner CSS-width (`300px`) plus paddings (`2 * 20px`) and borders (`2 * 25px`).
-- `offsetHeight = 290` -- the outer height.
+-   `offsetWidth = 390` -- the outer width, can be calculated as inner CSS-width (`300px`) plus paddings (`2 * 20px`) and borders (`2 * 25px`).
+-   `offsetHeight = 290` -- the outer height.
 
 ````smart header="Geometry properties are zero/null for elements that are not displayed"
 Geometry properties are calculated only for displayed elements.
@@ -125,8 +125,8 @@ To measure them, there are properties `clientTop` and `clientLeft`.
 
 In our example:
 
-- `clientLeft = 25` -- left border width
-- `clientTop = 25` -- top border width
+-   `clientLeft = 25` -- left border width
+-   `clientTop = 25` -- top border width
 
 ![](metric-client-left-top.svg)
 
@@ -170,8 +170,8 @@ These properties are like `clientWidth/clientHeight`, but they also include the 
 
 On the picture above:
 
-- `scrollHeight = 723` -- is the full inner height of the content area including the scrolled out parts.
-- `scrollWidth = 324` -- is the full inner width, here we have no horizontal scroll, so it equals `clientWidth`.
+-   `scrollHeight = 723` -- is the full inner height of the content area including the scrolled out parts.
+-   `scrollWidth = 324` -- is the full inner width, here we have no horizontal scroll, so it equals `clientWidth`.
 
 We can use these properties to expand the element wide to its full width/height.
 

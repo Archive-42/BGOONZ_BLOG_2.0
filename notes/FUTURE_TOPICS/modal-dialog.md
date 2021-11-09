@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="modal-dialog.html"
-  /modal-dialog"
-  /modal-dialog"
-  modal-dialogmodal-dialog"
+-   <a href="modal-dialog.html"
+    /modal-dialog"
+    /modal-dialog"
+    modal-dialogmodal-dialog"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  modal-dialog"
-- <a href="https://tr.javascript.info/"
-  modal-dialog"
+-   <a href="https://ko.javascript.info/"
+    modal-dialog"
+-   <a href="https://tr.javascript.info/"
+    modal-dialog"
 
 We want to make this open-source project available for people all around the world.
 
@@ -34,17 +34,17 @@ Searchk%2Fmodal-dialog"%2Fmodal-dialog" </a>
 
 Create a function `showPrompt(html, callback)` that shows a form with the message `html`, an input field and buttons `OK/CANCEL`.
 
-- A user should type something into a text field and press Enter or the OK button, then `callback(value)` is called with the value they entered.
-- Otherwise if the user presses Esc or CANCEL, then `callback(null)` is called.
+-   A user should type something into a text field and press Enter or the OK button, then `callback(value)` is called with the value they entered.
+-   Otherwise if the user presses Esc or CANCEL, then `callback(null)` is called.
 
 In both cases that ends the input process and removes the form.
 
 Requirements:
 
-- The form should be in the center of the window.
-- The form is _modal_. In other words, no interaction with the rest of the page is possible until the user closes it.
-- When the form is shown, the focus should be inside the `<input>` for the user.
-- Keys Tab/Shift<span class="shortcut__plus">+</span>Tab should shift the focus between form fields, don’t allow it to leave for other page elements.
+-   The form should be in the center of the window.
+-   The form is _modal_. In other words, no interaction with the rest of the page is possible until the user closes it.
+-   When the form is shown, the focus should be inside the `<input>` for the user.
+-   Keys Tab/Shift<span class="shortcut__plus">+</span>Tab should shift the focus between form fields, don’t allow it to leave for other page elements.
 
 Usage example:
 

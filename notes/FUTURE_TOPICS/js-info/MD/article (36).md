@@ -111,13 +111,13 @@ For instance, here `user` object implements it:
 
 ```js run
 let user = {
-  name: "John",
-  money: 1000,
+    name: 'John',
+    money: 1000,
 
-  [Symbol.toPrimitive](hint) {
-    alert(`hint: ${hint}`);
-    return hint == "string" ? `{name: "${this.name}"}` : this.money;
-  },
+    [Symbol.toPrimitive](hint) {
+        alert(`hint: ${hint}`);
+        return hint == 'string' ? `{name: "${this.name}"}` : this.money;
+    }
 };
 
 // conversions demo:
@@ -132,8 +132,8 @@ As we can see from the code, `user` becomes a self-descriptive string or a money
 
 If there's no `Symbol.toPrimitive` then JavaScript tries to find methods `toString` and `valueOf`:
 
-- For the "string" hint: `toString`, and if it doesn't exist, then `valueOf` (so `toString` has the priority for string conversions).
-- For other hints: `valueOf`, and if it doesn't exist, then `toString` (so `valueOf` has the priority for maths).
+-   For the "string" hint: `toString`, and if it doesn't exist, then `valueOf` (so `toString` has the priority for string conversions).
+-   For other hints: `valueOf`, and if it doesn't exist, then `toString` (so `valueOf` has the priority for maths).
 
 Methods `toString` and `valueOf` come from ancient times. They are not symbols (symbols did not exist that long ago), but rather "regular" string-named methods. They provide an alternative "old-style" way to implement the conversion.
 
@@ -141,13 +141,13 @@ These methods must return a primitive value. If `toString` or `valueOf` returns 
 
 By default, a plain object has following `toString` and `valueOf` methods:
 
-- The `toString` method returns a string `"[object Object]"`.
-- The `valueOf` method returns the object itself.
+-   The `toString` method returns a string `"[object Object]"`.
+-   The `valueOf` method returns the object itself.
 
 Here's the demo:
 
 ```js run
-let user = { name: "John" };
+let user = { name: 'John' };
 
 alert(user); // [object Object]
 alert(user.valueOf() === user); // true
@@ -163,18 +163,18 @@ For instance, here `user` does the same as above using a combination of `toStrin
 
 ```js run
 let user = {
-  name: "John",
-  money: 1000,
+    name: 'John',
+    money: 1000,
 
-  // for hint="string"
-  toString() {
-    return `{name: "${this.name}"}`;
-  },
+    // for hint="string"
+    toString() {
+        return `{name: "${this.name}"}`;
+    },
 
-  // for hint="number" or "default"
-  valueOf() {
-    return this.money;
-  },
+    // for hint="number" or "default"
+    valueOf() {
+        return this.money;
+    }
 };
 
 alert(user); // toString -> {name: "John"}
@@ -188,11 +188,11 @@ Often we want a single "catch-all" place to handle all primitive conversions. In
 
 ```js run
 let user = {
-  name: "John",
+    name: 'John',
 
-  toString() {
-    return this.name;
-  },
+    toString() {
+        return this.name;
+    }
 };
 
 alert(user); // toString -> John
@@ -228,10 +228,10 @@ For instance:
 
 ```js run
 let obj = {
-  // toString handles all conversions in the absence of other methods
-  toString() {
-    return "2";
-  },
+    // toString handles all conversions in the absence of other methods
+    toString() {
+        return '2';
+    }
 };
 
 alert(obj * 2); // 4, object converted to primitive "2", then multiplication made it a number
@@ -244,9 +244,9 @@ Binary plus will concatenate strings in the same situation, as it gladly accepts
 
 ```js run
 let obj = {
-  toString() {
-    return "2";
-  },
+    toString() {
+        return '2';
+    }
 };
 
 alert(obj + 2); // 22 ("2" + 2), conversion to primitive returned a string => concatenation
@@ -258,9 +258,9 @@ The object-to-primitive conversion is called automatically by many built-in func
 
 There are 3 types (hints) of it:
 
-- `"string"` (for `alert` and other operations that need a string)
-- `"number"` (for maths)
-- `"default"` (few operators)
+-   `"string"` (for `alert` and other operations that need a string)
+-   `"number"` (for maths)
+-   `"default"` (few operators)
 
 The specification describes explicitly which operator uses which hint. There are very few operators that "don't know what to expect" and use the `"default"` hint. Usually for built-in objects `"default"` hint is handled the same way as `"number"`, so in practice the last two are often merged together.
 
@@ -268,9 +268,9 @@ The conversion algorithm is:
 
 1. Call `obj[Symbol.toPrimitive](hint)` if the method exists,
 2. Otherwise if hint is `"string"`
-   - try `obj.toString()` and `obj.valueOf()`, whatever exists.
+    - try `obj.toString()` and `obj.valueOf()`, whatever exists.
 3. Otherwise if hint is `"number"` or `"default"`
-   - try `obj.valueOf()` and `obj.toString()`, whatever exists.
+    - try `obj.valueOf()` and `obj.toString()`, whatever exists.
 
 In practice, it's often enough to implement only `obj.toString()` as a "catch-all" method for string conversions that should return a "human-readable" representation of an object, for logging or debugging purposes.
 

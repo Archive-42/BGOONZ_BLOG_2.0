@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="long-polling.html"
-- <a href="https://es.javascript.info/long-polling"
-- <a href="https://fr.javascript.info/long-polling"
-- <a href="https://it.javascript.info/long-polling"
-  long-polling"
+-   <a href="https://ar.javascript.info/"
+-   <a href="long-polling.html"
+-   <a href="https://es.javascript.info/long-polling"
+-   <a href="https://fr.javascript.info/long-polling"
+-   <a href="https://it.javascript.info/long-polling"
+    long-polling"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=long-polling"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/long-polling"
+-   <a href="https://ko.javascript.info/"
+-   <a href=long-polling"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/long-polling"
 
 We want to make this open-source project available for people all around the world.
 
@@ -313,24 +313,24 @@ So, in this case, another method is preferred, such as [Websocket](websocket.htm
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
 
 #### Lesson navigation
 
-- <a href="long-polling.html#regular-polling" class="sidebar__link">Regular Polling</a>
-- <a href="long-polling.html#long-polling" class="sidebar__link">Long polling</a>
-- <a href="long-polling.html#demo-a-chat" class="sidebar__link">Demo: a chat</a>
-- <a href="long-polling.html#area-of-usage" class="sidebar__link">Area of usage</a>
+-   <a href="long-polling.html#regular-polling" class="sidebar__link">Regular Polling</a>
+-   <a href="long-polling.html#long-polling" class="sidebar__link">Long polling</a>
+-   <a href="long-polling.html#demo-a-chat" class="sidebar__link">Demo: a chat</a>
+-   <a href="long-polling.html#area-of-usage" class="sidebar__link">Area of usage</a>
 
-- <a href="long-polling.html#comments" class="sidebar__link">Comments</a>
+-   <a href="long-polling.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -338,7 +338,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/10-long-polling" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

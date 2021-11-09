@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="start-end.html"
-  /start-end"
-  /start-end"
-  start-end"
-  task/start-end"
+-   <a href="https://ar.javascript.info/"
+-   <a href="start-end.html"
+    /start-end"
+    /start-end"
+    start-end"
+    task/start-end"
 
 <!-- -->
 
 start-end"
 start-end"
 
-- <a href="https://tr.javascript.info/"
-  start-end"
+-   <a href="https://tr.javascript.info/"
+    start-end"
 
 We want to make this open-source project available for people all around the world.
 

@@ -1,6 +1,6 @@
 libs:
 
-- 'https://cdn.jsdelivr.net/npm/idb@3.0.2/build/idb.min.js'
+-   'https://cdn.jsdelivr.net/npm/idb@3.0.2/build/idb.min.js'
 
 ---
 
@@ -8,10 +8,10 @@ libs:
 
 IndexedDB is a database that is built into a browser, much more powerful than `localStorage`.
 
-- Stores almost any kind of values by keys, multiple key types.
-- Supports transactions for reliability.
-- Supports key range queries, indexes.
-- Can store much bigger volumes of data than `localStorage`.
+-   Stores almost any kind of values by keys, multiple key types.
+-   Supports transactions for reliability.
+-   Supports key range queries, indexes.
+-   Can store much bigger volumes of data than `localStorage`.
 
 That power is usually excessive for traditional client-server apps. IndexedDB is intended for offline apps, to be combined with ServiceWorkers and other technologies.
 
@@ -35,16 +35,16 @@ The syntax:
 let openRequest = indexedDB.open(name, version);
 ```
 
-- `name` -- a string, the database name.
-- `version` -- a positive integer version, by default `1` (explained below).
+-   `name` -- a string, the database name.
+-   `version` -- a positive integer version, by default `1` (explained below).
 
 We can have many databases with different names, but all of them exist within the current origin (domain/protocol/port). Different websites can't access each other's databases.
 
 The call returns `openRequest` object, we should listen to events on it:
 
-- `success`: database is ready, there's the "database object" in `openRequest.result`, we should use it for further calls.
-- `error`: opening failed.
-- `upgradeneeded`: database is ready, but its version is outdated (see below).
+-   `success`: database is ready, there's the "database object" in `openRequest.result`, we should use it for further calls.
+-   `error`: opening failed.
+-   `upgradeneeded`: database is ready, but its version is outdated (see below).
 
 **IndexedDB has a built-in mechanism of "schema versioning", absent in server-side databases.**
 
@@ -208,17 +208,17 @@ db.createObjectStore(name[, keyOptions]);
 
 Please note, the operation is synchronous, no `await` needed.
 
-- `name` is the store name, e.g. `"books"` for books,
-- `keyOptions` is an optional object with one of two properties:
-  - `keyPath` -- a path to an object property that IndexedDB will use as the key, e.g. `id`.
-  - `autoIncrement` -- if `true`, then the key for a newly stored object is generated automatically, as an ever-incrementing number.
+-   `name` is the store name, e.g. `"books"` for books,
+-   `keyOptions` is an optional object with one of two properties:
+    -   `keyPath` -- a path to an object property that IndexedDB will use as the key, e.g. `id`.
+    -   `autoIncrement` -- if `true`, then the key for a newly stored object is generated automatically, as an ever-incrementing number.
 
 If we don't supply `keyOptions`, then we'll need to provide a key explicitly later, when storing an object.
 
 For instance, this object store uses `id` property as the key:
 
 ```js
-db.createObjectStore("books", { keyPath: "id" });
+db.createObjectStore('books', { keyPath: 'id' });
 ```
 
 **An object store can only be created/modified while updating the DB version, in `upgradeneeded` handler.**
@@ -235,22 +235,22 @@ For small databases the second variant may be simpler.
 Here's the demo of the second approach:
 
 ```js
-let openRequest = indexedDB.open("db", 2);
+let openRequest = indexedDB.open('db', 2);
 
 // create/upgrade the database without version checks
 openRequest.onupgradeneeded = function () {
-  let db = openRequest.result;
-  if (!db.objectStoreNames.contains("books")) {
-    // if there's no "books" store
-    db.createObjectStore("books", { keyPath: "id" }); // create it
-  }
+    let db = openRequest.result;
+    if (!db.objectStoreNames.contains('books')) {
+        // if there's no "books" store
+        db.createObjectStore('books', { keyPath: 'id' }); // create it
+    }
 };
 ```
 
 To delete an object store:
 
 ```js
-db.deleteObjectStore("books");
+db.deleteObjectStore('books');
 ```
 
 ## Transactions
@@ -276,10 +276,10 @@ To start a transaction:
 db.transaction(store[, type]);
 ```
 
-- `store` is a store name that the transaction is going to access, e.g. `"books"`. Can be an array of store names if we're going to access multiple stores.
-- `type` – a transaction type, one of:
-  - `readonly` -- can only read, the default.
-  - `readwrite` -- can only read and write the data, but not create/remove/alter object stores.
+-   `store` is a store name that the transaction is going to access, e.g. `"books"`. Can be an array of store names if we're going to access multiple stores.
+-   `type` – a transaction type, one of:
+    -   `readonly` -- can only read, the default.
+    -   `readwrite` -- can only read and write the data, but not create/remove/alter object stores.
 
 There's also `versionchange` transaction type: such transactions can do everything, but we can't create them manually. IndexedDB automatically creates a `versionchange` transaction when opening the database, for `updateneeded` handler. That's why it's a single place where we can update the database structure, create/remove object stores.
 
@@ -327,16 +327,16 @@ There were basically four steps:
 
 Object stores support two methods to store a value:
 
-- **put(value, [key])**
-  Add the `value` to the store. The `key` is supplied only if the object store did not have `keyPath` or `autoIncrement` option. If there's already a value with the same key, it will be replaced.
+-   **put(value, [key])**
+    Add the `value` to the store. The `key` is supplied only if the object store did not have `keyPath` or `autoIncrement` option. If there's already a value with the same key, it will be replaced.
 
-- **add(value, [key])**
-  Same as `put`, but if there's already a value with the same key, then the request fails, and an error with the name `"ConstraintError"` is generated.
+-   **add(value, [key])**
+    Same as `put`, but if there's already a value with the same key, then the request fails, and an error with the name `"ConstraintError"` is generated.
 
 Similar to opening a database, we can send a request: `books.add(book)`, and then wait for `success/error` events.
 
-- The `request.result` for `add` is the key of the new object.
-- The error is in `request.error` (if any).
+-   The `request.result` for `add` is the key of the new object.
+-   The error is in `request.error` (if any).
 
 ## Transactions' autocommit
 
@@ -388,12 +388,12 @@ First, make `fetch`, prepare the data if needed, afterwards create a transaction
 To detect the moment of successful completion, we can listen to `transaction.oncomplete` event:
 
 ```js
-let transaction = db.transaction("books", "readwrite");
+let transaction = db.transaction('books', 'readwrite');
 
 // ...perform operations...
 
 transaction.oncomplete = function () {
-  console.log("Transaction is complete");
+    console.log('Transaction is complete');
 };
 ```
 
@@ -420,26 +420,26 @@ In some situations, we may want to handle the failure (e.g. try another request)
 In the example below a new book is added with the same key (`id`) as the existing one. The `store.add` method generates a `"ConstraintError"` in that case. We handle it without canceling the transaction:
 
 ```js
-let transaction = db.transaction("books", "readwrite");
+let transaction = db.transaction('books', 'readwrite');
 
-let book = { id: "js", price: 10 };
+let book = { id: 'js', price: 10 };
 
-let request = transaction.objectStore("books").add(book);
+let request = transaction.objectStore('books').add(book);
 
 request.onerror = function (event) {
-  // ConstraintError occurs when an object with the same id already exists
-  if (request.error.name == "ConstraintError") {
-    console.log("Book with such id already exists"); // handle the error
-    event.preventDefault(); // don't abort the transaction
-    // use another key for the book?
-  } else {
-    // unexpected error, can't handle it
-    // the transaction will abort
-  }
+    // ConstraintError occurs when an object with the same id already exists
+    if (request.error.name == 'ConstraintError') {
+        console.log('Book with such id already exists'); // handle the error
+        event.preventDefault(); // don't abort the transaction
+        // use another key for the book?
+    } else {
+        // unexpected error, can't handle it
+        // the transaction will abort
+    }
 };
 
 transaction.onabort = function () {
-  console.log("Error", transaction.error);
+    console.log('Error', transaction.error);
 };
 ```
 
@@ -455,9 +455,9 @@ So we can catch all errors using `db.onerror` handler, for reporting or other pu
 
 ```js
 db.onerror = function (event) {
-  let request = event.target; // the request that caused the error
+    let request = event.target; // the request that caused the error
 
-  console.log("Error", request.error);
+    console.log('Error', request.error);
 };
 ```
 
@@ -467,15 +467,15 @@ We can stop the bubbling and hence `db.onerror` by using `event.stopPropagation(
 
 ```js
 request.onerror = function (event) {
-  if (request.error.name == "ConstraintError") {
-    console.log("Book with such id already exists"); // handle the error
-    event.preventDefault(); // don't abort the transaction
-    event.stopPropagation(); // don't bubble error up, "chew" it
-  } else {
-    // do nothing
-    // transaction will be aborted
-    // we can take care of error in transaction.onabort
-  }
+    if (request.error.name == 'ConstraintError') {
+        console.log('Book with such id already exists'); // handle the error
+        event.preventDefault(); // don't abort the transaction
+        event.stopPropagation(); // don't bubble error up, "chew" it
+    } else {
+        // do nothing
+        // transaction will be aborted
+        // we can take care of error in transaction.onabort
+    }
 };
 ```
 
@@ -494,20 +494,20 @@ Searching methods support both exact key values and so-called "ranges of values"
 
 `IDBKeyRange` objects are created using following calls:
 
-- `IDBKeyRange.lowerBound(lower, [open])` means: `≥lower` (or `>lower` if `open` is true)
-- `IDBKeyRange.upperBound(upper, [open])` means: `≤upper` (or `<upper` if `open` is true)
-- `IDBKeyRange.bound(lower, upper, [lowerOpen], [upperOpen])` means: between `lower` and `upper`. If the open flags is true, the corresponding key is not included in the range.
-- `IDBKeyRange.only(key)` -- a range that consists of only one `key`, rarely used.
+-   `IDBKeyRange.lowerBound(lower, [open])` means: `≥lower` (or `>lower` if `open` is true)
+-   `IDBKeyRange.upperBound(upper, [open])` means: `≤upper` (or `<upper` if `open` is true)
+-   `IDBKeyRange.bound(lower, upper, [lowerOpen], [upperOpen])` means: between `lower` and `upper`. If the open flags is true, the corresponding key is not included in the range.
+-   `IDBKeyRange.only(key)` -- a range that consists of only one `key`, rarely used.
 
 We'll see practical examples of using them very soon.
 
 To perform the actual search, there are following methods. They accept a `query` argument that can be either an exact key or a key range:
 
-- `store.get(query)` -- search for the first value by a key or a range.
-- `store.getAll([query], [count])` -- search for all values, limit by `count` if given.
-- `store.getKey(query)` -- search for the first key that satisfies the query, usually a range.
-- `store.getAllKeys([query], [count])` -- search for all keys that satisfy the query, usually a range, up to `count` if given.
-- `store.count([query])` -- get the total count of keys that satisfy the query, usually a range.
+-   `store.get(query)` -- search for the first value by a key or a range.
+-   `store.getAll([query], [count])` -- search for all values, limit by `count` if given.
+-   `store.getKey(query)` -- search for the first key that satisfies the query, usually a range.
+-   `store.getAllKeys([query], [count])` -- search for all keys that satisfy the query, usually a range, up to `count` if given.
+-   `store.count([query])` -- get the total count of keys that satisfy the query, usually a range.
 
 For instance, we have a lot of books in our store. Remember, the `id` field is the key, so all these methods can search by `id`.
 
@@ -515,19 +515,19 @@ Request examples:
 
 ```js
 // get one book
-books.get("js");
+books.get('js');
 
 // get books with 'css' <= id <= 'html'
-books.getAll(IDBKeyRange.bound("css", "html"));
+books.getAll(IDBKeyRange.bound('css', 'html'));
 
 // get books with id < 'html'
-books.getAll(IDBKeyRange.upperBound("html", true));
+books.getAll(IDBKeyRange.upperBound('html', true));
 
 // get all books
 books.getAll();
 
 // get all keys, where id > 'js'
-books.getAllKeys(IDBKeyRange.lowerBound("js", true));
+books.getAllKeys(IDBKeyRange.lowerBound('js', true));
 ```
 
 ```smart header="Object store is always sorted"
@@ -548,11 +548,11 @@ The syntax:
 objectStore.createIndex(name, keyPath, [options]);
 ```
 
-- **`name`** -- index name,
-- **`keyPath`** -- path to the object field that the index should track (we're going to search by that field),
-- **`option`** -- an optional object with properties:
-  - **`unique`** -- if true, then there may be only one object in the store with the given value at the `keyPath`. The index will enforce that by generating an error if we try to add a duplicate.
-  - **`multiEntry`** -- only used if the value on `keyPath` is an array. In that case, by default, the index will treat the whole array as the key. But if `multiEntry` is true, then the index will keep a list of store objects for each value in that array. So array members become index keys.
+-   **`name`** -- index name,
+-   **`keyPath`** -- path to the object field that the index should track (we're going to search by that field),
+-   **`option`** -- an optional object with properties:
+    -   **`unique`** -- if true, then there may be only one object in the store with the given value at the `keyPath`. The index will enforce that by generating an error if we try to add a duplicate.
+    -   **`multiEntry`** -- only used if the value on `keyPath` is an array. In that case, by default, the index will treat the whole array as the key. But if `multiEntry` is true, then the index will keep a list of store objects for each value in that array. So array members become index keys.
 
 In our example, we store books keyed by `id`.
 
@@ -570,9 +570,9 @@ openRequest.onupgradeneeded = function() {
 };
 ```
 
-- The index will track `price` field.
-- The price is not unique, there may be multiple books with the same price, so we don't set `unique` option.
-- The price is not an array, so `multiEntry` flag is not applicable.
+-   The index will track `price` field.
+-   The price is not unique, there may be multiple books with the same price, so we don't set `unique` option.
+-   The price is not an array, so `multiEntry` flag is not applicable.
 
 Imagine that our `inventory` has 4 books. Here's the picture that shows exactly what the `index` is:
 
@@ -615,13 +615,13 @@ Indexes are internally sorted by the tracked object field, `price` in our case. 
 
 The `delete` method looks up values to delete by a query, the call format is similar to `getAll`:
 
-- **`delete(query)`** -- delete matching values by query.
+-   **`delete(query)`** -- delete matching values by query.
 
 For instance:
 
 ```js
 // delete the book with id='js'
-books.delete("js");
+books.delete('js');
 ```
 
 If we'd like to delete books based on a price or another object field, then we should first find the key in the index, and then call `delete`:
@@ -631,8 +631,8 @@ If we'd like to delete books based on a price or another object field, then we s
 let request = priceIndex.getKey(5);
 
 request.onsuccess = function () {
-  let id = request.result;
-  let deleteRequest = books.delete(id);
+    let id = request.result;
+    let deleteRequest = books.delete(id);
 };
 ```
 
@@ -665,40 +665,40 @@ let request = store.openCursor(query, [direction]);
 // to get keys, not values (like getAllKeys): store.openKeyCursor
 ```
 
-- **`query`** is a key or a key range, same as for `getAll`.
-- **`direction`** is an optional argument, which order to use:
-  - `"next"` -- the default, the cursor walks up from the record with the lowest key.
-  - `"prev"` -- the reverse order: down from the record with the biggest key.
-  - `"nextunique"`, `"prevunique"` -- same as above, but skip records with the same key (only for cursors over indexes, e.g. for multiple books with price=5 only the first one will be returned).
+-   **`query`** is a key or a key range, same as for `getAll`.
+-   **`direction`** is an optional argument, which order to use:
+    -   `"next"` -- the default, the cursor walks up from the record with the lowest key.
+    -   `"prev"` -- the reverse order: down from the record with the biggest key.
+    -   `"nextunique"`, `"prevunique"` -- same as above, but skip records with the same key (only for cursors over indexes, e.g. for multiple books with price=5 only the first one will be returned).
 
 **The main difference of the cursor is that `request.onsuccess` triggers multiple times: once for each result.**
 
 Here's an example of how to use a cursor:
 
 ```js
-let transaction = db.transaction("books");
-let books = transaction.objectStore("books");
+let transaction = db.transaction('books');
+let books = transaction.objectStore('books');
 
 let request = books.openCursor();
 
 // called for each book found by the cursor
 request.onsuccess = function () {
-  let cursor = request.result;
-  if (cursor) {
-    let key = cursor.key; // book key (id field)
-    let value = cursor.value; // book object
-    console.log(key, value);
-    cursor.continue();
-  } else {
-    console.log("No more books");
-  }
+    let cursor = request.result;
+    if (cursor) {
+        let key = cursor.key; // book key (id field)
+        let value = cursor.value; // book object
+        console.log(key, value);
+        cursor.continue();
+    } else {
+        console.log('No more books');
+    }
 };
 ```
 
 The main cursor methods are:
 
-- `advance(count)` -- advance the cursor `count` times, skipping values.
-- `continue([key])` -- advance the cursor to the next value in range matching (or immediately after `key` if given).
+-   `advance(count)` -- advance the cursor `count` times, skipping values.
+-   `continue([key])` -- advance the cursor to the next value in range matching (or immediately after `key` if given).
 
 Whether there are more values matching the cursor or not -- `onsuccess` gets called, and then in `result` we can get the cursor pointing to the next record, or `undefined`.
 
@@ -713,16 +713,16 @@ let request = priceIdx.openCursor(IDBKeyRange.upperBound(5));
 
 // called for each record
 request.onsuccess = function () {
-  let cursor = request.result;
-  if (cursor) {
-    let primaryKey = cursor.primaryKey; // next object store key (id field)
-    let value = cursor.value; // next object store object (book object)
-    let key = cursor.key; // next index key (price)
-    console.log(key, value);
-    cursor.continue();
-  } else {
-    console.log("No more books");
-  }
+    let cursor = request.result;
+    if (cursor) {
+        let primaryKey = cursor.primaryKey; // next object store key (id field)
+        let value = cursor.value; // next object store object (book object)
+        let key = cursor.key; // next index key (price)
+        console.log(key, value);
+        cursor.continue();
+    } else {
+        console.log('No more books');
+    }
 };
 ```
 
@@ -831,12 +831,12 @@ The basic usage can be described with a few phrases:
 
 1. Get a promise wrapper like [idb](https://github.com/jakearchibald/idb).
 2. Open a database: `idb.openDb(name, version, onupgradeneeded)`
-   - Create object storages and indexes in `onupgradeneeded` handler or perform version update if needed.
+    - Create object storages and indexes in `onupgradeneeded` handler or perform version update if needed.
 3. For requests:
-   - Create transaction `db.transaction('books')` (readwrite if needed).
-   - Get the object store `transaction.objectStore('books')`.
+    - Create transaction `db.transaction('books')` (readwrite if needed).
+    - Get the object store `transaction.objectStore('books')`.
 4. Then, to search by a key, call methods on the object store directly.
-   - To search by an object field, create an index.
+    - To search by an object field, create an index.
 5. If the data does not fit in memory, use a cursor.
 
 Here's a small demo app:

@@ -19,6 +19,7 @@ Compare the two code fragments.
     */!*
     }
     ```
+
 2. The second fragment puts the cleaning right after `try...catch`:
 
     ```js

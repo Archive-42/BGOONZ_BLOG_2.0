@@ -26,17 +26,11 @@ In our case we need to substract the border size from the outer coordinates.
 We could use CSS way:
 
 ```js
-let answer4 = [
-  coords.right - parseInt(getComputedStyle(field).borderRightWidth),
-  coords.bottom - parseInt(getComputedStyle(field).borderBottomWidth),
-];
+let answer4 = [coords.right - parseInt(getComputedStyle(field).borderRightWidth), coords.bottom - parseInt(getComputedStyle(field).borderBottomWidth)];
 ```
 
 An alternative way would be to add `clientWidth/clientHeight` to coordinates of the left-upper corner. That's probably even better:
 
 ```js
-let answer4 = [
-  coords.left + elem.clientLeft + elem.clientWidth,
-  coords.top + elem.clientTop + elem.clientHeight,
-];
+let answer4 = [coords.left + elem.clientLeft + elem.clientWidth, coords.top + elem.clientTop + elem.clientHeight];
 ```

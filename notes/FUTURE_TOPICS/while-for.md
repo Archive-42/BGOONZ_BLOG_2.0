@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/while-for"
-- <a href="while-for.html"
-- <a href="https://es.javascript.info/while-for"
-- <a href="https://fr.javascript.info/while-for"
-- <a href="https://it.javascript.info/while-for"
-  while-for"
+-   <a href="https://ar.javascript.info/while-for"
+-   <a href="while-for.html"
+-   <a href="https://es.javascript.info/while-for"
+-   <a href="https://fr.javascript.info/while-for"
+-   <a href="https://it.javascript.info/while-for"
+    while-for"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/while-for"
-- <a href=while-for"
-- <a href="https://tr.javascript.info/while-for"
-- <a href="https://zh.javascript.info/while-for"
+-   <a href="https://ko.javascript.info/while-for"
+-   <a href=while-for"
+-   <a href="https://tr.javascript.info/while-for"
+-   <a href="https://zh.javascript.info/while-for"
 
 We want to make this open-source project available for people all around the world.
 
@@ -403,9 +403,9 @@ A `continue` is only possible from inside a loop.
 
 We covered 3 types of loops:
 
-- `while` – The condition is checked before each iteration.
-- `do..while` – The condition is checked after each iteration.
-- `for (;;)` – The condition is checked before each iteration, additional settings available.
+-   `while` – The condition is checked before each iteration.
+-   `do..while` – The condition is checked after each iteration.
+-   `for (;;)` – The condition is checked before each iteration, additional settings available.
 
 To make an “infinite” loop, usually the `while(true)` construct is used. Such a loop, just like any other, can be stopped with the `break` directive.
 
@@ -691,28 +691,28 @@ There’s a lot of space to optimize it. For instance, we could look for the div
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="while-for.html#the-while-loop" class="sidebar__link">The “while” loop</a>
-- <a href="while-for.html#the-do-while-loop" class="sidebar__link">The “do…while” loop</a>
-- <a href="while-for.html#the-for-loop" class="sidebar__link">The “for” loop</a>
-- <a href="while-for.html#breaking-the-loop" class="sidebar__link">Breaking the loop</a>
-- <a href="while-for.html#continue" class="sidebar__link">Continue to the next iteration</a>
-- <a href="while-for.html#labels-for-break-continue" class="sidebar__link">Labels for break/continue</a>
-- <a href="while-for.html#summary" class="sidebar__link">Summary</a>
+-   <a href="while-for.html#the-while-loop" class="sidebar__link">The “while” loop</a>
+-   <a href="while-for.html#the-do-while-loop" class="sidebar__link">The “do…while” loop</a>
+-   <a href="while-for.html#the-for-loop" class="sidebar__link">The “for” loop</a>
+-   <a href="while-for.html#breaking-the-loop" class="sidebar__link">Breaking the loop</a>
+-   <a href="while-for.html#continue" class="sidebar__link">Continue to the next iteration</a>
+-   <a href="while-for.html#labels-for-break-continue" class="sidebar__link">Labels for break/continue</a>
+-   <a href="while-for.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="while-for.html#tasks" class="sidebar__link">Tasks (7)</a>
-- <a href="while-for.html#comments" class="sidebar__link">Comments</a>
+-   <a href="while-for.html#tasks" class="sidebar__link">Tasks (7)</a>
+-   <a href="while-for.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -720,7 +720,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/13-while-for" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

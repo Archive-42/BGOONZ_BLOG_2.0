@@ -10,12 +10,12 @@ Here's the example structure:
 
 ```html
 <div class="menu">
-  <span class="title">Sweeties (click me)!</span>
-  <ul>
-    <li>Cake</li>
-    <li>Donut</li>
-    <li>Honey</li>
-  </ul>
+    <span class="title">Sweeties (click me)!</span>
+    <ul>
+        <li>Cake</li>
+        <li>Donut</li>
+        <li>Honey</li>
+    </ul>
 </div>
 ```
 
@@ -32,9 +32,7 @@ So if we set `onclick` on it, then it will catch clicks to the right of the text
 As `<span>` has an implicit `display: inline`, it occupies exactly enough place to fit all the text:
 
 ```html autorun height=50
-<span style="border: solid red 1px" onclick="alert(1)"
-  >Sweeties (click me)!</span
->
+<span style="border: solid red 1px" onclick="alert(1)">Sweeties (click me)!</span>
 ```
 
 # Toggling the menu
@@ -47,16 +45,16 @@ Without it, the menu will be closed:
 
 ```css
 .menu ul {
-  margin: 0;
-  list-style: none;
-  padding-left: 20px;
-  display: none;
+    margin: 0;
+    list-style: none;
+    padding-left: 20px;
+    display: none;
 }
 
 .menu .title::before {
-  content: "▶ ";
-  font-size: 80%;
-  color: green;
+    content: '▶ ';
+    font-size: 80%;
+    color: green;
 }
 ```
 
@@ -64,10 +62,10 @@ Without it, the menu will be closed:
 
 ```css
 .menu.open .title::before {
-  content: "▼ ";
+    content: '▼ ';
 }
 
 .menu.open ul {
-  display: block;
+    display: block;
 }
 ```

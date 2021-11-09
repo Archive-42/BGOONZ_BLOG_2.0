@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/regexp-escaping"
-- <a href="regexp-escaping.html"
-- <a href="https://es.javascript.info/regexp-escaping"
-- <a href="https://fr.javascript.info/regexp-escaping"
-- <a href="https://it.javascript.info/regexp-escaping"
-  regexp-escaping"
+-   <a href="https://ar.javascript.info/regexp-escaping"
+-   <a href="regexp-escaping.html"
+-   <a href="https://es.javascript.info/regexp-escaping"
+-   <a href="https://fr.javascript.info/regexp-escaping"
+-   <a href="https://it.javascript.info/regexp-escaping"
+    regexp-escaping"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=regexp-escaping"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/regexp-escaping"
+-   <a href="https://ko.javascript.info/"
+-   <a href=regexp-escaping"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/regexp-escaping"
 
 We want to make this open-source project available for people all around the world.
 
@@ -117,9 +117,9 @@ Here’s how “\\d.\\d” is perceived:
 
 String quotes “consume” backslashes and interpret them on their own, for instance:
 
-- `\n` – becomes a newline character,
-- `\u1234` – becomes the Unicode character with such code,
-- …And when there’s no special meaning: like `\d` or `\z`, then the backslash is simply removed.
+-   `\n` – becomes a newline character,
+-   `\u1234` – becomes the Unicode character with such code,
+-   …And when there’s no special meaning: like `\d` or `\z`, then the backslash is simply removed.
 
 So `new RegExp` gets a string without backslashes. That’s why the search doesn’t work!
 
@@ -137,9 +137,9 @@ To fix it, we need to double backslashes, because string quotes turn `\\` into `
 
 ## <a href="regexp-escaping.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- To search for special characters `[ \ ^ $ . | ? * + ( )` literally, we need to prepend them with a backslash `\` (“escape them”).
-- We also need to escape `/` if we’re inside `/.../` (but not inside `new RegExp`).
-- When passing a string to `new RegExp`, we need to double backslashes `\\`, cause string quotes consume one of them.
+-   To search for special characters `[ \ ^ $ . | ? * + ( )` literally, we need to prepend them with a backslash `\` (“escape them”).
+-   We also need to escape `/` if we’re inside `/.../` (but not inside `new RegExp`).
+-   When passing a string to `new RegExp`, we need to double backslashes `\\`, cause string quotes consume one of them.
 
 <a href="regexp-boundary.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="regexp-character-sets-and-ranges.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -151,24 +151,24 @@ To fix it, we need to double backslashes, because string quotes turn `\\` into `
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-escaping.html#escaping" class="sidebar__link">Escaping</a>
-- <a href="regexp-escaping.html#a-slash" class="sidebar__link">A slash</a>
-- <a href="regexp-escaping.html#new-regexp" class="sidebar__link">new RegExp</a>
-- <a href="regexp-escaping.html#summary" class="sidebar__link">Summary</a>
+-   <a href="regexp-escaping.html#escaping" class="sidebar__link">Escaping</a>
+-   <a href="regexp-escaping.html#a-slash" class="sidebar__link">A slash</a>
+-   <a href="regexp-escaping.html#new-regexp" class="sidebar__link">new RegExp</a>
+-   <a href="regexp-escaping.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="regexp-escaping.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-escaping.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -176,7 +176,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/07-regexp-escaping" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -4,8 +4,8 @@ The browser allows us to track the loading of external resources -- scripts, ifr
 
 There are two events for it:
 
-- `onload` -- successful load,
-- `onerror` -- an error occurred.
+-   `onload` -- successful load,
+-   `onerror` -- an error occurred.
 
 ## Loading a script
 
@@ -15,7 +15,7 @@ We can load it dynamically, like this:
 
 ```js
 let script = document.createElement('script');
-script.src = "my.js";
+script.src = 'my.js';
 
 document.head.append(script);
 ```
@@ -85,21 +85,21 @@ For example:
 
 ```js run
 let img = document.createElement('img');
-img.src = "https://js.cx/clipart/train.gif"; // (*)
+img.src = 'https://js.cx/clipart/train.gif'; // (*)
 
-img.onload = function() {
-  alert(`Image loaded, size ${img.width}x${img.height}`);
+img.onload = function () {
+    alert(`Image loaded, size ${img.width}x${img.height}`);
 };
 
-img.onerror = function() {
-  alert("Error occurred while loading image");
+img.onerror = function () {
+    alert('Error occurred while loading image');
 };
 ```
 
 There are some notes though:
 
-- Most resources start loading when they are added to the document. But `<img>` is an exception. It starts loading when it gets a src `(*)`.
-- For `<iframe>`, the `iframe.onload` event triggers when the iframe loading finished, both for successful load and in case of an error.
+-   Most resources start loading when they are added to the document. But `<img>` is an exception. It starts loading when it gets a src `(*)`.
+-   For `<iframe>`, the `iframe.onload` event triggers when the iframe loading finished, both for successful load and in case of an error.
 
 That's for historical reasons.
 
@@ -114,6 +114,7 @@ This rule also affects resources from other domains.
 If we're using a script from another domain, and there's an error in it, we can't get error details.
 
 For example, let's take a script `error.js` that consists of a single (bad) function call:
+
 ```js
 // 📁 error.js
 noSuchFunction();
@@ -123,9 +124,9 @@ Now load it from the same site where it's located:
 
 ```html run height=0
 <script>
-window.onerror = function(message, url, line, col, errorObj) {
-  alert(`${message}\n${url}, ${line}:${col}`);
-};
+    window.onerror = function (message, url, line, col, errorObj) {
+        alert(`${message}\n${url}, ${line}:${col}`);
+    };
 </script>
 <script src="/article/onload-onerror/crossorigin/error.js"></script>
 ```
@@ -141,9 +142,9 @@ Now let's load the same script from another domain:
 
 ```html run height=0
 <script>
-window.onerror = function(message, url, line, col, errorObj) {
-  alert(`${message}\n${url}, ${line}:${col}`);
-};
+    window.onerror = function (message, url, line, col, errorObj) {
+        alert(`${message}\n${url}, ${line}:${col}`);
+    };
 </script>
 <script src="https://cors.javascript.info/article/onload-onerror/crossorigin/error.js"></script>
 ```
@@ -198,8 +199,8 @@ Now, assuming that the server provides an `Access-Control-Allow-Origin` header, 
 
 Images `<img>`, external styles, scripts and other resources provide `load` and `error` events to track their loading:
 
-- `load` triggers on a successful load,
-- `error` triggers on a failed load.
+-   `load` triggers on a successful load,
+-   `error` triggers on a failed load.
 
 The only exception is `<iframe>`: for historical reasons it always triggers `load`, for any load completion, even if the page is not found.
 

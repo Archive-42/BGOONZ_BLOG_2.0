@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="move-ball-field.html"
-  /move-ball-field"
+-   <a href="move-ball-field.html"
+    /move-ball-field"
 
 move-ball-fieldmove-ball-field"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  move-ball-field"
-- <a href="https://tr.javascript.info/"
-  move-ball-field"
+-   <a href="https://ko.javascript.info/"
+    move-ball-field"
+-   <a href="https://tr.javascript.info/"
+    move-ball-field"
 
 We want to make this open-source project available for people all around the world.
 
@@ -38,15 +38,15 @@ Move the ball across the field to a click. Like this:
 
 Requirements:
 
-- The ball center should come exactly under the pointer on click (if possible without crossing the field edge).
-- CSS-animation is welcome.
-- The ball must not cross field boundaries.
-- When the page is scrolled, nothing should break.
+-   The ball center should come exactly under the pointer on click (if possible without crossing the field edge).
+-   CSS-animation is welcome.
+-   The ball must not cross field boundaries.
+-   When the page is scrolled, nothing should break.
 
 Notes:
 
-- The code should also work with different ball and field sizes, not be bound to any fixed values.
-- Use properties `event.clientX/event.clientY` for click coordinates.
+-   The code should also work with different ball and field sizes, not be bound to any fixed values.
+-   Use properties `event.clientX/event.clientY` for click coordinates.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/yi6xXY3XkYDiZbeD?p=preview)
 

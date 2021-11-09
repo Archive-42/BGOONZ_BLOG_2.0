@@ -1,9 +1,9 @@
 multiply-numeric"
 
-- <a href="multiply-numeric.html"
-  /multiply-numeric"
-  /multiply-numeric"
-  multiply-numericmultiply-numeric"
+-   <a href="multiply-numeric.html"
+    /multiply-numeric"
+    /multiply-numeric"
+    multiply-numericmultiply-numeric"
 
 <!-- -->
 

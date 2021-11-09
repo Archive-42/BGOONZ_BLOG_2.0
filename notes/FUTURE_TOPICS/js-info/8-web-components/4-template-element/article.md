@@ -10,9 +10,9 @@ For example, we can put there a table row `<tr>`:
 
 ```html
 <template>
-  <tr>
-    <td>Contents</td>
-  </tr>
+    <tr>
+        <td>Contents</td>
+    </tr>
 </template>
 ```
 
@@ -22,14 +22,14 @@ We can put styles and scripts into `<template>` as well:
 
 ```html
 <template>
-  <style>
-    p {
-      font-weight: bold;
-    }
-  </style>
-  <script>
-    alert("Hello");
-  </script>
+    <style>
+        p {
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        alert('Hello');
+    </script>
 </template>
 ```
 
@@ -47,22 +47,22 @@ For example:
 
 ```html run
 <template id="tmpl">
-  <script>
-    alert("Hello");
-  </script>
-  <div class="message">Hello, world!</div>
+    <script>
+        alert('Hello');
+    </script>
+    <div class="message">Hello, world!</div>
 </template>
 
 <script>
-    let elem = document.createElement('div');
+      let elem = document.createElement('div');
 
-  *!*
-    // Clone the template content to reuse it multiple times
-    elem.append(tmpl.content.cloneNode(true));
-  */!*
+    *!*
+      // Clone the template content to reuse it multiple times
+      elem.append(tmpl.content.cloneNode(true));
+    */!*
 
-    document.body.append(elem);
-    // Now the script from <template> runs
+      document.body.append(elem);
+      // Now the script from <template> runs
 </script>
 ```
 
@@ -70,26 +70,26 @@ Let's rewrite a Shadow DOM example from the previous chapter using `<template>`:
 
 ```html run untrusted autorun="no-epub" height=60
 <template id="tmpl">
-  <style>
-    p {
-      font-weight: bold;
-    }
-  </style>
-  <p id="message"></p>
+    <style>
+        p {
+            font-weight: bold;
+        }
+    </style>
+    <p id="message"></p>
 </template>
 
 <div id="elem">Click me</div>
 
 <script>
-    elem.onclick = function() {
-      elem.attachShadow({mode: 'open'});
+      elem.onclick = function() {
+        elem.attachShadow({mode: 'open'});
 
-  *!*
-      elem.shadowRoot.append(tmpl.content.cloneNode(true)); // (*)
-  */!*
+    *!*
+        elem.shadowRoot.append(tmpl.content.cloneNode(true)); // (*)
+    */!*
 
-      elem.shadowRoot.getElementById('message').innerHTML = "Hello from the shadows!";
-    };
+        elem.shadowRoot.getElementById('message').innerHTML = "Hello from the shadows!";
+      };
 </script>
 ```
 
@@ -99,13 +99,13 @@ They form the shadow DOM:
 
 ```html
 <div id="elem">
-  #shadow-root
-  <style>
-    p {
-      font-weight: bold;
-    }
-  </style>
-  <p id="message"></p>
+    #shadow-root
+    <style>
+        p {
+            font-weight: bold;
+        }
+    </style>
+    <p id="message"></p>
 </div>
 ```
 
@@ -113,14 +113,14 @@ They form the shadow DOM:
 
 To summarize:
 
-- `<template>` content can be any syntactically correct HTML.
-- `<template>` content is considered "out of the document", so it doesn't affect anything.
-- We can access `template.content` from JavaScript, clone it to reuse in a new component.
+-   `<template>` content can be any syntactically correct HTML.
+-   `<template>` content is considered "out of the document", so it doesn't affect anything.
+-   We can access `template.content` from JavaScript, clone it to reuse in a new component.
 
 The `<template>` tag is quite unique, because:
 
-- The browser checks HTML syntax inside it (as opposed to using a template string inside a script).
-- ...But still allows use of any top-level HTML tags, even those that don't make sense without proper wrappers (e.g. `<tr>`).
-- The content becomes interactive: scripts run, `<video autoplay>` plays etc, when inserted into the document.
+-   The browser checks HTML syntax inside it (as opposed to using a template string inside a script).
+-   ...But still allows use of any top-level HTML tags, even those that don't make sense without proper wrappers (e.g. `<tr>`).
+-   The content becomes interactive: scripts run, `<video autoplay>` plays etc, when inserted into the document.
 
 The `<template>` element does not feature any iteration mechanisms, data binding or variable substitutions, but we can implement those on top of it.

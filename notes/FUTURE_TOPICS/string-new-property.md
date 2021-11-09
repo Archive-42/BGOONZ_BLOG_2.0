@@ -1,10 +1,10 @@
 string-new-property"
 
-- <a href="string-new-property.html"
-  /string-new-property"
-  /string-new-property"
-  string-new-property"
-  task/string-new-property"
+-   <a href="string-new-property.html"
+    /string-new-property"
+    /string-new-property"
+    string-new-property"
+    task/string-new-property"
 
 <!-- -->
 

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/regexp-sticky"
-- <a href="regexp-sticky.html"
-- <a href="https://es.javascript.info/regexp-sticky"
+-   <a href="https://ar.javascript.info/regexp-sticky"
+-   <a href="regexp-sticky.html"
+-   <a href="https://es.javascript.info/regexp-sticky"
 
-- <a href="https://it.javascript.info/"
-  regexp-sticky"
+-   <a href="https://it.javascript.info/"
+    regexp-sticky"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/regexp-sticky"
-- <a href=regexp-sticky"
-- <a href="https://tr.javascript.info/regexp-sticky"
-- <a href="https://zh.javascript.info/regexp-sticky"
+-   <a href="https://ko.javascript.info/regexp-sticky"
+-   <a href=regexp-sticky"
+-   <a href="https://tr.javascript.info/regexp-sticky"
+-   <a href="https://zh.javascript.info/regexp-sticky"
 
 We want to make this open-source project available for people all around the world.
 
@@ -49,8 +49,8 @@ E.g. we have a code string `let varName = "value"`, and we need to read the vari
 
 We’ll look for variable name using regexp `\w+`. Actually, JavaScript variable names need a bit more complex regexp for accurate matching, but here it doesn’t matter.
 
-- A call to `str.match(/\w+/)` will find only the first word in the line (`let`). That’s not it.
-- We can add the flag `g`. But then the call `str.match(/\w+/g)` will look for all words in the text, while we need one word at position `4`. Again, not what we need.
+-   A call to `str.match(/\w+/)` will find only the first word in the line (`let`). That’s not it.
+-   We can add the flag `g`. But then the call `str.match(/\w+/g)` will look for all words in the text, while we need one word at position `4`. Again, not what we need.
 
 **So, how to search for a regexp exactly at the given position?**
 
@@ -184,17 +184,17 @@ In tasks like lexical analysis, there are usually many searches at an exact posi
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
-- <a href="regexp-sticky.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-sticky.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -202,7 +202,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/16-regexp-sticky" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

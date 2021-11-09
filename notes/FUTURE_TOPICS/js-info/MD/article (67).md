@@ -1,4 +1,3 @@
-
 # Class inheritance
 
 Class inheritance is a way for one class to extend another class.
@@ -11,21 +10,21 @@ Let's say we have class `Animal`:
 
 ```js
 class Animal {
-  constructor(name) {
-    this.speed = 0;
-    this.name = name;
-  }
-  run(speed) {
-    this.speed = speed;
-    alert(`${this.name} runs with speed ${this.speed}.`);
-  }
-  stop() {
-    this.speed = 0;
-    alert(`${this.name} stands still.`);
-  }
+    constructor(name) {
+        this.speed = 0;
+        this.name = name;
+    }
+    run(speed) {
+        this.speed = speed;
+        alert(`${this.name} runs with speed ${this.speed}.`);
+    }
+    stop() {
+        this.speed = 0;
+        alert(`${this.name} stands still.`);
+    }
 }
 
-let animal = new Animal("My animal");
+let animal = new Animal('My animal');
 ```
 
 Here's how we can represent `animal` object and `Animal` class graphically:
@@ -62,14 +61,14 @@ Internally, `extends` keyword works using the good old prototype mechanics. It s
 ![](animal-rabbit-extends.svg)
 
 For instance, to find `rabbit.run` method, the engine checks (bottom-up on the picture):
+
 1. The `rabbit` object (has no `run`).
 2. Its prototype, that is `Rabbit.prototype` (has `hide`, but not `run`).
 3. Its prototype, that is (due to `extends`) `Animal.prototype`, that finally has the `run` method.
 
 As we can recall from the chapter <info:native-prototypes>, JavaScript itself uses prototypal inheritance for built-in objects. E.g. `Date.prototype.[[Prototype]]` is `Object.prototype`. That's why dates have access to generic object methods.
 
-````smart header="Any expression is allowed after `extends`"
-Class syntax allows to specify not just a class, but any expression after `extends`.
+````smart header="Any expression is allowed after `extends`" Class syntax allows to specify not just a class, but any expression after `extends`.
 
 For instance, a function call that generates the parent class:
 
@@ -86,10 +85,12 @@ class User extends f("Hello") {}
 
 new User().sayHi(); // Hello
 ```
+
 Here `class User` inherits from the result of `f("Hello")`.
 
 That may be useful for advanced programming patterns when we use functions to generate classes depending on many conditions and can inherit from them.
-````
+
+`````
 
 ## Overriding a method
 
@@ -174,8 +175,7 @@ The `super` in the arrow function is the same as in `stop()`, so it works as int
 // Unexpected super
 setTimeout(function() { super.stop() }, 1000);
 ```
-````
-
+`````
 
 ## Overriding constructor
 
@@ -232,7 +232,7 @@ Whoops! We've got an error. Now we can't create rabbits. What went wrong?
 
 The short answer is:
 
-- **Constructors in inheriting classes must call `super(...)`, and (!) do it before using `this`.**
+-   **Constructors in inheriting classes must call `super(...)`, and (!) do it before using `this`.**
 
 ...But why? What's going on here? Indeed, the requirement seems strange.
 
@@ -242,8 +242,8 @@ In JavaScript, there's a distinction between a constructor function of an inheri
 
 That label affects its behavior with `new`.
 
-- When a regular function is executed with `new`, it creates an empty object and assigns it to `this`.
-- But when a derived constructor runs, it doesn't do this. It expects the parent constructor to do this job.
+-   When a regular function is executed with `new`, it creates an empty object and assigns it to `this`.
+-   But when a derived constructor runs, it doesn't do this. It expects the parent constructor to do this job.
 
 So a derived constructor must call `super` in order to execute its parent (base) constructor, otherwise the object for `this` won't be created. And we'll get an error.
 
@@ -279,8 +279,6 @@ alert(rabbit.name); // White Rabbit
 alert(rabbit.earLength); // 10
 */!*
 ```
-
-
 
 ### Overriding class fields: a tricky note
 
@@ -363,8 +361,9 @@ And that's what we naturally expect. When the parent constructor is called in th
 Why is there the difference?
 
 Well, the reason is in the field initialization order. The class field is initialized:
-- Before constructor for the base class (that doesn't extend anything),
-- Immediately after `super()` for the derived class.
+
+-   Before constructor for the base class (that doesn't extend anything),
+-   Immediately after `super()` for the derived class.
 
 In our case, `Rabbit` is the derived class. There's no `constructor()` in it. As said previously, that's the same as if there was an empty constructor with only `super(...args)`.
 
@@ -375,7 +374,6 @@ This subtle difference between fields and methods is specific to JavaScript
 Luckily, this behavior only reveals itself if an overridden field is used in the parent constructor. Then it may be difficult to understand what's going on, so we're explaining it here.
 
 If it becomes a problem, one can fix it by using methods or getters/setters instead of fields.
-
 
 ## Super: internals, [[HomeObject]]
 
@@ -469,9 +467,9 @@ Here's the picture of what happens:
 1. Inside `longEar.eat()`, the line `(**)` calls `rabbit.eat` providing it with `this=longEar`.
     ```js
     // inside longEar.eat() we have this = longEar
-    this.__proto__.eat.call(this) // (**)
+    this.__proto__.eat.call(this); // (**)
     // becomes
-    longEar.__proto__.eat.call(this)
+    longEar.__proto__.eat.call(this);
     // that is
     rabbit.eat.call(this);
     ```
@@ -479,9 +477,9 @@ Here's the picture of what happens:
 
     ```js
     // inside rabbit.eat() we also have this = longEar
-    this.__proto__.eat.call(this) // (*)
+    this.__proto__.eat.call(this); // (*)
     // becomes
-    longEar.__proto__.eat.call(this)
+    longEar.__proto__.eat.call(this);
     // or (again)
     rabbit.eat.call(this);
     ```
@@ -579,9 +577,10 @@ tree.sayHi();  // I'm an animal (?!?)
 A call to `tree.sayHi()` shows "I'm an animal". Definitely wrong.
 
 The reason is simple:
-- In the line `(*)`, the method `tree.sayHi` was copied from `rabbit`. Maybe we just wanted to avoid code duplication?
-- Its `[[HomeObject]]` is `rabbit`, as it was created in `rabbit`. There's no way to change `[[HomeObject]]`.
-- The code of `tree.sayHi()` has `super.sayHi()` inside. It goes up from `rabbit` and takes the method from `animal`.
+
+-   In the line `(*)`, the method `tree.sayHi` was copied from `rabbit`. Maybe we just wanted to avoid code duplication?
+-   Its `[[HomeObject]]` is `rabbit`, as it was created in `rabbit`. There's no way to change `[[HomeObject]]`.
+-   The code of `tree.sayHi()` has `super.sayHi()` inside. It goes up from `rabbit` and takes the method from `animal`.
 
 Here's the diagram of what happens:
 
@@ -627,4 +626,5 @@ rabbit.eat();  // Error calling super (because there's no [[HomeObject]])
     - So it's not safe to copy a method with `super` from one object to another.
 
 Also:
-- Arrow functions don't have their own `this` or `super`, so they transparently fit into the surrounding context.
+
+-   Arrow functions don't have their own `this` or `super`, so they transparently fit into the surrounding context.

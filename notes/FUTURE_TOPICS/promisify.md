@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/promisify"
-- <a href="promisify.html"
-- <a href="https://es.javascript.info/promisify"
-- <a href="https://fr.javascript.info/promisify"
-- <a href="https://it.javascript.info/promisify"
-  promisify"
+-   <a href="https://ar.javascript.info/promisify"
+-   <a href="promisify.html"
+-   <a href="https://es.javascript.info/promisify"
+-   <a href="https://fr.javascript.info/promisify"
+-   <a href="https://it.javascript.info/promisify"
+    promisify"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/promisify"
-- <a href=promisify"
-- <a href="https://tr.javascript.info/promisify"
-- <a href="https://zh.javascript.info/promisify"
+-   <a href="https://ko.javascript.info/promisify"
+-   <a href=promisify"
+-   <a href="https://tr.javascript.info/promisify"
+-   <a href="https://zh.javascript.info/promisify"
 
 We want to make this open-source project available for people all around the world.
 
@@ -124,33 +124,33 @@ But what if the original `f` expects a callback with more arguments `callback(er
 
 We can improve our helper. Let’s make a more advanced version of `promisify`.
 
-- When called as `promisify(f)` it should work similar to the version above.
-- When called as `promisify(f, true)`, it should return the promise that resolves with the array of callback results. That’s exactly for callbacks with many arguments.
+-   When called as `promisify(f)` it should work similar to the version above.
+-   When called as `promisify(f, true)`, it should return the promise that resolves with the array of callback results. That’s exactly for callbacks with many arguments.
 
-  // promisify(f, true) to get array of results
-  function promisify(f, manyArgs = false) {
-  return function (...args) {
-  return new Promise((resolve, reject) => {
-  function callback(err, ...results) { // our custom callback for f
-  if (err) {
-  reject(err);
-  } else {
-  // resolve with all callback results if manyArgs is specified
-  resolve(manyArgs ? results : results[0]);
-  }
-  }
+    // promisify(f, true) to get array of results
+    function promisify(f, manyArgs = false) {
+    return function (...args) {
+    return new Promise((resolve, reject) => {
+    function callback(err, ...results) { // our custom callback for f
+    if (err) {
+    reject(err);
+    } else {
+    // resolve with all callback results if manyArgs is specified
+    resolve(manyArgs ? results : results[0]);
+    }
+    }
 
-        args.push(callback);
+          args.push(callback);
 
-        f.call(this, ...args);
-      });
+          f.call(this, ...args);
+        });
 
-  };
-  }
+    };
+    }
 
-  // usage:
-  f = promisify(f, true);
-  f(...).then(arrayOfResults => ..., err => ...);
+    // usage:
+    f = promisify(f, true);
+    f(...).then(arrayOfResults => ..., err => ...);
 
 As you can see it’s essentially the same as above, but `resolve` is called with only one or all arguments depending on whether `manyArgs` is truthy.
 
@@ -176,17 +176,17 @@ So promisification is only meant for functions that call the callback once. Furt
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="async.html" class="sidebar__link">Promises, async/await</a>
+-   <a href="async.html" class="sidebar__link">Promises, async/await</a>
 
-- <a href="promisify.html#comments" class="sidebar__link">Comments</a>
+-   <a href="promisify.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -194,7 +194,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/11-async/06-promisify" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,8 +1,8 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="write-to-object-after-bind.html"
-  /write-to-object-after-bind"
+-   <a href="https://ar.javascript.info/"
+-   <a href="write-to-object-after-bind.html"
+    /write-to-object-after-bind"
 
 write-to-object-after-bind"
 task/write-to-object-after-bind"

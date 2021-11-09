@@ -1,10 +1,10 @@
 two-functions-one-object"
 
-- <a href="two-functions-one-object.html"
-  /two-functions-one-object"
-  /two-functions-one-object"
-  two-functions-one-object"
-  task/two-functions-one-object"
+-   <a href="two-functions-one-object.html"
+    /two-functions-one-object"
+    /two-functions-one-object"
+    two-functions-one-object"
+    task/two-functions-one-object"
 
 <!-- -->
 

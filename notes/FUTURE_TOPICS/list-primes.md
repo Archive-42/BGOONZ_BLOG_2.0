@@ -1,9 +1,9 @@
 list-primes"
 
-- <a href="list-primes.html"
-  /list-primes"
-  /list-primes"
-  list-primeslist-primes"
+-   <a href="list-primes.html"
+    /list-primes"
+    /list-primes"
+    list-primeslist-primes"
 
 <!-- -->
 

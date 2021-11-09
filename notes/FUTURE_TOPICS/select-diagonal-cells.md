@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="select-diagonal-cells.html"
-  /select-diagonal-cells"
-  /select-diagonal-cells"
-  select-diagonal-cellsselect-diagonal-cells"
+-   <a href="select-diagonal-cells.html"
+    /select-diagonal-cells"
+    /select-diagonal-cells"
+    select-diagonal-cellsselect-diagonal-cells"
 
 <!-- -->
 
 select-diagonal-cells"
 select-diagonal-cells"
 
-- <a href="https://tr.javascript.info/"
-  select-diagonal-cells"
+-   <a href="https://tr.javascript.info/"
+    select-diagonal-cells"
 
 We want to make this open-source project available for people all around the world.
 

@@ -1,3 +1,3 @@
 function two() {
-  alert(2);
+    alert(2);
 }

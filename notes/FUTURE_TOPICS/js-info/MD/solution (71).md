@@ -1,25 +1,24 @@
 Let's walk the array items:
-- For each item we'll check if the resulting array already has that item.
-- If it is so, then ignore, otherwise add to results.
+
+-   For each item we'll check if the resulting array already has that item.
+-   If it is so, then ignore, otherwise add to results.
 
 ```js run demo
 function unique(arr) {
-  let result = [];
+    let result = [];
 
-  for (let str of arr) {
-    if (!result.includes(str)) {
-      result.push(str);
+    for (let str of arr) {
+        if (!result.includes(str)) {
+            result.push(str);
+        }
     }
-  }
 
-  return result;
+    return result;
 }
 
-let strings = ["Hare", "Krishna", "Hare", "Krishna",
-  "Krishna", "Krishna", "Hare", "Hare", ":-O"
-];
+let strings = ['Hare', 'Krishna', 'Hare', 'Krishna', 'Krishna', 'Krishna', 'Hare', 'Hare', ':-O'];
 
-alert( unique(strings) ); // Hare, Krishna, :-O
+alert(unique(strings)); // Hare, Krishna, :-O
 ```
 
 The code works, but there's a potential performance problem in it.

@@ -10,17 +10,17 @@ First, there's a constructor, similar to `Blob`:
 new File(fileParts, fileName, [options]);
 ```
 
-- **`fileParts`** -- is an array of Blob/BufferSource/String values.
-- **`fileName`** -- file name string.
-- **`options`** -- optional object:
-  - **`lastModified`** -- the timestamp (integer date) of last modification.
+-   **`fileParts`** -- is an array of Blob/BufferSource/String values.
+-   **`fileName`** -- file name string.
+-   **`options`** -- optional object:
+    -   **`lastModified`** -- the timestamp (integer date) of last modification.
 
 Second, more often we get a file from `<input type="file">` or drag'n'drop or other browser interfaces. In that case, the file gets this information from OS.
 
 As `File` inherits from `Blob`, `File` objects have the same properties, plus:
 
-- `name` -- the file name,
-- `lastModified` -- the timestamp of last modification.
+-   `name` -- the file name,
+-   `lastModified` -- the timestamp of last modification.
 
 That's how we can get a `File` object from `<input type="file">`:
 
@@ -28,12 +28,12 @@ That's how we can get a `File` object from `<input type="file">`:
 <input type="file" onchange="showFile(this)" />
 
 <script>
-  function showFile(input) {
-    let file = input.files[0];
+    function showFile(input) {
+        let file = input.files[0];
 
-    alert(`File name: ${file.name}`); // e.g my.png
-    alert(`Last modified: ${file.lastModified}`); // e.g 1552830408824
-  }
+        alert(`File name: ${file.name}`); // e.g my.png
+        alert(`Last modified: ${file.lastModified}`); // e.g 1552830408824
+    }
 </script>
 ```
 
@@ -55,30 +55,30 @@ let reader = new FileReader(); // no arguments
 
 The main methods:
 
-- **`readAsArrayBuffer(blob)`** -- read the data in binary format `ArrayBuffer`.
-- **`readAsText(blob, [encoding])`** -- read the data as a text string with the given encoding (`utf-8` by default).
-- **`readAsDataURL(blob)`** -- read the binary data and encode it as base64 data url.
-- **`abort()`** -- cancel the operation.
+-   **`readAsArrayBuffer(blob)`** -- read the data in binary format `ArrayBuffer`.
+-   **`readAsText(blob, [encoding])`** -- read the data as a text string with the given encoding (`utf-8` by default).
+-   **`readAsDataURL(blob)`** -- read the binary data and encode it as base64 data url.
+-   **`abort()`** -- cancel the operation.
 
 The choice of `read*` method depends on which format we prefer, how we're going to use the data.
 
-- `readAsArrayBuffer` -- for binary files, to do low-level binary operations. For high-level operations, like slicing, `File` inherits from `Blob`, so we can call them directly, without reading.
-- `readAsText` -- for text files, when we'd like to get a string.
-- `readAsDataURL` -- when we'd like to use this data in `src` for `img` or another tag. There's an alternative to reading a file for that, as discussed in chapter <info:blob>: `URL.createObjectURL(file)`.
+-   `readAsArrayBuffer` -- for binary files, to do low-level binary operations. For high-level operations, like slicing, `File` inherits from `Blob`, so we can call them directly, without reading.
+-   `readAsText` -- for text files, when we'd like to get a string.
+-   `readAsDataURL` -- when we'd like to use this data in `src` for `img` or another tag. There's an alternative to reading a file for that, as discussed in chapter <info:blob>: `URL.createObjectURL(file)`.
 
 As the reading proceeds, there are events:
 
-- `loadstart` -- loading started.
-- `progress` -- occurs during reading.
-- `load` -- no errors, reading complete.
-- `abort` -- `abort()` called.
-- `error` -- error has occurred.
-- `loadend` -- reading finished with either success or failure.
+-   `loadstart` -- loading started.
+-   `progress` -- occurs during reading.
+-   `load` -- no errors, reading complete.
+-   `abort` -- `abort()` called.
+-   `error` -- error has occurred.
+-   `loadend` -- reading finished with either success or failure.
 
 When the reading is finished, we can access the result as:
 
-- `reader.result` is the result (if successful)
-- `reader.error` is the error (if failed).
+-   `reader.result` is the result (if successful)
+-   `reader.error` is the error (if failed).
 
 The most widely used events are for sure `load` and `error`.
 
@@ -88,21 +88,21 @@ Here's an example of reading a file:
 <input type="file" onchange="readFile(this)" />
 
 <script>
-  function readFile(input) {
-    let file = input.files[0];
+    function readFile(input) {
+        let file = input.files[0];
 
-    let reader = new FileReader();
+        let reader = new FileReader();
 
-    reader.readAsText(file);
+        reader.readAsText(file);
 
-    reader.onload = function () {
-      console.log(reader.result);
-    };
+        reader.onload = function () {
+            console.log(reader.result);
+        };
 
-    reader.onerror = function () {
-      console.log(reader.error);
-    };
-  }
+        reader.onerror = function () {
+            console.log(reader.error);
+        };
+    }
 </script>
 ```
 
@@ -110,9 +110,9 @@ Here's an example of reading a file:
 
 We can use it to convert a blob to another format:
 
-- `readAsArrayBuffer(blob)` -- to `ArrayBuffer`,
-- `readAsText(blob, [encoding])` -- to string (an alternative to `TextDecoder`),
-- `readAsDataURL(blob)` -- to base64 data url.
+-   `readAsArrayBuffer(blob)` -- to `ArrayBuffer`,
+-   `readAsText(blob, [encoding])` -- to string (an alternative to `TextDecoder`),
+-   `readAsDataURL(blob)` -- to base64 data url.
 
 ````
 
@@ -133,9 +133,9 @@ In addition to `Blob` methods and properties, `File` objects also have `name` an
 
 `FileReader` objects can read from a file or a blob, in one of three formats:
 
-- String (`readAsText`).
-- `ArrayBuffer` (`readAsArrayBuffer`).
-- Data url, base-64 encoded (`readAsDataURL`).
+-   String (`readAsText`).
+-   `ArrayBuffer` (`readAsArrayBuffer`).
+-   Data url, base-64 encoded (`readAsDataURL`).
 
 In many cases though, we don't have to read the file contents. Just as we did with blobs, we can create a short url with `URL.createObjectURL(file)` and assign it to `<a>` or `<img>`. This way the file can be downloaded or shown up as an image, as a part of canvas etc.
 

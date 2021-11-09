@@ -66,9 +66,9 @@ If it doesn't, e.g. in an old browser, there's an ugly, but reliable way to ensu
 
 ```js
 (function () {
-  "use strict";
+    'use strict';
 
-  // ...your code here...
+    // ...your code here...
 })();
 ```
 

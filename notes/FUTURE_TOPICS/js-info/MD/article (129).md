@@ -10,10 +10,10 @@ We first need to create it:
 let decoder = new TextDecoder([label], [options]);
 ```
 
-- **`label`** -- the encoding, `utf-8` by default, but `big5`, `windows-1251` and many other are also supported.
-- **`options`** -- optional object:
-  - **`fatal`** -- boolean, if `true` then throw an exception for invalid (non-decodable) characters, otherwise (default) replace them with character `\uFFFD`.
-  - **`ignoreBOM`** -- boolean, if `true` then ignore BOM (an optional byte-order Unicode mark), rarely needed.
+-   **`label`** -- the encoding, `utf-8` by default, but `big5`, `windows-1251` and many other are also supported.
+-   **`options`** -- optional object:
+    -   **`fatal`** -- boolean, if `true` then throw an exception for invalid (non-decodable) characters, otherwise (default) replace them with character `\uFFFD`.
+    -   **`ignoreBOM`** -- boolean, if `true` then ignore BOM (an optional byte-order Unicode mark), rarely needed.
 
 ...And then decode:
 
@@ -21,9 +21,9 @@ let decoder = new TextDecoder([label], [options]);
 let str = decoder.decode([input], [options]);
 ```
 
-- **`input`** -- `BufferSource` to decode.
-- **`options`** -- optional object:
-  - **`stream`** -- true for decoding streams, when `decoder` is called repeatedly with incoming chunks of data. In that case a multi-byte character may occasionally split between chunks. This options tells `TextDecoder` to memorize "unfinished" characters and decode them when the next chunk comes.
+-   **`input`** -- `BufferSource` to decode.
+-   **`options`** -- optional object:
+    -   **`stream`** -- true for decoding streams, when `decoder` is called repeatedly with incoming chunks of data. In that case a multi-byte character may occasionally split between chunks. This options tells `TextDecoder` to memorize "unfinished" characters and decode them when the next chunk comes.
 
 For instance:
 
@@ -65,12 +65,12 @@ The only encoding it supports is "utf-8".
 
 It has two methods:
 
-- **`encode(str)`** -- returns `Uint8Array` from a string.
-- **`encodeInto(str, destination)`** -- encodes `str` into `destination` that must be `Uint8Array`.
+-   **`encode(str)`** -- returns `Uint8Array` from a string.
+-   **`encodeInto(str, destination)`** -- encodes `str` into `destination` that must be `Uint8Array`.
 
 ```js run
 let encoder = new TextEncoder();
 
-let uint8Array = encoder.encode("Hello");
+let uint8Array = encoder.encode('Hello');
 alert(uint8Array); // 72,101,108,108,111
 ```

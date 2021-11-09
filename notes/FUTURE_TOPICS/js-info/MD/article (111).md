@@ -23,37 +23,36 @@ These are the basics. Later we'll see how to other features, such as highlightin
 Here's the implementation of dragging a ball:
 
 ```js
-ball.onmousedown = function(event) { 
-  // (1) prepare to moving: make absolute and on top by z-index
-  ball.style.position = 'absolute';
-  ball.style.zIndex = 1000;
+ball.onmousedown = function (event) {
+    // (1) prepare to moving: make absolute and on top by z-index
+    ball.style.position = 'absolute';
+    ball.style.zIndex = 1000;
 
-  // move it out of any current parents directly into body
-  // to make it positioned relative to the body
-  document.body.append(ball);  
+    // move it out of any current parents directly into body
+    // to make it positioned relative to the body
+    document.body.append(ball);
 
-  // centers the ball at (pageX, pageY) coordinates
-  function moveAt(pageX, pageY) {
-    ball.style.left = pageX - ball.offsetWidth / 2 + 'px';
-    ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
-  }
+    // centers the ball at (pageX, pageY) coordinates
+    function moveAt(pageX, pageY) {
+        ball.style.left = pageX - ball.offsetWidth / 2 + 'px';
+        ball.style.top = pageY - ball.offsetHeight / 2 + 'px';
+    }
 
-  // move our absolutely positioned ball under the pointer
-  moveAt(event.pageX, event.pageY);
-
-  function onMouseMove(event) {
+    // move our absolutely positioned ball under the pointer
     moveAt(event.pageX, event.pageY);
-  }
 
-  // (2) move the ball on mousemove
-  document.addEventListener('mousemove', onMouseMove);
+    function onMouseMove(event) {
+        moveAt(event.pageX, event.pageY);
+    }
 
-  // (3) drop the ball, remove unneeded handlers
-  ball.onmouseup = function() {
-    document.removeEventListener('mousemove', onMouseMove);
-    ball.onmouseup = null;
-  };
+    // (2) move the ball on mousemove
+    document.addEventListener('mousemove', onMouseMove);
 
+    // (3) drop the ball, remove unneeded handlers
+    ball.onmouseup = function () {
+        document.removeEventListener('mousemove', onMouseMove);
+        ball.onmouseup = null;
+    };
 };
 ```
 
@@ -72,8 +71,8 @@ That's because the browser has its own drag'n'drop support for images and some o
 To disable it:
 
 ```js
-ball.ondragstart = function() {
-  return false;
+ball.ondragstart = function () {
+    return false;
 };
 ```
 
@@ -187,8 +186,9 @@ In previous examples the ball could be dropped just "anywhere" to stay. In real-
 Speaking abstract, we take a "draggable" element and drop it onto "droppable" element.
 
 We need to know:
-- where the element was dropped at the end of Drag'n'Drop -- to do the corresponding action,
-- and, preferably, know the droppable we're dragging over, to highlight it.
+
+-   where the element was dropped at the end of Drag'n'Drop -- to do the corresponding action,
+-   and, preferably, know the droppable we're dragging over, to highlight it.
 
 The solution is kind-of interesting and just a little bit tricky, so let's cover it here.
 
@@ -202,12 +202,12 @@ For instance, below are two `<div>` elements, red one on top of the blue one (fu
 
 ```html run autorun height=60
 <style>
-  div {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-  }
+    div {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+    }
 </style>
 <div style="background:blue" onmouseover="alert('never works')"></div>
 <div style="background:red" onmouseover="alert('over red!')"></div>
@@ -244,35 +244,35 @@ An extended code of `onMouseMove` to find "droppable" elements:
 let currentDroppable = null;
 
 function onMouseMove(event) {
-  moveAt(event.pageX, event.pageY);
+    moveAt(event.pageX, event.pageY);
 
-  ball.hidden = true;
-  let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
-  ball.hidden = false;
+    ball.hidden = true;
+    let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
+    ball.hidden = false;
 
-  // mousemove events may trigger out of the window (when the ball is dragged off-screen)
-  // if clientX/clientY are out of the window, then elementFromPoint returns null
-  if (!elemBelow) return;
+    // mousemove events may trigger out of the window (when the ball is dragged off-screen)
+    // if clientX/clientY are out of the window, then elementFromPoint returns null
+    if (!elemBelow) return;
 
-  // potential droppables are labeled with the class "droppable" (can be other logic)
-  let droppableBelow = elemBelow.closest('.droppable');
+    // potential droppables are labeled with the class "droppable" (can be other logic)
+    let droppableBelow = elemBelow.closest('.droppable');
 
-  if (currentDroppable != droppableBelow) {
-    // we're flying in or out...
-    // note: both values can be null
-    //   currentDroppable=null if we were not over a droppable before this event (e.g over an empty space)
-    //   droppableBelow=null if we're not over a droppable now, during this event
+    if (currentDroppable != droppableBelow) {
+        // we're flying in or out...
+        // note: both values can be null
+        //   currentDroppable=null if we were not over a droppable before this event (e.g over an empty space)
+        //   droppableBelow=null if we're not over a droppable now, during this event
 
-    if (currentDroppable) {
-      // the logic to process "flying out" of the droppable (remove highlight)
-      leaveDroppable(currentDroppable);
+        if (currentDroppable) {
+            // the logic to process "flying out" of the droppable (remove highlight)
+            leaveDroppable(currentDroppable);
+        }
+        currentDroppable = droppableBelow;
+        if (currentDroppable) {
+            // the logic to process "flying in" of the droppable
+            enterDroppable(currentDroppable);
+        }
     }
-    currentDroppable = droppableBelow;
-    if (currentDroppable) {
-      // the logic to process "flying in" of the droppable
-      enterDroppable(currentDroppable);
-    }
-  }
 }
 ```
 
@@ -294,10 +294,10 @@ The key components:
 
 We can lay a lot on this foundation.
 
-- On `mouseup` we can intellectually finalize the drop: change data, move elements around.
-- We can highlight the elements we're flying over.
-- We can limit dragging by a certain area or direction.
-- We can use event delegation for `mousedown/up`. A large-area event handler that checks  `event.target` can manage Drag'n'Drop for hundreds of elements.
-- And so on.
+-   On `mouseup` we can intellectually finalize the drop: change data, move elements around.
+-   We can highlight the elements we're flying over.
+-   We can limit dragging by a certain area or direction.
+-   We can use event delegation for `mousedown/up`. A large-area event handler that checks `event.target` can manage Drag'n'Drop for hundreds of elements.
+-   And so on.
 
 There are frameworks that build architecture over it: `DragZone`, `Droppable`, `Draggable` and other classes. Most of them do the similar stuff to what's described above, so it should be easy to understand them now. Or roll your own, as you can see that that's easy enough to do, sometimes easier than adapting a third-party solution.

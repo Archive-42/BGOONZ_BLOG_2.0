@@ -45,7 +45,7 @@ We can write to `document.cookie`. But it's not a data property, it's an [access
 For instance, this call sets a cookie with the name `user` and value `John`:
 
 ```js run
-document.cookie = "user=John"; // update only cookie named 'user'
+document.cookie = 'user=John'; // update only cookie named 'user'
 alert(document.cookie); // show all cookies
 ```
 
@@ -55,11 +55,11 @@ Technically, name and value can have any characters. To keep the valid formattin
 
 ```js run
 // special characters (spaces), need encoding
-let name = "my name";
-let value = "John Smith";
+let name = 'my name';
+let value = 'John Smith';
 
 // encodes the cookie as my%20name=John%20Smith
-document.cookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+document.cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);
 
 alert(document.cookie); // ...; my%20name=John%20Smith
 ```
@@ -75,12 +75,12 @@ Cookies have several options, many of them are important and should be set.
 The options are listed after `key=value`, delimited by `;`, like this:
 
 ```js run
-document.cookie = "user=John; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT";
+document.cookie = 'user=John; path=/; expires=Tue, 19 Jan 2038 03:14:07 GMT';
 ```
 
 ## path
 
-- **`path=/mypath`**
+-   **`path=/mypath`**
 
 The url path prefix must be absolute. It makes the cookie accessible for pages under that path. By default, it's the current path.
 
@@ -90,7 +90,7 @@ Usually, we should set `path` to the root: `path=/` to make the cookie accessibl
 
 ## domain
 
-- **`domain=site.com`**
+-   **`domain=site.com`**
 
 A domain defines where the cookie is accessible. In practice though, there are limitations. We can't set any domain.
 
@@ -100,7 +100,7 @@ By default, a cookie is accessible only at the domain that set it. So, if the co
 
 ```js
 // at site.com
-document.cookie = "user=John";
+document.cookie = 'user=John';
 
 // at forum.site.com
 alert(document.cookie); // no user
@@ -115,7 +115,7 @@ It's a safety restriction, to allow us to store sensitive data in cookies, that 
 ```js
 // at site.com
 // make the cookie accessible on any subdomain *.site.com:
-document.cookie = "user=John; domain=site.com";
+document.cookie = 'user=John; domain=site.com';
 
 // later
 
@@ -133,7 +133,7 @@ By default, if a cookie doesn't have one of these options, it disappears when th
 
 To let cookies survive a browser close, we can set either the `expires` or `max-age` option.
 
-- **`expires=Tue, 19 Jan 2038 03:14:07 GMT`**
+-   **`expires=Tue, 19 Jan 2038 03:14:07 GMT`**
 
 The cookie expiration date defines the time, when the browser will automatically delete it.
 
@@ -143,12 +143,12 @@ The date must be exactly in this format, in the GMT timezone. We can use `date.t
 // +1 day from now
 let date = new Date(Date.now() + 86400e3);
 date = date.toUTCString();
-document.cookie = "user=John; expires=" + date;
+document.cookie = 'user=John; expires=' + date;
 ```
 
 If we set `expires` to a date in the past, the cookie is deleted.
 
-- **`max-age=3600`**
+-   **`max-age=3600`**
 
 Is an alternative to `expires` and specifies the cookie's expiration in seconds from the current moment.
 
@@ -156,15 +156,15 @@ If set to zero or a negative value, the cookie is deleted:
 
 ```js
 // cookie will die in +1 hour from now
-document.cookie = "user=John; max-age=3600";
+document.cookie = 'user=John; max-age=3600';
 
 // delete cookie (let it expire right now)
-document.cookie = "user=John; max-age=0";
+document.cookie = 'user=John; max-age=0';
 ```
 
 ## secure
 
-- **`secure`**
+-   **`secure`**
 
 The cookie should be transferred only over HTTPS.
 
@@ -177,7 +177,7 @@ With this option, if a cookie is set by `https://site.com`, then it doesn't appe
 ```js
 // assuming we're on https:// now
 // set the cookie to be secure (only accessible over HTTPS)
-document.cookie = "user=John; secure";
+document.cookie = 'user=John; secure';
 ```
 
 ## samesite
@@ -208,7 +208,7 @@ The cookie `samesite` option provides another way to protect from such attacks, 
 
 It has two possible values:
 
-- **`samesite=strict` (same as `samesite` without value)**
+-   **`samesite=strict` (same as `samesite` without value)**
 
 A cookie with `samesite=strict` is never sent if the user comes from outside the same site.
 
@@ -224,7 +224,7 @@ When a user follows a legitimate link to `bank.com`, like from their own notes, 
 
 We could work around that by using two cookies: one for "general recognition", only for the purposes of saying: "Hello, John", and the other one for data-changing operations with `samesite=strict`. Then, a person coming from outside of the site will see a welcome, but payments must be initiated from the bank's website, for the second cookie to be sent.
 
-- **`samesite=lax`**
+-   **`samesite=lax`**
 
 A more relaxed approach that also protects from XSRF and doesn't break the user experience.
 
@@ -234,11 +234,11 @@ A `samesite=lax` cookie is sent if both of these conditions are true:
 
 1. The HTTP method is "safe" (e.g. GET, but not POST).
 
-   The full list of safe HTTP methods is in the [RFC7231 specification](https://tools.ietf.org/html/rfc7231). Basically, these are the methods that should be used for reading, but not writing the data. They must not perform any data-changing operations. Following a link is always GET, the safe method.
+    The full list of safe HTTP methods is in the [RFC7231 specification](https://tools.ietf.org/html/rfc7231). Basically, these are the methods that should be used for reading, but not writing the data. They must not perform any data-changing operations. Following a link is always GET, the safe method.
 
 2. The operation performs a top-level navigation (changes URL in the browser address bar).
 
-   That's usually true, but if the navigation is performed in an `<iframe>`, then it's not top-level. Also, JavaScript methods for network requests do not perform any navigation, hence they don't fit.
+    That's usually true, but if the navigation is performed in an `<iframe>`, then it's not top-level. Also, JavaScript methods for network requests do not perform any navigation, hence they don't fit.
 
 So, what `samesite=lax` does, is to basically allow the most common "go to URL" operation to have cookies. E.g. opening a website link from notes that satisfy these conditions.
 
@@ -250,7 +250,7 @@ Overall, `samesite` is a great option.
 
 There's a drawback:
 
-- `samesite` is ignored (not supported) by very old browsers, year 2017 or so.
+-   `samesite` is ignored (not supported) by very old browsers, year 2017 or so.
 
 **So if we solely rely on `samesite` to provide protection, then old browsers will be vulnerable.**
 
@@ -286,14 +286,8 @@ The function `getCookie(name)` returns the cookie with the given `name`:
 // returns the cookie with the given name,
 // or undefined if not found
 function getCookie(name) {
-  let matches = document.cookie.match(
-    new RegExp(
-      "(?:^|; )" +
-        name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
-        "=([^;]*)"
-    )
-  );
-  return matches ? decodeURIComponent(matches[1]) : undefined;
+    let matches = document.cookie.match(new RegExp('(?:^|; )' + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + '=([^;]*)'));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 ```
 
@@ -307,32 +301,31 @@ Sets the cookie's `name` to the given `value` with `path=/` by default (can be m
 
 ```js run
 function setCookie(name, value, options = {}) {
-  options = {
-    path: "/",
-    // add other defaults here if necessary
-    ...options,
-  };
+    options = {
+        path: '/',
+        // add other defaults here if necessary
+        ...options
+    };
 
-  if (options.expires instanceof Date) {
-    options.expires = options.expires.toUTCString();
-  }
-
-  let updatedCookie =
-    encodeURIComponent(name) + "=" + encodeURIComponent(value);
-
-  for (let optionKey in options) {
-    updatedCookie += "; " + optionKey;
-    let optionValue = options[optionKey];
-    if (optionValue !== true) {
-      updatedCookie += "=" + optionValue;
+    if (options.expires instanceof Date) {
+        options.expires = options.expires.toUTCString();
     }
-  }
 
-  document.cookie = updatedCookie;
+    let updatedCookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+
+    for (let optionKey in options) {
+        updatedCookie += '; ' + optionKey;
+        let optionValue = options[optionKey];
+        if (optionValue !== true) {
+            updatedCookie += '=' + optionValue;
+        }
+    }
+
+    document.cookie = updatedCookie;
 }
 
 // Example of use:
-setCookie("user", "John", { secure: true, "max-age": 3600 });
+setCookie('user', 'John', { secure: true, 'max-age': 3600 });
 ```
 
 ### deleteCookie(name)
@@ -341,9 +334,9 @@ To delete a cookie, we can call it with a negative expiration date:
 
 ```js
 function deleteCookie(name) {
-  setCookie(name, "", {
-    "max-age": -1,
-  });
+    setCookie(name, '', {
+        'max-age': -1
+    });
 }
 ```
 
@@ -362,15 +355,15 @@ For instance:
 1. A page at `site.com` loads a banner from another site: `<img src="https://ads.com/banner.png">`.
 2. Along with the banner, the remote server at `ads.com` may set the `Set-Cookie` header with a cookie like `id=1234`. Such a cookie originates from the `ads.com` domain, and will only be visible at `ads.com`:
 
-   ![](cookie-third-party.svg)
+    ![](cookie-third-party.svg)
 
 3. Next time when `ads.com` is accessed, the remote server gets the `id` cookie and recognizes the user:
 
-   ![](cookie-third-party-2.svg)
+    ![](cookie-third-party-2.svg)
 
 4. What's even more important is, when the user moves from `site.com` to another site `other.com`, which also has a banner, then `ads.com` gets the cookie, as it belongs to `ads.com`, thus recognizing the visitor and tracking him as he moves between sites:
 
-   ![](cookie-third-party-3.svg)
+    ![](cookie-third-party-3.svg)
 
 Third-party cookies are traditionally used for tracking and ads services, due to their nature. They are bound to the originating domain, so `ads.com` can track the same user between different sites, if they all access it.
 
@@ -378,8 +371,8 @@ Naturally, some people don't like being tracked, so browsers allow to disable su
 
 Also, some modern browsers employ special policies for such cookies:
 
-- Safari does not allow third-party cookies at all.
-- Firefox comes with a "black list" of third-party domains where it blocks third-party cookies.
+-   Safari does not allow third-party cookies at all.
+-   Firefox comes with a "black list" of third-party domains where it blocks third-party cookies.
 
 ```smart
 If we load a script from a third-party domain, like `<script src="https://google-analytics.com/analytics.js">`, and that script uses `document.cookie` to set a cookie, then such cookie is not third-party.
@@ -403,11 +396,11 @@ Websites generally have two variants of following GDPR. You must have seen them 
 
 1. If a website wants to set tracking cookies only for authenticated users.
 
-   To do so, the registration form should have a checkbox like "accept the privacy policy" (that describes how cookies are used), the user must check it, and then the website is free to set auth cookies.
+    To do so, the registration form should have a checkbox like "accept the privacy policy" (that describes how cookies are used), the user must check it, and then the website is free to set auth cookies.
 
 2. If a website wants to set tracking cookies for everyone.
 
-   To do so legally, a website shows a modal "splash screen" for newcomers, and requires them to agree to the cookies. Then the website can set them and let people see the content. That can be disturbing for new visitors though. No one likes to see such "must-click" modal splash screens instead of the content. But GDPR requires an explicit agreement.
+    To do so legally, a website shows a modal "splash screen" for newcomers, and requires them to agree to the cookies. Then the website can set them and let people see the content. That can be disturbing for new visitors though. No one likes to see such "must-click" modal splash screens instead of the content. But GDPR requires an explicit agreement.
 
 GDPR is not only about cookies, it's about other privacy-related issues too, but that's too much beyond our scope.
 
@@ -415,19 +408,19 @@ GDPR is not only about cookies, it's about other privacy-related issues too, but
 
 `document.cookie` provides access to cookies
 
-- write operations modify only cookies mentioned in it.
-- name/value must be encoded.
-- one cookie must not exceed 4KB, 20+ cookies per site (depends on the browser).
+-   write operations modify only cookies mentioned in it.
+-   name/value must be encoded.
+-   one cookie must not exceed 4KB, 20+ cookies per site (depends on the browser).
 
 Cookie options:
 
-- `path=/`, by default current path, makes the cookie visible only under that path.
-- `domain=site.com`, by default a cookie is visible on the current domain only. If the domain is set explicitly, the cookie becomes visible on subdomains.
-- `expires` or `max-age` sets the cookie expiration time. Without them the cookie dies when the browser is closed.
-- `secure` makes the cookie HTTPS-only.
-- `samesite` forbids the browser to send the cookie with requests coming from outside the site. This helps to prevent XSRF attacks.
+-   `path=/`, by default current path, makes the cookie visible only under that path.
+-   `domain=site.com`, by default a cookie is visible on the current domain only. If the domain is set explicitly, the cookie becomes visible on subdomains.
+-   `expires` or `max-age` sets the cookie expiration time. Without them the cookie dies when the browser is closed.
+-   `secure` makes the cookie HTTPS-only.
+-   `samesite` forbids the browser to send the cookie with requests coming from outside the site. This helps to prevent XSRF attacks.
 
 Additionally:
 
-- Third-party cookies may be forbidden by the browser, e.g. Safari does that by default.
-- When setting a tracking cookie for EU citizens, GDPR requires to ask for permission.
+-   Third-party cookies may be forbidden by the browser, e.g. Safari does that by default.
+-   When setting a tracking cookie for EU citizens, GDPR requires to ask for permission.

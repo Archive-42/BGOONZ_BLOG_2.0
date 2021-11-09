@@ -2,10 +2,10 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="sort-table.html"
-  /sort-table"
-  /sort-table"
-  sort-tablesort-table"
+-   <a href="sort-table.html"
+    /sort-table"
+    /sort-table"
+    sort-tablesort-table"
 
 <!-- -->
 

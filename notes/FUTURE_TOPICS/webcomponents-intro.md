@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="webcomponents-intro.html"
-- <a href="https://es.javascript.info/webcomponents-intro"
-- <a href="https://fr.javascript.info/webcomponents-intro"
-- <a href="https://it.javascript.info/webcomponents-intro"
-  webcomponents-intro"
+-   <a href="https://ar.javascript.info/"
+-   <a href="webcomponents-intro.html"
+-   <a href="https://es.javascript.info/webcomponents-intro"
+-   <a href="https://fr.javascript.info/webcomponents-intro"
+-   <a href="https://it.javascript.info/webcomponents-intro"
+    webcomponents-intro"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/webcomponents-intro"
-- <a href=webcomponents-intro"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/webcomponents-intro"
+-   <a href="https://ko.javascript.info/webcomponents-intro"
+-   <a href=webcomponents-intro"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/webcomponents-intro"
 
 We want to make this open-source project available for people all around the world.
 
@@ -53,10 +53,10 @@ And this is how it’s made inside (approximately):
 
 <figure><img src="article/webcomponents-intro/satellite-expanded.jpg" class="image__image" width="680" height="469" /></figure>The International Space Station:
 
-- Consists of many components.
-- Each component, in its turn, has many smaller details inside.
-- The components are very complex, much more complicated than most websites.
-- Components are developed internationally, by teams from different countries, speaking different languages.
+-   Consists of many components.
+-   Each component, in its turn, has many smaller details inside.
+-   The components are very complex, much more complicated than most websites.
+-   Components are developed internationally, by teams from different countries, speaking different languages.
 
 …And this thing flies, keeps humans alive in space!
 
@@ -90,10 +90,10 @@ How do we decide, what is a component? That comes from intuition, experience and
 
 A component has:
 
-- Its own JavaScript class.
-- DOM structure, managed solely by its class, outside code doesn’t access it (“encapsulation” principle).
-- CSS styles, applied to the component.
-- API: events, class methods etc, to interact with other components.
+-   Its own JavaScript class.
+-   DOM structure, managed solely by its class, outside code doesn’t access it (“encapsulation” principle).
+-   CSS styles, applied to the component.
+-   API: events, class methods etc, to interact with other components.
 
 Once again, the whole “component” thing is nothing special.
 
@@ -101,10 +101,10 @@ There exist many frameworks and development methodologies to build them, each wi
 
 “Web components” provide built-in browser capabilities for that, so we don’t have to emulate them any more.
 
-- [Custom elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements) – to define custom HTML elements.
-- [Shadow DOM](https://dom.spec.whatwg.org/#shadow-trees) – to create an internal DOM for the component, hidden from the others.
-- [CSS Scoping](https://drafts.csswg.org/css-scoping/) – to declare styles that only apply inside the Shadow DOM of the component.
-- [Event retargeting](https://dom.spec.whatwg.org/#retarget) and other minor stuff to make custom components better fit the development.
+-   [Custom elements](https://html.spec.whatwg.org/multipage/custom-elements.html#custom-elements) – to define custom HTML elements.
+-   [Shadow DOM](https://dom.spec.whatwg.org/#shadow-trees) – to create an internal DOM for the component, hidden from the others.
+-   [CSS Scoping](https://drafts.csswg.org/css-scoping/) – to declare styles that only apply inside the Shadow DOM of the component.
+-   [Event retargeting](https://dom.spec.whatwg.org/#retarget) and other minor stuff to make custom components better fit the development.
 
 In the next chapter we’ll go into details of “Custom Elements” – the fundamental and well-supported feature of web components, good on its own.
 
@@ -118,22 +118,22 @@ In the next chapter we’ll go into details of “Custom Elements” – the fun
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
 
 #### Lesson navigation
 
-- <a href="webcomponents-intro.html#what-s-common-between" class="sidebar__link">What’s common between…</a>
-- <a href="webcomponents-intro.html#component-architecture" class="sidebar__link">Component architecture</a>
+-   <a href="webcomponents-intro.html#what-s-common-between" class="sidebar__link">What’s common between…</a>
+-   <a href="webcomponents-intro.html#component-architecture" class="sidebar__link">Component architecture</a>
 
-- <a href="webcomponents-intro.html#comments" class="sidebar__link">Comments</a>
+-   <a href="webcomponents-intro.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -141,7 +141,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/8-web-components/1-webcomponents-intro" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

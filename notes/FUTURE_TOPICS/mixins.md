@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/mixins"
-- <a href="mixins.html"
-- <a href="https://es.javascript.info/mixins"
-- <a href="https://fr.javascript.info/mixins"
-- <a href="https://it.javascript.info/mixins"
-  mixins"
+-   <a href="https://ar.javascript.info/mixins"
+-   <a href="mixins.html"
+-   <a href="https://es.javascript.info/mixins"
+-   <a href="https://fr.javascript.info/mixins"
+-   <a href="https://it.javascript.info/mixins"
+    mixins"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/mixins"
-- <a href=mixins"
-- <a href="https://tr.javascript.info/mixins"
-- <a href="https://zh.javascript.info/mixins"
+-   <a href="https://ko.javascript.info/mixins"
+-   <a href=mixins"
+-   <a href="https://tr.javascript.info/mixins"
+-   <a href="https://zh.javascript.info/mixins"
 
 We want to make this open-source project available for people all around the world.
 
@@ -143,9 +143,9 @@ Now let’s make a mixin for real life.
 
 An important feature of many browser objects (for instance) is that they can generate events. Events are a great way to “broadcast information” to anyone who wants it. So let’s make a mixin that allows us to easily add event-related functions to any class/object.
 
-- The mixin will provide a method `.trigger(name, [...data])` to “generate an event” when something important happens to it. The `name` argument is a name of the event, optionally followed by additional arguments with event data.
-- Also the method `.on(name, handler)` that adds `handler` function as the listener to events with the given name. It will be called when an event with the given `name` triggers, and get the arguments from the `.trigger` call.
-- …And the method `.off(name, handler)` that removes the `handler` listener.
+-   The mixin will provide a method `.trigger(name, [...data])` to “generate an event” when something important happens to it. The `name` argument is a name of the event, optionally followed by additional arguments with event data.
+-   Also the method `.on(name, handler)` that adds `handler` function as the listener to events with the given name. It will be called when an event with the given `name` triggers, and get the arguments from the `.trigger` call.
+-   …And the method `.off(name, handler)` that removes the `handler` listener.
 
 After adding the mixin, an object `user` will be able to generate an event `"login"` when the visitor logs in. And another object, say, `calendar` may want to listen for such events to load the calendar for the logged-in person.
 
@@ -197,9 +197,9 @@ Here’s the code:
       }
     };
 
-- `.on(eventName, handler)` – assigns function `handler` to run when the event with that name occurs. Technically, there’s an `_eventHandlers` property that stores an array of handlers for each event name, and it just adds it to the list.
-- `.off(eventName, handler)` – removes the function from the handlers list.
-- `.trigger(eventName, ...args)` – generates the event: all handlers from `_eventHandlers[eventName]` are called, with a list of arguments `...args`.
+-   `.on(eventName, handler)` – assigns function `handler` to run when the event with that name occurs. Technically, there’s an `_eventHandlers` property that stores an array of handlers for each event name, and it just adds it to the list.
+-   `.off(eventName, handler)` – removes the function from the handlers list.
+-   `.trigger(eventName, ...args)` – generates the event: all handlers from `_eventHandlers[eventName]` are called, with a list of arguments `...args`.
 
 Usage:
 
@@ -248,23 +248,23 @@ Mixins may become a point of conflict if they accidentally overwrite existing cl
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="classes.html" class="sidebar__link">Classes</a>
+-   <a href="classes.html" class="sidebar__link">Classes</a>
 
 #### Lesson navigation
 
-- <a href="mixins.html#a-mixin-example" class="sidebar__link">A mixin example</a>
-- <a href="mixins.html#eventmixin" class="sidebar__link">EventMixin</a>
-- <a href="mixins.html#summary" class="sidebar__link">Summary</a>
+-   <a href="mixins.html#a-mixin-example" class="sidebar__link">A mixin example</a>
+-   <a href="mixins.html#eventmixin" class="sidebar__link">EventMixin</a>
+-   <a href="mixins.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="mixins.html#comments" class="sidebar__link">Comments</a>
+-   <a href="mixins.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -272,7 +272,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/09-classes/07-mixins" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

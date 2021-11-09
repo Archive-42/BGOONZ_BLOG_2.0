@@ -1,7 +1,7 @@
 libs:
 
-- d3
-- domtree
+-   d3
+-   domtree
 
 ---
 
@@ -39,19 +39,19 @@ So, in the example below the first `alert` shows `null`:
 
 ```html run
 <html>
-  <head>
-    <script>
-      *!*
-          alert( "From HEAD: " + document.body ); // null, there's no <body> yet
-      */!*
-    </script>
-  </head>
+    <head>
+        <script>
+            *!*
+                alert( "From HEAD: " + document.body ); // null, there's no <body> yet
+            */!*
+        </script>
+    </head>
 
-  <body>
-    <script>
-      alert("From BODY: " + document.body); // HTMLBodyElement, now it exists
-    </script>
-  </body>
+    <body>
+        <script>
+            alert('From BODY: ' + document.body); // HTMLBodyElement, now it exists
+        </script>
+    </body>
 </html>
 ```
 
@@ -186,17 +186,17 @@ For instance, here `<head>` and `<body>` are siblings:
 
 ```html
 <html>
-  <head>
-    ...
-  </head>
-  <body>
-    ...
-  </body>
+    <head>
+        ...
+    </head>
+    <body>
+        ...
+    </body>
 </html>
 ```
 
-- `<body>` is said to be the "next" or "right" sibling of `<head>`,
-- `<head>` is said to be the "previous" or "left" sibling of `<body>`.
+-   `<body>` is said to be the "next" or "right" sibling of `<head>`,
+-   `<head>` is said to be the "previous" or "left" sibling of `<body>`.
 
 The next sibling is in `nextSibling` property, and the previous one - in `previousSibling`.
 
@@ -227,10 +227,10 @@ So let's see more navigation links that only take _element nodes_ into account:
 
 The links are similar to those given above, just with `Element` word inside:
 
-- `children` -- only those children that are element nodes.
-- `firstElementChild`, `lastElementChild` -- first and last element children.
-- `previousElementSibling`, `nextElementSibling` -- neighbor elements.
-- `parentElement` -- parent element.
+-   `children` -- only those children that are element nodes.
+-   `firstElementChild`, `lastElementChild` -- first and last element children.
+-   `previousElementSibling`, `nextElementSibling` -- neighbor elements.
+-   `parentElement` -- parent element.
 
 ````smart header="Why `parentElement`? Can the parent be *not* an element?" The `parentElement`property returns the "element" parent, while`parentNode` returns "any node" parent. These properties are usually the same: they both get the parent.
 
@@ -247,8 +247,8 @@ This detail may be useful when we want to travel up from an arbitrary element `e
 
 ```js
 while ((elem = elem.parentElement)) {
-  // go up till <html>
-  alert(elem);
+    // go up till <html>
+    alert(elem);
 }
 ```
 

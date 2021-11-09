@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/property-descriptors"
-- <a href="property-descriptors.html"
-- <a href="https://es.javascript.info/property-descriptors"
-- <a href="https://fr.javascript.info/property-descriptors"
-- <a href="https://it.javascript.info/property-descriptors"
-  property-descriptors"
+-   <a href="https://ar.javascript.info/property-descriptors"
+-   <a href="property-descriptors.html"
+-   <a href="https://es.javascript.info/property-descriptors"
+-   <a href="https://fr.javascript.info/property-descriptors"
+-   <a href="https://it.javascript.info/property-descriptors"
+    property-descriptors"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/property-descriptors"
-- <a href=property-descriptors"
-- <a href="https://tr.javascript.info/property-descriptors"
-- <a href="https://zh.javascript.info/property-descriptors"
+-   <a href="https://ko.javascript.info/property-descriptors"
+-   <a href=property-descriptors"
+-   <a href="https://tr.javascript.info/property-descriptors"
+-   <a href="https://zh.javascript.info/property-descriptors"
 
 We want to make this open-source project available for people all around the world.
 
@@ -48,9 +48,9 @@ In this chapter we’ll study additional configuration options, and in the next 
 
 Object properties, besides a **`value`**, have three special attributes (so-called “flags”):
 
-- **`writable`** – if `true`, the value can be changed, otherwise it’s read-only.
-- **`enumerable`** – if `true`, then listed in loops, otherwise not listed.
-- **`configurable`** – if `true`, the property can be deleted and these attributes can be modified, otherwise not.
+-   **`writable`** – if `true`, the value can be changed, otherwise it’s read-only.
+-   **`enumerable`** – if `true`, then listed in loops, otherwise not listed.
+-   **`configurable`** – if `true`, the property can be deleted and these attributes can be modified, otherwise not.
 
 We didn’t see them yet, because generally they do not show up. When we create a property “the usual way”, all of them are `true`. But we also can change them anytime.
 
@@ -380,27 +380,27 @@ These methods are rarely used in practice.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-properties.html" class="sidebar__link">Object properties configuration</a>
+-   <a href="object-properties.html" class="sidebar__link">Object properties configuration</a>
 
 #### Lesson navigation
 
-- <a href="property-descriptors.html#property-flags" class="sidebar__link">Property flags</a>
-- <a href="property-descriptors.html#non-writable" class="sidebar__link">Non-writable</a>
-- <a href="property-descriptors.html#non-enumerable" class="sidebar__link">Non-enumerable</a>
-- <a href="property-descriptors.html#non-configurable" class="sidebar__link">Non-configurable</a>
-- <a href="property-descriptors.html#object-defineproperties" class="sidebar__link">Object.defineProperties</a>
-- <a href="property-descriptors.html#object-getownpropertydescriptors" class="sidebar__link">Object.getOwnPropertyDescriptors</a>
-- <a href="property-descriptors.html#sealing-an-object-globally" class="sidebar__link">Sealing an object globally</a>
+-   <a href="property-descriptors.html#property-flags" class="sidebar__link">Property flags</a>
+-   <a href="property-descriptors.html#non-writable" class="sidebar__link">Non-writable</a>
+-   <a href="property-descriptors.html#non-enumerable" class="sidebar__link">Non-enumerable</a>
+-   <a href="property-descriptors.html#non-configurable" class="sidebar__link">Non-configurable</a>
+-   <a href="property-descriptors.html#object-defineproperties" class="sidebar__link">Object.defineProperties</a>
+-   <a href="property-descriptors.html#object-getownpropertydescriptors" class="sidebar__link">Object.getOwnPropertyDescriptors</a>
+-   <a href="property-descriptors.html#sealing-an-object-globally" class="sidebar__link">Sealing an object globally</a>
 
-- <a href="property-descriptors.html#comments" class="sidebar__link">Comments</a>
+-   <a href="property-descriptors.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -408,7 +408,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/07-object-properties/01-property-descriptors" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -59,13 +59,13 @@ For this particular case, the polyfill for `Math.trunc` is a script that impleme
 
 ```js
 if (!Math.trunc) {
-  // if no such function
-  // implement it
-  Math.trunc = function (number) {
-    // Math.ceil and Math.floor exist even in ancient JavaScript engines
-    // they are covered later in the tutorial
-    return number < 0 ? Math.ceil(number) : Math.floor(number);
-  };
+    // if no such function
+    // implement it
+    Math.trunc = function (number) {
+        // Math.ceil and Math.floor exist even in ancient JavaScript engines
+        // they are covered later in the tutorial
+        return number < 0 ? Math.ceil(number) : Math.floor(number);
+    };
 }
 ```
 
@@ -73,8 +73,8 @@ JavaScript is a highly dynamic language, scripts may add/modify any functions, e
 
 Two interesting libraries of polyfills are:
 
-- [core js](https://github.com/zloirock/core-js) that supports a lot, allows to include only needed features.
-- [polyfill.io](http://polyfill.io) service that provides a script with polyfills, depending on the features and user's browser.
+-   [core js](https://github.com/zloirock/core-js) that supports a lot, allows to include only needed features.
+-   [polyfill.io](http://polyfill.io) service that provides a script with polyfills, depending on the features and user's browser.
 
 ## Summary
 
@@ -86,7 +86,7 @@ For example, later when you're familiar with JavaScript, you can setup a code bu
 
 Good resources that show the current state of support for various features:
 
-- <https://kangax.github.io/compat-table/es6/> - for pure JavaScript.
-- <https://caniuse.com/> - for browser-related functions.
+-   <https://kangax.github.io/compat-table/es6/> - for pure JavaScript.
+-   <https://caniuse.com/> - for browser-related functions.
 
 P.S. Google Chrome is usually the most up-to-date with language features, try it if a tutorial demo fails. Most tutorial demos work with any modern browser though.

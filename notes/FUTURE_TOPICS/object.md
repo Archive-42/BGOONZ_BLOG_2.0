@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/object"
-- <a href="object.html"
-- <a href="https://es.javascript.info/object"
-- <a href="https://fr.javascript.info/object"
-- <a href="https://it.javascript.info/object"
-  object"
+-   <a href="https://ar.javascript.info/object"
+-   <a href="object.html"
+-   <a href="https://es.javascript.info/object"
+-   <a href="https://fr.javascript.info/object"
+-   <a href="https://it.javascript.info/object"
+    object"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/object"
-- <a href=object"
-- <a href="https://tr.javascript.info/object"
-- <a href="https://zh.javascript.info/object"
+-   <a href="https://ko.javascript.info/object"
+-   <a href=object"
+-   <a href="https://tr.javascript.info/object"
+-   <a href="https://zh.javascript.info/object"
 
 We want to make this open-source project available for people all around the world.
 
@@ -428,8 +428,8 @@ The object may be used to suggest a list of options to the user. If we’re maki
 
 But if we run the code, we see a totally different picture:
 
-- USA (1) goes first
-- then Switzerland (41) and so on.
+-   USA (1) goes first
+-   then Switzerland (41) and so on.
 
 The phone codes go in the ascending sorted order, because they are integers. So we see `1, 41, 44, 49`.
 
@@ -490,28 +490,28 @@ Objects are associative arrays with several special features.
 
 They store properties (key-value pairs), where:
 
-- Property keys must be strings or symbols (usually strings).
-- Values can be of any type.
+-   Property keys must be strings or symbols (usually strings).
+-   Values can be of any type.
 
 To access a property, we can use:
 
-- The dot notation: `obj.property`.
-- Square brackets notation `obj["property"]`. Square brackets allow to take the key from a variable, like `obj[varWithKey]`.
+-   The dot notation: `obj.property`.
+-   Square brackets notation `obj["property"]`. Square brackets allow to take the key from a variable, like `obj[varWithKey]`.
 
 Additional operators:
 
-- To delete a property: `delete obj.prop`.
-- To check if a property with the given key exists: `"key" in obj`.
-- To iterate over an object: `for (let key in obj)` loop.
+-   To delete a property: `delete obj.prop`.
+-   To check if a property with the given key exists: `"key" in obj`.
+-   To iterate over an object: `for (let key in obj)` loop.
 
 What we’ve studied in this chapter is called a “plain object”, or just `Object`.
 
 There are many other kinds of objects in JavaScript:
 
-- `Array` to store ordered data collections,
-- `Date` to store the information about the date and time,
-- `Error` to store the information about an error.
-- …And so on.
+-   `Array` to store ordered data collections,
+-   `Date` to store the information about the date and time,
+-   `Error` to store the information about an error.
+-   …And so on.
 
 They have their special features that we’ll study later. Sometimes people say something like “Array type” or “Date type”, but formally they are not types of their own, but belong to a single “object” data type. And they extend it in various ways.
 
@@ -665,28 +665,28 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
 
 #### Lesson navigation
 
-- <a href="object.html#literals-and-properties" class="sidebar__link">Literals and properties</a>
-- <a href="object.html#square-brackets" class="sidebar__link">Square brackets</a>
-- <a href="object.html#property-value-shorthand" class="sidebar__link">Property value shorthand</a>
-- <a href="object.html#property-names-limitations" class="sidebar__link">Property names limitations</a>
-- <a href="object.html#property-existence-test-in-operator" class="sidebar__link">Property existence test, “in” operator</a>
-- <a href="object.html#the-for-in-loop" class="sidebar__link">The “for…in” loop</a>
-- <a href="object.html#summary" class="sidebar__link">Summary</a>
+-   <a href="object.html#literals-and-properties" class="sidebar__link">Literals and properties</a>
+-   <a href="object.html#square-brackets" class="sidebar__link">Square brackets</a>
+-   <a href="object.html#property-value-shorthand" class="sidebar__link">Property value shorthand</a>
+-   <a href="object.html#property-names-limitations" class="sidebar__link">Property names limitations</a>
+-   <a href="object.html#property-existence-test-in-operator" class="sidebar__link">Property existence test, “in” operator</a>
+-   <a href="object.html#the-for-in-loop" class="sidebar__link">The “for…in” loop</a>
+-   <a href="object.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="object.html#tasks" class="sidebar__link">Tasks (4)</a>
-- <a href="object.html#comments" class="sidebar__link">Comments</a>
+-   <a href="object.html#tasks" class="sidebar__link">Tasks (4)</a>
+-   <a href="object.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -694,7 +694,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/04-object-basics/01-object" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

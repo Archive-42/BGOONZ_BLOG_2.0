@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="parse-expression.html"
-  /parse-expression"
+-   <a href="parse-expression.html"
+    /parse-expression"
 
 parse-expressionparse-expression"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  parse-expression"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/"
+-   <a href="https://ko.javascript.info/"
+    parse-expression"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/"
 
 We want to make this open-source project available for people all around the world.
 
@@ -30,10 +30,10 @@ Searchk%2Fparse-expression"%2Fparse-expression" </a>
 
 An arithmetical expression consists of 2 numbers and an operator between them, for instance:
 
-- `1 + 2`
-- `1.2 * 3.4`
-- `-3 / -6`
-- `-2 - 2`
+-   `1 + 2`
+-   `1.2 * 3.4`
+-   `-3 / -6`
+-   `-2 - 2`
 
 The operator is one of: `"+"`, `"-"`, `"*"` or `"/"`.
 
@@ -84,12 +84,12 @@ In action:
 
 The result includes:
 
-- `result[0] == "1.2 + 12"` (full match)
-- `result[1] == "1.2"` (first group `(-?\d+(\.\d+)?)` – the first number, including the decimal part)
-- `result[2] == ".2"` (second group`(\.\d+)?` – the first decimal part)
-- `result[3] == "+"` (third group `([-+*\/])` – the operator)
-- `result[4] == "12"` (forth group `(-?\d+(\.\d+)?)` – the second number)
-- `result[5] == undefined` (fifth group `(\.\d+)?` – the last decimal part is absent, so it’s undefined)
+-   `result[0] == "1.2 + 12"` (full match)
+-   `result[1] == "1.2"` (first group `(-?\d+(\.\d+)?)` – the first number, including the decimal part)
+-   `result[2] == ".2"` (second group`(\.\d+)?` – the first decimal part)
+-   `result[3] == "+"` (third group `([-+*\/])` – the operator)
+-   `result[4] == "12"` (forth group `(-?\d+(\.\d+)?)` – the second number)
+-   `result[5] == undefined` (fifth group `(\.\d+)?` – the last decimal part is absent, so it’s undefined)
 
 We only want the numbers and the operator, without the full match or the decimal parts, so let’s “clean” the result a bit.
 

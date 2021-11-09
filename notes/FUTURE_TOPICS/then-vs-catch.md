@@ -1,11 +1,11 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="then-vs-catch.html"
-  /then-vs-catch"
-  /then-vs-catch"
-  then-vs-catch"
-  task/then-vs-catch"
+-   <a href="https://ar.javascript.info/"
+-   <a href="then-vs-catch.html"
+    /then-vs-catch"
+    /then-vs-catch"
+    then-vs-catch"
+    task/then-vs-catch"
 
 <!-- -->
 

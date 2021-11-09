@@ -2,10 +2,10 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="navigation-links-which-null.html"
-  /navigation-links-which-null"
-  /navigation-links-which-null"
-  navigation-links-which-nullnavigation-links-which-null"
+-   <a href="navigation-links-which-null.html"
+    /navigation-links-which-null"
+    /navigation-links-which-null"
+    navigation-links-which-nullnavigation-links-which-null"
 
 <!-- -->
 
@@ -34,8 +34,8 @@ Searchk%2Fnavigation-links-which-null"%2Fnavigation-links-which-null" </a>
 
 If `elem` – is an arbitrary DOM element node…
 
-- Is it true that `elem.lastChild.nextSibling` is always `null`?
-- Is it true that `elem.children[0].previousSibling` is always `null` ?
+-   Is it true that `elem.lastChild.nextSibling` is always `null`?
+-   Is it true that `elem.children[0].previousSibling` is always `null` ?
 
 solution
 

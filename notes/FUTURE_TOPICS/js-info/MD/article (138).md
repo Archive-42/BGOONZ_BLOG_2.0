@@ -12,20 +12,20 @@ The syntax to create a new `URL` object:
 new URL(url, [base]);
 ```
 
-- **`url`** -- the full URL or only path (if base is set, see below),
-- **`base`** -- an optional base URL: if set and `url` argument has only path, then the URL is generated relative to `base`.
+-   **`url`** -- the full URL or only path (if base is set, see below),
+-   **`base`** -- an optional base URL: if set and `url` argument has only path, then the URL is generated relative to `base`.
 
 For example:
 
 ```js
-let url = new URL("https://javascript.info/profile/admin");
+let url = new URL('https://javascript.info/profile/admin');
 ```
 
 These two URLs are same:
 
 ```js run
-let url1 = new URL("https://javascript.info/profile/admin");
-let url2 = new URL("/profile/admin", "https://javascript.info");
+let url1 = new URL('https://javascript.info/profile/admin');
+let url2 = new URL('/profile/admin', 'https://javascript.info');
 
 alert(url1); // https://javascript.info/profile/admin
 alert(url2); // https://javascript.info/profile/admin
@@ -34,8 +34,8 @@ alert(url2); // https://javascript.info/profile/admin
 We can easily create a new URL based on the path relative to an existing URL:
 
 ```js run
-let url = new URL("https://javascript.info/profile/admin");
-let newUrl = new URL("tester", url);
+let url = new URL('https://javascript.info/profile/admin');
+let newUrl = new URL('tester', url);
 
 alert(newUrl); // https://javascript.info/profile/tester
 ```
@@ -43,7 +43,7 @@ alert(newUrl); // https://javascript.info/profile/tester
 The `URL` object immediately allows us to access its components, so it's a nice way to parse the url, e.g.:
 
 ```js run
-let url = new URL("https://javascript.info/url");
+let url = new URL('https://javascript.info/url');
 
 alert(url.protocol); // https:
 alert(url.host); // javascript.info
@@ -54,11 +54,11 @@ Here's the cheatsheet for URL components:
 
 ![](url-object.svg)
 
-- `href` is the full url, same as `url.toString()`
-- `protocol` ends with the colon character `:`
-- `search` - a string of parameters, starts with the question mark `?`
-- `hash` starts with the hash character `#`
-- there may be also `user` and `password` properties if HTTP authentication is present: `http://login:password@site.com` (not painted above, rarely used).
+-   `href` is the full url, same as `url.toString()`
+-   `protocol` ends with the colon character `:`
+-   `search` - a string of parameters, starts with the question mark `?`
+-   `hash` starts with the hash character `#`
+-   there may be also `user` and `password` properties if HTTP authentication is present: `http://login:password@site.com` (not painted above, rarely used).
 
 ```smart header="We can pass `URL`objects to networking (and most other) methods instead of a string" We can use a`URL`object in`fetch`or`XMLHttpRequest`, almost everywhere where a URL-string is expected.
 
@@ -82,32 +82,32 @@ So there's a URL property for that: `url.searchParams`, an object of type [URLSe
 
 It provides convenient methods for search parameters:
 
-- **`append(name, value)`** -- add the parameter by `name`,
-- **`delete(name)`** -- remove the parameter by `name`,
-- **`get(name)`** -- get the parameter by `name`,
-- **`getAll(name)`** -- get all parameters with the same `name` (that's possible, e.g. `?user=John&user=Pete`),
-- **`has(name)`** -- check for the existence of the parameter by `name`,
-- **`set(name, value)`** -- set/replace the parameter,
-- **`sort()`** -- sort parameters by name, rarely needed,
-- ...and it's also iterable, similar to `Map`.
+-   **`append(name, value)`** -- add the parameter by `name`,
+-   **`delete(name)`** -- remove the parameter by `name`,
+-   **`get(name)`** -- get the parameter by `name`,
+-   **`getAll(name)`** -- get all parameters with the same `name` (that's possible, e.g. `?user=John&user=Pete`),
+-   **`has(name)`** -- check for the existence of the parameter by `name`,
+-   **`set(name, value)`** -- set/replace the parameter,
+-   **`sort()`** -- sort parameters by name, rarely needed,
+-   ...and it's also iterable, similar to `Map`.
 
 An example with parameters that contain spaces and punctuation marks:
 
 ```js run
-let url = new URL("https://google.com/search");
+let url = new URL('https://google.com/search');
 
-url.searchParams.set("q", "test me!"); // added parameter with a space and !
+url.searchParams.set('q', 'test me!'); // added parameter with a space and !
 
 alert(url); // https://google.com/search?q=test+me%21
 
-url.searchParams.set("tbs", "qdr:y"); // added parameter with a colon :
+url.searchParams.set('tbs', 'qdr:y'); // added parameter with a colon :
 
 // parameters are automatically encoded
 alert(url); // https://google.com/search?q=test+me%21&tbs=qdr%3Ay
 
 // iterate over search parameters (decoded)
 for (let [name, value] of url.searchParams) {
-  alert(`${name}=${value}`); // q=test me!, then tbs=qdr:y
+    alert(`${name}=${value}`); // q=test me!, then tbs=qdr:y
 }
 ```
 
@@ -122,9 +122,9 @@ The good news is that `URL` objects handle all that automatically. We just suppl
 ```js run
 // using some cyrillic characters for this example
 
-let url = new URL("https://ru.wikipedia.org/wiki/Тест");
+let url = new URL('https://ru.wikipedia.org/wiki/Тест');
 
-url.searchParams.set("key", "ъ");
+url.searchParams.set('key', 'ъ');
 alert(url); //https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%81%D1%82?key=%D1%8A
 ```
 
@@ -142,10 +142,10 @@ If we use a string though, we need to encode/decode special characters manually.
 
 There are built-in functions for that:
 
-- [encodeURI](mdn:/JavaScript/Reference/Global_Objects/encodeURI) - encodes URL as a whole.
-- [decodeURI](mdn:/JavaScript/Reference/Global_Objects/decodeURI) - decodes it back.
-- [encodeURIComponent](mdn:/JavaScript/Reference/Global_Objects/encodeURIComponent) - encodes a URL component, such as a search parameter, or a hash, or a pathname.
-- [decodeURIComponent](mdn:/JavaScript/Reference/Global_Objects/decodeURIComponent) - decodes it back.
+-   [encodeURI](mdn:/JavaScript/Reference/Global_Objects/encodeURI) - encodes URL as a whole.
+-   [decodeURI](mdn:/JavaScript/Reference/Global_Objects/decodeURI) - decodes it back.
+-   [encodeURIComponent](mdn:/JavaScript/Reference/Global_Objects/encodeURIComponent) - encodes a URL component, such as a search parameter, or a hash, or a pathname.
+-   [decodeURIComponent](mdn:/JavaScript/Reference/Global_Objects/decodeURIComponent) - decodes it back.
 
 A natural question is: "What's the difference between `encodeURIComponent` and `encodeURI`? When we should use either?"
 
@@ -159,14 +159,14 @@ As we can see, characters such as `:`, `?`, `=`, `&`, `#` are allowed in URL.
 
 ...On the other hand, if we look at a single URL component, such as a search parameter, these characters must be encoded, not to break the formatting.
 
-- `encodeURI` encodes only characters that are totally forbidden in URL.
-- `encodeURIComponent` encodes same characters, and, in addition to them, characters `#`, `$`, `&`, `+`, `,`, `/`, `:`, `;`, `=`, `?` and `@`.
+-   `encodeURI` encodes only characters that are totally forbidden in URL.
+-   `encodeURIComponent` encodes same characters, and, in addition to them, characters `#`, `$`, `&`, `+`, `,`, `/`, `:`, `;`, `=`, `?` and `@`.
 
 So, for a whole URL we can use `encodeURI`:
 
 ```js run
 // using cyrillic characters in url path
-let url = encodeURI("http://site.com/привет");
+let url = encodeURI('http://site.com/привет');
 
 alert(url); // http://site.com/%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82
 ```
@@ -174,7 +174,7 @@ alert(url); // http://site.com/%D0%BF%D1%80%D0%B8%D0%B2%D0%B5%D1%82
 ...While for URL parameters we should use `encodeURIComponent` instead:
 
 ```js run
-let music = encodeURIComponent("Rock&Roll");
+let music = encodeURIComponent('Rock&Roll');
 
 let url = `https://google.com/search?q=${music}`;
 alert(url); // https://google.com/search?q=Rock%26Roll
@@ -183,7 +183,7 @@ alert(url); // https://google.com/search?q=Rock%26Roll
 Compare it with `encodeURI`:
 
 ```js run
-let music = encodeURI("Rock&Roll");
+let music = encodeURI('Rock&Roll');
 
 let url = `https://google.com/search?q=${music}`;
 alert(url); // https://google.com/search?q=Rock&Roll
@@ -201,7 +201,7 @@ There are a few differences, e.g. IPv6 addresses are encoded differently:
 
 ```js run
 // valid url with IPv6 address
-let url = "http://[2607:f8b0:4005:802::1007]/";
+let url = 'http://[2607:f8b0:4005:802::1007]/';
 
 alert(encodeURI(url)); // http://%5B2607:f8b0:4005:802::1007%5D/
 alert(new URL(url)); // http://[2607:f8b0:4005:802::1007]/

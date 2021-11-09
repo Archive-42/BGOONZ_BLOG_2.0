@@ -1,18 +1,18 @@
 string-quotes"
 
-- <a href="string-quotes.html"
-  /string-quotes"
-  /string-quotes"
-  string-quotes"
-  task/string-quotes"
+-   <a href="string-quotes.html"
+    /string-quotes"
+    /string-quotes"
+    string-quotes"
+    task/string-quotes"
 
 <!-- -->
 
 string-quotes"
 string-quotes"
 
-- <a href="https://tr.javascript.info/"
-  string-quotes"
+-   <a href="https://tr.javascript.info/"
+    string-quotes"
 
 We want to make this open-source project available for people all around the world.
 

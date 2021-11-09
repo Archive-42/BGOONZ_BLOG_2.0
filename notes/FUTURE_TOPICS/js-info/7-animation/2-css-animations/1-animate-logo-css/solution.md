@@ -4,13 +4,13 @@ CSS to animate both `width` and `height`:
 /* original class */
 
 #flyjet {
-  transition: all 3s;
+    transition: all 3s;
 }
 
 /* JS adds .growing */
 #flyjet.growing {
-  width: 400px;
-  height: 240px;
+    width: 400px;
+    height: 240px;
 }
 ```
 

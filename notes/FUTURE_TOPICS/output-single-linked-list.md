@@ -1,9 +1,9 @@
 output-single-linked-list"
 
-- <a href="output-single-linked-list.html"
-  /output-single-linked-list"
-  /output-single-linked-list"
-  output-single-linked-listoutput-single-linked-list"
+-   <a href="output-single-linked-list.html"
+    /output-single-linked-list"
+    /output-single-linked-list"
+    output-single-linked-listoutput-single-linked-list"
 
 <!-- -->
 

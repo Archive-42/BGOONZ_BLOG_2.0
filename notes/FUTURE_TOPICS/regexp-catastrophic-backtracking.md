@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/regexp-catastrophic-backtracking"
-- <a href="regexp-catastrophic-backtracking.html"
-- <a href="https://es.javascript.info/"
+-   <a href="https://ar.javascript.info/regexp-catastrophic-backtracking"
+-   <a href="regexp-catastrophic-backtracking.html"
+-   <a href="https://es.javascript.info/"
 
-- <a href="https://it.javascript.info/"
-  regexp-catastrophic-backtracking"
+-   <a href="https://it.javascript.info/"
+    regexp-catastrophic-backtracking"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/regexp-catastrophic-backtracking"
-- <a href=regexp-catastrophic-backtracking"
-- <a href="https://tr.javascript.info/regexp-catastrophic-backtracking"
-- <a href="https://zh.javascript.info/regexp-catastrophic-backtracking"
+-   <a href="https://ko.javascript.info/regexp-catastrophic-backtracking"
+-   <a href=regexp-catastrophic-backtracking"
+-   <a href="https://tr.javascript.info/regexp-catastrophic-backtracking"
+-   <a href="https://zh.javascript.info/regexp-catastrophic-backtracking"
 
 We want to make this open-source project available for people all around the world.
 
@@ -173,9 +173,9 @@ Here’s what the regexp engine does:
 
 There are many ways to split a sequence of digits `123456789` into numbers. To be precise, there are `2n-1`, where `n` is the length of the sequence.
 
-- For `123456789` we have `n=9`, that gives 511 combinations.
-- For a longer sequence with `n=20` there are about one million (1048575) combinations.
-- For `n=30` – a thousand times more (1073741823 combinations).
+-   For `123456789` we have `n=9`, that gives 511 combinations.
+-   For a longer sequence with `n=20` there are about one million (1048575) combinations.
+-   For `n=30` – a thousand times more (1073741823 combinations).
 
 Trying each of them is exactly the reason why the search takes so long.
 
@@ -276,9 +276,9 @@ That may seem odd, but it’s actually a very simple transform.
 
 Let’s decipher it:
 
-- Lookahead `?=` looks forward for the longest word `\w+` starting at the current position.
-- The contents of parentheses with `?=...` isn’t memorized by the engine, so wrap `\w+` into parentheses. Then the engine will memorize their contents
-- …And allow us to reference it in the pattern as `\1`.
+-   Lookahead `?=` looks forward for the longest word `\w+` starting at the current position.
+-   The contents of parentheses with `?=...` isn’t memorized by the engine, so wrap `\w+` into parentheses. Then the engine will memorize their contents
+-   …And allow us to reference it in the pattern as `\1`.
 
 That is: we look ahead – and if there’s a word `\w+`, then match it as `\1`.
 
@@ -334,8 +334,8 @@ The problem described in this article is called “catastrophic backtracking”.
 
 We covered two ways how to solve it:
 
-- Rewrite the regexp to lower the possible combinations count.
-- Prevent backtracking.
+-   Rewrite the regexp to lower the possible combinations count.
+-   Prevent backtracking.
 
 <a href="regexp-lookahead-lookbehind.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="regexp-sticky.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -347,25 +347,25 @@ We covered two ways how to solve it:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 #### Lesson navigation
 
-- <a href="regexp-catastrophic-backtracking.html#example" class="sidebar__link">Example</a>
-- <a href="regexp-catastrophic-backtracking.html#simplified-example" class="sidebar__link">Simplified example</a>
-- <a href="regexp-catastrophic-backtracking.html#back-to-words-and-strings" class="sidebar__link">Back to words and strings</a>
-- <a href="regexp-catastrophic-backtracking.html#how-to-fix" class="sidebar__link">How to fix?</a>
-- <a href="regexp-catastrophic-backtracking.html#preventing-backtracking" class="sidebar__link">Preventing backtracking</a>
+-   <a href="regexp-catastrophic-backtracking.html#example" class="sidebar__link">Example</a>
+-   <a href="regexp-catastrophic-backtracking.html#simplified-example" class="sidebar__link">Simplified example</a>
+-   <a href="regexp-catastrophic-backtracking.html#back-to-words-and-strings" class="sidebar__link">Back to words and strings</a>
+-   <a href="regexp-catastrophic-backtracking.html#how-to-fix" class="sidebar__link">How to fix?</a>
+-   <a href="regexp-catastrophic-backtracking.html#preventing-backtracking" class="sidebar__link">Preventing backtracking</a>
 
-- <a href="regexp-catastrophic-backtracking.html#comments" class="sidebar__link">Comments</a>
+-   <a href="regexp-catastrophic-backtracking.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -373,7 +373,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/9-regular-expressions/15-regexp-catastrophic-backtracking" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

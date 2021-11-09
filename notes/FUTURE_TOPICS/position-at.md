@@ -1,16 +1,16 @@
 position-at"
 
-- <a href="position-at.html"
-  /position-at"
-  /position-at"
-  position-atposition-at"
+-   <a href="position-at.html"
+    /position-at"
+    /position-at"
+    position-atposition-at"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  position-at"
-  /position-at"
-  position-at"
+-   <a href="https://ko.javascript.info/"
+    position-at"
+    /position-at"
+    position-at"
 
 We want to make this open-source project available for people all around the world.
 
@@ -34,9 +34,9 @@ Create a function `positionAt(anchor, position, elem)` that positions `elem`, de
 
 The `position` must be a string with any one of 3 values:
 
-- `"top"` – position `elem` right above `anchor`
-- `"right"` – position `elem` immediately at the right of `anchor`
-- `"bottom"` – position `elem` right below `anchor`
+-   `"top"` – position `elem` right above `anchor`
+-   `"right"` – position `elem` immediately at the right of `anchor`
+-   `"bottom"` – position `elem` right below `anchor`
 
 It’s used inside function `showNote(anchor, position, html)`, provided in the task source code, that creates a “note” element with given `html` and shows it at the given `position` near the `anchor`.
 

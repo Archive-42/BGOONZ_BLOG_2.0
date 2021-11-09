@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="websocket.html"
-- <a href="https://es.javascript.info/websocket"
-- <a href="https://fr.javascript.info/websocket"
-- <a href="https://it.javascript.info/websocket"
-  websocket"
+-   <a href="https://ar.javascript.info/"
+-   <a href="websocket.html"
+-   <a href="https://es.javascript.info/websocket"
+-   <a href="https://fr.javascript.info/websocket"
+-   <a href="https://it.javascript.info/websocket"
+    websocket"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=websocket"
-- <a href="https://tr.javascript.info/websocket"
-- <a href="https://zh.javascript.info/websocket"
+-   <a href="https://ko.javascript.info/"
+-   <a href=websocket"
+-   <a href="https://tr.javascript.info/websocket"
+-   <a href="https://zh.javascript.info/websocket"
 
 We want to make this open-source project available for people all around the world.
 
@@ -59,10 +59,10 @@ On the other hand, `wss://` is WebSocket over TLS, (same as HTTPS is HTTP over T
 
 Once the socket is created, we should listen to events on it. There are totally 4 events:
 
-- **`open`** – connection established,
-- **`message`** – data received,
-- **`error`** – websocket error,
-- **`close`** – connection closed.
+-   **`open`** – connection established,
+-   **`message`** – data received,
+-   **`error`** – websocket error,
+-   **`close`** – connection closed.
 
 …And if we’d like to send something, then `socket.send(data)` will do that.
 
@@ -121,11 +121,11 @@ During the connection the browser (using headers) asks the server: “Do you sup
     Sec-WebSocket-Key: Iv8io/9s+lYFgZWcXczP8Q==
     Sec-WebSocket-Version: 13
 
-- `Origin` – the origin of the client page, e.g. `https://javascript.info`. WebSocket objects are cross-origin by nature. There are no special headers or other limitations. Old servers are unable to handle WebSocket anyway, so there are no compatibility issues. But `Origin` header is important, as it allows the server to decide whether or not to talk WebSocket with this website.
-- `Connection: Upgrade` – signals that the client would like to change the protocol.
-- `Upgrade: websocket` – the requested protocol is “websocket”.
-- `Sec-WebSocket-Key` – a random browser-generated key for security.
-- `Sec-WebSocket-Version` – WebSocket protocol version, 13 is the current one.
+-   `Origin` – the origin of the client page, e.g. `https://javascript.info`. WebSocket objects are cross-origin by nature. There are no special headers or other limitations. Old servers are unable to handle WebSocket anyway, so there are no compatibility issues. But `Origin` header is important, as it allows the server to decide whether or not to talk WebSocket with this website.
+-   `Connection: Upgrade` – signals that the client would like to change the protocol.
+-   `Upgrade: websocket` – the requested protocol is “websocket”.
+-   `Sec-WebSocket-Key` – a random browser-generated key for security.
+-   `Sec-WebSocket-Version` – WebSocket protocol version, 13 is the current one.
 
 <span class="important__type">WebSocket handshake can’t be emulated</span>
 
@@ -148,13 +148,13 @@ There may be additional headers `Sec-WebSocket-Extensions` and `Sec-WebSocket-Pr
 
 For instance:
 
-- `Sec-WebSocket-Extensions: deflate-frame` means that the browser supports data compression. An extension is something related to transferring the data, functionality that extends WebSocket protocol. The header `Sec-WebSocket-Extensions` is sent automatically by the browser, with the list of all extensions it supports.
+-   `Sec-WebSocket-Extensions: deflate-frame` means that the browser supports data compression. An extension is something related to transferring the data, functionality that extends WebSocket protocol. The header `Sec-WebSocket-Extensions` is sent automatically by the browser, with the list of all extensions it supports.
 
-- `Sec-WebSocket-Protocol: soap, wamp` means that we’d like to transfer not just any data, but the data in [SOAP](http://en.wikipedia.org/wiki/SOAP) or WAMP (“The WebSocket Application Messaging Protocol”) protocols. WebSocket subprotocols are registered in the [IANA catalogue](http://www.iana.org/assignments/websocket/websocket.xml). So, this header describes data formats that we’re going to use.
+-   `Sec-WebSocket-Protocol: soap, wamp` means that we’d like to transfer not just any data, but the data in [SOAP](http://en.wikipedia.org/wiki/SOAP) or WAMP (“The WebSocket Application Messaging Protocol”) protocols. WebSocket subprotocols are registered in the [IANA catalogue](http://www.iana.org/assignments/websocket/websocket.xml). So, this header describes data formats that we’re going to use.
 
-  This optional header is set using the second parameter of `new WebSocket`. That’s the array of subprotocols, e.g. if we’d like to use SOAP or WAMP:
+    This optional header is set using the second parameter of `new WebSocket`. That’s the array of subprotocols, e.g. if we’d like to use SOAP or WAMP:
 
-      let socket = new WebSocket("wss://javascript.info/chat", ["soap", "wamp"]);
+        let socket = new WebSocket("wss://javascript.info/chat", ["soap", "wamp"]);
 
 The server should respond with a list of protocols and extensions that it agrees to use.
 
@@ -185,10 +185,10 @@ Here the server responds that it supports the extension “deflate-frame”, and
 
 WebSocket communication consists of “frames” – data fragments, that can be sent from either side, and can be of several kinds:
 
-- “text frames” – contain text data that parties send to each other.
-- “binary data frames” – contain binary data that parties send to each other.
-- “ping/pong frames” are used to check the connection, sent from the server, the browser responds to these automatically.
-- there’s also “connection close frame” and a few other service frames.
+-   “text frames” – contain text data that parties send to each other.
+-   “binary data frames” – contain binary data that parties send to each other.
+-   “ping/pong frames” are used to check the connection, sent from the server, the browser responds to these automatically.
+-   there’s also “connection close frame” and a few other service frames.
 
 In the browser, we directly work only with text or binary frames.
 
@@ -233,8 +233,8 @@ The method for that is:
 
     socket.close([code], [reason]);
 
-- `code` is a special WebSocket closing code (optional)
-- `reason` is a string that describes the reason of closing (optional)
+-   `code` is a special WebSocket closing code (optional)
+-   `reason` is a string that describes the reason of closing (optional)
 
 Then the other party in `close` event handler gets the code and the reason, e.g.:
 
@@ -250,15 +250,15 @@ Then the other party in `close` event handler gets the code and the reason, e.g.
 
 Most common code values:
 
-- `1000` – the default, normal closure (used if no `code` supplied),
-- `1006` – no way to set such code manually, indicates that the connection was lost (no close frame).
+-   `1000` – the default, normal closure (used if no `code` supplied),
+-   `1006` – no way to set such code manually, indicates that the connection was lost (no close frame).
 
 There are other codes like:
 
-- `1001` – the party is going away, e.g. server is shutting down, or a browser leaves the page,
-- `1009` – the message is too big to process,
-- `1011` – unexpected error on server,
-- …and so on.
+-   `1001` – the party is going away, e.g. server is shutting down, or a browser leaves the page,
+-   `1009` – the message is too big to process,
+-   `1011` – unexpected error on server,
+-   …and so on.
 
 The full list can be found in [RFC6455, §7.4.1](https://tools.ietf.org/html/rfc6455#section-7.4.1).
 
@@ -275,10 +275,10 @@ WebSocket codes are somewhat like HTTP codes, but different. In particular, any 
 
 To get connection state, additionally there’s `socket.readyState` property with values:
 
-- **`0`** – “CONNECTING”: the connection has not yet been established,
-- **`1`** – “OPEN”: communicating,
-- **`2`** – “CLOSING”: the connection is closing,
-- **`3`** – “CLOSED”: the connection is closed.
+-   **`0`** – “CONNECTING”: the connection has not yet been established,
+-   **`1`** – “OPEN”: communicating,
+-   **`2`** – “CLOSING”: the connection is closing,
+-   **`3`** – “CLOSED”: the connection is closed.
 
 ## <a href="websocket.html#chat-example" id="chat-example" class="main__anchor">Chat example</a>
 
@@ -369,23 +369,23 @@ You can also download it (upper-right button in the iframe) and run locally. Jus
 
 WebSocket is a modern way to have persistent browser-server connections.
 
-- WebSockets don’t have cross-origin limitations.
-- They are well-supported in browsers.
-- Can send/receive strings and binary data.
+-   WebSockets don’t have cross-origin limitations.
+-   They are well-supported in browsers.
+-   Can send/receive strings and binary data.
 
 The API is simple.
 
 Methods:
 
-- `socket.send(data)`,
-- `socket.close([code], [reason])`.
+-   `socket.send(data)`,
+-   `socket.close([code], [reason])`.
 
 Events:
 
-- `open`,
-- `message`,
-- `error`,
-- `close`.
+-   `open`,
+-   `message`,
+-   `error`,
+-   `close`.
 
 WebSocket by itself does not include reconnection, authentication and many other high-level mechanisms. So there are client/server libraries for that, and it’s also possible to implement these capabilities manually.
 
@@ -403,28 +403,28 @@ Surely, other ways of integration are also possible.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
 
 #### Lesson navigation
 
-- <a href="websocket.html#a-simple-example" class="sidebar__link">A simple example</a>
-- <a href="websocket.html#opening-a-websocket" class="sidebar__link">Opening a websocket</a>
-- <a href="websocket.html#data-transfer" class="sidebar__link">Data transfer</a>
-- <a href="websocket.html#rate-limiting" class="sidebar__link">Rate limiting</a>
-- <a href="websocket.html#connection-close" class="sidebar__link">Connection close</a>
-- <a href="websocket.html#connection-state" class="sidebar__link">Connection state</a>
-- <a href="websocket.html#chat-example" class="sidebar__link">Chat example</a>
-- <a href="websocket.html#summary" class="sidebar__link">Summary</a>
+-   <a href="websocket.html#a-simple-example" class="sidebar__link">A simple example</a>
+-   <a href="websocket.html#opening-a-websocket" class="sidebar__link">Opening a websocket</a>
+-   <a href="websocket.html#data-transfer" class="sidebar__link">Data transfer</a>
+-   <a href="websocket.html#rate-limiting" class="sidebar__link">Rate limiting</a>
+-   <a href="websocket.html#connection-close" class="sidebar__link">Connection close</a>
+-   <a href="websocket.html#connection-state" class="sidebar__link">Connection state</a>
+-   <a href="websocket.html#chat-example" class="sidebar__link">Chat example</a>
+-   <a href="websocket.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="websocket.html#comments" class="sidebar__link">Comments</a>
+-   <a href="websocket.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -432,7 +432,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/11-websocket" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

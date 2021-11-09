@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/styles-and-classes"
-- <a href="styles-and-classes.html"
-- <a href="https://es.javascript.info/styles-and-classes"
-- <a href="https://fr.javascript.info/styles-and-classes"
-- <a href="https://it.javascript.info/styles-and-classes"
-  styles-and-classes"
+-   <a href="https://ar.javascript.info/styles-and-classes"
+-   <a href="styles-and-classes.html"
+-   <a href="https://es.javascript.info/styles-and-classes"
+-   <a href="https://fr.javascript.info/styles-and-classes"
+-   <a href="https://it.javascript.info/styles-and-classes"
+    styles-and-classes"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/styles-and-classes"
-- <a href=styles-and-classes"
-- <a href="https://tr.javascript.info/styles-and-classes"
-- <a href="https://zh.javascript.info/styles-and-classes"
+-   <a href="https://ko.javascript.info/styles-and-classes"
+-   <a href=styles-and-classes"
+-   <a href="https://tr.javascript.info/styles-and-classes"
+-   <a href="https://zh.javascript.info/styles-and-classes"
 
 We want to make this open-source project available for people all around the world.
 
@@ -104,9 +104,9 @@ So we can operate both on the full class string using `className` or on individu
 
 Methods of `classList`:
 
-- `elem.classList.add/remove("class")` – adds/removes the class.
-- `elem.classList.toggle("class")` – adds the class if it doesn’t exist, otherwise removes it.
-- `elem.classList.contains("class")` – checks for the given class, returns `true/false`.
+-   `elem.classList.add/remove("class")` – adds/removes the class.
+-   `elem.classList.toggle("class")` – adds the class if it doesn’t exist, otherwise removes it.
+-   `elem.classList.contains("class")` – checks for the given class, returns `true/false`.
 
 Besides, `classList` is iterable, so we can list all classes with `for..of`, like this:
 
@@ -331,18 +331,18 @@ JavaScript may not see the styles applied by `:visited`. And also, there’s a l
 
 To manage classes, there are two DOM properties:
 
-- `className` – the string value, good to manage the whole set of classes.
-- `classList` – the object with methods `add/remove/toggle/contains`, good for individual classes.
+-   `className` – the string value, good to manage the whole set of classes.
+-   `classList` – the object with methods `add/remove/toggle/contains`, good for individual classes.
 
 To change the styles:
 
-- The `style` property is an object with camelCased styles. Reading and writing to it has the same meaning as modifying individual properties in the `"style"` attribute. To see how to apply `important` and other rare stuff – there’s a list of methods at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration).
+-   The `style` property is an object with camelCased styles. Reading and writing to it has the same meaning as modifying individual properties in the `"style"` attribute. To see how to apply `important` and other rare stuff – there’s a list of methods at [MDN](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration).
 
-- The `style.cssText` property corresponds to the whole `"style"` attribute, the full string of styles.
+-   The `style.cssText` property corresponds to the whole `"style"` attribute, the full string of styles.
 
 To read the resolved styles (with respect to all classes, after all CSS is applied and final values are calculated):
 
-- The `getComputedStyle(elem, [pseudo])` returns the style-like object with them. Read-only.
+-   The `getComputedStyle(elem, [pseudo])` returns the style-like object with them. Read-only.
 
 ## <a href="styles-and-classes.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -384,27 +384,27 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
-- <a href="styles-and-classes.html#classname-and-classlist" class="sidebar__link">className and classList</a>
-- <a href="styles-and-classes.html#element-style" class="sidebar__link">Element style</a>
-- <a href="styles-and-classes.html#resetting-the-style-property" class="sidebar__link">Resetting the style property</a>
-- <a href="styles-and-classes.html#mind-the-units" class="sidebar__link">Mind the units</a>
-- <a href="styles-and-classes.html#computed-styles-getcomputedstyle" class="sidebar__link">Computed styles: getComputedStyle</a>
-- <a href="styles-and-classes.html#summary" class="sidebar__link">Summary</a>
+-   <a href="styles-and-classes.html#classname-and-classlist" class="sidebar__link">className and classList</a>
+-   <a href="styles-and-classes.html#element-style" class="sidebar__link">Element style</a>
+-   <a href="styles-and-classes.html#resetting-the-style-property" class="sidebar__link">Resetting the style property</a>
+-   <a href="styles-and-classes.html#mind-the-units" class="sidebar__link">Mind the units</a>
+-   <a href="styles-and-classes.html#computed-styles-getcomputedstyle" class="sidebar__link">Computed styles: getComputedStyle</a>
+-   <a href="styles-and-classes.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="styles-and-classes.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="styles-and-classes.html#comments" class="sidebar__link">Comments</a>
+-   <a href="styles-and-classes.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="styles-and-classes.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -412,7 +412,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/08-styles-and-classes" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

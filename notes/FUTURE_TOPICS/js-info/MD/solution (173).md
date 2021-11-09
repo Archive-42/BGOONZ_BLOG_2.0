@@ -3,5 +3,5 @@ When we need to insert a piece of HTML somewhere, `insertAdjacentHTML` is the be
 The solution:
 
 ```js
-one.insertAdjacentHTML("afterend", "<li>2</li><li>3</li>");
+one.insertAdjacentHTML('afterend', '<li>2</li><li>3</li>');
 ```

@@ -1,7 +1,7 @@
 libs:
 
-- d3
-- domtree
+-   d3
+-   domtree
 
 ---
 
@@ -18,16 +18,16 @@ For example, `document.body` is the object representing the `<body>` tag.
 Running this code will make the `<body>` red for 3 seconds:
 
 ```js run
-document.body.style.background = "red"; // make the background red
+document.body.style.background = 'red'; // make the background red
 
-setTimeout(() => (document.body.style.background = ""), 3000); // return back
+setTimeout(() => (document.body.style.background = ''), 3000); // return back
 ```
 
 Here we used `style.background` to change the background color of `document.body`, but there are many other properties, such as:
 
-- `innerHTML` -- HTML contents of the node.
-- `offsetWidth` -- the node width (in pixels)
-- ...and so on.
+-   `innerHTML` -- HTML contents of the node.
+-   `offsetWidth` -- the node width (in pixels)
+-   ...and so on.
 
 Soon we'll learn more ways to manipulate the DOM, but first we need to know about its structure.
 
@@ -38,12 +38,12 @@ Let's start with the following simple document:
 ```html run no-beautify
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>About elk</title>
-  </head>
-  <body>
-    The truth about elk.
-  </body>
+    <head>
+        <title>About elk</title>
+    </head>
+    <body>
+        The truth about elk.
+    </body>
 </html>
 ```
 
@@ -71,8 +71,8 @@ For instance, the `<title>` tag has the text `"About elk"`.
 
 Please note the special characters in text nodes:
 
-- a newline: `↵` (in JavaScript known as `\n`)
-- a space: `␣`
+-   a newline: `↵` (in JavaScript known as `\n`)
+-   a space: `␣`
 
 Spaces and newlines are totally valid characters, like letters and digits. They form text nodes and become a part of the DOM. So, for instance, in the example above the `<head>` tag contains some spaces before `<title>`, and that text becomes a `#text` node (it contains a newline and some spaces only).
 
@@ -88,12 +88,12 @@ Here are no space-only text nodes:
 ```html no-beautify
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>About elk</title>
-  </head>
-  <body>
-    The truth about elk.
-  </body>
+    <head>
+        <title>About elk</title>
+    </head>
+    <body>
+        The truth about elk.
+    </body>
 </html>
 ```
 
@@ -135,10 +135,10 @@ A document with unclosed tags:
 
 ```html no-beautify
 <p>
-  Hello
-  <li>Mom</li>
-  <li>and</li>
-  <li>Dad</li>
+    Hello
+    <li>Mom</li>
+    <li>and</li>
+    <li>Dad</li>
 </p>
 ```
 
@@ -158,9 +158,9 @@ For the HTML:
 
 ```html no-beautify
 <table id="table">
-  <tr>
-    <td>1</td>
-  </tr>
+    <tr>
+        <td>1</td>
+    </tr>
 </table>
 ```
 

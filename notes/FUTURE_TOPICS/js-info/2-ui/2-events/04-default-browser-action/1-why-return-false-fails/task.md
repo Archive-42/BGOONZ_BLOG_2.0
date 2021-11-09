@@ -8,10 +8,10 @@ Why in the code below `return false` doesn't work at all?
 
 ```html autorun run
 <script>
-  function handler() {
-    alert("...");
-    return false;
-  }
+    function handler() {
+        alert('...');
+        return false;
+    }
 </script>
 
 <a href="https://w3.org" onclick="handler()">the browser will go to w3.org</a>

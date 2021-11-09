@@ -1,9 +1,9 @@
 replace-for-while"
 
-- <a href="replace-for-while.html"
-  /replace-for-while"
-  /replace-for-while"
-  replace-for-whilereplace-for-while"
+-   <a href="replace-for-while.html"
+    /replace-for-while"
+    /replace-for-while"
+    replace-for-whilereplace-for-while"
 
 <!-- -->
 

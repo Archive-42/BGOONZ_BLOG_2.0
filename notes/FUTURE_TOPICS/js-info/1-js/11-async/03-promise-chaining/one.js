@@ -1,3 +1,3 @@
 function one() {
-  alert(1);
+    alert(1);
 }

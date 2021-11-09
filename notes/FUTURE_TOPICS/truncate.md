@@ -1,10 +1,10 @@
 truncate"
 
-- <a href="truncate.html"
-  /truncate"
-  /truncate"
-  truncate"
-  task/truncate"
+-   <a href="truncate.html"
+    /truncate"
+    /truncate"
+    truncate"
+    task/truncate"
 
 <!-- -->
 

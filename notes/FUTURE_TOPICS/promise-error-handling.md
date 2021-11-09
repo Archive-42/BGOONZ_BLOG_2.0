@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/promise-error-handling"
-- <a href="promise-error-handling.html"
-- <a href="https://es.javascript.info/promise-error-handling"
-- <a href="https://fr.javascript.info/promise-error-handling"
-- <a href="https://it.javascript.info/promise-error-handling"
-  promise-error-handling"
+-   <a href="https://ar.javascript.info/promise-error-handling"
+-   <a href="promise-error-handling.html"
+-   <a href="https://es.javascript.info/promise-error-handling"
+-   <a href="https://fr.javascript.info/promise-error-handling"
+-   <a href="https://it.javascript.info/promise-error-handling"
+    promise-error-handling"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/promise-error-handling"
-- <a href=promise-error-handling"
-- <a href="https://tr.javascript.info/promise-error-handling"
-- <a href="https://zh.javascript.info/promise-error-handling"
+-   <a href="https://ko.javascript.info/promise-error-handling"
+-   <a href=promise-error-handling"
+-   <a href="https://tr.javascript.info/promise-error-handling"
+-   <a href="https://zh.javascript.info/promise-error-handling"
 
 We want to make this open-source project available for people all around the world.
 
@@ -229,10 +229,10 @@ In non-browser environments like Node.js there are other ways to track unhandled
 
 ## <a href="promise-error-handling.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- `.catch` handles errors in promises of all kinds: be it a `reject()` call, or an error thrown in a handler.
-- We should place `.catch` exactly in places where we want to handle errors and know how to handle them. The handler should analyze errors (custom error classes help) and rethrow unknown ones (maybe they are programming mistakes).
-- It’s ok not to use `.catch` at all, if there’s no way to recover from an error.
-- In any case we should have the `unhandledrejection` event handler (for browsers, and analogs for other environments) to track unhandled errors and inform the user (and probably our server) about them, so that our app never “just dies”.
+-   `.catch` handles errors in promises of all kinds: be it a `reject()` call, or an error thrown in a handler.
+-   We should place `.catch` exactly in places where we want to handle errors and know how to handle them. The handler should analyze errors (custom error classes help) and rethrow unknown ones (maybe they are programming mistakes).
+-   It’s ok not to use `.catch` at all, if there’s no way to recover from an error.
+-   In any case we should have the `unhandledrejection` event handler (for browsers, and analogs for other environments) to track unhandled errors and inform the user (and probably our server) about them, so that our app never “just dies”.
 
 ## <a href="promise-error-handling.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -275,25 +275,25 @@ But here the error is generated not while the executor is running, but later. So
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="async.html" class="sidebar__link">Promises, async/await</a>
+-   <a href="async.html" class="sidebar__link">Promises, async/await</a>
 
 #### Lesson navigation
 
-- <a href="promise-error-handling.html#implicit-try-catch" class="sidebar__link">Implicit try…catch</a>
-- <a href="promise-error-handling.html#rethrowing" class="sidebar__link">Rethrowing</a>
-- <a href="promise-error-handling.html#unhandled-rejections" class="sidebar__link">Unhandled rejections</a>
-- <a href="promise-error-handling.html#summary" class="sidebar__link">Summary</a>
+-   <a href="promise-error-handling.html#implicit-try-catch" class="sidebar__link">Implicit try…catch</a>
+-   <a href="promise-error-handling.html#rethrowing" class="sidebar__link">Rethrowing</a>
+-   <a href="promise-error-handling.html#unhandled-rejections" class="sidebar__link">Unhandled rejections</a>
+-   <a href="promise-error-handling.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="promise-error-handling.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="promise-error-handling.html#comments" class="sidebar__link">Comments</a>
+-   <a href="promise-error-handling.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="promise-error-handling.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -301,7 +301,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/11-async/04-promise-error-handling" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

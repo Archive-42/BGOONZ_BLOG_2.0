@@ -1,9 +1,9 @@
 sort-objects"
 
-- <a href="sort-objects.html"
-  /sort-objects"
-  /sort-objects"
-  sort-objectssort-objects"
+-   <a href="sort-objects.html"
+    /sort-objects"
+    /sort-objects"
+    sort-objectssort-objects"
 
 <!-- -->
 

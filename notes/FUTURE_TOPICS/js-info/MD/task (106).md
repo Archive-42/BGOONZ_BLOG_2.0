@@ -7,13 +7,13 @@ importance: 5
 The function sayHi uses an external variable name. When the function runs, which value is it going to use?
 
 ```js
-let name = "John";
+let name = 'John';
 
 function sayHi() {
-  alert("Hi, " + name);
+    alert('Hi, ' + name);
 }
 
-name = "Pete";
+name = 'Pete';
 
 sayHi(); // what will it show: "John" or "Pete"?
 ```

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/private-protected-properties-methods"
-- <a href="private-protected-properties-methods.html"
-- <a href="https://es.javascript.info/private-protected-properties-methods"
-- <a href="https://fr.javascript.info/private-protected-properties-methods"
-- <a href="https://it.javascript.info/private-protected-properties-methods"
-  private-protected-properties-methods"
+-   <a href="https://ar.javascript.info/private-protected-properties-methods"
+-   <a href="private-protected-properties-methods.html"
+-   <a href="https://es.javascript.info/private-protected-properties-methods"
+-   <a href="https://fr.javascript.info/private-protected-properties-methods"
+-   <a href="https://it.javascript.info/private-protected-properties-methods"
+    private-protected-properties-methods"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/private-protected-properties-methods"
-- <a href=private-protected-properties-methods"
-- <a href="https://tr.javascript.info/private-protected-properties-methods"
-- <a href="https://zh.javascript.info/private-protected-properties-methods"
+-   <a href="https://ko.javascript.info/private-protected-properties-methods"
+-   <a href=private-protected-properties-methods"
+-   <a href="https://tr.javascript.info/private-protected-properties-methods"
+-   <a href="https://zh.javascript.info/private-protected-properties-methods"
 
 We want to make this open-source project available for people all around the world.
 
@@ -68,8 +68,8 @@ But in order to hide inner details, we’ll use not a protective cover, but rath
 
 In object-oriented programming, properties and methods are split into two groups:
 
-- _Internal interface_ – methods and properties, accessible from other methods of the class, but not from the outside.
-- _External interface_ – methods and properties, accessible also from outside the class.
+-   _Internal interface_ – methods and properties, accessible from other methods of the class, but not from the outside.
+-   _External interface_ – methods and properties, accessible also from outside the class.
 
 If we continue the analogy with the coffee machine – what’s hidden inside: a boiler tube, heating element, and so on – is its internal interface.
 
@@ -83,8 +83,8 @@ That was a general introduction.
 
 In JavaScript, there are two types of object fields (properties and methods):
 
-- Public: accessible from anywhere. They comprise the external interface. Until now we were only using public properties and methods.
-- Private: accessible only from inside the class. These are for the internal interface.
+-   Public: accessible from anywhere. They comprise the external interface. Until now we were only using public properties and methods.
+-   Private: accessible only from inside the class. These are for the internal interface.
 
 In many other languages there also exist “protected” fields: accessible only from inside the class and those extending it (like private, but plus access from inheriting classes). They are also useful for the internal interface. They are in a sense more widespread than private ones, because we usually want inheriting classes to gain access to them.
 
@@ -342,8 +342,8 @@ Programmers are not an exception.
 
 To hide an internal interface we use either protected or private properties:
 
-- Protected fields start with `_`. That’s a well-known convention, not enforced at the language level. Programmers should only access a field starting with `_` from its class and classes inheriting from it.
-- Private fields start with `#`. JavaScript makes sure we can only access those from inside the class.
+-   Protected fields start with `_`. That’s a well-known convention, not enforced at the language level. Programmers should only access a field starting with `_` from its class and classes inheriting from it.
+-   Private fields start with `#`. JavaScript makes sure we can only access those from inside the class.
 
 Right now, private fields are not well-supported among browsers, but can be polyfilled.
 
@@ -357,26 +357,26 @@ Right now, private fields are not well-supported among browsers, but can be poly
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="classes.html" class="sidebar__link">Classes</a>
+-   <a href="classes.html" class="sidebar__link">Classes</a>
 
 #### Lesson navigation
 
-- <a href="private-protected-properties-methods.html#a-real-life-example" class="sidebar__link">A real-life example</a>
-- <a href="private-protected-properties-methods.html#internal-and-external-interface" class="sidebar__link">Internal and external interface</a>
-- <a href="private-protected-properties-methods.html#protecting-wateramount" class="sidebar__link">Protecting “waterAmount”</a>
-- <a href="private-protected-properties-methods.html#read-only-power" class="sidebar__link">Read-only “power”</a>
-- <a href="private-protected-properties-methods.html#private-waterlimit" class="sidebar__link">Private “#waterLimit”</a>
-- <a href="private-protected-properties-methods.html#summary" class="sidebar__link">Summary</a>
+-   <a href="private-protected-properties-methods.html#a-real-life-example" class="sidebar__link">A real-life example</a>
+-   <a href="private-protected-properties-methods.html#internal-and-external-interface" class="sidebar__link">Internal and external interface</a>
+-   <a href="private-protected-properties-methods.html#protecting-wateramount" class="sidebar__link">Protecting “waterAmount”</a>
+-   <a href="private-protected-properties-methods.html#read-only-power" class="sidebar__link">Read-only “power”</a>
+-   <a href="private-protected-properties-methods.html#private-waterlimit" class="sidebar__link">Private “#waterLimit”</a>
+-   <a href="private-protected-properties-methods.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="private-protected-properties-methods.html#comments" class="sidebar__link">Comments</a>
+-   <a href="private-protected-properties-methods.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -384,7 +384,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/09-classes/04-private-protected-properties-methods" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

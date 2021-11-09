@@ -1,9 +1,9 @@
 rewrite-if-switch"
 
-- <a href="rewrite-if-switch.html"
-  /rewrite-if-switch"
-  /rewrite-if-switch"
-  rewrite-if-switchrewrite-if-switch"
+-   <a href="rewrite-if-switch.html"
+    /rewrite-if-switch"
+    /rewrite-if-switch"
+    rewrite-if-switchrewrite-if-switch"
 
 <!-- -->
 

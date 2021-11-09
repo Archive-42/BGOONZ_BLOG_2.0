@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/variables"
-- <a href="variables.html"
-- <a href="https://es.javascript.info/variables"
-- <a href="https://fr.javascript.info/variables"
-- <a href="https://it.javascript.info/variables"
-  variables"
+-   <a href="https://ar.javascript.info/variables"
+-   <a href="variables.html"
+-   <a href="https://es.javascript.info/variables"
+-   <a href="https://fr.javascript.info/variables"
+-   <a href="https://it.javascript.info/variables"
+    variables"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/variables"
-- <a href=variables"
-- <a href="https://tr.javascript.info/variables"
-- <a href="https://zh.javascript.info/variables"
+-   <a href="https://ko.javascript.info/variables"
+-   <a href=variables"
+-   <a href="https://tr.javascript.info/variables"
+-   <a href="https://zh.javascript.info/variables"
 
 We want to make this open-source project available for people all around the world.
 
@@ -296,9 +296,9 @@ For instance, let’s make constants for colors in so-called “web” (hexadeci
 
 Benefits:
 
-- `COLOR_ORANGE` is much easier to remember than `"#FF7F00"`.
-- It is much easier to mistype `"#FF7F00"` than `COLOR_ORANGE`.
-- When reading the code, `COLOR_ORANGE` is much more meaningful than `#FF7F00`.
+-   `COLOR_ORANGE` is much easier to remember than `"#FF7F00"`.
+-   It is much easier to mistype `"#FF7F00"` than `COLOR_ORANGE`.
+-   When reading the code, `COLOR_ORANGE` is much more meaningful than `#FF7F00`.
 
 When should we use capitals for a constant and when should we name it normally? Let’s make that clear.
 
@@ -326,10 +326,10 @@ Please spend time thinking about the right name for a variable before declaring 
 
 Some good-to-follow rules are:
 
-- Use human-readable names like `userName` or `shoppingCart`.
-- Stay away from abbreviations or short names like `a`, `b`, `c`, unless you really know what you’re doing.
-- Make names maximally descriptive and concise. Examples of bad names are `data` and `value`. Such names say nothing. It’s only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
-- Agree on terms within your team and in your own mind. If a site visitor is called a “user” then we should name related variables `currentUser` or `newUser` instead of `currentVisitor` or `newManInTown`.
+-   Use human-readable names like `userName` or `shoppingCart`.
+-   Stay away from abbreviations or short names like `a`, `b`, `c`, unless you really know what you’re doing.
+-   Make names maximally descriptive and concise. Examples of bad names are `data` and `value`. Such names say nothing. It’s only okay to use them if the context of the code makes it exceptionally obvious which data or value the variable is referencing.
+-   Agree on terms within your team and in your own mind. If a site visitor is called a “user” then we should name related variables `currentUser` or `newUser` instead of `currentVisitor` or `newManInTown`.
 
 Sounds simple? Indeed it is, but creating descriptive and concise variable names in practice is not. Go for it.
 
@@ -349,9 +349,9 @@ Modern JavaScript minifiers and browsers optimize code well enough, so it won’
 
 We can declare variables to store data by using the `var`, `let`, or `const` keywords.
 
-- `let` – is a modern variable declaration.
-- `var` – is an old-school variable declaration. Normally we don’t use it at all, but we’ll cover subtle differences from `let` in the chapter [The old "var"](var.html), just in case you need them.
-- `const` – is like `let`, but the value of the variable can’t be changed.
+-   `let` – is a modern variable declaration.
+-   `var` – is an old-school variable declaration. Normally we don’t use it at all, but we’ll cover subtle differences from `let` in the chapter [The old "var"](var.html), just in case you need them.
+-   `const` – is like `let`, but the value of the variable can’t be changed.
 
 Variables should be named in a way that allows us to easily understand what’s inside them.
 
@@ -454,27 +454,27 @@ In contrast, `age` is evaluated in run-time. Today we have one age, a year after
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="variables.html#a-variable" class="sidebar__link">A variable</a>
-- <a href="variables.html#a-real-life-analogy" class="sidebar__link">A real-life analogy</a>
-- <a href="variables.html#variable-naming" class="sidebar__link">Variable naming</a>
-- <a href="variables.html#constants" class="sidebar__link">Constants</a>
-- <a href="variables.html#name-things-right" class="sidebar__link">Name things right</a>
-- <a href="variables.html#summary" class="sidebar__link">Summary</a>
+-   <a href="variables.html#a-variable" class="sidebar__link">A variable</a>
+-   <a href="variables.html#a-real-life-analogy" class="sidebar__link">A real-life analogy</a>
+-   <a href="variables.html#variable-naming" class="sidebar__link">Variable naming</a>
+-   <a href="variables.html#constants" class="sidebar__link">Constants</a>
+-   <a href="variables.html#name-things-right" class="sidebar__link">Name things right</a>
+-   <a href="variables.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="variables.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="variables.html#comments" class="sidebar__link">Comments</a>
+-   <a href="variables.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="variables.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -482,7 +482,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/04-variables" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

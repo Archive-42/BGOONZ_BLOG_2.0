@@ -23,37 +23,37 @@ Here's a sketch with the full list:
 
 ```js
 class MyElement extends HTMLElement {
-  constructor() {
-    super();
-    // element created
-  }
+    constructor() {
+        super();
+        // element created
+    }
 
-  connectedCallback() {
-    // browser calls this method when the element is added to the document
-    // (can be called many times if an element is repeatedly added/removed)
-  }
+    connectedCallback() {
+        // browser calls this method when the element is added to the document
+        // (can be called many times if an element is repeatedly added/removed)
+    }
 
-  disconnectedCallback() {
-    // browser calls this method when the element is removed from the document
-    // (can be called many times if an element is repeatedly added/removed)
-  }
+    disconnectedCallback() {
+        // browser calls this method when the element is removed from the document
+        // (can be called many times if an element is repeatedly added/removed)
+    }
 
-  static get observedAttributes() {
-    return [
-      /* array of attribute names to monitor for changes */
-    ];
-  }
+    static get observedAttributes() {
+        return [
+            /* array of attribute names to monitor for changes */
+        ];
+    }
 
-  attributeChangedCallback(name, oldValue, newValue) {
-    // called when one of attributes listed above is modified
-  }
+    attributeChangedCallback(name, oldValue, newValue) {
+        // called when one of attributes listed above is modified
+    }
 
-  adoptedCallback() {
-    // called when the element is moved to a new document
-    // (happens in document.adoptNode, very rarely used)
-  }
+    adoptedCallback() {
+        // called when the element is moved to a new document
+        // (happens in document.adoptNode, very rarely used)
+    }
 
-  // there can be other element methods and properties
+    // there can be other element methods and properties
 }
 ```
 
@@ -61,7 +61,7 @@ After that, we need to register the element:
 
 ```js
 // let the browser know that <my-element> is served by our new class
-customElements.define("my-element", MyElement);
+customElements.define('my-element', MyElement);
 ```
 
 Now for any HTML elements with tag `<my-element>`, an instance of `MyElement` is created, and the aforementioned methods are called. We also can `document.createElement('my-element')` in JavaScript.
@@ -224,15 +224,15 @@ For example, if a custom element tries to access `innerHTML` in `connectedCallba
 
 ```html run height=40
 <script>
-  customElements.define('user-info', class extends HTMLElement {
+    customElements.define('user-info', class extends HTMLElement {
 
-    connectedCallback() {
-  *!*
-      alert(this.innerHTML); // empty (*)
-  */!*
-    }
+      connectedCallback() {
+    *!*
+        alert(this.innerHTML); // empty (*)
+    */!*
+      }
 
-  });
+    });
 </script>
 
 *!*
@@ -252,15 +252,15 @@ This works:
 
 ```html run height=40
 <script>
-  customElements.define('user-info', class extends HTMLElement {
+    customElements.define('user-info', class extends HTMLElement {
 
-    connectedCallback() {
-  *!*
-      setTimeout(() => alert(this.innerHTML)); // John (*)
-  */!*
-    }
+      connectedCallback() {
+    *!*
+        setTimeout(() => alert(this.innerHTML)); // John (*)
+    */!*
+      }
 
-  });
+    });
 </script>
 
 *!*
@@ -278,20 +278,20 @@ Let's demonstrate that on example:
 
 ```html run height=0
 <script>
-  customElements.define(
-    "user-info",
-    class extends HTMLElement {
-      connectedCallback() {
-        alert(`${this.id} connected.`);
-        setTimeout(() => alert(`${this.id} initialized.`));
-      }
-    }
-  );
+    customElements.define(
+        'user-info',
+        class extends HTMLElement {
+            connectedCallback() {
+                alert(`${this.id} connected.`);
+                setTimeout(() => alert(`${this.id} initialized.`));
+            }
+        }
+    );
 </script>
 
 *!*
 <user-info id="outer">
-  <user-info id="inner"></user-info>
+    <user-info id="inner"></user-info>
 </user-info>
 */!*
 ```
@@ -319,42 +319,42 @@ For example, buttons are instances of `HTMLButtonElement`, let's build upon it.
 
 1. Extend `HTMLButtonElement` with our class:
 
-   ```js
-   class HelloButton extends HTMLButtonElement {
-     /* custom element methods */
-   }
-   ```
+    ```js
+    class HelloButton extends HTMLButtonElement {
+        /* custom element methods */
+    }
+    ```
 
 2. Provide the third argument to `customElements.define`, that specifies the tag:
 
-   ```js
-   customElements.define('hello-button', HelloButton, *!*{extends: 'button'}*/!*);
-   ```
+    ```js
+    customElements.define('hello-button', HelloButton, *!*{extends: 'button'}*/!*);
+    ```
 
-   There may be different tags that share the same DOM-class, that's why specifying `extends` is needed.
+    There may be different tags that share the same DOM-class, that's why specifying `extends` is needed.
 
 3. At the end, to use our custom element, insert a regular `<button>` tag, but add `is="hello-button"` to it:
-   ```html
-   <button is="hello-button">...</button>
-   ```
+    ```html
+    <button is="hello-button">...</button>
+    ```
 
 Here's a full example:
 
 ```html run autorun="no-epub"
 <script>
-  // The button that says "hello" on click
-  class HelloButton extends HTMLButtonElement {
-  *!*
-    constructor() {
-  */!*
-      super();
-      this.addEventListener('click', () => alert("Hello!"));
+    // The button that says "hello" on click
+    class HelloButton extends HTMLButtonElement {
+    *!*
+      constructor() {
+    */!*
+        super();
+        this.addEventListener('click', () => alert("Hello!"));
+      }
     }
-  }
 
-  *!*
-  customElements.define('hello-button', HelloButton, {extends: 'button'});
-  */!*
+    *!*
+    customElements.define('hello-button', HelloButton, {extends: 'button'});
+    */!*
 </script>
 
 *!*
@@ -368,8 +368,8 @@ Our new button extends the built-in one. So it keeps the same styles and standar
 
 ## References
 
-- HTML Living Standard: <https://html.spec.whatwg.org/#custom-elements>.
-- Compatiblity: <https://caniuse.com/#feat=custom-elementsv1>.
+-   HTML Living Standard: <https://html.spec.whatwg.org/#custom-elements>.
+-   Compatiblity: <https://caniuse.com/#feat=custom-elementsv1>.
 
 ## Summary
 
@@ -377,45 +377,45 @@ Custom elements can be of two types:
 
 1. "Autonomous" -- new tags, extending `HTMLElement`.
 
-   Definition scheme:
+    Definition scheme:
 
-   ```js
-   class MyElement extends HTMLElement {
-     constructor() {
-       super(); /* ... */
-     }
-     connectedCallback() {
-       /* ... */
-     }
-     disconnectedCallback() {
-       /* ... */
-     }
-     static get observedAttributes() {
-       return [
-         /* ... */
-       ];
-     }
-     attributeChangedCallback(name, oldValue, newValue) {
-       /* ... */
-     }
-     adoptedCallback() {
-       /* ... */
-     }
-   }
-   customElements.define("my-element", MyElement);
-   /* <my-element> */
-   ```
+    ```js
+    class MyElement extends HTMLElement {
+        constructor() {
+            super(); /* ... */
+        }
+        connectedCallback() {
+            /* ... */
+        }
+        disconnectedCallback() {
+            /* ... */
+        }
+        static get observedAttributes() {
+            return [
+                /* ... */
+            ];
+        }
+        attributeChangedCallback(name, oldValue, newValue) {
+            /* ... */
+        }
+        adoptedCallback() {
+            /* ... */
+        }
+    }
+    customElements.define('my-element', MyElement);
+    /* <my-element> */
+    ```
 
 2. "Customized built-in elements" -- extensions of existing elements.
 
-   Requires one more `.define` argument, and `is="..."` in HTML:
+    Requires one more `.define` argument, and `is="..."` in HTML:
 
-   ```js
-   class MyButton extends HTMLButtonElement {
-     /*...*/
-   }
-   customElements.define("my-button", MyElement, { extends: "button" });
-   /* <button is="my-button"> */
-   ```
+    ```js
+    class MyButton extends HTMLButtonElement {
+        /*...*/
+    }
+    customElements.define('my-button', MyElement, { extends: 'button' });
+    /* <button is="my-button"> */
+    ```
 
 Custom elements are well-supported among browsers. There's a polyfill <https://github.com/webcomponents/polyfills/tree/master/packages/webcomponentsjs>.

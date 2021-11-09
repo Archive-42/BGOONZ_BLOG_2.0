@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="throttle.html"
-  /throttle"
-  /throttle"
-  throttle"
-  task/throttle"
+-   <a href="https://ar.javascript.info/"
+-   <a href="throttle.html"
+    /throttle"
+    /throttle"
+    throttle"
+    task/throttle"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  throttle"
-  /throttle"
-  throttle"
+-   <a href="https://ko.javascript.info/"
+    throttle"
+    /throttle"
+    throttle"
 
 We want to make this open-source project available for people all around the world.
 
@@ -36,8 +36,8 @@ When it’s called multiple times, it passes the call to `f` at maximum once per
 
 The difference with debounce is that it’s completely different decorator:
 
-- `debounce` runs the function once after the “cooldown” period. Good for processing the final result.
-- `throttle` runs it not more often than given `ms` time. Good for regular updates that shouldn’t be very often.
+-   `debounce` runs the function once after the “cooldown” period. Good for processing the final result.
+-   `throttle` runs it not more often than given `ms` time. Good for regular updates that shouldn’t be very often.
 
 In other words, `throttle` is like a secretary that accepts phone calls, but bothers the boss (calls the actual `f`) not more often than once per `ms` milliseconds.
 

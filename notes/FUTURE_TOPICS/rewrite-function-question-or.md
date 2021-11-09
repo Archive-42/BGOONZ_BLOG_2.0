@@ -1,9 +1,9 @@
 rewrite-function-question-or"
 
-- <a href="rewrite-function-question-or.html"
-  /rewrite-function-question-or"
-  /rewrite-function-question-or"
-  rewrite-function-question-orrewrite-function-question-or"
+-   <a href="rewrite-function-question-or.html"
+    /rewrite-function-question-or"
+    /rewrite-function-question-or"
+    rewrite-function-question-orrewrite-function-question-or"
 
 <!-- -->
 

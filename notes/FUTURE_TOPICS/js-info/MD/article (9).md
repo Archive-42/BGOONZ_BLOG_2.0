@@ -9,7 +9,7 @@ This one we've seen already. It shows a message and waits for the user to press 
 For example:
 
 ```js run
-alert("Hello");
+alert('Hello');
 ```
 
 The mini-window with the message is called a _modal window_. The word "modal" means that the visitor can't interact with the rest of the page, press other buttons, etc, until they have dealt with the window. In this case -- until they press "OK".
@@ -51,13 +51,13 @@ alert(`You are ${age} years old!`); // You are 100 years old!
 Run this code in Internet Explorer to see:
 
 ```js run
-let test = prompt("Test");
+let test = prompt('Test');
 ```
 
 So, for prompts to look good in IE, we recommend always providing the second argument:
 
 ```js run
-let test = prompt("Test", ""); // <-- for IE
+let test = prompt('Test', ''); // <-- for IE
 ```
 
 ````

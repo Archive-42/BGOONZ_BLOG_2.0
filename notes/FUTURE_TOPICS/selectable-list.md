@@ -1,7 +1,7 @@
 selectable-list"
 
-- <a href="selectable-list.html"
-  /selectable-list"
+-   <a href="selectable-list.html"
+    /selectable-list"
 
 selectable-listselectable-list"
 
@@ -32,8 +32,8 @@ Searchk%2Fselectable-list"%2Fselectable-list" </a>
 
 Create a list where elements are selectable, like in file-managers.
 
-- A click on a list element selects only that element (adds the class `.selected`), deselects all others.
-- If a click is made with Ctrl (Cmd for Mac), then the selection is toggled on the element, but other elements are not modified.
+-   A click on a list element selects only that element (adds the class `.selected`), deselects all others.
+-   If a click is made with Ctrl (Cmd for Mac), then the selection is toggled on the element, but other elements are not modified.
 
 The demo:
 

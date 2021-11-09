@@ -1,10 +1,10 @@
 weekday"
 
-- <a href="weekday.html"
-  /weekday"
-  /weekday"
-  weekday"
-  task/weekday"
+-   <a href="weekday.html"
+    /weekday"
+    /weekday"
+    weekday"
+    task/weekday"
 
 <!-- -->
 

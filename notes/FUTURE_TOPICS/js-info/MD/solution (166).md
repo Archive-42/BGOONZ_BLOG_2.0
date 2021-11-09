@@ -11,10 +11,10 @@ In the loop we need to get the text inside every `li`.
 We can read the text from the first child node of `li`, that is the text node:
 
 ```js
-for (let li of document.querySelectorAll("li")) {
-  let title = li.firstChild.data;
+for (let li of document.querySelectorAll('li')) {
+    let title = li.firstChild.data;
 
-  // title is the text in <li> before any other nodes
+    // title is the text in <li> before any other nodes
 }
 ```
 

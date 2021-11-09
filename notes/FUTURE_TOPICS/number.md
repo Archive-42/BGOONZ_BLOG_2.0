@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/number"
-- <a href="number.html"
-- <a href="https://es.javascript.info/number"
-- <a href="https://fr.javascript.info/number"
-- <a href="https://it.javascript.info/number"
-  number"
+-   <a href="https://ar.javascript.info/number"
+-   <a href="number.html"
+-   <a href="https://es.javascript.info/number"
+-   <a href="https://fr.javascript.info/number"
+-   <a href="https://it.javascript.info/number"
+    number"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/number"
-- <a href=number"
-- <a href="https://tr.javascript.info/number"
-- <a href="https://zh.javascript.info/number"
+-   <a href="https://ko.javascript.info/number"
+-   <a href=number"
+-   <a href="https://tr.javascript.info/number"
+-   <a href="https://zh.javascript.info/number"
 
 We want to make this open-source project available for people all around the world.
 
@@ -136,16 +136,16 @@ The `base` can vary from `2` to `36`. By default it’s `10`.
 
 Common use cases for this are:
 
-- **base=16** is used for hex colors, character encodings etc, digits can be `0..9` or `A..F`.
+-   **base=16** is used for hex colors, character encodings etc, digits can be `0..9` or `A..F`.
 
-- **base=2** is mostly for debugging bitwise operations, digits can be `0` or `1`.
+-   **base=2** is mostly for debugging bitwise operations, digits can be `0` or `1`.
 
-- **base=36** is the maximum, digits can be `0..9` or `A..Z`. The whole latin alphabet is used to represent a number. A funny, but useful case for `36` is when we need to turn a long numeric identifier into something shorter, for example to make a short url. Can simply represent it in the numeral system with base `36`:
+-   **base=36** is the maximum, digits can be `0..9` or `A..Z`. The whole latin alphabet is used to represent a number. A funny, but useful case for `36` is when we need to turn a long numeric identifier into something shorter, for example to make a short url. Can simply represent it in the numeral system with base `36`:
 
-  <a href="number.html#"
-  <a href="number.html#"
+    <a href="number.html#"
+    <a href="number.html#"
 
-      alert( 123456..toString(36) ); // 2n9c
+        alert( 123456..toString(36) ); // 2n9c
 
 <span class="important__type">Two dots to call a method</span>
 
@@ -334,34 +334,34 @@ In most cases the distinction is unnoticeable, because operators are suited to t
 
 Remember these two special numeric values?
 
-- `Infinity` (and `-Infinity`) is a special numeric value that is greater (less) than anything.
-- `NaN` represents an error.
+-   `Infinity` (and `-Infinity`) is a special numeric value that is greater (less) than anything.
+-   `NaN` represents an error.
 
 They belong to the type `number`, but are not “normal” numbers, so there are special functions to check for them:
 
-- `isNaN(value)` converts its argument to a number and then tests it for being `NaN`:
+-   `isNaN(value)` converts its argument to a number and then tests it for being `NaN`:
 
-  <a href="number.html#"
-  <a href="number.html#"
+    <a href="number.html#"
+    <a href="number.html#"
 
-      alert( isNaN(NaN) ); // true
-      alert( isNaN("str") ); // true
+        alert( isNaN(NaN) ); // true
+        alert( isNaN("str") ); // true
 
-  But do we need this function? Can’t we just use the comparison `=== NaN`? Sorry, but the answer is no. The value `NaN` is unique in that it does not equal anything, including itself:
+    But do we need this function? Can’t we just use the comparison `=== NaN`? Sorry, but the answer is no. The value `NaN` is unique in that it does not equal anything, including itself:
 
-  <a href="number.html#"
-  <a href="number.html#"
+    <a href="number.html#"
+    <a href="number.html#"
 
-      alert( NaN === NaN ); // false
+        alert( NaN === NaN ); // false
 
-- `isFinite(value)` converts its argument to a number and returns `true` if it’s a regular number, not `NaN/Infinity/-Infinity`:
+-   `isFinite(value)` converts its argument to a number and returns `true` if it’s a regular number, not `NaN/Infinity/-Infinity`:
 
-  <a href="number.html#"
-  <a href="number.html#"
+    <a href="number.html#"
+    <a href="number.html#"
 
-      alert( isFinite("15") ); // true
-      alert( isFinite("str") ); // false, because a special value: NaN
-      alert( isFinite(Infinity) ); // false, because a special value: Infinity
+        alert( isFinite("15") ); // true
+        alert( isFinite("str") ); // false, because a special value: NaN
+        alert( isFinite(Infinity) ); // false, because a special value: Infinity
 
 Sometimes `isFinite` is used to validate whether a string value is a regular number:
 
@@ -470,27 +470,27 @@ There are more functions and constants in `Math` object, including trigonometry,
 
 To write numbers with many zeroes:
 
-- Append `"e"` with the zeroes count to the number. Like: `123e6` is the same as `123` with 6 zeroes `123000000`.
-- A negative number after `"e"` causes the number to be divided by 1 with given zeroes. E.g. `123e-6` means `0.000123` (`123` millionths).
+-   Append `"e"` with the zeroes count to the number. Like: `123e6` is the same as `123` with 6 zeroes `123000000`.
+-   A negative number after `"e"` causes the number to be divided by 1 with given zeroes. E.g. `123e-6` means `0.000123` (`123` millionths).
 
 For different numeral systems:
 
-- Can write numbers directly in hex (`0x`), octal (`0o`) and binary (`0b`) systems.
-- `parseInt(str, base)` parses the string `str` into an integer in numeral system with given `base`, `2 ≤ base ≤ 36`.
-- `num.toString(base)` converts a number to a string in the numeral system with the given `base`.
+-   Can write numbers directly in hex (`0x`), octal (`0o`) and binary (`0b`) systems.
+-   `parseInt(str, base)` parses the string `str` into an integer in numeral system with given `base`, `2 ≤ base ≤ 36`.
+-   `num.toString(base)` converts a number to a string in the numeral system with the given `base`.
 
 For converting values like `12pt` and `100px` to a number:
 
-- Use `parseInt/parseFloat` for the “soft” conversion, which reads a number from a string and then returns the value they could read before the error.
+-   Use `parseInt/parseFloat` for the “soft” conversion, which reads a number from a string and then returns the value they could read before the error.
 
 For fractions:
 
-- Round using `Math.floor`, `Math.ceil`, `Math.trunc`, `Math.round` or `num.toFixed(precision)`.
-- Make sure to remember there’s a loss of precision when working with fractions.
+-   Round using `Math.floor`, `Math.ceil`, `Math.trunc`, `Math.round` or `num.toFixed(precision)`.
+-   Make sure to remember there’s a loss of precision when working with fractions.
 
 More mathematical functions:
 
-- See the [Math](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Math) object when you need them. The library is very small, but can cover basic needs.
+-   See the [Math](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Math) object when you need them. The library is very small, but can cover basic needs.
 
 ## <a href="number.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -793,29 +793,29 @@ All intervals have the same length, making the final distribution uniform.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="number.html#more-ways-to-write-a-number" class="sidebar__link">More ways to write a number</a>
-- <a href="number.html#tostring-base" class="sidebar__link">toString(base)</a>
-- <a href="number.html#rounding" class="sidebar__link">Rounding</a>
-- <a href="number.html#imprecise-calculations" class="sidebar__link">Imprecise calculations</a>
-- <a href="number.html#tests-isfinite-and-isnan" class="sidebar__link">Tests: isFinite and isNaN</a>
-- <a href="number.html#parseint-and-parsefloat" class="sidebar__link">parseInt and parseFloat</a>
-- <a href="number.html#other-math-functions" class="sidebar__link">Other math functions</a>
-- <a href="number.html#summary" class="sidebar__link">Summary</a>
+-   <a href="number.html#more-ways-to-write-a-number" class="sidebar__link">More ways to write a number</a>
+-   <a href="number.html#tostring-base" class="sidebar__link">toString(base)</a>
+-   <a href="number.html#rounding" class="sidebar__link">Rounding</a>
+-   <a href="number.html#imprecise-calculations" class="sidebar__link">Imprecise calculations</a>
+-   <a href="number.html#tests-isfinite-and-isnan" class="sidebar__link">Tests: isFinite and isNaN</a>
+-   <a href="number.html#parseint-and-parsefloat" class="sidebar__link">parseInt and parseFloat</a>
+-   <a href="number.html#other-math-functions" class="sidebar__link">Other math functions</a>
+-   <a href="number.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="number.html#tasks" class="sidebar__link">Tasks (6)</a>
-- <a href="number.html#comments" class="sidebar__link">Comments</a>
+-   <a href="number.html#tasks" class="sidebar__link">Tasks (6)</a>
+-   <a href="number.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -823,7 +823,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/02-number" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

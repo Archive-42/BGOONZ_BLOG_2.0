@@ -15,17 +15,17 @@ For instance:
 ```html run height=100
 <!DOCTYPE html>
 <html>
-  <body>
-    <p>Before the script...</p>
+    <body>
+        <p>Before the script...</p>
 
-    *!*
-    <script>
-      alert("Hello, world!");
-    </script>
-    */!*
+        *!*
+        <script>
+            alert('Hello, world!');
+        </script>
+        */!*
 
-    <p>...After the script.</p>
-  </body>
+        <p>...After the script.</p>
+    </body>
 </html>
 ```
 
@@ -109,7 +109,7 @@ The example above can be split into two scripts to work:
 ```html
 <script src="file.js"></script>
 <script>
-  alert(1);
+    alert(1);
 </script>
 ```
 

@@ -9,11 +9,11 @@ Write the function `sortByAge(users)` that gets an array of objects with the `ag
 For instance:
 
 ```js no-beautify
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+let john = { name: 'John', age: 25 };
+let pete = { name: 'Pete', age: 30 };
+let mary = { name: 'Mary', age: 28 };
 
-let arr = [ pete, john, mary ];
+let arr = [pete, john, mary];
 
 sortByAge(arr);
 

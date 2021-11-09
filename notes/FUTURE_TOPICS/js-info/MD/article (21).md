@@ -35,35 +35,35 @@ alert(sum(1, 2)); // 3
 
 As you can, see `(a, b) => a + b` means a function that accepts two arguments named `a` and `b`. Upon the execution, it evaluates the expression `a + b` and returns the result.
 
-- If we have only one argument, then parentheses around parameters can be omitted, making that even shorter.
+-   If we have only one argument, then parentheses around parameters can be omitted, making that even shorter.
 
-  For example:
+    For example:
 
-  ```js run
-  *!*
-  let double = n => n * 2;
-  // roughly the same as: let double = function(n) { return n * 2 }
-  */!*
+    ```js run
+    *!*
+    let double = n => n * 2;
+    // roughly the same as: let double = function(n) { return n * 2 }
+    */!*
 
-  alert( double(3) ); // 6
-  ```
+    alert( double(3) ); // 6
+    ```
 
-- If there are no arguments, parentheses will be empty (but they should be present):
+-   If there are no arguments, parentheses will be empty (but they should be present):
 
-  ```js run
-  let sayHi = () => alert("Hello!");
+    ```js run
+    let sayHi = () => alert('Hello!');
 
-  sayHi();
-  ```
+    sayHi();
+    ```
 
 Arrow functions can be used in the same way as Function Expressions.
 
 For instance, to dynamically create a function:
 
 ```js run
-let age = prompt("What is your age?", 18);
+let age = prompt('What is your age?', 18);
 
-let welcome = age < 18 ? () => alert("Hello") : () => alert("Greetings!");
+let welcome = age < 18 ? () => alert('Hello') : () => alert('Greetings!');
 
 welcome();
 ```
