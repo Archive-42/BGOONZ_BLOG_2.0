@@ -1,8 +1,8 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="animate-ball.html"
-  animate-ball"
+-   <a href="https://ar.javascript.info/"
+-   <a href="animate-ball.html"
+    animate-ball"
 
 animate-ballanimate-ball"
 

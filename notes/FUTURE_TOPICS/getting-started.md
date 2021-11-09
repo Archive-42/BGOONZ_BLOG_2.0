@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/getting-started"
-- <a href="getting-started.html"
-- <a href="https://es.javascript.info/getting-started"
-- <a href="https://fr.javascript.info/getting-started"
-- <a href="https://it.javascript.info/getting-started"
-  getting-started"
+-   <a href="https://ar.javascript.info/getting-started"
+-   <a href="getting-started.html"
+-   <a href="https://es.javascript.info/getting-started"
+-   <a href="https://fr.javascript.info/getting-started"
+-   <a href="https://it.javascript.info/getting-started"
+    getting-started"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/getting-started"
-- <a href=getting-started"
-- <a href="https://tr.javascript.info/getting-started"
-- <a href="https://zh.javascript.info/getting-started"
+-   <a href="https://ko.javascript.info/getting-started"
+-   <a href=getting-started"
+-   <a href="https://tr.javascript.info/getting-started"
+-   <a href="https://zh.javascript.info/getting-started"
 
 We want to make this open-source project available for people all around the world.
 
@@ -54,20 +54,20 @@ About the JavaScript language and the environment to develop with it.
 
 #### Sibling chapters
 
-- <a href="getting-started.html" class="sidebar__link">An introduction</a>
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
-- <a href="code-quality.html" class="sidebar__link">Code quality</a>
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
-- <a href="data-types.html" class="sidebar__link">Data types</a>
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
-- <a href="object-properties.html" class="sidebar__link">Object properties configuration</a>
-- <a href="prototypes.html" class="sidebar__link">Prototypes, inheritance</a>
-- <a href="classes.html" class="sidebar__link">Classes</a>
-- <a href="error-handling.html" class="sidebar__link">Error handling</a>
-- <a href="async.html" class="sidebar__link">Promises, async/await</a>
-- <a href="generators-iterators.html" class="sidebar__link">Generators, advanced iteration</a>
-- <a href="modules.html" class="sidebar__link">Modules</a>
-- <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="getting-started.html" class="sidebar__link">An introduction</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="code-quality.html" class="sidebar__link">Code quality</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="object-properties.html" class="sidebar__link">Object properties configuration</a>
+-   <a href="prototypes.html" class="sidebar__link">Prototypes, inheritance</a>
+-   <a href="classes.html" class="sidebar__link">Classes</a>
+-   <a href="error-handling.html" class="sidebar__link">Error handling</a>
+-   <a href="async.html" class="sidebar__link">Promises, async/await</a>
+-   <a href="generators-iterators.html" class="sidebar__link">Generators, advanced iteration</a>
+-   <a href="modules.html" class="sidebar__link">Modules</a>
+-   <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
 
 Share
 
@@ -75,7 +75,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/01-getting-started" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

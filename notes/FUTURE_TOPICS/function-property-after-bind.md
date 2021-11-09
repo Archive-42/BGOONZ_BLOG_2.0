@@ -2,8 +2,8 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="function-property-after-bind.html"
-  /function-property-after-bind"
+-   <a href="function-property-after-bind.html"
+    /function-property-after-bind"
 
 function-property-after-bindfunction-property-after-bind"
 

@@ -2,19 +2,19 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="destructuring-assignment.html"
-- <a href="https://es.javascript.info/destructuring-assignment"
-- <a href="https://fr.javascript.info/destructuring-assignment"
-- <a href="https://it.javascript.info/destructuring-assignment"
-  destructuring-assignment"
+-   <a href="destructuring-assignment.html"
+-   <a href="https://es.javascript.info/destructuring-assignment"
+-   <a href="https://fr.javascript.info/destructuring-assignment"
+-   <a href="https://it.javascript.info/destructuring-assignment"
+    destructuring-assignment"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/destructuring-assignment"
-- <a href=destructuring-assignment"
-- <a href="https://tr.javascript.info/destructuring-assignment"
-- <a href="https://zh.javascript.info/destructuring-assignment"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/destructuring-assignment"
+-   <a href=destructuring-assignment"
+-   <a href="https://tr.javascript.info/destructuring-assignment"
+-   <a href="https://zh.javascript.info/destructuring-assignment"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -36,8 +36,8 @@ tutorial/map.html" class="map">
 
 The two most used data structures in JavaScript are `Object` and `Array`.
 
-- Objects allow us to create a single entity that stores data items by key.
-- Arrays allow us to gather data items into an ordered list.
+-   Objects allow us to create a single entity that stores data items by key.
+-   Arrays allow us to gather data items into an ordered list.
 
 Although, when we pass those to a function, it may need not an object/array as a whole. It may need individual pieces.
 
@@ -570,23 +570,23 @@ In the code above, the whole arguments object is `{}` by default, so there’s a
 
 ## <a href="destructuring-assignment.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- Destructuring assignment allows for instantly mapping an object or array onto many variables.
+-   Destructuring assignment allows for instantly mapping an object or array onto many variables.
 
-- The full object syntax:
+-   The full object syntax:
 
-      let {prop : varName = default, ...rest} = object
+        let {prop : varName = default, ...rest} = object
 
-  This means that property `prop` should go into the variable `varName` and, if no such property exists, then the `default` value should be used.
+    This means that property `prop` should go into the variable `varName` and, if no such property exists, then the `default` value should be used.
 
-  Object properties that have no mapping are copied to the `rest` object.
+    Object properties that have no mapping are copied to the `rest` object.
 
-- The full array syntax:
+-   The full array syntax:
 
-      let [item1 = default, item2, ...rest] = array
+        let [item1 = default, item2, ...rest] = array
 
-  The first item goes to `item1`; the second goes into `item2`, all the rest makes the array `rest`.
+    The first item goes to `item1`; the second goes into `item2`, all the rest makes the array `rest`.
 
-- It’s possible to extract data from nested arrays/objects, for that the left side must have the same structure as the right one.
+-   It’s possible to extract data from nested arrays/objects, for that the left side must have the same structure as the right one.
 
 ## <a href="destructuring-assignment.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -605,9 +605,9 @@ We have an object:
 
 Write the destructuring assignment that reads:
 
-- `name` property into the variable `name`.
-- `years` property into the variable `age`.
-- `isAdmin` property into the variable `isAdmin` (false, if no such property)
+-   `name` property into the variable `name`.
+-   `years` property into the variable `age`.
+-   `isAdmin` property into the variable `isAdmin` (false, if no such property)
 
 Here’s an example of the values after your assignment:
 
@@ -652,8 +652,8 @@ There is a `salaries` object:
 
 Create the function `topSalary(salaries)` that returns the name of the top-paid person.
 
-- If `salaries` is empty, it should return `null`.
-- If there are multiple top-paid persons, return any of them.
+-   If `salaries` is empty, it should return `null`.
+-   If there are multiple top-paid persons, return any of them.
 
 P.S. Use `Object.entries` and destructuring to iterate over key/value pairs.
 
@@ -688,26 +688,26 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="destructuring-assignment.html#array-destructuring" class="sidebar__link">Array destructuring</a>
-- <a href="destructuring-assignment.html#object-destructuring" class="sidebar__link">Object destructuring</a>
-- <a href="destructuring-assignment.html#nested-destructuring" class="sidebar__link">Nested destructuring</a>
-- <a href="destructuring-assignment.html#smart-function-parameters" class="sidebar__link">Smart function parameters</a>
-- <a href="destructuring-assignment.html#summary" class="sidebar__link">Summary</a>
+-   <a href="destructuring-assignment.html#array-destructuring" class="sidebar__link">Array destructuring</a>
+-   <a href="destructuring-assignment.html#object-destructuring" class="sidebar__link">Object destructuring</a>
+-   <a href="destructuring-assignment.html#nested-destructuring" class="sidebar__link">Nested destructuring</a>
+-   <a href="destructuring-assignment.html#smart-function-parameters" class="sidebar__link">Smart function parameters</a>
+-   <a href="destructuring-assignment.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="destructuring-assignment.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="destructuring-assignment.html#comments" class="sidebar__link">Comments</a>
+-   <a href="destructuring-assignment.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="destructuring-assignment.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -715,7 +715,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/10-destructuring-assignment" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

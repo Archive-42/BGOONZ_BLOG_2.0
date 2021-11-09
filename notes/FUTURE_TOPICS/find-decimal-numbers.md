@@ -1,8 +1,8 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="find-decimal-numbers.html"
-  /find-decimal-numbers"
+-   <a href="https://ar.javascript.info/"
+-   <a href="find-decimal-numbers.html"
+    /find-decimal-numbers"
 
 find-decimal-numbersfind-decimal-numbers"
 

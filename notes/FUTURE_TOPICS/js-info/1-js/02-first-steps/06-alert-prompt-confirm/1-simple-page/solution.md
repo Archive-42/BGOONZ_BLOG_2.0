@@ -1,7 +1,7 @@
 JavaScript-code:
 
 ```js demo run
-let name = prompt("What is your name?", "");
+let name = prompt('What is your name?', '');
 alert(name);
 ```
 
@@ -10,13 +10,13 @@ The full page:
 ```html
 <!DOCTYPE html>
 <html>
-  <body>
-    <script>
-      "use strict";
+    <body>
+        <script>
+            'use strict';
 
-      let name = prompt("What is your name?", "");
-      alert(name);
-    </script>
-  </body>
+            let name = prompt('What is your name?', '');
+            alert(name);
+        </script>
+    </body>
 </html>
 ```

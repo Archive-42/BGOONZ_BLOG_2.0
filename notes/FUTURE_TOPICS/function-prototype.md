@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/function-prototype"
-- <a href="function-prototype.html"
-- <a href="https://es.javascript.info/function-prototype"
-- <a href="https://fr.javascript.info/function-prototype"
-- <a href="https://it.javascript.info/function-prototype"
-  function-prototype"
+-   <a href="https://ar.javascript.info/function-prototype"
+-   <a href="function-prototype.html"
+-   <a href="https://es.javascript.info/function-prototype"
+-   <a href="https://fr.javascript.info/function-prototype"
+-   <a href="https://it.javascript.info/function-prototype"
+    function-prototype"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/function-prototype"
-- <a href=function-prototype"
-- <a href="https://tr.javascript.info/function-prototype"
-- <a href="https://zh.javascript.info/function-prototype"
+-   <a href="https://ko.javascript.info/function-prototype"
+-   <a href=function-prototype"
+-   <a href="https://tr.javascript.info/function-prototype"
+-   <a href="https://zh.javascript.info/function-prototype"
 
 We want to make this open-source project available for people all around the world.
 
@@ -184,9 +184,9 @@ In this chapter we briefly described the way of setting a `[[Prototype]]` for ob
 
 Everything is quite simple, just a few notes to make things clear:
 
-- The `F.prototype` property (don’t mistake it for `[[Prototype]]`) sets `[[Prototype]]` of new objects when `new F()` is called.
-- The value of `F.prototype` should be either an object or `null`: other values won’t work.
-- The `"prototype"` property only has such a special effect when set on a constructor function, and invoked with `new`.
+-   The `F.prototype` property (don’t mistake it for `[[Prototype]]`) sets `[[Prototype]]` of new objects when `new F()` is called.
+-   The value of `F.prototype` should be either an object or `null`: other values won’t work.
+-   The `"prototype"` property only has such a special effect when set on a constructor function, and invoked with `new`.
 
 On regular objects the `prototype` is nothing special:
 
@@ -371,23 +371,23 @@ Probably, that’s not what we want. We’d like to create `new User`, not `new 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="prototypes.html" class="sidebar__link">Prototypes, inheritance</a>
+-   <a href="prototypes.html" class="sidebar__link">Prototypes, inheritance</a>
 
 #### Lesson navigation
 
-- <a href="function-prototype.html#default-f-prototype-constructor-property" class="sidebar__link">Default F.prototype, constructor property</a>
-- <a href="function-prototype.html#summary" class="sidebar__link">Summary</a>
+-   <a href="function-prototype.html#default-f-prototype-constructor-property" class="sidebar__link">Default F.prototype, constructor property</a>
+-   <a href="function-prototype.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="function-prototype.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="function-prototype.html#comments" class="sidebar__link">Comments</a>
+-   <a href="function-prototype.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="function-prototype.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -395,7 +395,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/08-prototypes/02-function-prototype" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

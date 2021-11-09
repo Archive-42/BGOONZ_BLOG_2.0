@@ -1,7 +1,7 @@
 insert-after-head"
 
-- <a href="insert-after-head.html"
-  /insert-after-head"
+-   <a href="insert-after-head.html"
+    /insert-after-head"
 
 insert-after-head"
 "
@@ -85,9 +85,9 @@ As you can see, there’s only lookbehind part in this regexp.
 
 It works like this:
 
-- At every position in the text.
-- Check if it’s preceeded by `<body.*?>`.
-- If it’s so then we have the match.
+-   At every position in the text.
+-   Check if it’s preceeded by `<body.*?>`.
+-   If it’s so then we have the match.
 
 The tag `<body.*?>` won’t be returned. The result of this regexp is literally an empty string, but it matches only at positions preceeded by `<body.*?>`.
 

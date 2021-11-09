@@ -1,9 +1,9 @@
 check-login"
 
-- <a href="check-login.html"
-  check-login"
-  /check-login"
-  check-logincheck-login"
+-   <a href="check-login.html"
+    check-login"
+    /check-login"
+    check-logincheck-login"
 
 <!-- -->
 
@@ -26,9 +26,9 @@ If the visitor enters `"Admin"`, then `prompt` for a password, if the input is a
 
 The password is checked as follows:
 
-- If it equals “TheMaster”, then show “Welcome!”,
-- Another string – show “Wrong password”,
-- For an empty string or cancelled input, show “Canceled”
+-   If it equals “TheMaster”, then show “Welcome!”,
+-   Another string – show “Wrong password”,
+-   For an empty string or cancelled input, show “Canceled”
 
 The schema:
 

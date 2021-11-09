@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="focus-blur.html"
-- <a href="https://es.javascript.info/focus-blur"
-- <a href="https://fr.javascript.info/focus-blur"
-- <a href="https://it.javascript.info/focus-blur"
-  focus-blur"
+-   <a href="focus-blur.html"
+-   <a href="https://es.javascript.info/focus-blur"
+-   <a href="https://fr.javascript.info/focus-blur"
+-   <a href="https://it.javascript.info/focus-blur"
+    focus-blur"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/focus-blur"
-- <a href=focus-blur"
-- <a href="https://tr.javascript.info/focus-blur"
-- <a href="https://zh.javascript.info/focus-blur"
+-   <a href="https://ko.javascript.info/focus-blur"
+-   <a href=focus-blur"
+-   <a href="https://tr.javascript.info/focus-blur"
+-   <a href="https://zh.javascript.info/focus-blur"
 
 We want to make this open-source project available for people all around the world.
 
@@ -59,8 +59,8 @@ Let’s use them for validation of an input field.
 
 In the example below:
 
-- The `blur` handler checks if the field has an email entered, and if not – shows an error.
-- The `focus` handler hides the error message (on `blur` it will be checked again):
+-   The `blur` handler checks if the field has an email entered, and if not – shows an error.
+-   The `focus` handler hides the error message (on `blur` it will be checked again):
 
 <a href="focus-blur.html#" class="toolbar__button toolbar__button_run" title="show"></a>
 
@@ -138,8 +138,8 @@ A focus loss can occur for many reasons.
 
 One of them is when the visitor clicks somewhere else. But also JavaScript itself may cause it, for instance:
 
-- An `alert` moves focus to itself, so it causes the focus loss at the element (`blur` event), and when the `alert` is dismissed, the focus comes back (`focus` event).
-- If an element is removed from DOM, then it also causes the focus loss. If it is reinserted later, then the focus doesn’t return.
+-   An `alert` moves focus to itself, so it causes the focus loss at the element (`blur` event), and when the `alert` is dismissed, the focus comes back (`focus` event).
+-   If an element is removed from DOM, then it also causes the focus loss. If it is reinserted later, then the focus doesn’t return.
 
 These features sometimes cause `focus/blur` handlers to misbehave – to trigger when they are not needed.
 
@@ -165,11 +165,11 @@ Elements without matching `tabindex` are switched in the document source order (
 
 There are two special values:
 
-- `tabindex="0"` puts an element among those without `tabindex`. That is, when we switch elements, elements with `tabindex=0` go after elements with `tabindex ≥ 1`.
+-   `tabindex="0"` puts an element among those without `tabindex`. That is, when we switch elements, elements with `tabindex=0` go after elements with `tabindex ≥ 1`.
 
-  Usually it’s used to make an element focusable, but keep the default switching order. To make an element a part of the form on par with `<input>`.
+    Usually it’s used to make an element focusable, but keep the default switching order. To make an element a part of the form on par with `<input>`.
 
-- `tabindex="-1"` allows only programmatic focusing on an element. The Tab key ignores such elements, but method `elem.focus()` works.
+-   `tabindex="-1"` allows only programmatic focusing on an element. The Tab key ignores such elements, but method `elem.focus()` works.
 
 For instance, here’s a list. Click the first item and press Tab:
 
@@ -251,8 +251,8 @@ Events `focus` and `blur` trigger on an element focusing/losing focus.
 
 Their specials are:
 
-- They do not bubble. Can use capturing state instead or `focusin/focusout`.
-- Most elements do not support focus by default. Use `tabindex` to make anything focusable.
+-   They do not bubble. Can use capturing state instead or `focusin/focusout`.
+-   Most elements do not support focus by default. Use `tabindex` to make anything focusable.
 
 The current focused element is available as `document.activeElement`.
 
@@ -286,10 +286,10 @@ solution
 
 Make table cells editable on click.
 
-- On click – the cell should become “editable” (textarea appears inside), we can change HTML. There should be no resize, all geometry should remain the same.
-- Buttons OK and CANCEL appear below the cell to finish/cancel the editing.
-- Only one cell may be editable at a moment. While a `<td>` is in “edit mode”, clicks on other cells are ignored.
-- The table may have many cells. Use event delegation.
+-   On click – the cell should become “editable” (textarea appears inside), we can change HTML. There should be no resize, all geometry should remain the same.
+-   Buttons OK and CANCEL appear below the cell to finish/cancel the editing.
+-   Only one cell may be editable at a moment. While a `<td>` is in “edit mode”, clicks on other cells are ignored.
+-   The table may have many cells. Use event delegation.
 
 The demo:
 
@@ -340,26 +340,26 @@ P.S. We also can replace `mouse.onclick` with `mouse.onfocus`.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
+-   <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
 
 #### Lesson navigation
 
-- <a href="focus-blur.html#events-focus-blur" class="sidebar__link">Events focus/blur</a>
-- <a href="focus-blur.html#methods-focus-blur" class="sidebar__link">Methods focus/blur</a>
-- <a href="focus-blur.html#allow-focusing-on-any-element-tabindex" class="sidebar__link">Allow focusing on any element: tabindex</a>
-- <a href="focus-blur.html#delegation-focusin-focusout" class="sidebar__link">Delegation: focusin/focusout</a>
-- <a href="focus-blur.html#summary" class="sidebar__link">Summary</a>
+-   <a href="focus-blur.html#events-focus-blur" class="sidebar__link">Events focus/blur</a>
+-   <a href="focus-blur.html#methods-focus-blur" class="sidebar__link">Methods focus/blur</a>
+-   <a href="focus-blur.html#allow-focusing-on-any-element-tabindex" class="sidebar__link">Allow focusing on any element: tabindex</a>
+-   <a href="focus-blur.html#delegation-focusin-focusout" class="sidebar__link">Delegation: focusin/focusout</a>
+-   <a href="focus-blur.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="focus-blur.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="focus-blur.html#comments" class="sidebar__link">Comments</a>
+-   <a href="focus-blur.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="focus-blur.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -367,7 +367,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/4-forms-controls/2-focus-blur" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

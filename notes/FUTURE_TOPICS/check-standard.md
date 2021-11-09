@@ -1,9 +1,9 @@
 check-standard"
 
-- <a href="check-standard.html"
-  check-standard"
-  /check-standard"
-  check-standardcheck-standard"
+-   <a href="check-standard.html"
+    check-standard"
+    /check-standard"
+    check-standardcheck-standard"
 
 <!-- -->
 

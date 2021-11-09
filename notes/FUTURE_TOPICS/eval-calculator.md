@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="eval-calculator.html"
-  /eval-calculator"
-  /eval-calculator"
-  eval-calculatoreval-calculator"
+-   <a href="https://ar.javascript.info/"
+-   <a href="eval-calculator.html"
+    /eval-calculator"
+    /eval-calculator"
+    eval-calculatoreval-calculator"
 
 <!-- -->
 

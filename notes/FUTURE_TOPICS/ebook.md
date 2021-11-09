@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="index.html"
-- <a href="https://es.javascript.info/"
+-   <a href="index.html"
+-   <a href="https://es.javascript.info/"
 
-- <a href="https://it.javascript.info/"
-  "
+-   <a href="https://it.javascript.info/"
+    "
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href="
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/"
+-   <a href="https://ko.javascript.info/"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/"
 
 We want to make this open-source project available for people all around the world.
 
@@ -89,17 +89,17 @@ The download link will be sent to this address after payment.
 
 ## Select the payment method, please
 
-- ### Stripe
+-   ### Stripe
 
-  <span class="pay-method__cards"><img src="pay-methods/cards/visa.svg" alt="visa" class="pay-method__card" /><img src="pay-methods/cards/mastercard.svg" alt="mastercard" class="pay-method__card" /><img src="pay-methods/cards/diners.svg" alt="diners" class="pay-method__card" /><img src="pay-methods/cards/amex.svg" alt="amex" class="pay-method__card" /><img src="pay-methods/cards/unionpay.svg" alt="unionpay" class="pay-method__card" /><img src="pay-methods/cards/jcb.svg" alt="jcb" class="pay-method__card" /></span>
+    <span class="pay-method__cards"><img src="pay-methods/cards/visa.svg" alt="visa" class="pay-method__card" /><img src="pay-methods/cards/mastercard.svg" alt="mastercard" class="pay-method__card" /><img src="pay-methods/cards/diners.svg" alt="diners" class="pay-method__card" /><img src="pay-methods/cards/amex.svg" alt="amex" class="pay-method__card" /><img src="pay-methods/cards/unionpay.svg" alt="unionpay" class="pay-method__card" /><img src="pay-methods/cards/jcb.svg" alt="jcb" class="pay-method__card" /></span>
 
-- <img src="pay-methods/pay-paypal.svg" alt="Paypal" class="pay-method__logo" />
+-   <img src="pay-methods/pay-paypal.svg" alt="Paypal" class="pay-method__logo" />
 
 <span class="button__text">Continue</span>
 
 By pressing the button 'Continue' you agree to our [terms](terms.html) and [privacy policy](privacy.html).
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

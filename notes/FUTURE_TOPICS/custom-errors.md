@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/custom-errors"
-- <a href="custom-errors.html"
-- <a href="https://es.javascript.info/custom-errors"
-- <a href="https://fr.javascript.info/custom-errors"
-- <a href="https://it.javascript.info/custom-errors"
-  custom-errors"
+-   <a href="https://ar.javascript.info/custom-errors"
+-   <a href="custom-errors.html"
+-   <a href="https://es.javascript.info/custom-errors"
+-   <a href="https://fr.javascript.info/custom-errors"
+-   <a href="https://it.javascript.info/custom-errors"
+    custom-errors"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/custom-errors"
-- <a href=custom-errors"
-- <a href="https://tr.javascript.info/custom-errors"
-- <a href="https://zh.javascript.info/custom-errors"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/custom-errors"
+-   <a href=custom-errors"
+-   <a href="https://tr.javascript.info/custom-errors"
+-   <a href="https://zh.javascript.info/custom-errors"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -340,9 +340,9 @@ The approach is called “wrapping exceptions”, because we take “low level�
 
 ## <a href="custom-errors.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- We can inherit from `Error` and other built-in error classes normally. We just need to take care of the `name` property and don’t forget to call `super`.
-- We can use `instanceof` to check for particular errors. It also works with inheritance. But sometimes we have an error object coming from a 3rd-party library and there’s no easy way to get its class. Then `name` property can be used for such checks.
-- Wrapping exceptions is a widespread technique: a function handles low-level exceptions and creates higher-level errors instead of various low-level ones. Low-level exceptions sometimes become properties of that object like `err.cause` in the examples above, but that’s not strictly required.
+-   We can inherit from `Error` and other built-in error classes normally. We just need to take care of the `name` property and don’t forget to call `super`.
+-   We can use `instanceof` to check for particular errors. It also works with inheritance. But sometimes we have an error object coming from a 3rd-party library and there’s no easy way to get its class. Then `name` property can be used for such checks.
+-   Wrapping exceptions is a widespread technique: a function handles low-level exceptions and creates higher-level errors instead of various low-level ones. Low-level exceptions sometimes become properties of that object like `err.cause` in the examples above, but that’s not strictly required.
 
 ## <a href="custom-errors.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -397,25 +397,25 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="error-handling.html" class="sidebar__link">Error handling</a>
+-   <a href="error-handling.html" class="sidebar__link">Error handling</a>
 
 #### Lesson navigation
 
-- <a href="custom-errors.html#extending-error" class="sidebar__link">Extending Error</a>
-- <a href="custom-errors.html#further-inheritance" class="sidebar__link">Further inheritance</a>
-- <a href="custom-errors.html#wrapping-exceptions" class="sidebar__link">Wrapping exceptions</a>
-- <a href="custom-errors.html#summary" class="sidebar__link">Summary</a>
+-   <a href="custom-errors.html#extending-error" class="sidebar__link">Extending Error</a>
+-   <a href="custom-errors.html#further-inheritance" class="sidebar__link">Further inheritance</a>
+-   <a href="custom-errors.html#wrapping-exceptions" class="sidebar__link">Wrapping exceptions</a>
+-   <a href="custom-errors.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="custom-errors.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="custom-errors.html#comments" class="sidebar__link">Comments</a>
+-   <a href="custom-errors.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="custom-errors.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -423,7 +423,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/10-error-handling/2-custom-errors" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

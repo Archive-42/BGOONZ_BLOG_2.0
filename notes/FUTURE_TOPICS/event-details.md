@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/event-details"
-- <a href="event-details.html"
-- <a href="https://es.javascript.info/event-details"
+-   <a href="https://ar.javascript.info/event-details"
+-   <a href="event-details.html"
+-   <a href="https://es.javascript.info/event-details"
 
-- <a href="https://it.javascript.info/event-details"
-  event-details"
+-   <a href="https://it.javascript.info/event-details"
+    event-details"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/event-details"
-- <a href=event-details"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/event-details"
+-   <a href="https://ko.javascript.info/event-details"
+-   <a href=event-details"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/event-details"
 
 We want to make this open-source project available for people all around the world.
 
@@ -56,12 +56,12 @@ Here we cover most important user interface events and how to work with them.
 
 #### Sibling chapters
 
-- <a href="document.html" class="sidebar__link">Document</a>
-- <a href="events.html" class="sidebar__link">Introduction to Events</a>
-- <a href="event-details.html" class="sidebar__link">UI Events</a>
-- <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
-- <a href="loading.html" class="sidebar__link">Document and resource loading</a>
-- <a href="ui-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="events.html" class="sidebar__link">Introduction to Events</a>
+-   <a href="event-details.html" class="sidebar__link">UI Events</a>
+-   <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
+-   <a href="loading.html" class="sidebar__link">Document and resource loading</a>
+-   <a href="ui-misc.html" class="sidebar__link">Miscellaneous</a>
 
 Share
 
@@ -69,7 +69,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/3-event-details" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

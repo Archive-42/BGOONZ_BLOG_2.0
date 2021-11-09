@@ -1,9 +1,9 @@
 alert-and"
 
-- <a href="alert-and.html"
-  alert-and"
-  /alert-and"
-  alert-andalert-and"
+-   <a href="alert-and.html"
+    alert-and"
+    /alert-and"
+    alert-andalert-and"
 
 <!-- -->
 

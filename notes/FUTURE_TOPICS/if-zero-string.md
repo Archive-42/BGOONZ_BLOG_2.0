@@ -1,9 +1,9 @@
 if-zero-string"
 
-- <a href="if-zero-string.html"
-  /if-zero-string"
-  /if-zero-string"
-  if-zero-stringif-zero-string"
+-   <a href="if-zero-string.html"
+    /if-zero-string"
+    /if-zero-string"
+    if-zero-stringif-zero-string"
 
 <!-- -->
 

@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/call-apply-decorators"
-- <a href="call-apply-decorators.html"
-- <a href="https://es.javascript.info/call-apply-decorators"
-- <a href="https://fr.javascript.info/call-apply-decorators"
-- <a href="https://it.javascript.info/call-apply-decorators"
-  call-apply-decorators"
+-   <a href="https://ar.javascript.info/call-apply-decorators"
+-   <a href="call-apply-decorators.html"
+-   <a href="https://es.javascript.info/call-apply-decorators"
+-   <a href="https://fr.javascript.info/call-apply-decorators"
+-   <a href="https://it.javascript.info/call-apply-decorators"
+    call-apply-decorators"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/call-apply-decorators"
-- <a href=call-apply-decorators"
-- <a href="https://tr.javascript.info/call-apply-decorators"
-- <a href="https://zh.javascript.info/call-apply-decorators"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/call-apply-decorators"
+-   <a href=call-apply-decorators"
+-   <a href="https://tr.javascript.info/call-apply-decorators"
+-   <a href="https://zh.javascript.info/call-apply-decorators"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -89,9 +89,9 @@ The result of `cachingDecorator(func)` is a “wrapper”: `function(x)` that �
 
 To summarize, there are several benefits of using a separate `cachingDecorator` instead of altering the code of `slow` itself:
 
-- The `cachingDecorator` is reusable. We can apply it to another function.
-- The caching logic is separate, it did not increase the complexity of `slow` itself (if there was any).
-- We can combine multiple decorators if needed (other decorators will follow).
+-   The `cachingDecorator` is reusable. We can apply it to another function.
+-   The caching logic is separate, it did not increase the complexity of `slow` itself (if there was any).
+-   We can combine multiple decorators if needed (other decorators will follow).
 
 ## <a href="call-apply-decorators.html#using-func-call-for-the-context" id="using-func-call-for-the-context" class="main__anchor">Using “func.call” for the context</a>
 
@@ -300,8 +300,8 @@ Now it works with any number of arguments (though the hash function would also n
 
 There are two changes:
 
-- In the line `(*)` it calls `hash` to create a single key from `arguments`. Here we use a simple “joining” function that turns arguments `(3, 5)` into the key `"3,5"`. More complex cases may require other hashing functions.
-- Then `(**)` uses `func.call(this, ...arguments)` to pass both the context and all arguments the wrapper got (not just the first one) to the original function.
+-   In the line `(*)` it calls `hash` to create a single key from `arguments`. Here we use a simple “joining” function that turns arguments `(3, 5)` into the key `"3,5"`. More complex cases may require other hashing functions.
+-   Then `(**)` uses `func.call(this, ...arguments)` to pass both the context and all arguments the wrapper got (not just the first one) to the original function.
 
 ## <a href="call-apply-decorators.html#func-apply" id="func-apply" class="main__anchor">func.apply</a>
 
@@ -324,8 +324,8 @@ They perform the same call of `func` with given context and arguments.
 
 There’s only a subtle difference regarding `args`:
 
-- The spread syntax `...` allows to pass _iterable_ `args` as the list to `call`.
-- The `apply` accepts only _array-like_ `args`.
+-   The spread syntax `...` allows to pass _iterable_ `args` as the list to `call`.
+-   The `apply` accepts only _array-like_ `args`.
 
 …And for objects that are both iterable and array-like, such as a real array, we can use any of them, but `apply` will probably be faster, because most JavaScript engines internally optimize it better.
 
@@ -417,8 +417,8 @@ Decorators can be seen as “features” or “aspects” that can be added to a
 
 To implement `cachingDecorator`, we studied methods:
 
-- [func.call(context, arg1, arg2…)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) – calls `func` with given context and arguments.
-- [func.apply(context, args)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) – calls `func` passing `context` as `this` and array-like `args` into a list of arguments.
+-   [func.call(context, arg1, arg2…)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/call) – calls `func` with given context and arguments.
+-   [func.apply(context, args)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply) – calls `func` passing `context` as `this` and array-like `args` into a list of arguments.
 
 The generic _call forwarding_ is usually done with `apply`:
 
@@ -616,8 +616,8 @@ When it’s called multiple times, it passes the call to `f` at maximum once per
 
 The difference with debounce is that it’s completely different decorator:
 
-- `debounce` runs the function once after the “cooldown” period. Good for processing the final result.
-- `throttle` runs it not more often than given `ms` time. Good for regular updates that shouldn’t be very often.
+-   `debounce` runs the function once after the “cooldown” period. Good for processing the final result.
+-   `throttle` runs it not more often than given `ms` time. Good for regular updates that shouldn’t be very often.
 
 In other words, `throttle` is like a secretary that accepts phone calls, but bothers the boss (calls the actual `f`) not more often than once per `ms` milliseconds.
 
@@ -709,28 +709,28 @@ The 3rd step runs not `func`, but `wrapper`, because we not only need to execute
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="call-apply-decorators.html#transparent-caching" class="sidebar__link">Transparent caching</a>
-- <a href="call-apply-decorators.html#using-func-call-for-the-context" class="sidebar__link">Using “func.call” for the context</a>
-- <a href="call-apply-decorators.html#going-multi-argument" class="sidebar__link">Going multi-argument</a>
-- <a href="call-apply-decorators.html#func-apply" class="sidebar__link">func.apply</a>
-- <a href="call-apply-decorators.html#method-borrowing" class="sidebar__link">Borrowing a method</a>
-- <a href="call-apply-decorators.html#decorators-and-function-properties" class="sidebar__link">Decorators and function properties</a>
-- <a href="call-apply-decorators.html#summary" class="sidebar__link">Summary</a>
+-   <a href="call-apply-decorators.html#transparent-caching" class="sidebar__link">Transparent caching</a>
+-   <a href="call-apply-decorators.html#using-func-call-for-the-context" class="sidebar__link">Using “func.call” for the context</a>
+-   <a href="call-apply-decorators.html#going-multi-argument" class="sidebar__link">Going multi-argument</a>
+-   <a href="call-apply-decorators.html#func-apply" class="sidebar__link">func.apply</a>
+-   <a href="call-apply-decorators.html#method-borrowing" class="sidebar__link">Borrowing a method</a>
+-   <a href="call-apply-decorators.html#decorators-and-function-properties" class="sidebar__link">Decorators and function properties</a>
+-   <a href="call-apply-decorators.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="call-apply-decorators.html#tasks" class="sidebar__link">Tasks (4)</a>
-- <a href="call-apply-decorators.html#comments" class="sidebar__link">Comments</a>
+-   <a href="call-apply-decorators.html#tasks" class="sidebar__link">Tasks (4)</a>
+-   <a href="call-apply-decorators.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -738,7 +738,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/09-call-apply-decorators" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/first-steps"
-- <a href="first-steps.html"
-- <a href="https://es.javascript.info/first-steps"
-- <a href="https://fr.javascript.info/first-steps"
-- <a href="https://it.javascript.info/first-steps"
-  first-steps"
+-   <a href="https://ar.javascript.info/first-steps"
+-   <a href="first-steps.html"
+-   <a href="https://es.javascript.info/first-steps"
+-   <a href="https://fr.javascript.info/first-steps"
+-   <a href="https://it.javascript.info/first-steps"
+    first-steps"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/first-steps"
-- <a href=first-steps"
-- <a href="https://tr.javascript.info/first-steps"
-- <a href="https://zh.javascript.info/first-steps"
+-   <a href="https://ko.javascript.info/first-steps"
+-   <a href=first-steps"
+-   <a href="https://tr.javascript.info/first-steps"
+-   <a href="https://zh.javascript.info/first-steps"
 
 We want to make this open-source project available for people all around the world.
 
@@ -68,20 +68,20 @@ Let’s learn the fundamentals of script building.
 
 #### Sibling chapters
 
-- <a href="getting-started.html" class="sidebar__link">An introduction</a>
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
-- <a href="code-quality.html" class="sidebar__link">Code quality</a>
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
-- <a href="data-types.html" class="sidebar__link">Data types</a>
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
-- <a href="object-properties.html" class="sidebar__link">Object properties configuration</a>
-- <a href="prototypes.html" class="sidebar__link">Prototypes, inheritance</a>
-- <a href="classes.html" class="sidebar__link">Classes</a>
-- <a href="error-handling.html" class="sidebar__link">Error handling</a>
-- <a href="async.html" class="sidebar__link">Promises, async/await</a>
-- <a href="generators-iterators.html" class="sidebar__link">Generators, advanced iteration</a>
-- <a href="modules.html" class="sidebar__link">Modules</a>
-- <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="getting-started.html" class="sidebar__link">An introduction</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="code-quality.html" class="sidebar__link">Code quality</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="object-properties.html" class="sidebar__link">Object properties configuration</a>
+-   <a href="prototypes.html" class="sidebar__link">Prototypes, inheritance</a>
+-   <a href="classes.html" class="sidebar__link">Classes</a>
+-   <a href="error-handling.html" class="sidebar__link">Error handling</a>
+-   <a href="async.html" class="sidebar__link">Promises, async/await</a>
+-   <a href="generators-iterators.html" class="sidebar__link">Generators, advanced iteration</a>
+-   <a href="modules.html" class="sidebar__link">Modules</a>
+-   <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
 
 Share
 
@@ -89,7 +89,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

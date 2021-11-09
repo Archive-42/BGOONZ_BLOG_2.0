@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="hide-self-onclick.html"
-  /hide-self-onclick"
+-   <a href="hide-self-onclick.html"
+    /hide-self-onclick"
 
 hide-self-onclickhide-self-onclick"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  hide-self-onclick"
-- <a href="https://tr.javascript.info/"
-  hide-self-onclick"
+-   <a href="https://ko.javascript.info/"
+    hide-self-onclick"
+-   <a href="https://tr.javascript.info/"
+    hide-self-onclick"
 
 We want to make this open-source project available for people all around the world.
 

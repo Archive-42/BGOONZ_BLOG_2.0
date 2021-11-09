@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="find-html-colors-6hex.html"
-  /find-html-colors-6hex"
-  /find-html-colors-6hex"
-  find-html-colors-6hexfind-html-colors-6hex"
+-   <a href="https://ar.javascript.info/"
+-   <a href="find-html-colors-6hex.html"
+    /find-html-colors-6hex"
+    /find-html-colors-6hex"
+    find-html-colors-6hexfind-html-colors-6hex"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  find-html-colors-6hex"
-- <a href="https://tr.javascript.info/"
-  find-html-colors-6hex"
+-   <a href="https://ko.javascript.info/"
+    find-html-colors-6hex"
+-   <a href="https://tr.javascript.info/"
+    find-html-colors-6hex"
 
 We want to make this open-source project available for people all around the world.
 

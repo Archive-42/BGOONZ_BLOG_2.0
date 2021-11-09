@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="delay.html"
-  /delay"
-  /delay"
-  delaydelay"
+-   <a href="https://ar.javascript.info/"
+-   <a href="delay.html"
+    /delay"
+    /delay"
+    delaydelay"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  delay"
-  /delay"
-  delay"
+-   <a href="https://ko.javascript.info/"
+    delay"
+    /delay"
+    delay"
 
 k%2Fdelay"%2Fdelay" </a>
 

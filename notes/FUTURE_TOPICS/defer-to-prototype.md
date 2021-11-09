@@ -1,9 +1,9 @@
 defer-to-prototype"
 
-- <a href="defer-to-prototype.html"
-  /defer-to-prototype"
-  /defer-to-prototype"
-  defer-to-prototypedefer-to-prototype"
+-   <a href="defer-to-prototype.html"
+    /defer-to-prototype"
+    /defer-to-prototype"
+    defer-to-prototypedefer-to-prototype"
 
 <!-- -->
 

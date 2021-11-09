@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/javascript-specials"
-- <a href="javascript-specials.html"
-- <a href="https://es.javascript.info/javascript-specials"
-- <a href="https://fr.javascript.info/javascript-specials"
-- <a href="https://it.javascript.info/javascript-specials"
-  javascript-specials"
+-   <a href="https://ar.javascript.info/javascript-specials"
+-   <a href="javascript-specials.html"
+-   <a href="https://es.javascript.info/javascript-specials"
+-   <a href="https://fr.javascript.info/javascript-specials"
+-   <a href="https://it.javascript.info/javascript-specials"
+    javascript-specials"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/javascript-specials"
-- <a href=javascript-specials"
-- <a href="https://tr.javascript.info/javascript-specials"
-- <a href="https://zh.javascript.info/javascript-specials"
+-   <a href="https://ko.javascript.info/javascript-specials"
+-   <a href=javascript-specials"
+-   <a href="https://tr.javascript.info/javascript-specials"
+-   <a href="https://zh.javascript.info/javascript-specials"
 
 We want to make this open-source project available for people all around the world.
 
@@ -104,15 +104,15 @@ More in: [The modern mode, "use strict"](strict-mode.html).
 
 Can be declared using:
 
-- `let`
-- `const` (constant, can’t be changed)
-- `var` (old-style, will see later)
+-   `let`
+-   `const` (constant, can’t be changed)
+-   `var` (old-style, will see later)
 
 A variable name can include:
 
-- Letters and digits, but the first character may not be a digit.
-- Characters `$` and `_` are normal, on par with letters.
-- Non-Latin alphabets and hieroglyphs are also allowed, but commonly not used.
+-   Letters and digits, but the first character may not be a digit.
+-   Characters `$` and `_` are normal, on par with letters.
+-   Non-Latin alphabets and hieroglyphs are also allowed, but commonly not used.
 
 Variables are dynamically typed. They can store any value:
 
@@ -121,13 +121,13 @@ Variables are dynamically typed. They can store any value:
 
 There are 8 data types:
 
-- `number` for both floating-point and integer numbers,
-- `bigint` for integer numbers of arbitrary length,
-- `string` for strings,
-- `boolean` for logical values: `true/false`,
-- `null` – a type with a single value `null`, meaning “empty” or “does not exist”,
-- `undefined` – a type with a single value `undefined`, meaning “not assigned”,
-- `object` and `symbol` – for complex data structures and unique identifiers, we haven’t learnt them yet.
+-   `number` for both floating-point and integer numbers,
+-   `bigint` for integer numbers of arbitrary length,
+-   `string` for strings,
+-   `boolean` for logical values: `true/false`,
+-   `null` – a type with a single value `null`, meaning “empty” or “does not exist”,
+-   `undefined` – a type with a single value `undefined`, meaning “not assigned”,
+-   `object` and `symbol` – for complex data structures and unique identifiers, we haven’t learnt them yet.
 
 The `typeof` operator returns the type for a value, with two exceptions:
 
@@ -218,26 +218,26 @@ More in: [Basic operators, maths](operators.html), [Comparisons](comparison.html
 
 ## <a href="javascript-specials.html#loops" id="loops" class="main__anchor">Loops</a>
 
-- We covered 3 types of loops:
+-   We covered 3 types of loops:
 
-      // 1
-      while (condition) {
-        ...
-      }
+        // 1
+        while (condition) {
+          ...
+        }
 
-      // 2
-      do {
-        ...
-      } while (condition);
+        // 2
+        do {
+          ...
+        } while (condition);
 
-      // 3
-      for(let i = 0; i < 10; i++) {
-        ...
-      }
+        // 3
+        for(let i = 0; i < 10; i++) {
+          ...
+        }
 
-- The variable declared in `for(let...)` loop is visible only inside the loop. But we can also omit `let` and reuse an existing variable.
+-   The variable declared in `for(let...)` loop is visible only inside the loop. But we can also omit `let` and reuse an existing variable.
 
-- Directives `break/continue` allow to exit the whole loop/current iteration. Use labels to break nested loops.
+-   Directives `break/continue` allow to exit the whole loop/current iteration. Use labels to break nested loops.
 
 Details in: [Loops: while and for](while-for.html).
 
@@ -306,9 +306,9 @@ We covered three ways to create a function in JavaScript:
         // with a single argument
         let double = n => n * 2;
 
-- Functions may have local variables: those declared inside its body or its parameter list. Such variables are only visible inside the function.
-- Parameters can have default values: `function sum(a = 1, b = 2) {...}`.
-- Functions always return something. If there’s no `return` statement, then the result is `undefined`.
+-   Functions may have local variables: those declared inside its body or its parameter list. Such variables are only visible inside the function.
+-   Parameters can have default values: `function sum(a = 1, b = 2) {...}`.
+-   Functions always return something. If there’s no `return` statement, then the result is `undefined`.
 
 Details: see [Functions](function-basics.html), [Arrow functions, the basics](arrow-functions-basics.html).
 
@@ -326,29 +326,29 @@ That was a brief list of JavaScript features. As of now we’ve studied only bas
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="javascript-specials.html#code-structure" class="sidebar__link">Code structure</a>
-- <a href="javascript-specials.html#strict-mode" class="sidebar__link">Strict mode</a>
-- <a href="javascript-specials.html#variables" class="sidebar__link">Variables</a>
-- <a href="javascript-specials.html#interaction" class="sidebar__link">Interaction</a>
-- <a href="javascript-specials.html#operators" class="sidebar__link">Operators</a>
-- <a href="javascript-specials.html#loops" class="sidebar__link">Loops</a>
-- <a href="javascript-specials.html#the-switch-construct" class="sidebar__link">The “switch” construct</a>
-- <a href="javascript-specials.html#functions" class="sidebar__link">Functions</a>
-- <a href="javascript-specials.html#more-to-come" class="sidebar__link">More to come</a>
+-   <a href="javascript-specials.html#code-structure" class="sidebar__link">Code structure</a>
+-   <a href="javascript-specials.html#strict-mode" class="sidebar__link">Strict mode</a>
+-   <a href="javascript-specials.html#variables" class="sidebar__link">Variables</a>
+-   <a href="javascript-specials.html#interaction" class="sidebar__link">Interaction</a>
+-   <a href="javascript-specials.html#operators" class="sidebar__link">Operators</a>
+-   <a href="javascript-specials.html#loops" class="sidebar__link">Loops</a>
+-   <a href="javascript-specials.html#the-switch-construct" class="sidebar__link">The “switch” construct</a>
+-   <a href="javascript-specials.html#functions" class="sidebar__link">Functions</a>
+-   <a href="javascript-specials.html#more-to-come" class="sidebar__link">More to come</a>
 
-- <a href="javascript-specials.html#comments" class="sidebar__link">Comments</a>
+-   <a href="javascript-specials.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -356,7 +356,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/18-javascript-specials" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/default-browser-action"
-- <a href="default-browser-action.html"
-- <a href="https://es.javascript.info/default-browser-action"
-- <a href="https://fr.javascript.info/default-browser-action"
-- <a href="https://it.javascript.info/default-browser-action"
-  default-browser-action"
+-   <a href="https://ar.javascript.info/default-browser-action"
+-   <a href="default-browser-action.html"
+-   <a href="https://es.javascript.info/default-browser-action"
+-   <a href="https://fr.javascript.info/default-browser-action"
+-   <a href="https://it.javascript.info/default-browser-action"
+    default-browser-action"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/default-browser-action"
-- <a href=default-browser-action"
-- <a href="https://tr.javascript.info/default-browser-action"
-- <a href="https://zh.javascript.info/default-browser-action"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/default-browser-action"
+-   <a href=default-browser-action"
+-   <a href="https://tr.javascript.info/default-browser-action"
+-   <a href="https://zh.javascript.info/default-browser-action"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -37,9 +37,9 @@ Many events automatically lead to certain actions performed by the browser.
 
 For instance:
 
-- A click on a link – initiates navigation to its URL.
-- A click on a form submit button – initiates its submission to the server.
-- Pressing a mouse button over a text and moving it – selects the text.
+-   A click on a link – initiates navigation to its URL.
+-   A click on a form submit button – initiates its submission to the server.
+-   Pressing a mouse button over a text and moving it – selects the text.
 
 If we handle an event in JavaScript, we may not want the corresponding browser action to happen, and want to implement another behavior instead.
 
@@ -47,8 +47,8 @@ If we handle an event in JavaScript, we may not want the corresponding browser a
 
 There are two ways to tell the browser we don’t want it to act:
 
-- The main way is to use the `event` object. There’s a method `event.preventDefault()`.
-- If the handler is assigned using `on<event>` (not by `addEventListener`), then returning `false` also works the same.
+-   The main way is to use the `event` object. There’s a method `event.preventDefault()`.
+-   If the handler is assigned using `on<event>` (not by `addEventListener`), then returning `false` also works the same.
 
 In this HTML a click on a link doesn’t lead to navigation, browser doesn’t do anything:
 
@@ -84,8 +84,8 @@ Here’s how it looks with some CSS:
 
 Menu items are implemented as HTML-links `<a>`, not buttons `<button>`. There are several reasons to do so, for instance:
 
-- Many people like to use “right click” – “open in a new window”. If we use `<button>` or `<span>`, that doesn’t work.
-- Search engines follow `<a href="...">` links while indexing.
+-   Many people like to use “right click” – “open in a new window”. If we use `<button>` or `<span>`, that doesn’t work.
+-   Search engines follow `<a href="...">` links while indexing.
 
 So we use `<a>` in the markup. But normally we intend to handle clicks in JavaScript. So we should prevent the default browser action.
 
@@ -249,12 +249,12 @@ But then each piece of code that wants a context menu should know about that obj
 
 There are many default browser actions:
 
-- `mousedown` – starts the selection (move the mouse to select).
-- `click` on `<input type="checkbox">` – checks/unchecks the `input`.
-- `submit` – clicking an `<input type="submit">` or hitting Enter inside a form field causes this event to happen, and the browser submits the form after it.
-- `keydown` – pressing a key may lead to adding a character into a field, or other actions.
-- `contextmenu` – the event happens on a right-click, the action is to show the browser context menu.
-- …there are more…
+-   `mousedown` – starts the selection (move the mouse to select).
+-   `click` on `<input type="checkbox">` – checks/unchecks the `input`.
+-   `submit` – clicking an `<input type="submit">` or hitting Enter inside a form field causes this event to happen, and the browser submits the form after it.
+-   `keydown` – pressing a key may lead to adding a character into a field, or other actions.
+-   `contextmenu` – the event happens on a right-click, the action is to show the browser context menu.
+-   …there are more…
 
 All the default actions can be prevented if we want to handle the event exclusively by JavaScript.
 
@@ -355,8 +355,8 @@ Like this:
 
 Details:
 
-- HTML inside the element may be loaded or regenerated dynamically at any time, so we can’t find all links and put handlers on them. Use event delegation.
-- The content may have nested tags. Inside links too, like `<a href=".."><i>...</i></a>`.
+-   HTML inside the element may be loaded or regenerated dynamically at any time, so we can’t find all links and put handlers on them. Use event delegation.
+-   The content may have nested tags. Inside links too, like `<a href=".."><i>...</i></a>`.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/2q3DhC51iVEYU3Ht?p=preview)
 
@@ -400,25 +400,25 @@ The solution is to assign the handler to the container and track clicks. If a cl
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="events.html" class="sidebar__link">Introduction to Events</a>
+-   <a href="events.html" class="sidebar__link">Introduction to Events</a>
 
 #### Lesson navigation
 
-- <a href="default-browser-action.html#preventing-browser-actions" class="sidebar__link">Preventing browser actions</a>
-- <a href="default-browser-action.html#the-passive-handler-option" class="sidebar__link">The “passive” handler option</a>
-- <a href="default-browser-action.html#event-defaultprevented" class="sidebar__link">event.defaultPrevented</a>
-- <a href="default-browser-action.html#summary" class="sidebar__link">Summary</a>
+-   <a href="default-browser-action.html#preventing-browser-actions" class="sidebar__link">Preventing browser actions</a>
+-   <a href="default-browser-action.html#the-passive-handler-option" class="sidebar__link">The “passive” handler option</a>
+-   <a href="default-browser-action.html#event-defaultprevented" class="sidebar__link">event.defaultPrevented</a>
+-   <a href="default-browser-action.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="default-browser-action.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="default-browser-action.html#comments" class="sidebar__link">Comments</a>
+-   <a href="default-browser-action.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="default-browser-action.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -426,7 +426,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/2-events/04-default-browser-action" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

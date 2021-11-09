@@ -1,9 +1,9 @@
 call-array-this"
 
-- <a href="call-array-this.html"
-  call-array-this"
-  /call-array-this"
-  call-array-thiscall-array-this"
+-   <a href="call-array-this.html"
+    call-array-this"
+    /call-array-this"
+    call-array-thiscall-array-this"
 
 <!-- -->
 

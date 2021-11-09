@@ -1,9 +1,9 @@
 calculator"
 
-- <a href="calculator.html"
-  calculator"
-  /calculator"
-  calculatorcalculator"
+-   <a href="calculator.html"
+    calculator"
+    /calculator"
+    calculatorcalculator"
 
 <!-- -->
 
@@ -24,17 +24,17 @@ ask/calculator"k%2Fcalculator"%2Fcalculator" </a>
 
 Create an object `calculator` with three methods:
 
-- `read()` prompts for two values and saves them as object properties.
-- `sum()` returns the sum of saved values.
-- `mul()` multiplies saved values and returns the result.
+-   `read()` prompts for two values and saves them as object properties.
+-   `sum()` returns the sum of saved values.
+-   `mul()` multiplies saved values and returns the result.
 
-  let calculator = {
-  // ... your code ...
-  };
+    let calculator = {
+    // ... your code ...
+    };
 
-  calculator.read();
-  alert( calculator.sum() );
-  alert( calculator.mul() );
+    calculator.read();
+    alert( calculator.sum() );
+    alert( calculator.mul() );
 
 [Run the demo](calculator.html#)
 

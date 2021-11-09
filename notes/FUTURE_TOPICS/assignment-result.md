@@ -1,9 +1,9 @@
 assignment-result"
 
-- <a href="assignment-result.html"
-  assignment-result"
-  /assignment-result"
-  assignment-resultassignment-result"
+-   <a href="assignment-result.html"
+    assignment-result"
+    /assignment-result"
+    assignment-resultassignment-result"
 
 <!-- -->
 
@@ -30,5 +30,5 @@ solution
 
 The answer is:
 
-- `a = 4` (multiplied by 2)
-- `x = 5` (calculated as 1 + 4)
+-   `a = 4` (multiplied by 2)
+-   `x = 5` (calculated as 1 + 4)

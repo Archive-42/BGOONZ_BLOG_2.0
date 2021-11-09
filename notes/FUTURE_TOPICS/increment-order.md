@@ -1,9 +1,9 @@
 increment-order"
 
-- <a href="increment-order.html"
-  /increment-order"
-  /increment-order"
-  increment-orderincrement-order"
+-   <a href="increment-order.html"
+    /increment-order"
+    /increment-order"
+    increment-orderincrement-order"
 
 <!-- -->
 
@@ -37,10 +37,10 @@ solution
 
 The answer is:
 
-- `a = 2`
-- `b = 2`
-- `c = 2`
-- `d = 1`
+-   `a = 2`
+-   `b = 2`
+-   `c = 2`
+-   `d = 1`
 
 <a href="increment-order.html#"
 <a href="increment-order.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>

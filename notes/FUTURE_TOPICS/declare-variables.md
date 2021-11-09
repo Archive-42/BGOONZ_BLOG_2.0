@@ -1,9 +1,9 @@
 declare-variables"
 
-- <a href="declare-variables.html"
-  /declare-variables"
-  /declare-variables"
-  declare-variablesdeclare-variables"
+-   <a href="declare-variables.html"
+    /declare-variables"
+    /declare-variables"
+    declare-variablesdeclare-variables"
 
 <!-- -->
 

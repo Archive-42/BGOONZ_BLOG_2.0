@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="introduction-browser-events.html"
-- <a href="https://es.javascript.info/introduction-browser-events"
+-   <a href="introduction-browser-events.html"
+-   <a href="https://es.javascript.info/introduction-browser-events"
 
-- <a href="https://it.javascript.info/introduction-browser-events"
-  introduction-browser-events"
+-   <a href="https://it.javascript.info/introduction-browser-events"
+    introduction-browser-events"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/introduction-browser-events"
-- <a href=introduction-browser-events"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/introduction-browser-events"
+-   <a href="https://ko.javascript.info/introduction-browser-events"
+-   <a href=introduction-browser-events"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/introduction-browser-events"
 
 We want to make this open-source project available for people all around the world.
 
@@ -45,28 +45,28 @@ Here’s a list of the most useful DOM events, just to take a look at:
 
 **Mouse events:**
 
-- `click` – when the mouse clicks on an element (touchscreen devices generate it on a tap).
-- `contextmenu` – when the mouse right-clicks on an element.
-- `mouseover` / `mouseout` – when the mouse cursor comes over / leaves an element.
-- `mousedown` / `mouseup` – when the mouse button is pressed / released over an element.
-- `mousemove` – when the mouse is moved.
+-   `click` – when the mouse clicks on an element (touchscreen devices generate it on a tap).
+-   `contextmenu` – when the mouse right-clicks on an element.
+-   `mouseover` / `mouseout` – when the mouse cursor comes over / leaves an element.
+-   `mousedown` / `mouseup` – when the mouse button is pressed / released over an element.
+-   `mousemove` – when the mouse is moved.
 
 **Keyboard events:**
 
-- `keydown` and `keyup` – when a keyboard key is pressed and released.
+-   `keydown` and `keyup` – when a keyboard key is pressed and released.
 
 **Form element events:**
 
-- `submit` – when the visitor submits a `<form>`.
-- `focus` – when the visitor focuses on an element, e.g. on an `<input>`.
+-   `submit` – when the visitor submits a `<form>`.
+-   `focus` – when the visitor focuses on an element, e.g. on an `<input>`.
 
 **Document events:**
 
-- `DOMContentLoaded` – when the HTML is loaded and processed, DOM is fully built.
+-   `DOMContentLoaded` – when the HTML is loaded and processed, DOM is fully built.
 
 **CSS events:**
 
-- `transitionend` – when a CSS-animation finishes.
+-   `transitionend` – when a CSS-animation finishes.
 
 There are many other events. We’ll get into more details of particular events in next chapters.
 
@@ -245,9 +245,9 @@ The handler function.
 `options`  
 An additional optional object with properties:
 
-- `once`: if `true`, then the listener is automatically removed after it triggers.
-- `capture`: the phase where to handle the event, to be covered later in the chapter [Bubbling and capturing](bubbling-and-capturing.html). For historical reasons, `options` can also be `false/true`, that’s the same as `{capture: false/true}`.
-- `passive`: if `true`, then the handler will not call `preventDefault()`, we’ll explain that later in [Browser default actions](default-browser-action.html).
+-   `once`: if `true`, then the listener is automatically removed after it triggers.
+-   `capture`: the phase where to handle the event, to be covered later in the chapter [Bubbling and capturing](bubbling-and-capturing.html). For historical reasons, `options` can also be `false/true`, that’s the same as `{capture: false/true}`.
+-   `passive`: if `true`, then the handler will not call `preventDefault()`, we’ll explain that later in [Browser default actions](default-browser-action.html).
 
 To remove the handler, use `removeEventListener`:
 
@@ -548,15 +548,15 @@ Move the ball across the field to a click. Like this:
 
 Requirements:
 
-- The ball center should come exactly under the pointer on click (if possible without crossing the field edge).
-- CSS-animation is welcome.
-- The ball must not cross field boundaries.
-- When the page is scrolled, nothing should break.
+-   The ball center should come exactly under the pointer on click (if possible without crossing the field edge).
+-   CSS-animation is welcome.
+-   The ball must not cross field boundaries.
+-   When the page is scrolled, nothing should break.
 
 Notes:
 
-- The code should also work with different ball and field sizes, not be bound to any fixed values.
-- Use properties `event.clientX/event.clientY` for click coordinates.
+-   The code should also work with different ball and field sizes, not be bound to any fixed values.
+-   Use properties `event.clientX/event.clientY` for click coordinates.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/yi6xXY3XkYDiZbeD?p=preview)
 
@@ -759,28 +759,28 @@ The whole carousel is a self-contained “graphical component” on the page, so
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="events.html" class="sidebar__link">Introduction to Events</a>
+-   <a href="events.html" class="sidebar__link">Introduction to Events</a>
 
 #### Lesson navigation
 
-- <a href="introduction-browser-events.html#event-handlers" class="sidebar__link">Event handlers</a>
-- <a href="introduction-browser-events.html#accessing-the-element-this" class="sidebar__link">Accessing the element: this</a>
-- <a href="introduction-browser-events.html#possible-mistakes" class="sidebar__link">Possible mistakes</a>
-- <a href="introduction-browser-events.html#addeventlistener" class="sidebar__link">addEventListener</a>
-- <a href="introduction-browser-events.html#event-object" class="sidebar__link">Event object</a>
-- <a href="introduction-browser-events.html#object-handlers-handleevent" class="sidebar__link">Object handlers: handleEvent</a>
-- <a href="introduction-browser-events.html#summary" class="sidebar__link">Summary</a>
+-   <a href="introduction-browser-events.html#event-handlers" class="sidebar__link">Event handlers</a>
+-   <a href="introduction-browser-events.html#accessing-the-element-this" class="sidebar__link">Accessing the element: this</a>
+-   <a href="introduction-browser-events.html#possible-mistakes" class="sidebar__link">Possible mistakes</a>
+-   <a href="introduction-browser-events.html#addeventlistener" class="sidebar__link">addEventListener</a>
+-   <a href="introduction-browser-events.html#event-object" class="sidebar__link">Event object</a>
+-   <a href="introduction-browser-events.html#object-handlers-handleevent" class="sidebar__link">Object handlers: handleEvent</a>
+-   <a href="introduction-browser-events.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="introduction-browser-events.html#tasks" class="sidebar__link">Tasks (7)</a>
-- <a href="introduction-browser-events.html#comments" class="sidebar__link">Comments</a>
+-   <a href="introduction-browser-events.html#tasks" class="sidebar__link">Tasks (7)</a>
+-   <a href="introduction-browser-events.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -788,7 +788,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/2-events/01-introduction-browser-events" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

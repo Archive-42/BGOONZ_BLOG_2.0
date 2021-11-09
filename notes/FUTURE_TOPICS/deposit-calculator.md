@@ -1,8 +1,8 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="deposit-calculator.html"
-  /deposit-calculator"
+-   <a href="https://ar.javascript.info/"
+-   <a href="deposit-calculator.html"
+    /deposit-calculator"
 
 deposit-calculatordeposit-calculator"
 
@@ -11,8 +11,8 @@ deposit-calculatordeposit-calculator"
 deposit-calculator"
 deposit-calculator"
 
-- <a href="https://tr.javascript.info/"
-  deposit-calculator"
+-   <a href="https://tr.javascript.info/"
+    deposit-calculator"
 
 k%2Fdeposit-calculator"%2Fdeposit-calculator" </a>
 

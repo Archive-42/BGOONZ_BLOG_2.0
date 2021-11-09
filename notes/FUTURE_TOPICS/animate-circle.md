@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="animate-circle.html"
-  animate-circle"
+-   <a href="https://ar.javascript.info/"
+-   <a href="animate-circle.html"
+    animate-circle"
 
 animate-circleanimate-circle"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  /animate-circle"
-  /animate-circle"
-  ask/animate-circle"k%2Fanimate-circle"%2Fanimate-circle" </a>
+-   <a href="https://ko.javascript.info/"
+    /animate-circle"
+    /animate-circle"
+    ask/animate-circle"k%2Fanimate-circle"%2Fanimate-circle" </a>
 
 <a href="../animation.html" Animation</span></a>
 
@@ -25,8 +25,8 @@ animate-circleanimate-circle"
 
 Create a function `showCircle(cx, cy, radius)` that shows an animated growing circle.
 
-- `cx,cy` are window-relative coordinates of the center of the circle,
-- `radius` is the radius of the circle.
+-   `cx,cy` are window-relative coordinates of the center of the circle,
+-   `radius` is the radius of the circle.
 
 Click the button below to see how it should look like:
 

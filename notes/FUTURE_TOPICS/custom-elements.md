@@ -2,19 +2,19 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="custom-elements.html"
-- <a href="https://es.javascript.info/"
-- <a href="https://fr.javascript.info/custom-elements"
-- <a href="https://it.javascript.info/custom-elements"
-  custom-elements"
+-   <a href="custom-elements.html"
+-   <a href="https://es.javascript.info/"
+-   <a href="https://fr.javascript.info/custom-elements"
+-   <a href="https://it.javascript.info/custom-elements"
+    custom-elements"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=custom-elements"
-- <a href="https://tr.javascript.info/custom-elements"
-- <a href="https://zh.javascript.info/custom-elements"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/"
+-   <a href=custom-elements"
+-   <a href="https://tr.javascript.info/custom-elements"
+-   <a href="https://zh.javascript.info/custom-elements"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -152,8 +152,8 @@ When `customElement.define` is called, they are “upgraded”: a new instance o
 
 To get the information about custom elements, there are methods:
 
-- `customElements.get(name)` – returns the class for a custom element with the given `name`,
-- `customElements.whenDefined(name)` – returns a promise that resolves (without value) when a custom element with the given `name` becomes defined.
+-   `customElements.get(name)` – returns the class for a custom element with the given `name`,
+-   `customElements.whenDefined(name)` – returns a promise that resolves (without value) when a custom element with the given `name` becomes defined.
 
 <span class="important__type">Rendering in `connectedCallback`, not in `constructor`</span>
 
@@ -364,8 +364,8 @@ Our new button extends the built-in one. So it keeps the same styles and standar
 
 ## <a href="custom-elements.html#references" id="references" class="main__anchor">References</a>
 
-- HTML Living Standard: <https://html.spec.whatwg.org/#custom-elements>.
-- Compatiblity: <https://caniuse.com/#feat=custom-elementsv1>.
+-   HTML Living Standard: <https://html.spec.whatwg.org/#custom-elements>.
+-   Compatiblity: <https://caniuse.com/#feat=custom-elementsv1>.
 
 ## <a href="custom-elements.html#summary" id="summary" class="main__anchor">Summary</a>
 
@@ -441,27 +441,27 @@ Please note:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
 
 #### Lesson navigation
 
-- <a href="custom-elements.html#example-time-formatted" class="sidebar__link">Example: “time-formatted”</a>
-- <a href="custom-elements.html#observing-attributes" class="sidebar__link">Observing attributes</a>
-- <a href="custom-elements.html#rendering-order" class="sidebar__link">Rendering order</a>
-- <a href="custom-elements.html#customized-built-in-elements" class="sidebar__link">Customized built-in elements</a>
-- <a href="custom-elements.html#references" class="sidebar__link">References</a>
-- <a href="custom-elements.html#summary" class="sidebar__link">Summary</a>
+-   <a href="custom-elements.html#example-time-formatted" class="sidebar__link">Example: “time-formatted”</a>
+-   <a href="custom-elements.html#observing-attributes" class="sidebar__link">Observing attributes</a>
+-   <a href="custom-elements.html#rendering-order" class="sidebar__link">Rendering order</a>
+-   <a href="custom-elements.html#customized-built-in-elements" class="sidebar__link">Customized built-in elements</a>
+-   <a href="custom-elements.html#references" class="sidebar__link">References</a>
+-   <a href="custom-elements.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="custom-elements.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="custom-elements.html#comments" class="sidebar__link">Comments</a>
+-   <a href="custom-elements.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="custom-elements.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -469,7 +469,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/8-web-components/2-custom-elements" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

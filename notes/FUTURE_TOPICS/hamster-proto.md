@@ -1,9 +1,9 @@
 hamster-proto"
 
-- <a href="hamster-proto.html"
-  /hamster-proto"
-  /hamster-proto"
-  hamster-protohamster-proto"
+-   <a href="hamster-proto.html"
+    /hamster-proto"
+    /hamster-proto"
+    hamster-protohamster-proto"
 
 <!-- -->
 

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="filter-anagrams.html"
-  /filter-anagrams"
-  /filter-anagrams"
-  filter-anagramsfilter-anagrams"
+-   <a href="https://ar.javascript.info/"
+-   <a href="filter-anagrams.html"
+    /filter-anagrams"
+    /filter-anagrams"
+    filter-anagramsfilter-anagrams"
 
 <!-- -->
 
 filter-anagrams"
 filter-anagrams"
 
-- <a href="https://tr.javascript.info/"
-  filter-anagrams"
+-   <a href="https://tr.javascript.info/"
+    filter-anagrams"
 
 We want to make this open-source project available for people all around the world.
 

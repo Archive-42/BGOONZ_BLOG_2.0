@@ -1,9 +1,9 @@
 function-in-if"
 
-- <a href="function-in-if.html"
-  /function-in-if"
-  /function-in-if"
-  function-in-iffunction-in-if"
+-   <a href="function-in-if.html"
+    /function-in-if"
+    /function-in-if"
+    function-in-iffunction-in-if"
 
 <!-- -->
 

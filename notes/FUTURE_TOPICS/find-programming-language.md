@@ -1,16 +1,16 @@
 find-programming-language"
 
-- <a href="find-programming-language.html"
-  /find-programming-language"
-  /find-programming-language"
-  find-programming-languagefind-programming-language"
+-   <a href="find-programming-language.html"
+    /find-programming-language"
+    /find-programming-language"
+    find-programming-languagefind-programming-language"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  find-programming-language"
-- <a href="https://tr.javascript.info/"
-  find-programming-language"
+-   <a href="https://ko.javascript.info/"
+    find-programming-language"
+-   <a href="https://tr.javascript.info/"
+    find-programming-language"
 
 k%2Ffind-programming-language"%2Ffind-programming-language" </a>
 

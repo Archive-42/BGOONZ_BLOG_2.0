@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="changing-prototype.html"
-  changing-prototype"
-  /changing-prototype"
-  changing-prototypechanging-prototype"
+-   <a href="https://ar.javascript.info/"
+-   <a href="changing-prototype.html"
+    changing-prototype"
+    /changing-prototype"
+    changing-prototypechanging-prototype"
 
 <!-- -->
 

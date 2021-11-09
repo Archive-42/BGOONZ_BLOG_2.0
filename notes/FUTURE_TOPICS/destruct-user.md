@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="destruct-user.html"
-- <a href="https://es.javascript.info/"
-  /destruct-user"
-  destruct-userdestruct-user"
+-   <a href="https://ar.javascript.info/"
+-   <a href="destruct-user.html"
+-   <a href="https://es.javascript.info/"
+    /destruct-user"
+    destruct-userdestruct-user"
 
 <!-- -->
 
@@ -34,9 +34,9 @@ We have an object:
 
 Write the destructuring assignment that reads:
 
-- `name` property into the variable `name`.
-- `years` property into the variable `age`.
-- `isAdmin` property into the variable `isAdmin` (false, if no such property)
+-   `name` property into the variable `name`.
+-   `years` property into the variable `age`.
+-   `isAdmin` property into the variable `isAdmin` (false, if no such property)
 
 Here’s an example of the values after your assignment:
 

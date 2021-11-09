@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="concat.html"
-  /concat"
-  /concat"
-  concatconcat"
+-   <a href="https://ar.javascript.info/"
+-   <a href="concat.html"
+    /concat"
+    /concat"
+    concatconcat"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  /concat"
-- <a href="https://tr.javascript.info/"
-  concat"
+-   <a href="https://ko.javascript.info/"
+    /concat"
+-   <a href="https://tr.javascript.info/"
+    concat"
 
 k%2Fconcat"%2Fconcat" </a>
 

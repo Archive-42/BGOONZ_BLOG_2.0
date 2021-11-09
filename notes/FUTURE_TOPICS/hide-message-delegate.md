@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="hide-message-delegate.html"
-  /hide-message-delegate"
-  /hide-message-delegate"
-  hide-message-delegatehide-message-delegate"
+-   <a href="hide-message-delegate.html"
+    /hide-message-delegate"
+    /hide-message-delegate"
+    hide-message-delegatehide-message-delegate"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  hide-message-delegate"
-- <a href="https://tr.javascript.info/"
-  hide-message-delegate"
+-   <a href="https://ko.javascript.info/"
+    hide-message-delegate"
+-   <a href="https://tr.javascript.info/"
+    hide-message-delegate"
 
 We want to make this open-source project available for people all around the world.
 

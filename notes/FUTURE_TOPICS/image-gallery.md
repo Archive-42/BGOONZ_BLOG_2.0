@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="image-gallery.html"
-  /image-gallery"
-  /image-gallery"
-  image-galleryimage-gallery"
+-   <a href="image-gallery.html"
+    /image-gallery"
+    /image-gallery"
+    image-galleryimage-gallery"
 
 <!-- -->
 
 image-gallery"
 image-gallery"
 
-- <a href="https://tr.javascript.info/"
-  image-gallery"
+-   <a href="https://tr.javascript.info/"
+    image-gallery"
 
 We want to make this open-source project available for people all around the world.
 

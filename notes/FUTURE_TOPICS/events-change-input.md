@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="events-change-input.html"
-- <a href="https://es.javascript.info/events-change-input"
-- <a href="https://fr.javascript.info/events-change-input"
-- <a href="https://it.javascript.info/events-change-input"
-  events-change-input"
+-   <a href="events-change-input.html"
+-   <a href="https://es.javascript.info/events-change-input"
+-   <a href="https://fr.javascript.info/events-change-input"
+-   <a href="https://it.javascript.info/events-change-input"
+    events-change-input"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/events-change-input"
-- <a href=events-change-input"
-- <a href="https://tr.javascript.info/events-change-input"
-- <a href="https://zh.javascript.info/events-change-input"
+-   <a href="https://ko.javascript.info/events-change-input"
+-   <a href=events-change-input"
+-   <a href="https://tr.javascript.info/events-change-input"
+-   <a href="https://zh.javascript.info/events-change-input"
 
 We want to make this open-source project available for people all around the world.
 
@@ -175,25 +175,25 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
+-   <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
 
 #### Lesson navigation
 
-- <a href="events-change-input.html#event-change" class="sidebar__link">Event: change</a>
-- <a href="events-change-input.html#event-input" class="sidebar__link">Event: input</a>
-- <a href="events-change-input.html#events-cut-copy-paste" class="sidebar__link">Events: cut, copy, paste</a>
-- <a href="events-change-input.html#summary" class="sidebar__link">Summary</a>
+-   <a href="events-change-input.html#event-change" class="sidebar__link">Event: change</a>
+-   <a href="events-change-input.html#event-input" class="sidebar__link">Event: input</a>
+-   <a href="events-change-input.html#events-cut-copy-paste" class="sidebar__link">Events: cut, copy, paste</a>
+-   <a href="events-change-input.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="events-change-input.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="events-change-input.html#comments" class="sidebar__link">Comments</a>
+-   <a href="events-change-input.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="events-change-input.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -201,7 +201,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/4-forms-controls/3-events-change-input" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

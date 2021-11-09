@@ -1,17 +1,17 @@
 fix-prompt"
 
-- <a href="fix-prompt.html"
-  /fix-prompt"
-  /fix-prompt"
-  fix-promptfix-prompt"
+-   <a href="fix-prompt.html"
+    /fix-prompt"
+    /fix-prompt"
+    fix-promptfix-prompt"
 
 <!-- -->
 
 fix-prompt"
 fix-prompt"
 
-- <a href="https://tr.javascript.info/"
-  fix-prompt"
+-   <a href="https://tr.javascript.info/"
+    fix-prompt"
 
 We want to make this open-source project available for people all around the world.
 

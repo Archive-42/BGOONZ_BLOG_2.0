@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="append-to-list.html"
-  append-to-list"
-  /append-to-list"
-  append-to-listappend-to-list"
+-   <a href="https://ar.javascript.info/"
+-   <a href="append-to-list.html"
+    append-to-list"
+    /append-to-list"
+    append-to-listappend-to-list"
 
 <!-- -->
 

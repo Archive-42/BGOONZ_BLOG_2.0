@@ -1,16 +1,16 @@
 closure-variable-access"
 
-- <a href="closure-variable-access.html"
-  closure-variable-access"
-  /closure-variable-access"
-- <a href="https://it.javascript.info/closure-variable-access"
+-   <a href="closure-variable-access.html"
+    closure-variable-access"
+    /closure-variable-access"
+-   <a href="https://it.javascript.info/closure-variable-access"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href="
-- <a href="https://tr.javascript.info/"
-  closure-variable-access"
+-   <a href="https://ko.javascript.info/"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+    closure-variable-access"
 
 k%2Fclosure-variable-access"%2Fclosure-variable-access" </a>
 

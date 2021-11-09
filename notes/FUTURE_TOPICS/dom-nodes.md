@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/dom-nodes"
-- <a href="dom-nodes.html"
-- <a href="https://es.javascript.info/dom-nodes"
-- <a href="https://fr.javascript.info/dom-nodes"
-- <a href="https://it.javascript.info/dom-nodes"
-  dom-nodes"
+-   <a href="https://ar.javascript.info/dom-nodes"
+-   <a href="dom-nodes.html"
+-   <a href="https://es.javascript.info/dom-nodes"
+-   <a href="https://fr.javascript.info/dom-nodes"
+-   <a href="https://it.javascript.info/dom-nodes"
+    dom-nodes"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/dom-nodes"
-- <a href=dom-nodes"
-- <a href="https://tr.javascript.info/dom-nodes"
-- <a href="https://zh.javascript.info/dom-nodes"
+-   <a href="https://ko.javascript.info/dom-nodes"
+-   <a href=dom-nodes"
+-   <a href="https://tr.javascript.info/dom-nodes"
+-   <a href="https://zh.javascript.info/dom-nodes"
 
 We want to make this open-source project available for people all around the world.
 
@@ -59,9 +59,9 @@ Running this code will make the `<body>` red for 3 seconds:
 
 Here we used `style.background` to change the background color of `document.body`, but there are many other properties, such as:
 
-- `innerHTML` – HTML contents of the node.
-- `offsetWidth` – the node width (in pixels)
-- …and so on.
+-   `innerHTML` – HTML contents of the node.
+-   `offsetWidth` – the node width (in pixels)
+-   …and so on.
 
 Soon we’ll learn more ways to manipulate the DOM, but first we need to know about its structure.
 
@@ -97,8 +97,8 @@ For instance, the `<title>` tag has the text `"About elk"`.
 
 Please note the special characters in text nodes:
 
-- a newline: `↵` (in JavaScript known as `\n`)
-- a space: `␣`
+-   a newline: `↵` (in JavaScript known as `\n`)
+-   a space: `␣`
 
 Spaces and newlines are totally valid characters, like letters and digits. They form text nodes and become a part of the DOM. So, for instance, in the example above the `<head>` tag contains some spaces before `<title>`, and that text becomes a `#text` node (it contains a newline and some spaces only).
 
@@ -208,10 +208,10 @@ Another way to do it would be just right-clicking on a webpage and selecting “
 
 <figure><img src="article/dom-nodes/inspect.svg" width="696" height="379" /></figure>At the right part of the tools there are the following subtabs:
 
-- **Styles** – we can see CSS applied to the current element rule by rule, including built-in rules (gray). Almost everything can be edited in-place, including the dimensions/margins/paddings of the box below.
-- **Computed** – to see CSS applied to the element by property: for each property we can see a rule that gives it (including CSS inheritance and such).
-- **Event Listeners** – to see event listeners attached to DOM elements (we’ll cover them in the next part of the tutorial).
-- …and so on.
+-   **Styles** – we can see CSS applied to the current element rule by rule, including built-in rules (gray). Almost everything can be edited in-place, including the dimensions/margins/paddings of the box below.
+-   **Computed** – to see CSS applied to the element by property: for each property we can see a rule that gives it (including CSS inheritance and such).
+-   **Event Listeners** – to see event listeners attached to DOM elements (we’ll cover them in the next part of the tutorial).
+-   …and so on.
 
 The best way to study them is to click around. Most values are editable in-place.
 
@@ -242,9 +242,9 @@ The browser developer tools are a great help in development: we can explore the 
 
 An HTML/XML document is represented inside the browser as the DOM tree.
 
-- Tags become element nodes and form the structure.
-- Text becomes text nodes.
-- …etc, everything in HTML has its place in DOM, even comments.
+-   Tags become element nodes and form the structure.
+-   Text becomes text nodes.
+-   …etc, everything in HTML has its place in DOM, even comments.
 
 We can use developer tools to inspect DOM and modify it manually.
 
@@ -262,26 +262,26 @@ DOM nodes have properties and methods that allow us to travel between them, modi
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
-- <a href="dom-nodes.html#an-example-of-the-dom" class="sidebar__link">An example of the DOM</a>
-- <a href="dom-nodes.html#autocorrection" class="sidebar__link">Autocorrection</a>
-- <a href="dom-nodes.html#other-node-types" class="sidebar__link">Other node types</a>
-- <a href="dom-nodes.html#see-it-for-yourself" class="sidebar__link">See it for yourself</a>
-- <a href="dom-nodes.html#interaction-with-console" class="sidebar__link">Interaction with console</a>
-- <a href="dom-nodes.html#summary" class="sidebar__link">Summary</a>
+-   <a href="dom-nodes.html#an-example-of-the-dom" class="sidebar__link">An example of the DOM</a>
+-   <a href="dom-nodes.html#autocorrection" class="sidebar__link">Autocorrection</a>
+-   <a href="dom-nodes.html#other-node-types" class="sidebar__link">Other node types</a>
+-   <a href="dom-nodes.html#see-it-for-yourself" class="sidebar__link">See it for yourself</a>
+-   <a href="dom-nodes.html#interaction-with-console" class="sidebar__link">Interaction with console</a>
+-   <a href="dom-nodes.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="dom-nodes.html#comments" class="sidebar__link">Comments</a>
+-   <a href="dom-nodes.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -289,7 +289,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/02-dom-nodes" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

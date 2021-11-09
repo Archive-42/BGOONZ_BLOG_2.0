@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="delay-promise.html"
-  /delay-promise"
-  /delay-promise"
-  delay-promisedelay-promise"
+-   <a href="https://ar.javascript.info/"
+-   <a href="delay-promise.html"
+    /delay-promise"
+    /delay-promise"
+    delay-promisedelay-promise"
 
 <!-- -->
 

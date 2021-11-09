@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/code-editors"
-- <a href="code-editors.html"
-- <a href="https://es.javascript.info/code-editors"
-- <a href="https://fr.javascript.info/code-editors"
-- <a href="https://it.javascript.info/code-editors"
-  code-editors"
+-   <a href="https://ar.javascript.info/code-editors"
+-   <a href="code-editors.html"
+-   <a href="https://es.javascript.info/code-editors"
+-   <a href="https://fr.javascript.info/code-editors"
+-   <a href="https://it.javascript.info/code-editors"
+    code-editors"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/code-editors"
-- <a href=code-editors"
-- <a href="https://tr.javascript.info/code-editors"
-- <a href="https://zh.javascript.info/code-editors"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/code-editors"
+-   <a href=code-editors"
+-   <a href="https://tr.javascript.info/code-editors"
+-   <a href="https://zh.javascript.info/code-editors"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -45,8 +45,8 @@ An IDE loads the project (which can be many files), allows navigation between fi
 
 If you haven’t selected an IDE yet, consider the following options:
 
-- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [WebStorm](http://www.jetbrains.com/webstorm/) (cross-platform, paid).
+-   [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
+-   [WebStorm](http://www.jetbrains.com/webstorm/) (cross-platform, paid).
 
 For Windows, there’s also “Visual Studio”, not to be confused with “Visual Studio Code”. “Visual Studio” is a paid and mighty Windows-only editor, well-suited for the .NET platform. It’s also good at JavaScript. There’s also a free version [Visual Studio Community](https://www.visualstudio.com/vs/community/).
 
@@ -64,11 +64,11 @@ In practice, lightweight editors may have a lot of plugins including directory-l
 
 The following options deserve your attention:
 
-- [Atom](https://atom.io/) (cross-platform, free).
-- [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
-- [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
-- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+-   [Atom](https://atom.io/) (cross-platform, free).
+-   [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
+-   [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
+-   [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
+-   [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
 
 ## <a href="code-editors.html#let-s-not-argue" id="let-s-not-argue" class="main__anchor">Let’s not argue</a>
 
@@ -88,23 +88,23 @@ The choice of an editor, like any other tool, is individual and depends on your 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="getting-started.html" class="sidebar__link">An introduction</a>
+-   <a href="getting-started.html" class="sidebar__link">An introduction</a>
 
 #### Lesson navigation
 
-- <a href="code-editors.html#ide" class="sidebar__link">IDE</a>
-- <a href="code-editors.html#lightweight-editors" class="sidebar__link">Lightweight editors</a>
-- <a href="code-editors.html#let-s-not-argue" class="sidebar__link">Let’s not argue</a>
+-   <a href="code-editors.html#ide" class="sidebar__link">IDE</a>
+-   <a href="code-editors.html#lightweight-editors" class="sidebar__link">Lightweight editors</a>
+-   <a href="code-editors.html#let-s-not-argue" class="sidebar__link">Let’s not argue</a>
 
-- <a href="code-editors.html#comments" class="sidebar__link">Comments</a>
+-   <a href="code-editors.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -112,7 +112,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/01-getting-started/3-code-editors" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

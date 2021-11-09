@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="endless-page.html"
-  /endless-page"
-  /endless-page"
-  endless-pageendless-page"
+-   <a href="https://ar.javascript.info/"
+-   <a href="endless-page.html"
+    /endless-page"
+    /endless-page"
+    endless-pageendless-page"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  endless-page"
-  /endless-page"
-  endless-page"
+-   <a href="https://ko.javascript.info/"
+    endless-page"
+    /endless-page"
+    endless-page"
 
 We want to make this open-source project available for people all around the world.
 

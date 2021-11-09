@@ -1,16 +1,16 @@
 closure-latest-changes"
 
-- <a href="closure-latest-changes.html"
-  closure-latest-changes"
-  /closure-latest-changes"
-- <a href="https://it.javascript.info/closure-latest-changes"
+-   <a href="closure-latest-changes.html"
+    closure-latest-changes"
+    /closure-latest-changes"
+-   <a href="https://it.javascript.info/closure-latest-changes"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href="
-- <a href="https://tr.javascript.info/"
-  closure-latest-changes"
+-   <a href="https://ko.javascript.info/"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+    closure-latest-changes"
 
 k%2Fclosure-latest-changes"%2Fclosure-latest-changes" </a>
 

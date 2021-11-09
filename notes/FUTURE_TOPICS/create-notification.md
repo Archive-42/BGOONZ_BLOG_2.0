@@ -1,8 +1,8 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="create-notification.html"
-  /create-notification"
+-   <a href="https://ar.javascript.info/"
+-   <a href="create-notification.html"
+    /create-notification"
 
 create-notificationcreate-notification"
 
@@ -11,8 +11,8 @@ create-notificationcreate-notification"
 create-notification"
 create-notification"
 
-- <a href="https://tr.javascript.info/"
-  create-notification"
+-   <a href="https://tr.javascript.info/"
+    create-notification"
 
 k%2Fcreate-notification"%2Fcreate-notification" </a>
 

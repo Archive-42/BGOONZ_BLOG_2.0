@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="iterable-keys.html"
-  /iterable-keys"
-  /iterable-keys"
-  iterable-keysiterable-keys"
+-   <a href="iterable-keys.html"
+    /iterable-keys"
+    /iterable-keys"
+    iterable-keysiterable-keys"
 
 <!-- -->
 
 iterable-keys"
 iterable-keys"
 
-- <a href="https://tr.javascript.info/"
-  iterable-keys"
+-   <a href="https://tr.javascript.info/"
+    iterable-keys"
 
 We want to make this open-source project available for people all around the world.
 

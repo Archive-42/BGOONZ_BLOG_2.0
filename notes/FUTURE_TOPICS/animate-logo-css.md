@@ -1,8 +1,8 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="animate-logo-css.html"
-  animate-logo-css"
+-   <a href="https://ar.javascript.info/"
+-   <a href="animate-logo-css.html"
+    animate-logo-css"
 
 animate-logo-cssanimate-logo-css"
 
@@ -25,10 +25,10 @@ ask/animate-logo-css"k%2Fanimate-logo-css"%2Fanimate-logo-css" </a>
 
 Show the animation like on the picture below (click the plane):
 
-- The picture grows on click from `40x24px` to `400x240px` (10 times larger).
-- The animation takes 3 seconds.
-- At the end output: “Done!”.
-- During the animation process, there may be more clicks on the plane. They shouldn’t “break” anything.
+-   The picture grows on click from `40x24px` to `400x240px` (10 times larger).
+-   The animation takes 3 seconds.
+-   At the end output: “Done!”.
+-   During the animation process, there may be more clicks on the plane. They shouldn’t “break” anything.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/Lj9szlcP8lRxn5pC?p=preview)
 

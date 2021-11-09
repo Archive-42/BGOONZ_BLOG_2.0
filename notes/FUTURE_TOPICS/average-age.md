@@ -1,9 +1,9 @@
 average-age"
 
-- <a href="average-age.html"
-  average-age"
-  /average-age"
-  average-ageaverage-age"
+-   <a href="average-age.html"
+    average-age"
+    /average-age"
+    average-ageaverage-age"
 
 <!-- -->
 

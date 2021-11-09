@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/currying-partials"
-- <a href="currying-partials.html"
-- <a href="https://es.javascript.info/currying-partials"
-- <a href="https://fr.javascript.info/currying-partials"
-- <a href="https://it.javascript.info/currying-partials"
-  currying-partials"
+-   <a href="https://ar.javascript.info/currying-partials"
+-   <a href="currying-partials.html"
+-   <a href="https://es.javascript.info/currying-partials"
+-   <a href="https://fr.javascript.info/currying-partials"
+-   <a href="https://it.javascript.info/currying-partials"
+    currying-partials"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/currying-partials"
-- <a href=currying-partials"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/currying-partials"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/currying-partials"
+-   <a href=currying-partials"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/currying-partials"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -65,9 +65,9 @@ We’ll create a helper function `curry(f)` that performs currying for a two-arg
 
 As you can see, the implementation is straightforward: it’s just two wrappers.
 
-- The result of `curry(func)` is a wrapper `function(a)`.
-- When it is called like `curriedSum(1)`, the argument is saved in the Lexical Environment, and a new wrapper is returned `function(b)`.
-- Then this wrapper is called with `2` as an argument, and it passes the call to the original `sum`.
+-   The result of `curry(func)` is a wrapper `function(a)`.
+-   When it is called like `curriedSum(1)`, the argument is saved in the Lexical Environment, and a new wrapper is returned `function(b)`.
+-   Then this wrapper is called with `2` as an argument, and it passes the call to the original `sum`.
 
 More advanced implementations of currying, such as [\_.curry](https://lodash.com/docs#curry) from lodash library, return a wrapper that allows a function to be called both normally and partially:
 
@@ -208,23 +208,23 @@ Currying allows us to easily get partials. As we’ve seen in the logging exampl
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
 
 #### Lesson navigation
 
-- <a href="currying-partials.html#currying-what-for" class="sidebar__link">Currying? What for?</a>
-- <a href="currying-partials.html#advanced-curry-implementation" class="sidebar__link">Advanced curry implementation</a>
-- <a href="currying-partials.html#summary" class="sidebar__link">Summary</a>
+-   <a href="currying-partials.html#currying-what-for" class="sidebar__link">Currying? What for?</a>
+-   <a href="currying-partials.html#advanced-curry-implementation" class="sidebar__link">Advanced curry implementation</a>
+-   <a href="currying-partials.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="currying-partials.html#comments" class="sidebar__link">Comments</a>
+-   <a href="currying-partials.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -232,7 +232,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/99-js-misc/03-currying-partials" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/async-iterators-generators"
-- <a href="async-iterators-generators.html"
-- <a href="https://es.javascript.info/async-iterators-generators"
-- <a href="https://fr.javascript.info/async-iterators-generators"
-- <a href="https://it.javascript.info/async-iterators-generators"
-  async-iterators-generators"
+-   <a href="https://ar.javascript.info/async-iterators-generators"
+-   <a href="async-iterators-generators.html"
+-   <a href="https://es.javascript.info/async-iterators-generators"
+-   <a href="https://fr.javascript.info/async-iterators-generators"
+-   <a href="https://it.javascript.info/async-iterators-generators"
+    async-iterators-generators"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/async-iterators-generators"
-- <a href=async-iterators-generators"
-- <a href="https://tr.javascript.info/async-iterators-generators"
-- <a href="https://zh.javascript.info/async-iterators-generators"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/async-iterators-generators"
+-   <a href=async-iterators-generators"
+-   <a href="https://tr.javascript.info/async-iterators-generators"
+-   <a href="https://zh.javascript.info/async-iterators-generators"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -54,9 +54,9 @@ In other words, we want to add an _iteration ability_ to the object.
 
 That can be implemented using a special method with the name `Symbol.iterator`:
 
-- This method is called in by the `for..of` construct when the loop is started, and it should return an object with the `next` method.
-- For each iteration, the `next()` method is invoked for the next value.
-- The `next()` should return a value in the form `{done: true/false, value:<loop value>}`, where `done:true` means the end of the loop.
+-   This method is called in by the `for..of` construct when the loop is started, and it should return an object with the `next` method.
+-   For each iteration, the `next()` method is invoked for the next value.
+-   The `next()` should return a value in the form `{done: true/false, value:<loop value>}`, where `done:true` means the end of the loop.
 
 Here’s an implementation for the iterable `range`:
 
@@ -99,9 +99,9 @@ To make an object iterable asynchronously:
 
 1.  Use `Symbol.asyncIterator` instead of `Symbol.iterator`.
 2.  The `next()` method should return a promise (to be fulfilled with the next value).
-    - The `async` keyword handles it, we can simply make `async next()`.
+    -   The `async` keyword handles it, we can simply make `async next()`.
 3.  To iterate over such an object, we should use a `for await (let item of iterable)` loop.
-    - Note the `await` word.
+    -   Note the `await` word.
 
 As a starting example, let’s make an iterable `range` object, similar like the one before, but now it will return values asynchronously, one per second.
 
@@ -325,9 +325,9 @@ This pattern is very common. It’s not about users, but just about anything.
 
 For instance, GitHub allows us to retrieve commits in the same, paginated fashion:
 
-- We should make a request to `fetch` in the form `https://api.github.com/repos/<repo>/commits`.
-- It responds with a JSON of 30 commits, and also provides a link to the next page in the `Link` header.
-- Then we can use that link for the next request, to get more commits, and so on.
+-   We should make a request to `fetch` in the form `https://api.github.com/repos/<repo>/commits`.
+-   It responds with a JSON of 30 commits, and also provides a link to the next page in the `Link` header.
+-   Then we can use that link for the next request, to get more commits, and so on.
 
 For our code, we’d like to have a simpler way to get commits.
 
@@ -367,14 +367,14 @@ More explanations about how it works:
 
 1.  We use the browser [fetch](fetch.html) method to download the commits.
 
-    - The initial URL is `https://api.github.com/repos/<repo>/commits`, and the next page will be in the `Link` header of the response.
-    - The `fetch` method allows us to supply authorization and other headers if needed – here GitHub requires `User-Agent`.
+    -   The initial URL is `https://api.github.com/repos/<repo>/commits`, and the next page will be in the `Link` header of the response.
+    -   The `fetch` method allows us to supply authorization and other headers if needed – here GitHub requires `User-Agent`.
 
 2.  The commits are returned in JSON format.
 
 3.  We should get the next page URL from the `Link` header of the response. It has a special format, so we use a regular expression for that (we will learn this feature in [Regular expressions](regular-expressions.html)).
 
-    - The next page URL may look like `https://api.github.com/repositories/93253246/commits?page=2`. It’s generated by GitHub itself.
+    -   The next page URL may look like `https://api.github.com/repositories/93253246/commits?page=2`. It’s generated by GitHub itself.
 
 4.  Then we yield the received commits one by one, and when they finish, the next `while(url)` iteration will trigger, making one more request.
 
@@ -432,26 +432,26 @@ We can use async generators to process such data. It’s also noteworthy that in
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="generators-iterators.html" class="sidebar__link">Generators, advanced iteration</a>
+-   <a href="generators-iterators.html" class="sidebar__link">Generators, advanced iteration</a>
 
 #### Lesson navigation
 
-- <a href="async-iterators-generators.html#recall-iterables" class="sidebar__link">Recall iterables</a>
-- <a href="async-iterators-generators.html#async-iterables" class="sidebar__link">Async iterables</a>
-- <a href="async-iterators-generators.html#recall-generators" class="sidebar__link">Recall generators</a>
-- <a href="async-iterators-generators.html#async-generators-finally" class="sidebar__link">Async generators (finally)</a>
-- <a href="async-iterators-generators.html#real-life-example-paginated-data" class="sidebar__link">Real-life example: paginated data</a>
-- <a href="async-iterators-generators.html#summary" class="sidebar__link">Summary</a>
+-   <a href="async-iterators-generators.html#recall-iterables" class="sidebar__link">Recall iterables</a>
+-   <a href="async-iterators-generators.html#async-iterables" class="sidebar__link">Async iterables</a>
+-   <a href="async-iterators-generators.html#recall-generators" class="sidebar__link">Recall generators</a>
+-   <a href="async-iterators-generators.html#async-generators-finally" class="sidebar__link">Async generators (finally)</a>
+-   <a href="async-iterators-generators.html#real-life-example-paginated-data" class="sidebar__link">Real-life example: paginated data</a>
+-   <a href="async-iterators-generators.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="async-iterators-generators.html class="sidebar\_\_link">Comments</a>
+-   <a href="async-iterators-generators.html class="sidebar\_\_link">Comments</a>
 
 Share
 
@@ -459,7 +459,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/12-generators-iterators/2-async-iterators-generators" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

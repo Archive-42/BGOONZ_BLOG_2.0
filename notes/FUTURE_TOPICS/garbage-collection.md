@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/garbage-collection"
-- <a href="garbage-collection.html"
-- <a href="https://es.javascript.info/garbage-collection"
-- <a href="https://fr.javascript.info/garbage-collection"
-- <a href="https://it.javascript.info/garbage-collection"
-  garbage-collection"
+-   <a href="https://ar.javascript.info/garbage-collection"
+-   <a href="garbage-collection.html"
+-   <a href="https://es.javascript.info/garbage-collection"
+-   <a href="https://fr.javascript.info/garbage-collection"
+-   <a href="https://it.javascript.info/garbage-collection"
+    garbage-collection"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/garbage-collection"
-- <a href=garbage-collection"
-- <a href="https://tr.javascript.info/garbage-collection"
-- <a href="https://zh.javascript.info/garbage-collection"
+-   <a href="https://ko.javascript.info/garbage-collection"
+-   <a href=garbage-collection"
+-   <a href="https://tr.javascript.info/garbage-collection"
+-   <a href="https://zh.javascript.info/garbage-collection"
 
 We want to make this open-source project available for people all around the world.
 
@@ -54,10 +54,10 @@ Simply put, “reachable” values are those that are accessible or usable someh
 
     For instance:
 
-    - The currently executing function, its local variables and parameters.
-    - Other functions on the current chain of nested calls, their local variables and parameters.
-    - Global variables.
-    - (there are some other, internal ones as well)
+    -   The currently executing function, its local variables and parameters.
+    -   Other functions on the current chain of nested calls, their local variables and parameters.
+    -   Global variables.
+    -   (there are some other, internal ones as well)
 
     These values are called _roots_.
 
@@ -162,11 +162,11 @@ The basic garbage collection algorithm is called “mark-and-sweep”.
 
 The following “garbage collection” steps are regularly performed:
 
-- The garbage collector takes roots and “marks” (remembers) them.
-- Then it visits and “marks” all references from them.
-- Then it visits marked objects and marks _their_ references. All visited objects are remembered, so as not to visit the same object twice in the future.
-- …And so on until every reachable (from the roots) references are visited.
-- All objects except marked ones are removed.
+-   The garbage collector takes roots and “marks” (remembers) them.
+-   Then it visits and “marks” all references from them.
+-   Then it visits marked objects and marks _their_ references. All visited objects are remembered, so as not to visit the same object twice in the future.
+-   …And so on until every reachable (from the roots) references are visited.
+-   All objects except marked ones are removed.
 
 For instance, let our object structure look like this:
 
@@ -186,9 +186,9 @@ That’s the concept of how garbage collection works. JavaScript engines apply m
 
 Some of the optimizations:
 
-- **Generational collection** – objects are split into two sets: “new ones” and “old ones”. Many objects appear, do their job and die fast, they can be cleaned up aggressively. Those that survive for long enough, become “old” and are examined less often.
-- **Incremental collection** – if there are many objects, and we try to walk and mark the whole object set at once, it may take some time and introduce visible delays in the execution. So the engine tries to split the garbage collection into pieces. Then the pieces are executed one by one, separately. That requires some extra bookkeeping between them to track changes, but we have many tiny delays instead of a big one.
-- **Idle-time collection** – the garbage collector tries to run only while the CPU is idle, to reduce the possible effect on the execution.
+-   **Generational collection** – objects are split into two sets: “new ones” and “old ones”. Many objects appear, do their job and die fast, they can be cleaned up aggressively. Those that survive for long enough, become “old” and are examined less often.
+-   **Incremental collection** – if there are many objects, and we try to walk and mark the whole object set at once, it may take some time and introduce visible delays in the execution. So the engine tries to split the garbage collection into pieces. Then the pieces are executed one by one, separately. That requires some extra bookkeeping between them to track changes, but we have many tiny delays instead of a big one.
+-   **Idle-time collection** – the garbage collector tries to run only while the CPU is idle, to reduce the possible effect on the execution.
 
 There exist other optimizations and flavours of garbage collection algorithms. As much as I’d like to describe them here, I have to hold off, because different engines implement different tweaks and techniques. And, what’s even more important, things change as engines develop, so studying deeper “in advance”, without a real need is probably not worth that. Unless, of course, it is a matter of pure interest, then there will be some links for you below.
 
@@ -196,9 +196,9 @@ There exist other optimizations and flavours of garbage collection algorithms. A
 
 The main things to know:
 
-- Garbage collection is performed automatically. We cannot force or prevent it.
-- Objects are retained in memory while they are reachable.
-- Being referenced is not the same as being reachable (from a root): a pack of interlinked objects can become unreachable as a whole.
+-   Garbage collection is performed automatically. We cannot force or prevent it.
+-   Objects are retained in memory while they are reachable.
+-   Being referenced is not the same as being reachable (from a root): a pack of interlinked objects can become unreachable as a whole.
 
 Modern engines implement advanced algorithms of garbage collection.
 
@@ -220,27 +220,27 @@ In-depth knowledge of engines is good when you need low-level optimizations. It 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
 
 #### Lesson navigation
 
-- <a href="garbage-collection.html#reachability" class="sidebar__link">Reachability</a>
-- <a href="garbage-collection.html#a-simple-example" class="sidebar__link">A simple example</a>
-- <a href="garbage-collection.html#two-references" class="sidebar__link">Two references</a>
-- <a href="garbage-collection.html#interlinked-objects" class="sidebar__link">Interlinked objects</a>
-- <a href="garbage-collection.html#unreachable-island" class="sidebar__link">Unreachable island</a>
-- <a href="garbage-collection.html#internal-algorithms" class="sidebar__link">Internal algorithms</a>
-- <a href="garbage-collection.html#summary" class="sidebar__link">Summary</a>
+-   <a href="garbage-collection.html#reachability" class="sidebar__link">Reachability</a>
+-   <a href="garbage-collection.html#a-simple-example" class="sidebar__link">A simple example</a>
+-   <a href="garbage-collection.html#two-references" class="sidebar__link">Two references</a>
+-   <a href="garbage-collection.html#interlinked-objects" class="sidebar__link">Interlinked objects</a>
+-   <a href="garbage-collection.html#unreachable-island" class="sidebar__link">Unreachable island</a>
+-   <a href="garbage-collection.html#internal-algorithms" class="sidebar__link">Internal algorithms</a>
+-   <a href="garbage-collection.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="garbage-collection.html#comments" class="sidebar__link">Comments</a>
+-   <a href="garbage-collection.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -248,7 +248,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/04-object-basics/03-garbage-collection" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

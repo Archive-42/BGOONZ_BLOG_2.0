@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/debugging-chrome"
-- <a href="debugging-chrome.html"
-- <a href="https://es.javascript.info/debugging-chrome"
-- <a href="https://fr.javascript.info/debugging-chrome"
-- <a href="https://it.javascript.info/debugging-chrome"
-  debugging-chrome"
+-   <a href="https://ar.javascript.info/debugging-chrome"
+-   <a href="debugging-chrome.html"
+-   <a href="https://es.javascript.info/debugging-chrome"
+-   <a href="https://fr.javascript.info/debugging-chrome"
+-   <a href="https://it.javascript.info/debugging-chrome"
+    debugging-chrome"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/debugging-chrome"
-- <a href=debugging-chrome"
-- <a href="https://tr.javascript.info/debugging-chrome"
-- <a href="https://zh.javascript.info/debugging-chrome"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/debugging-chrome"
+-   <a href=debugging-chrome"
+-   <a href="https://tr.javascript.info/debugging-chrome"
+-   <a href="https://zh.javascript.info/debugging-chrome"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -43,9 +43,9 @@ We’ll be using Chrome here, because it has enough features, most other browser
 
 Your Chrome version may look a little bit different, but it still should be obvious what’s there.
 
-- Open the [example page](article/debugging-chrome/debugging/index.html) in Chrome.
-- Turn on developer tools with F12 (Mac: Cmd<span class="shortcut__plus">+</span>Opt<span class="shortcut__plus">+</span>I).
-- Select the `Sources` panel.
+-   Open the [example page](article/debugging-chrome/debugging/index.html) in Chrome.
+-   Turn on developer tools with F12 (Mac: Cmd<span class="shortcut__plus">+</span>Opt<span class="shortcut__plus">+</span>I).
+-   Select the `Sources` panel.
 
 Here’s what you should see if you are doing it for the first time:
 
@@ -83,10 +83,10 @@ While the code is paused, we can examine current variables, execute commands in 
 
 We can always find a list of breakpoints in the right panel. That’s useful when we have many breakpoints in various files. It allows us to:
 
-- Quickly jump to the breakpoint in the code (by clicking on it in the right panel).
-- Temporarily disable the breakpoint by unchecking it.
-- Remove the breakpoint by right-clicking and selecting Remove.
-- …And so on.
+-   Quickly jump to the breakpoint in the code (by clicking on it in the right panel).
+-   Temporarily disable the breakpoint by unchecking it.
+-   Remove the breakpoint by right-clicking and selecting Remove.
+-   …And so on.
 
 <span class="important__type">Conditional breakpoints</span>
 
@@ -227,28 +227,28 @@ Oh, and also you can click at various places of dev tools and just see what’s 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="code-quality.html" class="sidebar__link">Code quality</a>
+-   <a href="code-quality.html" class="sidebar__link">Code quality</a>
 
 #### Lesson navigation
 
-- <a href="debugging-chrome.html#the-sources-panel" class="sidebar__link">The “Sources” panel</a>
-- <a href="debugging-chrome.html#console" class="sidebar__link">Console</a>
-- <a href="debugging-chrome.html#breakpoints" class="sidebar__link">Breakpoints</a>
-- <a href="debugging-chrome.html#debugger-command" class="sidebar__link">Debugger command</a>
-- <a href="debugging-chrome.html#pause-and-look-around" class="sidebar__link">Pause and look around</a>
-- <a href="debugging-chrome.html#tracing-the-execution" class="sidebar__link">Tracing the execution</a>
-- <a href="debugging-chrome.html#logging" class="sidebar__link">Logging</a>
-- <a href="debugging-chrome.html#summary" class="sidebar__link">Summary</a>
+-   <a href="debugging-chrome.html#the-sources-panel" class="sidebar__link">The “Sources” panel</a>
+-   <a href="debugging-chrome.html#console" class="sidebar__link">Console</a>
+-   <a href="debugging-chrome.html#breakpoints" class="sidebar__link">Breakpoints</a>
+-   <a href="debugging-chrome.html#debugger-command" class="sidebar__link">Debugger command</a>
+-   <a href="debugging-chrome.html#pause-and-look-around" class="sidebar__link">Pause and look around</a>
+-   <a href="debugging-chrome.html#tracing-the-execution" class="sidebar__link">Tracing the execution</a>
+-   <a href="debugging-chrome.html#logging" class="sidebar__link">Logging</a>
+-   <a href="debugging-chrome.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="debugging-chrome.html#comments" class="sidebar__link">Comments</a>
+-   <a href="debugging-chrome.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -256,7 +256,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/03-code-quality/01-debugging-chrome" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

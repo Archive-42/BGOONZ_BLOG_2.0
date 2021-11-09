@@ -2,19 +2,19 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="clickjacking.html"
-- <a href="https://es.javascript.info/clickjacking"
+-   <a href="clickjacking.html"
+-   <a href="https://es.javascript.info/clickjacking"
 
-- <a href="https://it.javascript.info/clickjacking"
-  clickjacking"
+-   <a href="https://it.javascript.info/clickjacking"
+    clickjacking"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=clickjacking"
-- <a href="https://tr.javascript.info/clickjacking"
-- <a href="https://zh.javascript.info/clickjacking"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/"
+-   <a href=clickjacking"
+-   <a href="https://tr.javascript.info/clickjacking"
+-   <a href="https://zh.javascript.info/clickjacking"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -458,8 +458,8 @@ From one perspective – the attack is “not deep”: all a hacker is doing is 
 
 The attack is quite dangerous, because when we engineer the UI we usually don’t anticipate that a hacker may click on behalf of the visitor. So vulnerabilities can be found in totally unexpected places.
 
-- It is recommended to use `X-Frame-Options: SAMEORIGIN` on pages (or whole websites) which are not intended to be viewed inside frames.
-- Use a covering `<div>` if we want to allow our pages to be shown in iframes, but still stay safe.
+-   It is recommended to use `X-Frame-Options: SAMEORIGIN` on pages (or whole websites) which are not intended to be viewed inside frames.
+-   Use a covering `<div>` if we want to allow our pages to be shown in iframes, but still stay safe.
 
 <a href="cross-window-communication.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="binary.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -471,27 +471,27 @@ The attack is quite dangerous, because when we engineer the UI we usually don’
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
+-   <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
 
 #### Lesson navigation
 
-- <a href="clickjacking.html#the-idea" class="sidebar__link">The idea</a>
-- <a href="clickjacking.html#the-demo" class="sidebar__link">The demo</a>
-- <a href="clickjacking.html#old-school-defences-weak" class="sidebar__link">Old-school defences (weak)</a>
-- <a href="clickjacking.html#x-frame-options" class="sidebar__link">X-Frame-Options</a>
-- <a href="clickjacking.html#showing-with-disabled-functionality" class="sidebar__link">Showing with disabled functionality</a>
-- <a href="clickjacking.html#samesite-cookie-attribute" class="sidebar__link">Samesite cookie attribute</a>
-- <a href="clickjacking.html#summary" class="sidebar__link">Summary</a>
+-   <a href="clickjacking.html#the-idea" class="sidebar__link">The idea</a>
+-   <a href="clickjacking.html#the-demo" class="sidebar__link">The demo</a>
+-   <a href="clickjacking.html#old-school-defences-weak" class="sidebar__link">Old-school defences (weak)</a>
+-   <a href="clickjacking.html#x-frame-options" class="sidebar__link">X-Frame-Options</a>
+-   <a href="clickjacking.html#showing-with-disabled-functionality" class="sidebar__link">Showing with disabled functionality</a>
+-   <a href="clickjacking.html#samesite-cookie-attribute" class="sidebar__link">Samesite cookie attribute</a>
+-   <a href="clickjacking.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="clickjacking.html#comments" class="sidebar__link">Comments</a>
+-   <a href="clickjacking.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -499,7 +499,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/3-frames-and-windows/06-clickjacking" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

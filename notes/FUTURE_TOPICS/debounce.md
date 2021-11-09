@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="debounce.html"
-  /debounce"
-  /debounce"
-  debouncedebounce"
+-   <a href="https://ar.javascript.info/"
+-   <a href="debounce.html"
+    /debounce"
+    /debounce"
+    debouncedebounce"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  debounce"
-  /debounce"
-  debounce"
+-   <a href="https://ko.javascript.info/"
+    debounce"
+    /debounce"
+    debounce"
 
 We want to make this open-source project available for people all around the world.
 

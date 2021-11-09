@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/bezier-curve"
-- <a href="bezier-curve.html"
-- <a href="https://es.javascript.info/bezier-curve"
+-   <a href="https://ar.javascript.info/bezier-curve"
+-   <a href="bezier-curve.html"
+-   <a href="https://es.javascript.info/bezier-curve"
 
-- <a href="https://it.javascript.info/bezier-curve"
-  bezier-curve"
+-   <a href="https://it.javascript.info/bezier-curve"
+    bezier-curve"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/bezier-curve"
-- <a href=bezier-curve"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/bezier-curve"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/bezier-curve"
+-   <a href=bezier-curve"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/bezier-curve"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -92,11 +92,11 @@ Control points (1,2 and 3) can be moved by the mouse. Press the “play” butto
 
     For each of these values of `t`:
 
-    - On each <span style="color: #825e28">brown</span> segment we take a point located on the distance proportional to `t` from its beginning. As there are two segments, we have two points.
+    -   On each <span style="color: #825e28">brown</span> segment we take a point located on the distance proportional to `t` from its beginning. As there are two segments, we have two points.
 
-      For instance, for `t=0` – both points will be at the beginning of segments, and for `t=0.25` – on the 25% of segment length from the beginning, for `t=0.5` – 50%(the middle), for `t=1` – in the end of segments.
+        For instance, for `t=0` – both points will be at the beginning of segments, and for `t=0.25` – on the 25% of segment length from the beginning, for `t=0.5` – 50%(the middle), for `t=1` – in the end of segments.
 
-    - Connect the points. On the picture below the connecting segment is painted <span style="color: #167490">blue</span>.
+    -   Connect the points. On the picture below the connecting segment is painted <span style="color: #167490">blue</span>.
 
 <table><thead><tr class="header"><th>For <code>t=0.25</code></th><th>For <code>t=0.5</code></th></tr></thead><tbody><tr class="odd"><td><img src="article/bezier-curve/bezier3-draw1.svg" width="340" height="350" /></td><td><img src="article/bezier-curve/bezier3-draw2.svg" width="340" height="350" /></td></tr></tbody></table>
 
@@ -110,12 +110,12 @@ The demo for 4 points (points can be moved by a mouse):
 
 The algorithm for 4 points:
 
-- Connect control points by segments: 1 → 2, 2 → 3, 3 → 4. There will be 3 <span style="color: #825e28">brown</span> segments.
-- For each `t` in the interval from `0` to `1`:
-  - We take points on these segments on the distance proportional to `t` from the beginning. These points are connected, so that we have two <span style="color: #0a0">green segments</span>.
-  - On these segments we take points proportional to `t`. We get one <span style="color: #167490">blue segment</span>.
-  - On the blue segment we take a point proportional to `t`. On the example above it’s <span style="color: red">red</span>.
-- These points together form the curve.
+-   Connect control points by segments: 1 → 2, 2 → 3, 3 → 4. There will be 3 <span style="color: #825e28">brown</span> segments.
+-   For each `t` in the interval from `0` to `1`:
+    -   We take points on these segments on the distance proportional to `t` from the beginning. These points are connected, so that we have two <span style="color: #0a0">green segments</span>.
+    -   On these segments we take points proportional to `t`. We get one <span style="color: #167490">blue segment</span>.
+    -   On the blue segment we take a point proportional to `t`. On the example above it’s <span style="color: red">red</span>.
+-   These points together form the curve.
 
 The algorithm is recursive and can be generalized for any number of control points.
 
@@ -157,31 +157,31 @@ As we saw – there’s actually no need to know it, most people just draw the c
 
 Given the coordinates of control points `Pi`: the first control point has coordinates `P1 = (x1, y1)`, the second: `P2 = (x2, y2)`, and so on, the curve coordinates are described by the equation that depends on the parameter `t` from the segment `[0,1]`.
 
-- The formula for a 2-points curve:
+-   The formula for a 2-points curve:
 
-  `P = (1-t)P1 + tP2`
+    `P = (1-t)P1 + tP2`
 
-- For 3 control points:
+-   For 3 control points:
 
-  `P = (1−t)2P1 + 2(1−t)tP2 + t2P3`
+    `P = (1−t)2P1 + 2(1−t)tP2 + t2P3`
 
-- For 4 control points:
+-   For 4 control points:
 
-  `P = (1−t)3P1 + 3(1−t)2tP2 +3(1−t)t2P3 + t3P4`
+    `P = (1−t)3P1 + 3(1−t)2tP2 +3(1−t)t2P3 + t3P4`
 
 These are vector equations. In other words, we can put `x` and `y` instead of `P` to get corresponding coordinates.
 
 For instance, the 3-point curve is formed by points `(x,y)` calculated as:
 
-- `x = (1−t)2x1 + 2(1−t)tx2 + t2x3`
-- `y = (1−t)2y1 + 2(1−t)ty2 + t2y3`
+-   `x = (1−t)2x1 + 2(1−t)tx2 + t2x3`
+-   `y = (1−t)2y1 + 2(1−t)ty2 + t2y3`
 
 Instead of `x1, y1, x2, y2, x3, y3` we should put coordinates of 3 control points, and then as `t` moves from `0` to `1`, for each value of `t` we’ll have `(x,y)` of the curve.
 
 For instance, if control points are `(0,0)`, `(0.5, 1)` and `(1, 0)`, the equations become:
 
-- `x = (1−t)2 * 0 + 2(1−t)t * 0.5 + t2 * 1 = (1-t)t + t2 = t`
-- `y = (1−t)2 * 0 + 2(1−t)t * 1 + t2 * 0 = 2(1-t)t = –2t2 + 2t`
+-   `x = (1−t)2 * 0 + 2(1−t)t * 0.5 + t2 * 1 = (1-t)t + t2 = t`
+-   `y = (1−t)2 * 0 + 2(1−t)t * 1 + t2 * 0 = 2(1-t)t = –2t2 + 2t`
 
 Now as `t` runs from `0` to `1`, the set of values `(x,y)` for each `t` forms the curve for such control points.
 
@@ -196,14 +196,14 @@ We saw two definitions of Bezier curves:
 
 Good properties of Bezier curves:
 
-- We can draw smooth lines with a mouse by moving control points.
-- Complex shapes can be made of several Bezier curves.
+-   We can draw smooth lines with a mouse by moving control points.
+-   Complex shapes can be made of several Bezier curves.
 
 Usage:
 
-- In computer graphics, modeling, vector graphic editors. Fonts are described by Bezier curves.
-- In web development – for graphics on Canvas and in the SVG format. By the way, “live” examples above are written in SVG. They are actually a single SVG document that is given different points as parameters. You can open it in a separate window and see the source: [demo.svg](article/bezier-curve/demo.svg%3Fp=0,0,1,0.5,0,0.5,1,1&animate=1).
-- In CSS animation to describe the path and speed of animation.
+-   In computer graphics, modeling, vector graphic editors. Fonts are described by Bezier curves.
+-   In web development – for graphics on Canvas and in the SVG format. By the way, “live” examples above are written in SVG. They are actually a single SVG document that is given different points as parameters. You can open it in a separate window and see the source: [demo.svg](article/bezier-curve/demo.svg%3Fp=0,0,1,0.5,0,0.5,1,1&animate=1).
+-   In CSS animation to describe the path and speed of animation.
 
 <a href="animation.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="css-animations.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -215,24 +215,24 @@ Usage:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="animation.html" class="sidebar__link">Animation</a>
+-   <a href="animation.html" class="sidebar__link">Animation</a>
 
 #### Lesson navigation
 
-- <a href="bezier-curve.html#control-points" class="sidebar__link">Control points</a>
-- <a href="bezier-curve.html#de-casteljau-s-algorithm" class="sidebar__link">De Casteljau’s algorithm</a>
-- <a href="bezier-curve.html#maths" class="sidebar__link">Maths</a>
-- <a href="bezier-curve.html#summary" class="sidebar__link">Summary</a>
+-   <a href="bezier-curve.html#control-points" class="sidebar__link">Control points</a>
+-   <a href="bezier-curve.html#de-casteljau-s-algorithm" class="sidebar__link">De Casteljau’s algorithm</a>
+-   <a href="bezier-curve.html#maths" class="sidebar__link">Maths</a>
+-   <a href="bezier-curve.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="bezier-curve.html class="sidebar\_\_link">Comments</a>
+-   <a href="bezier-curve.html class="sidebar\_\_link">Comments</a>
 
 Share
 
@@ -240,7 +240,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/7-animation/1-bezier-curve" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

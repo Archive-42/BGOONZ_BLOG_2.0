@@ -7,11 +7,11 @@ importance: 5
 What is the output of the script?
 
 ```js
-let name = "Ilya";
+let name = 'Ilya';
 
 alert(`hello ${1}`); // ?
 
-alert(`hello ${"name"}`); // ?
+alert(`hello ${'name'}`); // ?
 
 alert(`hello ${name}`); // ?
 ```

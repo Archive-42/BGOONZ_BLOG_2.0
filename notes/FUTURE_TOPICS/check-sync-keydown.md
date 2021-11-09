@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="check-sync-keydown.html"
-- <a href="https://es.javascript.info/"
-  /check-sync-keydown"
-  check-sync-keydowncheck-sync-keydown"
+-   <a href="https://ar.javascript.info/"
+-   <a href="check-sync-keydown.html"
+-   <a href="https://es.javascript.info/"
+    /check-sync-keydown"
+    check-sync-keydowncheck-sync-keydown"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  /check-sync-keydown"
-  /check-sync-keydown"
-  ask/check-sync-keydown"
+-   <a href="https://ko.javascript.info/"
+    /check-sync-keydown"
+    /check-sync-keydown"
+    ask/check-sync-keydown"
 
 k%2Fcheck-sync-keydown"%2Fcheck-sync-keydown" </a>
 

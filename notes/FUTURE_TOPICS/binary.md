@@ -2,19 +2,19 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="binary.html"
-- <a href="https://es.javascript.info/binary"
-- <a href="https://fr.javascript.info/binary"
-- <a href="https://it.javascript.info/"
-  binary"
+-   <a href="binary.html"
+-   <a href="https://es.javascript.info/binary"
+-   <a href="https://fr.javascript.info/binary"
+-   <a href="https://it.javascript.info/"
+    binary"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=binary"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/binary"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/"
+-   <a href=binary"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/binary"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -47,15 +47,15 @@ Working with binary data and files in JavaScript.
 
 #### Sibling chapters
 
-- <a href="js.html" class="sidebar__link">The JavaScript language</a>
-- <a href="ui.html" class="sidebar__link">Browser: Document, Events, Interfaces</a>
-- <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
-- <a href="binary.html" class="sidebar__link">Binary data, files</a>
-- <a href="network.html" class="sidebar__link">Network requests</a>
-- <a href="data-storage.html" class="sidebar__link">Storing data in the browser</a>
-- <a href="animation.html" class="sidebar__link">Animation</a>
-- <a href="web-components.html" class="sidebar__link">Web components</a>
-- <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
+-   <a href="js.html" class="sidebar__link">The JavaScript language</a>
+-   <a href="ui.html" class="sidebar__link">Browser: Document, Events, Interfaces</a>
+-   <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
+-   <a href="binary.html" class="sidebar__link">Binary data, files</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="data-storage.html" class="sidebar__link">Storing data in the browser</a>
+-   <a href="animation.html" class="sidebar__link">Animation</a>
+-   <a href="web-components.html" class="sidebar__link">Web components</a>
+-   <a href="regular-expressions.html" class="sidebar__link">Regular expressions</a>
 
 Share
 
@@ -63,7 +63,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/4-binary" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

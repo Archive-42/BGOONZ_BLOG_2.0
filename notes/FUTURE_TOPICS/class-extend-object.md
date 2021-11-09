@@ -1,18 +1,18 @@
 class-extend-object"
 
-- <a href="class-extend-object.html"
-  class-extend-object"
-  /class-extend-object"
-  class-extend-object"
-  "
+-   <a href="class-extend-object.html"
+    class-extend-object"
+    /class-extend-object"
+    class-extend-object"
+    "
 
 <!-- -->
 
 class-extend-object"
 /class-extend-object"
 
-- <a href="https://tr.javascript.info/"
-  ask/class-extend-object"k%2Fclass-extend-object"%2Fclass-extend-object" </a>
+-   <a href="https://tr.javascript.info/"
+    ask/class-extend-object"k%2Fclass-extend-object"%2Fclass-extend-object" </a>
 
 <a href="../classes.html" Classes</span></a>
 

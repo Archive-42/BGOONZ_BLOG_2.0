@@ -1,9 +1,9 @@
 create-array"
 
-- <a href="create-array.html"
-  /create-array"
-  /create-array"
-  create-arraycreate-array"
+-   <a href="create-array.html"
+    /create-array"
+    /create-array"
+    create-arraycreate-array"
 
 <!-- -->
 

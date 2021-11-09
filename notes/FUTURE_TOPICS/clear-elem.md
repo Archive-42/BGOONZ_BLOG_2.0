@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="clear-elem.html"
-  clear-elem"
-  /clear-elem"
-  clear-elemclear-elem"
+-   <a href="https://ar.javascript.info/"
+-   <a href="clear-elem.html"
+    clear-elem"
+    /clear-elem"
+    clear-elemclear-elem"
 
 <!-- -->
 

@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="array-unique-map.html"
-  array-unique-map"
-  /array-unique-map"
-  array-unique-maparray-unique-map"
+-   <a href="https://ar.javascript.info/"
+-   <a href="array-unique-map.html"
+    array-unique-map"
+    /array-unique-map"
+    array-unique-maparray-unique-map"
 
 <!-- -->
 
 array-unique-map"
 /array-unique-map"
 
-- <a href="https://tr.javascript.info/"
-  ask/array-unique-map"k%2Farray-unique-map"%2Farray-unique-map" </a>
+-   <a href="https://tr.javascript.info/"
+    ask/array-unique-map"k%2Farray-unique-map"%2Farray-unique-map" </a>
 
 <a href="../data-types.html" Data types</span></a>
 

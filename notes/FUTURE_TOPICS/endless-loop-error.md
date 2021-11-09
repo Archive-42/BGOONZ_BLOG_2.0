@@ -1,16 +1,16 @@
 endless-loop-error"
 
-- <a href="endless-loop-error.html"
-  /endless-loop-error"
-  /endless-loop-error"
-  endless-loop-errorendless-loop-error"
+-   <a href="endless-loop-error.html"
+    /endless-loop-error"
+    /endless-loop-error"
+    endless-loop-errorendless-loop-error"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  endless-loop-error"
-  /endless-loop-error"
-  endless-loop-error"
+-   <a href="https://ko.javascript.info/"
+    endless-loop-error"
+    /endless-loop-error"
+    endless-loop-error"
 
 k%2Fendless-loop-error"%2Fendless-loop-error" </a>
 

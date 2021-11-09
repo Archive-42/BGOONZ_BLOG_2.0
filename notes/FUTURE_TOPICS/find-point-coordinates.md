@@ -1,16 +1,16 @@
 find-point-coordinates"
 
-- <a href="find-point-coordinates.html"
-  /find-point-coordinates"
-  /find-point-coordinates"
-  find-point-coordinatesfind-point-coordinates"
+-   <a href="find-point-coordinates.html"
+    /find-point-coordinates"
+    /find-point-coordinates"
+    find-point-coordinatesfind-point-coordinates"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  find-point-coordinates"
-  /find-point-coordinates"
-  find-point-coordinates"
+-   <a href="https://ko.javascript.info/"
+    find-point-coordinates"
+    /find-point-coordinates"
+    find-point-coordinates"
 
 k%2Ffind-point-coordinates"%2Ffind-point-coordinates" </a>
 

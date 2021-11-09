@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/fetch-progress"
-- <a href="fetch-progress.html"
-- <a href="https://es.javascript.info/fetch-progress"
-- <a href="https://fr.javascript.info/fetch-progress"
-- <a href="https://it.javascript.info/fetch-progress"
-  fetch-progress"
+-   <a href="https://ar.javascript.info/fetch-progress"
+-   <a href="fetch-progress.html"
+-   <a href="https://es.javascript.info/fetch-progress"
+-   <a href="https://fr.javascript.info/fetch-progress"
+-   <a href="https://it.javascript.info/fetch-progress"
+    fetch-progress"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/fetch-progress"
-- <a href=fetch-progress"
-- <a href="https://tr.javascript.info/fetch-progress"
-- <a href="https://zh.javascript.info/fetch-progress"
+-   <a href="https://ko.javascript.info/fetch-progress"
+-   <a href=fetch-progress"
+-   <a href="https://tr.javascript.info/fetch-progress"
+-   <a href="https://zh.javascript.info/fetch-progress"
 
 We want to make this open-source project available for people all around the world.
 
@@ -67,8 +67,8 @@ Here’s the sketch of code that reads the response from `response.body`:
 
 The result of `await reader.read()` call is an object with two properties:
 
-- **`done`** – `true` when the reading is complete, otherwise `false`.
-- **`value`** – a typed array of bytes: `Uint8Array`.
+-   **`done`** – `true` when the reading is complete, otherwise `false`.
+-   **`value`** – a typed array of bytes: `Uint8Array`.
 
 <span class="important__type">Please note:</span>
 
@@ -165,17 +165,17 @@ Also, if the size is unknown, we should check `receivedLength` in the loop and b
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
 
-- <a href="fetch-progress.html#comments" class="sidebar__link">Comments</a>
+-   <a href="fetch-progress.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -183,7 +183,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/03-fetch-progress" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

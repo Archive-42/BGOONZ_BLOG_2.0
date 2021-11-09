@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/eval"
-- <a href="eval.html"
-- <a href="https://es.javascript.info/eval"
-- <a href="https://fr.javascript.info/eval"
-- <a href="https://it.javascript.info/eval"
-  eval"
+-   <a href="https://ar.javascript.info/eval"
+-   <a href="eval.html"
+-   <a href="https://es.javascript.info/eval"
+-   <a href="https://fr.javascript.info/eval"
+-   <a href="https://it.javascript.info/eval"
+    eval"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/eval"
-- <a href=eval"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/eval"
+-   <a href="https://ko.javascript.info/eval"
+-   <a href=eval"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/eval"
 
 We want to make this open-source project available for people all around the world.
 
@@ -154,10 +154,10 @@ The `new Function` construct is explained in the chapter [The "new Function" syn
 
 A call to `eval(code)` runs the string of code and returns the result of the last statement.
 
-- Rarely used in modern JavaScript, as there’s usually no need.
-- Can access outer local variables. That’s considered bad practice.
-- Instead, to `eval` the code in the global scope, use `window.eval(code)`.
-- Or, if your code needs some data from the outer scope, use `new Function` and pass it as arguments.
+-   Rarely used in modern JavaScript, as there’s usually no need.
+-   Can access outer local variables. That’s considered bad practice.
+-   Instead, to `eval` the code in the global scope, use `window.eval(code)`.
+-   Or, if your code needs some data from the outer scope, use `new Function` and pass it as arguments.
 
 ## <a href="eval.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -198,23 +198,23 @@ To make things safe, and limit it to arithmetics only, we can check the `expr` u
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="js-misc.html" class="sidebar__link">Miscellaneous</a>
 
 #### Lesson navigation
 
-- <a href="eval.html#using-eval" class="sidebar__link">Using “eval”</a>
-- <a href="eval.html#summary" class="sidebar__link">Summary</a>
+-   <a href="eval.html#using-eval" class="sidebar__link">Using “eval”</a>
+-   <a href="eval.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="eval.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="eval.html#comments" class="sidebar__link">Comments</a>
+-   <a href="eval.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="eval.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -222,7 +222,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/99-js-misc/02-eval" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

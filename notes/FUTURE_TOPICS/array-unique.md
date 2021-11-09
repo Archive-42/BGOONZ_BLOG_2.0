@@ -1,9 +1,9 @@
 array-unique"
 
-- <a href="array-unique.html"
-  array-unique"
-  /array-unique"
-  array-uniquearray-unique"
+-   <a href="array-unique.html"
+    array-unique"
+    /array-unique"
+    array-uniquearray-unique"
 
 <!-- -->
 
@@ -44,8 +44,8 @@ solution
 
 Let’s walk the array items:
 
-- For each item we’ll check if the resulting array already has that item.
-- If it is so, then ignore, otherwise add to results.
+-   For each item we’ll check if the resulting array already has that item.
+-   If it is so, then ignore, otherwise add to results.
 
 <a href="array-unique.html#"
 <a href="array-unique.html#" class="toolbar__button toolbar__button_edit" title="open in sandbox"></a>

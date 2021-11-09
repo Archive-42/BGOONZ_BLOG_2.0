@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/bind"
-- <a href="bind.html"
-- <a href="https://es.javascript.info/bind"
+-   <a href="https://ar.javascript.info/bind"
+-   <a href="bind.html"
+-   <a href="https://es.javascript.info/bind"
 
-- <a href="https://it.javascript.info/bind"
-  bind"
+-   <a href="https://it.javascript.info/bind"
+    bind"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/bind"
-- <a href=bind"
-- <a href="https://tr.javascript.info/bind"
-- <a href="https://zh.javascript.info/bind"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/bind"
+-   <a href=bind"
+-   <a href="https://tr.javascript.info/bind"
+-   <a href="https://zh.javascript.info/bind"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -318,9 +318,9 @@ Like this:
 
 The result of `partial(func[, arg1, arg2...])` call is a wrapper `(*)` that calls `func` with:
 
-- Same `this` as it gets (for `user.sayNow` call it’s `user`)
-- Then gives it `...argsBound` – arguments from the `partial` call (`"10:00"`)
-- Then gives it `...args` – arguments given to the wrapper (`"Hello"`)
+-   Same `this` as it gets (for `user.sayNow` call it’s `user`)
+-   Then gives it `...argsBound` – arguments from the `partial` call (`"10:00"`)
+-   Then gives it `...args` – arguments given to the wrapper (`"Hello"`)
 
 So easy to do it with the spread syntax, right?
 
@@ -573,27 +573,27 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="bind.html#losing-this" class="sidebar__link">Losing “this”</a>
-- <a href="bind.html#solution-1-a-wrapper" class="sidebar__link">Solution 1: a wrapper</a>
-- <a href="bind.html#solution-2-bind" class="sidebar__link">Solution 2: bind</a>
-- <a href="bind.html#partial-functions" class="sidebar__link">Partial functions</a>
-- <a href="bind.html#going-partial-without-context" class="sidebar__link">Going partial without context</a>
-- <a href="bind.html#summary" class="sidebar__link">Summary</a>
+-   <a href="bind.html#losing-this" class="sidebar__link">Losing “this”</a>
+-   <a href="bind.html#solution-1-a-wrapper" class="sidebar__link">Solution 1: a wrapper</a>
+-   <a href="bind.html#solution-2-bind" class="sidebar__link">Solution 2: bind</a>
+-   <a href="bind.html#partial-functions" class="sidebar__link">Partial functions</a>
+-   <a href="bind.html#going-partial-without-context" class="sidebar__link">Going partial without context</a>
+-   <a href="bind.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="bind.html#tasks" class="sidebar__link">Tasks (5)</a>
-- <a href="bind.html class="sidebar\_\_link">Comments</a>
+-   <a href="bind.html#tasks" class="sidebar__link">Tasks (5)</a>
+-   <a href="bind.html class="sidebar\_\_link">Comments</a>
 
 Share
 
@@ -601,7 +601,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/10-bind" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

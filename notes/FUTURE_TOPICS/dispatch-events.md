@@ -2,19 +2,19 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="dispatch-events.html"
-- <a href="https://es.javascript.info/dispatch-events"
-- <a href="https://fr.javascript.info/dispatch-events"
-- <a href="https://it.javascript.info/dispatch-events"
-  dispatch-events"
+-   <a href="dispatch-events.html"
+-   <a href="https://es.javascript.info/dispatch-events"
+-   <a href="https://fr.javascript.info/dispatch-events"
+-   <a href="https://it.javascript.info/dispatch-events"
+    dispatch-events"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/dispatch-events"
-- <a href=dispatch-events"
-- <a href="https://tr.javascript.info/dispatch-events"
-- <a href="https://zh.javascript.info/dispatch-events"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/dispatch-events"
+-   <a href=dispatch-events"
+-   <a href="https://tr.javascript.info/dispatch-events"
+-   <a href="https://zh.javascript.info/dispatch-events"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -50,14 +50,14 @@ We can create `Event` objects like this:
 
 Arguments:
 
-- _type_ – event type, a string like `"click"` or our own like `"my-event"`.
+-   _type_ – event type, a string like `"click"` or our own like `"my-event"`.
 
-- _options_ – the object with two optional properties:
+-   _options_ – the object with two optional properties:
 
-  - `bubbles: true/false` – if `true`, then the event bubbles.
-  - `cancelable: true/false` – if `true`, then the “default action” may be prevented. Later we’ll see what it means for custom events.
+    -   `bubbles: true/false` – if `true`, then the event bubbles.
+    -   `cancelable: true/false` – if `true`, then the “default action” may be prevented. Later we’ll see what it means for custom events.
 
-  By default both are false: `{bubbles: false, cancelable: false}`.
+    By default both are false: `{bubbles: false, cancelable: false}`.
 
 ## <a href="dispatch-events.html#dispatchevent" id="dispatchevent" class="main__anchor">dispatchEvent</a>
 
@@ -121,12 +121,12 @@ The bubbling mechanics is the same for built-in (`click`) and custom (`hello`) e
 
 Here’s a short list of classes for UI Events from the [UI Event specification](https://www.w3.org/TR/uievents):
 
-- `UIEvent`
-- `FocusEvent`
-- `MouseEvent`
-- `WheelEvent`
-- `KeyboardEvent`
-- …
+-   `UIEvent`
+-   `FocusEvent`
+-   `MouseEvent`
+-   `WheelEvent`
+-   `KeyboardEvent`
+-   …
 
 We should use them instead of `new Event` if we want to create such events. For instance, `new MouseEvent("click")`.
 
@@ -316,8 +316,8 @@ To generate an event from code, we first need to create an event object.
 
 The generic `Event(name, options)` constructor accepts an arbitrary event name and the `options` object with two properties:
 
-- `bubbles: true` if the event should bubble.
-- `cancelable: true` if the `event.preventDefault()` should work.
+-   `bubbles: true` if the event should bubble.
+-   `cancelable: true` if the `event.preventDefault()` should work.
 
 Other constructors of native events like `MouseEvent`, `KeyboardEvent` and so on accept properties specific to that event type. For instance, `clientX` for mouse events.
 
@@ -329,8 +329,8 @@ We shouldn’t generate browser events as it’s a hacky way to run handlers. Th
 
 Native events might be generated:
 
-- As a dirty hack to make 3rd-party libraries work the needed way, if they don’t provide other means of interaction.
-- For automated testing, to “click the button” in the script and see if the interface reacts correctly.
+-   As a dirty hack to make 3rd-party libraries work the needed way, if they don’t provide other means of interaction.
+-   For automated testing, to “click the button” in the script and see if the interface reacts correctly.
 
 Custom events with our own names are often generated for architectural purposes, to signal what happens inside our menus, sliders, carousels etc.
 
@@ -344,28 +344,28 @@ Custom events with our own names are often generated for architectural purposes,
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="events.html" class="sidebar__link">Introduction to Events</a>
+-   <a href="events.html" class="sidebar__link">Introduction to Events</a>
 
 #### Lesson navigation
 
-- <a href="dispatch-events.html#event-constructor" class="sidebar__link">Event constructor</a>
-- <a href="dispatch-events.html#dispatchevent" class="sidebar__link">dispatchEvent</a>
-- <a href="dispatch-events.html#bubbling-example" class="sidebar__link">Bubbling example</a>
-- <a href="dispatch-events.html#mouseevent-keyboardevent-and-others" class="sidebar__link">MouseEvent, KeyboardEvent and others</a>
-- <a href="dispatch-events.html#custom-events" class="sidebar__link">Custom events</a>
-- <a href="dispatch-events.html#event-preventdefault" class="sidebar__link">event.preventDefault()</a>
-- <a href="dispatch-events.html#events-in-events-are-synchronous" class="sidebar__link">Events-in-events are synchronous</a>
-- <a href="dispatch-events.html#summary" class="sidebar__link">Summary</a>
+-   <a href="dispatch-events.html#event-constructor" class="sidebar__link">Event constructor</a>
+-   <a href="dispatch-events.html#dispatchevent" class="sidebar__link">dispatchEvent</a>
+-   <a href="dispatch-events.html#bubbling-example" class="sidebar__link">Bubbling example</a>
+-   <a href="dispatch-events.html#mouseevent-keyboardevent-and-others" class="sidebar__link">MouseEvent, KeyboardEvent and others</a>
+-   <a href="dispatch-events.html#custom-events" class="sidebar__link">Custom events</a>
+-   <a href="dispatch-events.html#event-preventdefault" class="sidebar__link">event.preventDefault()</a>
+-   <a href="dispatch-events.html#events-in-events-are-synchronous" class="sidebar__link">Events-in-events are synchronous</a>
+-   <a href="dispatch-events.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="dispatch-events.html#comments" class="sidebar__link">Comments</a>
+-   <a href="dispatch-events.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -373,7 +373,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/2-events/05-dispatch-events" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

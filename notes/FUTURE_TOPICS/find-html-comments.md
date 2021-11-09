@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="find-html-comments.html"
-  /find-html-comments"
-  /find-html-comments"
-  find-html-commentsfind-html-comments"
+-   <a href="https://ar.javascript.info/"
+-   <a href="find-html-comments.html"
+    /find-html-comments"
+    /find-html-comments"
+    find-html-commentsfind-html-comments"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  find-html-comments"
-- <a href="https://tr.javascript.info/"
-  find-html-comments"
+-   <a href="https://ko.javascript.info/"
+    find-html-comments"
+-   <a href="https://tr.javascript.info/"
+    find-html-comments"
 
 k%2Ffind-html-comments"%2Ffind-html-comments" </a>
 

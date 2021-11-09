@@ -1,9 +1,9 @@
 check-spam"
 
-- <a href="check-spam.html"
-  check-spam"
-  /check-spam"
-  check-spamcheck-spam"
+-   <a href="check-spam.html"
+    check-spam"
+    /check-spam"
+    check-spamcheck-spam"
 
 <!-- -->
 

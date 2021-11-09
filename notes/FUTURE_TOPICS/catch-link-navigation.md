@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="catch-link-navigation.html"
-  catch-link-navigation"
-  /catch-link-navigation"
-  catch-link-navigationcatch-link-navigation"
+-   <a href="https://ar.javascript.info/"
+-   <a href="catch-link-navigation.html"
+    catch-link-navigation"
+    /catch-link-navigation"
+    catch-link-navigationcatch-link-navigation"
 
 <!-- -->
 
 catch-link-navigation"
 /catch-link-navigation"
 
-- <a href="https://tr.javascript.info/"
-  ask/catch-link-navigation"k%2Fcatch-link-navigation"%2Fcatch-link-navigation" </a>
+-   <a href="https://tr.javascript.info/"
+    ask/catch-link-navigation"k%2Fcatch-link-navigation"%2Fcatch-link-navigation" </a>
 
 <a href="../ui.html" Browser: Document, Events, Interfaces</span></a>
 
@@ -32,8 +32,8 @@ Like this:
 
 Details:
 
-- HTML inside the element may be loaded or regenerated dynamically at any time, so we can’t find all links and put handlers on them. Use event delegation.
-- The content may have nested tags. Inside links too, like `<a href=".."><i>...</i></a>`.
+-   HTML inside the element may be loaded or regenerated dynamically at any time, so we can’t find all links and put handlers on them. Use event delegation.
+-   The content may have nested tags. Inside links too, like `<a href=".."><i>...</i></a>`.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/2q3DhC51iVEYU3Ht?p=preview)
 

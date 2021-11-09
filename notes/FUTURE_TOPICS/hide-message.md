@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="hide-message.html"
-  /hide-message"
+-   <a href="hide-message.html"
+    /hide-message"
 
 hide-messagehide-message"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  hide-message"
-- <a href="https://tr.javascript.info/"
-  hide-message"
+-   <a href="https://ko.javascript.info/"
+    hide-message"
+-   <a href="https://tr.javascript.info/"
+    hide-message"
 
 We want to make this open-source project available for people all around the world.
 

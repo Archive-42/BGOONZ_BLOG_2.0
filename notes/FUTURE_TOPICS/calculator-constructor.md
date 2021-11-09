@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="calculator-constructor.html"
-  calculator-constructor"
-  /calculator-constructor"
-  calculator-constructorcalculator-constructor"
+-   <a href="https://ar.javascript.info/"
+-   <a href="calculator-constructor.html"
+    calculator-constructor"
+    /calculator-constructor"
+    calculator-constructorcalculator-constructor"
 
 <!-- -->
 
@@ -25,9 +25,9 @@ ask/calculator-constructor"k%2Fcalculator-constructor"%2Fcalculator-constructor"
 
 Create a constructor function `Calculator` that creates objects with 3 methods:
 
-- `read()` asks for two values using `prompt` and remembers them in object properties.
-- `sum()` returns the sum of these properties.
-- `mul()` returns the multiplication product of these properties.
+-   `read()` asks for two values using `prompt` and remembers them in object properties.
+-   `sum()` returns the sum of these properties.
+-   `mul()` returns the multiplication product of these properties.
 
 For instance:
 

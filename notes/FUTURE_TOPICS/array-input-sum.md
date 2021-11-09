@@ -1,9 +1,9 @@
 array-input-sum"
 
-- <a href="array-input-sum.html"
-  array-input-sum"
-  /array-input-sum"
-  array-input-sumarray-input-sum"
+-   <a href="array-input-sum.html"
+    array-input-sum"
+    /array-input-sum"
+    array-input-sumarray-input-sum"
 
 <!-- -->
 
@@ -24,9 +24,9 @@ ask/array-input-sum"k%2Farray-input-sum"%2Farray-input-sum" </a>
 
 Write the function `sumInput()` that:
 
-- Asks the user for values using `prompt` and stores the values in the array.
-- Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
-- Calculates and returns the sum of array items.
+-   Asks the user for values using `prompt` and stores the values in the array.
+-   Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
+-   Calculates and returns the sum of array items.
 
 P.S. A zero `0` is a valid number, please don’t stop the input on zero.
 

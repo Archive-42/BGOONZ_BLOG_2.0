@@ -1,9 +1,9 @@
 counter-object-independent"
 
-- <a href="counter-object-independent.html"
-  /counter-object-independent"
-  /counter-object-independent"
-  counter-object-independentcounter-object-independent"
+-   <a href="counter-object-independent.html"
+    /counter-object-independent"
+    /counter-object-independent"
+    counter-object-independentcounter-object-independent"
 
 <!-- -->
 

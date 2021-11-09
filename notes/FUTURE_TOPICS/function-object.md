@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/function-object"
-- <a href="function-object.html"
-- <a href="https://es.javascript.info/function-object"
-- <a href="https://fr.javascript.info/function-object"
-- <a href="https://it.javascript.info/function-object"
-  function-object"
+-   <a href="https://ar.javascript.info/function-object"
+-   <a href="function-object.html"
+-   <a href="https://es.javascript.info/function-object"
+-   <a href="https://fr.javascript.info/function-object"
+-   <a href="https://it.javascript.info/function-object"
+    function-object"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/function-object"
-- <a href=function-object"
-- <a href="https://tr.javascript.info/function-object"
-- <a href="https://zh.javascript.info/function-object"
+-   <a href="https://ko.javascript.info/function-object"
+-   <a href=function-object"
+-   <a href="https://tr.javascript.info/function-object"
+-   <a href="https://zh.javascript.info/function-object"
 
 We want to make this open-source project available for people all around the world.
 
@@ -143,8 +143,8 @@ For instance, in the code below the `ask` function accepts a `question` to ask a
 
 Once a user provides their answer, the function calls the handlers. We can pass two kinds of handlers:
 
-- A zero-argument function, which is only called when the user gives a positive answer.
-- A function with arguments, which is called in either case and returns an answer.
+-   A zero-argument function, which is only called when the user gives a positive answer.
+-   A function with arguments, which is called in either case and returns an answer.
 
 To call `handler` the right way, we examine the `handler.length` property.
 
@@ -373,8 +373,8 @@ Functions are objects.
 
 Here we covered their properties:
 
-- `name` – the function name. Usually taken from the function definition, but if there’s none, JavaScript tries to guess it from the context (e.g. an assignment).
-- `length` – the number of arguments in the function definition. Rest parameters are not counted.
+-   `name` – the function name. Usually taken from the function definition, but if there’s none, JavaScript tries to guess it from the context (e.g. an assignment).
+-   `length` – the number of arguments in the function definition. Rest parameters are not counted.
 
 If the function is declared as a Function Expression (not in the main code flow), and it carries the name, then it is called a Named Function Expression. The name can be used inside to reference itself, for recursive calls or such.
 
@@ -394,9 +394,9 @@ So, a function can do a useful job by itself and also carry a bunch of other fun
 
 Modify the code of `makeCounter()` so that the counter can also decrease and set the number:
 
-- `counter()` should return the next number (as before).
-- `counter.set(value)` should set the counter to `value`.
-- `counter.decrease()` should decrease the counter by 1.
+-   `counter()` should return the next number (as before).
+-   `counter.set(value)` should set the counter to `value`.
+-   `counter.decrease()` should decrease the counter by 1.
 
 See the sandbox code for the complete usage example.
 
@@ -508,26 +508,26 @@ This `f` will be used in the next call, again return itself, as many times as ne
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="function-object.html#the-name-property" class="sidebar__link">The “name” property</a>
-- <a href="function-object.html#the-length-property" class="sidebar__link">The “length” property</a>
-- <a href="function-object.html#custom-properties" class="sidebar__link">Custom properties</a>
-- <a href="function-object.html#named-function-expression" class="sidebar__link">Named Function Expression</a>
-- <a href="function-object.html#summary" class="sidebar__link">Summary</a>
+-   <a href="function-object.html#the-name-property" class="sidebar__link">The “name” property</a>
+-   <a href="function-object.html#the-length-property" class="sidebar__link">The “length” property</a>
+-   <a href="function-object.html#custom-properties" class="sidebar__link">Custom properties</a>
+-   <a href="function-object.html#named-function-expression" class="sidebar__link">Named Function Expression</a>
+-   <a href="function-object.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="function-object.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="function-object.html#comments" class="sidebar__link">Comments</a>
+-   <a href="function-object.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="function-object.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -535,7 +535,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/06-function-object" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

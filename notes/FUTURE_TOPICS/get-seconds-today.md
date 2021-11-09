@@ -1,9 +1,9 @@
 get-seconds-today"
 
-- <a href="get-seconds-today.html"
-  /get-seconds-today"
-  /get-seconds-today"
-  get-seconds-todayget-seconds-today"
+-   <a href="get-seconds-today.html"
+    /get-seconds-today"
+    /get-seconds-today"
+    get-seconds-todayget-seconds-today"
 
 <!-- -->
 

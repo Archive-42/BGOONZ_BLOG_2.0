@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="js-animation.html"
-- <a href="https://es.javascript.info/js-animation"
+-   <a href="js-animation.html"
+-   <a href="https://es.javascript.info/js-animation"
 
-- <a href="https://it.javascript.info/js-animation"
-  js-animation"
+-   <a href="https://it.javascript.info/js-animation"
+    js-animation"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=js-animation"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/js-animation"
+-   <a href="https://ko.javascript.info/"
+-   <a href=js-animation"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/js-animation"
 
 We want to make this open-source project available for people all around the world.
 
@@ -521,8 +521,8 @@ Here we can see how the transform changes the behavior of the function:
 
 In the graph above the <span style="color:#EE6B47">regular bounce</span> has the red color, and the <span style="color:#62C0DC">easeOut bounce</span> is blue.
 
-- Regular bounce – the object bounces at the bottom, then at the end sharply jumps to the top.
-- After `easeOut` – it first jumps to the top, then bounces there.
+-   Regular bounce – the object bounces at the bottom, then at the end sharply jumps to the top.
+-   After `easeOut` – it first jumps to the top, then bounces there.
 
 ### <a href="js-animation.html#easeinout" id="easeinout" class="main__anchor">easeInOut</a>
 
@@ -743,9 +743,9 @@ Here’s the helper `animate` function to setup most animations:
 
 Options:
 
-- `duration` – the total animation time in ms.
-- `timing` – the function to calculate animation progress. Gets a time fraction from 0 to 1, returns the animation progress, usually from 0 to 1.
-- `draw` – the function to draw the animation.
+-   `duration` – the total animation time in ms.
+-   `timing` – the function to calculate animation progress. Gets a time fraction from 0 to 1, returns the animation progress, usually from 0 to 1.
+-   `draw` – the function to draw the animation.
 
 Surely we could improve it, add more bells and whistles, but JavaScript animations are not applied on a daily basis. They are used to do something interesting and non-standard. So you’d want to add the features that you need when you need them.
 
@@ -844,28 +844,28 @@ The code:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="animation.html" class="sidebar__link">Animation</a>
+-   <a href="animation.html" class="sidebar__link">Animation</a>
 
 #### Lesson navigation
 
-- <a href="js-animation.html#using-setinterval" class="sidebar__link">Using setInterval</a>
-- <a href="js-animation.html#using-requestanimationframe" class="sidebar__link">Using requestAnimationFrame</a>
-- <a href="js-animation.html#structured-animation" class="sidebar__link">Structured animation</a>
-- <a href="js-animation.html#timing-functions" class="sidebar__link">Timing functions</a>
-- <a href="js-animation.html#reversal-ease" class="sidebar__link">Reversal: ease\*</a>
-- <a href="js-animation.html#more-interesting-draw" class="sidebar__link">More interesting “draw”</a>
-- <a href="js-animation.html#summary" class="sidebar__link">Summary</a>
+-   <a href="js-animation.html#using-setinterval" class="sidebar__link">Using setInterval</a>
+-   <a href="js-animation.html#using-requestanimationframe" class="sidebar__link">Using requestAnimationFrame</a>
+-   <a href="js-animation.html#structured-animation" class="sidebar__link">Structured animation</a>
+-   <a href="js-animation.html#timing-functions" class="sidebar__link">Timing functions</a>
+-   <a href="js-animation.html#reversal-ease" class="sidebar__link">Reversal: ease\*</a>
+-   <a href="js-animation.html#more-interesting-draw" class="sidebar__link">More interesting “draw”</a>
+-   <a href="js-animation.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="js-animation.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="js-animation.html#comments" class="sidebar__link">Comments</a>
+-   <a href="js-animation.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="js-animation.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -873,7 +873,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/7-animation/3-js-animation" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

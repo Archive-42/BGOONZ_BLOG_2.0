@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="create-list.html"
-  /create-list"
-  /create-list"
-  create-listcreate-list"
+-   <a href="https://ar.javascript.info/"
+-   <a href="create-list.html"
+    /create-list"
+    /create-list"
+    create-listcreate-list"
 
 <!-- -->
 

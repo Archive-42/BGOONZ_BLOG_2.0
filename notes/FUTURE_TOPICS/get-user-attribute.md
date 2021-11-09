@@ -1,17 +1,17 @@
 get-user-attribute"
 
-- <a href="get-user-attribute.html"
-  /get-user-attribute"
-  /get-user-attribute"
-  get-user-attributeget-user-attribute"
+-   <a href="get-user-attribute.html"
+    /get-user-attribute"
+    /get-user-attribute"
+    get-user-attributeget-user-attribute"
 
 <!-- -->
 
 get-user-attribute"
 get-user-attribute"
 
-- <a href="https://tr.javascript.info/"
-  get-user-attribute"
+-   <a href="https://tr.javascript.info/"
+    get-user-attribute"
 
 We want to make this open-source project available for people all around the world.
 

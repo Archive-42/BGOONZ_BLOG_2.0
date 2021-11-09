@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/coordinates"
-- <a href="coordinates.html"
-- <a href="https://es.javascript.info/coordinates"
-- <a href="https://fr.javascript.info/coordinates"
-- <a href="https://it.javascript.info/coordinates"
-  coordinates"
+-   <a href="https://ar.javascript.info/coordinates"
+-   <a href="coordinates.html"
+-   <a href="https://es.javascript.info/coordinates"
+-   <a href="https://fr.javascript.info/coordinates"
+-   <a href="https://it.javascript.info/coordinates"
+    coordinates"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/coordinates"
-- <a href=coordinates"
-- <a href="https://tr.javascript.info/coordinates"
-- <a href="https://zh.javascript.info/coordinates"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/coordinates"
+-   <a href=coordinates"
+-   <a href="https://tr.javascript.info/coordinates"
+-   <a href="https://zh.javascript.info/coordinates"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -38,9 +38,9 @@ To move elements around we should be familiar with coordinates.
 Most JavaScript methods deal with one of two coordinate systems:
 
 1.  **Relative to the window** – similar to `position:fixed`, calculated from the window top/left edge.
-    - we’ll denote these coordinates as `clientX/clientY`, the reasoning for such name will become clear later, when we study event properties.
+    -   we’ll denote these coordinates as `clientX/clientY`, the reasoning for such name will become clear later, when we study event properties.
 2.  **Relative to the document** – similar to `position:absolute` in the document root, calculated from the document top/left edge.
-    - we’ll denote them `pageX/pageY`.
+    -   we’ll denote them `pageX/pageY`.
 
 When the page is scrolled to the very beginning, so that the top/left corner of the window is exactly the document top/left corner, these coordinates equal each other. But after the document shifts, window-relative coordinates of elements change, as elements move across the window, while document-relative coordinates remain the same.
 
@@ -48,8 +48,8 @@ On this picture we take a point in the document and demonstrate its coordinates 
 
 <figure><img src="article/coordinates/document-and-window-coordinates-scrolled.svg" width="728" height="358" /></figure>When the document scrolled:
 
-- `pageY` – document-relative coordinate stayed the same, it’s counted from the document top (now scrolled out).
-- `clientY` – window-relative coordinate did change (the arrow became shorter), as the same point became closer to window top.
+-   `pageY` – document-relative coordinate stayed the same, it’s counted from the document top (now scrolled out).
+-   `clientY` – window-relative coordinate did change (the arrow became shorter), as the same point became closer to window top.
 
 ## <a href="coordinates.html#element-coordinates-getboundingclientrect" id="element-coordinates-getboundingclientrect" class="main__anchor">Element coordinates: getBoundingClientRect</a>
 
@@ -57,13 +57,13 @@ The method `elem.getBoundingClientRect()` returns window coordinates for a minim
 
 Main `DOMRect` properties:
 
-- `x/y` – X/Y-coordinates of the rectangle origin relative to window,
-- `width/height` – width/height of the rectangle (can be negative).
+-   `x/y` – X/Y-coordinates of the rectangle origin relative to window,
+-   `width/height` – width/height of the rectangle (can be negative).
 
 Additionally, there are derived properties:
 
-- `top/bottom` – Y-coordinate for the top/bottom rectangle edge,
-- `left/right` – X-coordinate for the left/right rectangle edge.
+-   `top/bottom` – Y-coordinate for the top/bottom rectangle edge,
+-   `left/right` – X-coordinate for the left/right rectangle edge.
 
 For instance click this button to see its window coordinates:
 
@@ -73,15 +73,15 @@ Here’s the picture of `elem.getBoundingClientRect()` output:
 
 <figure><img src="article/coordinates/coordinates.svg" width="521" height="411" /></figure>As you can see, `x/y` and `width/height` fully describe the rectangle. Derived properties can be easily calculated from them:
 
-- `left = x`
-- `top = y`
-- `right = x + width`
-- `bottom = y + height`
+-   `left = x`
+-   `top = y`
+-   `right = x + width`
+-   `bottom = y + height`
 
 Please note:
 
-- Coordinates may be decimal fractions, such as `10.5`. That’s normal, internally browser uses fractions in calculations. We don’t have to round them when setting to `style.left/top`.
-- Coordinates may be negative. For instance, if the page is scrolled so that `elem` is now above the window, then `elem.getBoundingClientRect().top` is negative.
+-   Coordinates may be decimal fractions, such as `10.5`. That’s normal, internally browser uses fractions in calculations. We don’t have to round them when setting to `style.left/top`.
+-   Coordinates may be negative. For instance, if the page is scrolled so that `elem` is now above the window, then `elem.getBoundingClientRect().top` is negative.
 
 <span class="important__type">Why derived properties are needed? Why does `top/left` exist if there’s `x/y`?</span>
 
@@ -203,8 +203,8 @@ There’s no standard method to get the document coordinates of an element. But 
 
 The two coordinate systems are connected by the formula:
 
-- `pageY` = `clientY` + height of the scrolled-out vertical part of the document.
-- `pageX` = `clientX` + width of the scrolled-out horizontal part of the document.
+-   `pageY` = `clientY` + height of the scrolled-out vertical part of the document.
+-   `pageX` = `clientX` + width of the scrolled-out horizontal part of the document.
 
 The function `getCoords(elem)` will take window coordinates from `elem.getBoundingClientRect()` and add the current scroll to them:
 
@@ -335,9 +335,9 @@ Create a function `positionAt(anchor, position, elem)` that positions `elem`, de
 
 The `position` must be a string with any one of 3 values:
 
-- `"top"` – position `elem` right above `anchor`
-- `"right"` – position `elem` immediately at the right of `anchor`
-- `"bottom"` – position `elem` right below `anchor`
+-   `"top"` – position `elem` right above `anchor`
+-   `"right"` – position `elem` immediately at the right of `anchor`
+-   `"bottom"` – position `elem` right below `anchor`
 
 It’s used inside function `showNote(anchor, position, html)`, provided in the task source code, that creates a “note” element with given `html` and shows it at the given `position` near the `anchor`.
 
@@ -371,8 +371,8 @@ solution
 
 The solution is actually pretty simple:
 
-- Use `position:absolute` in CSS instead of `position:fixed` for `.note`.
-- Use the function [getCoords()](coordinates.html#getCoords) from the chapter [Coordinates](coordinates.html) to get document-relative coordinates.
+-   Use `position:absolute` in CSS instead of `position:fixed` for `.note`.
+-   Use the function [getCoords()](coordinates.html#getCoords) from the chapter [Coordinates](coordinates.html) to get document-relative coordinates.
 
 [Open the solution in a sandbox.](https://plnkr.co/edit/IltvUDuUTs6bVjl3?p=preview)
 
@@ -386,8 +386,8 @@ Extend the previous task [Show a note near the element (absolute)](task/position
 
 New values for `position`:
 
-- `top-out`, `right-out`, `bottom-out` – work the same as before, they insert the `elem` over/right/under `anchor`.
-- `top-in`, `right-in`, `bottom-in` – insert `elem` inside the `anchor`: stick it to the upper/right/bottom edge.
+-   `top-out`, `right-out`, `bottom-out` – work the same as before, they insert the `elem` over/right/under `anchor`.
+-   `top-in`, `right-in`, `bottom-in` – insert `elem` inside the `anchor`: stick it to the upper/right/bottom edge.
 
 For instance:
 
@@ -417,26 +417,26 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
-- <a href="coordinates.html#element-coordinates-getboundingclientrect" class="sidebar__link">Element coordinates: getBoundingClientRect</a>
-- <a href="coordinates.html#elementFromPoint" class="sidebar__link">elementFromPoint(x, y)</a>
-- <a href="coordinates.html#using-for-fixed-positioning" class="sidebar__link">Using for “fixed” positioning</a>
-- <a href="coordinates.html#getCoords" class="sidebar__link">Document coordinates</a>
-- <a href="coordinates.html#summary" class="sidebar__link">Summary</a>
+-   <a href="coordinates.html#element-coordinates-getboundingclientrect" class="sidebar__link">Element coordinates: getBoundingClientRect</a>
+-   <a href="coordinates.html#elementFromPoint" class="sidebar__link">elementFromPoint(x, y)</a>
+-   <a href="coordinates.html#using-for-fixed-positioning" class="sidebar__link">Using for “fixed” positioning</a>
+-   <a href="coordinates.html#getCoords" class="sidebar__link">Document coordinates</a>
+-   <a href="coordinates.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="coordinates.html#tasks" class="sidebar__link">Tasks (4)</a>
-- <a href="coordinates.html#comments" class="sidebar__link">Comments</a>
+-   <a href="coordinates.html#tasks" class="sidebar__link">Tasks (4)</a>
+-   <a href="coordinates.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -444,7 +444,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/11-coordinates" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

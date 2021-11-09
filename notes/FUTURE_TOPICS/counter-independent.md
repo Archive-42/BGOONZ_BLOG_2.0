@@ -1,9 +1,9 @@
 counter-independent"
 
-- <a href="counter-independent.html"
-  /counter-independent"
-  /counter-independent"
-  counter-independentcounter-independent"
+-   <a href="counter-independent.html"
+    /counter-independent"
+    /counter-independent"
+    counter-independentcounter-independent"
 
 <!-- -->
 

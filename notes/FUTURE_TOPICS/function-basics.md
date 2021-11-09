@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/function-basics"
-- <a href="function-basics.html"
-- <a href="https://es.javascript.info/function-basics"
-- <a href="https://fr.javascript.info/function-basics"
-- <a href="https://it.javascript.info/function-basics"
-  function-basics"
+-   <a href="https://ar.javascript.info/function-basics"
+-   <a href="function-basics.html"
+-   <a href="https://es.javascript.info/function-basics"
+-   <a href="https://fr.javascript.info/function-basics"
+-   <a href="https://it.javascript.info/function-basics"
+    function-basics"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/function-basics"
-- <a href=function-basics"
-- <a href="https://tr.javascript.info/function-basics"
-- <a href="https://zh.javascript.info/function-basics"
+-   <a href="https://ko.javascript.info/function-basics"
+-   <a href=function-basics"
+-   <a href="https://tr.javascript.info/function-basics"
+-   <a href="https://zh.javascript.info/function-basics"
 
 We want to make this open-source project available for people all around the world.
 
@@ -211,8 +211,8 @@ When a value is passed as a function parameter, it’s also called an _argument_
 
 In other words, to put these terms straight:
 
-- A parameter is the variable listed inside the parentheses in the function declaration (it’s a declaration time term)
-- An argument is the value that is passed to the function when it is called (it’s a call time term).
+-   A parameter is the variable listed inside the parentheses in the function declaration (it’s a declaration time term)
+-   An argument is the value that is passed to the function when it is called (it’s a call time term).
 
 We declare functions listing their parameters, then call them passing arguments.
 
@@ -412,10 +412,10 @@ For instance, functions that start with `"show"` usually show something.
 
 Function starting with…
 
-- `"get…"` – return a value,
-- `"calc…"` – calculate something,
-- `"create…"` – create something,
-- `"check…"` – check something and return a boolean, etc.
+-   `"get…"` – return a value,
+-   `"calc…"` – calculate something,
+-   `"create…"` – create something,
+-   `"check…"` – check something and return a boolean, etc.
 
 Examples of such names:
 
@@ -435,9 +435,9 @@ Two independent actions usually deserve two functions, even if they are usually 
 
 A few examples of breaking this rule:
 
-- `getAge` – would be bad if it shows an `alert` with the age (should only get).
-- `createForm` – would be bad if it modifies the document, adding a form to it (should only create it and return).
-- `checkPermission` – would be bad if it displays the `access granted/denied` message (should only perform the check and return the result).
+-   `getAge` – would be bad if it shows an `alert` with the age (should only get).
+-   `createForm` – would be bad if it modifies the document, adding a form to it (should only create it and return).
+-   `checkPermission` – would be bad if it displays the `access granted/denied` message (should only perform the check and return the result).
 
 These examples assume common meanings of prefixes. You and your team are free to agree on other meanings, but usually they’re not much different. In any case, you should have a firm understanding of what a prefix means, what a prefixed function can and cannot do. All same-prefixed functions should obey the rules. And the team should share the knowledge.
 
@@ -500,9 +500,9 @@ A function declaration looks like this:
       /* code */
     }
 
-- Values passed to a function as parameters are copied to its local variables.
-- A function may access outer variables. But it works only from inside out. The code outside of the function doesn’t see its local variables.
-- A function can return a value. If it doesn’t, then its result is `undefined`.
+-   Values passed to a function as parameters are copied to its local variables.
+-   A function may access outer variables. But it works only from inside out. The code outside of the function doesn’t see its local variables.
+-   A function can return a value. If it doesn’t, then its result is `undefined`.
 
 To make the code clean and easy to understand, it’s recommended to use mainly local variables and parameters in the function, not outer variables.
 
@@ -510,9 +510,9 @@ It is always easier to understand a function which gets parameters, works with t
 
 Function naming:
 
-- A name should clearly describe what the function does. When we see a function call in the code, a good name instantly gives us an understanding what it does and returns.
-- A function is an action, so function names are usually verbal.
-- There exist many well-known function prefixes like `create…`, `show…`, `get…`, `check…` and so on. Use them to hint what a function does.
+-   A name should clearly describe what the function does. When we see a function call in the code, a good name instantly gives us an understanding what it does and returns.
+-   A function is an action, so function names are usually verbal.
+-   There exist many well-known function prefixes like `create…`, `show…`, `get…`, `check…` and so on. Use them to hint what a function does.
 
 Functions are the main building blocks of scripts. Now we’ve covered the basics, so we actually can start creating and using them. But that’s only the beginning of the path. We are going to return to them many times, going more deeply into their advanced features.
 
@@ -680,30 +680,30 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="function-basics.html#function-declaration" class="sidebar__link">Function Declaration</a>
-- <a href="function-basics.html#local-variables" class="sidebar__link">Local variables</a>
-- <a href="function-basics.html#outer-variables" class="sidebar__link">Outer variables</a>
-- <a href="function-basics.html#parameters" class="sidebar__link">Parameters</a>
-- <a href="function-basics.html#default-values" class="sidebar__link">Default values</a>
-- <a href="function-basics.html#returning-a-value" class="sidebar__link">Returning a value</a>
-- <a href="function-basics.html#function-naming" class="sidebar__link">Naming a function</a>
-- <a href="function-basics.html#functions-comments" class="sidebar__link">Functions == Comments</a>
-- <a href="function-basics.html#summary" class="sidebar__link">Summary</a>
+-   <a href="function-basics.html#function-declaration" class="sidebar__link">Function Declaration</a>
+-   <a href="function-basics.html#local-variables" class="sidebar__link">Local variables</a>
+-   <a href="function-basics.html#outer-variables" class="sidebar__link">Outer variables</a>
+-   <a href="function-basics.html#parameters" class="sidebar__link">Parameters</a>
+-   <a href="function-basics.html#default-values" class="sidebar__link">Default values</a>
+-   <a href="function-basics.html#returning-a-value" class="sidebar__link">Returning a value</a>
+-   <a href="function-basics.html#function-naming" class="sidebar__link">Naming a function</a>
+-   <a href="function-basics.html#functions-comments" class="sidebar__link">Functions == Comments</a>
+-   <a href="function-basics.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="function-basics.html#tasks" class="sidebar__link">Tasks (4)</a>
-- <a href="function-basics.html#comments" class="sidebar__link">Comments</a>
+-   <a href="function-basics.html#tasks" class="sidebar__link">Tasks (4)</a>
+-   <a href="function-basics.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -711,7 +711,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/15-function-basics" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

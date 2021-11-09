@@ -1,9 +1,9 @@
 hello-object"
 
-- <a href="hello-object.html"
-  /hello-object"
-  /hello-object"
-  hello-objecthello-object"
+-   <a href="hello-object.html"
+    /hello-object"
+    /hello-object"
+    hello-objecthello-object"
 
 <!-- -->
 

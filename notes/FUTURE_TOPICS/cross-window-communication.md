@@ -2,19 +2,19 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="cross-window-communication.html"
-- <a href="https://es.javascript.info/cross-window-communication"
-- <a href="https://fr.javascript.info/cross-window-communication"
-- <a href="https://it.javascript.info/cross-window-communication"
-  cross-window-communication"
+-   <a href="cross-window-communication.html"
+-   <a href="https://es.javascript.info/cross-window-communication"
+-   <a href="https://fr.javascript.info/cross-window-communication"
+-   <a href="https://it.javascript.info/cross-window-communication"
+    cross-window-communication"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=cross-window-communication"
-- <a href="https://tr.javascript.info/cross-window-communication"
-- <a href="https://zh.javascript.info/cross-window-communication"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/"
+-   <a href=cross-window-communication"
+-   <a href="https://tr.javascript.info/cross-window-communication"
+-   <a href="https://zh.javascript.info/cross-window-communication"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -43,21 +43,21 @@ Two URLs are said to have the “same origin” if they have the same protocol, 
 
 These URLs all share the same origin:
 
-- `http://site.com`
-- `http://site.com/`
-- `http://site.com/my/page.html`
+-   `http://site.com`
+-   `http://site.com/`
+-   `http://site.com/my/page.html`
 
 These ones do not:
 
-- `http://www.site.com` (another domain: `www.` matters)
-- `http://site.org` (another domain: `.org` matters)
-- `https://site.com` (another protocol: `https`)
-- `http://site.com:8080` (another port: `8080`)
+-   `http://www.site.com` (another domain: `www.` matters)
+-   `http://site.org` (another domain: `.org` matters)
+-   `https://site.com` (another protocol: `https`)
+-   `http://site.com:8080` (another port: `8080`)
 
 The “Same Origin” policy states that:
 
-- if we have a reference to another window, e.g. a popup created by `window.open` or a window inside `<iframe>`, and that window comes from the same origin, then we have full access to that window.
-- otherwise, if it comes from another origin, then we can’t access the content of that window: variables, document, anything. The only exception is `location`: we can change it (thus redirecting the user). But we cannot _read_ location (so we can’t see where the user is now, no information leak).
+-   if we have a reference to another window, e.g. a popup created by `window.open` or a window inside `<iframe>`, and that window comes from the same origin, then we have full access to that window.
+-   otherwise, if it comes from another origin, then we can’t access the content of that window: variables, document, anything. The only exception is `location`: we can change it (thus redirecting the user). But we cannot _read_ location (so we can’t see where the user is now, no information leak).
 
 ### <a href="cross-window-communication.html#in-action-iframe" id="in-action-iframe" class="main__anchor">In action: iframe</a>
 
@@ -65,8 +65,8 @@ An `<iframe>` tag hosts a separate embedded window, with its own separate `docum
 
 We can access them using properties:
 
-- `iframe.contentWindow` to get the window inside the `<iframe>`.
-- `iframe.contentDocument` to get the document inside the `<iframe>`, shorthand for `iframe.contentWindow.document`.
+-   `iframe.contentWindow` to get the window inside the `<iframe>`.
+-   `iframe.contentDocument` to get the document inside the `<iframe>`, shorthand for `iframe.contentWindow.document`.
 
 When we access something inside the embedded window, the browser checks if the iframe has the same origin. If that’s not so then the access is denied (writing to `location` is an exception, it’s still permitted).
 
@@ -106,8 +106,8 @@ For instance, let’s try reading and writing to `<iframe>` from another origin:
 
 The code above shows errors for any operations except:
 
-- Getting the reference to the inner window `iframe.contentWindow` – that’s allowed.
-- Writing to `location`.
+-   Getting the reference to the inner window `iframe.contentWindow` – that’s allowed.
+-   Writing to `location`.
 
 Contrary to that, if the `<iframe>` has the same origin, we can do anything with it:
 
@@ -200,8 +200,8 @@ We can try to catch the moment earlier using checks in `setInterval`:
 
 An alternative way to get a window object for `<iframe>` – is to get it from the named collection `window.frames`:
 
-- By number: `window.frames[0]` – the window object for the first frame in the document.
-- By name: `window.frames.iframeName` – the window object for the frame with `name="iframeName"`.
+-   By number: `window.frames[0]` – the window object for the first frame in the document.
+-   By name: `window.frames.iframeName` – the window object for the frame with `name="iframeName"`.
 
 For instance:
 
@@ -220,9 +220,9 @@ An iframe may have other iframes inside. The corresponding `window` objects form
 
 Navigation links are:
 
-- `window.frames` – the collection of “children” windows (for nested frames).
-- `window.parent` – the reference to the “parent” (outer) window.
-- `window.top` – the reference to the topmost parent window.
+-   `window.frames` – the collection of “children” windows (for nested frames).
+-   `window.parent` – the reference to the “parent” (outer) window.
+-   `window.top` – the reference to the topmost parent window.
 
 For instance:
 
@@ -455,26 +455,26 @@ To call methods and access the content of another window, we should first have a
 
 For popups we have these references:
 
-- From the opener window: `window.open` – opens a new window and returns a reference to it,
-- From the popup: `window.opener` – is a reference to the opener window from a popup.
+-   From the opener window: `window.open` – opens a new window and returns a reference to it,
+-   From the popup: `window.opener` – is a reference to the opener window from a popup.
 
 For iframes, we can access parent/children windows using:
 
-- `window.frames` – a collection of nested window objects,
-- `window.parent`, `window.top` are the references to parent and top windows,
-- `iframe.contentWindow` is the window inside an `<iframe>` tag.
+-   `window.frames` – a collection of nested window objects,
+-   `window.parent`, `window.top` are the references to parent and top windows,
+-   `iframe.contentWindow` is the window inside an `<iframe>` tag.
 
 If windows share the same origin (host, port, protocol), then windows can do whatever they want with each other.
 
 Otherwise, only possible actions are:
 
-- Change the `location` of another window (write-only access).
-- Post a message to it.
+-   Change the `location` of another window (write-only access).
+-   Post a message to it.
 
 Exceptions are:
 
-- Windows that share the same second-level domain: `a.site.com` and `b.site.com`. Then setting `document.domain='site.com'` in both of them puts them into the “same origin” state.
-- If an iframe has a `sandbox` attribute, it is forcefully put into the “different origin” state, unless the `allow-same-origin` is specified in the attribute value. That can be used to run untrusted code in iframes from the same site.
+-   Windows that share the same second-level domain: `a.site.com` and `b.site.com`. Then setting `document.domain='site.com'` in both of them puts them into the “same origin” state.
+-   If an iframe has a `sandbox` attribute, it is forcefully put into the “different origin” state, unless the `allow-same-origin` is specified in the attribute value. That can be used to run untrusted code in iframes from the same site.
 
 The `postMessage` interface allows two windows with any origins to talk:
 
@@ -484,9 +484,9 @@ The `postMessage` interface allows two windows with any origins to talk:
 
 3.  If it is so, then `targetWin` triggers the `message` event with special properties:
 
-    - `origin` – the origin of the sender window (like `http://my.site.com`)
-    - `source` – the reference to the sender window.
-    - `data` – the data, any object in everywhere except IE that supports only strings.
+    -   `origin` – the origin of the sender window (like `http://my.site.com`)
+    -   `source` – the reference to the sender window.
+    -   `data` – the data, any object in everywhere except IE that supports only strings.
 
     We should use `addEventListener` to set the handler for this event inside the target window.
 
@@ -500,27 +500,27 @@ The `postMessage` interface allows two windows with any origins to talk:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
+-   <a href="frames-and-windows.html" class="sidebar__link">Frames and windows</a>
 
 #### Lesson navigation
 
-- <a href="cross-window-communication.html#same-origin" class="sidebar__link">Same Origin</a>
-- <a href="cross-window-communication.html#windows-on-subdomains-document-domain" class="sidebar__link">Windows on subdomains: document.domain</a>
-- <a href="cross-window-communication.html#iframe-wrong-document-pitfall" class="sidebar__link">Iframe: wrong document pitfall</a>
-- <a href="cross-window-communication.html#collection-window-frames" class="sidebar__link">Collection: window.frames</a>
-- <a href="cross-window-communication.html#the-sandbox-iframe-attribute" class="sidebar__link">The “sandbox” iframe attribute</a>
-- <a href="cross-window-communication.html#cross-window-messaging" class="sidebar__link">Cross-window messaging</a>
-- <a href="cross-window-communication.html#summary" class="sidebar__link">Summary</a>
+-   <a href="cross-window-communication.html#same-origin" class="sidebar__link">Same Origin</a>
+-   <a href="cross-window-communication.html#windows-on-subdomains-document-domain" class="sidebar__link">Windows on subdomains: document.domain</a>
+-   <a href="cross-window-communication.html#iframe-wrong-document-pitfall" class="sidebar__link">Iframe: wrong document pitfall</a>
+-   <a href="cross-window-communication.html#collection-window-frames" class="sidebar__link">Collection: window.frames</a>
+-   <a href="cross-window-communication.html#the-sandbox-iframe-attribute" class="sidebar__link">The “sandbox” iframe attribute</a>
+-   <a href="cross-window-communication.html#cross-window-messaging" class="sidebar__link">Cross-window messaging</a>
+-   <a href="cross-window-communication.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="cross-window-communication.html#comments" class="sidebar__link">Comments</a>
+-   <a href="cross-window-communication.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -528,7 +528,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/3-frames-and-windows/03-cross-window-communication" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

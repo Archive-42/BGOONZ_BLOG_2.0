@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/coding-style"
-- <a href="coding-style.html"
-- <a href="https://es.javascript.info/coding-style"
-- <a href="https://fr.javascript.info/coding-style"
-- <a href="https://it.javascript.info/coding-style"
-  coding-style"
+-   <a href="https://ar.javascript.info/coding-style"
+-   <a href="coding-style.html"
+-   <a href="https://es.javascript.info/coding-style"
+-   <a href="https://fr.javascript.info/coding-style"
+-   <a href="https://it.javascript.info/coding-style"
+    coding-style"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/coding-style"
-- <a href=coding-style"
-- <a href="https://tr.javascript.info/coding-style"
-- <a href="https://zh.javascript.info/coding-style"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/coding-style"
+-   <a href=coding-style"
+-   <a href="https://tr.javascript.info/coding-style"
+-   <a href="https://zh.javascript.info/coding-style"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -107,38 +107,38 @@ The maximum line length should be agreed upon at the team-level. It’s usually 
 
 There are two types of indents:
 
-- **Horizontal indents: 2 or 4 spaces.**
+-   **Horizontal indents: 2 or 4 spaces.**
 
-  A horizontal indentation is made using either 2 or 4 spaces or the horizontal tab symbol (key Tab). Which one to choose is an old holy war. Spaces are more common nowadays.
+    A horizontal indentation is made using either 2 or 4 spaces or the horizontal tab symbol (key Tab). Which one to choose is an old holy war. Spaces are more common nowadays.
 
-  One advantage of spaces over tabs is that spaces allow more flexible configurations of indents than the tab symbol.
+    One advantage of spaces over tabs is that spaces allow more flexible configurations of indents than the tab symbol.
 
-  For instance, we can align the parameters with the opening bracket, like this:
+    For instance, we can align the parameters with the opening bracket, like this:
 
-      show(parameters,
-           aligned, // 5 spaces padding at the left
-           one,
-           after,
-           another
-        ) {
-        // ...
-      }
-
-- **Vertical indents: empty lines for splitting code into logical blocks.**
-
-  Even a single function can often be divided into logical blocks. In the example below, the initialization of variables, the main loop and returning the result are split vertically:
-
-      function pow(x, n) {
-        let result = 1;
-        //              <--
-        for (let i = 0; i < n; i++) {
-          result *= x;
+        show(parameters,
+             aligned, // 5 spaces padding at the left
+             one,
+             after,
+             another
+          ) {
+          // ...
         }
-        //              <--
-        return result;
-      }
 
-  Insert an extra newline where it helps to make the code more readable. There should not be more than nine lines of code without a vertical indentation.
+-   **Vertical indents: empty lines for splitting code into logical blocks.**
+
+    Even a single function can often be divided into logical blocks. In the example below, the initialization of variables, the main loop and returning the result are split vertically:
+
+        function pow(x, n) {
+          let result = 1;
+          //              <--
+          for (let i = 0; i < n; i++) {
+            result *= x;
+          }
+          //              <--
+          return result;
+        }
+
+    Insert an extra newline where it helps to make the code more readable. There should not be more than nine lines of code without a vertical indentation.
 
 ### <a href="coding-style.html#semicolons" id="semicolons" class="main__anchor">Semicolons</a>
 
@@ -268,11 +268,11 @@ Of course, a team can always write their own style guide, but usually there’s 
 
 Some popular choices:
 
-- [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
-- [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
-- [Idiomatic.JS](https://github.com/rwaldron/idiomatic.js)
-- [StandardJS](https://standardjs.com/)
-- (plus many more)
+-   [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
+-   [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+-   [Idiomatic.JS](https://github.com/rwaldron/idiomatic.js)
+-   [StandardJS](https://standardjs.com/)
+-   (plus many more)
 
 If you’re a novice developer, start with the cheat sheet at the beginning of this chapter. Then you can browse other style guides to pick up more ideas and decide which one you like best.
 
@@ -284,9 +284,9 @@ The great thing about them is that style-checking can also find some bugs, like 
 
 Here are some well-known linting tools:
 
-- [JSLint](http://www.jslint.com/) – one of the first linters.
-- [JSHint](http://www.jshint.com/) – more settings than JSLint.
-- [ESLint](http://eslint.org/) – probably the newest one.
+-   [JSLint](http://www.jslint.com/) – one of the first linters.
+-   [JSHint](http://www.jshint.com/) – more settings than JSLint.
+-   [ESLint](http://eslint.org/) – probably the newest one.
 
 All of them can do the job. The author uses [ESLint](http://eslint.org/).
 
@@ -413,26 +413,26 @@ The fixed variant:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="code-quality.html" class="sidebar__link">Code quality</a>
+-   <a href="code-quality.html" class="sidebar__link">Code quality</a>
 
 #### Lesson navigation
 
-- <a href="coding-style.html#syntax" class="sidebar__link">Syntax</a>
-- <a href="coding-style.html#function-placement" class="sidebar__link">Function Placement</a>
-- <a href="coding-style.html#style-guides" class="sidebar__link">Style Guides</a>
-- <a href="coding-style.html#automated-linters" class="sidebar__link">Automated Linters</a>
-- <a href="coding-style.html#summary" class="sidebar__link">Summary</a>
+-   <a href="coding-style.html#syntax" class="sidebar__link">Syntax</a>
+-   <a href="coding-style.html#function-placement" class="sidebar__link">Function Placement</a>
+-   <a href="coding-style.html#style-guides" class="sidebar__link">Style Guides</a>
+-   <a href="coding-style.html#automated-linters" class="sidebar__link">Automated Linters</a>
+-   <a href="coding-style.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="coding-style.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="coding-style.html#comments" class="sidebar__link">Comments</a>
+-   <a href="coding-style.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="coding-style.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -440,7 +440,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/03-code-quality/02-coding-style" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

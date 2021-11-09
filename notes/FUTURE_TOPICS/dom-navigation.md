@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="dom-navigation.html"
-- <a href="https://es.javascript.info/dom-navigation"
-- <a href="https://fr.javascript.info/dom-navigation"
-- <a href="https://it.javascript.info/dom-navigation"
-  dom-navigation"
+-   <a href="dom-navigation.html"
+-   <a href="https://es.javascript.info/dom-navigation"
+-   <a href="https://fr.javascript.info/dom-navigation"
+-   <a href="https://it.javascript.info/dom-navigation"
+    dom-navigation"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/dom-navigation"
-- <a href=dom-navigation"
-- <a href="https://tr.javascript.info/dom-navigation"
-- <a href="https://zh.javascript.info/dom-navigation"
+-   <a href="https://ko.javascript.info/dom-navigation"
+-   <a href=dom-navigation"
+-   <a href="https://tr.javascript.info/dom-navigation"
+-   <a href="https://zh.javascript.info/dom-navigation"
 
 We want to make this open-source project available for people all around the world.
 
@@ -99,8 +99,8 @@ In the DOM, the `null` value means “doesn’t exist” or “no such node”.
 
 There are two terms that we’ll use from now on:
 
-- **Child nodes (or children)** – elements that are direct children. In other words, they are nested exactly in the given one. For instance, `<head>` and `<body>` are children of `<html>` element.
-- **Descendants** – all elements that are nested in the given one, including children, their children and so on.
+-   **Child nodes (or children)** – elements that are direct children. In other words, they are nested exactly in the given one. For instance, `<head>` and `<body>` are children of `<html>` element.
+-   **Descendants** – all elements that are nested in the given one, including children, their children and so on.
 
 For instance, here `<body>` has children `<div>` and `<ul>` (and few blank text nodes):
 
@@ -229,8 +229,8 @@ For instance, here `<head>` and `<body>` are siblings:
       <head>...</head><body>...</body>
     </html>
 
-- `<body>` is said to be the “next” or “right” sibling of `<head>`,
-- `<head>` is said to be the “previous” or “left” sibling of `<body>`.
+-   `<body>` is said to be the “next” or “right” sibling of `<head>`,
+-   `<head>` is said to be the “previous” or “left” sibling of `<body>`.
 
 The next sibling is in `nextSibling` property, and the previous one – in `previousSibling`.
 
@@ -260,10 +260,10 @@ So let’s see more navigation links that only take _element nodes_ into account
 
 <figure><img src="article/dom-navigation/dom-links-elements.svg" width="440" height="316" /></figure>The links are similar to those given above, just with `Element` word inside:
 
-- `children` – only those children that are element nodes.
-- `firstElementChild`, `lastElementChild` – first and last element children.
-- `previousElementSibling`, `nextElementSibling` – neighbor elements.
-- `parentElement` – parent element.
+-   `children` – only those children that are element nodes.
+-   `firstElementChild`, `lastElementChild` – first and last element children.
+-   `previousElementSibling`, `nextElementSibling` – neighbor elements.
+-   `parentElement` – parent element.
 
 <span class="important__type">Why `parentElement`? Can the parent be _not_ an element?</span>
 
@@ -320,23 +320,23 @@ Tables are a great example of that, and represent a particularly important case:
 
 **The `<table>`** element supports (in addition to the given above) these properties:
 
-- `table.rows` – the collection of `<tr>` elements of the table.
-- `table.caption/tHead/tFoot` – references to elements `<caption>`, `<thead>`, `<tfoot>`.
-- `table.tBodies` – the collection of `<tbody>` elements (can be many according to the standard, but there will always be at least one – even if it is not in the source HTML, the browser will put it in the DOM).
+-   `table.rows` – the collection of `<tr>` elements of the table.
+-   `table.caption/tHead/tFoot` – references to elements `<caption>`, `<thead>`, `<tfoot>`.
+-   `table.tBodies` – the collection of `<tbody>` elements (can be many according to the standard, but there will always be at least one – even if it is not in the source HTML, the browser will put it in the DOM).
 
 **`<thead>`, `<tfoot>`, `<tbody>`** elements provide the `rows` property:
 
-- `tbody.rows` – the collection of `<tr>` inside.
+-   `tbody.rows` – the collection of `<tr>` inside.
 
 **`<tr>`:**
 
-- `tr.cells` – the collection of `<td>` and `<th>` cells inside the given `<tr>`.
-- `tr.sectionRowIndex` – the position (index) of the given `<tr>` inside the enclosing `<thead>/<tbody>/<tfoot>`.
-- `tr.rowIndex` – the number of the `<tr>` in the table as a whole (including all table rows).
+-   `tr.cells` – the collection of `<td>` and `<th>` cells inside the given `<tr>`.
+-   `tr.sectionRowIndex` – the position (index) of the given `<tr>` inside the enclosing `<thead>/<tbody>/<tfoot>`.
+-   `tr.rowIndex` – the number of the `<tr>` in the table as a whole (including all table rows).
 
 **`<td>` and `<th>`:**
 
-- `td.cellIndex` – the number of the cell inside the enclosing `<tr>`.
+-   `td.cellIndex` – the number of the cell inside the enclosing `<tr>`.
 
 An example of usage:
 
@@ -369,8 +369,8 @@ Given a DOM node, we can go to its immediate neighbors using navigation properti
 
 There are two main sets of them:
 
-- For all nodes: `parentNode`, `childNodes`, `firstChild`, `lastChild`, `previousSibling`, `nextSibling`.
-- For element nodes only: `parentElement`, `children`, `firstElementChild`, `lastElementChild`, `previousElementSibling`, `nextElementSibling`.
+-   For all nodes: `parentNode`, `childNodes`, `firstChild`, `lastChild`, `previousSibling`, `nextSibling`.
+-   For element nodes only: `parentElement`, `children`, `firstElementChild`, `lastElementChild`, `previousElementSibling`, `nextElementSibling`.
 
 Some types of DOM elements, e.g. tables, provide additional properties and collections to access their content.
 
@@ -396,9 +396,9 @@ Look at this page:
 
 For each of the following, give at least one way of how to access them:
 
-- The `<div>` DOM node?
-- The `<ul>` DOM node?
-- The second `<li>` (with Pete)?
+-   The `<div>` DOM node?
+-   The `<ul>` DOM node?
+-   The second `<li>` (with Pete)?
 
 solution
 
@@ -431,8 +431,8 @@ The second `<li>` (with Pete):
 
 If `elem` – is an arbitrary DOM element node…
 
-- Is it true that `elem.lastChild.nextSibling` is always `null`?
-- Is it true that `elem.children[0].previousSibling` is always `null` ?
+-   Is it true that `elem.lastChild.nextSibling` is always `null`?
+-   Is it true that `elem.children[0].previousSibling` is always `null` ?
 
 solution
 
@@ -476,27 +476,27 @@ We’ll be using `rows` and `cells` properties to access diagonal table cells.
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
-- <a href="dom-navigation.html#on-top-documentelement-and-body" class="sidebar__link">On top: documentElement and body</a>
-- <a href="dom-navigation.html#children-childnodes-firstchild-lastchild" class="sidebar__link">Children: childNodes, firstChild, lastChild</a>
-- <a href="dom-navigation.html#siblings-and-the-parent" class="sidebar__link">Siblings and the parent</a>
-- <a href="dom-navigation.html#element-only-navigation" class="sidebar__link">Element-only navigation</a>
-- <a href="dom-navigation.html#dom-navigation-tables" class="sidebar__link">More links: tables</a>
-- <a href="dom-navigation.html#summary" class="sidebar__link">Summary</a>
+-   <a href="dom-navigation.html#on-top-documentelement-and-body" class="sidebar__link">On top: documentElement and body</a>
+-   <a href="dom-navigation.html#children-childnodes-firstchild-lastchild" class="sidebar__link">Children: childNodes, firstChild, lastChild</a>
+-   <a href="dom-navigation.html#siblings-and-the-parent" class="sidebar__link">Siblings and the parent</a>
+-   <a href="dom-navigation.html#element-only-navigation" class="sidebar__link">Element-only navigation</a>
+-   <a href="dom-navigation.html#dom-navigation-tables" class="sidebar__link">More links: tables</a>
+-   <a href="dom-navigation.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="dom-navigation.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="dom-navigation.html#comments" class="sidebar__link">Comments</a>
+-   <a href="dom-navigation.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="dom-navigation.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -504,7 +504,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/03-dom-navigation" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

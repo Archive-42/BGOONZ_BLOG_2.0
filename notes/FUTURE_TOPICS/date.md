@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/date"
-- <a href="date.html"
-- <a href="https://es.javascript.info/date"
-- <a href="https://fr.javascript.info/date"
-- <a href="https://it.javascript.info/date"
-  date"
+-   <a href="https://ar.javascript.info/date"
+-   <a href="date.html"
+-   <a href="https://es.javascript.info/date"
+-   <a href="https://fr.javascript.info/date"
+-   <a href="https://it.javascript.info/date"
+    date"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/date"
-- <a href=date"
-- <a href="https://tr.javascript.info/date"
-- <a href="https://zh.javascript.info/date"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/date"
+-   <a href=date"
+-   <a href="https://tr.javascript.info/date"
+-   <a href="https://zh.javascript.info/date"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -95,10 +95,10 @@ If there is a single argument, and it’s a string, then it is parsed automatica
 `new Date(year, month, date, hours, minutes, seconds, ms)`  
 Create the date with the given components in the local time zone. Only the first two arguments are obligatory.
 
-- The `year` must have 4 digits: `2013` is okay, `98` is not.
-- The `month` count starts with `0` (Jan), up to `11` (Dec).
-- The `date` parameter is actually the day of month, if absent then `1` is assumed.
-- If `hours/minutes/seconds/ms` is absent, they are assumed to be equal `0`.
+-   The `year` must have 4 digits: `2013` is okay, `98` is not.
+-   The `month` count starts with `0` (Jan), up to `11` (Dec).
+-   The `date` parameter is actually the day of month, if absent then `1` is assumed.
+-   If `hours/minutes/seconds/ms` is absent, they are assumed to be equal `0`.
 
 For instance:
 
@@ -175,14 +175,14 @@ Returns the difference between UTC and the local time zone, in minutes:
 
 The following methods allow to set date/time components:
 
-- [`setFullYear(year, [month], [date])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear)
-- [`setMonth(month, [date])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth)
-- [`setDate(date)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate)
-- [`setHours(hour, [min], [sec], [ms])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours)
-- [`setMinutes(min, [sec], [ms])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes)
-- [`setSeconds(sec, [ms])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds)
-- [`setMilliseconds(ms)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds)
-- [`setTime(milliseconds)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime) (sets the whole date by milliseconds since 01.01.1970 UTC)
+-   [`setFullYear(year, [month], [date])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear)
+-   [`setMonth(month, [date])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth)
+-   [`setDate(date)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate)
+-   [`setHours(hour, [min], [sec], [ms])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours)
+-   [`setMinutes(min, [sec], [ms])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes)
+-   [`setSeconds(sec, [ms])`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds)
+-   [`setMilliseconds(ms)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds)
+-   [`setTime(milliseconds)`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime) (sets the whole date by milliseconds since 01.01.1970 UTC)
 
 Every one of them except `setTime()` has a UTC-variant, for instance: `setUTCHours()`.
 
@@ -421,10 +421,10 @@ The method [Date.parse(str)](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 
 The string format should be: `YYYY-MM-DDTHH:mm:ss.sssZ`, where:
 
-- `YYYY-MM-DD` – is the date: year-month-day.
-- The character `"T"` is used as the delimiter.
-- `HH:mm:ss.sss` – is the time: hours, minutes, seconds and milliseconds.
-- The optional `'Z'` part denotes the time zone in the format `+-hh:mm`. A single letter `Z` would mean UTC+0.
+-   `YYYY-MM-DD` – is the date: year-month-day.
+-   The character `"T"` is used as the delimiter.
+-   `HH:mm:ss.sss` – is the time: hours, minutes, seconds and milliseconds.
+-   The optional `'Z'` part denotes the time zone in the format `+-hh:mm`. A single letter `Z` would mean UTC+0.
 
 Shorter variants are also possible, like `YYYY-MM-DD` or `YYYY-MM` or even `YYYY`.
 
@@ -450,12 +450,12 @@ We can instantly create a `new Date` object from the timestamp:
 
 ## <a href="date.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- Date and time in JavaScript are represented with the [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object. We can’t create “only date” or “only time”: `Date` objects always carry both.
-- Months are counted from zero (yes, January is a zero month).
-- Days of week in `getDay()` are also counted from zero (that’s Sunday).
-- `Date` auto-corrects itself when out-of-range components are set. Good for adding/subtracting days/months/hours.
-- Dates can be subtracted, giving their difference in milliseconds. That’s because a `Date` becomes the timestamp when converted to a number.
-- Use `Date.now()` to get the current timestamp fast.
+-   Date and time in JavaScript are represented with the [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object. We can’t create “only date” or “only time”: `Date` objects always carry both.
+-   Months are counted from zero (yes, January is a zero month).
+-   Days of week in `getDay()` are also counted from zero (that’s Sunday).
+-   `Date` auto-corrects itself when out-of-range components are set. Good for adding/subtracting days/months/hours.
+-   Dates can be subtracted, giving their difference in milliseconds. That’s because a `Date` becomes the timestamp when converted to a number.
+-   Use `Date.now()` to get the current timestamp fast.
 
 Note that unlike many other systems, timestamps in JavaScript are in milliseconds, not in seconds.
 
@@ -633,8 +633,8 @@ Write a function `getLastDayOfMonth(year, month)` that returns the last day of m
 
 Parameters:
 
-- `year` – four-digits year, for instance 2012.
-- `month` – month, from 0 to 11.
+-   `year` – four-digits year, for instance 2012.
+-   `month` – month, from 0 to 11.
 
 For instance, `getLastDayOfMonth(2012, 1) = 29` (leap year, Feb).
 
@@ -766,10 +766,10 @@ Please note that many countries have Daylight Savings Time (DST), so there may b
 
 Write a function `formatDate(date)` that should format `date` as follows:
 
-- If since `date` passed less than 1 second, then `"right now"`.
-- Otherwise, if since `date` passed less than 1 minute, then `"n sec. ago"`.
-- Otherwise, if less than an hour, then `"m min. ago"`.
-- Otherwise, the full date in the format `"DD.MM.YY HH:mm"`. That is: `"day.month.year hours:minutes"`, all in 2-digit format, e.g. `31.12.16 10:00`.
+-   If since `date` passed less than 1 second, then `"right now"`.
+-   Otherwise, if since `date` passed less than 1 minute, then `"n sec. ago"`.
+-   Otherwise, if less than an hour, then `"m min. ago"`.
+-   Otherwise, the full date in the format `"DD.MM.YY HH:mm"`. That is: `"day.month.year hours:minutes"`, all in 2-digit format, e.g. `31.12.16 10:00`.
 
 For instance:
 
@@ -879,30 +879,30 @@ Alternative solution:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="date.html#creation" class="sidebar__link">Creation</a>
-- <a href="date.html#access-date-components" class="sidebar__link">Access date components</a>
-- <a href="date.html#setting-date-components" class="sidebar__link">Setting date components</a>
-- <a href="date.html#autocorrection" class="sidebar__link">Autocorrection</a>
-- <a href="date.html#date-to-number-date-diff" class="sidebar__link">Date to number, date diff</a>
-- <a href="date.html#date-now" class="sidebar__link">Date.now()</a>
-- <a href="date.html#benchmarking" class="sidebar__link">Benchmarking</a>
-- <a href="date.html#date-parse-from-a-string" class="sidebar__link">Date.parse from a string</a>
-- <a href="date.html#summary" class="sidebar__link">Summary</a>
+-   <a href="date.html#creation" class="sidebar__link">Creation</a>
+-   <a href="date.html#access-date-components" class="sidebar__link">Access date components</a>
+-   <a href="date.html#setting-date-components" class="sidebar__link">Setting date components</a>
+-   <a href="date.html#autocorrection" class="sidebar__link">Autocorrection</a>
+-   <a href="date.html#date-to-number-date-diff" class="sidebar__link">Date to number, date diff</a>
+-   <a href="date.html#date-now" class="sidebar__link">Date.now()</a>
+-   <a href="date.html#benchmarking" class="sidebar__link">Benchmarking</a>
+-   <a href="date.html#date-parse-from-a-string" class="sidebar__link">Date.parse from a string</a>
+-   <a href="date.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="date.html#tasks" class="sidebar__link">Tasks (8)</a>
-- <a href="date.html#comments" class="sidebar__link">Comments</a>
+-   <a href="date.html#tasks" class="sidebar__link">Tasks (8)</a>
+-   <a href="date.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -910,7 +910,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/11-date" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

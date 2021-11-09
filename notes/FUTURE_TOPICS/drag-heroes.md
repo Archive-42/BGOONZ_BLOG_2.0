@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="drag-heroes.html"
-  /drag-heroes"
-  /drag-heroes"
-  drag-heroesdrag-heroes"
+-   <a href="https://ar.javascript.info/"
+-   <a href="drag-heroes.html"
+    /drag-heroes"
+    /drag-heroes"
+    drag-heroesdrag-heroes"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  drag-heroes"
-  /drag-heroes"
-  drag-heroes"
+-   <a href="https://ko.javascript.info/"
+    drag-heroes"
+    /drag-heroes"
+    drag-heroes"
 
 k%2Fdrag-heroes"%2Fdrag-heroes" </a>
 
@@ -33,10 +33,10 @@ Make all elements with class `draggable` – draggable. Like a ball in the chapt
 
 Requirements:
 
-- Use event delegation to track drag start: a single event handler on `document` for `mousedown`.
-- If elements are dragged to top/bottom window edges – the page scrolls up/down to allow further dragging.
-- There is no horizontal scroll (this makes the task a bit simpler, adding it is easy).
-- Draggable elements or their parts should never leave the window, even after swift mouse moves.
+-   Use event delegation to track drag start: a single event handler on `document` for `mousedown`.
+-   If elements are dragged to top/bottom window edges – the page scrolls up/down to allow further dragging.
+-   There is no horizontal scroll (this makes the task a bit simpler, adding it is easy).
+-   Draggable elements or their parts should never leave the window, even after swift mouse moves.
 
 The demo is too big to fit it here, so here’s the link.
 

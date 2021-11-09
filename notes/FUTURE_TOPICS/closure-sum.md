@@ -1,9 +1,9 @@
 closure-sum"
 
-- <a href="closure-sum.html"
-  closure-sum"
-  /closure-sum"
-  closure-sumclosure-sum"
+-   <a href="closure-sum.html"
+    closure-sum"
+    /closure-sum"
+    closure-sumclosure-sum"
 
 <!-- -->
 

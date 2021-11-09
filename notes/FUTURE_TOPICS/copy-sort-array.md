@@ -1,9 +1,9 @@
 copy-sort-array"
 
-- <a href="copy-sort-array.html"
-  /copy-sort-array"
-  /copy-sort-array"
-  copy-sort-arraycopy-sort-array"
+-   <a href="copy-sort-array.html"
+    /copy-sort-array"
+    /copy-sort-array"
+    copy-sort-arraycopy-sort-array"
 
 <!-- -->
 

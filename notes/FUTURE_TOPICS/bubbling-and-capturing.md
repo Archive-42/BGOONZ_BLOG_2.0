@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/bubbling-and-capturing"
-- <a href="bubbling-and-capturing.html"
-- <a href="https://es.javascript.info/bubbling-and-capturing"
+-   <a href="https://ar.javascript.info/bubbling-and-capturing"
+-   <a href="bubbling-and-capturing.html"
+-   <a href="https://es.javascript.info/bubbling-and-capturing"
 
-- <a href="https://it.javascript.info/bubbling-and-capturing"
-  bubbling-and-capturing"
+-   <a href="https://it.javascript.info/bubbling-and-capturing"
+    bubbling-and-capturing"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/bubbling-and-capturing"
-- <a href=bubbling-and-capturing"
-- <a href="https://tr.javascript.info/bubbling-and-capturing"
-- <a href="https://zh.javascript.info/bubbling-and-capturing"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/bubbling-and-capturing"
+-   <a href=bubbling-and-capturing"
+-   <a href="https://tr.javascript.info/bubbling-and-capturing"
+-   <a href="https://zh.javascript.info/bubbling-and-capturing"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -93,15 +93,15 @@ A handler on a parent element can always get the details about where it actually
 
 Note the differences from `this` (=`event.currentTarget`):
 
-- `event.target` – is the “target” element that initiated the event, it doesn’t change through the bubbling process.
-- `this` – is the “current” element, the one that has a currently running handler on it.
+-   `event.target` – is the “target” element that initiated the event, it doesn’t change through the bubbling process.
+-   `this` – is the “current” element, the one that has a currently running handler on it.
 
 For instance, if we have a single handler `form.onclick`, then it can “catch” all clicks inside the form. No matter where the click happened, it bubbles up to `<form>` and runs the handler.
 
 In `form.onclick` handler:
 
-- `this` (=`event.currentTarget`) is the `<form>` element, because the handler runs on it.
-- `event.target` is the actual element inside the form that was clicked.
+-   `this` (=`event.currentTarget`) is the `<form>` element, because the handler runs on it.
+-   `event.target` is the actual element inside the form that was clicked.
 
 Check it out:
 
@@ -248,8 +248,8 @@ To catch an event on the capturing phase, we need to set the handler `capture` o
 
 There are two possible values of the `capture` option:
 
-- If it’s `false` (default), then the handler is set on the bubbling phase.
-- If it’s `true`, then the handler is set on the capturing phase.
+-   If it’s `false` (default), then the handler is set on the bubbling phase.
+-   If it’s `true`, then the handler is set on the capturing phase.
 
 Note that while formally there are 3 phases, the 2nd phase (“target phase”: the event reached the element) is not handled separately: handlers on both capturing and bubbling phases trigger at that phase.
 
@@ -304,15 +304,15 @@ If we have multiple event handlers on the same phase, assigned to the same eleme
 
 When an event happens – the most nested element where it happens gets labeled as the “target element” (`event.target`).
 
-- Then the event moves down from the document root to `event.target`, calling handlers assigned with `addEventListener(..., true)` on the way (`true` is a shorthand for `{capture: true}`).
-- Then handlers are called on the target element itself.
-- Then the event bubbles up from `event.target` to the root, calling handlers assigned using `on<event>`, HTML attributes and `addEventListener` without the 3rd argument or with the 3rd argument `false/{capture:false}`.
+-   Then the event moves down from the document root to `event.target`, calling handlers assigned with `addEventListener(..., true)` on the way (`true` is a shorthand for `{capture: true}`).
+-   Then handlers are called on the target element itself.
+-   Then the event bubbles up from `event.target` to the root, calling handlers assigned using `on<event>`, HTML attributes and `addEventListener` without the 3rd argument or with the 3rd argument `false/{capture:false}`.
 
 Each handler can access `event` object properties:
 
-- `event.target` – the deepest element that originated the event.
-- `event.currentTarget` (=`this`) – the current element that handles the event (the one that has the handler on it)
-- `event.eventPhase` – the current phase (capturing=1, target=2, bubbling=3).
+-   `event.target` – the deepest element that originated the event.
+-   `event.currentTarget` (=`this`) – the current element that handles the event (the one that has the handler on it)
+-   `event.eventPhase` – the current phase (capturing=1, target=2, bubbling=3).
 
 Any event handler can stop the event by calling `event.stopPropagation()`, but that’s not recommended, because we can’t really be sure we won’t need it above, maybe for completely different things.
 
@@ -334,25 +334,25 @@ Bubbling and capturing lay the foundation for “event delegation” – an extr
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="events.html" class="sidebar__link">Introduction to Events</a>
+-   <a href="events.html" class="sidebar__link">Introduction to Events</a>
 
 #### Lesson navigation
 
-- <a href="bubbling-and-capturing.html#bubbling" class="sidebar__link">Bubbling</a>
-- <a href="bubbling-and-capturing.html#event-target" class="sidebar__link">event.target</a>
-- <a href="bubbling-and-capturing.html#stopping-bubbling" class="sidebar__link">Stopping bubbling</a>
-- <a href="bubbling-and-capturing.html#capturing" class="sidebar__link">Capturing</a>
-- <a href="bubbling-and-capturing.html#summary" class="sidebar__link">Summary</a>
+-   <a href="bubbling-and-capturing.html#bubbling" class="sidebar__link">Bubbling</a>
+-   <a href="bubbling-and-capturing.html#event-target" class="sidebar__link">event.target</a>
+-   <a href="bubbling-and-capturing.html#stopping-bubbling" class="sidebar__link">Stopping bubbling</a>
+-   <a href="bubbling-and-capturing.html#capturing" class="sidebar__link">Capturing</a>
+-   <a href="bubbling-and-capturing.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="bubbling-and-capturing.html#comments" class="sidebar__link">Comments</a>
+-   <a href="bubbling-and-capturing.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -360,7 +360,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/2-events/02-bubbling-and-capturing" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

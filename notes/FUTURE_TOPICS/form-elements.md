@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="form-elements.html"
-- <a href="https://es.javascript.info/form-elements"
+-   <a href="form-elements.html"
+-   <a href="https://es.javascript.info/form-elements"
 
-- <a href="https://it.javascript.info/form-elements"
-  form-elements"
+-   <a href="https://it.javascript.info/form-elements"
+    form-elements"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/form-elements"
-- <a href=form-elements"
-- <a href="https://tr.javascript.info/form-elements"
-- <a href="https://zh.javascript.info/form-elements"
+-   <a href="https://ko.javascript.info/form-elements"
+-   <a href=form-elements"
+-   <a href="https://tr.javascript.info/form-elements"
+-   <a href="https://zh.javascript.info/form-elements"
 
 We want to make this open-source project available for people all around the world.
 
@@ -276,10 +276,10 @@ In the [specification](https://html.spec.whatwg.org/multipage/forms.html#the-opt
 
 This syntax is optional. We can use `document.createElement('option')` and set attributes manually. Still, it may be shorter, so here are the parameters:
 
-- `text` – the text inside the option,
-- `value` – the option value,
-- `defaultSelected` – if `true`, then `selected` HTML-attribute is created,
-- `selected` – if `true`, then the option is selected.
+-   `text` – the text inside the option,
+-   `value` – the option value,
+-   `defaultSelected` – if `true`, then `selected` HTML-attribute is created,
+-   `selected` – if `true`, then the option is selected.
 
 The difference between `defaultSelected` and `selected` is that `defaultSelected` sets the HTML-attribute (that we can get using `option.getAttribute('selected')`, while `selected` sets whether the option is selected or not.
 
@@ -307,7 +307,7 @@ Text content of the option (seen by the visitor).
 
 ## <a href="form-elements.html#references" id="references" class="main__anchor">References</a>
 
-- Specification: <https://html.spec.whatwg.org/multipage/forms.html>.
+-   Specification: <https://html.spec.whatwg.org/multipage/forms.html>.
 
 ## <a href="form-elements.html#summary" id="summary" class="main__anchor">Summary</a>
 
@@ -389,26 +389,26 @@ The solution, step by step:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
+-   <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
 
 #### Lesson navigation
 
-- <a href="form-elements.html#navigation-form-and-elements" class="sidebar__link">Navigation: form and elements</a>
-- <a href="form-elements.html#backreference-element-form" class="sidebar__link">Backreference: element.form</a>
-- <a href="form-elements.html#form-elements" class="sidebar__link">Form elements</a>
-- <a href="form-elements.html#references" class="sidebar__link">References</a>
-- <a href="form-elements.html#summary" class="sidebar__link">Summary</a>
+-   <a href="form-elements.html#navigation-form-and-elements" class="sidebar__link">Navigation: form and elements</a>
+-   <a href="form-elements.html#backreference-element-form" class="sidebar__link">Backreference: element.form</a>
+-   <a href="form-elements.html#form-elements" class="sidebar__link">Form elements</a>
+-   <a href="form-elements.html#references" class="sidebar__link">References</a>
+-   <a href="form-elements.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="form-elements.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="form-elements.html#comments" class="sidebar__link">Comments</a>
+-   <a href="form-elements.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="form-elements.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -416,7 +416,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/4-forms-controls/1-form-elements" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

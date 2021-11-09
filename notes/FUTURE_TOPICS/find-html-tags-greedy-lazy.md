@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="find-html-tags-greedy-lazy.html"
-  /find-html-tags-greedy-lazy"
-  /find-html-tags-greedy-lazy"
-  find-html-tags-greedy-lazyfind-html-tags-greedy-lazy"
+-   <a href="https://ar.javascript.info/"
+-   <a href="find-html-tags-greedy-lazy.html"
+    /find-html-tags-greedy-lazy"
+    /find-html-tags-greedy-lazy"
+    find-html-tags-greedy-lazyfind-html-tags-greedy-lazy"
 
 <!-- -->
 

@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="ask-partial.html"
-  ask-partial"
-  /ask-partial"
-  ask-partial"
-  "
+-   <a href="https://ar.javascript.info/"
+-   <a href="ask-partial.html"
+    ask-partial"
+    /ask-partial"
+    ask-partial"
+    "
 
 <!-- -->
 
 ask-partial"
 /ask-partial"
 
-- <a href="https://tr.javascript.info/"
-  ask/ask-partial"k%2Fask-partial"%2Fask-partial" </a>
+-   <a href="https://tr.javascript.info/"
+    ask/ask-partial"k%2Fask-partial"%2Fask-partial" </a>
 
 <a href="../advanced-functions.html" Advanced working with functions</span></a>
 

@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="behavior-tooltip.html"
-  behavior-tooltip"
-  /behavior-tooltip"
-  behavior-tooltipbehavior-tooltip"
+-   <a href="https://ar.javascript.info/"
+-   <a href="behavior-tooltip.html"
+    behavior-tooltip"
+    /behavior-tooltip"
+    behavior-tooltipbehavior-tooltip"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  /behavior-tooltip"
-- <a href="https://tr.javascript.info/"
-  ask/behavior-tooltip"k%2Fbehavior-tooltip"%2Fbehavior-tooltip" </a>
+-   <a href="https://ko.javascript.info/"
+    /behavior-tooltip"
+-   <a href="https://tr.javascript.info/"
+    ask/behavior-tooltip"k%2Fbehavior-tooltip"%2Fbehavior-tooltip" </a>
 
 <a href="../ui.html" Browser: Document, Events, Interfaces</span></a>
 
@@ -40,15 +40,15 @@ In this task we assume that all elements with `data-tooltip` have only text insi
 
 Details:
 
-- The distance between the element and the tooltip should be `5px`.
-- The tooltip should be centered relative to the element, if possible.
-- The tooltip should not cross window edges. Normally it should be above the element, but if the element is at the page top and there’s no space for the tooltip, then below it.
-- The tooltip content is given in the `data-tooltip` attribute. It can be arbitrary HTML.
+-   The distance between the element and the tooltip should be `5px`.
+-   The tooltip should be centered relative to the element, if possible.
+-   The tooltip should not cross window edges. Normally it should be above the element, but if the element is at the page top and there’s no space for the tooltip, then below it.
+-   The tooltip content is given in the `data-tooltip` attribute. It can be arbitrary HTML.
 
 You’ll need two events here:
 
-- `mouseover` triggers when a pointer comes over an element.
-- `mouseout` triggers when a pointer leaves an element.
+-   `mouseover` triggers when a pointer comes over an element.
+-   `mouseout` triggers when a pointer leaves an element.
 
 Please use event delegation: set up two handlers on `document` to track all “overs” and “outs” from elements with `data-tooltip` and manage tooltips from there.
 

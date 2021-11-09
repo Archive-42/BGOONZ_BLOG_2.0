@@ -1,9 +1,9 @@
 extract-currency"
 
-- <a href="extract-currency.html"
-  /extract-currency"
-  /extract-currency"
-  extract-currencyextract-currency"
+-   <a href="extract-currency.html"
+    /extract-currency"
+    /extract-currency"
+    extract-currencyextract-currency"
 
 <!-- -->
 

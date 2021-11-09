@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="find-webcolor-3-or-6.html"
-  /find-webcolor-3-or-6"
+-   <a href="find-webcolor-3-or-6.html"
+    /find-webcolor-3-or-6"
 
 find-webcolor-3-or-6find-webcolor-3-or-6"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  find-webcolor-3-or-6"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/"
+-   <a href="https://ko.javascript.info/"
+    find-webcolor-3-or-6"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/"
 
 We want to make this open-source project available for people all around the world.
 

@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="do-we-need-origin.html"
-  /do-we-need-origin"
-  /do-we-need-origin"
-  do-we-need-origindo-we-need-origin"
+-   <a href="https://ar.javascript.info/"
+-   <a href="do-we-need-origin.html"
+    /do-we-need-origin"
+    /do-we-need-origin"
+    do-we-need-origindo-we-need-origin"
 
 <!-- -->
 

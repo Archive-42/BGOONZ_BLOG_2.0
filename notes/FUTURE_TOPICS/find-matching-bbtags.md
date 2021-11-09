@@ -1,16 +1,16 @@
 find-matching-bbtags"
 
-- <a href="find-matching-bbtags.html"
-  /find-matching-bbtags"
-  /find-matching-bbtags"
-  find-matching-bbtagsfind-matching-bbtags"
+-   <a href="find-matching-bbtags.html"
+    /find-matching-bbtags"
+    /find-matching-bbtags"
+    find-matching-bbtagsfind-matching-bbtags"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  find-matching-bbtags"
-- <a href="https://tr.javascript.info/"
-  find-matching-bbtags"
+-   <a href="https://ko.javascript.info/"
+    find-matching-bbtags"
+-   <a href="https://tr.javascript.info/"
+    find-matching-bbtags"
 
 k%2Ffind-matching-bbtags"%2Ffind-matching-bbtags" </a>
 

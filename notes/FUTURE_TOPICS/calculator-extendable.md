@@ -1,7 +1,7 @@
 calculator-extendable"
 
-- <a href="calculator-extendable.html"
-  calculator-extendable"
+-   <a href="calculator-extendable.html"
+    calculator-extendable"
 
 calculator-extendablecalculator-extendable"
 
@@ -46,42 +46,42 @@ The task consists of two parts.
         let result = powerCalc.calculate("2 ** 3");
         alert( result ); // 8
 
-- No parentheses or complex expressions in this task.
-- The numbers and the operator are delimited with exactly one space.
-- There may be error handling if you’d like to add it.
+-   No parentheses or complex expressions in this task.
+-   The numbers and the operator are delimited with exactly one space.
+-   There may be error handling if you’d like to add it.
 
 [Open a sandbox with tests.](https://plnkr.co/edit/BSCbgSlVjg02a3OU?p=preview)
 
 solution
 
-- Please note how methods are stored. They are simply added to `this.methods` property.
-- All tests and numeric conversions are done in the `calculate` method. In future it may be extended to support more complex expressions.
+-   Please note how methods are stored. They are simply added to `this.methods` property.
+-   All tests and numeric conversions are done in the `calculate` method. In future it may be extended to support more complex expressions.
 
-  function Calculator() {
+    function Calculator() {
 
-  this.methods = {
-  "-": (a, b) => a - b,
-  "+": (a, b) => a + b
-  };
+    this.methods = {
+    "-": (a, b) => a - b,
+    "+": (a, b) => a + b
+    };
 
-  this.calculate = function(str) {
+    this.calculate = function(str) {
 
-      let split = str.split(' '),
-        a = +split[0],
-        op = split[1],
-        b = +split[2];
+        let split = str.split(' '),
+          a = +split[0],
+          op = split[1],
+          b = +split[2];
 
-      if (!this.methods[op] || isNaN(a) || isNaN(b)) {
-        return NaN;
-      }
+        if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+          return NaN;
+        }
 
-      return this.methods[op](a, b);
+        return this.methods[op](a, b);
 
-  };
+    };
 
-  this.addMethod = function(name, func) {
-  this.methods[name] = func;
-  };
-  }
+    this.addMethod = function(name, func) {
+    this.methods[name] = func;
+    };
+    }
 
 [Open the solution with tests in a sandbox.](https://plnkr.co/edit/DfKe17tsPxFwhF7z?p=preview)

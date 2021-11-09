@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/comparison"
-- <a href="comparison.html"
-- <a href="https://es.javascript.info/comparison"
-- <a href="https://fr.javascript.info/comparison"
-- <a href="https://it.javascript.info/comparison"
-  comparison"
+-   <a href="https://ar.javascript.info/comparison"
+-   <a href="comparison.html"
+-   <a href="https://es.javascript.info/comparison"
+-   <a href="https://fr.javascript.info/comparison"
+-   <a href="https://it.javascript.info/comparison"
+    comparison"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/comparison"
-- <a href=comparison"
-- <a href="https://tr.javascript.info/comparison"
-- <a href="https://zh.javascript.info/comparison"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/comparison"
+-   <a href=comparison"
+-   <a href="https://tr.javascript.info/comparison"
+-   <a href="https://zh.javascript.info/comparison"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -37,10 +37,10 @@ We know many comparison operators from maths.
 
 In JavaScript they are written like this:
 
-- Greater/less than: `a > b`, `a < b`.
-- Greater/less than or equals: `a >= b`, `a <= b`.
-- Equals: `a == b`, please note the double equality sign `==` means the equality test, while a single one `a = b` means an assignment.
-- Not equals. In maths the notation is `≠`, but in JavaScript it’s written as `a != b`.
+-   Greater/less than: `a > b`, `a < b`.
+-   Greater/less than or equals: `a >= b`, `a <= b`.
+-   Equals: `a == b`, please note the double equality sign `==` means the equality test, while a single one `a = b` means an assignment.
+-   Not equals. In maths the notation is `≠`, but in JavaScript it’s written as `a != b`.
 
 In this article we’ll learn more about different types of comparisons, how JavaScript makes them, including important peculiarities.
 
@@ -50,8 +50,8 @@ At the end you’ll find a good recipe to avoid “JavaScript quirks”-related 
 
 All comparison operators return a boolean value:
 
-- `true` – means “yes”, “correct” or “the truth”.
-- `false` – means “no”, “wrong” or “not the truth”.
+-   `true` – means “yes”, “correct” or “the truth”.
+-   `false` – means “no”, “wrong” or “not the truth”.
 
 For example:
 
@@ -133,8 +133,8 @@ For example:
 
 It is possible that at the same time:
 
-- Two values are equal.
-- One of them is `true` as a boolean and the other one is `false` as a boolean.
+-   Two values are equal.
+-   One of them is `true` as a boolean and the other one is `false` as a boolean.
 
 For example:
 
@@ -243,23 +243,23 @@ Why does it dislike zero so much? Always false!
 
 We get these results because:
 
-- Comparisons `(1)` and `(2)` return `false` because `undefined` gets converted to `NaN` and `NaN` is a special numeric value which returns `false` for all comparisons.
-- The equality check `(3)` returns `false` because `undefined` only equals `null`, `undefined`, and no other value.
+-   Comparisons `(1)` and `(2)` return `false` because `undefined` gets converted to `NaN` and `NaN` is a special numeric value which returns `false` for all comparisons.
+-   The equality check `(3)` returns `false` because `undefined` only equals `null`, `undefined`, and no other value.
 
 ### <a href="comparison.html#avoid-problems" id="avoid-problems" class="main__anchor">Avoid problems</a>
 
 Why did we go over these examples? Should we remember these peculiarities all the time? Well, not really. Actually, these tricky things will gradually become familiar over time, but there’s a solid way to avoid problems with them:
 
-- Treat any comparison with `undefined/null` except the strict equality `===` with exceptional care.
-- Don’t use comparisons `>= > < <=` with a variable which may be `null/undefined`, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
+-   Treat any comparison with `undefined/null` except the strict equality `===` with exceptional care.
+-   Don’t use comparisons `>= > < <=` with a variable which may be `null/undefined`, unless you’re really sure of what you’re doing. If a variable can have these values, check for them separately.
 
 ## <a href="comparison.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- Comparison operators return a boolean value.
-- Strings are compared letter-by-letter in the “dictionary” order.
-- When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
-- The values `null` and `undefined` equal `==` each other and do not equal any other value.
-- Be careful when using comparisons like `>` or `<` with variables that can occasionally be `null/undefined`. Checking for `null/undefined` separately is a good idea.
+-   Comparison operators return a boolean value.
+-   Strings are compared letter-by-letter in the “dictionary” order.
+-   When values of different types are compared, they get converted to numbers (with the exclusion of a strict equality check).
+-   The values `null` and `undefined` equal `==` each other and do not equal any other value.
+-   Be careful when using comparisons like `>` or `<` with variables that can occasionally be `null/undefined`. Checking for `null/undefined` separately is a good idea.
 
 ## <a href="comparison.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -309,27 +309,27 @@ Some of the reasons:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="comparison.html#boolean-is-the-result" class="sidebar__link">Boolean is the result</a>
-- <a href="comparison.html#string-comparison" class="sidebar__link">String comparison</a>
-- <a href="comparison.html#comparison-of-different-types" class="sidebar__link">Comparison of different types</a>
-- <a href="comparison.html#strict-equality" class="sidebar__link">Strict equality</a>
-- <a href="comparison.html#comparison-with-null-and-undefined" class="sidebar__link">Comparison with null and undefined</a>
-- <a href="comparison.html#summary" class="sidebar__link">Summary</a>
+-   <a href="comparison.html#boolean-is-the-result" class="sidebar__link">Boolean is the result</a>
+-   <a href="comparison.html#string-comparison" class="sidebar__link">String comparison</a>
+-   <a href="comparison.html#comparison-of-different-types" class="sidebar__link">Comparison of different types</a>
+-   <a href="comparison.html#strict-equality" class="sidebar__link">Strict equality</a>
+-   <a href="comparison.html#comparison-with-null-and-undefined" class="sidebar__link">Comparison with null and undefined</a>
+-   <a href="comparison.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="comparison.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="comparison.html#comments" class="sidebar__link">Comments</a>
+-   <a href="comparison.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="comparison.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -337,7 +337,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/09-comparison" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

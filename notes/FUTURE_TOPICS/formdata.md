@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="formdata.html"
-- <a href="https://es.javascript.info/formdata"
-- <a href="https://fr.javascript.info/formdata"
-- <a href="https://it.javascript.info/formdata"
-  formdata"
+-   <a href="formdata.html"
+-   <a href="https://es.javascript.info/formdata"
+-   <a href="https://fr.javascript.info/formdata"
+-   <a href="https://it.javascript.info/formdata"
+    formdata"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-- <a href=formdata"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/formdata"
+-   <a href="https://ko.javascript.info/"
+-   <a href=formdata"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/formdata"
 
 We want to make this open-source project available for people all around the world.
 
@@ -91,18 +91,18 @@ In this example, the server code is not presented, as it’s beyond our scope. T
 
 We can modify fields in `FormData` with methods:
 
-- `formData.append(name, value)` – add a form field with the given `name` and `value`,
-- `formData.append(name, blob, fileName)` – add a field as if it were `<input type="file">`, the third argument `fileName` sets file name (not form field name), as it were a name of the file in user’s filesystem,
-- `formData.delete(name)` – remove the field with the given `name`,
-- `formData.get(name)` – get the value of the field with the given `name`,
-- `formData.has(name)` – if there exists a field with the given `name`, returns `true`, otherwise `false`
+-   `formData.append(name, value)` – add a form field with the given `name` and `value`,
+-   `formData.append(name, blob, fileName)` – add a field as if it were `<input type="file">`, the third argument `fileName` sets file name (not form field name), as it were a name of the file in user’s filesystem,
+-   `formData.delete(name)` – remove the field with the given `name`,
+-   `formData.get(name)` – get the value of the field with the given `name`,
+-   `formData.has(name)` – if there exists a field with the given `name`, returns `true`, otherwise `false`
 
 A form is technically allowed to have many fields with the same `name`, so multiple calls to `append` add more same-named fields.
 
 There’s also method `set`, with the same syntax as `append`. The difference is that `.set` removes all fields with the given `name`, and then appends a new field. So it makes sure there’s only one field with such `name`, the rest is just like `append`:
 
-- `formData.set(name, value)`,
-- `formData.set(name, blob, fileName)`.
+-   `formData.set(name, value)`,
+-   `formData.set(name, blob, fileName)`.
 
 Also we can iterate over formData fields using `for..of` loop:
 
@@ -207,10 +207,10 @@ The server reads form data and the file, as if it were a regular form submission
 
 We can either create `new FormData(form)` from an HTML form, or create an object without a form at all, and then append fields with methods:
 
-- `formData.append(name, value)`
-- `formData.append(name, blob, fileName)`
-- `formData.set(name, value)`
-- `formData.set(name, blob, fileName)`
+-   `formData.append(name, value)`
+-   `formData.append(name, blob, fileName)`
+-   `formData.set(name, value)`
+-   `formData.set(name, blob, fileName)`
 
 Let’s note two peculiarities here:
 
@@ -219,9 +219,9 @@ Let’s note two peculiarities here:
 
 Other methods are:
 
-- `formData.delete(name)`
-- `formData.get(name)`
-- `formData.has(name)`
+-   `formData.delete(name)`
+-   `formData.get(name)`
+-   `formData.has(name)`
 
 That’s it!
 
@@ -235,25 +235,25 @@ That’s it!
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="network.html" class="sidebar__link">Network requests</a>
+-   <a href="network.html" class="sidebar__link">Network requests</a>
 
 #### Lesson navigation
 
-- <a href="formdata.html#sending-a-simple-form" class="sidebar__link">Sending a simple form</a>
-- <a href="formdata.html#formdata-methods" class="sidebar__link">FormData Methods</a>
-- <a href="formdata.html#sending-a-form-with-a-file" class="sidebar__link">Sending a form with a file</a>
-- <a href="formdata.html#sending-a-form-with-blob-data" class="sidebar__link">Sending a form with Blob data</a>
-- <a href="formdata.html#summary" class="sidebar__link">Summary</a>
+-   <a href="formdata.html#sending-a-simple-form" class="sidebar__link">Sending a simple form</a>
+-   <a href="formdata.html#formdata-methods" class="sidebar__link">FormData Methods</a>
+-   <a href="formdata.html#sending-a-form-with-a-file" class="sidebar__link">Sending a form with a file</a>
+-   <a href="formdata.html#sending-a-form-with-blob-data" class="sidebar__link">Sending a form with Blob data</a>
+-   <a href="formdata.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="formdata.html#comments" class="sidebar__link">Comments</a>
+-   <a href="formdata.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -261,7 +261,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/5-network/02-formdata" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

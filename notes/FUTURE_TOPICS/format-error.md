@@ -2,10 +2,10 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="format-error.html"
-  /format-error"
-  /format-error"
-  format-errorformat-error"
+-   <a href="format-error.html"
+    /format-error"
+    /format-error"
+    format-errorformat-error"
 
 <!-- -->
 

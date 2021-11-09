@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/global-object"
-- <a href="global-object.html"
-- <a href="https://es.javascript.info/global-object"
-- <a href="https://fr.javascript.info/global-object"
-- <a href="https://it.javascript.info/global-object"
-  global-object"
+-   <a href="https://ar.javascript.info/global-object"
+-   <a href="global-object.html"
+-   <a href="https://es.javascript.info/global-object"
+-   <a href="https://fr.javascript.info/global-object"
+-   <a href="https://it.javascript.info/global-object"
+    global-object"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/global-object"
-- <a href=global-object"
-- <a href="https://tr.javascript.info/global-object"
-- <a href="https://zh.javascript.info/global-object"
+-   <a href="https://ko.javascript.info/global-object"
+-   <a href=global-object"
+-   <a href="https://tr.javascript.info/global-object"
+-   <a href="https://zh.javascript.info/global-object"
 
 We want to make this open-source project available for people all around the world.
 
@@ -122,19 +122,19 @@ If there’s none (say, we’re in an old browser), we can create “polyfills�
 
 ## <a href="global-object.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- The global object holds variables that should be available everywhere.
+-   The global object holds variables that should be available everywhere.
 
-  That includes JavaScript built-ins, such as `Array` and environment-specific values, such as `window.innerHeight` – the window height in the browser.
+    That includes JavaScript built-ins, such as `Array` and environment-specific values, such as `window.innerHeight` – the window height in the browser.
 
-- The global object has a universal name `globalThis`.
+-   The global object has a universal name `globalThis`.
 
-  …But more often is referred by “old-school” environment-specific names, such as `window` (browser) and `global` (Node.js).
+    …But more often is referred by “old-school” environment-specific names, such as `window` (browser) and `global` (Node.js).
 
-- We should store values in the global object only if they’re truly global for our project. And keep their number at minimum.
+-   We should store values in the global object only if they’re truly global for our project. And keep their number at minimum.
 
-- In-browser, unless we’re using [modules](modules.html), global functions and variables declared with `var` become a property of the global object.
+-   In-browser, unless we’re using [modules](modules.html), global functions and variables declared with `var` become a property of the global object.
 
-- To make our code future-proof and easier to understand, we should access properties of the global object directly, as `window.x`.
+-   To make our code future-proof and easier to understand, we should access properties of the global object directly, as `window.x`.
 
 <a href="var.html" class="page__nav page__nav_prev"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Previous lesson</span></a><a href="function-object.html" class="page__nav page__nav_next"><span class="page__nav-text"><span class="page__nav-text-shortcut"></span></span><span class="page__nav-text-alternate">Next lesson</span></a>
 
@@ -146,22 +146,22 @@ If there’s none (say, we’re in an old browser), we can create “polyfills�
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="global-object.html#using-for-polyfills" class="sidebar__link">Using for polyfills</a>
-- <a href="global-object.html#summary" class="sidebar__link">Summary</a>
+-   <a href="global-object.html#using-for-polyfills" class="sidebar__link">Using for polyfills</a>
+-   <a href="global-object.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="global-object.html#comments" class="sidebar__link">Comments</a>
+-   <a href="global-object.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -169,7 +169,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/05-global-object" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

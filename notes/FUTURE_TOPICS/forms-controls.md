@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="forms-controls.html"
-- <a href="https://es.javascript.info/forms-controls"
+-   <a href="forms-controls.html"
+-   <a href="https://es.javascript.info/forms-controls"
 
-- <a href="https://it.javascript.info/forms-controls"
-  forms-controls"
+-   <a href="https://it.javascript.info/forms-controls"
+    forms-controls"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/forms-controls"
-- <a href=forms-controls"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/forms-controls"
+-   <a href="https://ko.javascript.info/forms-controls"
+-   <a href=forms-controls"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/forms-controls"
 
 We want to make this open-source project available for people all around the world.
 
@@ -55,12 +55,12 @@ Special properties and events for forms `<form>` and controls: `<input>`, `<sele
 
 #### Sibling chapters
 
-- <a href="document.html" class="sidebar__link">Document</a>
-- <a href="events.html" class="sidebar__link">Introduction to Events</a>
-- <a href="event-details.html" class="sidebar__link">UI Events</a>
-- <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
-- <a href="loading.html" class="sidebar__link">Document and resource loading</a>
-- <a href="ui-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="events.html" class="sidebar__link">Introduction to Events</a>
+-   <a href="event-details.html" class="sidebar__link">UI Events</a>
+-   <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
+-   <a href="loading.html" class="sidebar__link">Document and resource loading</a>
+-   <a href="ui-misc.html" class="sidebar__link">Miscellaneous</a>
 
 Share
 
@@ -68,7 +68,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/4-forms-controls" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

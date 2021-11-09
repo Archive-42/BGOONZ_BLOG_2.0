@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="hide-other.html"
-  /hide-other"
+-   <a href="hide-other.html"
+    /hide-other"
 
 hide-otherhide-other"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  hide-other"
-- <a href="https://tr.javascript.info/"
-  hide-other"
+-   <a href="https://ko.javascript.info/"
+    hide-other"
+-   <a href="https://tr.javascript.info/"
+    hide-other"
 
 We want to make this open-source project available for people all around the world.
 

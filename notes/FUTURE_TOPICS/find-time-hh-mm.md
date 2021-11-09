@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="find-time-hh-mm.html"
-  /find-time-hh-mm"
-  /find-time-hh-mm"
-  find-time-hh-mmfind-time-hh-mm"
+-   <a href="find-time-hh-mm.html"
+    /find-time-hh-mm"
+    /find-time-hh-mm"
+    find-time-hh-mmfind-time-hh-mm"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  find-time-hh-mm"
-- <a href="https://tr.javascript.info/"
-  find-time-hh-mm"
+-   <a href="https://ko.javascript.info/"
+    find-time-hh-mm"
+-   <a href="https://tr.javascript.info/"
+    find-time-hh-mm"
 
 We want to make this open-source project available for people all around the world.
 

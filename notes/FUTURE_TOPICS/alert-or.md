@@ -1,9 +1,9 @@
 alert-or"
 
-- <a href="alert-or.html"
-  alert-or"
-  /alert-or"
-  alert-oralert-or"
+-   <a href="alert-or.html"
+    alert-or"
+    /alert-or"
+    alert-oralert-or"
 
 <!-- -->
 

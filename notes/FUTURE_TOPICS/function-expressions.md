@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/function-expressions"
-- <a href="function-expressions.html"
-- <a href="https://es.javascript.info/function-expressions"
-- <a href="https://fr.javascript.info/function-expressions"
-- <a href="https://it.javascript.info/function-expressions"
-  function-expressions"
+-   <a href="https://ar.javascript.info/function-expressions"
+-   <a href="function-expressions.html"
+-   <a href="https://es.javascript.info/function-expressions"
+-   <a href="https://fr.javascript.info/function-expressions"
+-   <a href="https://it.javascript.info/function-expressions"
+    function-expressions"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/function-expressions"
-- <a href=function-expressions"
-- <a href="https://tr.javascript.info/function-expressions"
-- <a href="https://zh.javascript.info/function-expressions"
+-   <a href="https://ko.javascript.info/function-expressions"
+-   <a href=function-expressions"
+-   <a href="https://tr.javascript.info/function-expressions"
+-   <a href="https://zh.javascript.info/function-expressions"
 
 We want to make this open-source project available for people all around the world.
 
@@ -124,8 +124,8 @@ You might wonder, why does Function Expression have a semicolon `;` at the end, 
 
 The answer is simple:
 
-- There’s no need for `;` at the end of code blocks and syntax structures that use them like `if { ... }`, `for { }`, `function f { }` etc.
-- A Function Expression is used inside the statement: `let sayHi = ...;`, as a value. It’s not a code block, but rather an assignment. The semicolon `;` is recommended at the end of statements, no matter what the value is. So the semicolon here is not related to the Function Expression itself, it just terminates the statement.
+-   There’s no need for `;` at the end of code blocks and syntax structures that use them like `if { ... }`, `for { }`, `function f { }` etc.
+-   A Function Expression is used inside the statement: `let sayHi = ...;`, as a value. It’s not a code block, but rather an assignment. The semicolon `;` is recommended at the end of statements, no matter what the value is. So the semicolon here is not related to the Function Expression itself, it just terminates the statement.
 
 ## <a href="function-expressions.html#callback-functions" id="callback-functions" class="main__anchor">Callback functions</a>
 
@@ -203,19 +203,19 @@ Let’s formulate the key differences between Function Declarations and Expressi
 
 First, the syntax: how to differentiate between them in the code.
 
-- _Function Declaration:_ a function, declared as a separate statement, in the main code flow.
+-   _Function Declaration:_ a function, declared as a separate statement, in the main code flow.
 
-      // Function Declaration
-      function sum(a, b) {
-        return a + b;
-      }
+        // Function Declaration
+        function sum(a, b) {
+          return a + b;
+        }
 
-- _Function Expression:_ a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the “assignment expression” `=`:
+-   _Function Expression:_ a function, created inside an expression or inside another syntax construct. Here, the function is created at the right side of the “assignment expression” `=`:
 
-      // Function Expression
-      let sum = function(a, b) {
-        return a + b;
-      };
+        // Function Expression
+        let sum = function(a, b) {
+          return a + b;
+        };
 
 The more subtle difference is _when_ a function is created by the JavaScript engine.
 
@@ -372,11 +372,11 @@ That’s also better for readability, as it’s easier to look up `function f(�
 
 ## <a href="function-expressions.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- Functions are values. They can be assigned, copied or declared in any place of the code.
-- If the function is declared as a separate statement in the main code flow, that’s called a “Function Declaration”.
-- If the function is created as a part of an expression, it’s called a “Function Expression”.
-- Function Declarations are processed before the code block is executed. They are visible everywhere in the block.
-- Function Expressions are created when the execution flow reaches them.
+-   Functions are values. They can be assigned, copied or declared in any place of the code.
+-   If the function is declared as a separate statement in the main code flow, that’s called a “Function Declaration”.
+-   If the function is created as a part of an expression, it’s called a “Function Expression”.
+-   Function Declarations are processed before the code block is executed. They are visible everywhere in the block.
+-   Function Expressions are created when the execution flow reaches them.
 
 In most cases when we need to declare a function, a Function Declaration is preferable, because it is visible prior to the declaration itself. That gives us more flexibility in code organization, and is usually more readable.
 
@@ -392,23 +392,23 @@ So we should use a Function Expression only when a Function Declaration is not f
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="function-expressions.html#callback-functions" class="sidebar__link">Callback functions</a>
-- <a href="function-expressions.html#function-expression-vs-function-declaration" class="sidebar__link">Function Expression vs Function Declaration</a>
-- <a href="function-expressions.html#summary" class="sidebar__link">Summary</a>
+-   <a href="function-expressions.html#callback-functions" class="sidebar__link">Callback functions</a>
+-   <a href="function-expressions.html#function-expression-vs-function-declaration" class="sidebar__link">Function Expression vs Function Declaration</a>
+-   <a href="function-expressions.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="function-expressions.html#comments" class="sidebar__link">Comments</a>
+-   <a href="function-expressions.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -416,7 +416,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/16-function-expressions" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

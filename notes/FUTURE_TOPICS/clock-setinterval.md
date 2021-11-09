@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="clock-setinterval.html"
-  clock-setinterval"
-  /clock-setinterval"
-  clock-setintervalclock-setinterval"
+-   <a href="https://ar.javascript.info/"
+-   <a href="clock-setinterval.html"
+    clock-setinterval"
+    /clock-setinterval"
+    clock-setintervalclock-setinterval"
 
 <!-- -->
 

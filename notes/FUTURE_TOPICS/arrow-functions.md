@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/arrow-functions"
-- <a href="arrow-functions.html"
-- <a href="https://es.javascript.info/arrow-functions"
-- <a href="https://fr.javascript.info/arrow-functions"
-- <a href="https://it.javascript.info/arrow-functions"
-  arrow-functions"
+-   <a href="https://ar.javascript.info/arrow-functions"
+-   <a href="arrow-functions.html"
+-   <a href="https://es.javascript.info/arrow-functions"
+-   <a href="https://fr.javascript.info/arrow-functions"
+-   <a href="https://it.javascript.info/arrow-functions"
+    arrow-functions"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/arrow-functions"
-- <a href=arrow-functions"
-- <a href="https://tr.javascript.info/arrow-functions"
-- <a href="https://zh.javascript.info/arrow-functions"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/arrow-functions"
+-   <a href=arrow-functions"
+-   <a href="https://tr.javascript.info/arrow-functions"
+-   <a href="https://zh.javascript.info/arrow-functions"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -41,9 +41,9 @@ JavaScript is full of situations where we need to write a small function that’
 
 For instance:
 
-- `arr.forEach(func)` – `func` is executed by `forEach` for every array item.
-- `setTimeout(func)` – `func` is executed by the built-in scheduler.
-- …there are more.
+-   `arr.forEach(func)` – `func` is executed by `forEach` for every array item.
+-   `setTimeout(func)` – `func` is executed by the built-in scheduler.
+-   …there are more.
 
 It’s in the very spirit of JavaScript to create a function and pass it somewhere.
 
@@ -104,8 +104,8 @@ Not having `this` naturally means another limitation: arrow functions can’t be
 
 There’s a subtle difference between an arrow function `=>` and a regular function called with `.bind(this)`:
 
-- `.bind(this)` creates a “bound version” of the function.
-- The arrow `=>` doesn’t create any binding. The function simply doesn’t have `this`. The lookup of `this` is made exactly the same way as a regular variable search: in the outer lexical environment.
+-   `.bind(this)` creates a “bound version” of the function.
+-   The arrow `=>` doesn’t create any binding. The function simply doesn’t have `this`. The lookup of `this` is made exactly the same way as a regular variable search: in the outer lexical environment.
 
 ## <a href="arrow-functions.html#arrows-have-no-arguments" id="arrows-have-no-arguments" class="main__anchor">Arrows have no “arguments”</a>
 
@@ -148,10 +148,10 @@ Here we had to create additional variables `args` and `ctx` so that the function
 
 Arrow functions:
 
-- Do not have `this`
-- Do not have `arguments`
-- Can’t be called with `new`
-- They also don’t have `super`, but we didn’t study it yet. We will on the chapter [Class inheritance](class-inheritance.html)
+-   Do not have `this`
+-   Do not have `arguments`
+-   Can’t be called with `new`
+-   They also don’t have `super`, but we didn’t study it yet. We will on the chapter [Class inheritance](class-inheritance.html)
 
 That’s because they are meant for short pieces of code that do not have their own “context”, but rather work in the current one. And they really shine in that use case.
 
@@ -165,23 +165,23 @@ That’s because they are meant for short pieces of code that do not have their 
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
+-   <a href="advanced-functions.html" class="sidebar__link">Advanced working with functions</a>
 
 #### Lesson navigation
 
-- <a href="arrow-functions.html#arrow-functions-have-no-this" class="sidebar__link">Arrow functions have no “this”</a>
-- <a href="arrow-functions.html#arrows-have-no-arguments" class="sidebar__link">Arrows have no “arguments”</a>
-- <a href="arrow-functions.html#summary" class="sidebar__link">Summary</a>
+-   <a href="arrow-functions.html#arrow-functions-have-no-this" class="sidebar__link">Arrow functions have no “this”</a>
+-   <a href="arrow-functions.html#arrows-have-no-arguments" class="sidebar__link">Arrows have no “arguments”</a>
+-   <a href="arrow-functions.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="arrow-functions.html class="sidebar\_\_link">Comments</a>
+-   <a href="arrow-functions.html class="sidebar\_\_link">Comments</a>
 
 Share
 
@@ -189,7 +189,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/06-advanced-functions/12-arrow-functions" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

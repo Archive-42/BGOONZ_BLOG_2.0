@@ -1,18 +1,18 @@
 EN
 
-- <a href="https://ar.javascript.info/hello-world"
-- <a href="hello-world.html"
-- <a href="https://es.javascript.info/hello-world"
-- <a href="https://fr.javascript.info/hello-world"
-- <a href="https://it.javascript.info/hello-world"
-  hello-world"
+-   <a href="https://ar.javascript.info/hello-world"
+-   <a href="hello-world.html"
+-   <a href="https://es.javascript.info/hello-world"
+-   <a href="https://fr.javascript.info/hello-world"
+-   <a href="https://it.javascript.info/hello-world"
+    hello-world"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/hello-world"
-- <a href=hello-world"
-- <a href="https://tr.javascript.info/hello-world"
-- <a href="https://zh.javascript.info/hello-world"
+-   <a href="https://ko.javascript.info/hello-world"
+-   <a href=hello-world"
+-   <a href="https://tr.javascript.info/hello-world"
+-   <a href="https://zh.javascript.info/hello-world"
 
 We want to make this open-source project available for people all around the world.
 
@@ -147,9 +147,9 @@ The example above can be split into two scripts to work:
 
 ## <a href="hello-world.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- We can use a `<script>` tag to add JavaScript code to a page.
-- The `type` and `language` attributes are not required.
-- A script in an external file can be inserted with `<script src="path/to/script.js"></script>`.
+-   We can use a `<script>` tag to add JavaScript code to a page.
+-   The `type` and `language` attributes are not required.
+-   A script in an external file can be inserted with `<script src="path/to/script.js"></script>`.
 
 There is much more to learn about browser scripts and their interaction with the webpage. But let’s keep in mind that this part of the tutorial is devoted to the JavaScript language, so we shouldn’t distract ourselves with browser-specific implementations of it. We’ll be using the browser as a way to run JavaScript, which is very convenient for online reading, but only one of many.
 
@@ -223,25 +223,25 @@ For the file `alert.js` in the same folder:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
+-   <a href="first-steps.html" class="sidebar__link">JavaScript Fundamentals</a>
 
 #### Lesson navigation
 
-- <a href="hello-world.html#the-script-tag" class="sidebar__link">The “script” tag</a>
-- <a href="hello-world.html#modern-markup" class="sidebar__link">Modern markup</a>
-- <a href="hello-world.html#external-scripts" class="sidebar__link">External scripts</a>
-- <a href="hello-world.html#summary" class="sidebar__link">Summary</a>
+-   <a href="hello-world.html#the-script-tag" class="sidebar__link">The “script” tag</a>
+-   <a href="hello-world.html#modern-markup" class="sidebar__link">Modern markup</a>
+-   <a href="hello-world.html#external-scripts" class="sidebar__link">External scripts</a>
+-   <a href="hello-world.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="hello-world.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="hello-world.html#comments" class="sidebar__link">Comments</a>
+-   <a href="hello-world.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="hello-world.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -249,7 +249,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/02-first-steps/01-hello-world" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

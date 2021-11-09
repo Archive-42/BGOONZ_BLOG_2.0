@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="event-loop.html"
-- <a href="https://es.javascript.info/event-loop"
+-   <a href="event-loop.html"
+-   <a href="https://es.javascript.info/event-loop"
 
-- <a href="https://it.javascript.info/event-loop"
-  event-loop"
+-   <a href="https://it.javascript.info/event-loop"
+    event-loop"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/event-loop"
-- <a href=event-loop"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/event-loop"
+-   <a href="https://ko.javascript.info/event-loop"
+-   <a href=event-loop"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/event-loop"
 
 We want to make this open-source project available for people all around the world.
 
@@ -54,17 +54,17 @@ The _event loop_ concept is very simple. There’s an endless loop, where the Ja
 The general algorithm of the engine:
 
 1.  While there are tasks:
-    - execute them, starting with the oldest task.
+    -   execute them, starting with the oldest task.
 2.  Sleep until a task appears, then go to 1.
 
 That’s a formalization for what we see when browsing a page. The JavaScript engine does nothing most of the time, it only runs if a script/handler/event activates.
 
 Examples of tasks:
 
-- When an external script `<script src="...">` loads, the task is to execute it.
-- When a user moves their mouse, the task is to dispatch `mousemove` event and execute handlers.
-- When the time is due for a scheduled `setTimeout`, the task is to run its callback.
-- …and so on.
+-   When an external script `<script src="...">` loads, the task is to execute it.
+-   When a user moves their mouse, the task is to dispatch `mousemove` event and execute handlers.
+-   When the time is due for a scheduled `setTimeout`, the task is to run its callback.
+-   …and so on.
 
 Tasks are set – the engine handles them – then waits for more tasks (while sleeping and consuming close to zero CPU).
 
@@ -348,15 +348,15 @@ A more detailed event loop algorithm (though still simplified compared to the [s
 
 1.  Dequeue and run the oldest task from the _macrotask_ queue (e.g. “script”).
 2.  Execute all _microtasks_:
-    - While the microtask queue is not empty:
-      - Dequeue and run the oldest microtask.
+    -   While the microtask queue is not empty:
+        -   Dequeue and run the oldest microtask.
 3.  Render changes if any.
 4.  If the macrotask queue is empty, wait till a macrotask appears.
 5.  Go to step 1.
 
 To schedule a new _macrotask_:
 
-- Use zero delayed `setTimeout(f)`.
+-   Use zero delayed `setTimeout(f)`.
 
 That may be used to split a big calculation-heavy task into pieces, for the browser to be able to react to user events and show progress between them.
 
@@ -364,8 +364,8 @@ Also, used in event handlers to schedule an action after the event is fully hand
 
 To schedule a new _microtask_
 
-- Use `queueMicrotask(f)`.
-- Also promise handlers go through the microtask queue.
+-   Use `queueMicrotask(f)`.
+-   Also promise handlers go through the microtask queue.
 
 There’s no UI or network event handling between microtasks: they run immediately one after another.
 
@@ -391,26 +391,26 @@ Web Workers do not have access to DOM, so they are useful, mainly, for calculati
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="ui-misc.html" class="sidebar__link">Miscellaneous</a>
+-   <a href="ui-misc.html" class="sidebar__link">Miscellaneous</a>
 
 #### Lesson navigation
 
-- <a href="event-loop.html#event-loop" class="sidebar__link">Event Loop</a>
-- <a href="event-loop.html#use-case-1-splitting-cpu-hungry-tasks" class="sidebar__link">Use-case 1: splitting CPU-hungry tasks</a>
-- <a href="event-loop.html#use-case-2-progress-indication" class="sidebar__link">Use case 2: progress indication</a>
-- <a href="event-loop.html#use-case-3-doing-something-after-the-event" class="sidebar__link">Use case 3: doing something after the event</a>
-- <a href="event-loop.html#macrotasks-and-microtasks" class="sidebar__link">Macrotasks and Microtasks</a>
-- <a href="event-loop.html#summary" class="sidebar__link">Summary</a>
+-   <a href="event-loop.html#event-loop" class="sidebar__link">Event Loop</a>
+-   <a href="event-loop.html#use-case-1-splitting-cpu-hungry-tasks" class="sidebar__link">Use-case 1: splitting CPU-hungry tasks</a>
+-   <a href="event-loop.html#use-case-2-progress-indication" class="sidebar__link">Use case 2: progress indication</a>
+-   <a href="event-loop.html#use-case-3-doing-something-after-the-event" class="sidebar__link">Use case 3: doing something after the event</a>
+-   <a href="event-loop.html#macrotasks-and-microtasks" class="sidebar__link">Macrotasks and Microtasks</a>
+-   <a href="event-loop.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="event-loop.html#comments" class="sidebar__link">Comments</a>
+-   <a href="event-loop.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -418,7 +418,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/99-ui-misc/03-event-loop" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

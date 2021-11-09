@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="hoverintent.html"
-  /hoverintent"
-  /hoverintent"
-  hoverintenthoverintent"
+-   <a href="hoverintent.html"
+    /hoverintent"
+    /hoverintent"
+    hoverintenthoverintent"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  hoverintent"
-  /hoverintent"
-  hoverintent"
+-   <a href="https://ko.javascript.info/"
+    hoverintent"
+    /hoverintent"
+    hoverintent"
 
 We want to make this open-source project available for people all around the world.
 
@@ -42,9 +42,9 @@ Make a universal object `new HoverIntent(options)` for it.
 
 Its `options`:
 
-- `elem` – element to track.
-- `over` – a function to call if the mouse came to the element: that is, it moves slowly or stopped over it.
-- `out` – a function to call when the mouse leaves the element (if `over` was called).
+-   `elem` – element to track.
+-   `over` – a function to call if the mouse came to the element: that is, it moves slowly or stopped over it.
+-   `out` – a function to call when the mouse leaves the element (if `over` was called).
 
 An example of using such object for the tooltip:
 

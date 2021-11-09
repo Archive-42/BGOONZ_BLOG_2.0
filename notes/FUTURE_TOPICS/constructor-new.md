@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/constructor-new"
-- <a href="constructor-new.html"
-- <a href="https://es.javascript.info/constructor-new"
-- <a href="https://fr.javascript.info/constructor-new"
-- <a href="https://it.javascript.info/constructor-new"
-  constructor-new"
+-   <a href="https://ar.javascript.info/constructor-new"
+-   <a href="constructor-new.html"
+-   <a href="https://es.javascript.info/constructor-new"
+-   <a href="https://fr.javascript.info/constructor-new"
+-   <a href="https://it.javascript.info/constructor-new"
+    constructor-new"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/constructor-new"
-- <a href=constructor-new"
-- <a href="https://tr.javascript.info/constructor-new"
-- <a href="https://zh.javascript.info/constructor-new"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/constructor-new"
+-   <a href=constructor-new"
+-   <a href="https://tr.javascript.info/constructor-new"
+-   <a href="https://zh.javascript.info/constructor-new"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -157,8 +157,8 @@ Usually, constructors do not have a `return` statement. Their task is to write a
 
 But if there is a `return` statement, then the rule is simple:
 
-- If `return` is called with an object, then the object is returned instead of `this`.
-- If `return` is called with a primitive, it’s ignored.
+-   If `return` is called with an object, then the object is returned instead of `this`.
+-   If `return` is called with a primitive, it’s ignored.
 
 In other words, `return` with an object returns that object, in all other cases `this` is returned.
 
@@ -236,8 +236,8 @@ To create complex objects, there’s a more advanced syntax, [classes](classes.h
 
 ## <a href="constructor-new.html#summary" id="summary" class="main__anchor">Summary</a>
 
-- Constructor functions or, briefly, constructors, are regular functions, but there’s a common agreement to name them with capital letter first.
-- Constructor functions should only be called using `new`. Such a call implies a creation of empty `this` at the start and returning the populated one at the end.
+-   Constructor functions or, briefly, constructors, are regular functions, but there’s a common agreement to name them with capital letter first.
+-   Constructor functions should only be called using `new`. Such a call implies a creation of empty `this` at the start and returning the populated one at the end.
 
 We can use constructor functions to make multiple similar objects.
 
@@ -295,9 +295,9 @@ So they can, for instance, return the same externally defined object `obj`:
 
 Create a constructor function `Calculator` that creates objects with 3 methods:
 
-- `read()` asks for two values using `prompt` and remembers them in object properties.
-- `sum()` returns the sum of these properties.
-- `mul()` returns the multiplication product of these properties.
+-   `read()` asks for two values using `prompt` and remembers them in object properties.
+-   `sum()` returns the sum of these properties.
+-   `mul()` returns the multiplication product of these properties.
 
 For instance:
 
@@ -350,8 +350,8 @@ Create a constructor function `Accumulator(startingValue)`.
 
 Object that it creates should:
 
-- Store the “current value” in the property `value`. The starting value is set to the argument of the constructor `startingValue`.
-- The `read()` method should use `prompt` to read a new number and add it to `value`.
+-   Store the “current value” in the property `value`. The starting value is set to the argument of the constructor `startingValue`.
+-   The `read()` method should use `prompt` to read a new number and add it to `value`.
 
 In other words, the `value` property is the sum of all user-entered values with the initial value `startingValue`.
 
@@ -399,26 +399,26 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
+-   <a href="object-basics.html" class="sidebar__link">Objects: the basics</a>
 
 #### Lesson navigation
 
-- <a href="constructor-new.html#constructor-function" class="sidebar__link">Constructor function</a>
-- <a href="constructor-new.html#constructor-mode-test-new-target" class="sidebar__link">Constructor mode test: new.target</a>
-- <a href="constructor-new.html#return-from-constructors" class="sidebar__link">Return from constructors</a>
-- <a href="constructor-new.html#methods-in-constructor" class="sidebar__link">Methods in constructor</a>
-- <a href="constructor-new.html#summary" class="sidebar__link">Summary</a>
+-   <a href="constructor-new.html#constructor-function" class="sidebar__link">Constructor function</a>
+-   <a href="constructor-new.html#constructor-mode-test-new-target" class="sidebar__link">Constructor mode test: new.target</a>
+-   <a href="constructor-new.html#return-from-constructors" class="sidebar__link">Return from constructors</a>
+-   <a href="constructor-new.html#methods-in-constructor" class="sidebar__link">Methods in constructor</a>
+-   <a href="constructor-new.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="constructor-new.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="constructor-new.html#comments" class="sidebar__link">Comments</a>
+-   <a href="constructor-new.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="constructor-new.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -426,7 +426,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/04-object-basics/06-constructor-new" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

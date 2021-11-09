@@ -1,8 +1,8 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="find-elements.html"
-  /find-elements"
+-   <a href="https://ar.javascript.info/"
+-   <a href="find-elements.html"
+    /find-elements"
 
 find-elementsfind-elements"
 

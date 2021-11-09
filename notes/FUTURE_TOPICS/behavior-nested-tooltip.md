@@ -1,17 +1,17 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="behavior-nested-tooltip.html"
-  behavior-nested-tooltip"
+-   <a href="https://ar.javascript.info/"
+-   <a href="behavior-nested-tooltip.html"
+    behavior-nested-tooltip"
 
 behavior-nested-tooltipbehavior-nested-tooltip"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  /behavior-nested-tooltip"
-  /behavior-nested-tooltip"
-  ask/behavior-nested-tooltip"k%2Fbehavior-nested-tooltip"%2Fbehavior-nested-tooltip" </a>
+-   <a href="https://ko.javascript.info/"
+    /behavior-nested-tooltip"
+    /behavior-nested-tooltip"
+    ask/behavior-nested-tooltip"k%2Fbehavior-nested-tooltip"%2Fbehavior-nested-tooltip" </a>
 
 <a href="../ui.html" Browser: Document, Events, Interfaces</span></a>
 

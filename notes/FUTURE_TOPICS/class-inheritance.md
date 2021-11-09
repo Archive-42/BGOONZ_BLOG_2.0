@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/class-inheritance"
-- <a href="class-inheritance.html"
-- <a href="https://es.javascript.info/class-inheritance"
-- <a href="https://fr.javascript.info/class-inheritance"
-- <a href="https://it.javascript.info/class-inheritance"
-  class-inheritance"
+-   <a href="https://ar.javascript.info/class-inheritance"
+-   <a href="class-inheritance.html"
+-   <a href="https://es.javascript.info/class-inheritance"
+-   <a href="https://fr.javascript.info/class-inheritance"
+-   <a href="https://it.javascript.info/class-inheritance"
+    class-inheritance"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/class-inheritance"
-- <a href=class-inheritance"
-- <a href="https://tr.javascript.info/class-inheritance"
-- <a href="https://zh.javascript.info/class-inheritance"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/class-inheritance"
+-   <a href=class-inheritance"
+-   <a href="https://tr.javascript.info/class-inheritance"
+-   <a href="https://zh.javascript.info/class-inheritance"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -131,8 +131,8 @@ Usually we don’t want to totally replace a parent method, but rather to build 
 
 Classes provide `"super"` keyword for that.
 
-- `super.method(...)` to call a parent method.
-- `super(...)` to call a parent constructor (inside our constructor only).
+-   `super.method(...)` to call a parent method.
+-   `super(...)` to call a parent constructor (inside our constructor only).
 
 For instance, let our rabbit autohide when stopped:
 
@@ -241,7 +241,7 @@ Whoops! We’ve got an error. Now we can’t create rabbits. What went wrong?
 
 The short answer is:
 
-- **Constructors in inheriting classes must call `super(...)`, and (!) do it before using `this`.**
+-   **Constructors in inheriting classes must call `super(...)`, and (!) do it before using `this`.**
 
 …But why? What’s going on here? Indeed, the requirement seems strange.
 
@@ -251,8 +251,8 @@ In JavaScript, there’s a distinction between a constructor function of an inhe
 
 That label affects its behavior with `new`.
 
-- When a regular function is executed with `new`, it creates an empty object and assigns it to `this`.
-- But when a derived constructor runs, it doesn’t do this. It expects the parent constructor to do this job.
+-   When a regular function is executed with `new`, it creates an empty object and assigns it to `this`.
+-   But when a derived constructor runs, it doesn’t do this. It expects the parent constructor to do this job.
 
 So a derived constructor must call `super` in order to execute its parent (base) constructor, otherwise the object for `this` won’t be created. And we’ll get an error.
 
@@ -366,8 +366,8 @@ Why is there the difference?
 
 Well, the reason is in the field initialization order. The class field is initialized:
 
-- Before constructor for the base class (that doesn’t extend anything),
-- Immediately after `super()` for the derived class.
+-   Before constructor for the base class (that doesn’t extend anything),
+-   Immediately after `super()` for the derived class.
 
 In our case, `Rabbit` is the derived class. There’s no `constructor()` in it. As said previously, that’s the same as if there was an empty constructor with only `super(...args)`.
 
@@ -572,9 +572,9 @@ A call to `tree.sayHi()` shows “I’m an animal”. Definitely wrong.
 
 The reason is simple:
 
-- In the line `(*)`, the method `tree.sayHi` was copied from `rabbit`. Maybe we just wanted to avoid code duplication?
-- Its `[[HomeObject]]` is `rabbit`, as it was created in `rabbit`. There’s no way to change `[[HomeObject]]`.
-- The code of `tree.sayHi()` has `super.sayHi()` inside. It goes up from `rabbit` and takes the method from `animal`.
+-   In the line `(*)`, the method `tree.sayHi` was copied from `rabbit`. Maybe we just wanted to avoid code duplication?
+-   Its `[[HomeObject]]` is `rabbit`, as it was created in `rabbit`. There’s no way to change `[[HomeObject]]`.
+-   The code of `tree.sayHi()` has `super.sayHi()` inside. It goes up from `rabbit` and takes the method from `animal`.
 
 Here’s the diagram of what happens:
 
@@ -607,18 +607,18 @@ In the example below a non-method syntax is used for comparison. `[[HomeObject]]
 ## <a href="class-inheritance.html#summary" id="summary" class="main__anchor">Summary</a>
 
 1.  To extend a class: `class Child extends Parent`:
-    - That means `Child.prototype.__proto__` will be `Parent.prototype`, so methods are inherited.
+    -   That means `Child.prototype.__proto__` will be `Parent.prototype`, so methods are inherited.
 2.  When overriding a constructor:
-    - We must call parent constructor as `super()` in `Child` constructor before using `this`.
+    -   We must call parent constructor as `super()` in `Child` constructor before using `this`.
 3.  When overriding another method:
-    - We can use `super.method()` in a `Child` method to call `Parent` method.
+    -   We can use `super.method()` in a `Child` method to call `Parent` method.
 4.  Internals:
-    - Methods remember their class/object in the internal `[[HomeObject]]` property. That’s how `super` resolves parent methods.
-    - So it’s not safe to copy a method with `super` from one object to another.
+    -   Methods remember their class/object in the internal `[[HomeObject]]` property. That’s how `super` resolves parent methods.
+    -   So it’s not safe to copy a method with `super` from one object to another.
 
 Also:
 
-- Arrow functions don’t have their own `this` or `super`, so they transparently fit into the surrounding context.
+-   Arrow functions don’t have their own `this` or `super`, so they transparently fit into the surrounding context.
 
 ## <a href="class-inheritance.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -725,8 +725,8 @@ We’ve got a `Clock` class. As of now, it prints the time every second.
 
 Create a new class `ExtendedClock` that inherits from `Clock` and adds the parameter `precision` – the number of `ms` between “ticks”. Should be `1000` (1 second) by default.
 
-- Your code should be in the file `extended-clock.js`
-- Don’t modify the original `clock.js`. Extend it.
+-   Your code should be in the file `extended-clock.js`
+-   Don’t modify the original `clock.js`. Extend it.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/3Ha7yGE4lnnhrgOq?p=preview)
 
@@ -757,26 +757,26 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="classes.html" class="sidebar__link">Classes</a>
+-   <a href="classes.html" class="sidebar__link">Classes</a>
 
 #### Lesson navigation
 
-- <a href="class-inheritance.html#the-extends-keyword" class="sidebar__link">The “extends” keyword</a>
-- <a href="class-inheritance.html#overriding-a-method" class="sidebar__link">Overriding a method</a>
-- <a href="class-inheritance.html#overriding-constructor" class="sidebar__link">Overriding constructor</a>
-- <a href="class-inheritance.html#super-internals-homeobject" class="sidebar__link">Super: internals, [[HomeObject]]</a>
-- <a href="class-inheritance.html#summary" class="sidebar__link">Summary</a>
+-   <a href="class-inheritance.html#the-extends-keyword" class="sidebar__link">The “extends” keyword</a>
+-   <a href="class-inheritance.html#overriding-a-method" class="sidebar__link">Overriding a method</a>
+-   <a href="class-inheritance.html#overriding-constructor" class="sidebar__link">Overriding constructor</a>
+-   <a href="class-inheritance.html#super-internals-homeobject" class="sidebar__link">Super: internals, [[HomeObject]]</a>
+-   <a href="class-inheritance.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="class-inheritance.html#tasks" class="sidebar__link">Tasks (2)</a>
-- <a href="class-inheritance.html#comments" class="sidebar__link">Comments</a>
+-   <a href="class-inheritance.html#tasks" class="sidebar__link">Tasks (2)</a>
+-   <a href="class-inheritance.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -784,7 +784,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/09-classes/02-class-inheritance" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

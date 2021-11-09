@@ -26,8 +26,8 @@ It looks somewhat like this:
 
 The exact look of developer tools depends on your version of Chrome. It changes from time to time but should be similar.
 
-- Here we can see the red-colored error message. In this case, the script contains an unknown "lalala" command.
-- On the right, there is a clickable link to the source `bug.html:12` with the line number where the error has occurred.
+-   Here we can see the red-colored error message. In this case, the script contains an unknown "lalala" command.
+-   On the right, there is a clickable link to the source `bug.html:12` with the line number where the error has occurred.
 
 Below the error message, there is a blue `>` symbol. It marks a "command line" where we can type JavaScript commands. Press `key:Enter` to run them.
 
@@ -57,7 +57,7 @@ Now `key:Cmd+Opt+C` can toggle the console. Also, note that the new top menu ite
 
 ## Summary
 
-- Developer tools allow us to see errors, run commands, examine variables, and much more.
-- They can be opened with `key:F12` for most browsers on Windows. Chrome for Mac needs `key:Cmd+Opt+J`, Safari: `key:Cmd+Opt+C` (need to enable first).
+-   Developer tools allow us to see errors, run commands, examine variables, and much more.
+-   They can be opened with `key:F12` for most browsers on Windows. Chrome for Mac needs `key:Cmd+Opt+J`, Safari: `key:Cmd+Opt+C` (need to enable first).
 
 Now we have the environment ready. In the next section, we'll get down to JavaScript.

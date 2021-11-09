@@ -1,10 +1,10 @@
 EN
 
-- <a href="https://ar.javascript.info/"
-- <a href="dom-children.html"
-  /dom-children"
-  /dom-children"
-  dom-childrendom-children"
+-   <a href="https://ar.javascript.info/"
+-   <a href="dom-children.html"
+    /dom-children"
+    /dom-children"
+    dom-childrendom-children"
 
 <!-- -->
 
@@ -41,9 +41,9 @@ Look at this page:
 
 For each of the following, give at least one way of how to access them:
 
-- The `<div>` DOM node?
-- The `<ul>` DOM node?
-- The second `<li>` (with Pete)?
+-   The `<div>` DOM node?
+-   The `<ul>` DOM node?
+-   The second `<li>` (with Pete)?
 
 solution
 

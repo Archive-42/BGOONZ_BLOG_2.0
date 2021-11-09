@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/browser-environment"
-- <a href="browser-environment.html"
-- <a href="https://es.javascript.info/browser-environment"
-- <a href="https://fr.javascript.info/browser-environment"
-- <a href="https://it.javascript.info/browser-environment"
-  browser-environment"
+-   <a href="https://ar.javascript.info/browser-environment"
+-   <a href="browser-environment.html"
+-   <a href="https://es.javascript.info/browser-environment"
+-   <a href="https://fr.javascript.info/browser-environment"
+-   <a href="https://it.javascript.info/browser-environment"
+    browser-environment"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/browser-environment"
-- <a href=browser-environment"
-- <a href="https://tr.javascript.info/browser-environment"
-- <a href="https://zh.javascript.info/browser-environment"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/browser-environment"
+-   <a href=browser-environment"
+-   <a href="https://tr.javascript.info/browser-environment"
+-   <a href="https://zh.javascript.info/browser-environment"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -104,8 +104,8 @@ The Browser Object Model (BOM) represents additional objects provided by the bro
 
 For instance:
 
-- The [navigator](https://developer.mozilla.org/en-US/docs/Web/API/Window/navigator) object provides background information about the browser and the operating system. There are many properties, but the two most widely known are: `navigator.userAgent` – about the current browser, and `navigator.platform` – about the platform (can help to differ between Windows/Linux/Mac etc).
-- The [location](https://developer.mozilla.org/en-US/docs/Web/API/Window/location) object allows us to read the current URL and can redirect the browser to a new one.
+-   The [navigator](https://developer.mozilla.org/en-US/docs/Web/API/Window/navigator) object provides background information about the browser and the operating system. There are many properties, but the two most widely known are: `navigator.userAgent` – about the current browser, and `navigator.platform` – about the platform (can help to differ between Windows/Linux/Mac etc).
+-   The [location](https://developer.mozilla.org/en-US/docs/Web/API/Window/location) object allows us to read the current URL and can redirect the browser to a new one.
 
 Here’s how we can use the `location` object:
 
@@ -158,23 +158,23 @@ Now we’ll get down to learning DOM, because the document plays the central rol
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="document.html" class="sidebar__link">Document</a>
+-   <a href="document.html" class="sidebar__link">Document</a>
 
 #### Lesson navigation
 
-- <a href="browser-environment.html#dom-document-object-model" class="sidebar__link">DOM (Document Object Model)</a>
-- <a href="browser-environment.html#bom-browser-object-model" class="sidebar__link">BOM (Browser Object Model)</a>
-- <a href="browser-environment.html#summary" class="sidebar__link">Summary</a>
+-   <a href="browser-environment.html#dom-document-object-model" class="sidebar__link">DOM (Document Object Model)</a>
+-   <a href="browser-environment.html#bom-browser-object-model" class="sidebar__link">BOM (Browser Object Model)</a>
+-   <a href="browser-environment.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="browser-environment.html#comments" class="sidebar__link">Comments</a>
+-   <a href="browser-environment.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -182,7 +182,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/1-document/01-browser-environment" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,17 +1,17 @@
 check-syntax"
 
-- <a href="check-syntax.html"
-  check-syntax"
-  /check-syntax"
-  check-syntaxcheck-syntax"
+-   <a href="check-syntax.html"
+    check-syntax"
+    /check-syntax"
+    check-syntaxcheck-syntax"
 
 <!-- -->
 
 check-syntax"
 
-- <a href="
-- <a href="https://tr.javascript.info/"
-  ask/check-syntax"
+-   <a href="
+-   <a href="https://tr.javascript.info/"
+    ask/check-syntax"
 
 k%2Fcheck-syntax"%2Fcheck-syntax" </a>
 

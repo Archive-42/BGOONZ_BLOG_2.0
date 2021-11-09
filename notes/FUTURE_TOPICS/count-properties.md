@@ -1,9 +1,9 @@
 count-properties"
 
-- <a href="count-properties.html"
-  /count-properties"
-  /count-properties"
-  count-propertiescount-properties"
+-   <a href="count-properties.html"
+    /count-properties"
+    /count-properties"
+    count-propertiescount-properties"
 
 <!-- -->
 

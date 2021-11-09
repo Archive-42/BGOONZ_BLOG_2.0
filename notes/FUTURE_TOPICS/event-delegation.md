@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="event-delegation.html"
-- <a href="https://es.javascript.info/event-delegation"
-- <a href="https://fr.javascript.info/event-delegation"
-- <a href="https://it.javascript.info/event-delegation"
-  event-delegation"
+-   <a href="event-delegation.html"
+-   <a href="https://es.javascript.info/event-delegation"
+-   <a href="https://fr.javascript.info/event-delegation"
+-   <a href="https://it.javascript.info/event-delegation"
+    event-delegation"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/event-delegation"
-- <a href=event-delegation"
-- <a href="https://tr.javascript.info/"
-- <a href="https://zh.javascript.info/event-delegation"
+-   <a href="https://ko.javascript.info/event-delegation"
+-   <a href=event-delegation"
+-   <a href="https://tr.javascript.info/"
+-   <a href="https://zh.javascript.info/event-delegation"
 
 We want to make this open-source project available for people all around the world.
 
@@ -192,8 +192,8 @@ Please note that `this.onClick` is bound to `this` in `(*)`. That’s important,
 
 So, what advantages does delegation give us here?
 
-- We don’t need to write the code to assign a handler to each button. Just make a method and put it in the markup.
-- The HTML structure is flexible, we can add/remove buttons at any time.
+-   We don’t need to write the code to assign a handler to each button. Just make a method and put it in the markup.
+-   The HTML structure is flexible, we can add/remove buttons at any time.
 
 We could also use classes `.action-save`, `.action-load`, but an attribute `data-action` is better semantically. And we can use it in CSS rules too.
 
@@ -286,14 +286,14 @@ The algorithm:
 
 Benefits:
 
-- Simplifies initialization and saves memory: no need to add many handlers.
-- Less code: when adding or removing elements, no need to add/remove handlers.
-- DOM modifications: we can mass add/remove elements with `innerHTML` and the like.
+-   Simplifies initialization and saves memory: no need to add many handlers.
+-   Less code: when adding or removing elements, no need to add/remove handlers.
+-   DOM modifications: we can mass add/remove elements with `innerHTML` and the like.
 
 The delegation has its limitations of course:
 
-- First, the event must be bubbling. Some events do not bubble. Also, low-level handlers should not use `event.stopPropagation()`.
-- Second, the delegation may add CPU load, because the container-level handler reacts on events in any place of the container, no matter whether they interest us or not. But usually the load is negligible, so we don’t take it into account.
+-   First, the event must be bubbling. Some events do not bubble. Also, low-level handlers should not use `event.stopPropagation()`.
+-   Second, the delegation may add CPU load, because the container-level handler reacts on events in any place of the container, no matter whether they interest us or not. But usually the load is negligible, so we don’t take it into account.
 
 ## <a href="event-delegation.html#tasks" class="tasks__title-anchor main__anchor main__anchor main__anchor_noicon">Tasks</a>
 
@@ -325,8 +325,8 @@ Create a tree that shows/hides node children on click:
 
 Requirements:
 
-- Only one event handler (use delegation)
-- A click outside the node title (on an empty space) should not do anything.
+-   Only one event handler (use delegation)
+-   A click outside the node title (on an empty space) should not do anything.
 
 [Open a sandbox for the task.](https://plnkr.co/edit/zQFuLhTPX4lkrokp?p=preview)
 
@@ -404,15 +404,15 @@ In this task we assume that all elements with `data-tooltip` have only text insi
 
 Details:
 
-- The distance between the element and the tooltip should be `5px`.
-- The tooltip should be centered relative to the element, if possible.
-- The tooltip should not cross window edges. Normally it should be above the element, but if the element is at the page top and there’s no space for the tooltip, then below it.
-- The tooltip content is given in the `data-tooltip` attribute. It can be arbitrary HTML.
+-   The distance between the element and the tooltip should be `5px`.
+-   The tooltip should be centered relative to the element, if possible.
+-   The tooltip should not cross window edges. Normally it should be above the element, but if the element is at the page top and there’s no space for the tooltip, then below it.
+-   The tooltip content is given in the `data-tooltip` attribute. It can be arbitrary HTML.
 
 You’ll need two events here:
 
-- `mouseover` triggers when a pointer comes over an element.
-- `mouseout` triggers when a pointer leaves an element.
+-   `mouseover` triggers when a pointer comes over an element.
+-   `mouseout` triggers when a pointer leaves an element.
 
 Please use event delegation: set up two handlers on `document` to track all “overs” and “outs” from elements with `data-tooltip` and manage tooltips from there.
 
@@ -436,24 +436,24 @@ solution
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="events.html" class="sidebar__link">Introduction to Events</a>
+-   <a href="events.html" class="sidebar__link">Introduction to Events</a>
 
 #### Lesson navigation
 
-- <a href="event-delegation.html#delegation-example-actions-in-markup" class="sidebar__link">Delegation example: actions in markup</a>
-- <a href="event-delegation.html#the-behavior-pattern" class="sidebar__link">The “behavior” pattern</a>
-- <a href="event-delegation.html#summary" class="sidebar__link">Summary</a>
+-   <a href="event-delegation.html#delegation-example-actions-in-markup" class="sidebar__link">Delegation example: actions in markup</a>
+-   <a href="event-delegation.html#the-behavior-pattern" class="sidebar__link">The “behavior” pattern</a>
+-   <a href="event-delegation.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="event-delegation.html#tasks" class="sidebar__link">Tasks (4)</a>
-- <a href="event-delegation.html#comments" class="sidebar__link">Comments</a>
+-   <a href="event-delegation.html#tasks" class="sidebar__link">Tasks (4)</a>
+-   <a href="event-delegation.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -461,7 +461,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/2-events/03-event-delegation" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -2,18 +2,18 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="forms-submit.html"
-- <a href="https://es.javascript.info/forms-submit"
-- <a href="https://fr.javascript.info/forms-submit"
-- <a href="https://it.javascript.info/forms-submit"
-  forms-submit"
+-   <a href="forms-submit.html"
+-   <a href="https://es.javascript.info/forms-submit"
+-   <a href="https://fr.javascript.info/forms-submit"
+-   <a href="https://it.javascript.info/forms-submit"
+    forms-submit"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/forms-submit"
-- <a href=forms-submit"
-- <a href="https://tr.javascript.info/forms-submit"
-- <a href="https://zh.javascript.info/forms-submit"
+-   <a href="https://ko.javascript.info/forms-submit"
+-   <a href=forms-submit"
+-   <a href="https://tr.javascript.info/forms-submit"
+-   <a href="https://zh.javascript.info/forms-submit"
 
 We want to make this open-source project available for people all around the world.
 
@@ -113,17 +113,17 @@ Sometimes that’s used to manually create and send a form, like this:
 
 Create a function `showPrompt(html, callback)` that shows a form with the message `html`, an input field and buttons `OK/CANCEL`.
 
-- A user should type something into a text field and press Enter or the OK button, then `callback(value)` is called with the value they entered.
-- Otherwise if the user presses Esc or CANCEL, then `callback(null)` is called.
+-   A user should type something into a text field and press Enter or the OK button, then `callback(value)` is called with the value they entered.
+-   Otherwise if the user presses Esc or CANCEL, then `callback(null)` is called.
 
 In both cases that ends the input process and removes the form.
 
 Requirements:
 
-- The form should be in the center of the window.
-- The form is _modal_. In other words, no interaction with the rest of the page is possible until the user closes it.
-- When the form is shown, the focus should be inside the `<input>` for the user.
-- Keys Tab/Shift<span class="shortcut__plus">+</span>Tab should shift the focus between form fields, don’t allow it to leave for other page elements.
+-   The form should be in the center of the window.
+-   The form is _modal_. In other words, no interaction with the rest of the page is possible until the user closes it.
+-   When the form is shown, the focus should be inside the `<input>` for the user.
+-   Keys Tab/Shift<span class="shortcut__plus">+</span>Tab should shift the focus between form fields, don’t allow it to leave for other page elements.
 
 Usage example:
 
@@ -170,23 +170,23 @@ The form should be not in the `<div>`, but next to it, because we don’t want i
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
+-   <a href="forms-controls.html" class="sidebar__link">Forms, controls</a>
 
 #### Lesson navigation
 
-- <a href="forms-submit.html#event-submit" class="sidebar__link">Event: submit</a>
-- <a href="forms-submit.html#method-submit" class="sidebar__link">Method: submit</a>
+-   <a href="forms-submit.html#event-submit" class="sidebar__link">Event: submit</a>
+-   <a href="forms-submit.html#method-submit" class="sidebar__link">Method: submit</a>
 
-- <a href="forms-submit.html#tasks" class="sidebar__link">Tasks (1)</a>
-- <a href="forms-submit.html#comments" class="sidebar__link">Comments</a>
+-   <a href="forms-submit.html#tasks" class="sidebar__link">Tasks (1)</a>
+-   <a href="forms-submit.html#comments" class="sidebar__link">Comments</a>
 
 Share
 
@@ -194,7 +194,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/2-ui/4-forms-controls/4-forms-submit" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

@@ -1,9 +1,9 @@
 comparison-questions"
 
-- <a href="comparison-questions.html"
-  /comparison-questions"
-  /comparison-questions"
-  comparison-questionscomparison-questions"
+-   <a href="comparison-questions.html"
+    /comparison-questions"
+    /comparison-questions"
+    comparison-questionscomparison-questions"
 
 <!-- -->
 

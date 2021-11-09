@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/async-await"
-- <a href="async-await.html"
-- <a href="https://es.javascript.info/async-await"
+-   <a href="https://ar.javascript.info/async-await"
+-   <a href="async-await.html"
+-   <a href="https://es.javascript.info/async-await"
 
-- <a href="https://it.javascript.info/async-await"
-  async-await"
+-   <a href="https://it.javascript.info/async-await"
+    async-await"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/async-await"
-- <a href=async-await"
-- <a href="https://tr.javascript.info/async-await"
-- <a href="https://zh.javascript.info/async-await"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/async-await"
+-   <a href=async-await"
+-   <a href="https://tr.javascript.info/async-await"
+-   <a href="https://zh.javascript.info/async-await"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -540,25 +540,25 @@ Just treat `async` call as promise and attach `.then` to it:
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="async.html" class="sidebar__link">Promises, async/await</a>
+-   <a href="async.html" class="sidebar__link">Promises, async/await</a>
 
 #### Lesson navigation
 
-- <a href="async-await.html#async-functions" class="sidebar__link">Async functions</a>
-- <a href="async-await.html#await" class="sidebar__link">Await</a>
-- <a href="async-await.html#error-handling" class="sidebar__link">Error handling</a>
-- <a href="async-await.html#summary" class="sidebar__link">Summary</a>
+-   <a href="async-await.html#async-functions" class="sidebar__link">Async functions</a>
+-   <a href="async-await.html#await" class="sidebar__link">Await</a>
+-   <a href="async-await.html#error-handling" class="sidebar__link">Error handling</a>
+-   <a href="async-await.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="async-await.html#tasks" class="sidebar__link">Tasks (3)</a>
-- <a href="async-await.html class="sidebar\_\_link">Comments</a>
+-   <a href="async-await.html#tasks" class="sidebar__link">Tasks (3)</a>
+-   <a href="async-await.html class="sidebar\_\_link">Comments</a>
 
 Share
 
@@ -566,7 +566,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/11-async/08-async-await" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>

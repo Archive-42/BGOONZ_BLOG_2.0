@@ -1,7 +1,7 @@
 async-from-regular"
 
-- <a href="async-from-regular.html"
-  async-from-regular"
+-   <a href="async-from-regular.html"
+    async-from-regular"
 
 async-from-regularasync-from-regular"
 

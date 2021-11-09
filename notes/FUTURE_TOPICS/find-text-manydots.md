@@ -2,17 +2,17 @@ EN
 
 langs\_\_title">عربي</span></a>
 
-- <a href="find-text-manydots.html"
-  /find-text-manydots"
-  /find-text-manydots"
-  find-text-manydotsfind-text-manydots"
+-   <a href="find-text-manydots.html"
+    /find-text-manydots"
+    /find-text-manydots"
+    find-text-manydotsfind-text-manydots"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/"
-  find-text-manydots"
-- <a href="https://tr.javascript.info/"
-  find-text-manydots"
+-   <a href="https://ko.javascript.info/"
+    find-text-manydots"
+-   <a href="https://tr.javascript.info/"
+    find-text-manydots"
 
 We want to make this open-source project available for people all around the world.
 

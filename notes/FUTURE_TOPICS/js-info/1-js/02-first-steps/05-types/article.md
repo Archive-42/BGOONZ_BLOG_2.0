@@ -8,7 +8,7 @@ We can put any type in a variable. For example, a variable can at one moment be 
 
 ```js
 // no error
-let message = "hello";
+let message = 'hello';
 message = 123456;
 ```
 
@@ -27,33 +27,33 @@ There are many operations for numbers, e.g. multiplication `*`, division `/`, ad
 
 Besides regular numbers, there are so-called "special numeric values" which also belong to this data type: `Infinity`, `-Infinity` and `NaN`.
 
-- `Infinity` represents the mathematical [Infinity](https://en.wikipedia.org/wiki/Infinity) ∞. It is a special value that's greater than any number.
+-   `Infinity` represents the mathematical [Infinity](https://en.wikipedia.org/wiki/Infinity) ∞. It is a special value that's greater than any number.
 
-  We can get it as a result of division by zero:
+    We can get it as a result of division by zero:
 
-  ```js run
-  alert(1 / 0); // Infinity
-  ```
+    ```js run
+    alert(1 / 0); // Infinity
+    ```
 
-  Or just reference it directly:
+    Or just reference it directly:
 
-  ```js run
-  alert(Infinity); // Infinity
-  ```
+    ```js run
+    alert(Infinity); // Infinity
+    ```
 
-- `NaN` represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
+-   `NaN` represents a computational error. It is a result of an incorrect or an undefined mathematical operation, for instance:
 
-  ```js run
-  alert("not a number" / 2); // NaN, such division is erroneous
-  ```
+    ```js run
+    alert('not a number' / 2); // NaN, such division is erroneous
+    ```
 
-  `NaN` is sticky. Any further operation on `NaN` returns `NaN`:
+    `NaN` is sticky. Any further operation on `NaN` returns `NaN`:
 
-  ```js run
-  alert("not a number" / 2 + 5); // NaN
-  ```
+    ```js run
+    alert('not a number' / 2 + 5); // NaN
+    ```
 
-  So, if there's a `NaN` somewhere in a mathematical expression, it propagates to the whole result.
+    So, if there's a `NaN` somewhere in a mathematical expression, it propagates to the whole result.
 
 ```smart header="Mathematical operations are safe"
 Doing maths is "safe" in JavaScript. We can do anything: divide by zero, treat non-numeric strings as numbers, etc.
@@ -93,8 +93,8 @@ You can check [_MDN_ BigInt compatibility table](https://developer.mozilla.org/e
 A string in JavaScript must be surrounded by quotes.
 
 ```js
-let str = "Hello";
-let str2 = "Single quotes are ok too";
+let str = 'Hello';
+let str2 = 'Single quotes are ok too';
 let phrase = `can embed another ${str}`;
 ```
 
@@ -109,7 +109,7 @@ Double and single quotes are "simple" quotes. There's practically no difference 
 Backticks are "extended functionality" quotes. They allow us to embed variables and expressions into a string by wrapping them in `${…}`, for example:
 
 ```js run
-let name = "John";
+let name = 'John';
 
 // embed a variable
 alert(`Hello, *!*${name}*/!*!`); // Hello, John!
@@ -123,7 +123,7 @@ The expression inside `${…}` is evaluated and the result becomes a part of the
 Please note that this can only be done in backticks. Other quotes don't have this embedding functionality!
 
 ```js run
-alert("the result is ${1 + 2}"); // the result is ${1 + 2} (double quotes do nothing)
+alert('the result is ${1 + 2}'); // the result is ${1 + 2} (double quotes do nothing)
 ```
 
 We'll cover strings more thoroughly in the chapter <info:string>.
@@ -259,19 +259,19 @@ The last three lines may need additional explanation:
 
 There are 8 basic data types in JavaScript.
 
-- `number` for numbers of any kind: integer or floating-point, integers are limited by <code>±(2<sup>53</sup>-1)</code>.
-- `bigint` is for integer numbers of arbitrary length.
-- `string` for strings. A string may have zero or more characters, there's no separate single-character type.
-- `boolean` for `true`/`false`.
-- `null` for unknown values -- a standalone type that has a single value `null`.
-- `undefined` for unassigned values -- a standalone type that has a single value `undefined`.
-- `object` for more complex data structures.
-- `symbol` for unique identifiers.
+-   `number` for numbers of any kind: integer or floating-point, integers are limited by <code>±(2<sup>53</sup>-1)</code>.
+-   `bigint` is for integer numbers of arbitrary length.
+-   `string` for strings. A string may have zero or more characters, there's no separate single-character type.
+-   `boolean` for `true`/`false`.
+-   `null` for unknown values -- a standalone type that has a single value `null`.
+-   `undefined` for unassigned values -- a standalone type that has a single value `undefined`.
+-   `object` for more complex data structures.
+-   `symbol` for unique identifiers.
 
 The `typeof` operator allows us to see which type is stored in a variable.
 
-- Two forms: `typeof x` or `typeof(x)`.
-- Returns a string with the name of the type, like `"string"`.
-- For `null` returns `"object"` -- this is an error in the language, it's not actually an object.
+-   Two forms: `typeof x` or `typeof(x)`.
+-   Returns a string with the name of the type, like `"string"`.
+-   For `null` returns `"object"` -- this is an error in the language, it's not actually an object.
 
 In the next chapters, we'll concentrate on primitive values and once we're familiar with them, we'll move on to objects.

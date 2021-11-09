@@ -1,9 +1,9 @@
 get-week-day"
 
-- <a href="get-week-day.html"
-  /get-week-day"
-  /get-week-day"
-  get-week-dayget-week-day"
+-   <a href="get-week-day.html"
+    /get-week-day"
+    /get-week-day"
+    get-week-dayget-week-day"
 
 <!-- -->
 

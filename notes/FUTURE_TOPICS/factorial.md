@@ -1,9 +1,9 @@
 factorial"
 
-- <a href="factorial.html"
-  /factorial"
-  /factorial"
-  factorialfactorial"
+-   <a href="factorial.html"
+    /factorial"
+    /factorial"
+    factorialfactorial"
 
 <!-- -->
 

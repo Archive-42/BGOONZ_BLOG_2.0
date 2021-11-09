@@ -1,9 +1,9 @@
 error-nonexisting"
 
-- <a href="error-nonexisting.html"
-  /error-nonexisting"
-  /error-nonexisting"
-  error-nonexistingerror-nonexisting"
+-   <a href="error-nonexisting.html"
+    /error-nonexisting"
+    /error-nonexisting"
+    error-nonexistingerror-nonexisting"
 
 <!-- -->
 

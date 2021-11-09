@@ -1,19 +1,19 @@
 EN
 
-- <a href="https://ar.javascript.info/array"
-- <a href="array.html"
-- <a href="https://es.javascript.info/array"
-- <a href="https://fr.javascript.info/array"
-- <a href="https://it.javascript.info/array"
-  array"
+-   <a href="https://ar.javascript.info/array"
+-   <a href="array.html"
+-   <a href="https://es.javascript.info/array"
+-   <a href="https://fr.javascript.info/array"
+-   <a href="https://it.javascript.info/array"
+    array"
 
 <!-- -->
 
-- <a href="https://ko.javascript.info/array"
-- <a href=array"
-- <a href="https://tr.javascript.info/array"
-- <a href="https://zh.javascript.info/array"
-  [Help to translate](translate.html) the content of this tutorial to your language!
+-   <a href="https://ko.javascript.info/array"
+-   <a href=array"
+-   <a href="https://tr.javascript.info/array"
+-   <a href="https://zh.javascript.info/array"
+    [Help to translate](translate.html) the content of this tutorial to your language!
 
 <a href="index.html" class="sitetoolbar__link sitetoolbar__link_logo"><img src="img/sitetoolbar__logo_en.svg" class="sitetoolbar__logo sitetoolbar__logo_normal" width="200" /><img src="img/sitetoolbar__logo_small_en.svg" class="sitetoolbar__logo sitetoolbar__logo_small" width="70" /></a>
 
@@ -123,8 +123,8 @@ The “trailing comma” style makes it easier to insert/remove items, because a
 
 A [queue](<https://en.wikipedia.org/wiki/Queue_(abstract_data_type)>) is one of the most common uses of an array. In computer science, this means an ordered collection of elements which supports two operations:
 
-- `push` appends an element to the end.
-- `shift` get an element from the beginning, advancing the queue, so that the 2nd element becomes the 1st.
+-   `push` appends an element to the end.
+-   `shift` get an element from the beginning, advancing the queue, so that the 2nd element becomes the 1st.
 
 <figure><img src="article/array/queue.svg" width="187" height="108" /></figure>Arrays support both operations.
 
@@ -134,8 +134,8 @@ There’s another use case for arrays – the data structure named [stack](<http
 
 It supports two operations:
 
-- `push` adds an element to the end.
-- `pop` takes an element from the end.
+-   `push` adds an element to the end.
+-   `pop` takes an element from the end.
 
 So new elements are added or taken always from the “end”.
 
@@ -255,9 +255,9 @@ But the engine will see that we’re working with the array as with a regular ob
 
 The ways to misuse an array:
 
-- Add a non-numeric property like `arr.test = 5`.
-- Make holes, like: add `arr[0]` and then `arr[1000]` (and nothing between them).
-- Fill the array in the reverse order, like `arr[1000]`, `arr[999]` and so on.
+-   Add a non-numeric property like `arr.test = 5`.
+-   Make holes, like: add `arr[0]` and then `arr[1000]` (and nothing between them).
+-   Fill the array in the reverse order, like `arr[1000]`, `arr[999]` and so on.
 
 Please think of arrays as special structures to work with the _ordered data_. They provide special methods for that. Arrays are carefully tuned inside JavaScript engines to work with contiguous ordered data, please use them this way. And if you need arbitrary keys, chances are high that you actually require a regular object `{}`.
 
@@ -452,9 +452,9 @@ This operator has no special treatment for arrays, it works with them as with an
 
 Let’s recall the rules:
 
-- Two objects are equal `==` only if they’re references to the same object.
-- If one of the arguments of `==` is an object, and the other one is a primitive, then the object gets converted to primitive, as explained in the chapter [Object to primitive conversion](object-toprimitive.html).
-- …With an exception of `null` and `undefined` that equal `==` each other and nothing else.
+-   Two objects are equal `==` only if they’re references to the same object.
+-   If one of the arguments of `==` is an object, and the other one is a primitive, then the object gets converted to primitive, as explained in the chapter [Object to primitive conversion](object-toprimitive.html).
+-   …With an exception of `null` and `undefined` that equal `==` each other and nothing else.
 
 The strict comparison `===` is even simpler, as it doesn’t convert types.
 
@@ -499,32 +499,32 @@ That’s simple: don’t use the `==` operator. Instead, compare them item-by-it
 
 Array is a special kind of object, suited to storing and managing ordered data items.
 
-- The declaration:
+-   The declaration:
 
-      // square brackets (usual)
-      let arr = [item1, item2...];
+        // square brackets (usual)
+        let arr = [item1, item2...];
 
-      // new Array (exceptionally rare)
-      let arr = new Array(item1, item2...);
+        // new Array (exceptionally rare)
+        let arr = new Array(item1, item2...);
 
-  The call to `new Array(number)` creates an array with the given length, but without elements.
+    The call to `new Array(number)` creates an array with the given length, but without elements.
 
-- The `length` property is the array length or, to be precise, its last numeric index plus one. It is auto-adjusted by array methods.
+-   The `length` property is the array length or, to be precise, its last numeric index plus one. It is auto-adjusted by array methods.
 
-- If we shorten `length` manually, the array is truncated.
+-   If we shorten `length` manually, the array is truncated.
 
 We can use an array as a deque with the following operations:
 
-- `push(...items)` adds `items` to the end.
-- `pop()` removes the element from the end and returns it.
-- `shift()` removes the element from the beginning and returns it.
-- `unshift(...items)` adds `items` to the beginning.
+-   `push(...items)` adds `items` to the end.
+-   `pop()` removes the element from the end and returns it.
+-   `shift()` removes the element from the beginning and returns it.
+-   `unshift(...items)` adds `items` to the beginning.
 
 To loop over the elements of the array:
 
-- `for (let i=0; i<arr.length; i++)` – works fastest, old-browser-compatible.
-- `for (let item of arr)` – the modern syntax for items only,
-- `for (let i in arr)` – never use.
+-   `for (let i=0; i<arr.length; i++)` – works fastest, old-browser-compatible.
+-   `for (let item of arr)` – the modern syntax for items only,
+-   `for (let i in arr)` – never use.
 
 To compare arrays, don’t use the `==` operator (as well as `>`, `<` and others), as they have no special treatment for arrays. They handle them as any objects, and it’s not what we usually want.
 
@@ -644,9 +644,9 @@ The array has 3 values: initially it had two, plus the function.
 
 Write the function `sumInput()` that:
 
-- Asks the user for values using `prompt` and stores the values in the array.
-- Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
-- Calculates and returns the sum of array items.
+-   Asks the user for values using `prompt` and stores the values in the array.
+-   Finishes asking when the user enters a non-numeric value, an empty string, or presses “Cancel”.
+-   Calculates and returns the sum of array items.
 
 P.S. A zero `0` is a valid number, please don’t stop the input on zero.
 
@@ -824,32 +824,32 @@ You can find more detail information about the algorithm here: [Maximum subarray
 
 <span class="comments__read-before-link">read this before commenting…</span>
 
-- If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
-- If you can't understand something in the article – please elaborate.
-- To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
+-   If you have suggestions what to improve - please [submit a GitHub issue](https://github.com/javascript-tutorial/en.javascript.info/issues/new) or a pull request instead of commenting.
+-   If you can't understand something in the article – please elaborate.
+-   To insert few words of code, use the `<code>` tag, for several lines – wrap them in `<pre>` tag, for more than 10 lines – use a sandbox ([plnkr](https://plnkr.co/edit/?p=preview), [jsbin](https://jsbin.com), [codepen](http://codepen.io)…)
 
 <a href="tutorial/map.html" class="map"></a>
 
 #### Chapter
 
-- <a href="data-types.html" class="sidebar__link">Data types</a>
+-   <a href="data-types.html" class="sidebar__link">Data types</a>
 
 #### Lesson navigation
 
-- <a href="array.html#declaration" class="sidebar__link">Declaration</a>
-- <a href="array.html#methods-pop-push-shift-unshift" class="sidebar__link">Methods pop/push, shift/unshift</a>
-- <a href="array.html#internals" class="sidebar__link">Internals</a>
-- <a href="array.html#performance" class="sidebar__link">Performance</a>
-- <a href="array.html#loops" class="sidebar__link">Loops</a>
-- <a href="array.html#a-word-about-length" class="sidebar__link">A word about “length”</a>
-- <a href="array.html#new-array" class="sidebar__link">new Array()</a>
-- <a href="array.html#multidimensional-arrays" class="sidebar__link">Multidimensional arrays</a>
-- <a href="array.html#tostring" class="sidebar__link">toString</a>
-- <a href="array.html#don-t-compare-arrays-with" class="sidebar__link">Don’t compare arrays with ==</a>
-- <a href="array.html#summary" class="sidebar__link">Summary</a>
+-   <a href="array.html#declaration" class="sidebar__link">Declaration</a>
+-   <a href="array.html#methods-pop-push-shift-unshift" class="sidebar__link">Methods pop/push, shift/unshift</a>
+-   <a href="array.html#internals" class="sidebar__link">Internals</a>
+-   <a href="array.html#performance" class="sidebar__link">Performance</a>
+-   <a href="array.html#loops" class="sidebar__link">Loops</a>
+-   <a href="array.html#a-word-about-length" class="sidebar__link">A word about “length”</a>
+-   <a href="array.html#new-array" class="sidebar__link">new Array()</a>
+-   <a href="array.html#multidimensional-arrays" class="sidebar__link">Multidimensional arrays</a>
+-   <a href="array.html#tostring" class="sidebar__link">toString</a>
+-   <a href="array.html#don-t-compare-arrays-with" class="sidebar__link">Don’t compare arrays with ==</a>
+-   <a href="array.html#summary" class="sidebar__link">Summary</a>
 
-- <a href="array.html#tasks" class="sidebar__link">Tasks (5)</a>
-- <a href="array.html class="sidebar\_\_link">Comments</a>
+-   <a href="array.html#tasks" class="sidebar__link">Tasks (5)</a>
+-   <a href="array.html class="sidebar\_\_link">Comments</a>
 
 Share
 
@@ -857,7 +857,7 @@ Share
 
 <a href="https://github.com/javascript-tutorial/en.javascript.info/blob/master/1-js/05-data-types/04-array" class="sidebar__link">Edit on GitHub</a>
 
-- <a href="about.html" class="page-footer__link">about the project</a>
-- <a href="about.html#contact-us" class="page-footer__link">contact us</a>
-- <a href="terms.html" class="page-footer__link">terms of usage</a>
-- <a href="privacy.html" class="page-footer__link">privacy policy</a>
+-   <a href="about.html" class="page-footer__link">about the project</a>
+-   <a href="about.html#contact-us" class="page-footer__link">contact us</a>
+-   <a href="terms.html" class="page-footer__link">terms of usage</a>
+-   <a href="privacy.html" class="page-footer__link">privacy policy</a>
