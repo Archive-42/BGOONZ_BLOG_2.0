@@ -20,10 +20,7 @@
 
 ## [Go To Site Wiki](https://github.com/bgoonz/BGOONZ_BLOG_2.0/wiki)
 
-
 ## [DOCS](https://bryan-guner.gitbook.io/my-docs/v/blog-notes/)
-
-
 
 # Homepage
 
